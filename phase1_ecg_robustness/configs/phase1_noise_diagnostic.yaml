@@ -1,0 +1,17 @@
+# Noise-only pre-training diagnostic; run with python -m src.audit_noise.
+run_name: noise_diagnostic
+data_dir: data/processed_smoke
+results_dir: results
+sampling_rate: 100
+train:
+  train_limit: 256
+  val_limit: 100
+  test_limit: 100
+  subset_seed: 2026
+noise:
+  snrs: [20, 10, 0]
+  kinds: [bandpass, bw, ma, em]
+  band: [0.5, 40]
+  seed: 8128
+  nstdb_dir: data/raw/nstdb
+  audit_records: 64

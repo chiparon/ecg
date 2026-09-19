@@ -1,0 +1,65 @@
+{
+  "ownership": {
+    "Main": ["common.py", "prepare.py", "bootstrap.py", "merge.py", "plot.py", "verify.py", "report.py", "configs/minimal_five.json", "implementation_contract.json", "__init__.py"],
+    "MethodsNoise": ["noise.py"],
+    "MethodsInference": ["infer.py"],
+    "MethodsNewStats": ["analyse_new.py"],
+    "MethodsReuseStats": ["analyse_existing.py"]
+  },
+  "common_api": {
+    "WORKSPACE": "Path(__file__).resolve().parents[1]",
+    "DEFAULT_CONFIG": "WORKSPACE / methodology_supplement/configs/minimal_five.json",
+    "load_config(path=None)": "Return config dict with _config_sha256 (canonical JSON excluding internal underscore fields) and _config_path.",
+    "stage_paths(cfg, stage)": "Return Path entries inputs, predictions, tables, figures, logs, reports, bootstrap under results/{category}/{stage}; inputs category is test_inputs. Create directories only at producer entry points.",
+    "resolve_path(path)": "Resolve workspace-relative POSIX strings; absolute paths remain absolute.",
+    "read_json(path)": "JSON decode.",
+    "save_json(path, value)": "Existing strict atomic JSON writer, allow_nan=False. Undefined numeric fields must be None.",
+    "sha256(path)": "File streaming SHA256.",
+    "array_sha256(array)": "SHA256 of C-contiguous raw array bytes, no header.",
+    "file_info(path)": "Dict path (workspace-relative POSIX), bytes, sha256.",
+    "load_reference(cfg, stage)": "Read inputs/cohort.npz with y float32[N,5], ids int64[N], patient_ids as original, indices int64[N], unique_patients, patient_inverse int64[N]. No ECG array inside.",
+    "load_checkpoints(cfg, stage)": "Read inputs/checkpoints.json, return checkpoints list. Entries model, seed, path (portable copied .pt), sha256, scale_mv, thresholds (five floats), model_kwargs, original_source. These are the six existing phase-one full checkpoints, never newly trained.",
+    "require_freeze(cfg, stage)": "Read logs/freeze.json, require completed status/config SHA and source fingerprints; return record. Main prepares this before any model outcomes are generated.",
+    "summarize_distribution(seed_values, seed_distributions)": "Parent helper: seed_values vector, seed_distributions shape seeds x (1+B). Return estimate, seed_sd, seed_n, patient_ci_low/high, n_bootstrap, n_invalid. Ordinary mean propagates NaN; intervals use finite paired draws and disclose count.",
+    "write_csv(path, rows)": "Atomic CSV for list[dict] or pandas DataFrame."
+  },
+  "inputs": {
+    "clean": "inputs/clean.npy float32[N,12,1000] physical mV",
+    "draws": "inputs/patient_draws.npy int32[B,n_unique_patients] multiplicities; full byte-identical to existing phase-two draws",
+    "noise_manifest": "inputs/manifest.json: status, stage, config_sha256, cohort (file_info), clean (file_info), matrices (file_info), diagnostics (file_info), n_records, n_cases, cases list",
+    "matrix_file": "inputs/matrices.json: status, config_sha256, lead_order, electrode_order, matrices list. Each item id, family, values (12x9), replicate (integer or null), diagnostics (rank, right_nullity, left_nullity, row/column nonzero counts and squared norms, singular_values, mean_abs_offdiagonal_covariance, column_gram, column_cosine with null for undefined).",
+    "case": "case_id unique string, kind='bandpass' or 'clean', condition='electrode'/'independent_rms'/'clean', source_id, matrix_id, matrix_family, band_id, snr integer (clean=100), noise_seed integer (clean=0), analysis_tags list (snr/matrix/band/clean), noise_path workspace-relative or null for clean, noise_sha256 (file SHA) or null, input_sha256 raw final float32 noisy input, matrix_sha256 raw matrix bytes or null. All cases sorted deterministically with clean first. Standard legacy branch at 10/0 belongs to both snr and matrix analyses; do not duplicate it.",
+    "case_count": "325 total: clean 1; legacy standard 5 SNR x6 noise x2 conditions=60; limb,precordial,5 randomized matrices x2 SNR x6 noise x2 conditions=168; 4 long-source bands x2 SNR x6 noise x2 conditions=96.",
+    "case_noise": "Float32 base-noise .npy at 0dB, shared across SNR. Final input is clean + base_noise * np.float32(10**(-snr/20)); two explicit float32 ufunc operations. Same 144 noisy base files feed all conditions. Never regenerate on remote.",
+    "diagnostics": "tables/noise_diagnostics.csv one row per source_id/noise_seed/condition/record, including ecg_id, family, band_id, achieved_snr_0, max_lead_rms_relative_error (matched pair), effective_cross_lead_correlation (active leads only), power_fraction_0_5, power_fraction_5_15, power_fraction_15_40, power_fraction_40_50, crop_mean_removed_rms, source_fft_df_hz, source_lowest_retained_hz. Clear source-versus-final definitions. tables/noise_summary.csv equal aggregation by source_id/noise_seed/condition and overall useful for plotting. Manifest diagnostics can refer to an object of file_infos if needed."
+  },
+  "bootstrap_api": {
+    "module": "methodology_supplement.bootstrap",
+    "METRICS": ["macro_auroc", "macro_f1", "ece"],
+    "metric_distribution(y,p,thresholds,patient_inverse,draws,batch_size=64,compute_auc=True)": "Return float64[B+1,3], first row point. Macro AUROC reuses existing cluster_auc_distribution. F1 and ECE use patient-weighted sufficient statistics; exact existing classwise 15-bin binning and fixed thresholds. compute_auc=False leaves AUC column NaN so callers can fill saved AUROC draws. Never bootstrap pooled/averaged probabilities."
+  },
+  "inference": {
+    "cli": "python -m methodology_supplement.infer --config PATH --stage smoke|full --model resnet|tcn --shard-index N --shard-count K; optionally --case-ids comma-list for verification only, stored in an explicitly nonproduction worker report",
+    "destination": "predictions/{model}/seed_{seed}/{case_id}.npz",
+    "npz_fields": "p,y,ids,patient_ids,indices,thresholds; scalar strings model,case_id,config_sha256,checkpoint_sha256,input_sha256,p_sha256; scalar seed; no object arrays",
+    "ledger": "tables/evaluation_{model}_{shard_index}.csv with model,seed,case_id,prediction_path,prediction_sha256,checkpoint_sha256,input_sha256 and every field returned by baseline classification_metrics",
+    "worker_report": "logs/inference_{model}_{shard_index}.json: status,stage,config_sha256,model,shard_index/count,case_filter,expected/observed cells, host/device/software, pid, started_at/finished_at, source/checkpoint/manifest fingerprints, internal_clean_prediction_hashes. Do not write shared mutable files from workers. Assert CUDA present; require config host assignment, with an explicit verification-only override if needed.",
+    "merged": "Main validates disjoint complete grid and produces tables/evaluation_index.csv. analyse_new consumes this only."
+  },
+  "new_statistics": {
+    "cli": "python -m methodology_supplement.analyse_new --config PATH --stage smoke|full",
+    "outputs": ["tables/new_summary.csv", "tables/new_seed_effects.csv", "tables/new_noise_effects.csv", "tables/random_matrix_effects.csv", "logs/new_statistics.json"],
+    "summary_fields": ["analysis", "phase", "model", "strategy", "source_id", "matrix_family", "band_id", "snr", "metric", "outcome", "estimate", "seed_sd", "seed_n", "patient_ci_low", "patient_ci_high", "n_bootstrap", "n_invalid", "noise_sd", "random_matrix_sd"],
+    "summary_contract": "phase=phase1, strategy=clean_only. analysis=snr/matrix/band. source_id=standard/limb_only/precordial_only/randomized/band ID for main rows; include random_00..04 individual matrix rows with analysis=matrix_instance. outcome=structure_effect (E-I), electrode_absolute, independent_rms_absolute, electrode_drop (clean-E), independent_rms_drop. All three metrics; ECE signed raw difference must be labelled worse when positive. Randomized family first averages five fixed matrix instances equally within noise/seed/draw. SNR has standard all-electrode at all five levels; matrices and bands at 10/0. Keep training seed and noise/matrix replicate variation separate. Bootstrap cache per model/seed/case as needed with input/prediction/config fingerprints. Audit bootstrap point against saved metrics."
+  },
+  "reused_statistics": {
+    "cli": "python -m methodology_supplement.analyse_existing --config PATH --stage full (smoke may use a documented limited validation subset, not claim full coverage)",
+    "outputs": ["tables/phase2_snr_summary.csv", "tables/phase2_snr_seed_effects.csv", "tables/effect_plane.csv", "tables/effect_plane_seed_values.csv", "tables/pareto.csv", "tables/pareto_seed_values.csv", "logs/reused_statistics.json"],
+    "curve_fields": "Same core summary_fields as new_summary, phase=phase2, analysis=snr, strategy each of four, source_id=standard, matrix_family=standard, band_id=legacy_0p5_40, outcome=structure_effect. Three metrics with seed SD and paired patient CIs. Existing AUROC draws reused; compute new F1/ECE draws from the archived individual-case predictions, not CI-bound subtraction.",
+    "plane_fields": ["model", "strategy", "kind", "combo_set", "combo_id", "snr", "metric", "x_mean", "x_seed_sd", "x_ci_low", "x_ci_high", "y_mean", "y_seed_sd", "y_ci_low", "y_ci_high", "n_seeds", "n_bootstrap", "n_invalid_x", "n_invalid_y"],
+    "plane_contract": "A4 definitions in config. Use individual combination groups including all, not overlapping train/heldout aggregate groups. Three augmented strategies. Gaussian main and NSTDB explicitly separate. Existing saved macro-AUROC group draws provide paired CIs. x is clean_only E-I; y is strategy E-clean_only E. Both use same phase-two seeds and condition groups.",
+    "pareto_fields": ["model", "strategy", "x_mean", "x_seed_sd", "x_ci_low", "x_ci_high", "y_mean", "y_seed_sd", "y_ci_low", "y_ci_high", "n_seeds", "n_bootstrap", "n_invalid_x", "n_invalid_y", "clean_auroc", "joint_unseen_auroc", "point_dominated"],
+    "pareto_contract": "All four strategies x two models (8 rows). Primary joint group only; within-checkpoint ratios before same-seed differences and averaging. Dominance evaluated within model at point estimates only: lower x and higher y, one strict. Do not infer statistically significant dominance or acceptable clinical clean cost."
+  },
+  "constraints": ["No edits to phase1, phase2, sparktest or their existing artifacts.", "Agents skip ALL validation/build/lint/tests/training/inference; parent validates and executes once after integration.", "No new Markdown docs.", "Main owns integration and all runtime deployment; never negotiate scientific estimands between siblings."]
+}

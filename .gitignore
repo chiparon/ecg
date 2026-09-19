@@ -1,0 +1,17 @@
+.codex/
+.claude/
+.opencode/
+.pi/
+.dsh/
+.omp/
+.pytest_cache/
+.venv/
+__pycache__/
+*.py[cod]
+
+# Local datasets and generated experiment artifacts
+/phase1_ecg_robustness/data/
+/phase1_ecg_robustness/results/
+/phase2/results/
+/methodology_supplement/results/
+/sparktest/results/

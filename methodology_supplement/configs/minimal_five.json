@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "experiment": "methodology_minimal_five",
+  "scope_selection": "User selected the document section-nine minimum five-item package; B4 cancelled/not included.",
+  "included": ["matrix_ablation", "snr_structure_curves", "four_band_sensitivity", "evaluation_training_plane", "clean_cost_retention_pareto"],
+  "excluded": ["frequency_covariance_matching", "native_500hz", "lead_subset", "augmentation_retraining", "external_dataset"],
+  "results_dir": "methodology_supplement/results",
+  "sampling_rate": 100,
+  "sequence_length": 1000,
+  "class_order": ["NORM", "MI", "STTC", "CD", "HYP"],
+  "models": ["resnet", "tcn"],
+  "phase1_training_seeds": [17, 29, 43],
+  "phase1_noise_seeds": [8128, 101, 202, 303, 404, 505],
+  "phase2_training_seeds": [17, 29, 43, 101, 202],
+  "strategies": ["clean_only", "independent_rms", "electrode", "mixed"],
+  "conditions": ["independent_rms", "electrode"],
+  "snrs": [20, 15, 10, 5, 0],
+  "ablation_snrs": [10, 0],
+  "matrix": {
+    "families": ["standard", "limb_only", "precordial_only", "randomized"],
+    "random_replicates": 5,
+    "random_seed": 2026092101,
+    "randomization": "Within equal-row-energy lead groups, permute rows, then independently randomize the polarity of every nonzero connection. Preserve column nonzero counts, column squared norms, row nonzero counts and row squared norms. Reject only duplicate matrices or unchanged AA^T, never based on predictions.",
+    "row_groups": [[0, 1, 2], [3, 4, 5], [6, 7, 8, 9, 10, 11]],
+    "interpretation": "Five fixed balanced signed-wiring negative controls, not an exhaustive ensemble of arbitrary acquisition matrices. Rank and covariance topology may change. Each matrix has its own exact per-record per-lead independent-RMS comparator. Random matrices are not training-seed replicates."
+  },
+  "bands": [
+    {"id": "band_0p05_5", "low": 0.05, "high": 5.0},
+    {"id": "band_5_15", "low": 5.0, "high": 15.0},
+    {"id": "band_15_40", "low": 15.0, "high": 40.0},
+    {"id": "band_0p5_40", "low": 0.5, "high": 40.0}
+  ],
+  "band_generation": {
+    "source_length": 10000,
+    "crop_start": 4500,
+    "crop_length": 1000,
+    "description": "For all four bands, generate 100-second zero-DC Gaussian sources on a 0.01-Hz FFT grid; band-limit with inclusive endpoints, take the same central 10-second segment, map into leads, remove each lead's segment mean, then apply per-record whole-12-lead SNR normalization. Share underlying white sources across bands. The 0.5-40-Hz long-source branch is a distinct sensitivity protocol, not the legacy periodic 10-second branch.",
+    "power_bins": [[0.0, 5.0], [5.0, 15.0], [15.0, 40.0], [40.0, 50.0]],
+    "power_bin_rule": "Left-inclusive/right-exclusive, except the last bin includes Nyquist; exclude DC. Measured on the final cropped injected noise's full-record periodogram. Ten-second spectra cannot resolve 0.05 Hz; source-grid inclusion and crop attenuation are reported separately."
+  },
+  "legacy_generation": {
+    "band": [0.5, 40.0],
+    "description": "Reuse phase-one record_seed and per-channel SeedSequence streams. Generate float64 independent-lead/electrode sources at 1000 samples, project and scale at 0 dB, save float32 noise, multiply by float32 10^(-SNR/20), and add to the float32 ECG. Standard/matrix branches share source draws. All five phase-one SNRs are evaluated on the assigned host, with original 20/10/0-dB predictions used only for numerical bridging."
+  },
+  "snr_reference": "Per-record mean squared clean ECG over all twelve leads and all samples in mV, not the fixed training normalization scalar.",
+  "phase2": {
+    "root": "phase2",
+    "stage": "full",
+    "config_sha256": "980993c490b41e9793164c1d9bbfa54f728606fff281e07486e7af2fc41ddda7",
+    "snr_curve_target": "all",
+    "snr_curve_kind": "bandpass",
+    "effect_plane_x": "Within phase two, clean_only checkpoint performance under electrode minus independent_rms, at identical kind/combo/SNR, averaging fixed noise realizations within each training seed.",
+    "effect_plane_y": "Same-seed augmented-strategy minus clean_only performance, both under electrode tests at the identical kind/combo/SNR.",
+    "effect_plane_metric": "macro_auroc",
+    "effect_plane_scope": "All existing individual-combination Gaussian groups at all five SNRs. Existing bw/ma/em all-electrode groups appear only in a separate explicitly confounded sensitivity panel/table. No regression or causal interpretation of the shared-baseline axes.",
+    "pareto_x": "clean_only clean AUROC minus strategy clean AUROC; positive is worse",
+    "pareto_y": "strategy minus clean_only joint-unseen retention, each ratio formed within checkpoint/patient draw before averaging",
+    "pareto_better_direction": "upper_left",
+    "retention_epsilon": 1e-12,
+    "primary_joint": "Existing registered 10 held-out combinations x 15/5 dB x 5 fixed Gaussian noise realizations, electrode condition. Existing confirmatory family is not changed."
+  },
+  "statistics": {
+    "classification": "exploratory_descriptive",
+    "metrics": ["macro_auroc", "macro_f1", "ece"],
+    "bootstrap_replicates": 2000,
+    "bootstrap_seed": 20260919,
+    "bootstrap_batch_size": 64,
+    "workers": 4,
+    "training_uncertainty": "Sample SD, ddof=1, of paired within-training-seed effects after equal averaging of fixed noises and, for the randomized family, fixed matrices. Phase one has 3 training seeds; phase two has 5; never pool the phases.",
+    "patient_uncertainty": "Shared 2000 patient-cluster draws, retaining every record of selected patients. Fixed-checkpoint/fixed-noise/fixed-matrix conditional 95% percentile CIs, not joint uncertainty. Full-cohort draws are reused byte-for-byte from phase two after exact cohort identity checks.",
+    "invalid_draws": "Missing-class AUROC draws remain NaN and are counted, never redrawn; macro AUROC requires all five classes. F1 uses the frozen thresholds and zero_division=0. ECE is the existing macro classwise positive-probability equal-width 15-bin ECE.",
+    "structure_effect": "electrode minus independent_rms; positive AUROC/F1 is better, positive ECE is worse",
+    "noise_uncertainty": "Separate descriptive SD over noise realizations after averaging training seeds; not extra independent training runs.",
+    "matrix_uncertainty": "Separate descriptive variation over five fixed randomized matrices; not incorporated into patient CIs as a population sample.",
+    "hypothesis_tests": "No new p-values, multiplicity family or equivalence claim. Preserve the original phase-two six-comparison Holm family unchanged."
+  },
+  "execution": {
+    "resnet_host": "dgx6",
+    "resnet_workers": 2,
+    "tcn_host": "local",
+    "tcn_workers": 1,
+    "resnet_hostname": "spark-3082",
+    "tcn_hostname": "chiparon",
+    "batch_size": 128,
+    "torch_threads": 4,
+    "precision": "deterministic_fp32",
+    "amp": false,
+    "tf32": false,
+    "sharding": "Ordered noisy/clean case index modulo worker count; all three frozen phase-one training seeds evaluated for each owned case. Clean references may be computed internally by both workers but only the owner writes the clean prediction.",
+    "canonical_noise_generation": "local CPU only; final float32 base-noise arrays and complete noisy-input SHA256 hashes copied unchanged to Spark"
+  },
+  "stages": {
+    "smoke": {"test_limit": 100, "bootstrap_replicates": 64},
+    "full": {"test_limit": null, "bootstrap_replicates": 2000}
+  },
+  "gates": {
+    "snr_abs_error_db": 0.0001,
+    "lead_rms_relative_error": 0.000001,
+    "legacy_metric_abs_error": 0.0001,
+    "legacy_label_agreement_min": 0.999,
+    "legacy_f1_abs_error": 0.001,
+    "source_files_read_only": true
+  }
+}

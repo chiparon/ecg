@@ -1,0 +1,122 @@
+schema: phase2_generalization_v1
+baseline_root: ../phase1_ecg_robustness
+results_dir: results
+specification: ../第二阶段实验方案：四种训练策略对未见采集扰动的泛化.md
+matrix_sha256: 4f852acd9c5a4f7b35a207f5078d70f842de3077d648716950a66502951bfe9d
+sampling_rate: 100
+sequence_length: 1000
+class_order: [NORM, MI, STTC, CD, HYP]
+lead_order: [I, II, III, aVR, aVL, aVF, V1, V2, V3, V4, V5, V6]
+scale_reference_checkpoint: results/checkpoints/full/resnet/seed_17.pt
+expected_scale_mv: 0.2254905872
+models: [resnet, tcn]
+strategies:
+  clean_only: {clean: 1.0, independent_rms: 0.0, electrode: 0.0}
+  independent_rms: {clean: 0.5, independent_rms: 0.5, electrode: 0.0}
+  electrode: {clean: 0.5, independent_rms: 0.0, electrode: 0.5}
+  mixed: {clean: 0.5, independent_rms: 0.25, electrode: 0.25}
+train:
+  optimizer: AdamW
+  lr: 0.001
+  weight_decay: 0.0001
+  batch_size: 128
+  scheduler: none
+  early_stopping: false
+  gradient_clip_norm: null
+  mixed_precision: false
+  allow_tf32: false
+  deterministic: true
+  num_workers: 0
+  torch_threads: 4
+  base_channels: 24
+  tcn_dropout: 0.1
+  selection_metric: clean_validation_macro_auroc
+  threshold_source: best_checkpoint_clean_validation_once
+  epoch_validation_f1_threshold: 0.5
+  subset_seed: 2026
+  snrs: [20, 10]
+  snr_probabilities: [0.5, 0.5]
+  augmentation_seed: 20260920
+  noise_base: 10001
+  noise_base_range: [10000, 19999]
+  combo_file: configs/phase2_train_electrode_combos.json
+  combo_probabilities: [0.25, 0.08333333333333333, 0.08333333333333333, 0.08333333333333333, 0.08333333333333333, 0.08333333333333333, 0.08333333333333333, 0.08333333333333333, 0.08333333333333333, 0.08333333333333333]
+noise:
+  kind: bandpass
+  band: [0.5, 40.0]
+  node_channels: independent_PCG64_streams
+  domain_codes: {train: 1, test: 2}
+  stage_codes: {pilot: 1, full: 2}
+  source_seed_words: 4
+  float_storage: float32
+  realization_order: float64_base_at_0dB_then_float32_buffer_then_float32_SNR_scale
+  nstdb_dir: data/raw/nstdb
+test:
+  conditions: [independent_rms, electrode, covariance]
+  noise_seed_range: [20000, 29999]
+  combo_file: configs/phase2_test_electrode_combos.json
+  include_all_electrodes: true
+  cache_representation: lossless_factorized_float32
+  input_hash_at_each_snr: true
+  same_inputs_all_strategies_models_seeds: true
+  nstdb_kinds: [bw, ma, em]
+  nstdb_snrs: [20, 10, 0]
+  nstdb_combo: all
+stages:
+  pilot:
+    data_dir: data/processed_pilot
+    seeds: [17]
+    epochs: 10
+    train_limit: 4000
+    val_limit: 1000
+    test_limit: 1000
+    expected_records: {train: 4000, val: 1000, test: 1000}
+    test_snrs: [10, 5, 0]
+    test_noise_seeds: [20001]
+    heldout_combo_ids: [RA_V1, RA_LA_V1_V6]
+    nstdb: false
+  full:
+    data_dir: data/processed
+    seeds: [17, 29, 43, 101, 202]
+    epochs: 25
+    train_limit: null
+    val_limit: null
+    test_limit: null
+    expected_records: {train: 17084, val: 2146, test: 2158}
+    test_snrs: [20, 15, 10, 5, 0]
+    test_noise_seeds: [20001, 20002, 20003, 20004, 20005]
+    heldout_combo_ids: all
+    nstdb: true
+statistics:
+  bootstrap_replicates: 2000
+  bootstrap_seed: 20260919
+  bootstrap_batch_size: 128
+  bootstrap_workers: 6
+  primary_group: primary_joint
+  primary_kind: bandpass
+  primary_condition: electrode
+  primary_combo_set: heldout
+  primary_snrs: [15, 5]
+  primary_metric: macro_auroc
+  primary_outcome: retention
+  primary_pairs: [[electrode, clean_only], [electrode, independent_rms], [mixed, electrode]]
+  primary_test: two_sided_paired_t_over_training_seeds
+  multiple_testing: holm
+  primary_family: six_model_by_strategy_retention_contrasts
+  alpha: 0.05
+  group_weighting: equal_condition_AUROC_then_equal_fixed_training_seed_mean
+  patient_estimand: record_AUROC_with_patient_cluster_multiplicities
+  bootstrap_scope: every_registered_test_group_and_fixed_checkpoint
+  joint_uncertainty: false
+  clean_cost_acceptability: descriptive_no_clinical_margin_prespecified
+optional:
+  mixed_75_percent: not_run_not_part_of_four_strategy_main_comparison
+  noisy_validation: not_run
+  nstdb: preregistered_exploratory_sensitivity
+adjudications:
+  combo_conflict: Section13_explicit_disjoint_lists_override_earlier_V1_V6_heldout_table
+  random_combo: Only_enumerated_limb_pairs_replace_unrestricted_random_2_to_4
+  primary_endpoint: Section15_joint_unseen_retention_is_confirmatory_drop_and_absolute_gain_are_key_secondary
+  clipping: No_clipping_matching_phase1_not_the_conflicting_example_clip5
+  seen_label: Seen_SNR_does_not_imply_heldout_or_all_target_combinations_were_seen
+  scope: Five_training_seeds_full_and_eight_technical_pilot_runs_no_test_driven_selection

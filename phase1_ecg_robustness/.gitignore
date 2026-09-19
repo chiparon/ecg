@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+data/raw/
+data/processed*/*.npy
+results/checkpoints/
+results/metrics/**/*.npz
+results/logs/*.zip
+*.part

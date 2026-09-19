@@ -1,0 +1,17 @@
+run_name: review_supplement
+base_config: configs/phase1_full.yaml
+results_dir: results
+bootstrap:
+  repetitions: 2000
+  seed: 20260917
+  batch_size: 128
+strict_control:
+  condition: marginal_shift
+  noise_seeds: [8128, 101, 202, 303, 404, 505]
+  shift_seed: 20260918
+  kind: bandpass
+  snrs: [20, 10, 0]
+audit:
+  legacy_runs: [smoke, pilot, full, pilot_noise_repeats, full_noise_repeats]
+  probability_tolerance: 0.000005
+matrix_sha256: 4f852acd9c5a4f7b35a207f5078d70f842de3077d648716950a66502951bfe9d
