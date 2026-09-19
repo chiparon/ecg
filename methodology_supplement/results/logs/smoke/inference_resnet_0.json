@@ -1,0 +1,398 @@
+{
+  "status": "completed",
+  "stage": "smoke",
+  "config_sha256": "f3f190e9a26bc96544f393a62673ff518c543018da23acdb50aed9409c224469",
+  "model": "resnet",
+  "shard_index": 0,
+  "shard_count": 2,
+  "case_filter": null,
+  "verification_only": false,
+  "verification_only_host_override": false,
+  "pid": 680451,
+  "started_at": "2026-09-19T08:01:46.707113+00:00",
+  "finished_at": "2026-09-19T08:01:54.441560+00:00",
+  "expected_cells": 489,
+  "observed_cells": 489,
+  "resumed_cells": 0,
+  "internal_clean_prediction_hashes": {
+    "17": "fc8fe3f351cb0974a2cd3779ea154058031c4b009092409fb95e9b1baed66cec",
+    "29": "287434d6e3efc8ce4e54d6ec077c4560699c16f93d14991f902f191595d630fc",
+    "43": "cff556a07ae8e0e294a6f8ca199f106857a88691b8dd2708d2f4153545624cab"
+  },
+  "host": "spark-3082",
+  "fqdn": "localhost",
+  "assigned_host": "spark-3082",
+  "host_assignment_verified": true,
+  "device": "cuda:0",
+  "device_name": "NVIDIA GB10",
+  "device_capability": [
+    12,
+    1
+  ],
+  "device_total_memory": 130663952384,
+  "software": {
+    "python": "3.12.14 (main, Sep  1 2026, 14:15:30) [Clang 22.1.3 ]",
+    "platform": "Linux-6.17.0-1008-nvidia-aarch64-with-glibc2.39",
+    "packages": {
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "pandas": "3.0.6",
+      "torch": "2.13.0+cu132",
+      "scikit-learn": "1.9.1",
+      "PyYAML": "6.0.3"
+    },
+    "cuda_runtime": "13.2",
+    "cudnn_version": 92000
+  },
+  "fp32_settings": {
+    "default_dtype": "torch.float32",
+    "amp": false,
+    "deterministic_algorithms": true,
+    "cudnn_deterministic": true,
+    "cudnn_benchmark": false,
+    "cudnn_allow_tf32": false,
+    "matmul_allow_tf32": false,
+    "cublas_workspace_config": ":4096:8",
+    "torch_threads": 4,
+    "batch_size": 128,
+    "cuda_visible_devices": null
+  },
+  "owned_case_ids": [
+    "clean",
+    "band_0p05_5__n101__electrode__snr10",
+    "band_0p05_5__n101__independent_rms__snr10",
+    "band_0p05_5__n202__electrode__snr10",
+    "band_0p05_5__n202__independent_rms__snr10",
+    "band_0p05_5__n303__electrode__snr10",
+    "band_0p05_5__n303__independent_rms__snr10",
+    "band_0p05_5__n404__electrode__snr10",
+    "band_0p05_5__n404__independent_rms__snr10",
+    "band_0p05_5__n505__electrode__snr10",
+    "band_0p05_5__n505__independent_rms__snr10",
+    "band_0p05_5__n8128__electrode__snr10",
+    "band_0p05_5__n8128__independent_rms__snr10",
+    "band_0p5_40__n101__electrode__snr10",
+    "band_0p5_40__n101__independent_rms__snr10",
+    "band_0p5_40__n202__electrode__snr10",
+    "band_0p5_40__n202__independent_rms__snr10",
+    "band_0p5_40__n303__electrode__snr10",
+    "band_0p5_40__n303__independent_rms__snr10",
+    "band_0p5_40__n404__electrode__snr10",
+    "band_0p5_40__n404__independent_rms__snr10",
+    "band_0p5_40__n505__electrode__snr10",
+    "band_0p5_40__n505__independent_rms__snr10",
+    "band_0p5_40__n8128__electrode__snr10",
+    "band_0p5_40__n8128__independent_rms__snr10",
+    "band_15_40__n101__electrode__snr10",
+    "band_15_40__n101__independent_rms__snr10",
+    "band_15_40__n202__electrode__snr10",
+    "band_15_40__n202__independent_rms__snr10",
+    "band_15_40__n303__electrode__snr10",
+    "band_15_40__n303__independent_rms__snr10",
+    "band_15_40__n404__electrode__snr10",
+    "band_15_40__n404__independent_rms__snr10",
+    "band_15_40__n505__electrode__snr10",
+    "band_15_40__n505__independent_rms__snr10",
+    "band_15_40__n8128__electrode__snr10",
+    "band_15_40__n8128__independent_rms__snr10",
+    "band_5_15__n101__electrode__snr10",
+    "band_5_15__n101__independent_rms__snr10",
+    "band_5_15__n202__electrode__snr10",
+    "band_5_15__n202__independent_rms__snr10",
+    "band_5_15__n303__electrode__snr10",
+    "band_5_15__n303__independent_rms__snr10",
+    "band_5_15__n404__electrode__snr10",
+    "band_5_15__n404__independent_rms__snr10",
+    "band_5_15__n505__electrode__snr10",
+    "band_5_15__n505__independent_rms__snr10",
+    "band_5_15__n8128__electrode__snr10",
+    "band_5_15__n8128__independent_rms__snr10",
+    "limb_only__n101__electrode__snr10",
+    "limb_only__n101__independent_rms__snr10",
+    "limb_only__n202__electrode__snr10",
+    "limb_only__n202__independent_rms__snr10",
+    "limb_only__n303__electrode__snr10",
+    "limb_only__n303__independent_rms__snr10",
+    "limb_only__n404__electrode__snr10",
+    "limb_only__n404__independent_rms__snr10",
+    "limb_only__n505__electrode__snr10",
+    "limb_only__n505__independent_rms__snr10",
+    "limb_only__n8128__electrode__snr10",
+    "limb_only__n8128__independent_rms__snr10",
+    "precordial_only__n101__electrode__snr10",
+    "precordial_only__n101__independent_rms__snr10",
+    "precordial_only__n202__electrode__snr10",
+    "precordial_only__n202__independent_rms__snr10",
+    "precordial_only__n303__electrode__snr10",
+    "precordial_only__n303__independent_rms__snr10",
+    "precordial_only__n404__electrode__snr10",
+    "precordial_only__n404__independent_rms__snr10",
+    "precordial_only__n505__electrode__snr10",
+    "precordial_only__n505__independent_rms__snr10",
+    "precordial_only__n8128__electrode__snr10",
+    "precordial_only__n8128__independent_rms__snr10",
+    "random_00__n101__electrode__snr10",
+    "random_00__n101__independent_rms__snr10",
+    "random_00__n202__electrode__snr10",
+    "random_00__n202__independent_rms__snr10",
+    "random_00__n303__electrode__snr10",
+    "random_00__n303__independent_rms__snr10",
+    "random_00__n404__electrode__snr10",
+    "random_00__n404__independent_rms__snr10",
+    "random_00__n505__electrode__snr10",
+    "random_00__n505__independent_rms__snr10",
+    "random_00__n8128__electrode__snr10",
+    "random_00__n8128__independent_rms__snr10",
+    "random_01__n101__electrode__snr10",
+    "random_01__n101__independent_rms__snr10",
+    "random_01__n202__electrode__snr10",
+    "random_01__n202__independent_rms__snr10",
+    "random_01__n303__electrode__snr10",
+    "random_01__n303__independent_rms__snr10",
+    "random_01__n404__electrode__snr10",
+    "random_01__n404__independent_rms__snr10",
+    "random_01__n505__electrode__snr10",
+    "random_01__n505__independent_rms__snr10",
+    "random_01__n8128__electrode__snr10",
+    "random_01__n8128__independent_rms__snr10",
+    "random_02__n101__electrode__snr10",
+    "random_02__n101__independent_rms__snr10",
+    "random_02__n202__electrode__snr10",
+    "random_02__n202__independent_rms__snr10",
+    "random_02__n303__electrode__snr10",
+    "random_02__n303__independent_rms__snr10",
+    "random_02__n404__electrode__snr10",
+    "random_02__n404__independent_rms__snr10",
+    "random_02__n505__electrode__snr10",
+    "random_02__n505__independent_rms__snr10",
+    "random_02__n8128__electrode__snr10",
+    "random_02__n8128__independent_rms__snr10",
+    "random_03__n101__electrode__snr10",
+    "random_03__n101__independent_rms__snr10",
+    "random_03__n202__electrode__snr10",
+    "random_03__n202__independent_rms__snr10",
+    "random_03__n303__electrode__snr10",
+    "random_03__n303__independent_rms__snr10",
+    "random_03__n404__electrode__snr10",
+    "random_03__n404__independent_rms__snr10",
+    "random_03__n505__electrode__snr10",
+    "random_03__n505__independent_rms__snr10",
+    "random_03__n8128__electrode__snr10",
+    "random_03__n8128__independent_rms__snr10",
+    "random_04__n101__electrode__snr10",
+    "random_04__n101__independent_rms__snr10",
+    "random_04__n202__electrode__snr10",
+    "random_04__n202__independent_rms__snr10",
+    "random_04__n303__electrode__snr10",
+    "random_04__n303__independent_rms__snr10",
+    "random_04__n404__electrode__snr10",
+    "random_04__n404__independent_rms__snr10",
+    "random_04__n505__electrode__snr10",
+    "random_04__n505__independent_rms__snr10",
+    "random_04__n8128__electrode__snr10",
+    "random_04__n8128__independent_rms__snr10",
+    "standard__n101__electrode__snr10",
+    "standard__n101__electrode__snr20",
+    "standard__n101__independent_rms__snr0",
+    "standard__n101__independent_rms__snr15",
+    "standard__n101__independent_rms__snr5",
+    "standard__n202__electrode__snr10",
+    "standard__n202__electrode__snr20",
+    "standard__n202__independent_rms__snr0",
+    "standard__n202__independent_rms__snr15",
+    "standard__n202__independent_rms__snr5",
+    "standard__n303__electrode__snr10",
+    "standard__n303__electrode__snr20",
+    "standard__n303__independent_rms__snr0",
+    "standard__n303__independent_rms__snr15",
+    "standard__n303__independent_rms__snr5",
+    "standard__n404__electrode__snr10",
+    "standard__n404__electrode__snr20",
+    "standard__n404__independent_rms__snr0",
+    "standard__n404__independent_rms__snr15",
+    "standard__n404__independent_rms__snr5",
+    "standard__n505__electrode__snr10",
+    "standard__n505__electrode__snr20",
+    "standard__n505__independent_rms__snr0",
+    "standard__n505__independent_rms__snr15",
+    "standard__n505__independent_rms__snr5",
+    "standard__n8128__electrode__snr10",
+    "standard__n8128__electrode__snr20",
+    "standard__n8128__independent_rms__snr0",
+    "standard__n8128__independent_rms__snr15",
+    "standard__n8128__independent_rms__snr5"
+  ],
+  "source_fingerprints": [
+    {
+      "path": "methodology_supplement/__init__.py",
+      "bytes": 88,
+      "sha256": "72bf2727c512361d0763427ae9bb1d3ad46bb086e4965542eaec4fd35e349f38"
+    },
+    {
+      "path": "methodology_supplement/common.py",
+      "bytes": 5032,
+      "sha256": "daa3f53259c8c231e26cf36de4963f4d7f77a34c30d517309aeea9fca57f9c26"
+    },
+    {
+      "path": "methodology_supplement/implementation_contract.json",
+      "bytes": 10514,
+      "sha256": "ad65ec9893c06dcc0016a7190f937857e2e3606ccfeafc72731bbb1cc4ddf8b3"
+    },
+    {
+      "path": "methodology_supplement/infer.py",
+      "bytes": 23766,
+      "sha256": "39523c88ae6d7d3e7d2d30e08a2d8a562bf99b5979118d62f8e868543b925272"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/__init__.py",
+      "bytes": 74,
+      "sha256": "40fdfb6f5f22db08a89c41acb12b2a867cff3a5d471c9f951e49dd77c8f7eb5d"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/audit_noise.py",
+      "bytes": 12231,
+      "sha256": "2ad33e67a8c4ed4952eaba4318dea26b22405ecffcac6e6ba11bdd9816a270eb"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/covariance_matching.py",
+      "bytes": 7725,
+      "sha256": "17e2cdcd976c53558937c784774a13dcd1a2f60924c4b03b4345859cfcba4a6b"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/datasets.py",
+      "bytes": 4684,
+      "sha256": "a3f085d44652da86c5c4dfbf088d14c901102d05e75a61b7920b7025786ae4f2"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/evaluate.py",
+      "bytes": 12337,
+      "sha256": "5271e3803393188f9c6c643e3d24ce6aeacdf08ead5cad98eec3e840d7b142d9"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/lead_matrix.py",
+      "bytes": 4192,
+      "sha256": "e7afb8bc617642180175b82f69ac797f74d259246ecac86e4f19eb5025b455b1"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/models.py",
+      "bytes": 5863,
+      "sha256": "53f5858562f4535cebca888776885846af9c442cf3e709a47eecd91407f40ed7"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/noise_generators.py",
+      "bytes": 16113,
+      "sha256": "6439e7eb220d9f1776e859b103570ea7407bec33c0da60aa3d70a95e9f7ef108"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/train.py",
+      "bytes": 23184,
+      "sha256": "b082292d91776c5b4fb6e19db922d7ef6c73f8cde64317a8b43dbfcd256272ca"
+    }
+  ],
+  "checkpoint_fingerprints": [
+    {
+      "model": "resnet",
+      "seed": 17,
+      "path": "methodology_supplement/results/test_inputs/smoke/checkpoints/resnet__seed_17.pt",
+      "bytes": 6743222,
+      "sha256": "ae1af3b6f26199f28384c78976613cac3bbf3b73d74995a9807710c0bc2f274f",
+      "scale_mv": 0.2254905871835822,
+      "thresholds": [
+        0.3789712190628052,
+        0.1917191594839096,
+        0.28651395440101624,
+        0.7603726983070374,
+        0.16652660071849823
+      ],
+      "thresholds_dtype": "float64",
+      "model_kwargs": {
+        "base_channels": 24
+      },
+      "original_source": {
+        "path": "phase1_ecg_robustness/results/checkpoints/full/resnet/seed_17.pt",
+        "bytes": 6743222,
+        "sha256": "ae1af3b6f26199f28384c78976613cac3bbf3b73d74995a9807710c0bc2f274f"
+      }
+    },
+    {
+      "model": "resnet",
+      "seed": 29,
+      "path": "methodology_supplement/results/test_inputs/smoke/checkpoints/resnet__seed_29.pt",
+      "bytes": 6743158,
+      "sha256": "d88f9588b099e1dd5dddb32a3258f043ae873f62694eb9af5bcc9755ac8d2f5a",
+      "scale_mv": 0.2254905871835822,
+      "thresholds": [
+        0.47920462489128113,
+        0.23826004564762115,
+        0.27360665798187256,
+        0.3862074315547943,
+        0.3693065643310547
+      ],
+      "thresholds_dtype": "float64",
+      "model_kwargs": {
+        "base_channels": 24
+      },
+      "original_source": {
+        "path": "phase1_ecg_robustness/results/checkpoints/full/resnet/seed_29.pt",
+        "bytes": 6743158,
+        "sha256": "d88f9588b099e1dd5dddb32a3258f043ae873f62694eb9af5bcc9755ac8d2f5a"
+      }
+    },
+    {
+      "model": "resnet",
+      "seed": 43,
+      "path": "methodology_supplement/results/test_inputs/smoke/checkpoints/resnet__seed_43.pt",
+      "bytes": 6743094,
+      "sha256": "d2486cf1fdf7bdb8e580e1e920522c530883a8da5246b52e2bdfa2a2d90b6cbd",
+      "scale_mv": 0.2254905871835822,
+      "thresholds": [
+        0.3137734830379486,
+        0.26620984077453613,
+        0.43209049105644226,
+        0.5673764944076538,
+        0.5784941911697388
+      ],
+      "thresholds_dtype": "float64",
+      "model_kwargs": {
+        "base_channels": 24
+      },
+      "original_source": {
+        "path": "phase1_ecg_robustness/results/checkpoints/full/resnet/seed_43.pt",
+        "bytes": 6743094,
+        "sha256": "d2486cf1fdf7bdb8e580e1e920522c530883a8da5246b52e2bdfa2a2d90b6cbd"
+      }
+    }
+  ],
+  "manifest_fingerprint": {
+    "path": "methodology_supplement/results/test_inputs/smoke/manifest.json",
+    "bytes": 288646,
+    "sha256": "e2772816e8026fc18c1f3cdf986cbb3461873968119c4ae684733626d5df5cb7"
+  },
+  "freeze_fingerprint": {
+    "path": "methodology_supplement/results/logs/smoke/freeze.json",
+    "bytes": 14113,
+    "sha256": "77ea3ab681ffca456dc674118f32439a80799e423bb9bd9d6f137e14098e203e"
+  },
+  "checkpoint_manifest_fingerprint": {
+    "path": "methodology_supplement/results/test_inputs/smoke/checkpoints.json",
+    "bytes": 5152,
+    "sha256": "63f612ba6b2870e2fcc4b2644a3b8c43f19eee1d09451818eb88b63d29a7f49a"
+  },
+  "cohort_fingerprint": {
+    "path": "methodology_supplement/results/test_inputs/smoke/cohort.npz",
+    "bytes": 7430,
+    "sha256": "9bd0540133d6fb65ab677f36eaec2dff8f0b6ff9a0de6b7e2dbbc30586b9b2a4"
+  },
+  "clean_fingerprint": {
+    "path": "methodology_supplement/results/test_inputs/smoke/clean.npy",
+    "bytes": 4800128,
+    "sha256": "d6311276e2f2be5dcbcfb70cd30ca0c9d6d51682625ce81fc2c206c834e8f4c7"
+  },
+  "run_fingerprint": "6b7080be927e3dd9142ef7fab24bc2c3a22cb954f79a325598f81a75c2aa991d",
+  "elapsed_seconds": 7.734448694012826,
+  "ledger": {
+    "path": "methodology_supplement/results/tables/smoke/evaluation_resnet_0.csv",
+    "bytes": 420371,
+    "sha256": "7b26579672a0f7ea6d526bed76377787ba7d1b4c210ab1900add0919521a6f19"
+  }
+}

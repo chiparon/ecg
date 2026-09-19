@@ -1,0 +1,150 @@
+{
+  "status": "passed",
+  "stage": "pilot",
+  "config_sha256": "980993c490b41e9793164c1d9bbfa54f728606fff281e07486e7af2fc41ddda7",
+  "expected_runs": 8,
+  "run_checks": [
+    {
+      "strategy": "clean_only",
+      "model": "resnet",
+      "seed": 17,
+      "epochs": 10,
+      "exposures": 40000,
+      "augmentation_counts": {
+        "clean": 40000,
+        "independent_rms": 0,
+        "electrode": 0
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/pilot/clean_only/resnet/seed_17/epochs.csv",
+        "bytes": 3610,
+        "sha256": "3ff8f2c20d46e07cf720346ed1f1f8d4385807ce9effa9e2730fd9148a7f44fb"
+      }
+    },
+    {
+      "strategy": "independent_rms",
+      "model": "resnet",
+      "seed": 17,
+      "epochs": 10,
+      "exposures": 40000,
+      "augmentation_counts": {
+        "clean": 20009,
+        "independent_rms": 19991,
+        "electrode": 0
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/pilot/independent_rms/resnet/seed_17/epochs.csv",
+        "bytes": 6497,
+        "sha256": "242b836f4341291b0534a5e4d67167a1fa107fb0f26b4dcaaa41fbfac0d92c75"
+      }
+    },
+    {
+      "strategy": "electrode",
+      "model": "resnet",
+      "seed": 17,
+      "epochs": 10,
+      "exposures": 40000,
+      "augmentation_counts": {
+        "clean": 19658,
+        "independent_rms": 0,
+        "electrode": 20342
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/pilot/electrode/resnet/seed_17/epochs.csv",
+        "bytes": 5597,
+        "sha256": "b55f363baf7f32adf6386144aac0bf47590237705545b4f3366e34c7b64683b2"
+      }
+    },
+    {
+      "strategy": "mixed",
+      "model": "resnet",
+      "seed": 17,
+      "epochs": 10,
+      "exposures": 40000,
+      "augmentation_counts": {
+        "clean": 20114,
+        "independent_rms": 10046,
+        "electrode": 9840
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/pilot/mixed/resnet/seed_17/epochs.csv",
+        "bytes": 6546,
+        "sha256": "629703917656f6bf9ca4366a5cca0f79d3fa5804418983614fa513eb6bfc9af0"
+      }
+    },
+    {
+      "strategy": "clean_only",
+      "model": "tcn",
+      "seed": 17,
+      "epochs": 10,
+      "exposures": 40000,
+      "augmentation_counts": {
+        "clean": 40000,
+        "independent_rms": 0,
+        "electrode": 0
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/pilot/clean_only/tcn/seed_17/epochs.csv",
+        "bytes": 3597,
+        "sha256": "e3c3bb1202e38c75bb05d44e929564dc992afdb05b9a016d46201eb2b38d048b"
+      }
+    },
+    {
+      "strategy": "independent_rms",
+      "model": "tcn",
+      "seed": 17,
+      "epochs": 10,
+      "exposures": 40000,
+      "augmentation_counts": {
+        "clean": 20009,
+        "independent_rms": 19991,
+        "electrode": 0
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/pilot/independent_rms/tcn/seed_17/epochs.csv",
+        "bytes": 6496,
+        "sha256": "aee916dc2ad8f164eb55188cd51a28787bd9c16d2b21519066a9a00d13fe2b71"
+      }
+    },
+    {
+      "strategy": "electrode",
+      "model": "tcn",
+      "seed": 17,
+      "epochs": 10,
+      "exposures": 40000,
+      "augmentation_counts": {
+        "clean": 19658,
+        "independent_rms": 0,
+        "electrode": 20342
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/pilot/electrode/tcn/seed_17/epochs.csv",
+        "bytes": 5582,
+        "sha256": "6403cabd46d9bd4dd50f0c1e1297f33097d8026bf93b3472068ea73047ad2fcd"
+      }
+    },
+    {
+      "strategy": "mixed",
+      "model": "tcn",
+      "seed": 17,
+      "epochs": 10,
+      "exposures": 40000,
+      "augmentation_counts": {
+        "clean": 20114,
+        "independent_rms": 10046,
+        "electrode": 9840
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/pilot/mixed/tcn/seed_17/epochs.csv",
+        "bytes": 6529,
+        "sha256": "da20bd895e52804c97b78e9f765a11915ac7e2bbfb787cf6bbd409cf78dd54c0"
+      }
+    }
+  ],
+  "paired_initializations_identical": true,
+  "paired_epoch_orders_identical": true,
+  "combination_intersection": [],
+  "unseen_snr_intersection": [],
+  "noise_base_domains_disjoint": true,
+  "performance_selection": "none: this gate checks execution, exposure, strength and provenance, not which strategy wins"
+}

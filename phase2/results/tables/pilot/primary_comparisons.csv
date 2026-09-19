@@ -1,0 +1,7 @@
+model,lhs,rhs,group_id,metric,outcome,n_seeds,point,sd,ci95_low,ci95_high,n_expected,n_undefined,positive_seed_count,negative_seed_count,zero_seed_count,dz,t_stat,p_raw,p_holm,patient_ci95_low,patient_ci95_high,patient_n_valid,patient_n_invalid,confirmatory,stage
+resnet,electrode,clean_only,primary_joint,macro_auroc,retention,1,0.008445933734910316,,,,1,0,1,0,0,,,,,0.00017464325509845006,0.017545794281388548,2000,0,False,pilot
+resnet,electrode,independent_rms,primary_joint,macro_auroc,retention,1,0.001524024387378975,,,,1,0,1,0,0,,,,,-0.005043168005622059,0.008679980401186251,2000,0,False,pilot
+resnet,mixed,electrode,primary_joint,macro_auroc,retention,1,-0.003534168420496253,,,,1,0,0,1,0,,,,,-0.011531844128743807,0.004140472278871109,2000,0,False,pilot
+tcn,electrode,clean_only,primary_joint,macro_auroc,retention,1,0.0019403244804123698,,,,1,0,1,0,0,,,,,0.0011792580502600846,0.0026771459723225473,2000,0,False,pilot
+tcn,electrode,independent_rms,primary_joint,macro_auroc,retention,1,0.0024324249743693516,,,,1,0,1,0,0,,,,,0.00126130325390878,0.0035258408517556514,2000,0,False,pilot
+tcn,mixed,electrode,primary_joint,macro_auroc,retention,1,-0.0001930909422455107,,,,1,0,0,1,0,,,,,-0.0007612849015146944,0.0003711438015335133,2000,0,False,pilot

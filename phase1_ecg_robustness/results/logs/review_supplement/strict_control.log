@@ -1,0 +1,21 @@
+
+COMMAND: E:\Eproject\ECG\phase1_ecg_robustness\.venv\Scripts\python.exe -u -m src.strict_control --config configs/phase1_supplement.yaml
+STRICT noise_base=8128 snr=20 completed; 6 prediction groups
+STRICT noise_base=8128 snr=10 completed; 12 prediction groups
+STRICT noise_base=8128 snr=0 completed; 18 prediction groups
+STRICT noise_base=101 snr=20 completed; 24 prediction groups
+STRICT noise_base=101 snr=10 completed; 30 prediction groups
+STRICT noise_base=101 snr=0 completed; 36 prediction groups
+STRICT noise_base=202 snr=20 completed; 42 prediction groups
+STRICT noise_base=202 snr=10 completed; 48 prediction groups
+STRICT noise_base=202 snr=0 completed; 54 prediction groups
+STRICT noise_base=303 snr=20 completed; 60 prediction groups
+STRICT noise_base=303 snr=10 completed; 66 prediction groups
+STRICT noise_base=303 snr=0 completed; 72 prediction groups
+STRICT noise_base=404 snr=20 completed; 78 prediction groups
+STRICT noise_base=404 snr=10 completed; 84 prediction groups
+STRICT noise_base=404 snr=0 completed; 90 prediction groups
+STRICT noise_base=505 snr=20 completed; 96 prediction groups
+STRICT noise_base=505 snr=10 completed; 102 prediction groups
+STRICT noise_base=505 snr=0 completed; 108 prediction groups
+STRICT_CONTROL_COMPLETED 108 groups, 230.7s

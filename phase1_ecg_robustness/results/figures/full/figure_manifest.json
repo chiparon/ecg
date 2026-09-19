@@ -1,0 +1,144 @@
+{
+  "run_name": "full",
+  "sampling_rate_hz": 100.0,
+  "dpi": 180,
+  "config_path": "configs/phase1_full.yaml",
+  "figures": [
+    {
+      "family": "waveforms",
+      "files": [
+        "results/figures/full/01_waveforms.png",
+        "results/figures/full/01_waveforms.pdf"
+      ],
+      "caption": "Six explanatory leads from one saved ECG; identical clean ECG in all columns. Noisy traces are x plus the saved perturbation; gray overlays show clean signal. First five seconds, global target SNR 10 dB, band-limited Gaussian noise. Amplitudes are physical mV after per-lead DC removal, without model normalization; this example is not a population average.",
+      "source_paths": [
+        "results/metrics/full/noise_examples.npz"
+      ]
+    },
+    {
+      "family": "lead_matrix",
+      "files": [
+        "results/figures/full/02_lead_matrix.png",
+        "results/figures/full/02_lead_matrix.pdf"
+      ],
+      "caption": "Saved 12 by 9 ideal diagnostic lead matrix. Chest leads use minus one third of each limb node as the Wilson central terminal reference. RL and acquisition-electronics effects are excluded; A is sampling-rate independent.",
+      "source_paths": [
+        "results/metrics/full/noise_examples.npz"
+      ]
+    },
+    {
+      "family": "unit_electrode_propagation",
+      "files": [
+        "results/figures/full/03_unit_electrode_propagation.png",
+        "results/figures/full/03_unit_electrode_propagation.pdf"
+      ],
+      "caption": "Deterministic propagation of each of the nine unit electrode vectors through the saved A matrix, without SNR rescaling. Values are signed lead responses per unit electrode amplitude, not estimated model sensitivity.",
+      "source_paths": [
+        "results/metrics/full/noise_examples.npz"
+      ]
+    },
+    {
+      "family": "covariance_correlation",
+      "files": [
+        "results/figures/full/04_noise_matrices.png",
+        "results/figures/full/04_noise_matrices.pdf"
+      ],
+      "caption": "Empirical noise covariance and correlation from one saved band-limited 10 dB realization, not an aggregate over ECGs. Independent finite realizations can have nonzero cross-lead sample correlations. Each row uses a common color scale across all four conditions.",
+      "source_paths": [
+        "results/metrics/full/noise_examples.npz"
+      ]
+    },
+    {
+      "family": "welch_psd",
+      "files": [
+        "results/figures/full/05_noise_psd.png",
+        "results/figures/full/05_noise_psd.pdf"
+      ],
+      "caption": "Audit-record and lead-averaged Welch PSD at 10 dB; all electrodes active. Nonpositive power bins are omitted on the logarithmic power axis. Curves show actual saved power, not a PSD-matching assumption.",
+      "source_paths": [
+        "results/tables/full/noise_psd.csv"
+      ]
+    },
+    {
+      "family": "performance_snr",
+      "files": [
+        "results/figures/full/06_performance_macro_auroc.png",
+        "results/figures/full/06_performance_macro_auroc.pdf"
+      ],
+      "caption": "Macro AUROC for each model and noise kind across all four conditions, with numeric SNR increasing left to right. Clean is a separate horizontal reference, not an artificial 100 dB observation. Points are training-seed means; error bars and clean shading show one sample SD only when multiple finite seed values exist. This is seed variability, not a patient-level confidence interval, and three seeds remain a fragile uncertainty estimate.",
+      "source_paths": [
+        "results/metrics/full/metrics.csv",
+        "results/tables/full/metrics_summary.csv"
+      ]
+    },
+    {
+      "family": "performance_snr",
+      "files": [
+        "results/figures/full/06_performance_macro_f1.png",
+        "results/figures/full/06_performance_macro_f1.pdf"
+      ],
+      "caption": "Macro F1 for each model and noise kind across all four conditions, with numeric SNR increasing left to right. Clean is a separate horizontal reference, not an artificial 100 dB observation. Points are training-seed means; error bars and clean shading show one sample SD only when multiple finite seed values exist. This is seed variability, not a patient-level confidence interval, and three seeds remain a fragile uncertainty estimate.",
+      "source_paths": [
+        "results/metrics/full/metrics.csv",
+        "results/tables/full/metrics_summary.csv"
+      ]
+    },
+    {
+      "family": "electrode_sensitivity",
+      "files": [
+        "results/figures/full/07_electrode_sensitivity.png",
+        "results/figures/full/07_electrode_sensitivity.pdf"
+      ],
+      "caption": "Clean-minus-noisy macro AUROC at fixed global 10 dB for each actually evaluated electrode. Physical propagation and per-lead RMS-matched independent controls use the same seed and clean baseline; only seed-paired observations are included. Bars are one seed SD, absent for a single seed. Positive values indicate deterioration. Unsaved electrodes are not imputed.",
+      "source_paths": [
+        "results/metrics/full/metrics.csv"
+      ]
+    },
+    {
+      "family": "paired_effect_summary",
+      "files": [
+        "results/figures/full/08_paired_effect_summary.png",
+        "results/figures/full/08_paired_effect_summary.pdf"
+      ],
+      "caption": "Macro AUROC differences between electrode-propagated and RMS-matched independent noise, separated by model, noise kind and SNR. Positive means higher AUROC under electrode propagation. Intervals are the statistics module's paired training-seed Student-t 95% intervals, not patient-bootstrap intervals. Three training seeds give fragile inferential support; one-seed intervals are omitted. Contrasts are experimental, not clinical causal effects.",
+      "source_paths": [
+        "results/metrics/full/metrics.csv",
+        "results/tables/full/paired_effects.csv"
+      ]
+    },
+    {
+      "family": "per_class_drops",
+      "files": [
+        "results/figures/full/09_per_class_drops.png",
+        "results/figures/full/09_per_class_drops.pdf"
+      ],
+      "caption": "Per-superclass AUROC decrease from each model/seed's clean result at all-electrode 10 dB noise. Means and sample SDs are computed from within-seed drops, not by subtracting unrelated summary intervals. Undefined class AUROCs are excluded without replacement. Positive values indicate deterioration.",
+      "source_paths": [
+        "results/metrics/full/metrics.csv"
+      ]
+    },
+    {
+      "family": "calibration",
+      "files": [
+        "results/figures/full/10_calibration.png",
+        "results/figures/full/10_calibration.pdf"
+      ],
+      "caption": "Descriptive reliability of saved probabilities across the five binary labels, pooled within one actual seed per model. Ten equal-width probability bins; empty bins omitted. Marker areas scale with within-curve bin counts. Labels and ECGs are dependent, so no binomial error bars are presented. This is not classwise calibration or a multi-seed uncertainty estimate. resnet: seed 17, bandpass; tcn: seed 17, bandpass.",
+      "source_paths": [
+        "results/metrics/full/metrics.csv",
+        "results/metrics/full/resnet/seed_17/clean_100_clean_all.npz",
+        "results/metrics/full/resnet/seed_17/bandpass_10_independent_all.npz",
+        "results/metrics/full/resnet/seed_17/bandpass_10_independent_rms_all.npz",
+        "results/metrics/full/resnet/seed_17/bandpass_10_electrode_all.npz",
+        "results/metrics/full/resnet/seed_17/bandpass_10_covariance_all.npz",
+        "results/metrics/full/tcn/seed_17/clean_100_clean_all.npz",
+        "results/metrics/full/tcn/seed_17/bandpass_10_independent_all.npz",
+        "results/metrics/full/tcn/seed_17/bandpass_10_independent_rms_all.npz",
+        "results/metrics/full/tcn/seed_17/bandpass_10_electrode_all.npz",
+        "results/metrics/full/tcn/seed_17/bandpass_10_covariance_all.npz"
+      ]
+    }
+  ],
+  "skipped": [],
+  "interpretation": "Experimental robustness results, not clinical deployment evidence. Seed SD is descriptive; the inference unit is stated for confidence intervals."
+}

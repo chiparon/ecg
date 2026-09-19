@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "time_utc": "2026-09-17T01:50:13.247239+00:00",
+  "legacy_prediction_hashes_unchanged": 1051,
+  "strict_prediction_files": 108,
+  "total_prediction_files": 1159,
+  "saved_prediction_record_rows": 2214592,
+  "strict_max_actual_snr_target_error_db": 1.6683839731967964e-07,
+  "strict_shift_offsets_shared_across_models_seeds_snrs": true,
+  "strict_audited_records": 38844,
+  "patient_draw_shape": [
+    2000,
+    1877
+  ],
+  "patient_draws_match_recorded_rng": true,
+  "distribution_shape": [
+    2000,
+    6240
+  ],
+  "interval_endpoint_max_error": 1.1102230246251565e-16,
+  "independent_sklearn_scalar_checks": 324,
+  "independent_sklearn_max_error": 1.850733108432756e-16,
+  "replicate_indices_checked": [
+    0,
+    997,
+    1999
+  ],
+  "strict_exact_error_maxima": {
+    "variance_max_relative_error": 2.0676327082690407e-15,
+    "rms_max_relative_error": 4.368711385679317e-16,
+    "snr_absolute_difference_db": 3.552713678800501e-15,
+    "periodogram_l1_max_lead_relative_error": 4.098514189195142e-16,
+    "periodic_baseline_band_error_relative_to_total_max": 8.129128580118185e-18,
+    "periodic_low_band_error_relative_to_total_max": 1.463924957686502e-16,
+    "periodic_middle_band_error_relative_to_total_max": 2.60540408917526e-16,
+    "periodic_high_ecg_band_error_relative_to_total_max": 6.85765417762123e-16,
+    "periodic_above_ecg_band_error_relative_to_total_max": 8.450065273711538e-18
+  },
+  "statistical_prediction_checksums": 924,
+  "covariance_summary_undefined_count": 0,
+  "source": {
+    "path": "src/supplemental_statistics.py",
+    "sha256": "c89248306ed90355c69c5dd986e2e28159fab4c58f3bfede5f0494eea0ce1f98"
+  }
+}

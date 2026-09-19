@@ -1,0 +1,185 @@
+{
+  "status": "completed",
+  "records": 25896,
+  "distinct_ecgs": 2158,
+  "scope": "full primary, all four kinds x three SNR, all-active; shared realization across six trained models",
+  "matrix": {
+    "schema": "ideal_wct_12x9_v1",
+    "lead_order": [
+      "I",
+      "II",
+      "III",
+      "aVR",
+      "aVL",
+      "aVF",
+      "V1",
+      "V2",
+      "V3",
+      "V4",
+      "V5",
+      "V6"
+    ],
+    "electrode_order": [
+      "RA",
+      "LA",
+      "LL",
+      "V1",
+      "V2",
+      "V3",
+      "V4",
+      "V5",
+      "V6"
+    ],
+    "values": [
+      [
+        -1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        -0.5,
+        -0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.5,
+        1.0,
+        -0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.5,
+        -0.5,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.3333333333333333,
+        -0.3333333333333333,
+        -0.3333333333333333,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.3333333333333333,
+        -0.3333333333333333,
+        -0.3333333333333333,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.3333333333333333,
+        -0.3333333333333333,
+        -0.3333333333333333,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.3333333333333333,
+        -0.3333333333333333,
+        -0.3333333333333333,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.3333333333333333,
+        -0.3333333333333333,
+        -0.3333333333333333,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        -0.3333333333333333,
+        -0.3333333333333333,
+        -0.3333333333333333,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "sha256": "4f852acd9c5a4f7b35a207f5078d70f842de3077d648716950a66502951bfe9d",
+    "hash_encoding": "UTF-8 JSON of schema/orders/values; sorted keys; compact separators"
+  },
+  "noise": "actual injected buffer: float64 generator at 0dB -> float32 buffer -> float32 SNR multiplier; before float32 x+n (not ideal generator covariance)",
+  "estimators": {
+    "covariance": "demeaned float64 accumulation of injected float32 samples; ddof=0",
+    "covariance_relative_frobenius": "||Ccontrol-Celectrode||F / ||Celectrode||F",
+    "correlation_mae": "mean absolute difference over all jointly defined matrix cells, including diagonal; undefined cell count saved",
+    "variance_relative_error_max": "max over leads abs(var_control-var_electrode)/var_electrode; undefined if any denominator zero",
+    "actual_snr_abs_difference_db": "absolute difference of 10log10(mean(x^2)/mean(n^2)), float64 power accumulation",
+    "welch": "fs=100, nperseg=256, noverlap=128, default periodic Hann, detrend=constant, one-sided density; noise_diagnostics",
+    "welch_relative_l1": "trapezoid(abs(PSDcontrol-PSDelectrode))/trapezoid(PSDelectrode); aggregate uses mean of 12 lead PSDs BEFORE absolute value",
+    "bands": "requested 0.5-40, baseline 0-0.5, ECG 0.5-40, high 40-50 Hz; linearly interpolate exact boundaries then trapezoid",
+    "band_error": "absolute integrated-power difference divided by reference band power AND reference total Welch power, both saved",
+    "denominators": "Reference band/total powers saved per record/lead. Exactly zero gives NaN (explicit undefined summary count); no epsilon floor. Very small positive bands remain reported and may produce large relative-band errors.",
+    "summary": "mean, sample SD(ddof=1), max over records separately per kind/SNR/metric; defined n and undefined counts explicit"
+  },
+  "limitations": "Covariance matching does not guarantee each finite-window Welch spectrum or temporal marginal distribution. Finite-window spectral mismatch is measured, not suppressed. No equivalence claim from small covariance error alone."
+}

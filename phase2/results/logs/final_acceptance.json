@@ -1,0 +1,361 @@
+{
+  "status": "passed",
+  "time_utc": "2026-09-18T20:08:01Z",
+  "objective": "第二阶段实验方案：四种训练策略对未见采集扰动的泛化",
+  "tracked_deliverables": 93,
+  "config_sha256": "980993c490b41e9793164c1d9bbfa54f728606fff281e07486e7af2fc41ddda7",
+  "matrix_sha256": "4f852acd9c5a4f7b35a207f5078d70f842de3077d648716950a66502951bfe9d",
+  "report": {
+    "path": "phase2/reports/phase2_final_report.md",
+    "bytes": 39940,
+    "sha256": "19e8660c30fcbb03f1b9655f4a2ac0d2ebf04d65d97c8014c1dd52d3eab1bcfa"
+  },
+  "readme": {
+    "path": "phase2/README.md",
+    "bytes": 12938,
+    "sha256": "71b4244c2cfe4e1a6e8549f703226b02ca8e00295f9103f320a7121c2b8e79d9"
+  },
+  "configuration_files": [
+    {
+      "path": "phase2/configs/phase2_main.yaml",
+      "bytes": 4620,
+      "sha256": "ed83bbebf04fa0fc5cfdd6a1cb0ed5546140747a45b929f99e51f0627a5ca3be"
+    },
+    {
+      "path": "phase2/configs/phase2_train_electrode_combos.json",
+      "bytes": 233,
+      "sha256": "8509dda17682bce5576570c0c37c504d96bdeef7f19875291ae4c80564dfbdda"
+    },
+    {
+      "path": "phase2/configs/phase2_test_electrode_combos.json",
+      "bytes": 303,
+      "sha256": "58e465c9dc9da673cfde80a8beaeac0e9d085b6404d377a5f93db60e8aa0dd04"
+    }
+  ],
+  "implementation_files": [
+    {
+      "path": "phase2/__init__.py",
+      "bytes": 60,
+      "sha256": "56907f2cc506af778849aece1dd7567b6085ad494e0efee5b06519b1af4f982a"
+    },
+    {
+      "path": "phase2/src/__init__.py",
+      "bytes": 73,
+      "sha256": "9810c6ab9e2c19a83cb79e5ccaf7341253a0923766b850ef5930c98eea696a56"
+    },
+    {
+      "path": "phase2/src/common.py",
+      "bytes": 17164,
+      "sha256": "f91839c42214f4ee95edde6a2805b80e8a4068aec4366a24d87dab50802fcbfb"
+    },
+    {
+      "path": "phase2/src/generate_phase2_noise.py",
+      "bytes": 27598,
+      "sha256": "66f84da60a3889960ae0c0ba5884388f5c462ec4c75f6a9337431b12dcf0c9b2"
+    },
+    {
+      "path": "phase2/src/train_phase2.py",
+      "bytes": 27026,
+      "sha256": "cce2b56b772c795282bd2fb372cbb57210b427cef1c760cc8a9fcbb992ab17a1"
+    },
+    {
+      "path": "phase2/src/evaluate_phase2.py",
+      "bytes": 32230,
+      "sha256": "0651b99af1991424b074f3af12681f72a2679b81796cd022a738fb614ce504db"
+    },
+    {
+      "path": "phase2/src/statistics_phase2.py",
+      "bytes": 42925,
+      "sha256": "eee7257c4198fc210a3f4822d1cca2719b54316c907808453c68a032475f8063"
+    },
+    {
+      "path": "phase2/src/plot_phase2.py",
+      "bytes": 58365,
+      "sha256": "8d9ffef6bfa7fc829313ea2c22ae901e151e4d6c8ff2e7682b0b318b0225a62a"
+    },
+    {
+      "path": "phase2/src/run_phase2.py",
+      "bytes": 10116,
+      "sha256": "e4339ee79d50b0f34501f4794bd9b29cbb81925ff820f1eed2f876acd444608c"
+    },
+    {
+      "path": "phase2/src/verify_phase2.py",
+      "bytes": 24179,
+      "sha256": "47deaee23ee60907f6babf0630fee10d7d6945602b0ffa3a0f6ff51156bd3f45"
+    },
+    {
+      "path": "phase2/src/report_phase2.py",
+      "bytes": 37665,
+      "sha256": "460397f4a36fedb84e6680a21c80b4dab33d1ef15c4abd43ea3ed430e4ae7b9e"
+    },
+    {
+      "path": "phase2/tests/test_statistics_phase2.py",
+      "bytes": 11243,
+      "sha256": "9cb1fcaa3b0267386532af587dac79cd0428b80a57b65df8e4839d3afb3aebfa"
+    },
+    {
+      "path": "phase2/tests/test_phase2_noise.py",
+      "bytes": 3639,
+      "sha256": "7cb67014adf02b62dc4dc55f4bfb60ce0fbd9d5436440e8ba833182e855bacd2"
+    },
+    {
+      "path": "phase2/tests/test_evaluate_phase2.py",
+      "bytes": 2326,
+      "sha256": "829b23a3fa3c5a53e695253863e8be9a67d5204d804343420dd337475b4243d5"
+    }
+  ],
+  "full_coverage": {
+    "checkpoints": 40,
+    "cases": 1711,
+    "groups": 374,
+    "prediction_rows": 68440,
+    "patient_interval_rows": 1184832,
+    "auc_metrics": [
+      "macro_auroc",
+      "auroc_NORM",
+      "auroc_MI",
+      "auroc_STTC",
+      "auroc_CD",
+      "auroc_HYP"
+    ]
+  },
+  "stage_acceptance": {
+    "pilot": {
+      "verification": {
+        "path": "phase2/results/logs/pilot/independent_verification.json",
+        "bytes": 13044,
+        "sha256": "d1cc8d3548322ed27e3f13608ea8f75464cc1eb0afcde939cbf7dfcfcfd8319a"
+      },
+      "verified_at": "2026-09-18T19:44:06.430509+00:00",
+      "training_runs": 8,
+      "prediction_verification": {
+        "prediction_hashes_checked": 944,
+        "independent_auc_ap_f1_cases": 24,
+        "max_macro_auroc_error": 0.0,
+        "max_macro_ap_error": 0.0,
+        "max_macro_f1_error": 0.0,
+        "explicit_patient_repeat_cases": 72,
+        "explicit_draw_indices": [
+          0,
+          1000,
+          1999
+        ],
+        "bootstrap_replicates": 2000,
+        "patients": 896,
+        "records": 1000,
+        "inference_replay_device": "cpu",
+        "inference_replay_checkpoints": 8,
+        "inference_replay_cases_per_checkpoint": 2,
+        "inference_replay_records_per_case": 128,
+        "inference_replay_max_probability_error": 7.450580596923828e-07
+      },
+      "figure_pairs": 18,
+      "phase1_unchanged_files": 1489
+    },
+    "full": {
+      "verification": {
+        "path": "phase2/results/logs/full/independent_verification.json",
+        "bytes": 21962,
+        "sha256": "3dab518f51b5b4c67f4d887896e1e138b01950486d14dce6c6ed00edfde06c85"
+      },
+      "verified_at": "2026-09-18T19:54:22.900627+00:00",
+      "training_runs": 40,
+      "prediction_verification": {
+        "prediction_hashes_checked": 68440,
+        "independent_auc_ap_f1_cases": 4040,
+        "max_macro_auroc_error": 1.1102230246251565e-16,
+        "max_macro_ap_error": 0.0,
+        "max_macro_f1_error": 0.0,
+        "explicit_patient_repeat_cases": 2424,
+        "explicit_draw_indices": [
+          0,
+          1000,
+          1999
+        ],
+        "bootstrap_replicates": 2000,
+        "patients": 1877,
+        "records": 2158,
+        "inference_replay_device": "cuda",
+        "inference_replay_checkpoints": 40,
+        "inference_replay_cases_per_checkpoint": 2,
+        "inference_replay_records_per_case": 128,
+        "inference_replay_max_probability_error": 0.0
+      },
+      "figure_pairs": 19,
+      "phase1_unchanged_files": 1489
+    }
+  },
+  "visual_approval": {
+    "status": "passed",
+    "full_pngs_individually_inspected": 19,
+    "pilot_pngs_individually_inspected": 18,
+    "latest_revision": "Only two heatmaps per stage changed after the previous review; all four revised images were reopened and every other PNG was confirmed byte-identical."
+  },
+  "regression_tests": {
+    "status": "passed",
+    "time_utc": "2026-09-18T19:43:20Z",
+    "command": [
+      "E:\\Eproject\\ECG\\phase1_ecg_robustness\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "phase1_ecg_robustness/tests",
+      "phase2/tests",
+      "-q"
+    ],
+    "cwd": "E:\\Eproject\\ECG",
+    "returncode": 0,
+    "elapsed_seconds": 5.916161400033161,
+    "stdout": "..........................................                [100%]\n42 passed, 15 subtests passed in 4.87s\n",
+    "stderr": "",
+    "scope": "Existing phase1 and phase2 behavioral regression tests; not a substitute for actual training, inference, patient-draw reconstruction or image review."
+  },
+  "report_content_verification": {
+    "status": "passed",
+    "time_utc": "2026-09-18T20:02:00.168176+00:00",
+    "report": {
+      "path": "phase2/reports/phase2_final_report.md",
+      "bytes": 39940,
+      "sha256": "19e8660c30fcbb03f1b9655f4a2ac0d2ebf04d65d97c8014c1dd52d3eab1bcfa"
+    },
+    "report_manifest": {
+      "path": "phase2/results/logs/full/report_manifest.json",
+      "bytes": 2781,
+      "sha256": "10537bd7ff9eb88d1a92ce2ed87c6d3692770ae2591bd266cf8c82bee1c4d7a3"
+    },
+    "tables_checked": 17,
+    "rounded_numeric_cells_checked": 1354,
+    "report_summary_rows_matched_to_original_source": 1664,
+    "secondary_nstdb_mechanism_contrasts_independently_recomputed": 64,
+    "local_links_resolved": 42,
+    "full_figures_linked": 19,
+    "scope": "Report/source/export hashes; published numeric tables matched to source values at stated rounding precision; 64 secondary/NSTDB/mechanism paired contrasts recomputed from individual training seeds; descriptive answer counts and local document links. This does not extend the separate inference/bootstrap audit scope."
+  },
+  "evidence_index": [
+    {
+      "path": "phase2/results/logs/preregistration.json",
+      "bytes": 19424,
+      "sha256": "e02955442bbb9c5692f85500809969a5d84d98f85f1a169959890c86b4b29d8c"
+    },
+    {
+      "path": "phase2/results/logs/run_status.json",
+      "bytes": 8648,
+      "sha256": "eb06450ea304ce2484ed0276740a42abff93d5fddd75382c3de7309e7f282106"
+    },
+    {
+      "path": "phase2/results/logs/implementation_amendments.json",
+      "bytes": 2445,
+      "sha256": "effe314bc9f11461c20cada42be3ba73c5a1d8412dc107f58a260bed4bd20323"
+    },
+    {
+      "path": "phase2/results/logs/phase1_preservation.json",
+      "bytes": 338430,
+      "sha256": "ae4f2f9c9fdabf2dfbc5cbcb26c4a7b6e3d1542b6c4066bf86570b6bb16db1f7"
+    },
+    {
+      "path": "phase2/results/logs/phase1_preservation_verified.json",
+      "bytes": 253,
+      "sha256": "984e75346568240386893b2fa2698614e5805d946a41f4bdb7e8d680152a2229"
+    },
+    {
+      "path": "phase2/results/logs/visual_review.json",
+      "bytes": 10790,
+      "sha256": "3f619621871dee322ce262caca295d1df81f6ab0a4a0f5af72bca794af2ce2fd"
+    },
+    {
+      "path": "phase2/results/logs/regression_verification.json",
+      "bytes": 638,
+      "sha256": "adec20be65b00f6e6c43a9fafd7018f04b52809276fad5e5f5068b3cbf530c42"
+    },
+    {
+      "path": "phase2/results/logs/full/training_verification.json",
+      "bytes": 11320,
+      "sha256": "63d33f61d50b13c451911000dba9d0d77bfc1b2e73d4b932308a2a7630c0f0ac"
+    },
+    {
+      "path": "phase2/results/logs/full/evaluation_inventory_verification.json",
+      "bytes": 15647,
+      "sha256": "207cf4617c96bf6fac928da4f1ba58e03021662a3fd71e4e4eadb8259b7d2a13"
+    },
+    {
+      "path": "phase2/results/logs/full/point_statistics_verification.json",
+      "bytes": 2084,
+      "sha256": "f590342f210c190a4b635c5ab38da975b70eff2e2dbe097f00a809ba92fccbfc"
+    },
+    {
+      "path": "phase2/results/logs/full/report_content_verification.json",
+      "bytes": 1041,
+      "sha256": "d4a6701d35d0d4b1e783268dc27af00a3f33c90599f61d3c15397bfeecf556cd"
+    },
+    {
+      "path": "phase2/results/logs/full/report_manifest.json",
+      "bytes": 2781,
+      "sha256": "10537bd7ff9eb88d1a92ce2ed87c6d3692770ae2591bd266cf8c82bee1c4d7a3"
+    },
+    {
+      "path": "phase2/results/logs/full/evaluation_protocol.json",
+      "bytes": 38065,
+      "sha256": "155e1ba462a68da590fcce0e2631bf2501fd2557f453949bd3b7730442546cc9"
+    },
+    {
+      "path": "phase2/results/logs/full/statistics_protocol.json",
+      "bytes": 40005,
+      "sha256": "1f0a583696a895b818c1ec7e28b777f79ab00a5f8c8f10eadce73081c4c471ec"
+    },
+    {
+      "path": "phase2/results/logs/pilot/evaluation_protocol.json",
+      "bytes": 13646,
+      "sha256": "7eb7cb0bd2633f4d7d31f5dd62a1b1a83771f02a42c843b832edacee1e80eabc"
+    },
+    {
+      "path": "phase2/results/logs/pilot/statistics_protocol.json",
+      "bytes": 17112,
+      "sha256": "5b616e5d19c1741d6be74025c6936f8a9e943cf79f787f53f9eba3764bfbc92d"
+    },
+    {
+      "path": "phase2/results/figures/full/figure_manifest.json",
+      "bytes": 58974,
+      "sha256": "3ff3c57cba3f9db5ab5fa7a6c682eb0d95a0c2dbab80b937a03f77ebdb84df39"
+    },
+    {
+      "path": "phase2/results/figures/pilot/figure_manifest.json",
+      "bytes": 48140,
+      "sha256": "9b19b229f6f511d615200be73187ed854f3cb2846aff210163c05452682a7cd9"
+    },
+    {
+      "path": "phase2/results/tables/full/primary_comparisons.csv",
+      "bytes": 2078,
+      "sha256": "92fdab34e658e7e260fb91f2718d623d7d57850d3f433c210d802b59d462f9ad"
+    },
+    {
+      "path": "phase2/results/logs/full/train_phase2_attempt_01.log",
+      "bytes": 2013,
+      "sha256": "e3e6f0c08fa73c16f117583657a095ba4ce30e16ce8bd963e30641847342e86e"
+    }
+  ],
+  "cleanup": {
+    "status": "passed",
+    "time_utc": "2026-09-18T20:06:24Z",
+    "removed_generated_bytecode_directories": [
+      "phase2/src/__pycache__",
+      "phase2/tests/__pycache__",
+      "phase2/__pycache__"
+    ],
+    "scope": "Only the three inspected, generated Python bytecode directories owned by phase2 were removed. No temporary verification script was created on disk. No phase2 partial/tmp experiment file was found in the cleanup inventory.",
+    "retained": "All source/configuration/tests, original and interrupted-attempt logs, checkpoints, cached scientific inputs, predictions, tables, patient draws/distributions, PNG/PDF pairs, reports and every phase1 artifact."
+  },
+  "execution_history": {
+    "full_supervised_process": "phase2-full",
+    "full_exit_code": 0,
+    "initial_supervised_process": "phase2-main",
+    "initial_exit_code": 58,
+    "initial_cause": "Unknown; no Python traceback. Original attempt log retained.",
+    "recovery": "The incomplete first clean-only/ResNet/seed17 run was restarted from the registered initialization for all 25 epochs; all 40 accepted full runs completed their fixed budgets."
+  },
+  "scope_limits": [
+    "Patient intervals are conditional on fixed checkpoints and fixed test noise; they are not joint training/patient uncertainty.",
+    "Independent per-case sklearn metric recomputation covers all 4040 clean/primary checkpoint-case pairs, not all 68440 prediction cases; all 68440 prediction file hashes were checked.",
+    "Checkpoint inference replay covers all 40 full checkpoints, clean plus one primary case, 128 records per case; full replay maximum probability error was zero.",
+    "PNG files were visually inspected; PDF headers and figure-source hashes were checked, without claiming separate visual inspection of PDF pages.",
+    "NSTDB is exploratory and source-domain confounded. No clinical clean-cost acceptability margin was preregistered. Optional 75-percent mixed and noisy-validation analyses were not executed."
+  ]
+}

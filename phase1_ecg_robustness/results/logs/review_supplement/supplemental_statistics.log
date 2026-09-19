@@ -1,0 +1,3 @@
+
+COMMAND: E:\Eproject\ECG\phase1_ecg_robustness\.venv\Scripts\python.exe -u -m src.supplemental_statistics --config configs/phase1_supplement.yaml
+Completed supplemental statistics: E:\Eproject\ECG\phase1_ecg_robustness\results\tables\review_supplement

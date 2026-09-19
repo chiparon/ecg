@@ -1,0 +1,80 @@
+{
+  "status": "passed",
+  "checked_at": "2026-09-19T09:26:21.925Z",
+  "config_sha256": "f3f190e9a26bc96544f393a62673ff518c543018da23acdb50aed9409c224469",
+  "report": {
+    "path": "methodology_supplement/results/reports/full/minimal_five_report.html",
+    "sha256": "4db06e2635cf5d38ce95caecf088f6ce70f6da5c5e09aa11ac688010a466efaa"
+  },
+  "figures_manifest": {
+    "path": "methodology_supplement/results/figures/full/manifest.json",
+    "sha256": "f96887de83924f43dfcd55fc8261de0624569d7f083fdcef947dbad345d36f15"
+  },
+  "desktop": {
+    "images": 15,
+    "loadedImages": 15,
+    "numericCells": 600,
+    "horizontalOverflow": false,
+    "title": "ECG 方法学与信号处理补充实验｜最小五项包",
+    "pageErrors": [],
+    "consoleErrors": [],
+    "failedResponses": []
+  },
+  "narrow": {
+    "width": 780,
+    "height": 1000,
+    "horizontalOverflow": false,
+    "loadedImages": 15
+  },
+  "responsive": {
+    "width": 700,
+    "height": 1000,
+    "horizontalOverflow": false,
+    "loadedImages": 15,
+    "numericCells": 600
+  },
+  "native_pareto_navigation": {
+    "hash": "#pareto-section",
+    "scrollY": 15052,
+    "sectionTop": -0.28125
+  },
+  "native_snr_disclosure": {
+    "hash": "#snr",
+    "expanded": true,
+    "rows": 40
+  },
+  "interaction_method": "Actual Chromium native mouse input; page lifecycle activation was needed after selector-based click helpers timed out. No DOM-programmatic click substituted for the interaction.",
+  "figures_visually_inspected": [
+    "matrix_heatmaps",
+    "matrix_bipartite",
+    "matrix_unit_propagation",
+    "matrix_singular_values",
+    "matrix_structure_effects",
+    "matrix_correlation_drop",
+    "snr_macro_auroc",
+    "snr_macro_f1",
+    "snr_ece",
+    "band_drop_heatmap",
+    "band_structure_effects",
+    "band_power_effect",
+    "evaluation_training_plane",
+    "evaluation_training_nstdb",
+    "pareto"
+  ],
+  "visual_findings": "Final figure labels, legends, signed axes, uncertainty captions and report layouts inspected. Pareto direction is upper-left. NSTDB confounded sensitivity is separate. No document-level horizontal overflow at the three exercised widths; all 15 report images loaded.",
+  "screenshots": [
+    "methodology_supplement/results/reports/full/report_desktop.png",
+    "methodology_supplement/results/reports/full/report_pareto.png",
+    "methodology_supplement/results/reports/full/report_narrow.png",
+    "methodology_supplement/results/reports/full/report_responsive.png",
+    "methodology_supplement/results/reports/full/figure_contact_sheet.png",
+    "methodology_supplement/results/reports/full/report_offline.png"
+  ],
+  "offline": {
+    "protocol": "file:",
+    "title": "ECG 方法学与信号处理补充实验｜最小五项包",
+    "loadedImages": 15,
+    "numericCells": 600,
+    "horizontalOverflow": false
+  }
+}

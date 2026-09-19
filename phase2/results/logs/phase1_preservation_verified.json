@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "unchanged_files": 1489,
+  "baseline_manifest": {
+    "path": "phase2/results/logs/phase1_preservation.json",
+    "bytes": 338430,
+    "sha256": "ae4f2f9c9fdabf2dfbc5cbcb26c4a7b6e3d1542b6c4066bf86570b6bb16db1f7"
+  }
+}

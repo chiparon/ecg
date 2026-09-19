@@ -1,0 +1,6 @@
+
+COMMAND: E:\Eproject\ECG\phase1_ecg_robustness\.venv\Scripts\python.exe -u -m src.statistics --config configs/phase1_pilot.yaml
+Statistics: 39 metric rows, 126 paired effects -> E:\Eproject\ECG\phase1_ecg_robustness\results\tables\pilot
+
+COMMAND: E:\Eproject\ECG\phase1_ecg_robustness\.venv\Scripts\python.exe -u -m src.statistics --config configs/phase1_pilot.yaml
+Statistics: 39 metric rows, 126 paired effects -> E:\Eproject\ECG\phase1_ecg_robustness\results\tables\pilot

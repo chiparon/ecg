@@ -1,0 +1,53 @@
+{
+  "empty_labels": [
+    {
+      "ecg_id": 17,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 18,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 20,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 23,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 34,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 144,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 190,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 382,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 385,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 449,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 498,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 858,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    }
+  ],
+  "unavailable": []
+}

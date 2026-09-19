@@ -1,0 +1,9 @@
+
+COMMAND: E:\Eproject\ECG\phase1_ecg_robustness\.venv\Scripts\python.exe -u -m src.statistics --config configs/phase1_smoke.yaml
+Statistics: 16 metric rows, 144 paired effects -> E:\Eproject\ECG\phase1_ecg_robustness\results\tables\smoke
+
+COMMAND: E:\Eproject\ECG\phase1_ecg_robustness\.venv\Scripts\python.exe -u -m src.statistics --config configs/phase1_smoke.yaml
+Statistics: 16 metric rows, 144 paired effects -> E:\Eproject\ECG\phase1_ecg_robustness\results\tables\smoke
+
+COMMAND: E:\Eproject\ECG\phase1_ecg_robustness\.venv\Scripts\python.exe -u -m src.statistics --config configs/phase1_smoke.yaml
+Statistics: 16 metric rows, 144 paired effects -> E:\Eproject\ECG\phase1_ecg_robustness\results\tables\smoke

@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "time_utc": "2026-09-18T20:02:00.168176+00:00",
+  "report": {
+    "path": "phase2/reports/phase2_final_report.md",
+    "bytes": 39940,
+    "sha256": "19e8660c30fcbb03f1b9655f4a2ac0d2ebf04d65d97c8014c1dd52d3eab1bcfa"
+  },
+  "report_manifest": {
+    "path": "phase2/results/logs/full/report_manifest.json",
+    "bytes": 2781,
+    "sha256": "10537bd7ff9eb88d1a92ce2ed87c6d3692770ae2591bd266cf8c82bee1c4d7a3"
+  },
+  "tables_checked": 17,
+  "rounded_numeric_cells_checked": 1354,
+  "report_summary_rows_matched_to_original_source": 1664,
+  "secondary_nstdb_mechanism_contrasts_independently_recomputed": 64,
+  "local_links_resolved": 42,
+  "full_figures_linked": 19,
+  "scope": "Report/source/export hashes; published numeric tables matched to source values at stated rounding precision; 64 secondary/NSTDB/mechanism paired contrasts recomputed from individual training seeds; descriptive answer counts and local document links. This does not extend the separate inference/bootstrap audit scope."
+}

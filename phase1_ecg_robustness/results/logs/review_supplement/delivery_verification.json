@@ -1,0 +1,1313 @@
+{
+  "status": "passed",
+  "time_utc": "2026-09-17T02:06:29Z",
+  "matrix_sha256": "4f852acd9c5a4f7b35a207f5078d70f842de3077d648716950a66502951bfe9d",
+  "numerics": {
+    "status": "passed",
+    "time_utc": "2026-09-17T01:50:13.247239+00:00",
+    "legacy_prediction_hashes_unchanged": 1051,
+    "strict_prediction_files": 108,
+    "total_prediction_files": 1159,
+    "saved_prediction_record_rows": 2214592,
+    "strict_max_actual_snr_target_error_db": 1.6683839731967964e-07,
+    "strict_shift_offsets_shared_across_models_seeds_snrs": true,
+    "strict_audited_records": 38844,
+    "patient_draw_shape": [
+      2000,
+      1877
+    ],
+    "patient_draws_match_recorded_rng": true,
+    "distribution_shape": [
+      2000,
+      6240
+    ],
+    "interval_endpoint_max_error": 1.1102230246251565e-16,
+    "independent_sklearn_scalar_checks": 324,
+    "independent_sklearn_max_error": 1.850733108432756e-16,
+    "replicate_indices_checked": [
+      0,
+      997,
+      1999
+    ],
+    "strict_exact_error_maxima": {
+      "variance_max_relative_error": 2.0676327082690407e-15,
+      "rms_max_relative_error": 4.368711385679317e-16,
+      "snr_absolute_difference_db": 3.552713678800501e-15,
+      "periodogram_l1_max_lead_relative_error": 4.098514189195142e-16,
+      "periodic_baseline_band_error_relative_to_total_max": 8.129128580118185e-18,
+      "periodic_low_band_error_relative_to_total_max": 1.463924957686502e-16,
+      "periodic_middle_band_error_relative_to_total_max": 2.60540408917526e-16,
+      "periodic_high_ecg_band_error_relative_to_total_max": 6.85765417762123e-16,
+      "periodic_above_ecg_band_error_relative_to_total_max": 8.450065273711538e-18
+    },
+    "statistical_prediction_checksums": 924,
+    "covariance_summary_undefined_count": 0,
+    "source": {
+      "path": "src/supplemental_statistics.py",
+      "sha256": "c89248306ed90355c69c5dd986e2e28159fab4c58f3bfede5f0494eea0ce1f98"
+    }
+  },
+  "executed_stages": [
+    {
+      "module": "supplemental_audit",
+      "command": [
+        "E:\\Eproject\\ECG\\phase1_ecg_robustness\\.venv\\Scripts\\python.exe",
+        "-u",
+        "-m",
+        "src.supplemental_audit",
+        "--config",
+        "configs/phase1_supplement.yaml"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 553.8017134666443
+    },
+    {
+      "module": "strict_control",
+      "command": [
+        "E:\\Eproject\\ECG\\phase1_ecg_robustness\\.venv\\Scripts\\python.exe",
+        "-u",
+        "-m",
+        "src.strict_control",
+        "--config",
+        "configs/phase1_supplement.yaml"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 239.42034459114075
+    },
+    {
+      "module": "supplemental_statistics",
+      "command": [
+        "E:\\Eproject\\ECG\\phase1_ecg_robustness\\.venv\\Scripts\\python.exe",
+        "-u",
+        "-m",
+        "src.supplemental_statistics",
+        "--config",
+        "configs/phase1_supplement.yaml"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 154.48194336891174
+    }
+  ],
+  "retrospective_artifact_checks": [
+    {
+      "path": "results/tables/full/matrix_validation.json",
+      "bytes": 3077,
+      "sha256": "8d11b04a78e898ecee4f9f560fa58736ab1d108d7f4bc9fc441ccff42c0d0cf1"
+    },
+    {
+      "path": "results/tables/noise_diagnostic/matrix_validation.json",
+      "bytes": 3077,
+      "sha256": "8d11b04a78e898ecee4f9f560fa58736ab1d108d7f4bc9fc441ccff42c0d0cf1"
+    },
+    {
+      "path": "results/tables/pilot/matrix_validation.json",
+      "bytes": 3077,
+      "sha256": "8d11b04a78e898ecee4f9f560fa58736ab1d108d7f4bc9fc441ccff42c0d0cf1"
+    },
+    {
+      "path": "results/tables/smoke/matrix_validation.json",
+      "bytes": 3077,
+      "sha256": "8d11b04a78e898ecee4f9f560fa58736ab1d108d7f4bc9fc441ccff42c0d0cf1"
+    },
+    {
+      "path": "results/metrics/full/noise_examples.npz",
+      "bytes": 408875,
+      "sha256": "18057d531367ba571a4c7dedac005554b2ff91baef26242af8603b4abb7ae77e"
+    },
+    {
+      "path": "configs/phase1_full.yaml",
+      "bytes": 571,
+      "sha256": "7c0d4c0e322b0a762d64c10c255cbb33a192c813e02f57f4f78d3d588e7dea23"
+    },
+    {
+      "path": "results/metrics/noise_diagnostic/noise_examples.npz",
+      "bytes": 403393,
+      "sha256": "71532717d3f689bf8fdfc9c6cee7585c1b6fadb64b5958e264f9d72a87858dc7"
+    },
+    {
+      "path": "configs/phase1_noise_diagnostic.yaml",
+      "bytes": 391,
+      "sha256": "4f62fa90a1b5c84d3581390eec762cbff7cc44ece8fc5bb38a2a107520749da5"
+    },
+    {
+      "path": "results/metrics/pilot/noise_examples.npz",
+      "bytes": 408875,
+      "sha256": "18057d531367ba571a4c7dedac005554b2ff91baef26242af8603b4abb7ae77e"
+    },
+    {
+      "path": "configs/phase1_pilot.yaml",
+      "bytes": 507,
+      "sha256": "7a68f4c9bddabb58abe92627d4597467c3c20ea8965e1bd386f7835a22cb31b4"
+    },
+    {
+      "path": "results/metrics/smoke/noise_examples.npz",
+      "bytes": 403393,
+      "sha256": "71532717d3f689bf8fdfc9c6cee7585c1b6fadb64b5958e264f9d72a87858dc7"
+    },
+    {
+      "path": "configs/phase1_smoke.yaml",
+      "bytes": 513,
+      "sha256": "5530c36d410b63ae332fcce0dc323255d7e03c8802a60101790962a3c484333c"
+    },
+    {
+      "path": "results/figures/full/01_waveforms.png",
+      "bytes": 970511,
+      "sha256": "a26edbe1b88d3f7ec6645a3e9adc44703e940225a70a3376fe77a90b72d0bd99"
+    },
+    {
+      "path": "results/figures/full/01_waveforms.pdf",
+      "bytes": 196707,
+      "sha256": "92307845597590e90463a0f002d523dc5e86522a1a38a7e95b845947b4928bd6"
+    },
+    {
+      "path": "results/figures/full/02_lead_matrix.png",
+      "bytes": 73733,
+      "sha256": "d2f35f0c7a8b278bcd7875afc49186df57f78802f47aed504b413e25ef21d692"
+    },
+    {
+      "path": "results/figures/full/02_lead_matrix.pdf",
+      "bytes": 19580,
+      "sha256": "ec1c7fe8f17470779fd8e1e137fa48aee58f026501afaa6b3080cf77a1737b07"
+    },
+    {
+      "path": "results/figures/full/03_unit_electrode_propagation.png",
+      "bytes": 79526,
+      "sha256": "7c01126fe8b21b56e2c6b066a6d248df8d639f3e668d64e50eaaf5dda744f990"
+    },
+    {
+      "path": "results/figures/full/03_unit_electrode_propagation.pdf",
+      "bytes": 18805,
+      "sha256": "5b36177be833617273e98006caf70b17a084e96fd692f3150320979002eac84f"
+    },
+    {
+      "path": "results/figures/full/04_noise_matrices.png",
+      "bytes": 139436,
+      "sha256": "8981bab6aacb0beca7df10ed253b6e48e81ccc00b36ad7097c31f4eccf8e9401"
+    },
+    {
+      "path": "results/figures/full/04_noise_matrices.pdf",
+      "bytes": 52753,
+      "sha256": "d6efb6f79210735226516384b69f837f5b509162e456d5a16741947b56dcd446"
+    },
+    {
+      "path": "results/figures/full/05_noise_psd.png",
+      "bytes": 197808,
+      "sha256": "f1a99f63b3ca170a9bdc92dc6b4ebb43560510829823ed334b24e4e66f8f6e52"
+    },
+    {
+      "path": "results/figures/full/05_noise_psd.pdf",
+      "bytes": 33376,
+      "sha256": "93c09b00cce2ea558d5107a64830239d0134aaa829934d0bf8fae8eaeded16ba"
+    },
+    {
+      "path": "results/tables/full/noise_psd.csv",
+      "bytes": 101202,
+      "sha256": "357197072515b38cc048dc45e71ee9ae359cffd8a6f08008cb579a240337961a"
+    },
+    {
+      "path": "results/figures/full/06_performance_macro_auroc.png",
+      "bytes": 314498,
+      "sha256": "8c4d8017d0133d0f3ceaa66c2d66dc088c83d9963fbe84a70e337b658aeec747"
+    },
+    {
+      "path": "results/figures/full/06_performance_macro_auroc.pdf",
+      "bytes": 32600,
+      "sha256": "c39c7cae698158fe17aa95753559d7604d4bb3126049bc537eccfc5739d0ebb3"
+    },
+    {
+      "path": "results/metrics/full/metrics.csv",
+      "bytes": 287263,
+      "sha256": "f382aa7dedfa7f18f619c0bd281e304590b0f1356bde1b49ce2dd8ada133150c"
+    },
+    {
+      "path": "results/tables/full/metrics_summary.csv",
+      "bytes": 514153,
+      "sha256": "7e7161446bc5066884d8f040f80d1ea3cf6a899d5ea55a9fbe19874225a95205"
+    },
+    {
+      "path": "results/figures/full/06_performance_macro_f1.png",
+      "bytes": 319151,
+      "sha256": "07284fff3141da8b462313d884536dd905c81386249f8cefc75916ce684ac9ce"
+    },
+    {
+      "path": "results/figures/full/06_performance_macro_f1.pdf",
+      "bytes": 32184,
+      "sha256": "872b298db8803aaf139e58cdaf7e46529b882cdcfcc555af7875370ee448e5f8"
+    },
+    {
+      "path": "results/figures/full/07_electrode_sensitivity.png",
+      "bytes": 114524,
+      "sha256": "302d9b1c5994e24d777993fd5d9caef81794f0a32f3f8210f744314c90a46a6f"
+    },
+    {
+      "path": "results/figures/full/07_electrode_sensitivity.pdf",
+      "bytes": 19677,
+      "sha256": "46f83a810bc2d0620d44a3edcea59f86099eee624b4f259749503a5d9749346b"
+    },
+    {
+      "path": "results/figures/full/08_paired_effect_summary.png",
+      "bytes": 119302,
+      "sha256": "3fb9c6dd1bd3875b889b64306ca706083a4c99917fb3224532dd0ba4be5dd038"
+    },
+    {
+      "path": "results/figures/full/08_paired_effect_summary.pdf",
+      "bytes": 19514,
+      "sha256": "9a50a8a846d0a3d6c6c18f83c895bb14d6d0fa77152ebfad105f405a2b40126c"
+    },
+    {
+      "path": "results/tables/full/paired_effects.csv",
+      "bytes": 406024,
+      "sha256": "3f4db588673204aca10361413d04dd6cc2555ce8550cdcab4d269403849dfa77"
+    },
+    {
+      "path": "results/figures/full/09_per_class_drops.png",
+      "bytes": 250803,
+      "sha256": "b3e715d1f9ae05c3578de8084bdb10562f8e1bd039735d82745ce90a92b14904"
+    },
+    {
+      "path": "results/figures/full/09_per_class_drops.pdf",
+      "bytes": 36346,
+      "sha256": "5f1865b893397fec9c83aac0dcee7c80844e9b4ad26048847b5acf2875cad5d5"
+    },
+    {
+      "path": "results/figures/full/10_calibration.png",
+      "bytes": 151835,
+      "sha256": "b710f61391c968f565e9b94c56c319f437938ce58071713135a8a7e9b53ed8fd"
+    },
+    {
+      "path": "results/figures/full/10_calibration.pdf",
+      "bytes": 32637,
+      "sha256": "57d66efe2cc6565bff5d92a97e7513e24cd50cef2b180489c90779de1487a825"
+    },
+    {
+      "path": "results/metrics/full/resnet/seed_17/clean_100_clean_all.npz",
+      "bytes": 72939,
+      "sha256": "2c408c0870f4cce08c172deb1197cc05636dabcf55a05c9ca8acae92bf8777b2"
+    },
+    {
+      "path": "results/metrics/full/resnet/seed_17/bandpass_10_independent_all.npz",
+      "bytes": 481768,
+      "sha256": "07f70dd36b29e6634850211c505b123d6e58c87fd3875884eb87715be1029206"
+    },
+    {
+      "path": "results/metrics/full/resnet/seed_17/bandpass_10_independent_rms_all.npz",
+      "bytes": 482170,
+      "sha256": "2563401ee8a40870ab2c6cfa14034616957df92dd8f11961ae6bdb296b33a1ea"
+    },
+    {
+      "path": "results/metrics/full/resnet/seed_17/bandpass_10_electrode_all.npz",
+      "bytes": 482143,
+      "sha256": "f2990c461d5e1db4026198275abcb50ebcb9f81ba9b499816f0106c2fe8ba51c"
+    },
+    {
+      "path": "results/metrics/full/resnet/seed_17/bandpass_10_covariance_all.npz",
+      "bytes": 482107,
+      "sha256": "31f87339cbda8fd14a5a431c679072f10b34519ef1cd2d97dc65c0088e0cf132"
+    },
+    {
+      "path": "results/metrics/full/tcn/seed_17/clean_100_clean_all.npz",
+      "bytes": 72908,
+      "sha256": "c54f7464909e7d0e3ce262047df4116172f0ac6e31d31d12df68090a6f29d132"
+    },
+    {
+      "path": "results/metrics/full/tcn/seed_17/bandpass_10_independent_all.npz",
+      "bytes": 481892,
+      "sha256": "03365e04cdf9eda17edd46332945f972d9a6756ec2bb0d4c6892da6bf6f82565"
+    },
+    {
+      "path": "results/metrics/full/tcn/seed_17/bandpass_10_independent_rms_all.npz",
+      "bytes": 482268,
+      "sha256": "b73a9626ad2fc192c51d16e1f49b3e3e08272c64d99351e1e94e0b02d9ed8ab5"
+    },
+    {
+      "path": "results/metrics/full/tcn/seed_17/bandpass_10_electrode_all.npz",
+      "bytes": 482294,
+      "sha256": "1099deb47cc41ce1fbb39c79fbb547093ac621559566e711e9785dc3e5bf8a63"
+    },
+    {
+      "path": "results/metrics/full/tcn/seed_17/bandpass_10_covariance_all.npz",
+      "bytes": 482289,
+      "sha256": "16108889265c64f2210182c6d91fb1816d9d7d039ce776c63253f1fe488dfd94"
+    },
+    {
+      "path": "results/figures/full/figure_manifest.json",
+      "bytes": 8165,
+      "sha256": "b8a6e8cf14a4f3f445148e3fa5909a81b091b9bc282292af4522f34e076f0870"
+    },
+    {
+      "path": "results/figures/pilot/01_waveforms.png",
+      "bytes": 970511,
+      "sha256": "a26edbe1b88d3f7ec6645a3e9adc44703e940225a70a3376fe77a90b72d0bd99"
+    },
+    {
+      "path": "results/figures/pilot/02_lead_matrix.png",
+      "bytes": 73733,
+      "sha256": "d2f35f0c7a8b278bcd7875afc49186df57f78802f47aed504b413e25ef21d692"
+    },
+    {
+      "path": "results/figures/pilot/03_unit_electrode_propagation.png",
+      "bytes": 79526,
+      "sha256": "7c01126fe8b21b56e2c6b066a6d248df8d639f3e668d64e50eaaf5dda744f990"
+    },
+    {
+      "path": "results/figures/pilot/04_noise_matrices.png",
+      "bytes": 139436,
+      "sha256": "8981bab6aacb0beca7df10ed253b6e48e81ccc00b36ad7097c31f4eccf8e9401"
+    },
+    {
+      "path": "results/figures/pilot/05_noise_psd.png",
+      "bytes": 72968,
+      "sha256": "aaa88935acaf6b86973b9b96845a55b208517887360c8ae84c18c619fedb7425"
+    },
+    {
+      "path": "results/tables/pilot/noise_psd.csv",
+      "bytes": 27716,
+      "sha256": "3100c4073053dec4e3de11983370016aad28a1a1b61cd46d39afa72473cded78"
+    },
+    {
+      "path": "results/figures/pilot/06_performance_macro_auroc.png",
+      "bytes": 90333,
+      "sha256": "08b27b72e152f5d1fb231b4b6df0e8fef8a53a01347e0ba3b25c15796f939255"
+    },
+    {
+      "path": "results/metrics/pilot/metrics.csv",
+      "bytes": 24692,
+      "sha256": "32bc716bc78d33270e00a9c5549cbfa5992a32b78eb53335a1848c6554680086"
+    },
+    {
+      "path": "results/tables/pilot/metrics_summary.csv",
+      "bytes": 45229,
+      "sha256": "b501dadf8603903fc8649ef0a71e604b3ca8a4fda6b83b0a285de0fc479c33af"
+    },
+    {
+      "path": "results/figures/pilot/06_performance_macro_f1.png",
+      "bytes": 84885,
+      "sha256": "f1f00d8027395348e6c071f61261903f7474a95f4172917ac9d2b99b899b2f70"
+    },
+    {
+      "path": "results/figures/pilot/08_paired_effect_summary.png",
+      "bytes": 58556,
+      "sha256": "c79f38315accc556e848df1397c093096880970706fb38371504f7b7cabda6f5"
+    },
+    {
+      "path": "results/tables/pilot/paired_effects.csv",
+      "bytes": 39258,
+      "sha256": "c7ff8cddf1dbf88582011e14e5cdd382cfe095abe92656645a488ae14dc334a7"
+    },
+    {
+      "path": "results/figures/pilot/09_per_class_drops.png",
+      "bytes": 76967,
+      "sha256": "cfa7d86be36f9d3a41271c8f2be5ced1164fd0e8b292aef624b8a33769929685"
+    },
+    {
+      "path": "results/figures/pilot/10_calibration.png",
+      "bytes": 113301,
+      "sha256": "c0e6045530e5b7ef84c0bf12b4c77abb5688e3c5dbda604006ba28b10f7f2bfd"
+    },
+    {
+      "path": "results/metrics/pilot/resnet/seed_17/clean_100_clean_all.npz",
+      "bytes": 34801,
+      "sha256": "b29c42be6b3dfb8cc84bc417991d3bde33dd5b040cdffd2e12f66dd06ca97077"
+    },
+    {
+      "path": "results/metrics/pilot/resnet/seed_17/bandpass_10_independent_all.npz",
+      "bytes": 224731,
+      "sha256": "d1751d60fd5f8f35d514e10fcd8fe5d86117d36fd6aa78a965fd0b425b0a8c4c"
+    },
+    {
+      "path": "results/metrics/pilot/resnet/seed_17/bandpass_10_independent_rms_all.npz",
+      "bytes": 224905,
+      "sha256": "8eee1c4212d7e008c5977769d1fed8a5ea639ce4233c6919b8fb101d0cde37a3"
+    },
+    {
+      "path": "results/metrics/pilot/resnet/seed_17/bandpass_10_electrode_all.npz",
+      "bytes": 224922,
+      "sha256": "268983936db934800771440f4acb573867731f15f7c7e45b7e4cc6d298d7627b"
+    },
+    {
+      "path": "results/metrics/pilot/resnet/seed_17/bandpass_10_covariance_all.npz",
+      "bytes": 224959,
+      "sha256": "504819875d479ce908dfaaa640e29d5cfae13111ab6982b3270ecae85726d8dd"
+    },
+    {
+      "path": "results/figures/pilot/figure_manifest.json",
+      "bytes": 6729,
+      "sha256": "5643f0bebc8d0b4ad46e0f2f71f0f215cb45b6f1e12cdf892d3eec23c2eb4e93"
+    },
+    {
+      "path": "results/figures/smoke/01_waveforms.png",
+      "bytes": 920214,
+      "sha256": "1a95e2245ea57d39e17711b7d363bac5971b50b20c4243d4970c566af4cdd272"
+    },
+    {
+      "path": "results/figures/smoke/02_lead_matrix.png",
+      "bytes": 73733,
+      "sha256": "d2f35f0c7a8b278bcd7875afc49186df57f78802f47aed504b413e25ef21d692"
+    },
+    {
+      "path": "results/figures/smoke/03_unit_electrode_propagation.png",
+      "bytes": 79526,
+      "sha256": "7c01126fe8b21b56e2c6b066a6d248df8d639f3e668d64e50eaaf5dda744f990"
+    },
+    {
+      "path": "results/figures/smoke/04_noise_matrices.png",
+      "bytes": 139287,
+      "sha256": "a14b6bec65e8071f83d6d33ffa811ccd762578cc82237ac3c83e64887b64a984"
+    },
+    {
+      "path": "results/figures/smoke/05_noise_psd.png",
+      "bytes": 74065,
+      "sha256": "58a922f4f384ed0da34303a02cae4b0994d34a2ca59fd2a5f5e35f7cb4b67cfc"
+    },
+    {
+      "path": "results/tables/smoke/noise_psd.csv",
+      "bytes": 27762,
+      "sha256": "ff6bc91cb4c813d90fc43aee2ae26d720b7513ff29e23f7e0a0bad986036c651"
+    },
+    {
+      "path": "results/figures/smoke/06_performance_macro_auroc.png",
+      "bytes": 95534,
+      "sha256": "069153b79874a53e66a6d4226f4a7dec68a7a1c24d06657f62f9b56a9f5e15ff"
+    },
+    {
+      "path": "results/metrics/smoke/metrics.csv",
+      "bytes": 10165,
+      "sha256": "197fe490d4e5d91db6e42ffe9948d1b977d2f9dc7b3abf6c0ec684e82216ea75"
+    },
+    {
+      "path": "results/tables/smoke/metrics_summary.csv",
+      "bytes": 30335,
+      "sha256": "7900d09121a7653006f048c0ec89d65cacc6283ba662cae424b1addc9c35941d"
+    },
+    {
+      "path": "results/figures/smoke/06_performance_macro_f1.png",
+      "bytes": 94323,
+      "sha256": "07cfcbf1ad9a010951b48deaf1f232f8106284c8bf4b16858ee8e2067b487b91"
+    },
+    {
+      "path": "results/figures/smoke/07_electrode_sensitivity.png",
+      "bytes": 62358,
+      "sha256": "0a04f5bcdceb7f9ccb0e883680630299d236c7ac14b01dc0f529c7b2d88151df"
+    },
+    {
+      "path": "results/figures/smoke/08_paired_effect_summary.png",
+      "bytes": 57423,
+      "sha256": "e3c02d495581c6e47c7d82eab69727ae78ff7cba01cfd26341564b552a641db8"
+    },
+    {
+      "path": "results/tables/smoke/paired_effects.csv",
+      "bytes": 39909,
+      "sha256": "920f9e0fa707ad1fa412b15312f08057c3911ac0bea167235ca2f7a155e1d96a"
+    },
+    {
+      "path": "results/figures/smoke/09_per_class_drops.png",
+      "bytes": 74174,
+      "sha256": "660ddf266166261b8dc3811b33038d8a5c65dbbb3b7a466c690e56c6c1490d91"
+    },
+    {
+      "path": "results/figures/smoke/10_calibration.png",
+      "bytes": 120256,
+      "sha256": "b278b08aaa5749928a00e2c5a2c92909ddecbec8858aaa74159934adb42897d3"
+    },
+    {
+      "path": "results/metrics/smoke/resnet/seed_17/clean_100_clean_all.npz",
+      "bytes": 4902,
+      "sha256": "847774fbf0222225d58494da050505f9c21d33161502559f373430065c2b61bd"
+    },
+    {
+      "path": "results/metrics/smoke/resnet/seed_17/bandpass_10_independent_all.npz",
+      "bytes": 24758,
+      "sha256": "6f037d4f31a1726c8c30ecefce794212d146e457b3c04d55a41d2a281cc9cfd6"
+    },
+    {
+      "path": "results/metrics/smoke/resnet/seed_17/bandpass_10_independent_rms_all.npz",
+      "bytes": 24758,
+      "sha256": "7a7abb90e5ef1e5d25e11e32733b9f6de862a76f971d2315abb904a3e962a15a"
+    },
+    {
+      "path": "results/metrics/smoke/resnet/seed_17/bandpass_10_electrode_all.npz",
+      "bytes": 24758,
+      "sha256": "307ae81db7d977bfa35d0ade4321051a9609d0af2dc4aaf92cbd26f44e2fce7b"
+    },
+    {
+      "path": "results/metrics/smoke/resnet/seed_17/bandpass_10_covariance_all.npz",
+      "bytes": 24760,
+      "sha256": "9fdb768ffeb96cddeec0519cabb7b20f62b192c8584bf0db6bbe3acd256dac75"
+    },
+    {
+      "path": "results/figures/smoke/figure_manifest.json",
+      "bytes": 7164,
+      "sha256": "c7f74d20cb4b764f82b4113064796f5c7cecb48d6a53f497d13b769b51bb9640"
+    },
+    {
+      "path": "src/audit_noise.py",
+      "bytes": 12231,
+      "sha256": "2ad33e67a8c4ed4952eaba4318dea26b22405ecffcac6e6ba11bdd9816a270eb"
+    },
+    {
+      "path": "src/covariance_matching.py",
+      "bytes": 7725,
+      "sha256": "17e2cdcd976c53558937c784774a13dcd1a2f60924c4b03b4345859cfcba4a6b"
+    },
+    {
+      "path": "src/datasets.py",
+      "bytes": 4684,
+      "sha256": "a3f085d44652da86c5c4dfbf088d14c901102d05e75a61b7920b7025786ae4f2"
+    },
+    {
+      "path": "src/download_ptbxl.py",
+      "bytes": 18959,
+      "sha256": "c046c78ddcce5c7ba3c352bb9b1006d77b5d9f81e74cbf58a74e345a66a8a14a"
+    },
+    {
+      "path": "src/environment.py",
+      "bytes": 2428,
+      "sha256": "cc3ff05f60828412ecba1a61b415eb2450edbad65ed4ac9bcbdd721e75bc12ee"
+    },
+    {
+      "path": "src/evaluate.py",
+      "bytes": 12337,
+      "sha256": "5271e3803393188f9c6c643e3d24ce6aeacdf08ead5cad98eec3e840d7b142d9"
+    },
+    {
+      "path": "src/lead_matrix.py",
+      "bytes": 4192,
+      "sha256": "e7afb8bc617642180175b82f69ac797f74d259246ecac86e4f19eb5025b455b1"
+    },
+    {
+      "path": "src/models.py",
+      "bytes": 5863,
+      "sha256": "53f5858562f4535cebca888776885846af9c442cf3e709a47eecd91407f40ed7"
+    },
+    {
+      "path": "src/noise_generators.py",
+      "bytes": 16113,
+      "sha256": "6439e7eb220d9f1776e859b103570ea7407bec33c0da60aa3d70a95e9f7ef108"
+    },
+    {
+      "path": "src/plotting.py",
+      "bytes": 36423,
+      "sha256": "c500156414912edaf68794f12c9845dabcb713895b15520d8ddde6210e775a5a"
+    },
+    {
+      "path": "src/prepare_ptbxl.py",
+      "bytes": 14347,
+      "sha256": "a53971cfc2177151d81c6b41acf77ea2b11bec76aaa8eac827196430f2ad3f57"
+    },
+    {
+      "path": "src/run_experiment.py",
+      "bytes": 2827,
+      "sha256": "382d63292025dc78e98156a3c66ed0d6d6e1696a825913b6cf6b870588c2ca19"
+    },
+    {
+      "path": "src/run_supplement.py",
+      "bytes": 2502,
+      "sha256": "0ae298ec672b2200af6428cf4fcae813717f8b3def443ad363260bb9e73311f9"
+    },
+    {
+      "path": "src/statistics.py",
+      "bytes": 35165,
+      "sha256": "38468d59c7dc383935890e830e9fe6659daefc8a14efb1b7cf76a018e6a2466a"
+    },
+    {
+      "path": "src/strict_control.py",
+      "bytes": 28717,
+      "sha256": "191193239f70869f8c08be5b3a7e50c43b7f1bd2ae49d37767b6ad9eb8fbb789"
+    },
+    {
+      "path": "src/supplemental_audit.py",
+      "bytes": 48722,
+      "sha256": "82d65c0740e74d657f3aaabbd3d6aff528dec24d349bb28e23b375d8a4c5917b"
+    },
+    {
+      "path": "src/supplemental_statistics.py",
+      "bytes": 36942,
+      "sha256": "c89248306ed90355c69c5dd986e2e28159fab4c58f3bfede5f0494eea0ce1f98"
+    },
+    {
+      "path": "src/train.py",
+      "bytes": 23184,
+      "sha256": "b082292d91776c5b4fb6e19db922d7ef6c73f8cde64317a8b43dbfcd256272ca"
+    },
+    {
+      "path": "src/__init__.py",
+      "bytes": 74,
+      "sha256": "40fdfb6f5f22db08a89c41acb12b2a867cff3a5d471c9f951e49dd77c8f7eb5d"
+    },
+    {
+      "path": "scripts/replay_noise.py",
+      "bytes": 8140,
+      "sha256": "420d19a8fd928e07bcb53ac426a48c900214eed0b1615a4fc8f60bbe46161a39"
+    },
+    {
+      "path": "results/logs/precision_before_fix.zip",
+      "bytes": 49420476,
+      "sha256": "6fe6959e2f3c0ca9b817f30731fce11bddc9c019e2f8b3910757fc25bc68bea5"
+    },
+    {
+      "path": "results/logs/precision_correction.json",
+      "bytes": 2363,
+      "sha256": "79c39b573ecb3403552566faddd031ebaf91b4b90bf176f6bc84794c279d66de"
+    }
+  ],
+  "figures": [
+    {
+      "family": "patient_bootstrap_distributions_bandpass",
+      "files": [
+        {
+          "path": "results/figures/review_supplement/patient_bootstrap_distributions_bandpass.png",
+          "bytes": 201247,
+          "sha256": "8748cc16fe90435d0e0c8bcd7dda099cee14c299b540e8b9aa7928c614ccf6bb",
+          "width": 2677,
+          "height": 1430,
+          "visual_inspection": "inspected final rendered PNG in session"
+        },
+        {
+          "path": "results/figures/review_supplement/patient_bootstrap_distributions_bandpass.pdf",
+          "bytes": 32562,
+          "sha256": "4e4627d71dd60556ed78bfe037a3db7bb0b833e52f646e62423d9884a8d5d6ad"
+        }
+      ],
+      "sources": [
+        {
+          "path": "results/tables/review_supplement/patient_bootstrap_auroc_ci.csv",
+          "bytes": 2028156,
+          "sha256": "bf85d245251628a858769d59930193f7c18d4ca0cc1b1beb2ddcc7bd6de18090"
+        },
+        {
+          "path": "results/tables/review_supplement/patient_bootstrap_distributions.npz",
+          "bytes": 90725313,
+          "sha256": "79ff10ce669fffca1c89ba1895678f6d77216994e6d3e5679586993a173159b8"
+        }
+      ]
+    },
+    {
+      "family": "patient_bootstrap_classwise_paired_ci_bandpass",
+      "files": [
+        {
+          "path": "results/figures/review_supplement/patient_bootstrap_classwise_paired_ci_bandpass.png",
+          "bytes": 138790,
+          "sha256": "9cd41d1c2678148723d6258fff8801db8d1428faa9072a801a2a1aab922f4c26",
+          "width": 2677,
+          "height": 1605,
+          "visual_inspection": "inspected final rendered PNG in session"
+        },
+        {
+          "path": "results/figures/review_supplement/patient_bootstrap_classwise_paired_ci_bandpass.pdf",
+          "bytes": 31555,
+          "sha256": "60de3c8d03b250379d24d0b4683ebe80b457d8774dba10c063a5da7011faf730"
+        }
+      ],
+      "sources": [
+        {
+          "path": "results/tables/review_supplement/patient_bootstrap_auroc_ci.csv",
+          "bytes": 2028156,
+          "sha256": "bf85d245251628a858769d59930193f7c18d4ca0cc1b1beb2ddcc7bd6de18090"
+        },
+        {
+          "path": "results/tables/review_supplement/patient_bootstrap_distributions.npz",
+          "bytes": 90725313,
+          "sha256": "79ff10ce669fffca1c89ba1895678f6d77216994e6d3e5679586993a173159b8"
+        }
+      ]
+    },
+    {
+      "family": "patient_bootstrap_distributions_bw",
+      "files": [
+        {
+          "path": "results/figures/review_supplement/patient_bootstrap_distributions_bw.png",
+          "bytes": 187221,
+          "sha256": "033fb214b0c44ce2837ed3524172ed299063726c329165bab7ed591bab34760b",
+          "width": 2680,
+          "height": 1430,
+          "visual_inspection": "inspected final rendered PNG in session"
+        },
+        {
+          "path": "results/figures/review_supplement/patient_bootstrap_distributions_bw.pdf",
+          "bytes": 30086,
+          "sha256": "09132d90757efe6b393edadf90738bf3fbe0462f5f1d3f10aeb59105a607b350"
+        }
+      ],
+      "sources": [
+        {
+          "path": "results/tables/review_supplement/patient_bootstrap_auroc_ci.csv",
+          "bytes": 2028156,
+          "sha256": "bf85d245251628a858769d59930193f7c18d4ca0cc1b1beb2ddcc7bd6de18090"
+        },
+        {
+          "path": "results/tables/review_supplement/patient_bootstrap_distributions.npz",
+          "bytes": 90725313,
+          "sha256": "79ff10ce669fffca1c89ba1895678f6d77216994e6d3e5679586993a173159b8"
+        }
+      ]
+    },
+    {
+      "family": "patient_bootstrap_classwise_paired_ci_bw",
+      "files": [
+        {
+          "path": "results/figures/review_supplement/patient_bootstrap_classwise_paired_ci_bw.png",
+          "bytes": 139577,
+          "sha256": "81e4ee7ccffcd622ff882c993fcbf9d555200325647a0da61268ed1717c3406f",
+          "width": 2678,
+          "height": 1605,
+          "visual_inspection": "inspected final rendered PNG in session"
+        },
+        {
+          "path": "results/figures/review_supplement/patient_bootstrap_classwise_paired_ci_bw.pdf",
+          "bytes": 28233,
+          "sha256": "15bd88a4aaf1bdc7292b977aae099c4a0d6e17cbf7b714cdc950cf22bf601f84"
+        }
+      ],
+      "sources": [
+        {
+          "path": "results/tables/review_supplement/patient_bootstrap_auroc_ci.csv",
+          "bytes": 2028156,
+          "sha256": "bf85d245251628a858769d59930193f7c18d4ca0cc1b1beb2ddcc7bd6de18090"
+        },
+        {
+          "path": "results/tables/review_supplement/patient_bootstrap_distributions.npz",
+          "bytes": 90725313,
+          "sha256": "79ff10ce669fffca1c89ba1895678f6d77216994e6d3e5679586993a173159b8"
+        }
+      ]
+    },
+    {
+      "family": "patient_bootstrap_distributions_ma",
+      "files": [
+        {
+          "path": "results/figures/review_supplement/patient_bootstrap_distributions_ma.png",
+          "bytes": 190725,
+          "sha256": "b6b1c5f3d8fddd21d83fdae72f4ad50dd4aac5b9445fe3326a2b401ff9b2d5e5",
+          "width": 2680,
+          "height": 1430,
+          "visual_inspection": "inspected final rendered PNG in session"
+        },
+        {
+          "path": "results/figures/review_supplement/patient_bootstrap_distributions_ma.pdf",
+          "bytes": 30232,
+          "sha256": "02b8df13abd72dac62ad06b0e77f1f41547a0158eb99f91ec32d25f72ce92819"
+        }
+      ],
+      "sources": [
+        {
+          "path": "results/tables/review_supplement/patient_bootstrap_auroc_ci.csv",
+          "bytes": 2028156,
+          "sha256": "bf85d245251628a858769d59930193f7c18d4ca0cc1b1beb2ddcc7bd6de18090"
+        },
+        {
+          "path": "results/tables/review_supplement/patient_bootstrap_distributions.npz",
+          "bytes": 90725313,
+          "sha256": "79ff10ce669fffca1c89ba1895678f6d77216994e6d3e5679586993a173159b8"
+        }
+      ]
+    },
+    {
+      "family": "patient_bootstrap_classwise_paired_ci_ma",
+      "files": [
+        {
+          "path": "results/figures/review_supplement/patient_bootstrap_classwise_paired_ci_ma.png",
+          "bytes": 141600,
+          "sha256": "2e1e56e8b1149ca7579bb9b425d581ff2aad9b8c834cdeb828049953fa6c2e20",
+          "width": 2682,
+          "height": 1605,
+          "visual_inspection": "inspected final rendered PNG in session"
+        },
+        {
+          "path": "results/figures/review_supplement/patient_bootstrap_classwise_paired_ci_ma.pdf",
+          "bytes": 28551,
+          "sha256": "dd7730002785e51353ad32669ba67f4ad089af12be7eb99494512149dbcf91c1"
+        }
+      ],
+      "sources": [
+        {
+          "path": "results/tables/review_supplement/patient_bootstrap_auroc_ci.csv",
+          "bytes": 2028156,
+          "sha256": "bf85d245251628a858769d59930193f7c18d4ca0cc1b1beb2ddcc7bd6de18090"
+        },
+        {
+          "path": "results/tables/review_supplement/patient_bootstrap_distributions.npz",
+          "bytes": 90725313,
+          "sha256": "79ff10ce669fffca1c89ba1895678f6d77216994e6d3e5679586993a173159b8"
+        }
+      ]
+    },
+    {
+      "family": "patient_bootstrap_distributions_em",
+      "files": [
+        {
+          "path": "results/figures/review_supplement/patient_bootstrap_distributions_em.png",
+          "bytes": 194039,
+          "sha256": "2c2144cb451cf0ff09c904f3ec11adde9bde2a3c75824e988b6b6695879696e7",
+          "width": 2680,
+          "height": 1430,
+          "visual_inspection": "inspected final rendered PNG in session"
+        },
+        {
+          "path": "results/figures/review_supplement/patient_bootstrap_distributions_em.pdf",
+          "bytes": 30204,
+          "sha256": "90a39df77bc50550b36dfdd447eac01db6d3276daa2f8a59389e1cb767d5f0dd"
+        }
+      ],
+      "sources": [
+        {
+          "path": "results/tables/review_supplement/patient_bootstrap_auroc_ci.csv",
+          "bytes": 2028156,
+          "sha256": "bf85d245251628a858769d59930193f7c18d4ca0cc1b1beb2ddcc7bd6de18090"
+        },
+        {
+          "path": "results/tables/review_supplement/patient_bootstrap_distributions.npz",
+          "bytes": 90725313,
+          "sha256": "79ff10ce669fffca1c89ba1895678f6d77216994e6d3e5679586993a173159b8"
+        }
+      ]
+    },
+    {
+      "family": "patient_bootstrap_classwise_paired_ci_em",
+      "files": [
+        {
+          "path": "results/figures/review_supplement/patient_bootstrap_classwise_paired_ci_em.png",
+          "bytes": 141726,
+          "sha256": "8a76e9e95d472761a6ea8af8c3a204b94c6232728ead61e88cd2eb9f3d853150",
+          "width": 2682,
+          "height": 1605,
+          "visual_inspection": "inspected final rendered PNG in session"
+        },
+        {
+          "path": "results/figures/review_supplement/patient_bootstrap_classwise_paired_ci_em.pdf",
+          "bytes": 28319,
+          "sha256": "55bb7b667566713e73a0b65e2084a7644294540ea74a36b5a5996e73dec8af09"
+        }
+      ],
+      "sources": [
+        {
+          "path": "results/tables/review_supplement/patient_bootstrap_auroc_ci.csv",
+          "bytes": 2028156,
+          "sha256": "bf85d245251628a858769d59930193f7c18d4ca0cc1b1beb2ddcc7bd6de18090"
+        },
+        {
+          "path": "results/tables/review_supplement/patient_bootstrap_distributions.npz",
+          "bytes": 90725313,
+          "sha256": "79ff10ce669fffca1c89ba1895678f6d77216994e6d3e5679586993a173159b8"
+        }
+      ]
+    },
+    {
+      "family": "strict_control_performance",
+      "files": [
+        {
+          "path": "results/figures/review_supplement/strict/strict_control_performance.png",
+          "bytes": 233218,
+          "sha256": "f326898ba2166822b7f987787315b7b48ef63a142fb39e666bba29bd497445b0",
+          "width": 2141,
+          "height": 1430,
+          "visual_inspection": "inspected final rendered PNG in session"
+        },
+        {
+          "path": "results/figures/review_supplement/strict/strict_control_performance.pdf",
+          "bytes": 29591,
+          "sha256": "515351de88b7bf61805edac510cf8235f3eb4c64c903ae41dc79f5a5dfa79038"
+        }
+      ],
+      "sources": [
+        {
+          "path": "results/metrics/full/metrics.csv",
+          "bytes": 287263,
+          "sha256": "f382aa7dedfa7f18f619c0bd281e304590b0f1356bde1b49ce2dd8ada133150c"
+        },
+        {
+          "path": "results/metrics/review_supplement/strict_metrics.csv",
+          "bytes": 72298,
+          "sha256": "a389b328e463e2373ac2317b3617551ad9801dcbadf6b3ea0dd3c4bd195d257b"
+        }
+      ]
+    },
+    {
+      "family": "strict_control_noise_diagnostics",
+      "files": [
+        {
+          "path": "results/figures/review_supplement/strict/strict_control_noise_diagnostics.png",
+          "bytes": 80940,
+          "sha256": "ae4ab9dd179a3f1cd60e0fec9ccb8f7c1ce2566fa0adeaba7c6bcd0db2f4e41f",
+          "width": 2140,
+          "height": 853,
+          "visual_inspection": "inspected final rendered PNG in session"
+        },
+        {
+          "path": "results/figures/review_supplement/strict/strict_control_noise_diagnostics.pdf",
+          "bytes": 19712,
+          "sha256": "596dd5c5a528d6457eed2fda617bd95cc3388d564512c26ccfe1b9ad2b217a57"
+        }
+      ],
+      "sources": [
+        {
+          "path": "results/tables/review_supplement/strict_marginal_audit.csv",
+          "bytes": 14923260,
+          "sha256": "79ff0a91a09050c5b46cf2382a1f2d72c51dd2d2acd1f320d06e6b877ecf32d8"
+        }
+      ]
+    },
+    {
+      "family": "strict_control_welch_psd",
+      "files": [
+        {
+          "path": "results/figures/review_supplement/strict/strict_control_welch_psd.png",
+          "bytes": 131599,
+          "sha256": "94de5928e2549e6c85cf55a071be9440df891c232c46371068947789058cab67",
+          "width": 2139,
+          "height": 1079,
+          "visual_inspection": "inspected final rendered PNG in session"
+        },
+        {
+          "path": "results/figures/review_supplement/strict/strict_control_welch_psd.pdf",
+          "bytes": 26584,
+          "sha256": "d87f8323914491987565e7f097fa54f5732d99b5a4f11cdfa959f8428da342d6"
+        }
+      ],
+      "sources": [
+        {
+          "path": "results/tables/review_supplement/strict_welch_psd.csv",
+          "bytes": 1803543,
+          "sha256": "188ac0436bd2b292dbcb54ee00c00a958e72155e66bed12046dbe933ba1a3ce4"
+        }
+      ]
+    }
+  ],
+  "figure_manifests": [
+    {
+      "path": "results/figures/review_supplement/figure_manifest.json",
+      "bytes": 7589,
+      "sha256": "9dcc5380b6e22a72d0fee5c82bd2876cc7e6a5059fa55d8aef471ee35b812ef0"
+    },
+    {
+      "path": "results/figures/review_supplement/strict/figure_manifest.json",
+      "bytes": 2209,
+      "sha256": "d9fe7f27af8a49db9d8eb273c7aae4cd02bce3b238e8b5abc67e64f1cc0fdc98"
+    }
+  ],
+  "documents": [
+    {
+      "path": "reports/phase1_final_report.md",
+      "bytes": 65654,
+      "sha256": "d297bf7bceea45a503ad805c798d29e65d818519304be85b031b8eca2c5fb7aa"
+    },
+    {
+      "path": "reports/phase1_interim_report.md",
+      "bytes": 12075,
+      "sha256": "ef4bb6714ca9b97607c93b6f7de1e286de380ec86c680d0c8d8484020dde447f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 17055,
+      "sha256": "3ec380ecb780c2919f7f2f9a91c360028505c88211fa0fdc836d022aa6020741"
+    },
+    {
+      "path": "data/README.md",
+      "bytes": 12508,
+      "sha256": "1074fa4afb159236240ca28be0fc9ecc6aa23ec062868e4b1654b0861cbf3f5a"
+    }
+  ],
+  "local_document_links": [
+    {
+      "document": "reports/phase1_final_report.md",
+      "link": "../data/README.md"
+    },
+    {
+      "document": "reports/phase1_final_report.md",
+      "link": "../results/figures/full/02_lead_matrix.png"
+    },
+    {
+      "document": "reports/phase1_final_report.md",
+      "link": "../results/figures/full/03_unit_electrode_propagation.png"
+    },
+    {
+      "document": "reports/phase1_final_report.md",
+      "link": "../results/figures/full/01_waveforms.png"
+    },
+    {
+      "document": "reports/phase1_final_report.md",
+      "link": "../results/figures/full/04_noise_matrices.png"
+    },
+    {
+      "document": "reports/phase1_final_report.md",
+      "link": "../results/figures/full/05_noise_psd.png"
+    },
+    {
+      "document": "reports/phase1_final_report.md",
+      "link": "../results/figures/full/06_performance_macro_auroc.png"
+    },
+    {
+      "document": "reports/phase1_final_report.md",
+      "link": "../results/figures/full/08_paired_effect_summary.png"
+    },
+    {
+      "document": "reports/phase1_final_report.md",
+      "link": "../results/figures/full/09_per_class_drops.png"
+    },
+    {
+      "document": "reports/phase1_final_report.md",
+      "link": "../results/figures/full/10_calibration.png"
+    },
+    {
+      "document": "reports/phase1_final_report.md",
+      "link": "../results/figures/full/06_performance_macro_f1.png"
+    },
+    {
+      "document": "reports/phase1_final_report.md",
+      "link": "../results/figures/full/07_electrode_sensitivity.png"
+    },
+    {
+      "document": "reports/phase1_final_report.md",
+      "link": "../results/figures/review_supplement/patient_bootstrap_distributions_bandpass.png"
+    },
+    {
+      "document": "reports/phase1_final_report.md",
+      "link": "../results/figures/review_supplement/patient_bootstrap_classwise_paired_ci_bandpass.png"
+    },
+    {
+      "document": "reports/phase1_final_report.md",
+      "link": "../results/figures/review_supplement/strict/strict_control_performance.png"
+    },
+    {
+      "document": "reports/phase1_final_report.md",
+      "link": "../results/figures/review_supplement/strict/strict_control_noise_diagnostics.png"
+    },
+    {
+      "document": "reports/phase1_final_report.md",
+      "link": "../results/figures/review_supplement/strict/strict_control_welch_psd.png"
+    },
+    {
+      "document": "reports/phase1_final_report.md",
+      "link": "../results/figures/review_supplement/patient_bootstrap_distributions_bw.png"
+    },
+    {
+      "document": "reports/phase1_final_report.md",
+      "link": "../results/figures/review_supplement/patient_bootstrap_classwise_paired_ci_bw.png"
+    },
+    {
+      "document": "reports/phase1_final_report.md",
+      "link": "../results/figures/review_supplement/patient_bootstrap_distributions_ma.png"
+    },
+    {
+      "document": "reports/phase1_final_report.md",
+      "link": "../results/figures/review_supplement/patient_bootstrap_classwise_paired_ci_ma.png"
+    },
+    {
+      "document": "reports/phase1_final_report.md",
+      "link": "../results/figures/review_supplement/patient_bootstrap_distributions_em.png"
+    },
+    {
+      "document": "reports/phase1_final_report.md",
+      "link": "../results/figures/review_supplement/patient_bootstrap_classwise_paired_ci_em.png"
+    },
+    {
+      "document": "README.md",
+      "link": "reports/phase1_final_report.md"
+    },
+    {
+      "document": "README.md",
+      "link": "reports/phase1_interim_report.md"
+    },
+    {
+      "document": "README.md",
+      "link": "data/README.md"
+    }
+  ],
+  "regression": {
+    "test_functions": 27,
+    "subtests": 15,
+    "junit_cases": 42,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "junit": {
+      "path": "results/logs/review_supplement/tests_final.xml",
+      "bytes": 3786,
+      "sha256": "9ec30afc9be0f3e4011207352cc814b627aa68ce96a7e15f9675a99735fc87d4"
+    }
+  },
+  "shell_help_smoke": {
+    "command": [
+      "C:/Program Files/Git/bin/bash.exe",
+      "scripts/run_review_supplement.sh",
+      "--help"
+    ],
+    "environment_PYTHON": "E:\\Eproject\\ECG\\phase1_ecg_robustness\\.venv\\Scripts\\python.exe",
+    "exit_code": 0,
+    "evidence": "Actual bash tool execution in this session; full experiment execution is the Python stage log, not the help command."
+  },
+  "report_table_checks": {
+    "all_snr_main_rows": 32,
+    "paired_macro_rows": 6,
+    "classwise_rows": 10,
+    "strict_noise_replay_rows": 6,
+    "covariance_summary_cells": 18
+  },
+  "strict_electrode_minus_shift_extra_replays": [
+    {
+      "model": "resnet",
+      "snr": 20,
+      "mean": -0.00025613474750538765,
+      "sd": 0.00026007684779547915,
+      "min": -0.0005483213796249794,
+      "max": 8.497896009707073e-05,
+      "negative_combinations": 11,
+      "negative_noise_means": 4,
+      "noise_means": [
+        -0.00048442508190860156,
+        -0.00014875832465773472,
+        -0.0005483213796249794,
+        -0.00018414791143269346,
+        8.497896009707073e-05
+      ]
+    },
+    {
+      "model": "resnet",
+      "snr": 10,
+      "mean": -0.0024628129213701685,
+      "sd": 0.0006838520731865362,
+      "min": -0.0033331213216435027,
+      "max": -0.0014263840343798535,
+      "negative_combinations": 14,
+      "negative_noise_means": 5,
+      "noise_means": [
+        -0.0026484484196426608,
+        -0.002499650085753813,
+        -0.0033331213216435027,
+        -0.0024064607454310125,
+        -0.0014263840343798535
+      ]
+    },
+    {
+      "model": "resnet",
+      "snr": 0,
+      "mean": -0.018470091879410615,
+      "sd": 0.0013336366007656378,
+      "min": -0.020055665681272372,
+      "max": -0.01683479753676209,
+      "negative_combinations": 15,
+      "negative_noise_means": 5,
+      "noise_means": [
+        -0.01683479753676209,
+        -0.0177518579268832,
+        -0.0181072835474394,
+        -0.019600854704696007,
+        -0.020055665681272372
+      ]
+    },
+    {
+      "model": "tcn",
+      "snr": 20,
+      "mean": 9.76128560822816e-05,
+      "sd": 0.0001577970269102394,
+      "min": -7.713925867332734e-05,
+      "max": 0.00033063060693346485,
+      "negative_combinations": 5,
+      "negative_noise_means": 1,
+      "noise_means": [
+        0.00017255611500125814,
+        -7.713925867332734e-05,
+        4.273947993797359e-05,
+        0.00033063060693346485,
+        1.9277337212038798e-05
+      ]
+    },
+    {
+      "model": "tcn",
+      "snr": 10,
+      "mean": -0.0005819028220427569,
+      "sd": 0.0005406103748539901,
+      "min": -0.0013243938888146678,
+      "max": 0.00011718897524844636,
+      "negative_combinations": 14,
+      "negative_noise_means": 4,
+      "noise_means": [
+        -0.00038400239347409954,
+        -0.0013243938888146678,
+        -0.0008565313393302058,
+        0.00011718897524844636,
+        -0.0004617754638432577
+      ]
+    },
+    {
+      "model": "tcn",
+      "snr": 0,
+      "mean": -0.01249559964714703,
+      "sd": 0.0011305702858360734,
+      "min": -0.014482066870542654,
+      "max": -0.011859495859342614,
+      "negative_combinations": 15,
+      "negative_noise_means": 5,
+      "noise_means": [
+        -0.012364738996513544,
+        -0.01185978491611032,
+        -0.014482066870542654,
+        -0.011859495859342614,
+        -0.011911911593226021
+      ]
+    }
+  ],
+  "protocols": [
+    {
+      "path": "results/tables/review_supplement/data_audit.json",
+      "bytes": 4688,
+      "sha256": "7c154eb4723d660008b3d27d4448d9293c86382472ce815f7745623bd9d318fb"
+    },
+    {
+      "path": "results/tables/review_supplement/sampling_protocol.json",
+      "bytes": 14019,
+      "sha256": "b1cb2c75d2508ed5446d6a8013fed8048bea28e7c66516276fc9ff178623c45e"
+    },
+    {
+      "path": "results/tables/review_supplement/matrix_artifact_evidence.json",
+      "bytes": 92863,
+      "sha256": "5ccb1f3efd11200aefa0f390567bf3a597f1be2b6700c359c3093e07e753b559"
+    },
+    {
+      "path": "results/tables/review_supplement/matrix_replay_protocol.json",
+      "bytes": 73965,
+      "sha256": "47361eec580441b263a3be1783ddd085a6da36ca9331f093cee446ed68fce151"
+    },
+    {
+      "path": "results/tables/review_supplement/covariance_matching_protocol.json",
+      "bytes": 4724,
+      "sha256": "b562b4aa541e8c68d3e627367c98fd9c1f094a7b14cd576d34a00be212934810"
+    },
+    {
+      "path": "results/metrics/review_supplement/strict_protocol.json",
+      "bytes": 7869,
+      "sha256": "cfeb25071048896f7f489617425c7d9799538445a30958d14940f1708b403d66"
+    },
+    {
+      "path": "results/logs/review_supplement/supplemental_statistics_protocol.json",
+      "bytes": 13544,
+      "sha256": "b611227aac440f2b90fc24ef852ca8d7972606b32dc3265358955f5fc72e794c"
+    },
+    {
+      "path": "results/logs/review_supplement/run_status.json",
+      "bytes": 1009,
+      "sha256": "c4321f02c4cc90b81cfcd2880f8faa7a1022fd04003723ae79b78aff1ab42c14"
+    },
+    {
+      "path": "results/logs/review_supplement/figure_rerender.json",
+      "bytes": 963,
+      "sha256": "9b09e5c350cccc806b65491b69fc406065a867478d92a2d7b7a4e1a6d0552934"
+    },
+    {
+      "path": "results/logs/review_supplement/verification_numerics.json",
+      "bytes": 1711,
+      "sha256": "b62134bf05cb21a5ab8b6fc894d0c9cba1bd9c3d049277e9ef3b9629a66ef18a"
+    }
+  ],
+  "limitations": [
+    "Patient intervals condition on six trained checkpoints and noise base 8128; no joint patient/training/noise CI.",
+    "Circular shifts preserve empirical marginals and full-record periodic PSD, not finite-window Welch PSD or independence across leads.",
+    "NSTDB is confounded sensitivity, not isolated covariance evidence.",
+    "Legacy provenance is retrospective; no generation-time matrix hash is fabricated.",
+    "100 Hz retained PTB-XL analysis cohort only; no 500 Hz, external data, or phase-two training."
+  ],
+  "cleanup": {
+    "temporary_script_files_created": false,
+    "initial_failed_test_evidence_retained": true,
+    "historical_precision_archive_unchanged": true
+  }
+}

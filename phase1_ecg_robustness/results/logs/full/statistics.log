@@ -1,0 +1,3 @@
+
+COMMAND: E:\Eproject\ECG\phase1_ecg_robustness\.venv\Scripts\python.exe -u -m src.statistics --config configs/phase1_full.yaml
+Statistics: 456 metric rows, 1332 paired effects -> E:\Eproject\ECG\phase1_ecg_robustness\results\tables\full

@@ -1,0 +1,9 @@
+model,strategy,group_id,kind,combo_set,combo_id,condition,snr,seed,noise_seed,outcome,metric,value
+resnet,clean_only,primary_joint,bandpass,heldout,aggregate,electrode,-1,17,20001,retention,macro_auroc,0.9734416209243552
+resnet,electrode,primary_joint,bandpass,heldout,aggregate,electrode,-1,17,20001,retention,macro_auroc,0.9818875546592655
+resnet,independent_rms,primary_joint,bandpass,heldout,aggregate,electrode,-1,17,20001,retention,macro_auroc,0.9803635302718865
+resnet,mixed,primary_joint,bandpass,heldout,aggregate,electrode,-1,17,20001,retention,macro_auroc,0.9783533862387692
+tcn,clean_only,primary_joint,bandpass,heldout,aggregate,electrode,-1,17,20001,retention,macro_auroc,0.9966898161518982
+tcn,electrode,primary_joint,bandpass,heldout,aggregate,electrode,-1,17,20001,retention,macro_auroc,0.9986301406323106
+tcn,independent_rms,primary_joint,bandpass,heldout,aggregate,electrode,-1,17,20001,retention,macro_auroc,0.9961977156579412
+tcn,mixed,primary_joint,bandpass,heldout,aggregate,electrode,-1,17,20001,retention,macro_auroc,0.9984370496900651

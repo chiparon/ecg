@@ -1,0 +1,1276 @@
+{
+  "run_name": "phase2_full",
+  "sampling_rate_hz": 100,
+  "dpi": 180,
+  "config_path": "phase2/configs/phase2_main.yaml",
+  "figures": [
+    {
+      "family": "clean",
+      "files": [
+        "phase2/results/figures/full/clean_absolute.png",
+        "phase2/results/figures/full/clean_absolute.pdf"
+      ],
+      "caption": "Clean-test performance. Mean +/- 1 sample SD across 5 training seeds (not a CI). Small dots are individual training seeds. AUROC squares show 95% patient-cluster percentile CIs conditional on the fixed checkpoints and noise; they do not include training variability.",
+      "source_paths": [
+        "phase2/results/tables/full/seed_summary.csv",
+        "phase2/results/tables/full/group_seed_metrics.csv",
+        "phase2/results/tables/full/patient_ci.csv",
+        "phase2/src/plot_phase2.py",
+        "phase2/configs/phase2_main.yaml",
+        "phase2/results/logs/full/evaluation_protocol.json",
+        "phase2/results/logs/full/statistics_protocol.json",
+        "phase2/results/test_inputs/full/manifest.json"
+      ],
+      "estimand": "Clean record-level metric; clean cost = same-seed clean-only minus strategy",
+      "uncertainty": "Training sample SD and individual seeds; AUROC conditional patient-cluster 95% CI separately",
+      "source_files": [
+        {
+          "path": "phase2/results/tables/full/seed_summary.csv",
+          "bytes": 133436490,
+          "sha256": "6f5bb7745f8aa5d8a134c21efdb61eb660cd37e89abc34baa8ed3eca43dcbdf6"
+        },
+        {
+          "path": "phase2/results/tables/full/group_seed_metrics.csv",
+          "bytes": 478518476,
+          "sha256": "d38dde89a9e8fe2aafcc7c97f775e5bdf2d503fd3d15166e61723adb7b562287"
+        },
+        {
+          "path": "phase2/results/tables/full/patient_ci.csv",
+          "bytes": 802709476,
+          "sha256": "95de18f4b10b13216d2a7b166faede5a6265071575d844f954a0064b61253265"
+        },
+        {
+          "path": "phase2/src/plot_phase2.py",
+          "bytes": 58365,
+          "sha256": "8d9ffef6bfa7fc829313ea2c22ae901e151e4d6c8ff2e7682b0b318b0225a62a"
+        },
+        {
+          "path": "phase2/configs/phase2_main.yaml",
+          "bytes": 4620,
+          "sha256": "ed83bbebf04fa0fc5cfdd6a1cb0ed5546140747a45b929f99e51f0627a5ca3be"
+        },
+        {
+          "path": "phase2/results/logs/full/evaluation_protocol.json",
+          "bytes": 38065,
+          "sha256": "155e1ba462a68da590fcce0e2631bf2501fd2557f453949bd3b7730442546cc9"
+        },
+        {
+          "path": "phase2/results/logs/full/statistics_protocol.json",
+          "bytes": 40005,
+          "sha256": "1f0a583696a895b818c1ec7e28b777f79ab00a5f8c8f10eadce73081c4c471ec"
+        },
+        {
+          "path": "phase2/results/test_inputs/full/manifest.json",
+          "bytes": 2502662,
+          "sha256": "e15c6d71d55444149d916fcf724a062bfdc2f2be118569255aef9abeff2384df"
+        }
+      ]
+    },
+    {
+      "family": "clean",
+      "files": [
+        "phase2/results/figures/full/clean_clean_cost.png",
+        "phase2/results/figures/full/clean_clean_cost.pdf"
+      ],
+      "caption": "Positive clean cost means worse clean performance than same-seed clean-only; no clinical acceptability margin was prespecified. Mean +/- 1 sample SD across 5 training seeds (not a CI). Small dots are individual training seeds. AUROC squares show 95% patient-cluster percentile CIs conditional on the fixed checkpoints and noise; they do not include training variability.",
+      "source_paths": [
+        "phase2/results/tables/full/seed_summary.csv",
+        "phase2/results/tables/full/group_seed_metrics.csv",
+        "phase2/results/tables/full/patient_ci.csv",
+        "phase2/src/plot_phase2.py",
+        "phase2/configs/phase2_main.yaml",
+        "phase2/results/logs/full/evaluation_protocol.json",
+        "phase2/results/logs/full/statistics_protocol.json",
+        "phase2/results/test_inputs/full/manifest.json"
+      ],
+      "estimand": "Clean record-level metric; clean cost = same-seed clean-only minus strategy",
+      "uncertainty": "Training sample SD and individual seeds; AUROC conditional patient-cluster 95% CI separately",
+      "source_files": [
+        {
+          "path": "phase2/results/tables/full/seed_summary.csv",
+          "bytes": 133436490,
+          "sha256": "6f5bb7745f8aa5d8a134c21efdb61eb660cd37e89abc34baa8ed3eca43dcbdf6"
+        },
+        {
+          "path": "phase2/results/tables/full/group_seed_metrics.csv",
+          "bytes": 478518476,
+          "sha256": "d38dde89a9e8fe2aafcc7c97f775e5bdf2d503fd3d15166e61723adb7b562287"
+        },
+        {
+          "path": "phase2/results/tables/full/patient_ci.csv",
+          "bytes": 802709476,
+          "sha256": "95de18f4b10b13216d2a7b166faede5a6265071575d844f954a0064b61253265"
+        },
+        {
+          "path": "phase2/src/plot_phase2.py",
+          "bytes": 58365,
+          "sha256": "8d9ffef6bfa7fc829313ea2c22ae901e151e4d6c8ff2e7682b0b318b0225a62a"
+        },
+        {
+          "path": "phase2/configs/phase2_main.yaml",
+          "bytes": 4620,
+          "sha256": "ed83bbebf04fa0fc5cfdd6a1cb0ed5546140747a45b929f99e51f0627a5ca3be"
+        },
+        {
+          "path": "phase2/results/logs/full/evaluation_protocol.json",
+          "bytes": 38065,
+          "sha256": "155e1ba462a68da590fcce0e2631bf2501fd2557f453949bd3b7730442546cc9"
+        },
+        {
+          "path": "phase2/results/logs/full/statistics_protocol.json",
+          "bytes": 40005,
+          "sha256": "1f0a583696a895b818c1ec7e28b777f79ab00a5f8c8f10eadce73081c4c471ec"
+        },
+        {
+          "path": "phase2/results/test_inputs/full/manifest.json",
+          "bytes": 2502662,
+          "sha256": "e15c6d71d55444149d916fcf724a062bfdc2f2be118569255aef9abeff2384df"
+        }
+      ]
+    },
+    {
+      "family": "gaussian_snr",
+      "files": [
+        "phase2/results/figures/full/gaussian_macro_auroc_absolute.png",
+        "phase2/results/figures/full/gaussian_macro_auroc_absolute.pdf"
+      ],
+      "caption": "Equal-case condition metrics, then equal training-seed means. Mean +/- 1 sample SD across 5 training seeds (not a CI). Rows cover both architectures and all three perturbation structures; columns separate training, held-out, and all-electrode combinations. 15/5 dB were unseen in training; 0 dB is pressure. Seen SNR does not imply a combination or perturbation structure was seen; clean-only has no noisy training exposure.",
+      "source_paths": [
+        "phase2/results/tables/full/seed_summary.csv",
+        "phase2/src/plot_phase2.py",
+        "phase2/configs/phase2_main.yaml",
+        "phase2/results/logs/full/evaluation_protocol.json",
+        "phase2/results/logs/full/statistics_protocol.json",
+        "phase2/results/test_inputs/full/manifest.json"
+      ],
+      "estimand": "Equal-condition mean macro AUROC, absolute",
+      "uncertainty": "Training-seed sample SD only; fixed noise bases, not independent training replicates",
+      "source_files": [
+        {
+          "path": "phase2/results/tables/full/seed_summary.csv",
+          "bytes": 133436490,
+          "sha256": "6f5bb7745f8aa5d8a134c21efdb61eb660cd37e89abc34baa8ed3eca43dcbdf6"
+        },
+        {
+          "path": "phase2/src/plot_phase2.py",
+          "bytes": 58365,
+          "sha256": "8d9ffef6bfa7fc829313ea2c22ae901e151e4d6c8ff2e7682b0b318b0225a62a"
+        },
+        {
+          "path": "phase2/configs/phase2_main.yaml",
+          "bytes": 4620,
+          "sha256": "ed83bbebf04fa0fc5cfdd6a1cb0ed5546140747a45b929f99e51f0627a5ca3be"
+        },
+        {
+          "path": "phase2/results/logs/full/evaluation_protocol.json",
+          "bytes": 38065,
+          "sha256": "155e1ba462a68da590fcce0e2631bf2501fd2557f453949bd3b7730442546cc9"
+        },
+        {
+          "path": "phase2/results/logs/full/statistics_protocol.json",
+          "bytes": 40005,
+          "sha256": "1f0a583696a895b818c1ec7e28b777f79ab00a5f8c8f10eadce73081c4c471ec"
+        },
+        {
+          "path": "phase2/results/test_inputs/full/manifest.json",
+          "bytes": 2502662,
+          "sha256": "e15c6d71d55444149d916fcf724a062bfdc2f2be118569255aef9abeff2384df"
+        }
+      ]
+    },
+    {
+      "family": "gaussian_snr",
+      "files": [
+        "phase2/results/figures/full/gaussian_macro_auroc_retention.png",
+        "phase2/results/figures/full/gaussian_macro_auroc_retention.pdf"
+      ],
+      "caption": "Equal-case condition metrics, then equal training-seed means. Mean +/- 1 sample SD across 5 training seeds (not a CI). Rows cover both architectures and all three perturbation structures; columns separate training, held-out, and all-electrode combinations. 15/5 dB were unseen in training; 0 dB is pressure. Seen SNR does not imply a combination or perturbation structure was seen; clean-only has no noisy training exposure.",
+      "source_paths": [
+        "phase2/results/tables/full/seed_summary.csv",
+        "phase2/src/plot_phase2.py",
+        "phase2/configs/phase2_main.yaml",
+        "phase2/results/logs/full/evaluation_protocol.json",
+        "phase2/results/logs/full/statistics_protocol.json",
+        "phase2/results/test_inputs/full/manifest.json"
+      ],
+      "estimand": "Equal-condition mean macro AUROC, retention",
+      "uncertainty": "Training-seed sample SD only; fixed noise bases, not independent training replicates",
+      "source_files": [
+        {
+          "path": "phase2/results/tables/full/seed_summary.csv",
+          "bytes": 133436490,
+          "sha256": "6f5bb7745f8aa5d8a134c21efdb61eb660cd37e89abc34baa8ed3eca43dcbdf6"
+        },
+        {
+          "path": "phase2/src/plot_phase2.py",
+          "bytes": 58365,
+          "sha256": "8d9ffef6bfa7fc829313ea2c22ae901e151e4d6c8ff2e7682b0b318b0225a62a"
+        },
+        {
+          "path": "phase2/configs/phase2_main.yaml",
+          "bytes": 4620,
+          "sha256": "ed83bbebf04fa0fc5cfdd6a1cb0ed5546140747a45b929f99e51f0627a5ca3be"
+        },
+        {
+          "path": "phase2/results/logs/full/evaluation_protocol.json",
+          "bytes": 38065,
+          "sha256": "155e1ba462a68da590fcce0e2631bf2501fd2557f453949bd3b7730442546cc9"
+        },
+        {
+          "path": "phase2/results/logs/full/statistics_protocol.json",
+          "bytes": 40005,
+          "sha256": "1f0a583696a895b818c1ec7e28b777f79ab00a5f8c8f10eadce73081c4c471ec"
+        },
+        {
+          "path": "phase2/results/test_inputs/full/manifest.json",
+          "bytes": 2502662,
+          "sha256": "e15c6d71d55444149d916fcf724a062bfdc2f2be118569255aef9abeff2384df"
+        }
+      ]
+    },
+    {
+      "family": "gaussian_snr",
+      "files": [
+        "phase2/results/figures/full/supplement_gaussian_heldout_ap_f1.png",
+        "phase2/results/figures/full/supplement_gaussian_heldout_ap_f1.pdf"
+      ],
+      "caption": "Secondary metrics for held-out combinations, faceted by architecture and perturbation structure. Mean +/- 1 sample SD across 5 training seeds (not a CI). 15/5 dB are unseen and 0 dB is pressure. F1 uses fixed clean-validation thresholds. Complete training/all-electrode secondary curves and all drop values remain in the saved CSVs; they are not omitted from analysis.",
+      "source_paths": [
+        "phase2/results/tables/full/seed_summary.csv",
+        "phase2/src/plot_phase2.py",
+        "phase2/configs/phase2_main.yaml",
+        "phase2/results/logs/full/evaluation_protocol.json",
+        "phase2/results/logs/full/statistics_protocol.json",
+        "phase2/results/test_inputs/full/manifest.json"
+      ],
+      "estimand": "Equal-condition secondary metric means on held-out combinations",
+      "uncertainty": "Training-seed sample SD; no CI",
+      "source_files": [
+        {
+          "path": "phase2/results/tables/full/seed_summary.csv",
+          "bytes": 133436490,
+          "sha256": "6f5bb7745f8aa5d8a134c21efdb61eb660cd37e89abc34baa8ed3eca43dcbdf6"
+        },
+        {
+          "path": "phase2/src/plot_phase2.py",
+          "bytes": 58365,
+          "sha256": "8d9ffef6bfa7fc829313ea2c22ae901e151e4d6c8ff2e7682b0b318b0225a62a"
+        },
+        {
+          "path": "phase2/configs/phase2_main.yaml",
+          "bytes": 4620,
+          "sha256": "ed83bbebf04fa0fc5cfdd6a1cb0ed5546140747a45b929f99e51f0627a5ca3be"
+        },
+        {
+          "path": "phase2/results/logs/full/evaluation_protocol.json",
+          "bytes": 38065,
+          "sha256": "155e1ba462a68da590fcce0e2631bf2501fd2557f453949bd3b7730442546cc9"
+        },
+        {
+          "path": "phase2/results/logs/full/statistics_protocol.json",
+          "bytes": 40005,
+          "sha256": "1f0a583696a895b818c1ec7e28b777f79ab00a5f8c8f10eadce73081c4c471ec"
+        },
+        {
+          "path": "phase2/results/test_inputs/full/manifest.json",
+          "bytes": 2502662,
+          "sha256": "e15c6d71d55444149d916fcf724a062bfdc2f2be118569255aef9abeff2384df"
+        }
+      ]
+    },
+    {
+      "family": "gaussian_snr",
+      "files": [
+        "phase2/results/figures/full/supplement_gaussian_heldout_brier_ece.png",
+        "phase2/results/figures/full/supplement_gaussian_heldout_brier_ece.pdf"
+      ],
+      "caption": "Secondary metrics for held-out combinations, faceted by architecture and perturbation structure. Mean +/- 1 sample SD across 5 training seeds (not a CI). 15/5 dB are unseen and 0 dB is pressure. F1 uses fixed clean-validation thresholds. Complete training/all-electrode secondary curves and all drop values remain in the saved CSVs; they are not omitted from analysis.",
+      "source_paths": [
+        "phase2/results/tables/full/seed_summary.csv",
+        "phase2/src/plot_phase2.py",
+        "phase2/configs/phase2_main.yaml",
+        "phase2/results/logs/full/evaluation_protocol.json",
+        "phase2/results/logs/full/statistics_protocol.json",
+        "phase2/results/test_inputs/full/manifest.json"
+      ],
+      "estimand": "Equal-condition secondary metric means on held-out combinations",
+      "uncertainty": "Training-seed sample SD; no CI",
+      "source_files": [
+        {
+          "path": "phase2/results/tables/full/seed_summary.csv",
+          "bytes": 133436490,
+          "sha256": "6f5bb7745f8aa5d8a134c21efdb61eb660cd37e89abc34baa8ed3eca43dcbdf6"
+        },
+        {
+          "path": "phase2/src/plot_phase2.py",
+          "bytes": 58365,
+          "sha256": "8d9ffef6bfa7fc829313ea2c22ae901e151e4d6c8ff2e7682b0b318b0225a62a"
+        },
+        {
+          "path": "phase2/configs/phase2_main.yaml",
+          "bytes": 4620,
+          "sha256": "ed83bbebf04fa0fc5cfdd6a1cb0ed5546140747a45b929f99e51f0627a5ca3be"
+        },
+        {
+          "path": "phase2/results/logs/full/evaluation_protocol.json",
+          "bytes": 38065,
+          "sha256": "155e1ba462a68da590fcce0e2631bf2501fd2557f453949bd3b7730442546cc9"
+        },
+        {
+          "path": "phase2/results/logs/full/statistics_protocol.json",
+          "bytes": 40005,
+          "sha256": "1f0a583696a895b818c1ec7e28b777f79ab00a5f8c8f10eadce73081c4c471ec"
+        },
+        {
+          "path": "phase2/results/test_inputs/full/manifest.json",
+          "bytes": 2502662,
+          "sha256": "e15c6d71d55444149d916fcf724a062bfdc2f2be118569255aef9abeff2384df"
+        }
+      ]
+    },
+    {
+      "family": "heldout_heatmaps",
+      "files": [
+        "phase2/results/figures/full/heldout_heatmap_absolute.png",
+        "phase2/results/figures/full/heldout_heatmap_absolute.pdf"
+      ],
+      "caption": "Cell values average fixed noise bases then training seeds. Identical color scale in every panel; no uncertainty encoded. Every displayed electrode combination is held out; 15/5 dB are unseen and 0 dB is a pressure test. See seed and interval figures for uncertainty.",
+      "source_paths": [
+        "phase2/results/tables/full/seed_summary.csv",
+        "phase2/src/plot_phase2.py",
+        "phase2/configs/phase2_main.yaml",
+        "phase2/results/logs/full/evaluation_protocol.json",
+        "phase2/results/logs/full/statistics_protocol.json",
+        "phase2/results/test_inputs/full/manifest.json"
+      ],
+      "estimand": "Held-out combination mean macro AUROC absolute",
+      "uncertainty": "None encoded; means only",
+      "source_files": [
+        {
+          "path": "phase2/results/tables/full/seed_summary.csv",
+          "bytes": 133436490,
+          "sha256": "6f5bb7745f8aa5d8a134c21efdb61eb660cd37e89abc34baa8ed3eca43dcbdf6"
+        },
+        {
+          "path": "phase2/src/plot_phase2.py",
+          "bytes": 58365,
+          "sha256": "8d9ffef6bfa7fc829313ea2c22ae901e151e4d6c8ff2e7682b0b318b0225a62a"
+        },
+        {
+          "path": "phase2/configs/phase2_main.yaml",
+          "bytes": 4620,
+          "sha256": "ed83bbebf04fa0fc5cfdd6a1cb0ed5546140747a45b929f99e51f0627a5ca3be"
+        },
+        {
+          "path": "phase2/results/logs/full/evaluation_protocol.json",
+          "bytes": 38065,
+          "sha256": "155e1ba462a68da590fcce0e2631bf2501fd2557f453949bd3b7730442546cc9"
+        },
+        {
+          "path": "phase2/results/logs/full/statistics_protocol.json",
+          "bytes": 40005,
+          "sha256": "1f0a583696a895b818c1ec7e28b777f79ab00a5f8c8f10eadce73081c4c471ec"
+        },
+        {
+          "path": "phase2/results/test_inputs/full/manifest.json",
+          "bytes": 2502662,
+          "sha256": "e15c6d71d55444149d916fcf724a062bfdc2f2be118569255aef9abeff2384df"
+        }
+      ]
+    },
+    {
+      "family": "heldout_heatmaps",
+      "files": [
+        "phase2/results/figures/full/heldout_heatmap_retention.png",
+        "phase2/results/figures/full/heldout_heatmap_retention.pdf"
+      ],
+      "caption": "Cell values average fixed noise bases then training seeds. Identical color scale in every panel; no uncertainty encoded. Every displayed electrode combination is held out; 15/5 dB are unseen and 0 dB is a pressure test. See seed and interval figures for uncertainty.",
+      "source_paths": [
+        "phase2/results/tables/full/seed_summary.csv",
+        "phase2/src/plot_phase2.py",
+        "phase2/configs/phase2_main.yaml",
+        "phase2/results/logs/full/evaluation_protocol.json",
+        "phase2/results/logs/full/statistics_protocol.json",
+        "phase2/results/test_inputs/full/manifest.json"
+      ],
+      "estimand": "Held-out combination mean macro AUROC retention",
+      "uncertainty": "None encoded; means only",
+      "source_files": [
+        {
+          "path": "phase2/results/tables/full/seed_summary.csv",
+          "bytes": 133436490,
+          "sha256": "6f5bb7745f8aa5d8a134c21efdb61eb660cd37e89abc34baa8ed3eca43dcbdf6"
+        },
+        {
+          "path": "phase2/src/plot_phase2.py",
+          "bytes": 58365,
+          "sha256": "8d9ffef6bfa7fc829313ea2c22ae901e151e4d6c8ff2e7682b0b318b0225a62a"
+        },
+        {
+          "path": "phase2/configs/phase2_main.yaml",
+          "bytes": 4620,
+          "sha256": "ed83bbebf04fa0fc5cfdd6a1cb0ed5546140747a45b929f99e51f0627a5ca3be"
+        },
+        {
+          "path": "phase2/results/logs/full/evaluation_protocol.json",
+          "bytes": 38065,
+          "sha256": "155e1ba462a68da590fcce0e2631bf2501fd2557f453949bd3b7730442546cc9"
+        },
+        {
+          "path": "phase2/results/logs/full/statistics_protocol.json",
+          "bytes": 40005,
+          "sha256": "1f0a583696a895b818c1ec7e28b777f79ab00a5f8c8f10eadce73081c4c471ec"
+        },
+        {
+          "path": "phase2/results/test_inputs/full/manifest.json",
+          "bytes": 2502662,
+          "sha256": "e15c6d71d55444149d916fcf724a062bfdc2f2be118569255aef9abeff2384df"
+        }
+      ]
+    },
+    {
+      "family": "primary_effects",
+      "files": [
+        "phase2/results/figures/full/primary_contrast_intervals.png",
+        "phase2/results/figures/full/primary_contrast_intervals.pdf"
+      ],
+      "caption": "Equal-case AUROCs are transformed within checkpoint, then same-seed strategy differences are averaged. Squares: patient-cluster percentile 95% CIs conditional on fixed checkpoints/noise. Circles: paired training-seed t 95% CIs; these are different uncertainties, not a joint interval. Six retention tests share one Holm family; absolute/drop panels are secondary.",
+      "source_paths": [
+        "phase2/results/tables/full/paired_effects.csv",
+        "phase2/results/tables/full/primary_comparisons.csv",
+        "phase2/src/plot_phase2.py",
+        "phase2/configs/phase2_main.yaml",
+        "phase2/results/logs/full/evaluation_protocol.json",
+        "phase2/results/logs/full/statistics_protocol.json",
+        "phase2/results/test_inputs/full/manifest.json"
+      ],
+      "estimand": "Mean paired difference in joint-unseen macro AUROC retention (primary), absolute AUROC and drop (secondary)",
+      "uncertainty": "Separate paired-training t CI and conditional paired-patient percentile CI",
+      "source_files": [
+        {
+          "path": "phase2/results/tables/full/paired_effects.csv",
+          "bytes": 16261533,
+          "sha256": "0448de8734ca7b99a31c97cb928b2a4f33cc13a6d9f60ad7c85f4100744e9d7d"
+        },
+        {
+          "path": "phase2/results/tables/full/primary_comparisons.csv",
+          "bytes": 2078,
+          "sha256": "92fdab34e658e7e260fb91f2718d623d7d57850d3f433c210d802b59d462f9ad"
+        },
+        {
+          "path": "phase2/src/plot_phase2.py",
+          "bytes": 58365,
+          "sha256": "8d9ffef6bfa7fc829313ea2c22ae901e151e4d6c8ff2e7682b0b318b0225a62a"
+        },
+        {
+          "path": "phase2/configs/phase2_main.yaml",
+          "bytes": 4620,
+          "sha256": "ed83bbebf04fa0fc5cfdd6a1cb0ed5546140747a45b929f99e51f0627a5ca3be"
+        },
+        {
+          "path": "phase2/results/logs/full/evaluation_protocol.json",
+          "bytes": 38065,
+          "sha256": "155e1ba462a68da590fcce0e2631bf2501fd2557f453949bd3b7730442546cc9"
+        },
+        {
+          "path": "phase2/results/logs/full/statistics_protocol.json",
+          "bytes": 40005,
+          "sha256": "1f0a583696a895b818c1ec7e28b777f79ab00a5f8c8f10eadce73081c4c471ec"
+        },
+        {
+          "path": "phase2/results/test_inputs/full/manifest.json",
+          "bytes": 2502662,
+          "sha256": "e15c6d71d55444149d916fcf724a062bfdc2f2be118569255aef9abeff2384df"
+        }
+      ]
+    },
+    {
+      "family": "ranks_seeds",
+      "files": [
+        "phase2/results/figures/full/ranks_individual_seeds_clean.png",
+        "phase2/results/figures/full/ranks_individual_seeds_clean.pdf"
+      ],
+      "caption": "Every line connects the four strategies with the same training seed; no independent noise replicates are counted as training runs. Ranks use average ties. This is descriptive: a local rank change is not evidence of a universal ordering reversal. No uncertainty intervals are drawn.",
+      "source_paths": [
+        "phase2/results/tables/full/rank_seed.csv",
+        "phase2/results/tables/full/rank_summary.csv",
+        "phase2/src/plot_phase2.py",
+        "phase2/configs/phase2_main.yaml",
+        "phase2/results/logs/full/evaluation_protocol.json",
+        "phase2/results/logs/full/statistics_protocol.json",
+        "phase2/results/test_inputs/full/manifest.json"
+      ],
+      "estimand": "Within-training-seed strategy AUROC and rank",
+      "uncertainty": "Individual observed training seeds; no interval",
+      "source_files": [
+        {
+          "path": "phase2/results/tables/full/rank_seed.csv",
+          "bytes": 6705247,
+          "sha256": "cae6afae8f67263564aa33161b33ce5236661f0fe8d1fc445b2c50f911d61da2"
+        },
+        {
+          "path": "phase2/results/tables/full/rank_summary.csv",
+          "bytes": 1245395,
+          "sha256": "a731acf361c43c7bd0f039a8ebd07742e6fdebdceb98046540284be17fd396c1"
+        },
+        {
+          "path": "phase2/src/plot_phase2.py",
+          "bytes": 58365,
+          "sha256": "8d9ffef6bfa7fc829313ea2c22ae901e151e4d6c8ff2e7682b0b318b0225a62a"
+        },
+        {
+          "path": "phase2/configs/phase2_main.yaml",
+          "bytes": 4620,
+          "sha256": "ed83bbebf04fa0fc5cfdd6a1cb0ed5546140747a45b929f99e51f0627a5ca3be"
+        },
+        {
+          "path": "phase2/results/logs/full/evaluation_protocol.json",
+          "bytes": 38065,
+          "sha256": "155e1ba462a68da590fcce0e2631bf2501fd2557f453949bd3b7730442546cc9"
+        },
+        {
+          "path": "phase2/results/logs/full/statistics_protocol.json",
+          "bytes": 40005,
+          "sha256": "1f0a583696a895b818c1ec7e28b777f79ab00a5f8c8f10eadce73081c4c471ec"
+        },
+        {
+          "path": "phase2/results/test_inputs/full/manifest.json",
+          "bytes": 2502662,
+          "sha256": "e15c6d71d55444149d916fcf724a062bfdc2f2be118569255aef9abeff2384df"
+        }
+      ]
+    },
+    {
+      "family": "ranks_seeds",
+      "files": [
+        "phase2/results/figures/full/ranks_individual_seeds_primary_joint.png",
+        "phase2/results/figures/full/ranks_individual_seeds_primary_joint.pdf"
+      ],
+      "caption": "Every line connects the four strategies with the same training seed; no independent noise replicates are counted as training runs. Ranks use average ties. This is descriptive: a local rank change is not evidence of a universal ordering reversal. No uncertainty intervals are drawn.",
+      "source_paths": [
+        "phase2/results/tables/full/rank_seed.csv",
+        "phase2/results/tables/full/rank_summary.csv",
+        "phase2/src/plot_phase2.py",
+        "phase2/configs/phase2_main.yaml",
+        "phase2/results/logs/full/evaluation_protocol.json",
+        "phase2/results/logs/full/statistics_protocol.json",
+        "phase2/results/test_inputs/full/manifest.json"
+      ],
+      "estimand": "Within-training-seed strategy AUROC and rank",
+      "uncertainty": "Individual observed training seeds; no interval",
+      "source_files": [
+        {
+          "path": "phase2/results/tables/full/rank_seed.csv",
+          "bytes": 6705247,
+          "sha256": "cae6afae8f67263564aa33161b33ce5236661f0fe8d1fc445b2c50f911d61da2"
+        },
+        {
+          "path": "phase2/results/tables/full/rank_summary.csv",
+          "bytes": 1245395,
+          "sha256": "a731acf361c43c7bd0f039a8ebd07742e6fdebdceb98046540284be17fd396c1"
+        },
+        {
+          "path": "phase2/src/plot_phase2.py",
+          "bytes": 58365,
+          "sha256": "8d9ffef6bfa7fc829313ea2c22ae901e151e4d6c8ff2e7682b0b318b0225a62a"
+        },
+        {
+          "path": "phase2/configs/phase2_main.yaml",
+          "bytes": 4620,
+          "sha256": "ed83bbebf04fa0fc5cfdd6a1cb0ed5546140747a45b929f99e51f0627a5ca3be"
+        },
+        {
+          "path": "phase2/results/logs/full/evaluation_protocol.json",
+          "bytes": 38065,
+          "sha256": "155e1ba462a68da590fcce0e2631bf2501fd2557f453949bd3b7730442546cc9"
+        },
+        {
+          "path": "phase2/results/logs/full/statistics_protocol.json",
+          "bytes": 40005,
+          "sha256": "1f0a583696a895b818c1ec7e28b777f79ab00a5f8c8f10eadce73081c4c471ec"
+        },
+        {
+          "path": "phase2/results/test_inputs/full/manifest.json",
+          "bytes": 2502662,
+          "sha256": "e15c6d71d55444149d916fcf724a062bfdc2f2be118569255aef9abeff2384df"
+        }
+      ]
+    },
+    {
+      "family": "ranks_seeds",
+      "files": [
+        "phase2/results/figures/full/rank_snr_heldout.png",
+        "phase2/results/figures/full/rank_snr_heldout.pdf"
+      ],
+      "caption": "Macro-AUROC ranks across four strategies, with average ties. Mean +/- 1 sample SD across 5 training seeds (not a CI). Ranks at 15/5 dB are unseen-SNR tests; 0 dB is pressure. Rank movement at one SNR is not a general strategy-ordering claim. All training/all-electrode group ranks remain in the CSVs.",
+      "source_paths": [
+        "phase2/results/tables/full/rank_summary.csv",
+        "phase2/src/plot_phase2.py",
+        "phase2/configs/phase2_main.yaml",
+        "phase2/results/logs/full/evaluation_protocol.json",
+        "phase2/results/logs/full/statistics_protocol.json",
+        "phase2/results/test_inputs/full/manifest.json"
+      ],
+      "estimand": "Mean within-seed four-strategy rank on held-out combinations",
+      "uncertainty": "Training-seed rank sample SD; none for one seed",
+      "source_files": [
+        {
+          "path": "phase2/results/tables/full/rank_summary.csv",
+          "bytes": 1245395,
+          "sha256": "a731acf361c43c7bd0f039a8ebd07742e6fdebdceb98046540284be17fd396c1"
+        },
+        {
+          "path": "phase2/src/plot_phase2.py",
+          "bytes": 58365,
+          "sha256": "8d9ffef6bfa7fc829313ea2c22ae901e151e4d6c8ff2e7682b0b318b0225a62a"
+        },
+        {
+          "path": "phase2/configs/phase2_main.yaml",
+          "bytes": 4620,
+          "sha256": "ed83bbebf04fa0fc5cfdd6a1cb0ed5546140747a45b929f99e51f0627a5ca3be"
+        },
+        {
+          "path": "phase2/results/logs/full/evaluation_protocol.json",
+          "bytes": 38065,
+          "sha256": "155e1ba462a68da590fcce0e2631bf2501fd2557f453949bd3b7730442546cc9"
+        },
+        {
+          "path": "phase2/results/logs/full/statistics_protocol.json",
+          "bytes": 40005,
+          "sha256": "1f0a583696a895b818c1ec7e28b777f79ab00a5f8c8f10eadce73081c4c471ec"
+        },
+        {
+          "path": "phase2/results/test_inputs/full/manifest.json",
+          "bytes": 2502662,
+          "sha256": "e15c6d71d55444149d916fcf724a062bfdc2f2be118569255aef9abeff2384df"
+        }
+      ]
+    },
+    {
+      "family": "ranks_seeds",
+      "files": [
+        "phase2/results/figures/full/rank_correlations_clean_noisy.png",
+        "phase2/results/figures/full/rank_correlations_clean_noisy.pdf"
+      ],
+      "caption": "Spearman and Kendall agreement over the four strategies, using mean fixed-training-seed metrics. No hypothesis test or confidence interval; ties can make correlation undefined and are labeled rather than replaced with zero. s15/s5 indicate unseen SNR; s0 is pressure.",
+      "source_paths": [
+        "phase2/results/tables/full/rank_correlations.csv",
+        "phase2/src/plot_phase2.py",
+        "phase2/configs/phase2_main.yaml",
+        "phase2/results/logs/full/evaluation_protocol.json",
+        "phase2/results/logs/full/statistics_protocol.json",
+        "phase2/results/test_inputs/full/manifest.json"
+      ],
+      "estimand": "Four-strategy clean/noisy rank correlation",
+      "uncertainty": "None; descriptive four-strategy correlations",
+      "source_files": [
+        {
+          "path": "phase2/results/tables/full/rank_correlations.csv",
+          "bytes": 5132239,
+          "sha256": "ec807a42deeb3f3c5e2ac8ce85fcacdffde595dae61c47205ffe715c62ec7df6"
+        },
+        {
+          "path": "phase2/src/plot_phase2.py",
+          "bytes": 58365,
+          "sha256": "8d9ffef6bfa7fc829313ea2c22ae901e151e4d6c8ff2e7682b0b318b0225a62a"
+        },
+        {
+          "path": "phase2/configs/phase2_main.yaml",
+          "bytes": 4620,
+          "sha256": "ed83bbebf04fa0fc5cfdd6a1cb0ed5546140747a45b929f99e51f0627a5ca3be"
+        },
+        {
+          "path": "phase2/results/logs/full/evaluation_protocol.json",
+          "bytes": 38065,
+          "sha256": "155e1ba462a68da590fcce0e2631bf2501fd2557f453949bd3b7730442546cc9"
+        },
+        {
+          "path": "phase2/results/logs/full/statistics_protocol.json",
+          "bytes": 40005,
+          "sha256": "1f0a583696a895b818c1ec7e28b777f79ab00a5f8c8f10eadce73081c4c471ec"
+        },
+        {
+          "path": "phase2/results/test_inputs/full/manifest.json",
+          "bytes": 2502662,
+          "sha256": "e15c6d71d55444149d916fcf724a062bfdc2f2be118569255aef9abeff2384df"
+        }
+      ]
+    },
+    {
+      "family": "calibration",
+      "files": [
+        "phase2/results/figures/full/calibration_resnet.png",
+        "phase2/results/figures/full/calibration_resnet.pdf"
+      ],
+      "caption": "Saved 15-bin sufficient statistics pooled across fixed checkpoints and group cases. Repeated predictions are descriptive, not independent patients and not an ensemble. Empty bins are omitted, not assigned zero accuracy. No calibration fitting on test data, and no CI. Primary group = available joint unseen-SNR held-out combinations.",
+      "source_paths": [
+        "phase2/results/tables/full/calibration_bins.csv",
+        "phase2/src/plot_phase2.py",
+        "phase2/configs/phase2_main.yaml",
+        "phase2/results/logs/full/evaluation_protocol.json",
+        "phase2/results/logs/full/statistics_protocol.json",
+        "phase2/results/test_inputs/full/manifest.json"
+      ],
+      "estimand": "Prediction-level bin calibration across fixed group cases/checkpoints",
+      "uncertainty": "None; repeated observations are not treated as independent patients",
+      "source_files": [
+        {
+          "path": "phase2/results/tables/full/calibration_bins.csv",
+          "bytes": 394620,
+          "sha256": "f35307bb830759af86df7c29f35befd4a27c6c50968f1f8737a1220bd48d37e0"
+        },
+        {
+          "path": "phase2/src/plot_phase2.py",
+          "bytes": 58365,
+          "sha256": "8d9ffef6bfa7fc829313ea2c22ae901e151e4d6c8ff2e7682b0b318b0225a62a"
+        },
+        {
+          "path": "phase2/configs/phase2_main.yaml",
+          "bytes": 4620,
+          "sha256": "ed83bbebf04fa0fc5cfdd6a1cb0ed5546140747a45b929f99e51f0627a5ca3be"
+        },
+        {
+          "path": "phase2/results/logs/full/evaluation_protocol.json",
+          "bytes": 38065,
+          "sha256": "155e1ba462a68da590fcce0e2631bf2501fd2557f453949bd3b7730442546cc9"
+        },
+        {
+          "path": "phase2/results/logs/full/statistics_protocol.json",
+          "bytes": 40005,
+          "sha256": "1f0a583696a895b818c1ec7e28b777f79ab00a5f8c8f10eadce73081c4c471ec"
+        },
+        {
+          "path": "phase2/results/test_inputs/full/manifest.json",
+          "bytes": 2502662,
+          "sha256": "e15c6d71d55444149d916fcf724a062bfdc2f2be118569255aef9abeff2384df"
+        }
+      ]
+    },
+    {
+      "family": "calibration",
+      "files": [
+        "phase2/results/figures/full/calibration_tcn.png",
+        "phase2/results/figures/full/calibration_tcn.pdf"
+      ],
+      "caption": "Saved 15-bin sufficient statistics pooled across fixed checkpoints and group cases. Repeated predictions are descriptive, not independent patients and not an ensemble. Empty bins are omitted, not assigned zero accuracy. No calibration fitting on test data, and no CI. Primary group = available joint unseen-SNR held-out combinations.",
+      "source_paths": [
+        "phase2/results/tables/full/calibration_bins.csv",
+        "phase2/src/plot_phase2.py",
+        "phase2/configs/phase2_main.yaml",
+        "phase2/results/logs/full/evaluation_protocol.json",
+        "phase2/results/logs/full/statistics_protocol.json",
+        "phase2/results/test_inputs/full/manifest.json"
+      ],
+      "estimand": "Prediction-level bin calibration across fixed group cases/checkpoints",
+      "uncertainty": "None; repeated observations are not treated as independent patients",
+      "source_files": [
+        {
+          "path": "phase2/results/tables/full/calibration_bins.csv",
+          "bytes": 394620,
+          "sha256": "f35307bb830759af86df7c29f35befd4a27c6c50968f1f8737a1220bd48d37e0"
+        },
+        {
+          "path": "phase2/src/plot_phase2.py",
+          "bytes": 58365,
+          "sha256": "8d9ffef6bfa7fc829313ea2c22ae901e151e4d6c8ff2e7682b0b318b0225a62a"
+        },
+        {
+          "path": "phase2/configs/phase2_main.yaml",
+          "bytes": 4620,
+          "sha256": "ed83bbebf04fa0fc5cfdd6a1cb0ed5546140747a45b929f99e51f0627a5ca3be"
+        },
+        {
+          "path": "phase2/results/logs/full/evaluation_protocol.json",
+          "bytes": 38065,
+          "sha256": "155e1ba462a68da590fcce0e2631bf2501fd2557f453949bd3b7730442546cc9"
+        },
+        {
+          "path": "phase2/results/logs/full/statistics_protocol.json",
+          "bytes": 40005,
+          "sha256": "1f0a583696a895b818c1ec7e28b777f79ab00a5f8c8f10eadce73081c4c471ec"
+        },
+        {
+          "path": "phase2/results/test_inputs/full/manifest.json",
+          "bytes": 2502662,
+          "sha256": "e15c6d71d55444149d916fcf724a062bfdc2f2be118569255aef9abeff2384df"
+        }
+      ]
+    },
+    {
+      "family": "noise_stability",
+      "files": [
+        "phase2/results/figures/full/noise_realization_stability.png",
+        "phase2/results/figures/full/noise_realization_stability.pdf"
+      ],
+      "caption": "Each marker is one fixed noise base after averaging paired training seeds. Bars are descriptive sample SD across noise bases, not training SD, not a confidence interval, and not extra independent training runs. All registered noise bases are displayed.",
+      "source_paths": [
+        "phase2/results/tables/full/noise_seed_metrics.csv",
+        "phase2/results/tables/full/noise_replay_summary.csv",
+        "phase2/src/plot_phase2.py",
+        "phase2/configs/phase2_main.yaml",
+        "phase2/results/logs/full/evaluation_protocol.json",
+        "phase2/results/logs/full/statistics_protocol.json",
+        "phase2/results/test_inputs/full/manifest.json"
+      ],
+      "estimand": "Per-noise-base primary group AUROC, retention and drop after fixed-training-seed averaging",
+      "uncertainty": "Descriptive noise-base sample SD; no CI",
+      "source_files": [
+        {
+          "path": "phase2/results/tables/full/noise_seed_metrics.csv",
+          "bytes": 494135584,
+          "sha256": "7590aaa5bf98dce6fea94a208687c37d09bb8bd420ea6dc14e6f9d9ad81b9bb5"
+        },
+        {
+          "path": "phase2/results/tables/full/noise_replay_summary.csv",
+          "bytes": 128430632,
+          "sha256": "8f97ccd2ced42b41e600ba506ad9a3bc8f6e5933021dd6b680986be7b9b3411d"
+        },
+        {
+          "path": "phase2/src/plot_phase2.py",
+          "bytes": 58365,
+          "sha256": "8d9ffef6bfa7fc829313ea2c22ae901e151e4d6c8ff2e7682b0b318b0225a62a"
+        },
+        {
+          "path": "phase2/configs/phase2_main.yaml",
+          "bytes": 4620,
+          "sha256": "ed83bbebf04fa0fc5cfdd6a1cb0ed5546140747a45b929f99e51f0627a5ca3be"
+        },
+        {
+          "path": "phase2/results/logs/full/evaluation_protocol.json",
+          "bytes": 38065,
+          "sha256": "155e1ba462a68da590fcce0e2631bf2501fd2557f453949bd3b7730442546cc9"
+        },
+        {
+          "path": "phase2/results/logs/full/statistics_protocol.json",
+          "bytes": 40005,
+          "sha256": "1f0a583696a895b818c1ec7e28b777f79ab00a5f8c8f10eadce73081c4c471ec"
+        },
+        {
+          "path": "phase2/results/test_inputs/full/manifest.json",
+          "bytes": 2502662,
+          "sha256": "e15c6d71d55444149d916fcf724a062bfdc2f2be118569255aef9abeff2384df"
+        }
+      ]
+    },
+    {
+      "family": "noise_stability",
+      "files": [
+        "phase2/results/figures/full/noise_primary_contrast_stability.png",
+        "phase2/results/figures/full/noise_primary_contrast_stability.pdf"
+      ],
+      "caption": "Each point first averages same-training-seed paired strategy retention differences for one noise base. Lines only connect registered base identifiers; no fitted trend, CI, or extra hypothesis test. Pilot has a single base and cannot establish noise-realization stability.",
+      "source_paths": [
+        "phase2/results/tables/full/noise_contrasts.csv",
+        "phase2/src/plot_phase2.py",
+        "phase2/configs/phase2_main.yaml",
+        "phase2/results/logs/full/evaluation_protocol.json",
+        "phase2/results/logs/full/statistics_protocol.json",
+        "phase2/results/test_inputs/full/manifest.json"
+      ],
+      "estimand": "Per-noise-base mean paired retention difference",
+      "uncertainty": "Observed noise realizations only; no uncertainty interval",
+      "source_files": [
+        {
+          "path": "phase2/results/tables/full/noise_contrasts.csv",
+          "bytes": 22847,
+          "sha256": "a8043670358b902d11699ff18c7946df09dc0659f4731fc10a69d1d5bf7244cf"
+        },
+        {
+          "path": "phase2/src/plot_phase2.py",
+          "bytes": 58365,
+          "sha256": "8d9ffef6bfa7fc829313ea2c22ae901e151e4d6c8ff2e7682b0b318b0225a62a"
+        },
+        {
+          "path": "phase2/configs/phase2_main.yaml",
+          "bytes": 4620,
+          "sha256": "ed83bbebf04fa0fc5cfdd6a1cb0ed5546140747a45b929f99e51f0627a5ca3be"
+        },
+        {
+          "path": "phase2/results/logs/full/evaluation_protocol.json",
+          "bytes": 38065,
+          "sha256": "155e1ba462a68da590fcce0e2631bf2501fd2557f453949bd3b7730442546cc9"
+        },
+        {
+          "path": "phase2/results/logs/full/statistics_protocol.json",
+          "bytes": 40005,
+          "sha256": "1f0a583696a895b818c1ec7e28b777f79ab00a5f8c8f10eadce73081c4c471ec"
+        },
+        {
+          "path": "phase2/results/test_inputs/full/manifest.json",
+          "bytes": 2502662,
+          "sha256": "e15c6d71d55444149d916fcf724a062bfdc2f2be118569255aef9abeff2384df"
+        }
+      ]
+    },
+    {
+      "family": "nstdb_sensitivity",
+      "files": [
+        "phase2/results/figures/full/exploratory_nstdb_sensitivity.png",
+        "phase2/results/figures/full/exploratory_nstdb_sensitivity.pdf"
+      ],
+      "caption": "Lower-evidence sensitivity analysis, not a pure electrode-domain causal test: recorded lead-space NSTDB sources are repurposed as electrode disturbances, with source/recording mismatch. All noise types and perturbation structures are shown in the all-electrode stress configuration. Mean +/- 1 sample SD across 5 training seeds (not a CI). No confirmatory inference; 0 dB is pressure. AP/F1, Brier/ECE, and other detailed metrics remain in the persisted CSVs.",
+      "source_paths": [
+        "phase2/results/tables/full/seed_summary.csv",
+        "phase2/src/plot_phase2.py",
+        "phase2/configs/phase2_main.yaml",
+        "phase2/results/logs/full/evaluation_protocol.json",
+        "phase2/results/logs/full/statistics_protocol.json",
+        "phase2/results/test_inputs/full/manifest.json"
+      ],
+      "estimand": "Exploratory all-electrode NSTDB macro AUROC mean",
+      "uncertainty": "Training-seed sample SD; source-domain confounding not quantified",
+      "source_files": [
+        {
+          "path": "phase2/results/tables/full/seed_summary.csv",
+          "bytes": 133436490,
+          "sha256": "6f5bb7745f8aa5d8a134c21efdb61eb660cd37e89abc34baa8ed3eca43dcbdf6"
+        },
+        {
+          "path": "phase2/src/plot_phase2.py",
+          "bytes": 58365,
+          "sha256": "8d9ffef6bfa7fc829313ea2c22ae901e151e4d6c8ff2e7682b0b318b0225a62a"
+        },
+        {
+          "path": "phase2/configs/phase2_main.yaml",
+          "bytes": 4620,
+          "sha256": "ed83bbebf04fa0fc5cfdd6a1cb0ed5546140747a45b929f99e51f0627a5ca3be"
+        },
+        {
+          "path": "phase2/results/logs/full/evaluation_protocol.json",
+          "bytes": 38065,
+          "sha256": "155e1ba462a68da590fcce0e2631bf2501fd2557f453949bd3b7730442546cc9"
+        },
+        {
+          "path": "phase2/results/logs/full/statistics_protocol.json",
+          "bytes": 40005,
+          "sha256": "1f0a583696a895b818c1ec7e28b777f79ab00a5f8c8f10eadce73081c4c471ec"
+        },
+        {
+          "path": "phase2/results/test_inputs/full/manifest.json",
+          "bytes": 2502662,
+          "sha256": "e15c6d71d55444149d916fcf724a062bfdc2f2be118569255aef9abeff2384df"
+        }
+      ]
+    },
+    {
+      "family": "training_validation",
+      "files": [
+        "phase2/results/figures/full/training_clean_validation_trajectories.png",
+        "phase2/results/figures/full/training_clean_validation_trajectories.pdf"
+      ],
+      "caption": "Thin lines show individual training seeds and thick lines their arithmetic mean; no CI. Training losses involve strategy-specific augmented inputs and are not the checkpoint-selection endpoint. Checkpoints are selected by clean-validation macro AUROC, after all fixed epochs; no test-driven epoch or strategy selection.",
+      "source_paths": [
+        "phase2/results/logs/full/clean_only/resnet/seed_17/epochs.csv",
+        "phase2/results/logs/full/independent_rms/resnet/seed_17/epochs.csv",
+        "phase2/results/logs/full/electrode/resnet/seed_17/epochs.csv",
+        "phase2/results/logs/full/mixed/resnet/seed_17/epochs.csv",
+        "phase2/results/logs/full/clean_only/resnet/seed_29/epochs.csv",
+        "phase2/results/logs/full/independent_rms/resnet/seed_29/epochs.csv",
+        "phase2/results/logs/full/electrode/resnet/seed_29/epochs.csv",
+        "phase2/results/logs/full/mixed/resnet/seed_29/epochs.csv",
+        "phase2/results/logs/full/clean_only/resnet/seed_43/epochs.csv",
+        "phase2/results/logs/full/independent_rms/resnet/seed_43/epochs.csv",
+        "phase2/results/logs/full/electrode/resnet/seed_43/epochs.csv",
+        "phase2/results/logs/full/mixed/resnet/seed_43/epochs.csv",
+        "phase2/results/logs/full/clean_only/resnet/seed_101/epochs.csv",
+        "phase2/results/logs/full/independent_rms/resnet/seed_101/epochs.csv",
+        "phase2/results/logs/full/electrode/resnet/seed_101/epochs.csv",
+        "phase2/results/logs/full/mixed/resnet/seed_101/epochs.csv",
+        "phase2/results/logs/full/clean_only/resnet/seed_202/epochs.csv",
+        "phase2/results/logs/full/independent_rms/resnet/seed_202/epochs.csv",
+        "phase2/results/logs/full/electrode/resnet/seed_202/epochs.csv",
+        "phase2/results/logs/full/mixed/resnet/seed_202/epochs.csv",
+        "phase2/results/logs/full/clean_only/tcn/seed_17/epochs.csv",
+        "phase2/results/logs/full/independent_rms/tcn/seed_17/epochs.csv",
+        "phase2/results/logs/full/electrode/tcn/seed_17/epochs.csv",
+        "phase2/results/logs/full/mixed/tcn/seed_17/epochs.csv",
+        "phase2/results/logs/full/clean_only/tcn/seed_29/epochs.csv",
+        "phase2/results/logs/full/independent_rms/tcn/seed_29/epochs.csv",
+        "phase2/results/logs/full/electrode/tcn/seed_29/epochs.csv",
+        "phase2/results/logs/full/mixed/tcn/seed_29/epochs.csv",
+        "phase2/results/logs/full/clean_only/tcn/seed_43/epochs.csv",
+        "phase2/results/logs/full/independent_rms/tcn/seed_43/epochs.csv",
+        "phase2/results/logs/full/electrode/tcn/seed_43/epochs.csv",
+        "phase2/results/logs/full/mixed/tcn/seed_43/epochs.csv",
+        "phase2/results/logs/full/clean_only/tcn/seed_101/epochs.csv",
+        "phase2/results/logs/full/independent_rms/tcn/seed_101/epochs.csv",
+        "phase2/results/logs/full/electrode/tcn/seed_101/epochs.csv",
+        "phase2/results/logs/full/mixed/tcn/seed_101/epochs.csv",
+        "phase2/results/logs/full/clean_only/tcn/seed_202/epochs.csv",
+        "phase2/results/logs/full/independent_rms/tcn/seed_202/epochs.csv",
+        "phase2/results/logs/full/electrode/tcn/seed_202/epochs.csv",
+        "phase2/results/logs/full/mixed/tcn/seed_202/epochs.csv",
+        "phase2/src/plot_phase2.py",
+        "phase2/configs/phase2_main.yaml",
+        "phase2/results/logs/full/evaluation_protocol.json",
+        "phase2/results/logs/full/statistics_protocol.json",
+        "phase2/results/test_inputs/full/manifest.json"
+      ],
+      "estimand": "Logged epoch-level training loss and clean-validation metrics",
+      "uncertainty": "Individual training trajectories and arithmetic means, no uncertainty interval",
+      "source_files": [
+        {
+          "path": "phase2/results/logs/full/clean_only/resnet/seed_17/epochs.csv",
+          "bytes": 7859,
+          "sha256": "4222852f560457cc7a9de2e6e61bd780716286a7dfe727a1f94a3e6c48752445"
+        },
+        {
+          "path": "phase2/results/logs/full/independent_rms/resnet/seed_17/epochs.csv",
+          "bytes": 15642,
+          "sha256": "094e52907631f787efd0f1c65febbdbed799e7b1f489bcda5ca9c5037bb6ea5a"
+        },
+        {
+          "path": "phase2/results/logs/full/electrode/resnet/seed_17/epochs.csv",
+          "bytes": 13443,
+          "sha256": "25b2fa102e905db8333087be01844d6371308c2c55b208167d8f7b15fa89b873"
+        },
+        {
+          "path": "phase2/results/logs/full/mixed/resnet/seed_17/epochs.csv",
+          "bytes": 16153,
+          "sha256": "9ffe52dea6cc9193b2f68810a90c9f8a5b759c95f4ac1cead6c1a413feab0269"
+        },
+        {
+          "path": "phase2/results/logs/full/clean_only/resnet/seed_29/epochs.csv",
+          "bytes": 7851,
+          "sha256": "8e73e6730df9dae5428c64400465f6bfd2e83beedcdf4835298eb37fbec4e228"
+        },
+        {
+          "path": "phase2/results/logs/full/independent_rms/resnet/seed_29/epochs.csv",
+          "bytes": 15658,
+          "sha256": "050edce1ef61202748d66f62528041374e3126fbb844ebea560d360b6f8852ae"
+        },
+        {
+          "path": "phase2/results/logs/full/electrode/resnet/seed_29/epochs.csv",
+          "bytes": 13448,
+          "sha256": "6f3156770ae4bffd551ca01024602a495fd2af3e404aabafbf7fa1e1e2baf628"
+        },
+        {
+          "path": "phase2/results/logs/full/mixed/resnet/seed_29/epochs.csv",
+          "bytes": 16120,
+          "sha256": "31dfaab3a09cf0e80f117dc2fd1906bfa3c9f086b7382579e323d6ea95c73c7c"
+        },
+        {
+          "path": "phase2/results/logs/full/clean_only/resnet/seed_43/epochs.csv",
+          "bytes": 7851,
+          "sha256": "e642d42c5262ed535ae66ef0933bb2546b58139a92b189fbe2d87ffdb00806b7"
+        },
+        {
+          "path": "phase2/results/logs/full/independent_rms/resnet/seed_43/epochs.csv",
+          "bytes": 15650,
+          "sha256": "9fbc47c0c1a2a721bec012966f755c1fe47afef06badd6e4bd20a67ca6e95377"
+        },
+        {
+          "path": "phase2/results/logs/full/electrode/resnet/seed_43/epochs.csv",
+          "bytes": 13399,
+          "sha256": "64b2d57b706ded1e7c958d5ee8a6d64c474526dfaa80243f5f603ebf56c48fb6"
+        },
+        {
+          "path": "phase2/results/logs/full/mixed/resnet/seed_43/epochs.csv",
+          "bytes": 16086,
+          "sha256": "2d5e3a863a9dbb4b741ac1f27f39fecbad3bc9e2c03f88e00d0014cb054848e0"
+        },
+        {
+          "path": "phase2/results/logs/full/clean_only/resnet/seed_101/epochs.csv",
+          "bytes": 7849,
+          "sha256": "eb25a1b72b754c112897f347a338a0cbec31a5b050d0a1fea42b3fc0a33fd8f1"
+        },
+        {
+          "path": "phase2/results/logs/full/independent_rms/resnet/seed_101/epochs.csv",
+          "bytes": 15658,
+          "sha256": "4f353c9d341e42c3f1fd48492b74f04937da47e8baae0b4b56e1942888de3213"
+        },
+        {
+          "path": "phase2/results/logs/full/electrode/resnet/seed_101/epochs.csv",
+          "bytes": 13427,
+          "sha256": "acda99294adf4d31d0f16e9529bee104dd5b2e1769355f9bcedf9cbb6b6185d7"
+        },
+        {
+          "path": "phase2/results/logs/full/mixed/resnet/seed_101/epochs.csv",
+          "bytes": 16122,
+          "sha256": "662ca9230e1930c4618ce83883160175d78ba4a78a8744f5a6496ef6f67aa7eb"
+        },
+        {
+          "path": "phase2/results/logs/full/clean_only/resnet/seed_202/epochs.csv",
+          "bytes": 7841,
+          "sha256": "275b0636c96218cb21a30012538a50ac5df324964ac9f40b27e3cfde987e4c27"
+        },
+        {
+          "path": "phase2/results/logs/full/independent_rms/resnet/seed_202/epochs.csv",
+          "bytes": 15660,
+          "sha256": "dea8a1dceeb7065bed8d3d3cb8841dd3cb8fbfab54698a021d6ef052059c5837"
+        },
+        {
+          "path": "phase2/results/logs/full/electrode/resnet/seed_202/epochs.csv",
+          "bytes": 13456,
+          "sha256": "56d06b42295eab0659deb6c08c410a87a9d7be384404c49f8a6032d9fa160448"
+        },
+        {
+          "path": "phase2/results/logs/full/mixed/resnet/seed_202/epochs.csv",
+          "bytes": 16139,
+          "sha256": "12d093e3bd50cb264727b8bd502e0735f30087e3ff99eeec23e60f6e17f5a640"
+        },
+        {
+          "path": "phase2/results/logs/full/clean_only/tcn/seed_17/epochs.csv",
+          "bytes": 7850,
+          "sha256": "52828193ec6f24841b198f1465ff4e9ac7fab821fd859400f55ad322aa61a8d9"
+        },
+        {
+          "path": "phase2/results/logs/full/independent_rms/tcn/seed_17/epochs.csv",
+          "bytes": 15637,
+          "sha256": "6ee6e52322c45ea47cf64102f3be7ac628eeb8dc02ca3625c541ae19ab5faafd"
+        },
+        {
+          "path": "phase2/results/logs/full/electrode/tcn/seed_17/epochs.csv",
+          "bytes": 13432,
+          "sha256": "5e6d4c4b45b272113b528ec8aa376557d7c6c1312c18e5bef421c5b81303a34a"
+        },
+        {
+          "path": "phase2/results/logs/full/mixed/tcn/seed_17/epochs.csv",
+          "bytes": 16151,
+          "sha256": "9d0ed94bdcf36a8b3b2df24da1b630908e4dafa8265acd16a8cb31ca08fbaf66"
+        },
+        {
+          "path": "phase2/results/logs/full/clean_only/tcn/seed_29/epochs.csv",
+          "bytes": 7853,
+          "sha256": "1066091370663ba534ff6463b50af0219e8e7045efe45df53d3c477ba288fda7"
+        },
+        {
+          "path": "phase2/results/logs/full/independent_rms/tcn/seed_29/epochs.csv",
+          "bytes": 15672,
+          "sha256": "445243d5ecd2ae4976f86d83d3f8e78f59e49eb50ea706e28af068a03ecad8a5"
+        },
+        {
+          "path": "phase2/results/logs/full/electrode/tcn/seed_29/epochs.csv",
+          "bytes": 13442,
+          "sha256": "5f1db5ac1a0d6bcf47316e25385356b97ff849517435b38289af14f1eb3e0514"
+        },
+        {
+          "path": "phase2/results/logs/full/mixed/tcn/seed_29/epochs.csv",
+          "bytes": 16132,
+          "sha256": "ca3c69048618f7093eecc1bab9d602f646ef3de5d1f18f3d046c878690726c2a"
+        },
+        {
+          "path": "phase2/results/logs/full/clean_only/tcn/seed_43/epochs.csv",
+          "bytes": 7856,
+          "sha256": "7ac888563aef93b2764528e4daea849e4ecca9bff2787372735e64b925ee28ad"
+        },
+        {
+          "path": "phase2/results/logs/full/independent_rms/tcn/seed_43/epochs.csv",
+          "bytes": 15644,
+          "sha256": "09244450f716d6d34cf8455452f8603762baabed2b2141adbbb6c9eff44b7bfd"
+        },
+        {
+          "path": "phase2/results/logs/full/electrode/tcn/seed_43/epochs.csv",
+          "bytes": 13401,
+          "sha256": "6b11c019a533328ac5f95482de3076f869223a31f75561609904b1dbd1ae8909"
+        },
+        {
+          "path": "phase2/results/logs/full/mixed/tcn/seed_43/epochs.csv",
+          "bytes": 16093,
+          "sha256": "b3dab10546aadcf1738491a48cf2a3511d202f90061b02a5e2cb1bf8f6ce3c01"
+        },
+        {
+          "path": "phase2/results/logs/full/clean_only/tcn/seed_101/epochs.csv",
+          "bytes": 7836,
+          "sha256": "7b1f301ff728870b8ff19d59dabc902960517f51506bf213e17426706661ae8f"
+        },
+        {
+          "path": "phase2/results/logs/full/independent_rms/tcn/seed_101/epochs.csv",
+          "bytes": 15657,
+          "sha256": "73f431c4fba8fb4783a601e945be319dfbcbce42d42c63e9241b242b916b9025"
+        },
+        {
+          "path": "phase2/results/logs/full/electrode/tcn/seed_101/epochs.csv",
+          "bytes": 13441,
+          "sha256": "5c0fe65bda20451cd752be1d78035ce02a931228b011887caa4568a7e877bf67"
+        },
+        {
+          "path": "phase2/results/logs/full/mixed/tcn/seed_101/epochs.csv",
+          "bytes": 16132,
+          "sha256": "e22188fc18ad68ad6f6d643f64ec147e7d8a5197b303b663fb364d759e426410"
+        },
+        {
+          "path": "phase2/results/logs/full/clean_only/tcn/seed_202/epochs.csv",
+          "bytes": 7841,
+          "sha256": "3439a91a9c62f5bc06c3e5e50a69b7fc65728d95bf74b1d0120d924381033b81"
+        },
+        {
+          "path": "phase2/results/logs/full/independent_rms/tcn/seed_202/epochs.csv",
+          "bytes": 15668,
+          "sha256": "292e882a895d1d0d173e5b08194830979904a11f43ed7b32d777001d72ce8e3a"
+        },
+        {
+          "path": "phase2/results/logs/full/electrode/tcn/seed_202/epochs.csv",
+          "bytes": 13441,
+          "sha256": "e732fe6df4d955d8063095b1cc676b7c2c18df77bda696ea1c14f8456b5d3de5"
+        },
+        {
+          "path": "phase2/results/logs/full/mixed/tcn/seed_202/epochs.csv",
+          "bytes": 16136,
+          "sha256": "091de6c36a2947802eb10c7e587a1fbe1f70e8b784eca6e24a9d4228f9b180f8"
+        },
+        {
+          "path": "phase2/src/plot_phase2.py",
+          "bytes": 58365,
+          "sha256": "8d9ffef6bfa7fc829313ea2c22ae901e151e4d6c8ff2e7682b0b318b0225a62a"
+        },
+        {
+          "path": "phase2/configs/phase2_main.yaml",
+          "bytes": 4620,
+          "sha256": "ed83bbebf04fa0fc5cfdd6a1cb0ed5546140747a45b929f99e51f0627a5ca3be"
+        },
+        {
+          "path": "phase2/results/logs/full/evaluation_protocol.json",
+          "bytes": 38065,
+          "sha256": "155e1ba462a68da590fcce0e2631bf2501fd2557f453949bd3b7730442546cc9"
+        },
+        {
+          "path": "phase2/results/logs/full/statistics_protocol.json",
+          "bytes": 40005,
+          "sha256": "1f0a583696a895b818c1ec7e28b777f79ab00a5f8c8f10eadce73081c4c471ec"
+        },
+        {
+          "path": "phase2/results/test_inputs/full/manifest.json",
+          "bytes": 2502662,
+          "sha256": "e15c6d71d55444149d916fcf724a062bfdc2f2be118569255aef9abeff2384df"
+        }
+      ]
+    }
+  ],
+  "skipped": [],
+  "interpretation": "Experimental robustness results, not clinical deployment evidence. Seed SD is descriptive; the inference unit is stated for confidence intervals.",
+  "status": "completed",
+  "stage": "full",
+  "config_sha256": "980993c490b41e9793164c1d9bbfa54f728606fff281e07486e7af2fc41ddda7",
+  "strategy_colors": {
+    "clean_only": "#595959",
+    "independent_rms": "#0072B2",
+    "electrode": "#D55E00",
+    "mixed": "#009E73"
+  },
+  "required_families": [
+    "calibration",
+    "clean",
+    "gaussian_snr",
+    "heldout_heatmaps",
+    "noise_stability",
+    "nstdb_sensitivity",
+    "primary_effects",
+    "ranks_seeds",
+    "training_validation"
+  ],
+  "training_seeds": [
+    17,
+    29,
+    43,
+    101,
+    202
+  ],
+  "noise_seeds": [
+    20001,
+    20002,
+    20003,
+    20004,
+    20005
+  ]
+}

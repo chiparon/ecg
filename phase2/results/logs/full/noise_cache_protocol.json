@@ -1,0 +1,14 @@
+{
+  "status": "completed",
+  "stage": "full",
+  "config_sha256": "980993c490b41e9793164c1d9bbfa54f728606fff281e07486e7af2fc41ddda7",
+  "matrix_sha256": "4f852acd9c5a4f7b35a207f5078d70f842de3077d648716950a66502951bfe9d",
+  "case_count": 1711,
+  "group_count": 374,
+  "manifest": {
+    "path": "phase2/results/test_inputs/full/manifest.json",
+    "bytes": 2502662,
+    "sha256": "e15c6d71d55444149d916fcf724a062bfdc2f2be118569255aef9abeff2384df"
+  },
+  "elapsed_seconds": 970.163055999903
+}

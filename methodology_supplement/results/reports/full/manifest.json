@@ -1,0 +1,6058 @@
+{
+  "status": "completed",
+  "config_sha256": "f3f190e9a26bc96544f393a62673ff518c543018da23acdb50aed9409c224469",
+  "report": {
+    "path": "methodology_supplement/results/reports/full/minimal_five_report.html",
+    "bytes": 113871,
+    "sha256": "4db06e2635cf5d38ce95caecf088f6ce70f6da5c5e09aa11ac688010a466efaa"
+  },
+  "implementation": {
+    "path": "methodology_supplement/report.py",
+    "bytes": 29200,
+    "sha256": "bf56bdc960ecb3ddeea6cb8c81c42299f2c1186eb233152a66f8c0cf62987432"
+  },
+  "numeric_cells": [
+    {
+      "id": "number-1",
+      "source": "matrix_structure",
+      "row": 0,
+      "column": "rank",
+      "scale": 1,
+      "digits": 0,
+      "signed": false,
+      "text": "8"
+    },
+    {
+      "id": "number-2",
+      "source": "matrix_structure",
+      "row": 0,
+      "column": "right_nullity",
+      "scale": 1,
+      "digits": 0,
+      "signed": false,
+      "text": "1"
+    },
+    {
+      "id": "number-3",
+      "source": "matrix_structure",
+      "row": 0,
+      "column": "left_nullity",
+      "scale": 1,
+      "digits": 0,
+      "signed": false,
+      "text": "4"
+    },
+    {
+      "id": "number-4",
+      "source": "matrix_structure",
+      "row": 0,
+      "column": "total_squared_gain",
+      "scale": 1,
+      "digits": 3,
+      "signed": false,
+      "text": "18.500"
+    },
+    {
+      "id": "number-5",
+      "source": "matrix_structure",
+      "row": 0,
+      "column": "mean_abs_offdiagonal_covariance",
+      "scale": 1,
+      "digits": 3,
+      "signed": false,
+      "text": "0.292"
+    },
+    {
+      "id": "number-6",
+      "source": "matrix_structure",
+      "row": 1,
+      "column": "rank",
+      "scale": 1,
+      "digits": 0,
+      "signed": false,
+      "text": "3"
+    },
+    {
+      "id": "number-7",
+      "source": "matrix_structure",
+      "row": 1,
+      "column": "right_nullity",
+      "scale": 1,
+      "digits": 0,
+      "signed": false,
+      "text": "6"
+    },
+    {
+      "id": "number-8",
+      "source": "matrix_structure",
+      "row": 1,
+      "column": "left_nullity",
+      "scale": 1,
+      "digits": 0,
+      "signed": false,
+      "text": "9"
+    },
+    {
+      "id": "number-9",
+      "source": "matrix_structure",
+      "row": 1,
+      "column": "total_squared_gain",
+      "scale": 1,
+      "digits": 3,
+      "signed": false,
+      "text": "12.500"
+    },
+    {
+      "id": "number-10",
+      "source": "matrix_structure",
+      "row": 1,
+      "column": "mean_abs_offdiagonal_covariance",
+      "scale": 1,
+      "digits": 3,
+      "signed": false,
+      "text": "0.292"
+    },
+    {
+      "id": "number-11",
+      "source": "matrix_structure",
+      "row": 2,
+      "column": "rank",
+      "scale": 1,
+      "digits": 0,
+      "signed": false,
+      "text": "6"
+    },
+    {
+      "id": "number-12",
+      "source": "matrix_structure",
+      "row": 2,
+      "column": "right_nullity",
+      "scale": 1,
+      "digits": 0,
+      "signed": false,
+      "text": "3"
+    },
+    {
+      "id": "number-13",
+      "source": "matrix_structure",
+      "row": 2,
+      "column": "left_nullity",
+      "scale": 1,
+      "digits": 0,
+      "signed": false,
+      "text": "6"
+    },
+    {
+      "id": "number-14",
+      "source": "matrix_structure",
+      "row": 2,
+      "column": "total_squared_gain",
+      "scale": 1,
+      "digits": 3,
+      "signed": false,
+      "text": "6.000"
+    },
+    {
+      "id": "number-15",
+      "source": "matrix_structure",
+      "row": 2,
+      "column": "mean_abs_offdiagonal_covariance",
+      "scale": 1,
+      "digits": 3,
+      "signed": false,
+      "text": "0.000"
+    },
+    {
+      "id": "number-16",
+      "source": "matrix_structure",
+      "row": 3,
+      "column": "rank",
+      "scale": 1,
+      "digits": 0,
+      "signed": false,
+      "text": "9"
+    },
+    {
+      "id": "number-17",
+      "source": "matrix_structure",
+      "row": 3,
+      "column": "right_nullity",
+      "scale": 1,
+      "digits": 0,
+      "signed": false,
+      "text": "0"
+    },
+    {
+      "id": "number-18",
+      "source": "matrix_structure",
+      "row": 3,
+      "column": "left_nullity",
+      "scale": 1,
+      "digits": 0,
+      "signed": false,
+      "text": "3"
+    },
+    {
+      "id": "number-19",
+      "source": "matrix_structure",
+      "row": 3,
+      "column": "total_squared_gain",
+      "scale": 1,
+      "digits": 3,
+      "signed": false,
+      "text": "18.500"
+    },
+    {
+      "id": "number-20",
+      "source": "matrix_structure",
+      "row": 3,
+      "column": "mean_abs_offdiagonal_covariance",
+      "scale": 1,
+      "digits": 3,
+      "signed": false,
+      "text": "0.388"
+    },
+    {
+      "id": "number-21",
+      "source": "matrix_structure",
+      "row": 4,
+      "column": "rank",
+      "scale": 1,
+      "digits": 0,
+      "signed": false,
+      "text": "9"
+    },
+    {
+      "id": "number-22",
+      "source": "matrix_structure",
+      "row": 4,
+      "column": "right_nullity",
+      "scale": 1,
+      "digits": 0,
+      "signed": false,
+      "text": "0"
+    },
+    {
+      "id": "number-23",
+      "source": "matrix_structure",
+      "row": 4,
+      "column": "left_nullity",
+      "scale": 1,
+      "digits": 0,
+      "signed": false,
+      "text": "3"
+    },
+    {
+      "id": "number-24",
+      "source": "matrix_structure",
+      "row": 4,
+      "column": "total_squared_gain",
+      "scale": 1,
+      "digits": 3,
+      "signed": false,
+      "text": "18.500"
+    },
+    {
+      "id": "number-25",
+      "source": "matrix_structure",
+      "row": 4,
+      "column": "mean_abs_offdiagonal_covariance",
+      "scale": 1,
+      "digits": 3,
+      "signed": false,
+      "text": "0.411"
+    },
+    {
+      "id": "number-26",
+      "source": "matrix_structure",
+      "row": 5,
+      "column": "rank",
+      "scale": 1,
+      "digits": 0,
+      "signed": false,
+      "text": "9"
+    },
+    {
+      "id": "number-27",
+      "source": "matrix_structure",
+      "row": 5,
+      "column": "right_nullity",
+      "scale": 1,
+      "digits": 0,
+      "signed": false,
+      "text": "0"
+    },
+    {
+      "id": "number-28",
+      "source": "matrix_structure",
+      "row": 5,
+      "column": "left_nullity",
+      "scale": 1,
+      "digits": 0,
+      "signed": false,
+      "text": "3"
+    },
+    {
+      "id": "number-29",
+      "source": "matrix_structure",
+      "row": 5,
+      "column": "total_squared_gain",
+      "scale": 1,
+      "digits": 3,
+      "signed": false,
+      "text": "18.500"
+    },
+    {
+      "id": "number-30",
+      "source": "matrix_structure",
+      "row": 5,
+      "column": "mean_abs_offdiagonal_covariance",
+      "scale": 1,
+      "digits": 3,
+      "signed": false,
+      "text": "0.465"
+    },
+    {
+      "id": "number-31",
+      "source": "matrix_structure",
+      "row": 6,
+      "column": "rank",
+      "scale": 1,
+      "digits": 0,
+      "signed": false,
+      "text": "9"
+    },
+    {
+      "id": "number-32",
+      "source": "matrix_structure",
+      "row": 6,
+      "column": "right_nullity",
+      "scale": 1,
+      "digits": 0,
+      "signed": false,
+      "text": "0"
+    },
+    {
+      "id": "number-33",
+      "source": "matrix_structure",
+      "row": 6,
+      "column": "left_nullity",
+      "scale": 1,
+      "digits": 0,
+      "signed": false,
+      "text": "3"
+    },
+    {
+      "id": "number-34",
+      "source": "matrix_structure",
+      "row": 6,
+      "column": "total_squared_gain",
+      "scale": 1,
+      "digits": 3,
+      "signed": false,
+      "text": "18.500"
+    },
+    {
+      "id": "number-35",
+      "source": "matrix_structure",
+      "row": 6,
+      "column": "mean_abs_offdiagonal_covariance",
+      "scale": 1,
+      "digits": 3,
+      "signed": false,
+      "text": "0.459"
+    },
+    {
+      "id": "number-36",
+      "source": "matrix_structure",
+      "row": 7,
+      "column": "rank",
+      "scale": 1,
+      "digits": 0,
+      "signed": false,
+      "text": "9"
+    },
+    {
+      "id": "number-37",
+      "source": "matrix_structure",
+      "row": 7,
+      "column": "right_nullity",
+      "scale": 1,
+      "digits": 0,
+      "signed": false,
+      "text": "0"
+    },
+    {
+      "id": "number-38",
+      "source": "matrix_structure",
+      "row": 7,
+      "column": "left_nullity",
+      "scale": 1,
+      "digits": 0,
+      "signed": false,
+      "text": "3"
+    },
+    {
+      "id": "number-39",
+      "source": "matrix_structure",
+      "row": 7,
+      "column": "total_squared_gain",
+      "scale": 1,
+      "digits": 3,
+      "signed": false,
+      "text": "18.500"
+    },
+    {
+      "id": "number-40",
+      "source": "matrix_structure",
+      "row": 7,
+      "column": "mean_abs_offdiagonal_covariance",
+      "scale": 1,
+      "digits": 3,
+      "signed": false,
+      "text": "0.402"
+    },
+    {
+      "id": "number-41",
+      "source": "new_summary",
+      "row": 789,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.913"
+    },
+    {
+      "id": "number-42",
+      "source": "new_summary",
+      "row": 789,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.284"
+    },
+    {
+      "id": "number-43",
+      "source": "new_summary",
+      "row": 789,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-2.113"
+    },
+    {
+      "id": "number-44",
+      "source": "new_summary",
+      "row": 789,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.702"
+    },
+    {
+      "id": "number-45",
+      "source": "new_summary",
+      "row": 804,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.731"
+    },
+    {
+      "id": "number-46",
+      "source": "new_summary",
+      "row": 804,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.280"
+    },
+    {
+      "id": "number-47",
+      "source": "new_summary",
+      "row": 804,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.849"
+    },
+    {
+      "id": "number-48",
+      "source": "new_summary",
+      "row": 804,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.610"
+    },
+    {
+      "id": "number-49",
+      "source": "new_summary",
+      "row": 819,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.241"
+    },
+    {
+      "id": "number-50",
+      "source": "new_summary",
+      "row": 819,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.125"
+    },
+    {
+      "id": "number-51",
+      "source": "new_summary",
+      "row": 819,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.306"
+    },
+    {
+      "id": "number-52",
+      "source": "new_summary",
+      "row": 819,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.174"
+    },
+    {
+      "id": "number-53",
+      "source": "new_summary",
+      "row": 834,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.076"
+    },
+    {
+      "id": "number-54",
+      "source": "new_summary",
+      "row": 834,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.059"
+    },
+    {
+      "id": "number-55",
+      "source": "new_summary",
+      "row": 834,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.113"
+    },
+    {
+      "id": "number-56",
+      "source": "new_summary",
+      "row": 834,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.038"
+    },
+    {
+      "id": "number-57",
+      "source": "new_summary",
+      "row": 849,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.022"
+    },
+    {
+      "id": "number-58",
+      "source": "new_summary",
+      "row": 849,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.026"
+    },
+    {
+      "id": "number-59",
+      "source": "new_summary",
+      "row": 849,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.044"
+    },
+    {
+      "id": "number-60",
+      "source": "new_summary",
+      "row": 849,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.001"
+    },
+    {
+      "id": "number-61",
+      "source": "new_summary",
+      "row": 864,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.248"
+    },
+    {
+      "id": "number-62",
+      "source": "new_summary",
+      "row": 864,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.417"
+    },
+    {
+      "id": "number-63",
+      "source": "new_summary",
+      "row": 864,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.419"
+    },
+    {
+      "id": "number-64",
+      "source": "new_summary",
+      "row": 864,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.080"
+    },
+    {
+      "id": "number-65",
+      "source": "new_summary",
+      "row": 879,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.328"
+    },
+    {
+      "id": "number-66",
+      "source": "new_summary",
+      "row": 879,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.181"
+    },
+    {
+      "id": "number-67",
+      "source": "new_summary",
+      "row": 879,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.420"
+    },
+    {
+      "id": "number-68",
+      "source": "new_summary",
+      "row": 879,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.235"
+    },
+    {
+      "id": "number-69",
+      "source": "new_summary",
+      "row": 894,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.061"
+    },
+    {
+      "id": "number-70",
+      "source": "new_summary",
+      "row": 894,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.042"
+    },
+    {
+      "id": "number-71",
+      "source": "new_summary",
+      "row": 894,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.115"
+    },
+    {
+      "id": "number-72",
+      "source": "new_summary",
+      "row": 894,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.008"
+    },
+    {
+      "id": "number-73",
+      "source": "new_summary",
+      "row": 909,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.001"
+    },
+    {
+      "id": "number-74",
+      "source": "new_summary",
+      "row": 909,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.005"
+    },
+    {
+      "id": "number-75",
+      "source": "new_summary",
+      "row": 909,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.030"
+    },
+    {
+      "id": "number-76",
+      "source": "new_summary",
+      "row": 909,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.031"
+    },
+    {
+      "id": "number-77",
+      "source": "new_summary",
+      "row": 924,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.008"
+    },
+    {
+      "id": "number-78",
+      "source": "new_summary",
+      "row": 924,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.003"
+    },
+    {
+      "id": "number-79",
+      "source": "new_summary",
+      "row": 924,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.009"
+    },
+    {
+      "id": "number-80",
+      "source": "new_summary",
+      "row": 924,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.025"
+    },
+    {
+      "id": "number-81",
+      "source": "phase2_snr_summary",
+      "row": 0,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.028"
+    },
+    {
+      "id": "number-82",
+      "source": "phase2_snr_summary",
+      "row": 0,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.015"
+    },
+    {
+      "id": "number-83",
+      "source": "phase2_snr_summary",
+      "row": 0,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.049"
+    },
+    {
+      "id": "number-84",
+      "source": "phase2_snr_summary",
+      "row": 0,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.007"
+    },
+    {
+      "id": "number-85",
+      "source": "phase2_snr_summary",
+      "row": 3,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.078"
+    },
+    {
+      "id": "number-86",
+      "source": "phase2_snr_summary",
+      "row": 3,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.039"
+    },
+    {
+      "id": "number-87",
+      "source": "phase2_snr_summary",
+      "row": 3,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.114"
+    },
+    {
+      "id": "number-88",
+      "source": "phase2_snr_summary",
+      "row": 3,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.041"
+    },
+    {
+      "id": "number-89",
+      "source": "phase2_snr_summary",
+      "row": 6,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.222"
+    },
+    {
+      "id": "number-90",
+      "source": "phase2_snr_summary",
+      "row": 6,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.098"
+    },
+    {
+      "id": "number-91",
+      "source": "phase2_snr_summary",
+      "row": 6,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.286"
+    },
+    {
+      "id": "number-92",
+      "source": "phase2_snr_summary",
+      "row": 6,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.158"
+    },
+    {
+      "id": "number-93",
+      "source": "phase2_snr_summary",
+      "row": 9,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.720"
+    },
+    {
+      "id": "number-94",
+      "source": "phase2_snr_summary",
+      "row": 9,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.247"
+    },
+    {
+      "id": "number-95",
+      "source": "phase2_snr_summary",
+      "row": 9,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.838"
+    },
+    {
+      "id": "number-96",
+      "source": "phase2_snr_summary",
+      "row": 9,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.606"
+    },
+    {
+      "id": "number-97",
+      "source": "phase2_snr_summary",
+      "row": 12,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-2.026"
+    },
+    {
+      "id": "number-98",
+      "source": "phase2_snr_summary",
+      "row": 12,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.454"
+    },
+    {
+      "id": "number-99",
+      "source": "phase2_snr_summary",
+      "row": 12,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-2.224"
+    },
+    {
+      "id": "number-100",
+      "source": "phase2_snr_summary",
+      "row": 12,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.848"
+    },
+    {
+      "id": "number-101",
+      "source": "phase2_snr_summary",
+      "row": 15,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.006"
+    },
+    {
+      "id": "number-102",
+      "source": "phase2_snr_summary",
+      "row": 15,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.012"
+    },
+    {
+      "id": "number-103",
+      "source": "phase2_snr_summary",
+      "row": 15,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.025"
+    },
+    {
+      "id": "number-104",
+      "source": "phase2_snr_summary",
+      "row": 15,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.013"
+    },
+    {
+      "id": "number-105",
+      "source": "phase2_snr_summary",
+      "row": 18,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.035"
+    },
+    {
+      "id": "number-106",
+      "source": "phase2_snr_summary",
+      "row": 18,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.021"
+    },
+    {
+      "id": "number-107",
+      "source": "phase2_snr_summary",
+      "row": 18,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.069"
+    },
+    {
+      "id": "number-108",
+      "source": "phase2_snr_summary",
+      "row": 18,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.002"
+    },
+    {
+      "id": "number-109",
+      "source": "phase2_snr_summary",
+      "row": 21,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.123"
+    },
+    {
+      "id": "number-110",
+      "source": "phase2_snr_summary",
+      "row": 21,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.049"
+    },
+    {
+      "id": "number-111",
+      "source": "phase2_snr_summary",
+      "row": 21,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.181"
+    },
+    {
+      "id": "number-112",
+      "source": "phase2_snr_summary",
+      "row": 21,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.065"
+    },
+    {
+      "id": "number-113",
+      "source": "phase2_snr_summary",
+      "row": 24,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.453"
+    },
+    {
+      "id": "number-114",
+      "source": "phase2_snr_summary",
+      "row": 24,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.125"
+    },
+    {
+      "id": "number-115",
+      "source": "phase2_snr_summary",
+      "row": 24,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.556"
+    },
+    {
+      "id": "number-116",
+      "source": "phase2_snr_summary",
+      "row": 24,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.348"
+    },
+    {
+      "id": "number-117",
+      "source": "phase2_snr_summary",
+      "row": 27,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.719"
+    },
+    {
+      "id": "number-118",
+      "source": "phase2_snr_summary",
+      "row": 27,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.352"
+    },
+    {
+      "id": "number-119",
+      "source": "phase2_snr_summary",
+      "row": 27,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.908"
+    },
+    {
+      "id": "number-120",
+      "source": "phase2_snr_summary",
+      "row": 27,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.534"
+    },
+    {
+      "id": "number-121",
+      "source": "phase2_snr_summary",
+      "row": 30,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.001"
+    },
+    {
+      "id": "number-122",
+      "source": "phase2_snr_summary",
+      "row": 30,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.024"
+    },
+    {
+      "id": "number-123",
+      "source": "phase2_snr_summary",
+      "row": 30,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.020"
+    },
+    {
+      "id": "number-124",
+      "source": "phase2_snr_summary",
+      "row": 30,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.020"
+    },
+    {
+      "id": "number-125",
+      "source": "phase2_snr_summary",
+      "row": 33,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.013"
+    },
+    {
+      "id": "number-126",
+      "source": "phase2_snr_summary",
+      "row": 33,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.029"
+    },
+    {
+      "id": "number-127",
+      "source": "phase2_snr_summary",
+      "row": 33,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.047"
+    },
+    {
+      "id": "number-128",
+      "source": "phase2_snr_summary",
+      "row": 33,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.019"
+    },
+    {
+      "id": "number-129",
+      "source": "phase2_snr_summary",
+      "row": 36,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.058"
+    },
+    {
+      "id": "number-130",
+      "source": "phase2_snr_summary",
+      "row": 36,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.044"
+    },
+    {
+      "id": "number-131",
+      "source": "phase2_snr_summary",
+      "row": 36,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.113"
+    },
+    {
+      "id": "number-132",
+      "source": "phase2_snr_summary",
+      "row": 36,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.002"
+    },
+    {
+      "id": "number-133",
+      "source": "phase2_snr_summary",
+      "row": 39,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.268"
+    },
+    {
+      "id": "number-134",
+      "source": "phase2_snr_summary",
+      "row": 39,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.104"
+    },
+    {
+      "id": "number-135",
+      "source": "phase2_snr_summary",
+      "row": 39,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.362"
+    },
+    {
+      "id": "number-136",
+      "source": "phase2_snr_summary",
+      "row": 39,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.175"
+    },
+    {
+      "id": "number-137",
+      "source": "phase2_snr_summary",
+      "row": 42,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.142"
+    },
+    {
+      "id": "number-138",
+      "source": "phase2_snr_summary",
+      "row": 42,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.397"
+    },
+    {
+      "id": "number-139",
+      "source": "phase2_snr_summary",
+      "row": 42,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.307"
+    },
+    {
+      "id": "number-140",
+      "source": "phase2_snr_summary",
+      "row": 42,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.982"
+    },
+    {
+      "id": "number-141",
+      "source": "phase2_snr_summary",
+      "row": 45,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.004"
+    },
+    {
+      "id": "number-142",
+      "source": "phase2_snr_summary",
+      "row": 45,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.013"
+    },
+    {
+      "id": "number-143",
+      "source": "phase2_snr_summary",
+      "row": 45,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.024"
+    },
+    {
+      "id": "number-144",
+      "source": "phase2_snr_summary",
+      "row": 45,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.019"
+    },
+    {
+      "id": "number-145",
+      "source": "phase2_snr_summary",
+      "row": 48,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.022"
+    },
+    {
+      "id": "number-146",
+      "source": "phase2_snr_summary",
+      "row": 48,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.021"
+    },
+    {
+      "id": "number-147",
+      "source": "phase2_snr_summary",
+      "row": 48,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.056"
+    },
+    {
+      "id": "number-148",
+      "source": "phase2_snr_summary",
+      "row": 48,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.014"
+    },
+    {
+      "id": "number-149",
+      "source": "phase2_snr_summary",
+      "row": 51,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.089"
+    },
+    {
+      "id": "number-150",
+      "source": "phase2_snr_summary",
+      "row": 51,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.067"
+    },
+    {
+      "id": "number-151",
+      "source": "phase2_snr_summary",
+      "row": 51,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.145"
+    },
+    {
+      "id": "number-152",
+      "source": "phase2_snr_summary",
+      "row": 51,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.032"
+    },
+    {
+      "id": "number-153",
+      "source": "phase2_snr_summary",
+      "row": 54,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.350"
+    },
+    {
+      "id": "number-154",
+      "source": "phase2_snr_summary",
+      "row": 54,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.161"
+    },
+    {
+      "id": "number-155",
+      "source": "phase2_snr_summary",
+      "row": 54,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.448"
+    },
+    {
+      "id": "number-156",
+      "source": "phase2_snr_summary",
+      "row": 54,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.252"
+    },
+    {
+      "id": "number-157",
+      "source": "phase2_snr_summary",
+      "row": 57,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.351"
+    },
+    {
+      "id": "number-158",
+      "source": "phase2_snr_summary",
+      "row": 57,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.507"
+    },
+    {
+      "id": "number-159",
+      "source": "phase2_snr_summary",
+      "row": 57,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.521"
+    },
+    {
+      "id": "number-160",
+      "source": "phase2_snr_summary",
+      "row": 57,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.177"
+    },
+    {
+      "id": "number-161",
+      "source": "phase2_snr_summary",
+      "row": 60,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.002"
+    },
+    {
+      "id": "number-162",
+      "source": "phase2_snr_summary",
+      "row": 60,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.010"
+    },
+    {
+      "id": "number-163",
+      "source": "phase2_snr_summary",
+      "row": 60,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.022"
+    },
+    {
+      "id": "number-164",
+      "source": "phase2_snr_summary",
+      "row": 60,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.018"
+    },
+    {
+      "id": "number-165",
+      "source": "phase2_snr_summary",
+      "row": 63,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.017"
+    },
+    {
+      "id": "number-166",
+      "source": "phase2_snr_summary",
+      "row": 63,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.013"
+    },
+    {
+      "id": "number-167",
+      "source": "phase2_snr_summary",
+      "row": 63,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.054"
+    },
+    {
+      "id": "number-168",
+      "source": "phase2_snr_summary",
+      "row": 63,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.019"
+    },
+    {
+      "id": "number-169",
+      "source": "phase2_snr_summary",
+      "row": 66,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.111"
+    },
+    {
+      "id": "number-170",
+      "source": "phase2_snr_summary",
+      "row": 66,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.045"
+    },
+    {
+      "id": "number-171",
+      "source": "phase2_snr_summary",
+      "row": 66,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.176"
+    },
+    {
+      "id": "number-172",
+      "source": "phase2_snr_summary",
+      "row": 66,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.047"
+    },
+    {
+      "id": "number-173",
+      "source": "phase2_snr_summary",
+      "row": 69,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.503"
+    },
+    {
+      "id": "number-174",
+      "source": "phase2_snr_summary",
+      "row": 69,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.254"
+    },
+    {
+      "id": "number-175",
+      "source": "phase2_snr_summary",
+      "row": 69,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.622"
+    },
+    {
+      "id": "number-176",
+      "source": "phase2_snr_summary",
+      "row": 69,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.391"
+    },
+    {
+      "id": "number-177",
+      "source": "phase2_snr_summary",
+      "row": 72,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.890"
+    },
+    {
+      "id": "number-178",
+      "source": "phase2_snr_summary",
+      "row": 72,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.913"
+    },
+    {
+      "id": "number-179",
+      "source": "phase2_snr_summary",
+      "row": 72,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-2.114"
+    },
+    {
+      "id": "number-180",
+      "source": "phase2_snr_summary",
+      "row": 72,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.673"
+    },
+    {
+      "id": "number-181",
+      "source": "phase2_snr_summary",
+      "row": 75,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.001"
+    },
+    {
+      "id": "number-182",
+      "source": "phase2_snr_summary",
+      "row": 75,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.010"
+    },
+    {
+      "id": "number-183",
+      "source": "phase2_snr_summary",
+      "row": 75,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.018"
+    },
+    {
+      "id": "number-184",
+      "source": "phase2_snr_summary",
+      "row": 75,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.019"
+    },
+    {
+      "id": "number-185",
+      "source": "phase2_snr_summary",
+      "row": 78,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.013"
+    },
+    {
+      "id": "number-186",
+      "source": "phase2_snr_summary",
+      "row": 78,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.019"
+    },
+    {
+      "id": "number-187",
+      "source": "phase2_snr_summary",
+      "row": 78,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.048"
+    },
+    {
+      "id": "number-188",
+      "source": "phase2_snr_summary",
+      "row": 78,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.021"
+    },
+    {
+      "id": "number-189",
+      "source": "phase2_snr_summary",
+      "row": 81,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.080"
+    },
+    {
+      "id": "number-190",
+      "source": "phase2_snr_summary",
+      "row": 81,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.033"
+    },
+    {
+      "id": "number-191",
+      "source": "phase2_snr_summary",
+      "row": 81,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.144"
+    },
+    {
+      "id": "number-192",
+      "source": "phase2_snr_summary",
+      "row": 81,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.018"
+    },
+    {
+      "id": "number-193",
+      "source": "phase2_snr_summary",
+      "row": 84,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.371"
+    },
+    {
+      "id": "number-194",
+      "source": "phase2_snr_summary",
+      "row": 84,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.095"
+    },
+    {
+      "id": "number-195",
+      "source": "phase2_snr_summary",
+      "row": 84,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.487"
+    },
+    {
+      "id": "number-196",
+      "source": "phase2_snr_summary",
+      "row": 84,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.258"
+    },
+    {
+      "id": "number-197",
+      "source": "phase2_snr_summary",
+      "row": 87,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.581"
+    },
+    {
+      "id": "number-198",
+      "source": "phase2_snr_summary",
+      "row": 87,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.536"
+    },
+    {
+      "id": "number-199",
+      "source": "phase2_snr_summary",
+      "row": 87,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.809"
+    },
+    {
+      "id": "number-200",
+      "source": "phase2_snr_summary",
+      "row": 87,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.363"
+    },
+    {
+      "id": "number-201",
+      "source": "phase2_snr_summary",
+      "row": 90,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.001"
+    },
+    {
+      "id": "number-202",
+      "source": "phase2_snr_summary",
+      "row": 90,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.007"
+    },
+    {
+      "id": "number-203",
+      "source": "phase2_snr_summary",
+      "row": 90,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.018"
+    },
+    {
+      "id": "number-204",
+      "source": "phase2_snr_summary",
+      "row": 90,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.017"
+    },
+    {
+      "id": "number-205",
+      "source": "phase2_snr_summary",
+      "row": 93,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.011"
+    },
+    {
+      "id": "number-206",
+      "source": "phase2_snr_summary",
+      "row": 93,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.015"
+    },
+    {
+      "id": "number-207",
+      "source": "phase2_snr_summary",
+      "row": 93,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.042"
+    },
+    {
+      "id": "number-208",
+      "source": "phase2_snr_summary",
+      "row": 93,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.021"
+    },
+    {
+      "id": "number-209",
+      "source": "phase2_snr_summary",
+      "row": 96,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.049"
+    },
+    {
+      "id": "number-210",
+      "source": "phase2_snr_summary",
+      "row": 96,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.027"
+    },
+    {
+      "id": "number-211",
+      "source": "phase2_snr_summary",
+      "row": 96,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.103"
+    },
+    {
+      "id": "number-212",
+      "source": "phase2_snr_summary",
+      "row": 96,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.003"
+    },
+    {
+      "id": "number-213",
+      "source": "phase2_snr_summary",
+      "row": 99,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.193"
+    },
+    {
+      "id": "number-214",
+      "source": "phase2_snr_summary",
+      "row": 99,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.068"
+    },
+    {
+      "id": "number-215",
+      "source": "phase2_snr_summary",
+      "row": 99,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.288"
+    },
+    {
+      "id": "number-216",
+      "source": "phase2_snr_summary",
+      "row": 99,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.104"
+    },
+    {
+      "id": "number-217",
+      "source": "phase2_snr_summary",
+      "row": 102,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.774"
+    },
+    {
+      "id": "number-218",
+      "source": "phase2_snr_summary",
+      "row": 102,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.203"
+    },
+    {
+      "id": "number-219",
+      "source": "phase2_snr_summary",
+      "row": 102,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.942"
+    },
+    {
+      "id": "number-220",
+      "source": "phase2_snr_summary",
+      "row": 102,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.614"
+    },
+    {
+      "id": "number-221",
+      "source": "phase2_snr_summary",
+      "row": 105,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.003"
+    },
+    {
+      "id": "number-222",
+      "source": "phase2_snr_summary",
+      "row": 105,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.008"
+    },
+    {
+      "id": "number-223",
+      "source": "phase2_snr_summary",
+      "row": 105,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.021"
+    },
+    {
+      "id": "number-224",
+      "source": "phase2_snr_summary",
+      "row": 105,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.015"
+    },
+    {
+      "id": "number-225",
+      "source": "phase2_snr_summary",
+      "row": 108,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.015"
+    },
+    {
+      "id": "number-226",
+      "source": "phase2_snr_summary",
+      "row": 108,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.015"
+    },
+    {
+      "id": "number-227",
+      "source": "phase2_snr_summary",
+      "row": 108,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.047"
+    },
+    {
+      "id": "number-228",
+      "source": "phase2_snr_summary",
+      "row": 108,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.018"
+    },
+    {
+      "id": "number-229",
+      "source": "phase2_snr_summary",
+      "row": 111,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.065"
+    },
+    {
+      "id": "number-230",
+      "source": "phase2_snr_summary",
+      "row": 111,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.027"
+    },
+    {
+      "id": "number-231",
+      "source": "phase2_snr_summary",
+      "row": 111,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.122"
+    },
+    {
+      "id": "number-232",
+      "source": "phase2_snr_summary",
+      "row": 111,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.011"
+    },
+    {
+      "id": "number-233",
+      "source": "phase2_snr_summary",
+      "row": 114,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.247"
+    },
+    {
+      "id": "number-234",
+      "source": "phase2_snr_summary",
+      "row": 114,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.074"
+    },
+    {
+      "id": "number-235",
+      "source": "phase2_snr_summary",
+      "row": 114,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.346"
+    },
+    {
+      "id": "number-236",
+      "source": "phase2_snr_summary",
+      "row": 114,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.156"
+    },
+    {
+      "id": "number-237",
+      "source": "phase2_snr_summary",
+      "row": 117,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.981"
+    },
+    {
+      "id": "number-238",
+      "source": "phase2_snr_summary",
+      "row": 117,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.259"
+    },
+    {
+      "id": "number-239",
+      "source": "phase2_snr_summary",
+      "row": 117,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.161"
+    },
+    {
+      "id": "number-240",
+      "source": "phase2_snr_summary",
+      "row": 117,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.817"
+    },
+    {
+      "id": "number-241",
+      "source": "band_noise_audit",
+      "row": 0,
+      "column": "power_fraction_0_5",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "98.36"
+    },
+    {
+      "id": "number-242",
+      "source": "band_noise_audit",
+      "row": 0,
+      "column": "power_fraction_5_15",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "1.57"
+    },
+    {
+      "id": "number-243",
+      "source": "band_noise_audit",
+      "row": 0,
+      "column": "power_fraction_15_40",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "0.06"
+    },
+    {
+      "id": "number-244",
+      "source": "band_noise_audit",
+      "row": 0,
+      "column": "power_fraction_40_50",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "0.01"
+    },
+    {
+      "id": "number-245",
+      "source": "band_noise_audit",
+      "row": 0,
+      "column": "crop_demeaning_retained_power_fraction",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "99.73"
+    },
+    {
+      "id": "number-246",
+      "source": "band_noise_audit",
+      "row": 1,
+      "column": "power_fraction_0_5",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "98.36"
+    },
+    {
+      "id": "number-247",
+      "source": "band_noise_audit",
+      "row": 1,
+      "column": "power_fraction_5_15",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "1.58"
+    },
+    {
+      "id": "number-248",
+      "source": "band_noise_audit",
+      "row": 1,
+      "column": "power_fraction_15_40",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "0.06"
+    },
+    {
+      "id": "number-249",
+      "source": "band_noise_audit",
+      "row": 1,
+      "column": "power_fraction_40_50",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "0.01"
+    },
+    {
+      "id": "number-250",
+      "source": "band_noise_audit",
+      "row": 1,
+      "column": "crop_demeaning_retained_power_fraction",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "99.73"
+    },
+    {
+      "id": "number-251",
+      "source": "band_noise_audit",
+      "row": 2,
+      "column": "power_fraction_0_5",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "0.23"
+    },
+    {
+      "id": "number-252",
+      "source": "band_noise_audit",
+      "row": 2,
+      "column": "power_fraction_5_15",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "98.95"
+    },
+    {
+      "id": "number-253",
+      "source": "band_noise_audit",
+      "row": 2,
+      "column": "power_fraction_15_40",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "0.81"
+    },
+    {
+      "id": "number-254",
+      "source": "band_noise_audit",
+      "row": 2,
+      "column": "power_fraction_40_50",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "0.01"
+    },
+    {
+      "id": "number-255",
+      "source": "band_noise_audit",
+      "row": 2,
+      "column": "crop_demeaning_retained_power_fraction",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "100.00"
+    },
+    {
+      "id": "number-256",
+      "source": "band_noise_audit",
+      "row": 3,
+      "column": "power_fraction_0_5",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "0.23"
+    },
+    {
+      "id": "number-257",
+      "source": "band_noise_audit",
+      "row": 3,
+      "column": "power_fraction_5_15",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "98.94"
+    },
+    {
+      "id": "number-258",
+      "source": "band_noise_audit",
+      "row": 3,
+      "column": "power_fraction_15_40",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "0.82"
+    },
+    {
+      "id": "number-259",
+      "source": "band_noise_audit",
+      "row": 3,
+      "column": "power_fraction_40_50",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "0.01"
+    },
+    {
+      "id": "number-260",
+      "source": "band_noise_audit",
+      "row": 3,
+      "column": "crop_demeaning_retained_power_fraction",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "100.00"
+    },
+    {
+      "id": "number-261",
+      "source": "band_noise_audit",
+      "row": 4,
+      "column": "power_fraction_0_5",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "0.01"
+    },
+    {
+      "id": "number-262",
+      "source": "band_noise_audit",
+      "row": 4,
+      "column": "power_fraction_5_15",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "0.11"
+    },
+    {
+      "id": "number-263",
+      "source": "band_noise_audit",
+      "row": 4,
+      "column": "power_fraction_15_40",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "99.55"
+    },
+    {
+      "id": "number-264",
+      "source": "band_noise_audit",
+      "row": 4,
+      "column": "power_fraction_40_50",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "0.33"
+    },
+    {
+      "id": "number-265",
+      "source": "band_noise_audit",
+      "row": 4,
+      "column": "crop_demeaning_retained_power_fraction",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "100.00"
+    },
+    {
+      "id": "number-266",
+      "source": "band_noise_audit",
+      "row": 5,
+      "column": "power_fraction_0_5",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "0.01"
+    },
+    {
+      "id": "number-267",
+      "source": "band_noise_audit",
+      "row": 5,
+      "column": "power_fraction_5_15",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "0.11"
+    },
+    {
+      "id": "number-268",
+      "source": "band_noise_audit",
+      "row": 5,
+      "column": "power_fraction_15_40",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "99.55"
+    },
+    {
+      "id": "number-269",
+      "source": "band_noise_audit",
+      "row": 5,
+      "column": "power_fraction_40_50",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "0.33"
+    },
+    {
+      "id": "number-270",
+      "source": "band_noise_audit",
+      "row": 5,
+      "column": "crop_demeaning_retained_power_fraction",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "100.00"
+    },
+    {
+      "id": "number-271",
+      "source": "band_noise_audit",
+      "row": 6,
+      "column": "power_fraction_0_5",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "11.28"
+    },
+    {
+      "id": "number-272",
+      "source": "band_noise_audit",
+      "row": 6,
+      "column": "power_fraction_5_15",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "25.31"
+    },
+    {
+      "id": "number-273",
+      "source": "band_noise_audit",
+      "row": 6,
+      "column": "power_fraction_15_40",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "63.20"
+    },
+    {
+      "id": "number-274",
+      "source": "band_noise_audit",
+      "row": 6,
+      "column": "power_fraction_40_50",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "0.21"
+    },
+    {
+      "id": "number-275",
+      "source": "band_noise_audit",
+      "row": 6,
+      "column": "crop_demeaning_retained_power_fraction",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "100.00"
+    },
+    {
+      "id": "number-276",
+      "source": "band_noise_audit",
+      "row": 7,
+      "column": "power_fraction_0_5",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "11.27"
+    },
+    {
+      "id": "number-277",
+      "source": "band_noise_audit",
+      "row": 7,
+      "column": "power_fraction_5_15",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "25.30"
+    },
+    {
+      "id": "number-278",
+      "source": "band_noise_audit",
+      "row": 7,
+      "column": "power_fraction_15_40",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "63.22"
+    },
+    {
+      "id": "number-279",
+      "source": "band_noise_audit",
+      "row": 7,
+      "column": "power_fraction_40_50",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "0.21"
+    },
+    {
+      "id": "number-280",
+      "source": "band_noise_audit",
+      "row": 7,
+      "column": "crop_demeaning_retained_power_fraction",
+      "scale": 100,
+      "digits": 2,
+      "signed": false,
+      "text": "100.00"
+    },
+    {
+      "id": "number-281",
+      "source": "effect_plane",
+      "row": 2,
+      "column": "x_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.222"
+    },
+    {
+      "id": "number-282",
+      "source": "effect_plane",
+      "row": 2,
+      "column": "x_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.098"
+    },
+    {
+      "id": "number-283",
+      "source": "effect_plane",
+      "row": 2,
+      "column": "x_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.286"
+    },
+    {
+      "id": "number-284",
+      "source": "effect_plane",
+      "row": 2,
+      "column": "x_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.158"
+    },
+    {
+      "id": "number-285",
+      "source": "effect_plane",
+      "row": 2,
+      "column": "y_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.661"
+    },
+    {
+      "id": "number-286",
+      "source": "effect_plane",
+      "row": 2,
+      "column": "y_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.434"
+    },
+    {
+      "id": "number-287",
+      "source": "effect_plane",
+      "row": 2,
+      "column": "y_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.508"
+    },
+    {
+      "id": "number-288",
+      "source": "effect_plane",
+      "row": 2,
+      "column": "y_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.824"
+    },
+    {
+      "id": "number-289",
+      "source": "effect_plane",
+      "row": 4,
+      "column": "x_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-2.026"
+    },
+    {
+      "id": "number-290",
+      "source": "effect_plane",
+      "row": 4,
+      "column": "x_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.454"
+    },
+    {
+      "id": "number-291",
+      "source": "effect_plane",
+      "row": 4,
+      "column": "x_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-2.224"
+    },
+    {
+      "id": "number-292",
+      "source": "effect_plane",
+      "row": 4,
+      "column": "x_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.848"
+    },
+    {
+      "id": "number-293",
+      "source": "effect_plane",
+      "row": 4,
+      "column": "y_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+4.235"
+    },
+    {
+      "id": "number-294",
+      "source": "effect_plane",
+      "row": 4,
+      "column": "y_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "1.258"
+    },
+    {
+      "id": "number-295",
+      "source": "effect_plane",
+      "row": 4,
+      "column": "y_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+3.919"
+    },
+    {
+      "id": "number-296",
+      "source": "effect_plane",
+      "row": 4,
+      "column": "y_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+4.575"
+    },
+    {
+      "id": "number-297",
+      "source": "effect_plane",
+      "row": 116,
+      "column": "x_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.222"
+    },
+    {
+      "id": "number-298",
+      "source": "effect_plane",
+      "row": 116,
+      "column": "x_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.098"
+    },
+    {
+      "id": "number-299",
+      "source": "effect_plane",
+      "row": 116,
+      "column": "x_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.286"
+    },
+    {
+      "id": "number-300",
+      "source": "effect_plane",
+      "row": 116,
+      "column": "x_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.158"
+    },
+    {
+      "id": "number-301",
+      "source": "effect_plane",
+      "row": 116,
+      "column": "y_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.787"
+    },
+    {
+      "id": "number-302",
+      "source": "effect_plane",
+      "row": 116,
+      "column": "y_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.454"
+    },
+    {
+      "id": "number-303",
+      "source": "effect_plane",
+      "row": 116,
+      "column": "y_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.603"
+    },
+    {
+      "id": "number-304",
+      "source": "effect_plane",
+      "row": 116,
+      "column": "y_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.985"
+    },
+    {
+      "id": "number-305",
+      "source": "effect_plane",
+      "row": 118,
+      "column": "x_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-2.026"
+    },
+    {
+      "id": "number-306",
+      "source": "effect_plane",
+      "row": 118,
+      "column": "x_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.454"
+    },
+    {
+      "id": "number-307",
+      "source": "effect_plane",
+      "row": 118,
+      "column": "x_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-2.224"
+    },
+    {
+      "id": "number-308",
+      "source": "effect_plane",
+      "row": 118,
+      "column": "x_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.848"
+    },
+    {
+      "id": "number-309",
+      "source": "effect_plane",
+      "row": 118,
+      "column": "y_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+4.932"
+    },
+    {
+      "id": "number-310",
+      "source": "effect_plane",
+      "row": 118,
+      "column": "y_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "1.182"
+    },
+    {
+      "id": "number-311",
+      "source": "effect_plane",
+      "row": 118,
+      "column": "y_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+4.530"
+    },
+    {
+      "id": "number-312",
+      "source": "effect_plane",
+      "row": 118,
+      "column": "y_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+5.355"
+    },
+    {
+      "id": "number-313",
+      "source": "effect_plane",
+      "row": 230,
+      "column": "x_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.222"
+    },
+    {
+      "id": "number-314",
+      "source": "effect_plane",
+      "row": 230,
+      "column": "x_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.098"
+    },
+    {
+      "id": "number-315",
+      "source": "effect_plane",
+      "row": 230,
+      "column": "x_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.286"
+    },
+    {
+      "id": "number-316",
+      "source": "effect_plane",
+      "row": 230,
+      "column": "x_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.158"
+    },
+    {
+      "id": "number-317",
+      "source": "effect_plane",
+      "row": 230,
+      "column": "y_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.694"
+    },
+    {
+      "id": "number-318",
+      "source": "effect_plane",
+      "row": 230,
+      "column": "y_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.402"
+    },
+    {
+      "id": "number-319",
+      "source": "effect_plane",
+      "row": 230,
+      "column": "y_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.513"
+    },
+    {
+      "id": "number-320",
+      "source": "effect_plane",
+      "row": 230,
+      "column": "y_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.891"
+    },
+    {
+      "id": "number-321",
+      "source": "effect_plane",
+      "row": 232,
+      "column": "x_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-2.026"
+    },
+    {
+      "id": "number-322",
+      "source": "effect_plane",
+      "row": 232,
+      "column": "x_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.454"
+    },
+    {
+      "id": "number-323",
+      "source": "effect_plane",
+      "row": 232,
+      "column": "x_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-2.224"
+    },
+    {
+      "id": "number-324",
+      "source": "effect_plane",
+      "row": 232,
+      "column": "x_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.848"
+    },
+    {
+      "id": "number-325",
+      "source": "effect_plane",
+      "row": 232,
+      "column": "y_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+4.859"
+    },
+    {
+      "id": "number-326",
+      "source": "effect_plane",
+      "row": 232,
+      "column": "y_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "1.791"
+    },
+    {
+      "id": "number-327",
+      "source": "effect_plane",
+      "row": 232,
+      "column": "y_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+4.475"
+    },
+    {
+      "id": "number-328",
+      "source": "effect_plane",
+      "row": 232,
+      "column": "y_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+5.275"
+    },
+    {
+      "id": "number-329",
+      "source": "effect_plane",
+      "row": 344,
+      "column": "x_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.111"
+    },
+    {
+      "id": "number-330",
+      "source": "effect_plane",
+      "row": 344,
+      "column": "x_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.045"
+    },
+    {
+      "id": "number-331",
+      "source": "effect_plane",
+      "row": 344,
+      "column": "x_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.176"
+    },
+    {
+      "id": "number-332",
+      "source": "effect_plane",
+      "row": 344,
+      "column": "x_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.047"
+    },
+    {
+      "id": "number-333",
+      "source": "effect_plane",
+      "row": 344,
+      "column": "y_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.072"
+    },
+    {
+      "id": "number-334",
+      "source": "effect_plane",
+      "row": 344,
+      "column": "y_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.071"
+    },
+    {
+      "id": "number-335",
+      "source": "effect_plane",
+      "row": 344,
+      "column": "y_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.005"
+    },
+    {
+      "id": "number-336",
+      "source": "effect_plane",
+      "row": 344,
+      "column": "y_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.147"
+    },
+    {
+      "id": "number-337",
+      "source": "effect_plane",
+      "row": 346,
+      "column": "x_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.890"
+    },
+    {
+      "id": "number-338",
+      "source": "effect_plane",
+      "row": 346,
+      "column": "x_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.913"
+    },
+    {
+      "id": "number-339",
+      "source": "effect_plane",
+      "row": 346,
+      "column": "x_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-2.114"
+    },
+    {
+      "id": "number-340",
+      "source": "effect_plane",
+      "row": 346,
+      "column": "x_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.673"
+    },
+    {
+      "id": "number-341",
+      "source": "effect_plane",
+      "row": 346,
+      "column": "y_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+1.340"
+    },
+    {
+      "id": "number-342",
+      "source": "effect_plane",
+      "row": 346,
+      "column": "y_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "1.047"
+    },
+    {
+      "id": "number-343",
+      "source": "effect_plane",
+      "row": 346,
+      "column": "y_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+1.193"
+    },
+    {
+      "id": "number-344",
+      "source": "effect_plane",
+      "row": 346,
+      "column": "y_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+1.485"
+    },
+    {
+      "id": "number-345",
+      "source": "effect_plane",
+      "row": 458,
+      "column": "x_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.111"
+    },
+    {
+      "id": "number-346",
+      "source": "effect_plane",
+      "row": 458,
+      "column": "x_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.045"
+    },
+    {
+      "id": "number-347",
+      "source": "effect_plane",
+      "row": 458,
+      "column": "x_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.176"
+    },
+    {
+      "id": "number-348",
+      "source": "effect_plane",
+      "row": 458,
+      "column": "x_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.047"
+    },
+    {
+      "id": "number-349",
+      "source": "effect_plane",
+      "row": 458,
+      "column": "y_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.036"
+    },
+    {
+      "id": "number-350",
+      "source": "effect_plane",
+      "row": 458,
+      "column": "y_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.067"
+    },
+    {
+      "id": "number-351",
+      "source": "effect_plane",
+      "row": 458,
+      "column": "y_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.053"
+    },
+    {
+      "id": "number-352",
+      "source": "effect_plane",
+      "row": 458,
+      "column": "y_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.124"
+    },
+    {
+      "id": "number-353",
+      "source": "effect_plane",
+      "row": 460,
+      "column": "x_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.890"
+    },
+    {
+      "id": "number-354",
+      "source": "effect_plane",
+      "row": 460,
+      "column": "x_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.913"
+    },
+    {
+      "id": "number-355",
+      "source": "effect_plane",
+      "row": 460,
+      "column": "x_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-2.114"
+    },
+    {
+      "id": "number-356",
+      "source": "effect_plane",
+      "row": 460,
+      "column": "x_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.673"
+    },
+    {
+      "id": "number-357",
+      "source": "effect_plane",
+      "row": 460,
+      "column": "y_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+2.091"
+    },
+    {
+      "id": "number-358",
+      "source": "effect_plane",
+      "row": 460,
+      "column": "y_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "1.341"
+    },
+    {
+      "id": "number-359",
+      "source": "effect_plane",
+      "row": 460,
+      "column": "y_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+1.835"
+    },
+    {
+      "id": "number-360",
+      "source": "effect_plane",
+      "row": 460,
+      "column": "y_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+2.351"
+    },
+    {
+      "id": "number-361",
+      "source": "effect_plane",
+      "row": 572,
+      "column": "x_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.111"
+    },
+    {
+      "id": "number-362",
+      "source": "effect_plane",
+      "row": 572,
+      "column": "x_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.045"
+    },
+    {
+      "id": "number-363",
+      "source": "effect_plane",
+      "row": 572,
+      "column": "x_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.176"
+    },
+    {
+      "id": "number-364",
+      "source": "effect_plane",
+      "row": 572,
+      "column": "x_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.047"
+    },
+    {
+      "id": "number-365",
+      "source": "effect_plane",
+      "row": 572,
+      "column": "y_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.056"
+    },
+    {
+      "id": "number-366",
+      "source": "effect_plane",
+      "row": 572,
+      "column": "y_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.060"
+    },
+    {
+      "id": "number-367",
+      "source": "effect_plane",
+      "row": 572,
+      "column": "y_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.023"
+    },
+    {
+      "id": "number-368",
+      "source": "effect_plane",
+      "row": 572,
+      "column": "y_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.134"
+    },
+    {
+      "id": "number-369",
+      "source": "effect_plane",
+      "row": 574,
+      "column": "x_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.890"
+    },
+    {
+      "id": "number-370",
+      "source": "effect_plane",
+      "row": 574,
+      "column": "x_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.913"
+    },
+    {
+      "id": "number-371",
+      "source": "effect_plane",
+      "row": 574,
+      "column": "x_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-2.114"
+    },
+    {
+      "id": "number-372",
+      "source": "effect_plane",
+      "row": 574,
+      "column": "x_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.673"
+    },
+    {
+      "id": "number-373",
+      "source": "effect_plane",
+      "row": 574,
+      "column": "y_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+1.929"
+    },
+    {
+      "id": "number-374",
+      "source": "effect_plane",
+      "row": 574,
+      "column": "y_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "1.134"
+    },
+    {
+      "id": "number-375",
+      "source": "effect_plane",
+      "row": 574,
+      "column": "y_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+1.692"
+    },
+    {
+      "id": "number-376",
+      "source": "effect_plane",
+      "row": 574,
+      "column": "y_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+2.169"
+    },
+    {
+      "id": "number-377",
+      "source": "pareto",
+      "row": 0,
+      "column": "x_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.000"
+    },
+    {
+      "id": "number-378",
+      "source": "pareto",
+      "row": 0,
+      "column": "x_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.000"
+    },
+    {
+      "id": "number-379",
+      "source": "pareto",
+      "row": 0,
+      "column": "x_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.000"
+    },
+    {
+      "id": "number-380",
+      "source": "pareto",
+      "row": 0,
+      "column": "x_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.000"
+    },
+    {
+      "id": "number-381",
+      "source": "pareto",
+      "row": 0,
+      "column": "y_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.000"
+    },
+    {
+      "id": "number-382",
+      "source": "pareto",
+      "row": 0,
+      "column": "y_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.000"
+    },
+    {
+      "id": "number-383",
+      "source": "pareto",
+      "row": 0,
+      "column": "y_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.000"
+    },
+    {
+      "id": "number-384",
+      "source": "pareto",
+      "row": 0,
+      "column": "y_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.000"
+    },
+    {
+      "id": "number-385",
+      "source": "pareto",
+      "row": 0,
+      "column": "clean_auroc",
+      "scale": 1,
+      "digits": 5,
+      "signed": false,
+      "text": "0.90715"
+    },
+    {
+      "id": "number-386",
+      "source": "pareto",
+      "row": 0,
+      "column": "joint_unseen_auroc",
+      "scale": 1,
+      "digits": 5,
+      "signed": false,
+      "text": "0.88947"
+    },
+    {
+      "id": "number-387",
+      "source": "pareto",
+      "row": 1,
+      "column": "x_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.136"
+    },
+    {
+      "id": "number-388",
+      "source": "pareto",
+      "row": 1,
+      "column": "x_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.113"
+    },
+    {
+      "id": "number-389",
+      "source": "pareto",
+      "row": 1,
+      "column": "x_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.268"
+    },
+    {
+      "id": "number-390",
+      "source": "pareto",
+      "row": 1,
+      "column": "x_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.000"
+    },
+    {
+      "id": "number-391",
+      "source": "pareto",
+      "row": 1,
+      "column": "y_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.900"
+    },
+    {
+      "id": "number-392",
+      "source": "pareto",
+      "row": 1,
+      "column": "y_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.468"
+    },
+    {
+      "id": "number-393",
+      "source": "pareto",
+      "row": 1,
+      "column": "y_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.781"
+    },
+    {
+      "id": "number-394",
+      "source": "pareto",
+      "row": 1,
+      "column": "y_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+1.021"
+    },
+    {
+      "id": "number-395",
+      "source": "pareto",
+      "row": 1,
+      "column": "clean_auroc",
+      "scale": 1,
+      "digits": 5,
+      "signed": false,
+      "text": "0.90852"
+    },
+    {
+      "id": "number-396",
+      "source": "pareto",
+      "row": 1,
+      "column": "joint_unseen_auroc",
+      "scale": 1,
+      "digits": 5,
+      "signed": false,
+      "text": "0.89899"
+    },
+    {
+      "id": "number-397",
+      "source": "pareto",
+      "row": 2,
+      "column": "x_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.217"
+    },
+    {
+      "id": "number-398",
+      "source": "pareto",
+      "row": 2,
+      "column": "x_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.208"
+    },
+    {
+      "id": "number-399",
+      "source": "pareto",
+      "row": 2,
+      "column": "x_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.378"
+    },
+    {
+      "id": "number-400",
+      "source": "pareto",
+      "row": 2,
+      "column": "x_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.057"
+    },
+    {
+      "id": "number-401",
+      "source": "pareto",
+      "row": 2,
+      "column": "y_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+1.038"
+    },
+    {
+      "id": "number-402",
+      "source": "pareto",
+      "row": 2,
+      "column": "y_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.435"
+    },
+    {
+      "id": "number-403",
+      "source": "pareto",
+      "row": 2,
+      "column": "y_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.888"
+    },
+    {
+      "id": "number-404",
+      "source": "pareto",
+      "row": 2,
+      "column": "y_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+1.192"
+    },
+    {
+      "id": "number-405",
+      "source": "pareto",
+      "row": 2,
+      "column": "clean_auroc",
+      "scale": 1,
+      "digits": 5,
+      "signed": false,
+      "text": "0.90932"
+    },
+    {
+      "id": "number-406",
+      "source": "pareto",
+      "row": 2,
+      "column": "joint_unseen_auroc",
+      "scale": 1,
+      "digits": 5,
+      "signed": false,
+      "text": "0.90103"
+    },
+    {
+      "id": "number-407",
+      "source": "pareto",
+      "row": 3,
+      "column": "x_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.097"
+    },
+    {
+      "id": "number-408",
+      "source": "pareto",
+      "row": 3,
+      "column": "x_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.158"
+    },
+    {
+      "id": "number-409",
+      "source": "pareto",
+      "row": 3,
+      "column": "x_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.266"
+    },
+    {
+      "id": "number-410",
+      "source": "pareto",
+      "row": 3,
+      "column": "x_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.053"
+    },
+    {
+      "id": "number-411",
+      "source": "pareto",
+      "row": 3,
+      "column": "y_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+1.055"
+    },
+    {
+      "id": "number-412",
+      "source": "pareto",
+      "row": 3,
+      "column": "y_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.671"
+    },
+    {
+      "id": "number-413",
+      "source": "pareto",
+      "row": 3,
+      "column": "y_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.915"
+    },
+    {
+      "id": "number-414",
+      "source": "pareto",
+      "row": 3,
+      "column": "y_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+1.194"
+    },
+    {
+      "id": "number-415",
+      "source": "pareto",
+      "row": 3,
+      "column": "clean_auroc",
+      "scale": 1,
+      "digits": 5,
+      "signed": false,
+      "text": "0.90812"
+    },
+    {
+      "id": "number-416",
+      "source": "pareto",
+      "row": 3,
+      "column": "joint_unseen_auroc",
+      "scale": 1,
+      "digits": 5,
+      "signed": false,
+      "text": "0.90000"
+    },
+    {
+      "id": "number-417",
+      "source": "pareto",
+      "row": 4,
+      "column": "x_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.000"
+    },
+    {
+      "id": "number-418",
+      "source": "pareto",
+      "row": 4,
+      "column": "x_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.000"
+    },
+    {
+      "id": "number-419",
+      "source": "pareto",
+      "row": 4,
+      "column": "x_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.000"
+    },
+    {
+      "id": "number-420",
+      "source": "pareto",
+      "row": 4,
+      "column": "x_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.000"
+    },
+    {
+      "id": "number-421",
+      "source": "pareto",
+      "row": 4,
+      "column": "y_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.000"
+    },
+    {
+      "id": "number-422",
+      "source": "pareto",
+      "row": 4,
+      "column": "y_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.000"
+    },
+    {
+      "id": "number-423",
+      "source": "pareto",
+      "row": 4,
+      "column": "y_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.000"
+    },
+    {
+      "id": "number-424",
+      "source": "pareto",
+      "row": 4,
+      "column": "y_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.000"
+    },
+    {
+      "id": "number-425",
+      "source": "pareto",
+      "row": 4,
+      "column": "clean_auroc",
+      "scale": 1,
+      "digits": 5,
+      "signed": false,
+      "text": "0.91771"
+    },
+    {
+      "id": "number-426",
+      "source": "pareto",
+      "row": 4,
+      "column": "joint_unseen_auroc",
+      "scale": 1,
+      "digits": 5,
+      "signed": false,
+      "text": "0.90988"
+    },
+    {
+      "id": "number-427",
+      "source": "pareto",
+      "row": 5,
+      "column": "x_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.031"
+    },
+    {
+      "id": "number-428",
+      "source": "pareto",
+      "row": 5,
+      "column": "x_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.043"
+    },
+    {
+      "id": "number-429",
+      "source": "pareto",
+      "row": 5,
+      "column": "x_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.029"
+    },
+    {
+      "id": "number-430",
+      "source": "pareto",
+      "row": 5,
+      "column": "x_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.091"
+    },
+    {
+      "id": "number-431",
+      "source": "pareto",
+      "row": 5,
+      "column": "y_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.253"
+    },
+    {
+      "id": "number-432",
+      "source": "pareto",
+      "row": 5,
+      "column": "y_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.144"
+    },
+    {
+      "id": "number-433",
+      "source": "pareto",
+      "row": 5,
+      "column": "y_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.196"
+    },
+    {
+      "id": "number-434",
+      "source": "pareto",
+      "row": 5,
+      "column": "y_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.312"
+    },
+    {
+      "id": "number-435",
+      "source": "pareto",
+      "row": 5,
+      "column": "clean_auroc",
+      "scale": 1,
+      "digits": 5,
+      "signed": false,
+      "text": "0.91740"
+    },
+    {
+      "id": "number-436",
+      "source": "pareto",
+      "row": 5,
+      "column": "joint_unseen_auroc",
+      "scale": 1,
+      "digits": 5,
+      "signed": false,
+      "text": "0.91189"
+    },
+    {
+      "id": "number-437",
+      "source": "pareto",
+      "row": 6,
+      "column": "x_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.082"
+    },
+    {
+      "id": "number-438",
+      "source": "pareto",
+      "row": 6,
+      "column": "x_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.044"
+    },
+    {
+      "id": "number-439",
+      "source": "pareto",
+      "row": 6,
+      "column": "x_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.017"
+    },
+    {
+      "id": "number-440",
+      "source": "pareto",
+      "row": 6,
+      "column": "x_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.146"
+    },
+    {
+      "id": "number-441",
+      "source": "pareto",
+      "row": 6,
+      "column": "y_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.367"
+    },
+    {
+      "id": "number-442",
+      "source": "pareto",
+      "row": 6,
+      "column": "y_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.156"
+    },
+    {
+      "id": "number-443",
+      "source": "pareto",
+      "row": 6,
+      "column": "y_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.279"
+    },
+    {
+      "id": "number-444",
+      "source": "pareto",
+      "row": 6,
+      "column": "y_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.463"
+    },
+    {
+      "id": "number-445",
+      "source": "pareto",
+      "row": 6,
+      "column": "clean_auroc",
+      "scale": 1,
+      "digits": 5,
+      "signed": false,
+      "text": "0.91689"
+    },
+    {
+      "id": "number-446",
+      "source": "pareto",
+      "row": 6,
+      "column": "joint_unseen_auroc",
+      "scale": 1,
+      "digits": 5,
+      "signed": false,
+      "text": "0.91243"
+    },
+    {
+      "id": "number-447",
+      "source": "pareto",
+      "row": 7,
+      "column": "x_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.054"
+    },
+    {
+      "id": "number-448",
+      "source": "pareto",
+      "row": 7,
+      "column": "x_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.061"
+    },
+    {
+      "id": "number-449",
+      "source": "pareto",
+      "row": 7,
+      "column": "x_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.003"
+    },
+    {
+      "id": "number-450",
+      "source": "pareto",
+      "row": 7,
+      "column": "x_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.107"
+    },
+    {
+      "id": "number-451",
+      "source": "pareto",
+      "row": 7,
+      "column": "y_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.333"
+    },
+    {
+      "id": "number-452",
+      "source": "pareto",
+      "row": 7,
+      "column": "y_seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.127"
+    },
+    {
+      "id": "number-453",
+      "source": "pareto",
+      "row": 7,
+      "column": "y_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.251"
+    },
+    {
+      "id": "number-454",
+      "source": "pareto",
+      "row": 7,
+      "column": "y_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.421"
+    },
+    {
+      "id": "number-455",
+      "source": "pareto",
+      "row": 7,
+      "column": "clean_auroc",
+      "scale": 1,
+      "digits": 5,
+      "signed": false,
+      "text": "0.91718"
+    },
+    {
+      "id": "number-456",
+      "source": "pareto",
+      "row": 7,
+      "column": "joint_unseen_auroc",
+      "scale": 1,
+      "digits": 5,
+      "signed": false,
+      "text": "0.91241"
+    },
+    {
+      "id": "number-457",
+      "source": "new_summary",
+      "row": 789,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.913"
+    },
+    {
+      "id": "number-458",
+      "source": "new_summary",
+      "row": 864,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.248"
+    },
+    {
+      "id": "number-459",
+      "source": "new_summary",
+      "row": 279,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.034"
+    },
+    {
+      "id": "number-460",
+      "source": "new_summary",
+      "row": 399,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.036"
+    },
+    {
+      "id": "number-461",
+      "source": "new_summary",
+      "row": 249,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-2.663"
+    },
+    {
+      "id": "number-462",
+      "source": "new_summary",
+      "row": 369,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.921"
+    },
+    {
+      "id": "number-463",
+      "source": "new_summary",
+      "row": 99,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-3.524"
+    },
+    {
+      "id": "number-464",
+      "source": "new_summary",
+      "row": 69,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.271"
+    },
+    {
+      "id": "number-465",
+      "source": "new_summary",
+      "row": 129,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-2.758"
+    },
+    {
+      "id": "number-466",
+      "source": "new_summary",
+      "row": 189,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.950"
+    },
+    {
+      "id": "number-467",
+      "source": "new_summary",
+      "row": 789,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.913"
+    },
+    {
+      "id": "number-468",
+      "source": "new_summary",
+      "row": 864,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.248"
+    },
+    {
+      "id": "number-469",
+      "source": "new_summary",
+      "row": 249,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-2.663"
+    },
+    {
+      "id": "number-470",
+      "source": "new_summary",
+      "row": 249,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.441"
+    },
+    {
+      "id": "number-471",
+      "source": "new_summary",
+      "row": 249,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-2.894"
+    },
+    {
+      "id": "number-472",
+      "source": "new_summary",
+      "row": 249,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-2.428"
+    },
+    {
+      "id": "number-473",
+      "source": "new_summary",
+      "row": 264,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.355"
+    },
+    {
+      "id": "number-474",
+      "source": "new_summary",
+      "row": 264,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.155"
+    },
+    {
+      "id": "number-475",
+      "source": "new_summary",
+      "row": 264,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.432"
+    },
+    {
+      "id": "number-476",
+      "source": "new_summary",
+      "row": 264,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.280"
+    },
+    {
+      "id": "number-477",
+      "source": "new_summary",
+      "row": 279,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.034"
+    },
+    {
+      "id": "number-478",
+      "source": "new_summary",
+      "row": 279,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.096"
+    },
+    {
+      "id": "number-479",
+      "source": "new_summary",
+      "row": 279,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.181"
+    },
+    {
+      "id": "number-480",
+      "source": "new_summary",
+      "row": 279,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.117"
+    },
+    {
+      "id": "number-481",
+      "source": "new_summary",
+      "row": 294,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.008"
+    },
+    {
+      "id": "number-482",
+      "source": "new_summary",
+      "row": 294,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.014"
+    },
+    {
+      "id": "number-483",
+      "source": "new_summary",
+      "row": 294,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.056"
+    },
+    {
+      "id": "number-484",
+      "source": "new_summary",
+      "row": 294,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.043"
+    },
+    {
+      "id": "number-485",
+      "source": "new_summary",
+      "row": 309,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.406"
+    },
+    {
+      "id": "number-486",
+      "source": "new_summary",
+      "row": 309,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.377"
+    },
+    {
+      "id": "number-487",
+      "source": "new_summary",
+      "row": 309,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.535"
+    },
+    {
+      "id": "number-488",
+      "source": "new_summary",
+      "row": 309,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.275"
+    },
+    {
+      "id": "number-489",
+      "source": "new_summary",
+      "row": 324,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.058"
+    },
+    {
+      "id": "number-490",
+      "source": "new_summary",
+      "row": 324,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.030"
+    },
+    {
+      "id": "number-491",
+      "source": "new_summary",
+      "row": 324,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.101"
+    },
+    {
+      "id": "number-492",
+      "source": "new_summary",
+      "row": 324,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.015"
+    },
+    {
+      "id": "number-493",
+      "source": "new_summary",
+      "row": 339,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.913"
+    },
+    {
+      "id": "number-494",
+      "source": "new_summary",
+      "row": 339,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.284"
+    },
+    {
+      "id": "number-495",
+      "source": "new_summary",
+      "row": 339,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-2.113"
+    },
+    {
+      "id": "number-496",
+      "source": "new_summary",
+      "row": 339,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.702"
+    },
+    {
+      "id": "number-497",
+      "source": "new_summary",
+      "row": 354,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.241"
+    },
+    {
+      "id": "number-498",
+      "source": "new_summary",
+      "row": 354,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.125"
+    },
+    {
+      "id": "number-499",
+      "source": "new_summary",
+      "row": 354,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.306"
+    },
+    {
+      "id": "number-500",
+      "source": "new_summary",
+      "row": 354,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.174"
+    },
+    {
+      "id": "number-501",
+      "source": "new_summary",
+      "row": 369,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.921"
+    },
+    {
+      "id": "number-502",
+      "source": "new_summary",
+      "row": 369,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.669"
+    },
+    {
+      "id": "number-503",
+      "source": "new_summary",
+      "row": 369,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-2.154"
+    },
+    {
+      "id": "number-504",
+      "source": "new_summary",
+      "row": 369,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.694"
+    },
+    {
+      "id": "number-505",
+      "source": "new_summary",
+      "row": 384,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.111"
+    },
+    {
+      "id": "number-506",
+      "source": "new_summary",
+      "row": 384,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.074"
+    },
+    {
+      "id": "number-507",
+      "source": "new_summary",
+      "row": 384,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.175"
+    },
+    {
+      "id": "number-508",
+      "source": "new_summary",
+      "row": 384,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.047"
+    },
+    {
+      "id": "number-509",
+      "source": "new_summary",
+      "row": 399,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.036"
+    },
+    {
+      "id": "number-510",
+      "source": "new_summary",
+      "row": 399,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.020"
+    },
+    {
+      "id": "number-511",
+      "source": "new_summary",
+      "row": 399,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.042"
+    },
+    {
+      "id": "number-512",
+      "source": "new_summary",
+      "row": 399,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.113"
+    },
+    {
+      "id": "number-513",
+      "source": "new_summary",
+      "row": 414,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.020"
+    },
+    {
+      "id": "number-514",
+      "source": "new_summary",
+      "row": 414,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.021"
+    },
+    {
+      "id": "number-515",
+      "source": "new_summary",
+      "row": 414,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.009"
+    },
+    {
+      "id": "number-516",
+      "source": "new_summary",
+      "row": 414,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.051"
+    },
+    {
+      "id": "number-517",
+      "source": "new_summary",
+      "row": 429,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.126"
+    },
+    {
+      "id": "number-518",
+      "source": "new_summary",
+      "row": 429,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.268"
+    },
+    {
+      "id": "number-519",
+      "source": "new_summary",
+      "row": 429,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.212"
+    },
+    {
+      "id": "number-520",
+      "source": "new_summary",
+      "row": 429,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.048"
+    },
+    {
+      "id": "number-521",
+      "source": "new_summary",
+      "row": 444,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.017"
+    },
+    {
+      "id": "number-522",
+      "source": "new_summary",
+      "row": 444,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.028"
+    },
+    {
+      "id": "number-523",
+      "source": "new_summary",
+      "row": 444,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.013"
+    },
+    {
+      "id": "number-524",
+      "source": "new_summary",
+      "row": 444,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.047"
+    },
+    {
+      "id": "number-525",
+      "source": "new_summary",
+      "row": 459,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.248"
+    },
+    {
+      "id": "number-526",
+      "source": "new_summary",
+      "row": 459,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.417"
+    },
+    {
+      "id": "number-527",
+      "source": "new_summary",
+      "row": 459,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.419"
+    },
+    {
+      "id": "number-528",
+      "source": "new_summary",
+      "row": 459,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.080"
+    },
+    {
+      "id": "number-529",
+      "source": "new_summary",
+      "row": 474,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.061"
+    },
+    {
+      "id": "number-530",
+      "source": "new_summary",
+      "row": 474,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.042"
+    },
+    {
+      "id": "number-531",
+      "source": "new_summary",
+      "row": 474,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.115"
+    },
+    {
+      "id": "number-532",
+      "source": "new_summary",
+      "row": 474,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.008"
+    },
+    {
+      "id": "number-533",
+      "source": "new_summary",
+      "row": 9,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-3.068"
+    },
+    {
+      "id": "number-534",
+      "source": "new_summary",
+      "row": 9,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.854"
+    },
+    {
+      "id": "number-535",
+      "source": "new_summary",
+      "row": 9,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-3.348"
+    },
+    {
+      "id": "number-536",
+      "source": "new_summary",
+      "row": 9,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-2.797"
+    },
+    {
+      "id": "number-537",
+      "source": "new_summary",
+      "row": 24,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.526"
+    },
+    {
+      "id": "number-538",
+      "source": "new_summary",
+      "row": 24,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.115"
+    },
+    {
+      "id": "number-539",
+      "source": "new_summary",
+      "row": 24,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.636"
+    },
+    {
+      "id": "number-540",
+      "source": "new_summary",
+      "row": 24,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.421"
+    },
+    {
+      "id": "number-541",
+      "source": "new_summary",
+      "row": 39,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.898"
+    },
+    {
+      "id": "number-542",
+      "source": "new_summary",
+      "row": 39,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.558"
+    },
+    {
+      "id": "number-543",
+      "source": "new_summary",
+      "row": 39,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-2.111"
+    },
+    {
+      "id": "number-544",
+      "source": "new_summary",
+      "row": 39,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.702"
+    },
+    {
+      "id": "number-545",
+      "source": "new_summary",
+      "row": 54,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.227"
+    },
+    {
+      "id": "number-546",
+      "source": "new_summary",
+      "row": 54,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.109"
+    },
+    {
+      "id": "number-547",
+      "source": "new_summary",
+      "row": 54,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.295"
+    },
+    {
+      "id": "number-548",
+      "source": "new_summary",
+      "row": 54,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.160"
+    },
+    {
+      "id": "number-549",
+      "source": "new_summary",
+      "row": 69,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.271"
+    },
+    {
+      "id": "number-550",
+      "source": "new_summary",
+      "row": 69,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.529"
+    },
+    {
+      "id": "number-551",
+      "source": "new_summary",
+      "row": 69,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.417"
+    },
+    {
+      "id": "number-552",
+      "source": "new_summary",
+      "row": 69,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.114"
+    },
+    {
+      "id": "number-553",
+      "source": "new_summary",
+      "row": 84,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.053"
+    },
+    {
+      "id": "number-554",
+      "source": "new_summary",
+      "row": 84,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.068"
+    },
+    {
+      "id": "number-555",
+      "source": "new_summary",
+      "row": 84,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.102"
+    },
+    {
+      "id": "number-556",
+      "source": "new_summary",
+      "row": 84,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.002"
+    },
+    {
+      "id": "number-557",
+      "source": "new_summary",
+      "row": 99,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-3.524"
+    },
+    {
+      "id": "number-558",
+      "source": "new_summary",
+      "row": 99,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.959"
+    },
+    {
+      "id": "number-559",
+      "source": "new_summary",
+      "row": 99,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-3.801"
+    },
+    {
+      "id": "number-560",
+      "source": "new_summary",
+      "row": 99,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-3.269"
+    },
+    {
+      "id": "number-561",
+      "source": "new_summary",
+      "row": 114,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.449"
+    },
+    {
+      "id": "number-562",
+      "source": "new_summary",
+      "row": 114,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.052"
+    },
+    {
+      "id": "number-563",
+      "source": "new_summary",
+      "row": 114,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.540"
+    },
+    {
+      "id": "number-564",
+      "source": "new_summary",
+      "row": 114,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.363"
+    },
+    {
+      "id": "number-565",
+      "source": "new_summary",
+      "row": 129,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-2.758"
+    },
+    {
+      "id": "number-566",
+      "source": "new_summary",
+      "row": 129,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.445"
+    },
+    {
+      "id": "number-567",
+      "source": "new_summary",
+      "row": 129,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-3.042"
+    },
+    {
+      "id": "number-568",
+      "source": "new_summary",
+      "row": 129,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-2.487"
+    },
+    {
+      "id": "number-569",
+      "source": "new_summary",
+      "row": 144,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.210"
+    },
+    {
+      "id": "number-570",
+      "source": "new_summary",
+      "row": 144,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.051"
+    },
+    {
+      "id": "number-571",
+      "source": "new_summary",
+      "row": 144,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.296"
+    },
+    {
+      "id": "number-572",
+      "source": "new_summary",
+      "row": 144,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.120"
+    },
+    {
+      "id": "number-573",
+      "source": "new_summary",
+      "row": 159,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.303"
+    },
+    {
+      "id": "number-574",
+      "source": "new_summary",
+      "row": 159,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.501"
+    },
+    {
+      "id": "number-575",
+      "source": "new_summary",
+      "row": 159,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.486"
+    },
+    {
+      "id": "number-576",
+      "source": "new_summary",
+      "row": 159,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.140"
+    },
+    {
+      "id": "number-577",
+      "source": "new_summary",
+      "row": 174,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.091"
+    },
+    {
+      "id": "number-578",
+      "source": "new_summary",
+      "row": 174,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.061"
+    },
+    {
+      "id": "number-579",
+      "source": "new_summary",
+      "row": 174,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.148"
+    },
+    {
+      "id": "number-580",
+      "source": "new_summary",
+      "row": 174,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.037"
+    },
+    {
+      "id": "number-581",
+      "source": "new_summary",
+      "row": 189,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.950"
+    },
+    {
+      "id": "number-582",
+      "source": "new_summary",
+      "row": 189,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.346"
+    },
+    {
+      "id": "number-583",
+      "source": "new_summary",
+      "row": 189,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-1.102"
+    },
+    {
+      "id": "number-584",
+      "source": "new_summary",
+      "row": 189,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.813"
+    },
+    {
+      "id": "number-585",
+      "source": "new_summary",
+      "row": 204,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.058"
+    },
+    {
+      "id": "number-586",
+      "source": "new_summary",
+      "row": 204,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.037"
+    },
+    {
+      "id": "number-587",
+      "source": "new_summary",
+      "row": 204,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.096"
+    },
+    {
+      "id": "number-588",
+      "source": "new_summary",
+      "row": 204,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.023"
+    },
+    {
+      "id": "number-589",
+      "source": "new_summary",
+      "row": 219,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-2.329"
+    },
+    {
+      "id": "number-590",
+      "source": "new_summary",
+      "row": 219,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.801"
+    },
+    {
+      "id": "number-591",
+      "source": "new_summary",
+      "row": 219,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-2.556"
+    },
+    {
+      "id": "number-592",
+      "source": "new_summary",
+      "row": 219,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-2.107"
+    },
+    {
+      "id": "number-593",
+      "source": "new_summary",
+      "row": 234,
+      "column": "estimate",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.251"
+    },
+    {
+      "id": "number-594",
+      "source": "new_summary",
+      "row": 234,
+      "column": "seed_sd",
+      "scale": 100,
+      "digits": 3,
+      "signed": false,
+      "text": "0.110"
+    },
+    {
+      "id": "number-595",
+      "source": "new_summary",
+      "row": 234,
+      "column": "patient_ci_low",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.329"
+    },
+    {
+      "id": "number-596",
+      "source": "new_summary",
+      "row": 234,
+      "column": "patient_ci_high",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.175"
+    },
+    {
+      "id": "number-597",
+      "source": "pareto",
+      "row": 2,
+      "column": "x_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "-0.217"
+    },
+    {
+      "id": "number-598",
+      "source": "pareto",
+      "row": 2,
+      "column": "y_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+1.038"
+    },
+    {
+      "id": "number-599",
+      "source": "pareto",
+      "row": 6,
+      "column": "x_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.082"
+    },
+    {
+      "id": "number-600",
+      "source": "pareto",
+      "row": 6,
+      "column": "y_mean",
+      "scale": 100,
+      "digits": 3,
+      "signed": true,
+      "text": "+0.367"
+    }
+  ],
+  "sources": {
+    "new_summary": {
+      "path": "methodology_supplement/results/tables/full/new_summary.csv",
+      "bytes": 198509,
+      "sha256": "06b5e8fd9626da8f66ad623fa4b4c7311c75c46247cb23be083602dfec299636"
+    },
+    "phase2_snr_summary": {
+      "path": "methodology_supplement/results/tables/full/phase2_snr_summary.csv",
+      "bytes": 25247,
+      "sha256": "77331705360affb027ef8d454f5280cdb5ee9a173d8bb5b83776cd429fc0dafa"
+    },
+    "effect_plane": {
+      "path": "methodology_supplement/results/tables/full/effect_plane.csv",
+      "bytes": 163683,
+      "sha256": "d531a8465d18a2e4de244576b26dfbe3c5eda1d81cabc42365f4b2c0940786d5"
+    },
+    "pareto": {
+      "path": "methodology_supplement/results/tables/full/pareto.csv",
+      "bytes": 1863,
+      "sha256": "873419fceaba9fd90ee490cf77594f0a92474297b4d9e405ddd96441e97af8aa"
+    },
+    "matrix_structure": {
+      "path": "methodology_supplement/results/tables/full/matrix_structure.csv",
+      "bytes": 524,
+      "sha256": "327fc361d2ff223d630d1b4e889c9ce7af21aa22f1d418964c3e3b30f0336633"
+    },
+    "band_noise_audit": {
+      "path": "methodology_supplement/results/tables/full/band_noise_audit.csv",
+      "bytes": 1537,
+      "sha256": "2b9424df5ae69f97e4fcff6f9349dcf754d08b7eaa35dbcc05827b5c6eaffedc"
+    }
+  },
+  "figures_manifest": {
+    "path": "methodology_supplement/results/figures/full/manifest.json",
+    "bytes": 19628,
+    "sha256": "f96887de83924f43dfcd55fc8261de0624569d7f083fdcef947dbad345d36f15"
+  },
+  "numeric_verification": {
+    "path": "methodology_supplement/results/logs/full/numeric_verification.json",
+    "bytes": 2161,
+    "sha256": "b02bf87fa490b8c8fe478c219411acb3e67acef2fafa1c91a37b27d80779dd39"
+  }
+}

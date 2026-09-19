@@ -1,0 +1,461 @@
+{
+  "status": "completed",
+  "stage": "full",
+  "config_sha256": "f3f190e9a26bc96544f393a62673ff518c543018da23acdb50aed9409c224469",
+  "figure_count": 15,
+  "figures": [
+    {
+      "id": "matrix_heatmaps",
+      "caption": "All eight concrete matrices within the four prespecified families; the five random controls are not independent training runs.",
+      "files": {
+        "png": {
+          "path": "methodology_supplement/results/figures/full/matrix_heatmaps.png",
+          "bytes": 112549,
+          "sha256": "f83c867e7e333bdbde7c7c1eb89dd3172b22a4a3f593a1f6dec11a2af94d8298"
+        },
+        "pdf": {
+          "path": "methodology_supplement/results/figures/full/matrix_heatmaps.pdf",
+          "bytes": 28818,
+          "sha256": "ca4e7139de63b4a17b372837e7f7b306caecfc27528f25fb1313aece7b4c010e"
+        },
+        "svg": {
+          "path": "methodology_supplement/results/figures/full/matrix_heatmaps.svg",
+          "bytes": 164309,
+          "sha256": "5692718e35c1e0488396a928d8417bf59cf6243a20f65cdad6b1c4b3e7a8b86b"
+        }
+      },
+      "sources": [
+        {
+          "path": "methodology_supplement/results/test_inputs/full/matrices.json",
+          "bytes": 100237,
+          "sha256": "9555cd6ac54bd8629d12a6700dd1a6659a7040a1c8a727a3d0c4a82b80e4f5f0"
+        }
+      ]
+    },
+    {
+      "id": "matrix_bipartite",
+      "caption": "Signed electrode-to-lead propagation graphs, including disconnected inactive electrode nodes.",
+      "files": {
+        "png": {
+          "path": "methodology_supplement/results/figures/full/matrix_bipartite.png",
+          "bytes": 1058148,
+          "sha256": "f8434aa9a77a4ea881e555db3b8964ba36d012969435b046f31ed099d0f3dba3"
+        },
+        "pdf": {
+          "path": "methodology_supplement/results/figures/full/matrix_bipartite.pdf",
+          "bytes": 21517,
+          "sha256": "8d1e854f964f64752e2c48f05d479ccf027b2a3b671693c39ba39f53ecc06825"
+        },
+        "svg": {
+          "path": "methodology_supplement/results/figures/full/matrix_bipartite.svg",
+          "bytes": 161193,
+          "sha256": "f824dab2d7a5aa0e6feb12c4978478ca0c47fefa3d3d976d286c976d79f95640"
+        }
+      },
+      "sources": [
+        {
+          "path": "methodology_supplement/results/test_inputs/full/matrices.json",
+          "bytes": 100237,
+          "sha256": "9555cd6ac54bd8629d12a6700dd1a6659a7040a1c8a727a3d0c4a82b80e4f5f0"
+        }
+      ]
+    },
+    {
+      "id": "matrix_unit_propagation",
+      "caption": "Unit-electrode L2 propagation strength and lead coverage; inactive columns are reported as zero, not omitted.",
+      "files": {
+        "png": {
+          "path": "methodology_supplement/results/figures/full/matrix_unit_propagation.png",
+          "bytes": 96469,
+          "sha256": "15f1e97d93ddde1fbd9925adf6d7efcaabc5a021d7c1a7b37b95661734619598"
+        },
+        "pdf": {
+          "path": "methodology_supplement/results/figures/full/matrix_unit_propagation.pdf",
+          "bytes": 21639,
+          "sha256": "ba76bbcf37b9c4bb142fdab92134962f4ef440c2ac124cd5938c17c2811f4f6a"
+        },
+        "svg": {
+          "path": "methodology_supplement/results/figures/full/matrix_unit_propagation.svg",
+          "bytes": 95019,
+          "sha256": "aafcc7301b9d2d6592285191b0de805d533c5893a277c6671aec088851f2f549"
+        }
+      },
+      "sources": [
+        {
+          "path": "methodology_supplement/results/test_inputs/full/matrices.json",
+          "bytes": 100237,
+          "sha256": "9555cd6ac54bd8629d12a6700dd1a6659a7040a1c8a727a3d0c4a82b80e4f5f0"
+        }
+      ]
+    },
+    {
+      "id": "matrix_singular_values",
+      "caption": "Singular-value spectra of all concrete acquisition matrices on a common linear scale.",
+      "files": {
+        "png": {
+          "path": "methodology_supplement/results/figures/full/matrix_singular_values.png",
+          "bytes": 112581,
+          "sha256": "918768823ef0b0491667f51a1a22f92932fae53558a83e48fd58913e98fac10d"
+        },
+        "pdf": {
+          "path": "methodology_supplement/results/figures/full/matrix_singular_values.pdf",
+          "bytes": 18256,
+          "sha256": "68454ff775516da543de6c3c5751febe4fd72ad355f44fadf70d3e4a773d3186"
+        },
+        "svg": {
+          "path": "methodology_supplement/results/figures/full/matrix_singular_values.svg",
+          "bytes": 66570,
+          "sha256": "70d5570f730f37ff4ec3b055071d467ce734f8c7e2a13bfcc7b223c12281106a"
+        }
+      },
+      "sources": [
+        {
+          "path": "methodology_supplement/results/test_inputs/full/matrices.json",
+          "bytes": 100237,
+          "sha256": "9555cd6ac54bd8629d12a6700dd1a6659a7040a1c8a727a3d0c4a82b80e4f5f0"
+        }
+      ]
+    },
+    {
+      "id": "matrix_structure_effects",
+      "caption": "Matrix-specific structure contrasts at 10 and 0 dB; every matrix has its own per-record, per-lead RMS comparator.",
+      "files": {
+        "png": {
+          "path": "methodology_supplement/results/figures/full/matrix_structure_effects.png",
+          "bytes": 83448,
+          "sha256": "5fab2fdd992b32a5d806c650a62b295a0b3de8adaf5549e9ad69e3558cebe349"
+        },
+        "pdf": {
+          "path": "methodology_supplement/results/figures/full/matrix_structure_effects.pdf",
+          "bytes": 19598,
+          "sha256": "20ac0594aee6f18a4d6e85204b491ba0cd2ffa644f8ce5a51e1f1a48b6c90624"
+        },
+        "svg": {
+          "path": "methodology_supplement/results/figures/full/matrix_structure_effects.svg",
+          "bytes": 100836,
+          "sha256": "17b0f5fbcd30c23c793c0ba25b093004b95686151c0dbcd09f71d70e4e189775"
+        }
+      },
+      "sources": [
+        {
+          "path": "methodology_supplement/results/tables/full/new_summary.csv",
+          "bytes": 198509,
+          "sha256": "06b5e8fd9626da8f66ad623fa4b4c7311c75c46247cb23be083602dfec299636"
+        }
+      ]
+    },
+    {
+      "id": "matrix_correlation_drop",
+      "caption": "Descriptive correlation-magnitude versus degradation plot; topology, rank and local energy profiles are not reduced to this single correlation statistic. Vertical whiskers: conditional paired patient 95% CIs.",
+      "files": {
+        "png": {
+          "path": "methodology_supplement/results/figures/full/matrix_correlation_drop.png",
+          "bytes": 140951,
+          "sha256": "d48a929ae05eabac9bc4cfe2dd0871362bb7272ae23d4c4771c9286f30f3e51d"
+        },
+        "pdf": {
+          "path": "methodology_supplement/results/figures/full/matrix_correlation_drop.pdf",
+          "bytes": 21781,
+          "sha256": "abe5cde685e41933177144616f46b0a665673ebb570389d8b06742edb233894e"
+        },
+        "svg": {
+          "path": "methodology_supplement/results/figures/full/matrix_correlation_drop.svg",
+          "bytes": 145688,
+          "sha256": "3a79470f0434b7c49393e955b26797e6db58f44ea6f746a8ccf208f7d875ed25"
+        }
+      },
+      "sources": [
+        {
+          "path": "methodology_supplement/results/tables/full/new_summary.csv",
+          "bytes": 198509,
+          "sha256": "06b5e8fd9626da8f66ad623fa4b4c7311c75c46247cb23be083602dfec299636"
+        },
+        {
+          "path": "methodology_supplement/results/tables/full/noise_diagnostics.csv",
+          "bytes": 103083771,
+          "sha256": "26157f64650f6d4dfc444ad4db11605810eb5c7cbd339fa4d997210bf0b75d12"
+        }
+      ]
+    },
+    {
+      "id": "snr_macro_auroc",
+      "caption": "Five-SNR Macro AUROC structure-effect curves, separately faceted by phase and architecture with both uncertainty levels.",
+      "files": {
+        "png": {
+          "path": "methodology_supplement/results/figures/full/snr_macro_auroc.png",
+          "bytes": 185183,
+          "sha256": "e254246ddc51980f8f8041b335767a620f6a6406dcc22786f6f41b1a9c3e10ff"
+        },
+        "pdf": {
+          "path": "methodology_supplement/results/figures/full/snr_macro_auroc.pdf",
+          "bytes": 28588,
+          "sha256": "4a2c0e6f8b383be34408329c5b2868a6150f72756a08a4561bd2597ab911814f"
+        },
+        "svg": {
+          "path": "methodology_supplement/results/figures/full/snr_macro_auroc.svg",
+          "bytes": 146255,
+          "sha256": "5e674075a16001263431a22c360b24e035fbe65797bef4872c3d677003d176b3"
+        }
+      },
+      "sources": [
+        {
+          "path": "methodology_supplement/results/tables/full/new_summary.csv",
+          "bytes": 198509,
+          "sha256": "06b5e8fd9626da8f66ad623fa4b4c7311c75c46247cb23be083602dfec299636"
+        },
+        {
+          "path": "methodology_supplement/results/tables/full/phase2_snr_summary.csv",
+          "bytes": 25247,
+          "sha256": "77331705360affb027ef8d454f5280cdb5ee9a173d8bb5b83776cd429fc0dafa"
+        }
+      ]
+    },
+    {
+      "id": "snr_macro_f1",
+      "caption": "Five-SNR Macro F1 structure-effect curves, separately faceted by phase and architecture with both uncertainty levels.",
+      "files": {
+        "png": {
+          "path": "methodology_supplement/results/figures/full/snr_macro_f1.png",
+          "bytes": 176016,
+          "sha256": "c7e6555d69c8c738faf0fdbf34ce7569c07abb90c8e6fbd8a66b0070e51a5b6f"
+        },
+        "pdf": {
+          "path": "methodology_supplement/results/figures/full/snr_macro_f1.pdf",
+          "bytes": 28635,
+          "sha256": "5b1021cc5d6c50b0d748eafb58d82ecab7768caf34a871265bfdb00397e7bae5"
+        },
+        "svg": {
+          "path": "methodology_supplement/results/figures/full/snr_macro_f1.svg",
+          "bytes": 145185,
+          "sha256": "f149804ce5d022593b73780457825a957bcb95ea342966062532c9a36f6ecb2d"
+        }
+      },
+      "sources": [
+        {
+          "path": "methodology_supplement/results/tables/full/new_summary.csv",
+          "bytes": 198509,
+          "sha256": "06b5e8fd9626da8f66ad623fa4b4c7311c75c46247cb23be083602dfec299636"
+        },
+        {
+          "path": "methodology_supplement/results/tables/full/phase2_snr_summary.csv",
+          "bytes": 25247,
+          "sha256": "77331705360affb027ef8d454f5280cdb5ee9a173d8bb5b83776cd429fc0dafa"
+        }
+      ]
+    },
+    {
+      "id": "snr_ece",
+      "caption": "Five-SNR Classwise ECE structure-effect curves, separately faceted by phase and architecture with both uncertainty levels.",
+      "files": {
+        "png": {
+          "path": "methodology_supplement/results/figures/full/snr_ece.png",
+          "bytes": 161306,
+          "sha256": "b62aa67d6e6f29003ef3c6adff26fcb5c2ac0a2ccefd2877c2b9a5691ceda330"
+        },
+        "pdf": {
+          "path": "methodology_supplement/results/figures/full/snr_ece.pdf",
+          "bytes": 28924,
+          "sha256": "757b1139a3ed013b6a6461358d55b99cd274d907e1b87d5e6b574742c6a0c659"
+        },
+        "svg": {
+          "path": "methodology_supplement/results/figures/full/snr_ece.svg",
+          "bytes": 143140,
+          "sha256": "b69d3965eac06e65a19b517bcba4bd1a621a4559a999805739f5db2367bf98cc"
+        }
+      },
+      "sources": [
+        {
+          "path": "methodology_supplement/results/tables/full/new_summary.csv",
+          "bytes": 198509,
+          "sha256": "06b5e8fd9626da8f66ad623fa4b4c7311c75c46247cb23be083602dfec299636"
+        },
+        {
+          "path": "methodology_supplement/results/tables/full/phase2_snr_summary.csv",
+          "bytes": 25247,
+          "sha256": "77331705360affb027ef8d454f5280cdb5ee9a173d8bb5b83776cd429fc0dafa"
+        }
+      ]
+    },
+    {
+      "id": "band_drop_heatmap",
+      "caption": "Frequency-band by structure degradation under an identical long-source protocol; the 0.5–40-Hz branch is not silently equated to the legacy periodic branch.",
+      "files": {
+        "png": {
+          "path": "methodology_supplement/results/figures/full/band_drop_heatmap.png",
+          "bytes": 111877,
+          "sha256": "4517ac1e6e8cb6bcc33ae648a7bd523ca0a8eed64785d96b640403b6b50aaa0c"
+        },
+        "pdf": {
+          "path": "methodology_supplement/results/figures/full/band_drop_heatmap.pdf",
+          "bytes": 22944,
+          "sha256": "98d846ea321ceb72e42b07feb73c5fe300b7b90945fbc0c41d5c61b614e5b30d"
+        },
+        "svg": {
+          "path": "methodology_supplement/results/figures/full/band_drop_heatmap.svg",
+          "bytes": 99803,
+          "sha256": "55528b9ac0104029a0cf277a4c835dfcbf129e7c83f89622abcb12886351f621"
+        }
+      },
+      "sources": [
+        {
+          "path": "methodology_supplement/results/tables/full/new_summary.csv",
+          "bytes": 198509,
+          "sha256": "06b5e8fd9626da8f66ad623fa4b4c7311c75c46247cb23be083602dfec299636"
+        }
+      ]
+    },
+    {
+      "id": "band_structure_effects",
+      "caption": "Prespecified frequency-band structure contrasts at 10 and 0 dB, with distinct seed and conditional patient uncertainty.",
+      "files": {
+        "png": {
+          "path": "methodology_supplement/results/figures/full/band_structure_effects.png",
+          "bytes": 74397,
+          "sha256": "0ff395a7e172e7c933a852cbcc345a585ef286914e5df7726651274145792c84"
+        },
+        "pdf": {
+          "path": "methodology_supplement/results/figures/full/band_structure_effects.pdf",
+          "bytes": 19543,
+          "sha256": "71743010a556a81cbb816f31bd050d8365b6e91ba1a17d0f6745b1aeb7aab56b"
+        },
+        "svg": {
+          "path": "methodology_supplement/results/figures/full/band_structure_effects.svg",
+          "bytes": 95792,
+          "sha256": "bc323ed00f2d5d0651b8bb0444be5084c477d60519a41aa15fa0e81191bac38e"
+        }
+      },
+      "sources": [
+        {
+          "path": "methodology_supplement/results/tables/full/new_summary.csv",
+          "bytes": 198509,
+          "sha256": "06b5e8fd9626da8f66ad623fa4b4c7311c75c46247cb23be083602dfec299636"
+        }
+      ]
+    },
+    {
+      "id": "band_power_effect",
+      "caption": "Measured low-frequency power share versus the structure contrast; target passband and observed cropped-record spectrum are kept distinct. Vertical whiskers: conditional paired patient 95% CIs; seed SD is shown in the band forest.",
+      "files": {
+        "png": {
+          "path": "methodology_supplement/results/figures/full/band_power_effect.png",
+          "bytes": 123933,
+          "sha256": "b6c3378705712cd06408a7d6f0c0e1c58865a0f395916072f3588bc77593b5a7"
+        },
+        "pdf": {
+          "path": "methodology_supplement/results/figures/full/band_power_effect.pdf",
+          "bytes": 19663,
+          "sha256": "fdce3d33a6910538a9e34992a6926645e62288b3e700f56c8676d6ea9342962b"
+        },
+        "svg": {
+          "path": "methodology_supplement/results/figures/full/band_power_effect.svg",
+          "bytes": 113902,
+          "sha256": "2ff91e7fef20f74b9754dca5a74b056a6d160cd9eb93a8f36b53d1050357a862"
+        }
+      },
+      "sources": [
+        {
+          "path": "methodology_supplement/results/tables/full/new_summary.csv",
+          "bytes": 198509,
+          "sha256": "06b5e8fd9626da8f66ad623fa4b4c7311c75c46247cb23be083602dfec299636"
+        },
+        {
+          "path": "methodology_supplement/results/tables/full/noise_diagnostics.csv",
+          "bytes": 103083771,
+          "sha256": "26157f64650f6d4dfc444ad4db11605810eb5c7cbd339fa4d997210bf0b75d12"
+        }
+      ]
+    },
+    {
+      "id": "evaluation_training_plane",
+      "caption": "Gaussian: all 21 combinations × five SNRs. Horizontal effects use phase-two clean-only checkpoints; vertical effects compare strategies under the same electrode tests.",
+      "files": {
+        "png": {
+          "path": "methodology_supplement/results/figures/full/evaluation_training_plane.png",
+          "bytes": 190786,
+          "sha256": "4f9eac46f9bbecd17570d802ca9280852ecd3e673635a4d5ad629ff6b692208a"
+        },
+        "pdf": {
+          "path": "methodology_supplement/results/figures/full/evaluation_training_plane.pdf",
+          "bytes": 182225,
+          "sha256": "0d9803d63b57947485c82b88fd9e7d9ad2635c5622950a709ba5792910b80563"
+        },
+        "svg": {
+          "path": "methodology_supplement/results/figures/full/evaluation_training_plane.svg",
+          "bytes": 804849,
+          "sha256": "0defd7becb66557327e55f40609f1f65fac7080737465dbb1f95292d2f6d41f3"
+        }
+      },
+      "sources": [
+        {
+          "path": "methodology_supplement/results/tables/full/effect_plane.csv",
+          "bytes": 163683,
+          "sha256": "d531a8465d18a2e4de244576b26dfbe3c5eda1d81cabc42365f4b2c0940786d5"
+        }
+      ]
+    },
+    {
+      "id": "evaluation_training_nstdb",
+      "caption": "NSTDB: confounded replay sensitivity only; not isolated cross-lead-structure evidence. Horizontal effects use phase-two clean-only checkpoints; vertical effects compare strategies under the same electrode tests.",
+      "files": {
+        "png": {
+          "path": "methodology_supplement/results/figures/full/evaluation_training_nstdb.png",
+          "bytes": 129786,
+          "sha256": "f56f085d2ff67d399c51c79f2fe707e1ce792afed47e304825302f7bd6b69f20"
+        },
+        "pdf": {
+          "path": "methodology_supplement/results/figures/full/evaluation_training_nstdb.pdf",
+          "bytes": 26916,
+          "sha256": "91325ea2667ad738cf5a6807315f7138b2363b7b71aa7b760ccc172083f3b49f"
+        },
+        "svg": {
+          "path": "methodology_supplement/results/figures/full/evaluation_training_nstdb.svg",
+          "bytes": 166301,
+          "sha256": "e2e3f78913ae8817f481bbf9e3540809b3a80402586f9ac59c438bc3204183b2"
+        }
+      },
+      "sources": [
+        {
+          "path": "methodology_supplement/results/tables/full/effect_plane.csv",
+          "bytes": 163683,
+          "sha256": "d531a8465d18a2e4de244576b26dfbe3c5eda1d81cabc42365f4b2c0940786d5"
+        }
+      ]
+    },
+    {
+      "id": "pareto",
+      "caption": "Clean-cost versus registered joint-unseen retention benefit. Lower clean cost and higher benefit define the upper-left direction; absolute AUROCs remain in pareto.csv.",
+      "files": {
+        "png": {
+          "path": "methodology_supplement/results/figures/full/pareto.png",
+          "bytes": 90346,
+          "sha256": "f2d9e367d6df5534b30d8f78853aff587df3e1f5b1b2458f0a5b6848386ad218"
+        },
+        "pdf": {
+          "path": "methodology_supplement/results/figures/full/pareto.pdf",
+          "bytes": 18413,
+          "sha256": "3b6dc1c6af4a3ccbbf580189677aec5c48c614e41abbbc9b5cbdcc9184a4d403"
+        },
+        "svg": {
+          "path": "methodology_supplement/results/figures/full/pareto.svg",
+          "bytes": 91261,
+          "sha256": "b7b10ccbe53fffbe4558aefba1dcaa6e11c5b85eaa9bea3d918acddef01f91ef"
+        }
+      },
+      "sources": [
+        {
+          "path": "methodology_supplement/results/tables/full/pareto.csv",
+          "bytes": 1863,
+          "sha256": "873419fceaba9fd90ee490cf77594f0a92474297b4d9e405ddd96441e97af8aa"
+        }
+      ]
+    }
+  ],
+  "implementation": {
+    "path": "methodology_supplement/plot.py",
+    "bytes": 26635,
+    "sha256": "b1dc863538a7428226d34214c49ec2e296d2bc45b8ace92ccda26fcf4bd7c008"
+  },
+  "display_scale": 100,
+  "display_units": "percentage points for metric differences; percent for power fractions",
+  "uncertainty": "Seed SD and conditional paired patient CI are distinct and are never added together."
+}

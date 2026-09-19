@@ -1,0 +1,2412 @@
+{
+  "status": "completed",
+  "provenance_type": "retrospective_verified_provenance",
+  "generation_time_matrix_hash_available": false,
+  "matrix": {
+    "schema": "ideal_wct_12x9_v1",
+    "lead_order": [
+      "I",
+      "II",
+      "III",
+      "aVR",
+      "aVL",
+      "aVF",
+      "V1",
+      "V2",
+      "V3",
+      "V4",
+      "V5",
+      "V6"
+    ],
+    "electrode_order": [
+      "RA",
+      "LA",
+      "LL",
+      "V1",
+      "V2",
+      "V3",
+      "V4",
+      "V5",
+      "V6"
+    ],
+    "values": [
+      [
+        -1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        -0.5,
+        -0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.5,
+        1.0,
+        -0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.5,
+        -0.5,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.3333333333333333,
+        -0.3333333333333333,
+        -0.3333333333333333,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.3333333333333333,
+        -0.3333333333333333,
+        -0.3333333333333333,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.3333333333333333,
+        -0.3333333333333333,
+        -0.3333333333333333,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.3333333333333333,
+        -0.3333333333333333,
+        -0.3333333333333333,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.3333333333333333,
+        -0.3333333333333333,
+        -0.3333333333333333,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        -0.3333333333333333,
+        -0.3333333333333333,
+        -0.3333333333333333,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "sha256": "4f852acd9c5a4f7b35a207f5078d70f842de3077d648716950a66502951bfe9d",
+    "hash_encoding": "UTF-8 JSON of schema/orders/values; sorted keys; compact separators"
+  },
+  "checks": [
+    {
+      "artifact": "E:/Eproject/ECG/phase1_ecg_robustness/results/tables/full/matrix_validation.json",
+      "scope": "saved matrix coefficients, order, rank and residuals",
+      "passed": true
+    },
+    {
+      "artifact": "E:/Eproject/ECG/phase1_ecg_robustness/results/tables/noise_diagnostic/matrix_validation.json",
+      "scope": "saved matrix coefficients, order, rank and residuals",
+      "passed": true
+    },
+    {
+      "artifact": "E:/Eproject/ECG/phase1_ecg_robustness/results/tables/pilot/matrix_validation.json",
+      "scope": "saved matrix coefficients, order, rank and residuals",
+      "passed": true
+    },
+    {
+      "artifact": "E:/Eproject/ECG/phase1_ecg_robustness/results/tables/smoke/matrix_validation.json",
+      "scope": "saved matrix coefficients, order, rank and residuals",
+      "passed": true
+    },
+    {
+      "artifact": "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/full/noise_examples.npz",
+      "config": "E:/Eproject/ECG/phase1_ecg_robustness/configs/phase1_full.yaml",
+      "scope": "all saved example noise/covariance/correlation arrays",
+      "max_absolute_error": 0.0,
+      "passed": true
+    },
+    {
+      "artifact": "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/noise_diagnostic/noise_examples.npz",
+      "config": "E:/Eproject/ECG/phase1_ecg_robustness/configs/phase1_noise_diagnostic.yaml",
+      "scope": "all saved example noise/covariance/correlation arrays",
+      "max_absolute_error": 0.0,
+      "passed": true
+    },
+    {
+      "artifact": "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/pilot/noise_examples.npz",
+      "config": "E:/Eproject/ECG/phase1_ecg_robustness/configs/phase1_pilot.yaml",
+      "scope": "all saved example noise/covariance/correlation arrays",
+      "max_absolute_error": 0.0,
+      "passed": true
+    },
+    {
+      "artifact": "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/smoke/noise_examples.npz",
+      "config": "E:/Eproject/ECG/phase1_ecg_robustness/configs/phase1_smoke.yaml",
+      "scope": "all saved example noise/covariance/correlation arrays",
+      "max_absolute_error": 0.0,
+      "passed": true
+    }
+  ],
+  "figures": [
+    {
+      "manifest": "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/figure_manifest.json",
+      "config": "E:/Eproject/ECG/phase1_ecg_robustness/configs/phase1_full.yaml",
+      "entries": [
+        {
+          "family": "waveforms",
+          "files": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/01_waveforms.png",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/01_waveforms.pdf"
+          ],
+          "source_paths": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/full/noise_examples.npz"
+          ]
+        },
+        {
+          "family": "lead_matrix",
+          "files": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/02_lead_matrix.png",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/02_lead_matrix.pdf"
+          ],
+          "source_paths": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/full/noise_examples.npz"
+          ]
+        },
+        {
+          "family": "unit_electrode_propagation",
+          "files": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/03_unit_electrode_propagation.png",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/03_unit_electrode_propagation.pdf"
+          ],
+          "source_paths": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/full/noise_examples.npz"
+          ]
+        },
+        {
+          "family": "covariance_correlation",
+          "files": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/04_noise_matrices.png",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/04_noise_matrices.pdf"
+          ],
+          "source_paths": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/full/noise_examples.npz"
+          ]
+        },
+        {
+          "family": "welch_psd",
+          "files": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/05_noise_psd.png",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/05_noise_psd.pdf"
+          ],
+          "source_paths": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/tables/full/noise_psd.csv"
+          ]
+        },
+        {
+          "family": "performance_snr",
+          "files": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/06_performance_macro_auroc.png",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/06_performance_macro_auroc.pdf"
+          ],
+          "source_paths": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/full/metrics.csv",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/tables/full/metrics_summary.csv"
+          ]
+        },
+        {
+          "family": "performance_snr",
+          "files": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/06_performance_macro_f1.png",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/06_performance_macro_f1.pdf"
+          ],
+          "source_paths": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/full/metrics.csv",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/tables/full/metrics_summary.csv"
+          ]
+        },
+        {
+          "family": "electrode_sensitivity",
+          "files": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/07_electrode_sensitivity.png",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/07_electrode_sensitivity.pdf"
+          ],
+          "source_paths": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/full/metrics.csv"
+          ]
+        },
+        {
+          "family": "paired_effect_summary",
+          "files": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/08_paired_effect_summary.png",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/08_paired_effect_summary.pdf"
+          ],
+          "source_paths": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/full/metrics.csv",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/tables/full/paired_effects.csv"
+          ]
+        },
+        {
+          "family": "per_class_drops",
+          "files": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/09_per_class_drops.png",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/09_per_class_drops.pdf"
+          ],
+          "source_paths": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/full/metrics.csv"
+          ]
+        },
+        {
+          "family": "calibration",
+          "files": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/10_calibration.png",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/10_calibration.pdf"
+          ],
+          "source_paths": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/full/metrics.csv",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/full/resnet/seed_17/clean_100_clean_all.npz",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/full/resnet/seed_17/bandpass_10_independent_all.npz",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/full/resnet/seed_17/bandpass_10_independent_rms_all.npz",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/full/resnet/seed_17/bandpass_10_electrode_all.npz",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/full/resnet/seed_17/bandpass_10_covariance_all.npz",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/full/tcn/seed_17/clean_100_clean_all.npz",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/full/tcn/seed_17/bandpass_10_independent_all.npz",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/full/tcn/seed_17/bandpass_10_independent_rms_all.npz",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/full/tcn/seed_17/bandpass_10_electrode_all.npz",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/full/tcn/seed_17/bandpass_10_covariance_all.npz"
+          ]
+        }
+      ],
+      "evidence_limit": "Current source and current input/file hashes linked retrospectively; image pixels do not establish generation-time provenance"
+    },
+    {
+      "manifest": "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/pilot/figure_manifest.json",
+      "config": "E:/Eproject/ECG/phase1_ecg_robustness/configs/phase1_pilot.yaml",
+      "entries": [
+        {
+          "family": "waveforms",
+          "files": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/pilot/01_waveforms.png"
+          ],
+          "source_paths": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/pilot/noise_examples.npz"
+          ]
+        },
+        {
+          "family": "lead_matrix",
+          "files": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/pilot/02_lead_matrix.png"
+          ],
+          "source_paths": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/pilot/noise_examples.npz"
+          ]
+        },
+        {
+          "family": "unit_electrode_propagation",
+          "files": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/pilot/03_unit_electrode_propagation.png"
+          ],
+          "source_paths": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/pilot/noise_examples.npz"
+          ]
+        },
+        {
+          "family": "covariance_correlation",
+          "files": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/pilot/04_noise_matrices.png"
+          ],
+          "source_paths": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/pilot/noise_examples.npz"
+          ]
+        },
+        {
+          "family": "welch_psd",
+          "files": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/pilot/05_noise_psd.png"
+          ],
+          "source_paths": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/tables/pilot/noise_psd.csv"
+          ]
+        },
+        {
+          "family": "performance_snr",
+          "files": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/pilot/06_performance_macro_auroc.png"
+          ],
+          "source_paths": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/pilot/metrics.csv",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/tables/pilot/metrics_summary.csv"
+          ]
+        },
+        {
+          "family": "performance_snr",
+          "files": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/pilot/06_performance_macro_f1.png"
+          ],
+          "source_paths": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/pilot/metrics.csv",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/tables/pilot/metrics_summary.csv"
+          ]
+        },
+        {
+          "family": "paired_effect_summary",
+          "files": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/pilot/08_paired_effect_summary.png"
+          ],
+          "source_paths": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/pilot/metrics.csv",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/tables/pilot/paired_effects.csv"
+          ]
+        },
+        {
+          "family": "per_class_drops",
+          "files": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/pilot/09_per_class_drops.png"
+          ],
+          "source_paths": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/pilot/metrics.csv"
+          ]
+        },
+        {
+          "family": "calibration",
+          "files": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/pilot/10_calibration.png"
+          ],
+          "source_paths": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/pilot/metrics.csv",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/pilot/resnet/seed_17/clean_100_clean_all.npz",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/pilot/resnet/seed_17/bandpass_10_independent_all.npz",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/pilot/resnet/seed_17/bandpass_10_independent_rms_all.npz",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/pilot/resnet/seed_17/bandpass_10_electrode_all.npz",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/pilot/resnet/seed_17/bandpass_10_covariance_all.npz"
+          ]
+        }
+      ],
+      "evidence_limit": "Current source and current input/file hashes linked retrospectively; image pixels do not establish generation-time provenance"
+    },
+    {
+      "manifest": "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/smoke/figure_manifest.json",
+      "config": "E:/Eproject/ECG/phase1_ecg_robustness/configs/phase1_smoke.yaml",
+      "entries": [
+        {
+          "family": "waveforms",
+          "files": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/smoke/01_waveforms.png"
+          ],
+          "source_paths": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/smoke/noise_examples.npz"
+          ]
+        },
+        {
+          "family": "lead_matrix",
+          "files": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/smoke/02_lead_matrix.png"
+          ],
+          "source_paths": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/smoke/noise_examples.npz"
+          ]
+        },
+        {
+          "family": "unit_electrode_propagation",
+          "files": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/smoke/03_unit_electrode_propagation.png"
+          ],
+          "source_paths": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/smoke/noise_examples.npz"
+          ]
+        },
+        {
+          "family": "covariance_correlation",
+          "files": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/smoke/04_noise_matrices.png"
+          ],
+          "source_paths": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/smoke/noise_examples.npz"
+          ]
+        },
+        {
+          "family": "welch_psd",
+          "files": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/smoke/05_noise_psd.png"
+          ],
+          "source_paths": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/tables/smoke/noise_psd.csv"
+          ]
+        },
+        {
+          "family": "performance_snr",
+          "files": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/smoke/06_performance_macro_auroc.png"
+          ],
+          "source_paths": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/smoke/metrics.csv",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/tables/smoke/metrics_summary.csv"
+          ]
+        },
+        {
+          "family": "performance_snr",
+          "files": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/smoke/06_performance_macro_f1.png"
+          ],
+          "source_paths": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/smoke/metrics.csv",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/tables/smoke/metrics_summary.csv"
+          ]
+        },
+        {
+          "family": "electrode_sensitivity",
+          "files": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/smoke/07_electrode_sensitivity.png"
+          ],
+          "source_paths": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/smoke/metrics.csv"
+          ]
+        },
+        {
+          "family": "paired_effect_summary",
+          "files": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/smoke/08_paired_effect_summary.png"
+          ],
+          "source_paths": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/smoke/metrics.csv",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/tables/smoke/paired_effects.csv"
+          ]
+        },
+        {
+          "family": "per_class_drops",
+          "files": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/smoke/09_per_class_drops.png"
+          ],
+          "source_paths": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/smoke/metrics.csv"
+          ]
+        },
+        {
+          "family": "calibration",
+          "files": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/smoke/10_calibration.png"
+          ],
+          "source_paths": [
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/smoke/metrics.csv",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/smoke/resnet/seed_17/clean_100_clean_all.npz",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/smoke/resnet/seed_17/bandpass_10_independent_all.npz",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/smoke/resnet/seed_17/bandpass_10_independent_rms_all.npz",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/smoke/resnet/seed_17/bandpass_10_electrode_all.npz",
+            "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/smoke/resnet/seed_17/bandpass_10_covariance_all.npz"
+          ]
+        }
+      ],
+      "evidence_limit": "Current source and current input/file hashes linked retrospectively; image pixels do not establish generation-time provenance"
+    }
+  ],
+  "artifacts": {
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/tables/full/matrix_validation.json": {
+      "path": "results/tables/full/matrix_validation.json",
+      "bytes": 3077,
+      "sha256": "8d11b04a78e898ecee4f9f560fa58736ab1d108d7f4bc9fc441ccff42c0d0cf1"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/tables/noise_diagnostic/matrix_validation.json": {
+      "path": "results/tables/noise_diagnostic/matrix_validation.json",
+      "bytes": 3077,
+      "sha256": "8d11b04a78e898ecee4f9f560fa58736ab1d108d7f4bc9fc441ccff42c0d0cf1"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/tables/pilot/matrix_validation.json": {
+      "path": "results/tables/pilot/matrix_validation.json",
+      "bytes": 3077,
+      "sha256": "8d11b04a78e898ecee4f9f560fa58736ab1d108d7f4bc9fc441ccff42c0d0cf1"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/tables/smoke/matrix_validation.json": {
+      "path": "results/tables/smoke/matrix_validation.json",
+      "bytes": 3077,
+      "sha256": "8d11b04a78e898ecee4f9f560fa58736ab1d108d7f4bc9fc441ccff42c0d0cf1"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/full/noise_examples.npz": {
+      "path": "results/metrics/full/noise_examples.npz",
+      "bytes": 408875,
+      "sha256": "18057d531367ba571a4c7dedac005554b2ff91baef26242af8603b4abb7ae77e"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/configs/phase1_full.yaml": {
+      "path": "configs/phase1_full.yaml",
+      "bytes": 571,
+      "sha256": "7c0d4c0e322b0a762d64c10c255cbb33a192c813e02f57f4f78d3d588e7dea23"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/noise_diagnostic/noise_examples.npz": {
+      "path": "results/metrics/noise_diagnostic/noise_examples.npz",
+      "bytes": 403393,
+      "sha256": "71532717d3f689bf8fdfc9c6cee7585c1b6fadb64b5958e264f9d72a87858dc7"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/configs/phase1_noise_diagnostic.yaml": {
+      "path": "configs/phase1_noise_diagnostic.yaml",
+      "bytes": 391,
+      "sha256": "4f62fa90a1b5c84d3581390eec762cbff7cc44ece8fc5bb38a2a107520749da5"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/pilot/noise_examples.npz": {
+      "path": "results/metrics/pilot/noise_examples.npz",
+      "bytes": 408875,
+      "sha256": "18057d531367ba571a4c7dedac005554b2ff91baef26242af8603b4abb7ae77e"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/configs/phase1_pilot.yaml": {
+      "path": "configs/phase1_pilot.yaml",
+      "bytes": 507,
+      "sha256": "7a68f4c9bddabb58abe92627d4597467c3c20ea8965e1bd386f7835a22cb31b4"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/smoke/noise_examples.npz": {
+      "path": "results/metrics/smoke/noise_examples.npz",
+      "bytes": 403393,
+      "sha256": "71532717d3f689bf8fdfc9c6cee7585c1b6fadb64b5958e264f9d72a87858dc7"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/configs/phase1_smoke.yaml": {
+      "path": "configs/phase1_smoke.yaml",
+      "bytes": 513,
+      "sha256": "5530c36d410b63ae332fcce0dc323255d7e03c8802a60101790962a3c484333c"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/01_waveforms.png": {
+      "path": "results/figures/full/01_waveforms.png",
+      "bytes": 970511,
+      "sha256": "a26edbe1b88d3f7ec6645a3e9adc44703e940225a70a3376fe77a90b72d0bd99"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/01_waveforms.pdf": {
+      "path": "results/figures/full/01_waveforms.pdf",
+      "bytes": 196707,
+      "sha256": "92307845597590e90463a0f002d523dc5e86522a1a38a7e95b845947b4928bd6"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/02_lead_matrix.png": {
+      "path": "results/figures/full/02_lead_matrix.png",
+      "bytes": 73733,
+      "sha256": "d2f35f0c7a8b278bcd7875afc49186df57f78802f47aed504b413e25ef21d692"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/02_lead_matrix.pdf": {
+      "path": "results/figures/full/02_lead_matrix.pdf",
+      "bytes": 19580,
+      "sha256": "ec1c7fe8f17470779fd8e1e137fa48aee58f026501afaa6b3080cf77a1737b07"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/03_unit_electrode_propagation.png": {
+      "path": "results/figures/full/03_unit_electrode_propagation.png",
+      "bytes": 79526,
+      "sha256": "7c01126fe8b21b56e2c6b066a6d248df8d639f3e668d64e50eaaf5dda744f990"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/03_unit_electrode_propagation.pdf": {
+      "path": "results/figures/full/03_unit_electrode_propagation.pdf",
+      "bytes": 18805,
+      "sha256": "5b36177be833617273e98006caf70b17a084e96fd692f3150320979002eac84f"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/04_noise_matrices.png": {
+      "path": "results/figures/full/04_noise_matrices.png",
+      "bytes": 139436,
+      "sha256": "8981bab6aacb0beca7df10ed253b6e48e81ccc00b36ad7097c31f4eccf8e9401"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/04_noise_matrices.pdf": {
+      "path": "results/figures/full/04_noise_matrices.pdf",
+      "bytes": 52753,
+      "sha256": "d6efb6f79210735226516384b69f837f5b509162e456d5a16741947b56dcd446"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/05_noise_psd.png": {
+      "path": "results/figures/full/05_noise_psd.png",
+      "bytes": 197808,
+      "sha256": "f1a99f63b3ca170a9bdc92dc6b4ebb43560510829823ed334b24e4e66f8f6e52"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/05_noise_psd.pdf": {
+      "path": "results/figures/full/05_noise_psd.pdf",
+      "bytes": 33376,
+      "sha256": "93c09b00cce2ea558d5107a64830239d0134aaa829934d0bf8fae8eaeded16ba"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/tables/full/noise_psd.csv": {
+      "path": "results/tables/full/noise_psd.csv",
+      "bytes": 101202,
+      "sha256": "357197072515b38cc048dc45e71ee9ae359cffd8a6f08008cb579a240337961a"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/06_performance_macro_auroc.png": {
+      "path": "results/figures/full/06_performance_macro_auroc.png",
+      "bytes": 314498,
+      "sha256": "8c4d8017d0133d0f3ceaa66c2d66dc088c83d9963fbe84a70e337b658aeec747"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/06_performance_macro_auroc.pdf": {
+      "path": "results/figures/full/06_performance_macro_auroc.pdf",
+      "bytes": 32600,
+      "sha256": "c39c7cae698158fe17aa95753559d7604d4bb3126049bc537eccfc5739d0ebb3"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/full/metrics.csv": {
+      "path": "results/metrics/full/metrics.csv",
+      "bytes": 287263,
+      "sha256": "f382aa7dedfa7f18f619c0bd281e304590b0f1356bde1b49ce2dd8ada133150c"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/tables/full/metrics_summary.csv": {
+      "path": "results/tables/full/metrics_summary.csv",
+      "bytes": 514153,
+      "sha256": "7e7161446bc5066884d8f040f80d1ea3cf6a899d5ea55a9fbe19874225a95205"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/06_performance_macro_f1.png": {
+      "path": "results/figures/full/06_performance_macro_f1.png",
+      "bytes": 319151,
+      "sha256": "07284fff3141da8b462313d884536dd905c81386249f8cefc75916ce684ac9ce"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/06_performance_macro_f1.pdf": {
+      "path": "results/figures/full/06_performance_macro_f1.pdf",
+      "bytes": 32184,
+      "sha256": "872b298db8803aaf139e58cdaf7e46529b882cdcfcc555af7875370ee448e5f8"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/07_electrode_sensitivity.png": {
+      "path": "results/figures/full/07_electrode_sensitivity.png",
+      "bytes": 114524,
+      "sha256": "302d9b1c5994e24d777993fd5d9caef81794f0a32f3f8210f744314c90a46a6f"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/07_electrode_sensitivity.pdf": {
+      "path": "results/figures/full/07_electrode_sensitivity.pdf",
+      "bytes": 19677,
+      "sha256": "46f83a810bc2d0620d44a3edcea59f86099eee624b4f259749503a5d9749346b"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/08_paired_effect_summary.png": {
+      "path": "results/figures/full/08_paired_effect_summary.png",
+      "bytes": 119302,
+      "sha256": "3fb9c6dd1bd3875b889b64306ca706083a4c99917fb3224532dd0ba4be5dd038"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/08_paired_effect_summary.pdf": {
+      "path": "results/figures/full/08_paired_effect_summary.pdf",
+      "bytes": 19514,
+      "sha256": "9a50a8a846d0a3d6c6c18f83c895bb14d6d0fa77152ebfad105f405a2b40126c"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/tables/full/paired_effects.csv": {
+      "path": "results/tables/full/paired_effects.csv",
+      "bytes": 406024,
+      "sha256": "3f4db588673204aca10361413d04dd6cc2555ce8550cdcab4d269403849dfa77"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/09_per_class_drops.png": {
+      "path": "results/figures/full/09_per_class_drops.png",
+      "bytes": 250803,
+      "sha256": "b3e715d1f9ae05c3578de8084bdb10562f8e1bd039735d82745ce90a92b14904"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/09_per_class_drops.pdf": {
+      "path": "results/figures/full/09_per_class_drops.pdf",
+      "bytes": 36346,
+      "sha256": "5f1865b893397fec9c83aac0dcee7c80844e9b4ad26048847b5acf2875cad5d5"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/10_calibration.png": {
+      "path": "results/figures/full/10_calibration.png",
+      "bytes": 151835,
+      "sha256": "b710f61391c968f565e9b94c56c319f437938ce58071713135a8a7e9b53ed8fd"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/10_calibration.pdf": {
+      "path": "results/figures/full/10_calibration.pdf",
+      "bytes": 32637,
+      "sha256": "57d66efe2cc6565bff5d92a97e7513e24cd50cef2b180489c90779de1487a825"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/full/resnet/seed_17/clean_100_clean_all.npz": {
+      "path": "results/metrics/full/resnet/seed_17/clean_100_clean_all.npz",
+      "bytes": 72939,
+      "sha256": "2c408c0870f4cce08c172deb1197cc05636dabcf55a05c9ca8acae92bf8777b2"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/full/resnet/seed_17/bandpass_10_independent_all.npz": {
+      "path": "results/metrics/full/resnet/seed_17/bandpass_10_independent_all.npz",
+      "bytes": 481768,
+      "sha256": "07f70dd36b29e6634850211c505b123d6e58c87fd3875884eb87715be1029206"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/full/resnet/seed_17/bandpass_10_independent_rms_all.npz": {
+      "path": "results/metrics/full/resnet/seed_17/bandpass_10_independent_rms_all.npz",
+      "bytes": 482170,
+      "sha256": "2563401ee8a40870ab2c6cfa14034616957df92dd8f11961ae6bdb296b33a1ea"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/full/resnet/seed_17/bandpass_10_electrode_all.npz": {
+      "path": "results/metrics/full/resnet/seed_17/bandpass_10_electrode_all.npz",
+      "bytes": 482143,
+      "sha256": "f2990c461d5e1db4026198275abcb50ebcb9f81ba9b499816f0106c2fe8ba51c"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/full/resnet/seed_17/bandpass_10_covariance_all.npz": {
+      "path": "results/metrics/full/resnet/seed_17/bandpass_10_covariance_all.npz",
+      "bytes": 482107,
+      "sha256": "31f87339cbda8fd14a5a431c679072f10b34519ef1cd2d97dc65c0088e0cf132"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/full/tcn/seed_17/clean_100_clean_all.npz": {
+      "path": "results/metrics/full/tcn/seed_17/clean_100_clean_all.npz",
+      "bytes": 72908,
+      "sha256": "c54f7464909e7d0e3ce262047df4116172f0ac6e31d31d12df68090a6f29d132"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/full/tcn/seed_17/bandpass_10_independent_all.npz": {
+      "path": "results/metrics/full/tcn/seed_17/bandpass_10_independent_all.npz",
+      "bytes": 481892,
+      "sha256": "03365e04cdf9eda17edd46332945f972d9a6756ec2bb0d4c6892da6bf6f82565"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/full/tcn/seed_17/bandpass_10_independent_rms_all.npz": {
+      "path": "results/metrics/full/tcn/seed_17/bandpass_10_independent_rms_all.npz",
+      "bytes": 482268,
+      "sha256": "b73a9626ad2fc192c51d16e1f49b3e3e08272c64d99351e1e94e0b02d9ed8ab5"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/full/tcn/seed_17/bandpass_10_electrode_all.npz": {
+      "path": "results/metrics/full/tcn/seed_17/bandpass_10_electrode_all.npz",
+      "bytes": 482294,
+      "sha256": "1099deb47cc41ce1fbb39c79fbb547093ac621559566e711e9785dc3e5bf8a63"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/full/tcn/seed_17/bandpass_10_covariance_all.npz": {
+      "path": "results/metrics/full/tcn/seed_17/bandpass_10_covariance_all.npz",
+      "bytes": 482289,
+      "sha256": "16108889265c64f2210182c6d91fb1816d9d7d039ce776c63253f1fe488dfd94"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/full/figure_manifest.json": {
+      "path": "results/figures/full/figure_manifest.json",
+      "bytes": 8165,
+      "sha256": "b8a6e8cf14a4f3f445148e3fa5909a81b091b9bc282292af4522f34e076f0870"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/pilot/01_waveforms.png": {
+      "path": "results/figures/pilot/01_waveforms.png",
+      "bytes": 970511,
+      "sha256": "a26edbe1b88d3f7ec6645a3e9adc44703e940225a70a3376fe77a90b72d0bd99"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/pilot/02_lead_matrix.png": {
+      "path": "results/figures/pilot/02_lead_matrix.png",
+      "bytes": 73733,
+      "sha256": "d2f35f0c7a8b278bcd7875afc49186df57f78802f47aed504b413e25ef21d692"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/pilot/03_unit_electrode_propagation.png": {
+      "path": "results/figures/pilot/03_unit_electrode_propagation.png",
+      "bytes": 79526,
+      "sha256": "7c01126fe8b21b56e2c6b066a6d248df8d639f3e668d64e50eaaf5dda744f990"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/pilot/04_noise_matrices.png": {
+      "path": "results/figures/pilot/04_noise_matrices.png",
+      "bytes": 139436,
+      "sha256": "8981bab6aacb0beca7df10ed253b6e48e81ccc00b36ad7097c31f4eccf8e9401"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/pilot/05_noise_psd.png": {
+      "path": "results/figures/pilot/05_noise_psd.png",
+      "bytes": 72968,
+      "sha256": "aaa88935acaf6b86973b9b96845a55b208517887360c8ae84c18c619fedb7425"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/tables/pilot/noise_psd.csv": {
+      "path": "results/tables/pilot/noise_psd.csv",
+      "bytes": 27716,
+      "sha256": "3100c4073053dec4e3de11983370016aad28a1a1b61cd46d39afa72473cded78"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/pilot/06_performance_macro_auroc.png": {
+      "path": "results/figures/pilot/06_performance_macro_auroc.png",
+      "bytes": 90333,
+      "sha256": "08b27b72e152f5d1fb231b4b6df0e8fef8a53a01347e0ba3b25c15796f939255"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/pilot/metrics.csv": {
+      "path": "results/metrics/pilot/metrics.csv",
+      "bytes": 24692,
+      "sha256": "32bc716bc78d33270e00a9c5549cbfa5992a32b78eb53335a1848c6554680086"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/tables/pilot/metrics_summary.csv": {
+      "path": "results/tables/pilot/metrics_summary.csv",
+      "bytes": 45229,
+      "sha256": "b501dadf8603903fc8649ef0a71e604b3ca8a4fda6b83b0a285de0fc479c33af"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/pilot/06_performance_macro_f1.png": {
+      "path": "results/figures/pilot/06_performance_macro_f1.png",
+      "bytes": 84885,
+      "sha256": "f1f00d8027395348e6c071f61261903f7474a95f4172917ac9d2b99b899b2f70"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/pilot/08_paired_effect_summary.png": {
+      "path": "results/figures/pilot/08_paired_effect_summary.png",
+      "bytes": 58556,
+      "sha256": "c79f38315accc556e848df1397c093096880970706fb38371504f7b7cabda6f5"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/tables/pilot/paired_effects.csv": {
+      "path": "results/tables/pilot/paired_effects.csv",
+      "bytes": 39258,
+      "sha256": "c7ff8cddf1dbf88582011e14e5cdd382cfe095abe92656645a488ae14dc334a7"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/pilot/09_per_class_drops.png": {
+      "path": "results/figures/pilot/09_per_class_drops.png",
+      "bytes": 76967,
+      "sha256": "cfa7d86be36f9d3a41271c8f2be5ced1164fd0e8b292aef624b8a33769929685"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/pilot/10_calibration.png": {
+      "path": "results/figures/pilot/10_calibration.png",
+      "bytes": 113301,
+      "sha256": "c0e6045530e5b7ef84c0bf12b4c77abb5688e3c5dbda604006ba28b10f7f2bfd"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/pilot/resnet/seed_17/clean_100_clean_all.npz": {
+      "path": "results/metrics/pilot/resnet/seed_17/clean_100_clean_all.npz",
+      "bytes": 34801,
+      "sha256": "b29c42be6b3dfb8cc84bc417991d3bde33dd5b040cdffd2e12f66dd06ca97077"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/pilot/resnet/seed_17/bandpass_10_independent_all.npz": {
+      "path": "results/metrics/pilot/resnet/seed_17/bandpass_10_independent_all.npz",
+      "bytes": 224731,
+      "sha256": "d1751d60fd5f8f35d514e10fcd8fe5d86117d36fd6aa78a965fd0b425b0a8c4c"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/pilot/resnet/seed_17/bandpass_10_independent_rms_all.npz": {
+      "path": "results/metrics/pilot/resnet/seed_17/bandpass_10_independent_rms_all.npz",
+      "bytes": 224905,
+      "sha256": "8eee1c4212d7e008c5977769d1fed8a5ea639ce4233c6919b8fb101d0cde37a3"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/pilot/resnet/seed_17/bandpass_10_electrode_all.npz": {
+      "path": "results/metrics/pilot/resnet/seed_17/bandpass_10_electrode_all.npz",
+      "bytes": 224922,
+      "sha256": "268983936db934800771440f4acb573867731f15f7c7e45b7e4cc6d298d7627b"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/pilot/resnet/seed_17/bandpass_10_covariance_all.npz": {
+      "path": "results/metrics/pilot/resnet/seed_17/bandpass_10_covariance_all.npz",
+      "bytes": 224959,
+      "sha256": "504819875d479ce908dfaaa640e29d5cfae13111ab6982b3270ecae85726d8dd"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/pilot/figure_manifest.json": {
+      "path": "results/figures/pilot/figure_manifest.json",
+      "bytes": 6729,
+      "sha256": "5643f0bebc8d0b4ad46e0f2f71f0f215cb45b6f1e12cdf892d3eec23c2eb4e93"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/smoke/01_waveforms.png": {
+      "path": "results/figures/smoke/01_waveforms.png",
+      "bytes": 920214,
+      "sha256": "1a95e2245ea57d39e17711b7d363bac5971b50b20c4243d4970c566af4cdd272"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/smoke/02_lead_matrix.png": {
+      "path": "results/figures/smoke/02_lead_matrix.png",
+      "bytes": 73733,
+      "sha256": "d2f35f0c7a8b278bcd7875afc49186df57f78802f47aed504b413e25ef21d692"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/smoke/03_unit_electrode_propagation.png": {
+      "path": "results/figures/smoke/03_unit_electrode_propagation.png",
+      "bytes": 79526,
+      "sha256": "7c01126fe8b21b56e2c6b066a6d248df8d639f3e668d64e50eaaf5dda744f990"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/smoke/04_noise_matrices.png": {
+      "path": "results/figures/smoke/04_noise_matrices.png",
+      "bytes": 139287,
+      "sha256": "a14b6bec65e8071f83d6d33ffa811ccd762578cc82237ac3c83e64887b64a984"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/smoke/05_noise_psd.png": {
+      "path": "results/figures/smoke/05_noise_psd.png",
+      "bytes": 74065,
+      "sha256": "58a922f4f384ed0da34303a02cae4b0994d34a2ca59fd2a5f5e35f7cb4b67cfc"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/tables/smoke/noise_psd.csv": {
+      "path": "results/tables/smoke/noise_psd.csv",
+      "bytes": 27762,
+      "sha256": "ff6bc91cb4c813d90fc43aee2ae26d720b7513ff29e23f7e0a0bad986036c651"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/smoke/06_performance_macro_auroc.png": {
+      "path": "results/figures/smoke/06_performance_macro_auroc.png",
+      "bytes": 95534,
+      "sha256": "069153b79874a53e66a6d4226f4a7dec68a7a1c24d06657f62f9b56a9f5e15ff"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/smoke/metrics.csv": {
+      "path": "results/metrics/smoke/metrics.csv",
+      "bytes": 10165,
+      "sha256": "197fe490d4e5d91db6e42ffe9948d1b977d2f9dc7b3abf6c0ec684e82216ea75"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/tables/smoke/metrics_summary.csv": {
+      "path": "results/tables/smoke/metrics_summary.csv",
+      "bytes": 30335,
+      "sha256": "7900d09121a7653006f048c0ec89d65cacc6283ba662cae424b1addc9c35941d"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/smoke/06_performance_macro_f1.png": {
+      "path": "results/figures/smoke/06_performance_macro_f1.png",
+      "bytes": 94323,
+      "sha256": "07cfcbf1ad9a010951b48deaf1f232f8106284c8bf4b16858ee8e2067b487b91"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/smoke/07_electrode_sensitivity.png": {
+      "path": "results/figures/smoke/07_electrode_sensitivity.png",
+      "bytes": 62358,
+      "sha256": "0a04f5bcdceb7f9ccb0e883680630299d236c7ac14b01dc0f529c7b2d88151df"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/smoke/08_paired_effect_summary.png": {
+      "path": "results/figures/smoke/08_paired_effect_summary.png",
+      "bytes": 57423,
+      "sha256": "e3c02d495581c6e47c7d82eab69727ae78ff7cba01cfd26341564b552a641db8"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/tables/smoke/paired_effects.csv": {
+      "path": "results/tables/smoke/paired_effects.csv",
+      "bytes": 39909,
+      "sha256": "920f9e0fa707ad1fa412b15312f08057c3911ac0bea167235ca2f7a155e1d96a"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/smoke/09_per_class_drops.png": {
+      "path": "results/figures/smoke/09_per_class_drops.png",
+      "bytes": 74174,
+      "sha256": "660ddf266166261b8dc3811b33038d8a5c65dbbb3b7a466c690e56c6c1490d91"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/smoke/10_calibration.png": {
+      "path": "results/figures/smoke/10_calibration.png",
+      "bytes": 120256,
+      "sha256": "b278b08aaa5749928a00e2c5a2c92909ddecbec8858aaa74159934adb42897d3"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/smoke/resnet/seed_17/clean_100_clean_all.npz": {
+      "path": "results/metrics/smoke/resnet/seed_17/clean_100_clean_all.npz",
+      "bytes": 4902,
+      "sha256": "847774fbf0222225d58494da050505f9c21d33161502559f373430065c2b61bd"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/smoke/resnet/seed_17/bandpass_10_independent_all.npz": {
+      "path": "results/metrics/smoke/resnet/seed_17/bandpass_10_independent_all.npz",
+      "bytes": 24758,
+      "sha256": "6f037d4f31a1726c8c30ecefce794212d146e457b3c04d55a41d2a281cc9cfd6"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/smoke/resnet/seed_17/bandpass_10_independent_rms_all.npz": {
+      "path": "results/metrics/smoke/resnet/seed_17/bandpass_10_independent_rms_all.npz",
+      "bytes": 24758,
+      "sha256": "7a7abb90e5ef1e5d25e11e32733b9f6de862a76f971d2315abb904a3e962a15a"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/smoke/resnet/seed_17/bandpass_10_electrode_all.npz": {
+      "path": "results/metrics/smoke/resnet/seed_17/bandpass_10_electrode_all.npz",
+      "bytes": 24758,
+      "sha256": "307ae81db7d977bfa35d0ade4321051a9609d0af2dc4aaf92cbd26f44e2fce7b"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/metrics/smoke/resnet/seed_17/bandpass_10_covariance_all.npz": {
+      "path": "results/metrics/smoke/resnet/seed_17/bandpass_10_covariance_all.npz",
+      "bytes": 24760,
+      "sha256": "9fdb768ffeb96cddeec0519cabb7b20f62b192c8584bf0db6bbe3acd256dac75"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/results/figures/smoke/figure_manifest.json": {
+      "path": "results/figures/smoke/figure_manifest.json",
+      "bytes": 7164,
+      "sha256": "c7f74d20cb4b764f82b4113064796f5c7cecb48d6a53f497d13b769b51bb9640"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/src/audit_noise.py": {
+      "path": "src/audit_noise.py",
+      "bytes": 12231,
+      "sha256": "2ad33e67a8c4ed4952eaba4318dea26b22405ecffcac6e6ba11bdd9816a270eb"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/src/covariance_matching.py": {
+      "path": "src/covariance_matching.py",
+      "bytes": 7725,
+      "sha256": "17e2cdcd976c53558937c784774a13dcd1a2f60924c4b03b4345859cfcba4a6b"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/src/datasets.py": {
+      "path": "src/datasets.py",
+      "bytes": 4684,
+      "sha256": "a3f085d44652da86c5c4dfbf088d14c901102d05e75a61b7920b7025786ae4f2"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/src/download_ptbxl.py": {
+      "path": "src/download_ptbxl.py",
+      "bytes": 18959,
+      "sha256": "c046c78ddcce5c7ba3c352bb9b1006d77b5d9f81e74cbf58a74e345a66a8a14a"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/src/environment.py": {
+      "path": "src/environment.py",
+      "bytes": 2428,
+      "sha256": "cc3ff05f60828412ecba1a61b415eb2450edbad65ed4ac9bcbdd721e75bc12ee"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/src/evaluate.py": {
+      "path": "src/evaluate.py",
+      "bytes": 12337,
+      "sha256": "5271e3803393188f9c6c643e3d24ce6aeacdf08ead5cad98eec3e840d7b142d9"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/src/lead_matrix.py": {
+      "path": "src/lead_matrix.py",
+      "bytes": 4192,
+      "sha256": "e7afb8bc617642180175b82f69ac797f74d259246ecac86e4f19eb5025b455b1"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/src/models.py": {
+      "path": "src/models.py",
+      "bytes": 5863,
+      "sha256": "53f5858562f4535cebca888776885846af9c442cf3e709a47eecd91407f40ed7"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/src/noise_generators.py": {
+      "path": "src/noise_generators.py",
+      "bytes": 16113,
+      "sha256": "6439e7eb220d9f1776e859b103570ea7407bec33c0da60aa3d70a95e9f7ef108"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/src/plotting.py": {
+      "path": "src/plotting.py",
+      "bytes": 36423,
+      "sha256": "c500156414912edaf68794f12c9845dabcb713895b15520d8ddde6210e775a5a"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/src/prepare_ptbxl.py": {
+      "path": "src/prepare_ptbxl.py",
+      "bytes": 14347,
+      "sha256": "a53971cfc2177151d81c6b41acf77ea2b11bec76aaa8eac827196430f2ad3f57"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/src/run_experiment.py": {
+      "path": "src/run_experiment.py",
+      "bytes": 2827,
+      "sha256": "382d63292025dc78e98156a3c66ed0d6d6e1696a825913b6cf6b870588c2ca19"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/src/run_supplement.py": {
+      "path": "src/run_supplement.py",
+      "bytes": 2502,
+      "sha256": "0ae298ec672b2200af6428cf4fcae813717f8b3def443ad363260bb9e73311f9"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/src/statistics.py": {
+      "path": "src/statistics.py",
+      "bytes": 35165,
+      "sha256": "38468d59c7dc383935890e830e9fe6659daefc8a14efb1b7cf76a018e6a2466a"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/src/strict_control.py": {
+      "path": "src/strict_control.py",
+      "bytes": 28717,
+      "sha256": "191193239f70869f8c08be5b3a7e50c43b7f1bd2ae49d37767b6ad9eb8fbb789"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/src/supplemental_audit.py": {
+      "path": "src/supplemental_audit.py",
+      "bytes": 48722,
+      "sha256": "82d65c0740e74d657f3aaabbd3d6aff528dec24d349bb28e23b375d8a4c5917b"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/src/supplemental_statistics.py": {
+      "path": "src/supplemental_statistics.py",
+      "bytes": 36942,
+      "sha256": "c89248306ed90355c69c5dd986e2e28159fab4c58f3bfede5f0494eea0ce1f98"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/src/train.py": {
+      "path": "src/train.py",
+      "bytes": 23184,
+      "sha256": "b082292d91776c5b4fb6e19db922d7ef6c73f8cde64317a8b43dbfcd256272ca"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/src/__init__.py": {
+      "path": "src/__init__.py",
+      "bytes": 74,
+      "sha256": "40fdfb6f5f22db08a89c41acb12b2a867cff3a5d471c9f951e49dd77c8f7eb5d"
+    },
+    "E:/Eproject/ECG/phase1_ecg_robustness/scripts/replay_noise.py": {
+      "path": "scripts/replay_noise.py",
+      "bytes": 8140,
+      "sha256": "420d19a8fd928e07bcb53ac426a48c900214eed0b1615a4fc8f60bbe46161a39"
+    }
+  },
+  "historical_precision_archive": {
+    "archive": {
+      "path": "results/logs/precision_before_fix.zip",
+      "bytes": 49420476,
+      "sha256": "6fe6959e2f3c0ca9b817f30731fce11bddc9c019e2f8b3910757fc25bc68bea5"
+    },
+    "correction": {
+      "path": "results/logs/precision_correction.json",
+      "bytes": 2363,
+      "sha256": "79c39b573ecb3403552566faddd031ebaf91b4b90bf176f6bc84794c279d66de"
+    },
+    "label": "historical pre-correction numeric-policy artifacts; excluded from current 822-file replay, not current evidence",
+    "members": [
+      {
+        "path": "src/evaluate.py",
+        "bytes": 10084,
+        "crc32": 167224160
+      },
+      {
+        "path": "scripts/replay_noise.py",
+        "bytes": 6492,
+        "crc32": 1550012652
+      },
+      {
+        "path": "reports/phase1_interim_report.md",
+        "bytes": 11473,
+        "crc32": 4040691058
+      },
+      {
+        "path": "results/metrics/smoke/metrics.csv",
+        "bytes": 10152,
+        "crc32": 3141355163
+      },
+      {
+        "path": "results/metrics/smoke/evaluation_protocol.json",
+        "bytes": 1654,
+        "crc32": 2323616913
+      },
+      {
+        "path": "results/metrics/smoke/resnet/seed_17/clean_100_clean_all.npz",
+        "bytes": 4899,
+        "crc32": 3969942164
+      },
+      {
+        "path": "results/metrics/smoke/resnet/seed_17/bandpass_20_independent_all.npz",
+        "bytes": 24601,
+        "crc32": 3484572449
+      },
+      {
+        "path": "results/metrics/smoke/resnet/seed_17/bandpass_20_independent_rms_all.npz",
+        "bytes": 24601,
+        "crc32": 1602271498
+      },
+      {
+        "path": "results/metrics/smoke/resnet/seed_17/bandpass_20_electrode_all.npz",
+        "bytes": 24600,
+        "crc32": 3191776115
+      },
+      {
+        "path": "results/metrics/smoke/resnet/seed_17/bandpass_20_covariance_all.npz",
+        "bytes": 24593,
+        "crc32": 3163880368
+      },
+      {
+        "path": "results/metrics/smoke/resnet/seed_17/bandpass_10_independent_all.npz",
+        "bytes": 24755,
+        "crc32": 2331902270
+      },
+      {
+        "path": "results/metrics/smoke/resnet/seed_17/bandpass_10_independent_rms_all.npz",
+        "bytes": 24753,
+        "crc32": 1768130227
+      },
+      {
+        "path": "results/metrics/smoke/resnet/seed_17/bandpass_10_electrode_all.npz",
+        "bytes": 24756,
+        "crc32": 3116376004
+      },
+      {
+        "path": "results/metrics/smoke/resnet/seed_17/bandpass_10_covariance_all.npz",
+        "bytes": 24761,
+        "crc32": 1657526574
+      },
+      {
+        "path": "results/metrics/smoke/resnet/seed_17/bandpass_0_independent_all.npz",
+        "bytes": 25315,
+        "crc32": 702315431
+      },
+      {
+        "path": "results/metrics/smoke/resnet/seed_17/bandpass_0_independent_rms_all.npz",
+        "bytes": 25314,
+        "crc32": 811945255
+      },
+      {
+        "path": "results/metrics/smoke/resnet/seed_17/bandpass_0_electrode_all.npz",
+        "bytes": 25318,
+        "crc32": 2162272948
+      },
+      {
+        "path": "results/metrics/smoke/resnet/seed_17/bandpass_0_covariance_all.npz",
+        "bytes": 25330,
+        "crc32": 3185828221
+      },
+      {
+        "path": "results/metrics/smoke/resnet/seed_17/bandpass_10_independent_rms_RA.npz",
+        "bytes": 21180,
+        "crc32": 1537804780
+      },
+      {
+        "path": "results/metrics/smoke/resnet/seed_17/bandpass_10_electrode_RA.npz",
+        "bytes": 17365,
+        "crc32": 2717693530
+      },
+      {
+        "path": "results/metrics/smoke/resnet/seed_17/bandpass_10_covariance_RA.npz",
+        "bytes": 17350,
+        "crc32": 1944591583
+      },
+      {
+        "path": "results/tables/smoke/metrics_summary.csv",
+        "bytes": 30323,
+        "crc32": 1513480410
+      },
+      {
+        "path": "results/tables/smoke/paired_effects.csv",
+        "bytes": 39886,
+        "crc32": 1239059344
+      },
+      {
+        "path": "results/tables/smoke/seed_contrasts.csv",
+        "bytes": 11225,
+        "crc32": 222265296
+      },
+      {
+        "path": "results/tables/smoke/statistics_protocol.json",
+        "bytes": 8094,
+        "crc32": 3132204871
+      },
+      {
+        "path": "results/metrics/pilot/metrics.csv",
+        "bytes": 24709,
+        "crc32": 4085195774
+      },
+      {
+        "path": "results/metrics/pilot/evaluation_protocol.json",
+        "bytes": 1882,
+        "crc32": 4057671881
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_17/clean_100_clean_all.npz",
+        "bytes": 34791,
+        "crc32": 2144019156
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_29/clean_100_clean_all.npz",
+        "bytes": 34634,
+        "crc32": 2530568697
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_43/clean_100_clean_all.npz",
+        "bytes": 34658,
+        "crc32": 2659520613
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_17/bandpass_20_independent_all.npz",
+        "bytes": 223475,
+        "crc32": 3209334123
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_29/bandpass_20_independent_all.npz",
+        "bytes": 223294,
+        "crc32": 4033779780
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_43/bandpass_20_independent_all.npz",
+        "bytes": 223309,
+        "crc32": 1925584356
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_17/bandpass_20_independent_rms_all.npz",
+        "bytes": 223648,
+        "crc32": 2110865361
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_29/bandpass_20_independent_rms_all.npz",
+        "bytes": 223466,
+        "crc32": 3351368914
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_43/bandpass_20_independent_rms_all.npz",
+        "bytes": 223487,
+        "crc32": 2080468018
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_17/bandpass_20_electrode_all.npz",
+        "bytes": 223598,
+        "crc32": 1341816455
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_29/bandpass_20_electrode_all.npz",
+        "bytes": 223413,
+        "crc32": 281403638
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_43/bandpass_20_electrode_all.npz",
+        "bytes": 223450,
+        "crc32": 878552825
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_17/bandpass_20_covariance_all.npz",
+        "bytes": 223620,
+        "crc32": 3704729992
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_29/bandpass_20_covariance_all.npz",
+        "bytes": 223440,
+        "crc32": 2111553038
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_43/bandpass_20_covariance_all.npz",
+        "bytes": 223461,
+        "crc32": 3797912144
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_17/bandpass_10_independent_all.npz",
+        "bytes": 224752,
+        "crc32": 3654796837
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_29/bandpass_10_independent_all.npz",
+        "bytes": 224558,
+        "crc32": 661623169
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_43/bandpass_10_independent_all.npz",
+        "bytes": 224570,
+        "crc32": 3752238246
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_17/bandpass_10_independent_rms_all.npz",
+        "bytes": 224917,
+        "crc32": 1991259711
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_29/bandpass_10_independent_rms_all.npz",
+        "bytes": 224761,
+        "crc32": 2834886588
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_43/bandpass_10_independent_rms_all.npz",
+        "bytes": 224760,
+        "crc32": 2878388642
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_17/bandpass_10_electrode_all.npz",
+        "bytes": 224907,
+        "crc32": 1185160107
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_29/bandpass_10_electrode_all.npz",
+        "bytes": 224741,
+        "crc32": 451595679
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_43/bandpass_10_electrode_all.npz",
+        "bytes": 224750,
+        "crc32": 46851417
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_17/bandpass_10_covariance_all.npz",
+        "bytes": 224952,
+        "crc32": 2103084980
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_29/bandpass_10_covariance_all.npz",
+        "bytes": 224796,
+        "crc32": 1320317396
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_43/bandpass_10_covariance_all.npz",
+        "bytes": 224800,
+        "crc32": 3217561646
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_17/bandpass_0_independent_all.npz",
+        "bytes": 230235,
+        "crc32": 151989865
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_29/bandpass_0_independent_all.npz",
+        "bytes": 230013,
+        "crc32": 3199132449
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_43/bandpass_0_independent_all.npz",
+        "bytes": 230097,
+        "crc32": 1003660727
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_17/bandpass_0_independent_rms_all.npz",
+        "bytes": 230148,
+        "crc32": 1180409435
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_29/bandpass_0_independent_rms_all.npz",
+        "bytes": 229944,
+        "crc32": 600813357
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_43/bandpass_0_independent_rms_all.npz",
+        "bytes": 230041,
+        "crc32": 1778892760
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_17/bandpass_0_electrode_all.npz",
+        "bytes": 230122,
+        "crc32": 962605203
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_29/bandpass_0_electrode_all.npz",
+        "bytes": 229967,
+        "crc32": 2537574268
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_43/bandpass_0_electrode_all.npz",
+        "bytes": 230014,
+        "crc32": 93399972
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_17/bandpass_0_covariance_all.npz",
+        "bytes": 230165,
+        "crc32": 1097642642
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_29/bandpass_0_covariance_all.npz",
+        "bytes": 229975,
+        "crc32": 1615557217
+      },
+      {
+        "path": "results/metrics/pilot/resnet/seed_43/bandpass_0_covariance_all.npz",
+        "bytes": 230038,
+        "crc32": 152391987
+      },
+      {
+        "path": "results/tables/pilot/metrics_summary.csv",
+        "bytes": 45240,
+        "crc32": 2592455388
+      },
+      {
+        "path": "results/tables/pilot/paired_effects.csv",
+        "bytes": 39279,
+        "crc32": 1942693548
+      },
+      {
+        "path": "results/tables/pilot/seed_contrasts.csv",
+        "bytes": 40949,
+        "crc32": 2963590531
+      },
+      {
+        "path": "results/tables/pilot/statistics_protocol.json",
+        "bytes": 8076,
+        "crc32": 1767159746
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/metrics.csv",
+        "bytes": 112590,
+        "crc32": 3509500444
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/protocol.json",
+        "bytes": 1778,
+        "crc32": 1555021531
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise101_20_independent.npz",
+        "bytes": 223504,
+        "crc32": 487811082
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise101_20_independent.npz",
+        "bytes": 223304,
+        "crc32": 4207283259
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise101_20_independent.npz",
+        "bytes": 223355,
+        "crc32": 1555577536
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise101_20_independent_rms.npz",
+        "bytes": 223632,
+        "crc32": 155445940
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise101_20_independent_rms.npz",
+        "bytes": 223462,
+        "crc32": 3478073820
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise101_20_independent_rms.npz",
+        "bytes": 223478,
+        "crc32": 2986657860
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise101_20_electrode.npz",
+        "bytes": 223676,
+        "crc32": 3830547685
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise101_20_electrode.npz",
+        "bytes": 223486,
+        "crc32": 2916015256
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise101_20_electrode.npz",
+        "bytes": 223525,
+        "crc32": 2997116374
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise101_20_covariance.npz",
+        "bytes": 223613,
+        "crc32": 3335416288
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise101_20_covariance.npz",
+        "bytes": 223428,
+        "crc32": 1349856759
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise101_20_covariance.npz",
+        "bytes": 223473,
+        "crc32": 3809985514
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise101_10_independent.npz",
+        "bytes": 224760,
+        "crc32": 979016681
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise101_10_independent.npz",
+        "bytes": 224601,
+        "crc32": 3019208220
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise101_10_independent.npz",
+        "bytes": 224587,
+        "crc32": 3929336148
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise101_10_independent_rms.npz",
+        "bytes": 224957,
+        "crc32": 3494965714
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise101_10_independent_rms.npz",
+        "bytes": 224800,
+        "crc32": 3129679054
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise101_10_independent_rms.npz",
+        "bytes": 224771,
+        "crc32": 1736433623
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise101_10_electrode.npz",
+        "bytes": 224937,
+        "crc32": 3441920322
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise101_10_electrode.npz",
+        "bytes": 224775,
+        "crc32": 3410944089
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise101_10_electrode.npz",
+        "bytes": 224788,
+        "crc32": 4145093547
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise101_10_covariance.npz",
+        "bytes": 224922,
+        "crc32": 882388244
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise101_10_covariance.npz",
+        "bytes": 224779,
+        "crc32": 2275387978
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise101_10_covariance.npz",
+        "bytes": 224783,
+        "crc32": 3142974821
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise101_0_independent.npz",
+        "bytes": 230246,
+        "crc32": 699683253
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise101_0_independent.npz",
+        "bytes": 230020,
+        "crc32": 1690002992
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise101_0_independent.npz",
+        "bytes": 230097,
+        "crc32": 2844897760
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise101_0_independent_rms.npz",
+        "bytes": 230162,
+        "crc32": 457285597
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise101_0_independent_rms.npz",
+        "bytes": 229968,
+        "crc32": 1152609094
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise101_0_independent_rms.npz",
+        "bytes": 230046,
+        "crc32": 136744077
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise101_0_electrode.npz",
+        "bytes": 230218,
+        "crc32": 3262267615
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise101_0_electrode.npz",
+        "bytes": 230034,
+        "crc32": 1432568598
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise101_0_electrode.npz",
+        "bytes": 230112,
+        "crc32": 312199722
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise101_0_covariance.npz",
+        "bytes": 230169,
+        "crc32": 2082571525
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise101_0_covariance.npz",
+        "bytes": 229972,
+        "crc32": 3274152940
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise101_0_covariance.npz",
+        "bytes": 230046,
+        "crc32": 318150527
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise202_20_independent.npz",
+        "bytes": 223487,
+        "crc32": 2740723384
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise202_20_independent.npz",
+        "bytes": 223301,
+        "crc32": 1012151973
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise202_20_independent.npz",
+        "bytes": 223311,
+        "crc32": 3970811260
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise202_20_independent_rms.npz",
+        "bytes": 223626,
+        "crc32": 701801747
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise202_20_independent_rms.npz",
+        "bytes": 223425,
+        "crc32": 3919111653
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise202_20_independent_rms.npz",
+        "bytes": 223473,
+        "crc32": 1265175878
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise202_20_electrode.npz",
+        "bytes": 223634,
+        "crc32": 2433266409
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise202_20_electrode.npz",
+        "bytes": 223484,
+        "crc32": 2675785171
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise202_20_electrode.npz",
+        "bytes": 223481,
+        "crc32": 3202252544
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise202_20_covariance.npz",
+        "bytes": 223620,
+        "crc32": 4052300402
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise202_20_covariance.npz",
+        "bytes": 223414,
+        "crc32": 3999051898
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise202_20_covariance.npz",
+        "bytes": 223452,
+        "crc32": 734979834
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise202_10_independent.npz",
+        "bytes": 224761,
+        "crc32": 3982112384
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise202_10_independent.npz",
+        "bytes": 224609,
+        "crc32": 521167458
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise202_10_independent.npz",
+        "bytes": 224623,
+        "crc32": 1506370141
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise202_10_independent_rms.npz",
+        "bytes": 224941,
+        "crc32": 2972594463
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise202_10_independent_rms.npz",
+        "bytes": 224772,
+        "crc32": 3483419057
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise202_10_independent_rms.npz",
+        "bytes": 224799,
+        "crc32": 2241428143
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise202_10_electrode.npz",
+        "bytes": 224929,
+        "crc32": 3962185931
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise202_10_electrode.npz",
+        "bytes": 224768,
+        "crc32": 2787688155
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise202_10_electrode.npz",
+        "bytes": 224791,
+        "crc32": 1055549794
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise202_10_covariance.npz",
+        "bytes": 224958,
+        "crc32": 1548197770
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise202_10_covariance.npz",
+        "bytes": 224776,
+        "crc32": 1725274277
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise202_10_covariance.npz",
+        "bytes": 224784,
+        "crc32": 3500088799
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise202_0_independent.npz",
+        "bytes": 230143,
+        "crc32": 3106316682
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise202_0_independent.npz",
+        "bytes": 229966,
+        "crc32": 2386052759
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise202_0_independent.npz",
+        "bytes": 230031,
+        "crc32": 369654935
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise202_0_independent_rms.npz",
+        "bytes": 230145,
+        "crc32": 74568631
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise202_0_independent_rms.npz",
+        "bytes": 229965,
+        "crc32": 3110969686
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise202_0_independent_rms.npz",
+        "bytes": 230027,
+        "crc32": 2652486300
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise202_0_electrode.npz",
+        "bytes": 230166,
+        "crc32": 3414881421
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise202_0_electrode.npz",
+        "bytes": 229981,
+        "crc32": 3898684602
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise202_0_electrode.npz",
+        "bytes": 230058,
+        "crc32": 1849572654
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise202_0_covariance.npz",
+        "bytes": 230162,
+        "crc32": 2488365965
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise202_0_covariance.npz",
+        "bytes": 229987,
+        "crc32": 1146455279
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise202_0_covariance.npz",
+        "bytes": 230049,
+        "crc32": 2827774390
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise303_20_independent.npz",
+        "bytes": 223565,
+        "crc32": 2096952624
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise303_20_independent.npz",
+        "bytes": 223390,
+        "crc32": 2933854772
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise303_20_independent.npz",
+        "bytes": 223404,
+        "crc32": 540651871
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise303_20_independent_rms.npz",
+        "bytes": 223663,
+        "crc32": 4231398705
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise303_20_independent_rms.npz",
+        "bytes": 223458,
+        "crc32": 2476953044
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise303_20_independent_rms.npz",
+        "bytes": 223504,
+        "crc32": 304691541
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise303_20_electrode.npz",
+        "bytes": 223643,
+        "crc32": 1016843827
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise303_20_electrode.npz",
+        "bytes": 223475,
+        "crc32": 1698330878
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise303_20_electrode.npz",
+        "bytes": 223482,
+        "crc32": 1198908458
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise303_20_covariance.npz",
+        "bytes": 223619,
+        "crc32": 2802996055
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise303_20_covariance.npz",
+        "bytes": 223453,
+        "crc32": 1520689507
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise303_20_covariance.npz",
+        "bytes": 223495,
+        "crc32": 1341101728
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise303_10_independent.npz",
+        "bytes": 224804,
+        "crc32": 324367695
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise303_10_independent.npz",
+        "bytes": 224655,
+        "crc32": 200889442
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise303_10_independent.npz",
+        "bytes": 224656,
+        "crc32": 1071024409
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise303_10_independent_rms.npz",
+        "bytes": 224973,
+        "crc32": 3273135811
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise303_10_independent_rms.npz",
+        "bytes": 224824,
+        "crc32": 3362269345
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise303_10_independent_rms.npz",
+        "bytes": 224813,
+        "crc32": 1356437649
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise303_10_electrode.npz",
+        "bytes": 224962,
+        "crc32": 4082753173
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise303_10_electrode.npz",
+        "bytes": 224788,
+        "crc32": 2556506264
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise303_10_electrode.npz",
+        "bytes": 224792,
+        "crc32": 1712259993
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise303_10_covariance.npz",
+        "bytes": 224898,
+        "crc32": 3647694277
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise303_10_covariance.npz",
+        "bytes": 224769,
+        "crc32": 3539525680
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise303_10_covariance.npz",
+        "bytes": 224761,
+        "crc32": 915823681
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise303_0_independent.npz",
+        "bytes": 230254,
+        "crc32": 230406839
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise303_0_independent.npz",
+        "bytes": 230006,
+        "crc32": 1344931316
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise303_0_independent.npz",
+        "bytes": 230107,
+        "crc32": 344988980
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise303_0_independent_rms.npz",
+        "bytes": 230163,
+        "crc32": 1949117572
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise303_0_independent_rms.npz",
+        "bytes": 229957,
+        "crc32": 1247594297
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise303_0_independent_rms.npz",
+        "bytes": 230067,
+        "crc32": 4229735956
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise303_0_electrode.npz",
+        "bytes": 230168,
+        "crc32": 2381156026
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise303_0_electrode.npz",
+        "bytes": 229988,
+        "crc32": 1420593957
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise303_0_electrode.npz",
+        "bytes": 230039,
+        "crc32": 606696939
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise303_0_covariance.npz",
+        "bytes": 230136,
+        "crc32": 572931653
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise303_0_covariance.npz",
+        "bytes": 229940,
+        "crc32": 1960292815
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise303_0_covariance.npz",
+        "bytes": 230039,
+        "crc32": 3614460399
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise404_20_independent.npz",
+        "bytes": 223469,
+        "crc32": 2663676002
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise404_20_independent.npz",
+        "bytes": 223310,
+        "crc32": 3177289283
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise404_20_independent.npz",
+        "bytes": 223337,
+        "crc32": 207876433
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise404_20_independent_rms.npz",
+        "bytes": 223612,
+        "crc32": 1071385959
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise404_20_independent_rms.npz",
+        "bytes": 223454,
+        "crc32": 261189489
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise404_20_independent_rms.npz",
+        "bytes": 223452,
+        "crc32": 113277413
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise404_20_electrode.npz",
+        "bytes": 223664,
+        "crc32": 2417575093
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise404_20_electrode.npz",
+        "bytes": 223487,
+        "crc32": 1645128040
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise404_20_electrode.npz",
+        "bytes": 223512,
+        "crc32": 2710197657
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise404_20_covariance.npz",
+        "bytes": 223624,
+        "crc32": 705699746
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise404_20_covariance.npz",
+        "bytes": 223447,
+        "crc32": 3169256674
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise404_20_covariance.npz",
+        "bytes": 223458,
+        "crc32": 3870554662
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise404_10_independent.npz",
+        "bytes": 224755,
+        "crc32": 2796610640
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise404_10_independent.npz",
+        "bytes": 224582,
+        "crc32": 1642315584
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise404_10_independent.npz",
+        "bytes": 224558,
+        "crc32": 3532795989
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise404_10_independent_rms.npz",
+        "bytes": 224935,
+        "crc32": 2285342824
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise404_10_independent_rms.npz",
+        "bytes": 224781,
+        "crc32": 686937788
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise404_10_independent_rms.npz",
+        "bytes": 224774,
+        "crc32": 1245497805
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise404_10_electrode.npz",
+        "bytes": 224917,
+        "crc32": 2791920702
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise404_10_electrode.npz",
+        "bytes": 224773,
+        "crc32": 2546097908
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise404_10_electrode.npz",
+        "bytes": 224764,
+        "crc32": 35576530
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise404_10_covariance.npz",
+        "bytes": 224889,
+        "crc32": 3774626967
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise404_10_covariance.npz",
+        "bytes": 224754,
+        "crc32": 2646169229
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise404_10_covariance.npz",
+        "bytes": 224769,
+        "crc32": 2811486806
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise404_0_independent.npz",
+        "bytes": 230154,
+        "crc32": 627996173
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise404_0_independent.npz",
+        "bytes": 229959,
+        "crc32": 2595774673
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise404_0_independent.npz",
+        "bytes": 230054,
+        "crc32": 408525459
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise404_0_independent_rms.npz",
+        "bytes": 230188,
+        "crc32": 897826952
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise404_0_independent_rms.npz",
+        "bytes": 230005,
+        "crc32": 1594645238
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise404_0_independent_rms.npz",
+        "bytes": 230048,
+        "crc32": 2472002243
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise404_0_electrode.npz",
+        "bytes": 230121,
+        "crc32": 3770535041
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise404_0_electrode.npz",
+        "bytes": 229983,
+        "crc32": 2818029938
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise404_0_electrode.npz",
+        "bytes": 230040,
+        "crc32": 2698847956
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise404_0_covariance.npz",
+        "bytes": 230182,
+        "crc32": 453714830
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise404_0_covariance.npz",
+        "bytes": 229974,
+        "crc32": 708396542
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise404_0_covariance.npz",
+        "bytes": 230060,
+        "crc32": 3747827277
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise505_20_independent.npz",
+        "bytes": 223560,
+        "crc32": 797172427
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise505_20_independent.npz",
+        "bytes": 223362,
+        "crc32": 3223363555
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise505_20_independent.npz",
+        "bytes": 223389,
+        "crc32": 291599247
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise505_20_independent_rms.npz",
+        "bytes": 223604,
+        "crc32": 1231087433
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise505_20_independent_rms.npz",
+        "bytes": 223419,
+        "crc32": 2800719787
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise505_20_independent_rms.npz",
+        "bytes": 223454,
+        "crc32": 2670130829
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise505_20_electrode.npz",
+        "bytes": 223623,
+        "crc32": 3827338068
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise505_20_electrode.npz",
+        "bytes": 223458,
+        "crc32": 1599340705
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise505_20_electrode.npz",
+        "bytes": 223473,
+        "crc32": 1610566494
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise505_20_covariance.npz",
+        "bytes": 223646,
+        "crc32": 322165226
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise505_20_covariance.npz",
+        "bytes": 223443,
+        "crc32": 3109692468
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise505_20_covariance.npz",
+        "bytes": 223477,
+        "crc32": 3590595275
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise505_10_independent.npz",
+        "bytes": 224828,
+        "crc32": 51699508
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise505_10_independent.npz",
+        "bytes": 224642,
+        "crc32": 1292063239
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise505_10_independent.npz",
+        "bytes": 224624,
+        "crc32": 3254632262
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise505_10_independent_rms.npz",
+        "bytes": 225014,
+        "crc32": 237543356
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise505_10_independent_rms.npz",
+        "bytes": 224847,
+        "crc32": 3185634016
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise505_10_independent_rms.npz",
+        "bytes": 224836,
+        "crc32": 3299939125
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise505_10_electrode.npz",
+        "bytes": 224982,
+        "crc32": 788495040
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise505_10_electrode.npz",
+        "bytes": 224818,
+        "crc32": 3963512401
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise505_10_electrode.npz",
+        "bytes": 224828,
+        "crc32": 1619790815
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise505_10_covariance.npz",
+        "bytes": 224950,
+        "crc32": 1109668573
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise505_10_covariance.npz",
+        "bytes": 224782,
+        "crc32": 647222102
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise505_10_covariance.npz",
+        "bytes": 224790,
+        "crc32": 1555145219
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise505_0_independent.npz",
+        "bytes": 230208,
+        "crc32": 3136675402
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise505_0_independent.npz",
+        "bytes": 229977,
+        "crc32": 2615087359
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise505_0_independent.npz",
+        "bytes": 230075,
+        "crc32": 2931443692
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise505_0_independent_rms.npz",
+        "bytes": 230173,
+        "crc32": 1603368444
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise505_0_independent_rms.npz",
+        "bytes": 229942,
+        "crc32": 3283128511
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise505_0_independent_rms.npz",
+        "bytes": 230007,
+        "crc32": 202350978
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise505_0_electrode.npz",
+        "bytes": 230107,
+        "crc32": 3106794024
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise505_0_electrode.npz",
+        "bytes": 229899,
+        "crc32": 1550086717
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise505_0_electrode.npz",
+        "bytes": 229981,
+        "crc32": 553971796
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_17_noise505_0_covariance.npz",
+        "bytes": 230193,
+        "crc32": 3923819001
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_29_noise505_0_covariance.npz",
+        "bytes": 230010,
+        "crc32": 4193516155
+      },
+      {
+        "path": "results/metrics/pilot_noise_repeats/resnet_43_noise505_0_covariance.npz",
+        "bytes": 230074,
+        "crc32": 129501543
+      },
+      {
+        "path": "results/tables/pilot_noise_repeats/crossed_seed_contrasts.csv",
+        "bytes": 4804,
+        "crc32": 3890549597
+      },
+      {
+        "path": "results/tables/pilot_noise_repeats/mean_across_training_seeds.csv",
+        "bytes": 1613,
+        "crc32": 3962459308
+      },
+      {
+        "path": "results/tables/pilot_noise_repeats/descriptive_noise_seed_summary.csv",
+        "bytes": 1326,
+        "crc32": 3715947672
+      }
+    ]
+  }
+}

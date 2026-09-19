@@ -1,0 +1,427 @@
+{
+  "status": "completed",
+  "stage": "pilot",
+  "config_sha256": "980993c490b41e9793164c1d9bbfa54f728606fff281e07486e7af2fc41ddda7",
+  "matrix_sha256": "4f852acd9c5a4f7b35a207f5078d70f842de3077d648716950a66502951bfe9d",
+  "sources": [
+    {
+      "path": "phase2/src/statistics_phase2.py",
+      "bytes": 42925,
+      "sha256": "eee7257c4198fc210a3f4822d1cca2719b54316c907808453c68a032475f8063"
+    },
+    {
+      "path": "phase2/configs/phase2_main.yaml",
+      "bytes": 4620,
+      "sha256": "ed83bbebf04fa0fc5cfdd6a1cb0ed5546140747a45b929f99e51f0627a5ca3be"
+    },
+    {
+      "path": "phase2/results/logs/pilot/evaluation_protocol.json",
+      "bytes": 13646,
+      "sha256": "7eb7cb0bd2633f4d7d31f5dd62a1b1a83771f02a42c843b832edacee1e80eabc"
+    },
+    {
+      "path": "phase2/results/test_inputs/pilot/manifest.json",
+      "bytes": 207150,
+      "sha256": "fe4ebcfa647bc278d713522b3143b73791dea0eb8aaf9a1584edd80d4c26f9f3"
+    },
+    {
+      "path": "phase2/results/tables/pilot/metrics.csv",
+      "bytes": 1449424,
+      "sha256": "01f0ef9e31cda25db3e0ed94a3c97028082249efa16fd19908c9194d24020cb8"
+    },
+    {
+      "path": "phase2/results/tables/pilot/metrics_columns.json",
+      "bytes": 1984,
+      "sha256": "186f14c4036ca7b596da2fbe672a6590626d6913c6fe943559dbd3a874f6994e"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/supplemental_statistics.py",
+      "bytes": 36942,
+      "sha256": "c89248306ed90355c69c5dd986e2e28159fab4c58f3bfede5f0494eea0ce1f98"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/statistics.py",
+      "bytes": 35165,
+      "sha256": "38468d59c7dc383935890e830e9fe6659daefc8a14efb1b7cf76a018e6a2466a"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "phase2/results/tables/pilot/group_seed_metrics.csv",
+      "bytes": 34685871,
+      "sha256": "b5655598b90f3e2e3a4d47d52003e0901e3e0806ad7a5c47815227417b33f92a"
+    },
+    {
+      "path": "phase2/results/tables/pilot/seed_summary.csv",
+      "bytes": 35184097,
+      "sha256": "f44c0e9251c2dd93e2d9fc4fc17c5af8cf558be644ec77a84c0ab05595a128d3"
+    },
+    {
+      "path": "phase2/results/tables/pilot/noise_seed_metrics.csv",
+      "bytes": 35793628,
+      "sha256": "e2618cd0dceb8908b72dae59c10fbea0fcf2d8c54c8b91841d9e457c60e5dc34"
+    },
+    {
+      "path": "phase2/results/tables/pilot/primary_seed_noise_metrics.csv",
+      "bytes": 1070,
+      "sha256": "a1386e1ca19a7f7ef08a619f610dd7521bb4bce81497fa7ab81cadbf735b78ed"
+    },
+    {
+      "path": "phase2/results/tables/pilot/noise_replay_summary.csv",
+      "bytes": 42205017,
+      "sha256": "0301aa3956088893660f31925a1347bce87ff8f5c644a71fe57ef26ce6a94aca"
+    },
+    {
+      "path": "phase2/results/tables/pilot/patient_ci.csv",
+      "bytes": 90207949,
+      "sha256": "51c0688b1f9c7ed3ab96a97e8799cebc3c30a9632f0c57670513eead7ee067f5"
+    },
+    {
+      "path": "phase2/results/tables/pilot/paired_effects.csv",
+      "bytes": 4070913,
+      "sha256": "0ec5b561fd77a0fe696b75758d4fad4d0e729dd0e9092e0a259c5de771160205"
+    },
+    {
+      "path": "phase2/results/tables/pilot/primary_comparisons.csv",
+      "bytes": 1266,
+      "sha256": "647caeba86bffa7b7eb07f0c183b2f81a6701070bf9587c65e013abf9df885e3"
+    },
+    {
+      "path": "phase2/results/tables/pilot/noise_contrasts.csv",
+      "bytes": 2605,
+      "sha256": "777f94c5390431b5438263dea6a15a44b5dfae62af633adf077dcea1f7b39339"
+    },
+    {
+      "path": "phase2/results/tables/pilot/rank_seed.csv",
+      "bytes": 485780,
+      "sha256": "5e944c43589540fef996ed45e3b46363559ef0ff71f36a9e7e4f76ad08f74374"
+    },
+    {
+      "path": "phase2/results/tables/pilot/rank_summary.csv",
+      "bytes": 371101,
+      "sha256": "34ecccd9966b289e3d2970ed66dcb197773d3855c75043d3231670634bfeb0a4"
+    },
+    {
+      "path": "phase2/results/tables/pilot/rank_correlations.csv",
+      "bytes": 611790,
+      "sha256": "8e4e6461b40ac4599741c73812c863441ec5343dc8ad42300d1bd587853123eb"
+    },
+    {
+      "path": "phase2/results/tables/pilot/prediction_provenance.csv",
+      "bytes": 214903,
+      "sha256": "26f055f6a188ddd13e9fc47d96250112446f558526bdd3d51e499f19e90dab63"
+    },
+    {
+      "path": "phase2/results/tables/pilot/bootstrap_invalid_summary.csv",
+      "bytes": 1950,
+      "sha256": "e00ebc04bc0b2c4dbe14ca1bcc76b08ed0e0179456e73a7590a3916d2b828cf5"
+    }
+  ],
+  "bootstrap": {
+    "axis_order": [
+      "registered_group",
+      "point_then_common_patient_draw",
+      "auc_metric"
+    ],
+    "group_ids": [
+      "clean",
+      "bandpass__train__independent_rms__s10",
+      "bandpass__combo_RA_LA_LL__independent_rms__s10",
+      "bandpass__train__independent_rms__s5",
+      "bandpass__combo_RA_LA_LL__independent_rms__s5",
+      "bandpass__train__independent_rms__s0",
+      "bandpass__combo_RA_LA_LL__independent_rms__s0",
+      "bandpass__train__electrode__s10",
+      "bandpass__combo_RA_LA_LL__electrode__s10",
+      "bandpass__train__electrode__s5",
+      "bandpass__combo_RA_LA_LL__electrode__s5",
+      "bandpass__train__electrode__s0",
+      "bandpass__combo_RA_LA_LL__electrode__s0",
+      "bandpass__train__covariance__s10",
+      "bandpass__combo_RA_LA_LL__covariance__s10",
+      "bandpass__train__covariance__s5",
+      "bandpass__combo_RA_LA_LL__covariance__s5",
+      "bandpass__train__covariance__s0",
+      "bandpass__combo_RA_LA_LL__covariance__s0",
+      "bandpass__combo_V1__independent_rms__s10",
+      "bandpass__combo_V1__independent_rms__s5",
+      "bandpass__combo_V1__independent_rms__s0",
+      "bandpass__combo_V1__electrode__s10",
+      "bandpass__combo_V1__electrode__s5",
+      "bandpass__combo_V1__electrode__s0",
+      "bandpass__combo_V1__covariance__s10",
+      "bandpass__combo_V1__covariance__s5",
+      "bandpass__combo_V1__covariance__s0",
+      "bandpass__combo_V2__independent_rms__s10",
+      "bandpass__combo_V2__independent_rms__s5",
+      "bandpass__combo_V2__independent_rms__s0",
+      "bandpass__combo_V2__electrode__s10",
+      "bandpass__combo_V2__electrode__s5",
+      "bandpass__combo_V2__electrode__s0",
+      "bandpass__combo_V2__covariance__s10",
+      "bandpass__combo_V2__covariance__s5",
+      "bandpass__combo_V2__covariance__s0",
+      "bandpass__combo_V3__independent_rms__s10",
+      "bandpass__combo_V3__independent_rms__s5",
+      "bandpass__combo_V3__independent_rms__s0",
+      "bandpass__combo_V3__electrode__s10",
+      "bandpass__combo_V3__electrode__s5",
+      "bandpass__combo_V3__electrode__s0",
+      "bandpass__combo_V3__covariance__s10",
+      "bandpass__combo_V3__covariance__s5",
+      "bandpass__combo_V3__covariance__s0",
+      "bandpass__combo_V4__independent_rms__s10",
+      "bandpass__combo_V4__independent_rms__s5",
+      "bandpass__combo_V4__independent_rms__s0",
+      "bandpass__combo_V4__electrode__s10",
+      "bandpass__combo_V4__electrode__s5",
+      "bandpass__combo_V4__electrode__s0",
+      "bandpass__combo_V4__covariance__s10",
+      "bandpass__combo_V4__covariance__s5",
+      "bandpass__combo_V4__covariance__s0",
+      "bandpass__combo_V5__independent_rms__s10",
+      "bandpass__combo_V5__independent_rms__s5",
+      "bandpass__combo_V5__independent_rms__s0",
+      "bandpass__combo_V5__electrode__s10",
+      "bandpass__combo_V5__electrode__s5",
+      "bandpass__combo_V5__electrode__s0",
+      "bandpass__combo_V5__covariance__s10",
+      "bandpass__combo_V5__covariance__s5",
+      "bandpass__combo_V5__covariance__s0",
+      "bandpass__combo_V6__independent_rms__s10",
+      "bandpass__combo_V6__independent_rms__s5",
+      "bandpass__combo_V6__independent_rms__s0",
+      "bandpass__combo_V6__electrode__s10",
+      "bandpass__combo_V6__electrode__s5",
+      "bandpass__combo_V6__electrode__s0",
+      "bandpass__combo_V6__covariance__s10",
+      "bandpass__combo_V6__covariance__s5",
+      "bandpass__combo_V6__covariance__s0",
+      "bandpass__combo_RA_LA__independent_rms__s10",
+      "bandpass__combo_RA_LA__independent_rms__s5",
+      "bandpass__combo_RA_LA__independent_rms__s0",
+      "bandpass__combo_RA_LA__electrode__s10",
+      "bandpass__combo_RA_LA__electrode__s5",
+      "bandpass__combo_RA_LA__electrode__s0",
+      "bandpass__combo_RA_LA__covariance__s10",
+      "bandpass__combo_RA_LA__covariance__s5",
+      "bandpass__combo_RA_LA__covariance__s0",
+      "bandpass__combo_LA_LL__independent_rms__s10",
+      "bandpass__combo_LA_LL__independent_rms__s5",
+      "bandpass__combo_LA_LL__independent_rms__s0",
+      "bandpass__combo_LA_LL__electrode__s10",
+      "bandpass__combo_LA_LL__electrode__s5",
+      "bandpass__combo_LA_LL__electrode__s0",
+      "bandpass__combo_LA_LL__covariance__s10",
+      "bandpass__combo_LA_LL__covariance__s5",
+      "bandpass__combo_LA_LL__covariance__s0",
+      "bandpass__combo_RA_LL__independent_rms__s10",
+      "bandpass__combo_RA_LL__independent_rms__s5",
+      "bandpass__combo_RA_LL__independent_rms__s0",
+      "bandpass__combo_RA_LL__electrode__s10",
+      "bandpass__combo_RA_LL__electrode__s5",
+      "bandpass__combo_RA_LL__electrode__s0",
+      "bandpass__combo_RA_LL__covariance__s10",
+      "bandpass__combo_RA_LL__covariance__s5",
+      "bandpass__combo_RA_LL__covariance__s0",
+      "bandpass__heldout__independent_rms__s10",
+      "bandpass__combo_RA_V1__independent_rms__s10",
+      "bandpass__heldout__independent_rms__s5",
+      "bandpass__combo_RA_V1__independent_rms__s5",
+      "bandpass__heldout__independent_rms__s0",
+      "bandpass__combo_RA_V1__independent_rms__s0",
+      "bandpass__heldout__electrode__s10",
+      "bandpass__combo_RA_V1__electrode__s10",
+      "bandpass__heldout__electrode__s5",
+      "bandpass__combo_RA_V1__electrode__s5",
+      "primary_joint",
+      "bandpass__heldout__electrode__s0",
+      "bandpass__combo_RA_V1__electrode__s0",
+      "bandpass__heldout__covariance__s10",
+      "bandpass__combo_RA_V1__covariance__s10",
+      "bandpass__heldout__covariance__s5",
+      "bandpass__combo_RA_V1__covariance__s5",
+      "bandpass__heldout__covariance__s0",
+      "bandpass__combo_RA_V1__covariance__s0",
+      "bandpass__combo_RA_LA_V1_V6__independent_rms__s10",
+      "bandpass__combo_RA_LA_V1_V6__independent_rms__s5",
+      "bandpass__combo_RA_LA_V1_V6__independent_rms__s0",
+      "bandpass__combo_RA_LA_V1_V6__electrode__s10",
+      "bandpass__combo_RA_LA_V1_V6__electrode__s5",
+      "bandpass__combo_RA_LA_V1_V6__electrode__s0",
+      "bandpass__combo_RA_LA_V1_V6__covariance__s10",
+      "bandpass__combo_RA_LA_V1_V6__covariance__s5",
+      "bandpass__combo_RA_LA_V1_V6__covariance__s0",
+      "bandpass__all__independent_rms__s10",
+      "bandpass__all__independent_rms__s5",
+      "bandpass__all__independent_rms__s0",
+      "bandpass__all__electrode__s10",
+      "bandpass__all__electrode__s5",
+      "bandpass__all__electrode__s0",
+      "bandpass__all__covariance__s10",
+      "bandpass__all__covariance__s5",
+      "bandpass__all__covariance__s0"
+    ],
+    "metrics": [
+      "macro_auroc",
+      "auroc_NORM",
+      "auroc_MI",
+      "auroc_STTC",
+      "auroc_CD",
+      "auroc_HYP"
+    ],
+    "draws": {
+      "path": "phase2/results/tables/pilot/patient_bootstrap/patient_draws.npy",
+      "bytes": 7168128,
+      "sha256": "925b680b630c72904d1379d01eb8e403a1537127b53b76bda7b659d97778664a"
+    },
+    "cohort": {
+      "path": "phase2/results/tables/pilot/patient_bootstrap/cohort.npz",
+      "bytes": 60686,
+      "sha256": "43fae49dcf1234f624c2ca7d9b265f403a45ecbbaa6cf7c2037b8a0b26da6a04"
+    },
+    "distributions": [
+      {
+        "run": [
+          "clean_only",
+          "resnet",
+          17
+        ],
+        "distribution": {
+          "path": "phase2/results/tables/pilot/patient_bootstrap/clean_only__resnet__seed_17.npy",
+          "bytes": 13158704,
+          "sha256": "fef3adbb2c2eeed73dca20894c28fc238cc21a780d2a2d23e4b1f2dc251c57f8"
+        }
+      },
+      {
+        "run": [
+          "independent_rms",
+          "resnet",
+          17
+        ],
+        "distribution": {
+          "path": "phase2/results/tables/pilot/patient_bootstrap/independent_rms__resnet__seed_17.npy",
+          "bytes": 13158704,
+          "sha256": "5d26c13cf08d89db0c4d3f0b92b1325f6758d4e01c9458bd9950a10e9759a48d"
+        }
+      },
+      {
+        "run": [
+          "electrode",
+          "resnet",
+          17
+        ],
+        "distribution": {
+          "path": "phase2/results/tables/pilot/patient_bootstrap/electrode__resnet__seed_17.npy",
+          "bytes": 13158704,
+          "sha256": "d6a8d3115e95164f67e67f50e15ca8ad079169c07e1484ee37f2e3446cd3b1ce"
+        }
+      },
+      {
+        "run": [
+          "mixed",
+          "resnet",
+          17
+        ],
+        "distribution": {
+          "path": "phase2/results/tables/pilot/patient_bootstrap/mixed__resnet__seed_17.npy",
+          "bytes": 13158704,
+          "sha256": "336a6f8a2bf591148a8580575ac5ebf650dcef4b3687da7bed8b52e38790a08c"
+        }
+      },
+      {
+        "run": [
+          "clean_only",
+          "tcn",
+          17
+        ],
+        "distribution": {
+          "path": "phase2/results/tables/pilot/patient_bootstrap/clean_only__tcn__seed_17.npy",
+          "bytes": 13158704,
+          "sha256": "a9c86d62badbed1f3944b1f40d81d88bc46a0bec586c6dd3e9118cdbd04a62f6"
+        }
+      },
+      {
+        "run": [
+          "independent_rms",
+          "tcn",
+          17
+        ],
+        "distribution": {
+          "path": "phase2/results/tables/pilot/patient_bootstrap/independent_rms__tcn__seed_17.npy",
+          "bytes": 13158704,
+          "sha256": "1d402d50a2fca867d5f046b50c1eba455c371ebfdd44a913840b58896d23ef30"
+        }
+      },
+      {
+        "run": [
+          "electrode",
+          "tcn",
+          17
+        ],
+        "distribution": {
+          "path": "phase2/results/tables/pilot/patient_bootstrap/electrode__tcn__seed_17.npy",
+          "bytes": 13158704,
+          "sha256": "3db7360bad57ef2bf661cec0ef99ca5ab41a00cd16166691c302e91393f130f7"
+        }
+      },
+      {
+        "run": [
+          "mixed",
+          "tcn",
+          17
+        ],
+        "distribution": {
+          "path": "phase2/results/tables/pilot/patient_bootstrap/mixed__tcn__seed_17.npy",
+          "bytes": 13158704,
+          "sha256": "a3d7848d8baab2b0653e4d6d3c19e53d970b156970885337527a0b47d00b8e38"
+        }
+      }
+    ]
+  },
+  "bootstrap_seed": 20260919,
+  "bootstrap_replicates": 2000,
+  "coverage": {
+    "checkpoints": 8,
+    "cases": 118,
+    "groups": 137,
+    "prediction_rows": 944,
+    "patient_interval_rows": 144672,
+    "auc_metrics": [
+      "macro_auroc",
+      "auroc_NORM",
+      "auroc_MI",
+      "auroc_STTC",
+      "auroc_CD",
+      "auroc_HYP"
+    ]
+  },
+  "estimands": {
+    "group": "equal arithmetic mean of condition-level metrics; no probability ensemble or pseudo-patient pooling",
+    "patient": "record AUROC weighted by patient multiplicities, retaining all records of every selected patient",
+    "fixed_seed_mean": "equal mean of fixed checkpoint metrics/ratios/differences within each shared patient draw",
+    "drop": "matched checkpoint clean minus group metric",
+    "retention": "group metric / (matched checkpoint clean metric + 1e-12), within each draw",
+    "clean_cost": "same-seed clean_only clean minus strategy clean, repeated across groups for convenient joins",
+    "contrasts": "lhs minus rhs, same training seeds, same patient draws, same fixed noises"
+  },
+  "uncertainty": {
+    "training": "sample SD and Student t95 across independent training runs",
+    "patient": "95% percentile patient-cluster interval conditional on fixed trained checkpoints and fixed test-noise realizations; not joint uncertainty",
+    "noise": "descriptive SD/range across fixed noise bases AFTER averaging training seeds; not independent training repetitions",
+    "invalid": "missing-class patient draws retained as NaN and counted, never redrawn; macro requires all five classes; percentile interval uses finite replicates",
+    "group_missing": "ordinary equal mean propagates undefined constituent metrics; seed summaries additionally disclose expected and undefined counts",
+    "joint": false
+  },
+  "confirmatory": {
+    "enabled": false,
+    "family": "2 models x 3 preregistered retention contrasts",
+    "test": "two-sided paired training-seed t",
+    "multiplicity": "Holm across all six tests",
+    "n_seeds": 1,
+    "pilot": "technical descriptive only; no confirmatory p or effect test"
+  },
+  "descriptive_rank_comparisons": "clean vs every noisy group, adjacent SNR within otherwise same group, and matched seen vs heldout aggregate groups; average tie ranks; undefined constant-vector correlations remain NaN",
+  "nstdb": "exploratory confounded sensitivity; not isolated covariance evidence",
+  "clean_cost": "descriptive; no clinical acceptability margin was preregistered"
+}

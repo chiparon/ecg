@@ -1,0 +1,33 @@
+[
+  {
+    "time_utc": "2026-09-17T13:13:16Z",
+    "file": "phase2/src/plot_phase2.py",
+    "before_sha256": "4ff816d62f1693e47b9799757ba0615c62cb45469ed199df089ba80a8c6810c7",
+    "after_sha256": "48b7b0d2610f57fe189ed8e840e313e731d4a7cb064a6a27b1b3da45e9bc3f9b",
+    "reason": "Restrict plotted-summary seed-coverage guard to the five plotted metrics; legitimately undefined auxiliary PPV/NPV must remain disclosed, not prevent unrelated plots.",
+    "scientific_settings_changed": false,
+    "training_or_test_predictions_changed": false,
+    "timing": "During pilot training, before pilot test cache/predictions existed"
+  },
+  {
+    "time_utc": "2026-09-17T14:52:55Z",
+    "file": "phase2/src/plot_phase2.py",
+    "before_sha256": "48b7b0d2610f57fe189ed8e840e313e731d4a7cb064a6a27b1b3da45e9bc3f9b",
+    "after_sha256": "98772af25033ffba208675cdc1365bd8687e223e1b72505373a1ab19fa3aa6c8",
+    "reason": "Actual pilot image review: shorten overlapping F1/contrast labels, distinguish the three contrast markers, facet AUROC/retention/drop onto separate scales so noise variation is visible, and bind figures to renderer/config source hashes. No metrics, predictions, hypotheses or training settings changed. Limit primary-contrast x-axis tick density after the second image review exposed crowded small differences.",
+    "scientific_settings_changed": false,
+    "training_or_test_predictions_changed": false,
+    "timing": "After pilot technical and independent checks; full training in progress; full test predictions do not yet exist.",
+    "completed_time_utc": "2026-09-17T15:05:16Z"
+  },
+  {
+    "time_utc": "2026-09-18T19:42:14Z",
+    "file": "phase2/src/plot_phase2.py",
+    "before_sha256": "98772af25033ffba208675cdc1365bd8687e223e1b72505373a1ab19fa3aa6c8",
+    "after_sha256": "8d9ffef6bfa7fc829313ea2c22ae901e151e4d6c8ff2e7682b0b318b0225a62a",
+    "reason": "Actual full-stage image review found overlapping heatmap SNR-status labels. Shorten only the heatmap words seen SNR/pressure to seen/stress; numeric SNRs, caption definitions, plotted values, scales, panels and all statistical calculations are unchanged. Regenerate both stages and repeat the current-artifact verification.",
+    "scientific_settings_changed": false,
+    "training_or_test_predictions_changed": false,
+    "timing": "After full computation and the first passing full independent numerical audit; before final visual approval and report generation."
+  }
+]

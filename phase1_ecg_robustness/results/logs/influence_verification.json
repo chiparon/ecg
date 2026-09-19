@@ -1,0 +1,151 @@
+{
+  "status": "passed",
+  "precision": "current_deterministic_FP32",
+  "independent_patient_reductions": [
+    {
+      "run": "pilot",
+      "model": "resnet",
+      "snr": 20,
+      "patients": 896,
+      "mean_difference": 0.0009229120173740886,
+      "patient_median": 0.0005972582997321636,
+      "patient_fraction_positive": 0.5267857142857143,
+      "mean_without_largest_1pct_abs": 0.0010908733267685038,
+      "mean_without_largest_5pct_abs": 0.0014509544966787218
+    },
+    {
+      "run": "pilot",
+      "model": "resnet",
+      "snr": 10,
+      "patients": 896,
+      "mean_difference": 0.0055298815236172905,
+      "patient_median": 0.004288960280488955,
+      "patient_fraction_positive": 0.5379464285714286,
+      "mean_without_largest_1pct_abs": 0.004710470778367012,
+      "mean_without_largest_5pct_abs": 0.005000716283020062
+    },
+    {
+      "run": "pilot",
+      "model": "resnet",
+      "snr": 0,
+      "patients": 896,
+      "mean_difference": 0.030433355462899544,
+      "patient_median": 0.02342076721257367,
+      "patient_fraction_positive": 0.5725446428571429,
+      "mean_without_largest_1pct_abs": 0.02771123269108547,
+      "mean_without_largest_5pct_abs": 0.02331845039041103
+    },
+    {
+      "run": "full",
+      "model": "resnet",
+      "snr": 20,
+      "patients": 1877,
+      "mean_difference": 0.0007044231452484124,
+      "patient_median": 0.0007328539127023926,
+      "patient_fraction_positive": 0.5466169419286094,
+      "mean_without_largest_1pct_abs": 0.0009633803068835749,
+      "mean_without_largest_5pct_abs": 0.0008790638647013526
+    },
+    {
+      "run": "full",
+      "model": "resnet",
+      "snr": 10,
+      "patients": 1877,
+      "mean_difference": 0.009818171897251645,
+      "patient_median": 0.007855295382061594,
+      "patient_fraction_positive": 0.6244006393180608,
+      "mean_without_largest_1pct_abs": 0.009794418665761872,
+      "mean_without_largest_5pct_abs": 0.008195685333855106
+    },
+    {
+      "run": "full",
+      "model": "resnet",
+      "snr": 0,
+      "patients": 1877,
+      "mean_difference": 0.05358125456581854,
+      "patient_median": 0.045245761999080224,
+      "patient_fraction_positive": 0.7048481619605754,
+      "mean_without_largest_1pct_abs": 0.050254000154153156,
+      "mean_without_largest_5pct_abs": 0.04191246551970772
+    },
+    {
+      "run": "full",
+      "model": "tcn",
+      "snr": 20,
+      "patients": 1877,
+      "mean_difference": -0.0005516943704391118,
+      "patient_median": 0.00016886283546374328,
+      "patient_fraction_positive": 0.5721896643580181,
+      "mean_without_largest_1pct_abs": -0.0005382471772025555,
+      "mean_without_largest_5pct_abs": -9.286297145587267e-05
+    },
+    {
+      "run": "full",
+      "model": "tcn",
+      "snr": 10,
+      "patients": 1877,
+      "mean_difference": 0.001158511850704541,
+      "patient_median": 0.0032585471919213366,
+      "patient_fraction_positive": 0.6446457112413426,
+      "mean_without_largest_1pct_abs": 0.0027473752581493307,
+      "mean_without_largest_5pct_abs": 0.002831973215796679
+    },
+    {
+      "run": "full",
+      "model": "tcn",
+      "snr": 0,
+      "patients": 1877,
+      "mean_difference": 0.09903758353929425,
+      "patient_median": 0.07249406148186051,
+      "patient_fraction_positive": 0.7964837506659563,
+      "mean_without_largest_1pct_abs": 0.09680160331622023,
+      "mean_without_largest_5pct_abs": 0.0857801201591538
+    }
+  ],
+  "historical_pre_precision_diagnostic": {
+    "outlier_boundary_probe": "passed",
+    "single_patient_boundary": "passed",
+    "independent_reductions": [
+      {
+        "snr": 0,
+        "patients": 896
+      },
+      {
+        "snr": 10,
+        "patients": 896
+      },
+      {
+        "snr": 20,
+        "patients": 896
+      }
+    ],
+    "primary_inference_rows_unchanged": 126,
+    "pilot_patient_loss_diagnostics": [
+      {
+        "snr": "0",
+        "mean_difference": "0.03043278665095428",
+        "patient_median": "0.02347169429475765",
+        "patient_fraction_positive": "0.5725446428571429",
+        "mean_without_largest_1pct_abs": "0.027711748764332543",
+        "mean_without_largest_5pct_abs": "0.023319979367692385"
+      },
+      {
+        "snr": "10",
+        "mean_difference": "0.0055173082471061076",
+        "patient_median": "0.004304982272671017",
+        "patient_fraction_positive": "0.5379464285714286",
+        "mean_without_largest_1pct_abs": "0.004697675897104797",
+        "mean_without_largest_5pct_abs": "0.0045232021192295494"
+      },
+      {
+        "snr": "20",
+        "mean_difference": "0.0009140449158265603",
+        "patient_median": "0.0005782734934677324",
+        "patient_fraction_positive": "0.5267857142857143",
+        "mean_without_largest_1pct_abs": "0.0010823352530410534",
+        "mean_without_largest_5pct_abs": "0.0014425086737291741"
+      }
+    ]
+  },
+  "provenance_note": "Historical values retained for audit; current reductions above use the corrected predictions and current paired_effects.csv. See precision_correction.json and final_verification.json."
+}

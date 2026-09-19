@@ -1,0 +1,47 @@
+Thu Sep 17 03:03:46 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 581.08                 Driver Version: 581.08         CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                  Driver-Model | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 4070 ...  WDDM  |   00000000:01:00.0  On |                  N/A |
+| N/A   53C    P3             13W /   70W |    1384MiB /   8188MiB |      2%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A            2592    C+G   ...2p2nqsd0c76g0\app\ChatGPT.exe      N/A      |
+|    0   N/A  N/A            5648    C+G   ...Telegram Desktop\Telegram.exe      N/A      |
+|    0   N/A  N/A            6008      C   ...onda3\envs\inpaint\python.exe      N/A      |
+|    0   N/A  N/A            7260    C+G   ...26wp6bftszj\TranslucentTB.exe      N/A      |
+|    0   N/A  N/A            8420    C+G   ...acted\runtime\WeChatAppEx.exe      N/A      |
+|    0   N/A  N/A           10076    C+G   ...SnippingTool\SnippingTool.exe      N/A      |
+|    0   N/A  N/A           14708    C+G   ..._cw5n1h2txyewy\SearchHost.exe      N/A      |
+|    0   N/A  N/A           16912    C+G   ...2p2nqsd0c76g0\app\ChatGPT.exe      N/A      |
+|    0   N/A  N/A           19872    C+G   ...y\StartMenuExperienceHost.exe      N/A      |
+|    0   N/A  N/A           19972    C+G   ...t\Edge\Application\msedge.exe      N/A      |
+|    0   N/A  N/A           20488    C+G   C:\Windows\explorer.exe               N/A      |
+|    0   N/A  N/A           24964    C+G   ...yb3d8bbwe\WindowsTerminal.exe      N/A      |
+|    0   N/A  N/A           26340    C+G   ...t\Edge\Application\msedge.exe      N/A      |
+|    0   N/A  N/A           26724    C+G   ...les\Tencent\Weixin\Weixin.exe      N/A      |
+|    0   N/A  N/A           28032    C+G   ...\cef.win64\steamwebhelper.exe      N/A      |
+|    0   N/A  N/A           28216    C+G   ...ram Files\Tencent\QQNT\QQ.exe      N/A      |
+|    0   N/A  N/A           39200    C+G   ...m Files\Tencent\QQNT\QQEX.exe      N/A      |
+|    0   N/A  N/A           42632    C+G   ...x64__8wekyb3d8bbwe\Photos.exe      N/A      |
+|    0   N/A  N/A           46436    C+G   ...xyewy\ShellExperienceHost.exe      N/A      |
+|    0   N/A  N/A           46596    C+G   ...acted\runtime\WeChatAppEx.exe      N/A      |
+|    0   N/A  N/A           51632    C+G   ...ntrolPanel\SystemSettings.exe      N/A      |
+|    0   N/A  N/A           52420    C+G   ...al\Programs\Notion\Notion.exe      N/A      |
+|    0   N/A  N/A           55060    C+G   ...ys\ikuuu_vpn\app\iKuuuVPN.exe      N/A      |
+|    0   N/A  N/A           60036    C+G   ...les\Tencent\Weixin\Weixin.exe      N/A      |
+|    0   N/A  N/A           64236    C+G   ....0.4234.32\msedgewebview2.exe      N/A      |
+|    0   N/A  N/A           65656    C+G   ...x64__8wekyb3d8bbwe\Photos.exe      N/A      |
+|    0   N/A  N/A           66336    C+G   ...5n1h2txyewy\TextInputHost.exe      N/A      |
+|    0   N/A  N/A           66524    C+G   ...\codex-computer-use-swift.exe      N/A      |
++-----------------------------------------------------------------------------------------+

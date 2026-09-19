@@ -1,0 +1,41 @@
+[
+  {
+    "module": "supplemental_audit",
+    "command": [
+      "E:\\Eproject\\ECG\\phase1_ecg_robustness\\.venv\\Scripts\\python.exe",
+      "-u",
+      "-m",
+      "src.supplemental_audit",
+      "--config",
+      "configs/phase1_supplement.yaml"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 553.8017134666443
+  },
+  {
+    "module": "strict_control",
+    "command": [
+      "E:\\Eproject\\ECG\\phase1_ecg_robustness\\.venv\\Scripts\\python.exe",
+      "-u",
+      "-m",
+      "src.strict_control",
+      "--config",
+      "configs/phase1_supplement.yaml"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 239.42034459114075
+  },
+  {
+    "module": "supplemental_statistics",
+    "command": [
+      "E:\\Eproject\\ECG\\phase1_ecg_robustness\\.venv\\Scripts\\python.exe",
+      "-u",
+      "-m",
+      "src.supplemental_statistics",
+      "--config",
+      "configs/phase1_supplement.yaml"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 154.48194336891174
+  }
+]

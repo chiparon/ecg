@@ -1,0 +1,17 @@
+{
+  "source_bundle": {
+    "path": "methodology_supplement/results/logs/full/source_bundle.zip",
+    "bytes": 147127,
+    "sha256": "6512cf4977b76f8d7ee667a050eaebd67c72720a09d4d2401c0c07ce1c2a5e9d"
+  },
+  "canonical_input_directory": "methodology_supplement/results/test_inputs/full",
+  "status": "completed",
+  "stage": "full",
+  "direction": "push",
+  "host": "dgx6",
+  "remote_root": "/home/chiparon/ecg_methodology_minimal_five",
+  "remote_python": "/home/chiparon/ecg_benchmark/20260919_134009/venv/bin/python",
+  "config_sha256": "f3f190e9a26bc96544f393a62673ff518c543018da23acdb50aed9409c224469",
+  "completed_at": "2026-09-19T08:38:11.030924+00:00",
+  "elapsed_seconds": 932.2006229998078
+}

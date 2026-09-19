@@ -1,0 +1,69 @@
+{
+  "bandpass": {
+    "kind": "FFT-filtered Gaussian",
+    "band_hz": [
+      0.5,
+      40
+    ],
+    "fs": 100,
+    "boundary": "finite-record periodic FFT",
+    "normalization": "global SNR after mapping; extra independent RMS control"
+  },
+  "bw": {
+    "record_path": "E:\\Eproject\\ECG\\phase1_ecg_robustness\\data\\raw\\nstdb\\bw",
+    "source_fs": 360.0,
+    "target_fs": 100.0,
+    "resample_up": 5,
+    "resample_down": 18,
+    "resample_method": "scipy.signal.resample_poly, default Kaiser window",
+    "source_samples": 650000,
+    "resampled_samples": 180556,
+    "channels": 2,
+    "source_units": [
+      "mV",
+      "mV"
+    ],
+    "output_units": "mV",
+    "segment_policy": "independent channel and contiguous offset per draw; per-segment DC removed",
+    "normalization": "global SNR after lead formation; independent_rms adds per-lead RMS control",
+    "interpretation": "structured replay approximation, not original 12-lead electrode recordings"
+  },
+  "ma": {
+    "record_path": "E:\\Eproject\\ECG\\phase1_ecg_robustness\\data\\raw\\nstdb\\ma",
+    "source_fs": 360.0,
+    "target_fs": 100.0,
+    "resample_up": 5,
+    "resample_down": 18,
+    "resample_method": "scipy.signal.resample_poly, default Kaiser window",
+    "source_samples": 650000,
+    "resampled_samples": 180556,
+    "channels": 2,
+    "source_units": [
+      "mV",
+      "mV"
+    ],
+    "output_units": "mV",
+    "segment_policy": "independent channel and contiguous offset per draw; per-segment DC removed",
+    "normalization": "global SNR after lead formation; independent_rms adds per-lead RMS control",
+    "interpretation": "structured replay approximation, not original 12-lead electrode recordings"
+  },
+  "em": {
+    "record_path": "E:\\Eproject\\ECG\\phase1_ecg_robustness\\data\\raw\\nstdb\\em",
+    "source_fs": 360.0,
+    "target_fs": 100.0,
+    "resample_up": 5,
+    "resample_down": 18,
+    "resample_method": "scipy.signal.resample_poly, default Kaiser window",
+    "source_samples": 650000,
+    "resampled_samples": 180556,
+    "channels": 2,
+    "source_units": [
+      "mV",
+      "mV"
+    ],
+    "output_units": "mV",
+    "segment_policy": "independent channel and contiguous offset per draw; per-segment DC removed",
+    "normalization": "global SNR after lead formation; independent_rms adds per-lead RMS control",
+    "interpretation": "structured replay approximation, not original 12-lead electrode recordings"
+  }
+}

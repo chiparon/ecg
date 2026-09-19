@@ -1,0 +1,44 @@
+{
+  "run_name": "review_supplement",
+  "sampling_rate_hz": 100,
+  "dpi": 180,
+  "config_path": "configs/phase1_supplement.yaml",
+  "figures": [
+    {
+      "family": "strict_control_performance",
+      "files": [
+        "results/figures/review_supplement/strict/strict_control_performance.png",
+        "results/figures/review_supplement/strict/strict_control_performance.pdf"
+      ],
+      "caption": "Original Gaussian controls and circular-shift surrogate at all SNR. Primary noise base8128; clean thresholds frozen. Mean and sample SD of three fixed trained seeds.",
+      "source_paths": [
+        "results/metrics/full/metrics.csv",
+        "results/metrics/review_supplement/strict_metrics.csv"
+      ]
+    },
+    {
+      "family": "strict_control_noise_diagnostics",
+      "files": [
+        "results/figures/review_supplement/strict/strict_control_noise_diagnostics.png",
+        "results/figures/review_supplement/strict/strict_control_noise_diagnostics.pdf"
+      ],
+      "caption": "Record-level correlation distributions and per-lead PSD matching errors. Boxes show median/IQR, whiskers5th\u201395th percentiles across records, not confidence intervals. Exact zeros use1e-18 only for logarithmic display. Ordinary Welch is not shift invariant; stored data are not floored.",
+      "source_paths": [
+        "results/tables/review_supplement/strict_marginal_audit.csv"
+      ]
+    },
+    {
+      "family": "strict_control_welch_psd",
+      "files": [
+        "results/figures/review_supplement/strict/strict_control_welch_psd.png",
+        "results/figures/review_supplement/strict/strict_control_welch_psd.pdf"
+      ],
+      "caption": "Six named leads' mean Welch spectra across the actual test cohort. This population average does not claim each record's Welch estimates coincide. nperseg256, overlap128, Hann window, per-window constant detrending.",
+      "source_paths": [
+        "results/tables/review_supplement/strict_welch_psd.csv"
+      ]
+    }
+  ],
+  "skipped": [],
+  "interpretation": "Experimental robustness results, not clinical deployment evidence. Seed SD is descriptive; the inference unit is stated for confidence intervals."
+}

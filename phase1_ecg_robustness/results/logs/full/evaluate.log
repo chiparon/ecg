@@ -1,0 +1,511 @@
+
+COMMAND: E:\Eproject\ECG\phase1_ecg_robustness\.venv\Scripts\python.exe -u -m src.evaluate --config configs/phase1_full.yaml
+eval resnet/17 clean/100/clean/all AUROC=0.90689
+eval resnet/29 clean/100/clean/all AUROC=0.90791
+eval resnet/43 clean/100/clean/all AUROC=0.90870
+eval tcn/17 clean/100/clean/all AUROC=0.91691
+eval tcn/29 clean/100/clean/all AUROC=0.92198
+eval tcn/43 clean/100/clean/all AUROC=0.91769
+noise bandpass/all 500/2158
+noise bandpass/all 1000/2158
+noise bandpass/all 1500/2158
+noise bandpass/all 2000/2158
+eval resnet/17 bandpass/20/independent/all AUROC=0.90558
+eval resnet/29 bandpass/20/independent/all AUROC=0.90718
+eval resnet/43 bandpass/20/independent/all AUROC=0.90811
+eval tcn/17 bandpass/20/independent/all AUROC=0.91670
+eval tcn/29 bandpass/20/independent/all AUROC=0.92177
+eval tcn/43 bandpass/20/independent/all AUROC=0.91757
+eval resnet/17 bandpass/20/independent_rms/all AUROC=0.90554
+eval resnet/29 bandpass/20/independent_rms/all AUROC=0.90712
+eval resnet/43 bandpass/20/independent_rms/all AUROC=0.90808
+eval tcn/17 bandpass/20/independent_rms/all AUROC=0.91669
+eval tcn/29 bandpass/20/independent_rms/all AUROC=0.92177
+eval tcn/43 bandpass/20/independent_rms/all AUROC=0.91753
+eval resnet/17 bandpass/20/electrode/all AUROC=0.90491
+eval resnet/29 bandpass/20/electrode/all AUROC=0.90687
+eval resnet/43 bandpass/20/electrode/all AUROC=0.90739
+eval tcn/17 bandpass/20/electrode/all AUROC=0.91651
+eval tcn/29 bandpass/20/electrode/all AUROC=0.92165
+eval tcn/43 bandpass/20/electrode/all AUROC=0.91764
+eval resnet/17 bandpass/20/covariance/all AUROC=0.90544
+eval resnet/29 bandpass/20/covariance/all AUROC=0.90708
+eval resnet/43 bandpass/20/covariance/all AUROC=0.90783
+eval tcn/17 bandpass/20/covariance/all AUROC=0.91661
+eval tcn/29 bandpass/20/covariance/all AUROC=0.92181
+eval tcn/43 bandpass/20/covariance/all AUROC=0.91777
+eval resnet/17 bandpass/10/independent/all AUROC=0.89499
+eval resnet/29 bandpass/10/independent/all AUROC=0.90021
+eval resnet/43 bandpass/10/independent/all AUROC=0.90279
+eval tcn/17 bandpass/10/independent/all AUROC=0.91459
+eval tcn/29 bandpass/10/independent/all AUROC=0.91909
+eval tcn/43 bandpass/10/independent/all AUROC=0.91593
+eval resnet/17 bandpass/10/independent_rms/all AUROC=0.89466
+eval resnet/29 bandpass/10/independent_rms/all AUROC=0.89992
+eval resnet/43 bandpass/10/independent_rms/all AUROC=0.90269
+eval tcn/17 bandpass/10/independent_rms/all AUROC=0.91455
+eval tcn/29 bandpass/10/independent_rms/all AUROC=0.91894
+eval tcn/43 bandpass/10/independent_rms/all AUROC=0.91576
+eval resnet/17 bandpass/10/electrode/all AUROC=0.89075
+eval resnet/29 bandpass/10/electrode/all AUROC=0.89803
+eval resnet/43 bandpass/10/electrode/all AUROC=0.89835
+eval tcn/17 bandpass/10/electrode/all AUROC=0.91342
+eval tcn/29 bandpass/10/electrode/all AUROC=0.91763
+eval tcn/43 bandpass/10/electrode/all AUROC=0.91499
+eval resnet/17 bandpass/10/covariance/all AUROC=0.89125
+eval resnet/29 bandpass/10/covariance/all AUROC=0.89829
+eval resnet/43 bandpass/10/covariance/all AUROC=0.89858
+eval tcn/17 bandpass/10/covariance/all AUROC=0.91313
+eval tcn/29 bandpass/10/covariance/all AUROC=0.91794
+eval tcn/43 bandpass/10/covariance/all AUROC=0.91528
+eval resnet/17 bandpass/0/independent/all AUROC=0.81987
+eval resnet/29 bandpass/0/independent/all AUROC=0.84159
+eval resnet/43 bandpass/0/independent/all AUROC=0.84915
+eval tcn/17 bandpass/0/independent/all AUROC=0.89227
+eval tcn/29 bandpass/0/independent/all AUROC=0.88617
+eval tcn/43 bandpass/0/independent/all AUROC=0.89776
+eval resnet/17 bandpass/0/independent_rms/all AUROC=0.81904
+eval resnet/29 bandpass/0/independent_rms/all AUROC=0.84032
+eval resnet/43 bandpass/0/independent_rms/all AUROC=0.84867
+eval tcn/17 bandpass/0/independent_rms/all AUROC=0.89189
+eval tcn/29 bandpass/0/independent_rms/all AUROC=0.88435
+eval tcn/43 bandpass/0/independent_rms/all AUROC=0.89708
+eval resnet/17 bandpass/0/electrode/all AUROC=0.79908
+eval resnet/29 bandpass/0/electrode/all AUROC=0.81654
+eval resnet/43 bandpass/0/electrode/all AUROC=0.83015
+eval tcn/17 bandpass/0/electrode/all AUROC=0.88363
+eval tcn/29 bandpass/0/electrode/all AUROC=0.86801
+eval tcn/43 bandpass/0/electrode/all AUROC=0.88361
+eval resnet/17 bandpass/0/covariance/all AUROC=0.79730
+eval resnet/29 bandpass/0/covariance/all AUROC=0.81675
+eval resnet/43 bandpass/0/covariance/all AUROC=0.82899
+eval tcn/17 bandpass/0/covariance/all AUROC=0.88262
+eval tcn/29 bandpass/0/covariance/all AUROC=0.86547
+eval tcn/43 bandpass/0/covariance/all AUROC=0.88444
+noise bw/all 500/2158
+noise bw/all 1000/2158
+noise bw/all 1500/2158
+noise bw/all 2000/2158
+eval resnet/17 bw/20/independent/all AUROC=0.90664
+eval resnet/29 bw/20/independent/all AUROC=0.90755
+eval resnet/43 bw/20/independent/all AUROC=0.90793
+eval tcn/17 bw/20/independent/all AUROC=0.91687
+eval tcn/29 bw/20/independent/all AUROC=0.92218
+eval tcn/43 bw/20/independent/all AUROC=0.91770
+eval resnet/17 bw/20/independent_rms/all AUROC=0.90656
+eval resnet/29 bw/20/independent_rms/all AUROC=0.90761
+eval resnet/43 bw/20/independent_rms/all AUROC=0.90819
+eval tcn/17 bw/20/independent_rms/all AUROC=0.91655
+eval tcn/29 bw/20/independent_rms/all AUROC=0.92198
+eval tcn/43 bw/20/independent_rms/all AUROC=0.91760
+eval resnet/17 bw/20/electrode/all AUROC=0.90691
+eval resnet/29 bw/20/electrode/all AUROC=0.90794
+eval resnet/43 bw/20/electrode/all AUROC=0.90841
+eval tcn/17 bw/20/electrode/all AUROC=0.91691
+eval tcn/29 bw/20/electrode/all AUROC=0.92173
+eval tcn/43 bw/20/electrode/all AUROC=0.91725
+eval resnet/17 bw/20/covariance/all AUROC=0.90727
+eval resnet/29 bw/20/covariance/all AUROC=0.90762
+eval resnet/43 bw/20/covariance/all AUROC=0.90839
+eval tcn/17 bw/20/covariance/all AUROC=0.91656
+eval tcn/29 bw/20/covariance/all AUROC=0.92194
+eval tcn/43 bw/20/covariance/all AUROC=0.91768
+eval resnet/17 bw/10/independent/all AUROC=0.90410
+eval resnet/29 bw/10/independent/all AUROC=0.90532
+eval resnet/43 bw/10/independent/all AUROC=0.90496
+eval tcn/17 bw/10/independent/all AUROC=0.91436
+eval tcn/29 bw/10/independent/all AUROC=0.92108
+eval tcn/43 bw/10/independent/all AUROC=0.91590
+eval resnet/17 bw/10/independent_rms/all AUROC=0.90382
+eval resnet/29 bw/10/independent_rms/all AUROC=0.90546
+eval resnet/43 bw/10/independent_rms/all AUROC=0.90584
+eval tcn/17 bw/10/independent_rms/all AUROC=0.91366
+eval tcn/29 bw/10/independent_rms/all AUROC=0.92045
+eval tcn/43 bw/10/independent_rms/all AUROC=0.91567
+eval resnet/17 bw/10/electrode/all AUROC=0.90442
+eval resnet/29 bw/10/electrode/all AUROC=0.90572
+eval resnet/43 bw/10/electrode/all AUROC=0.90512
+eval tcn/17 bw/10/electrode/all AUROC=0.91389
+eval tcn/29 bw/10/electrode/all AUROC=0.91922
+eval tcn/43 bw/10/electrode/all AUROC=0.91411
+eval resnet/17 bw/10/covariance/all AUROC=0.90503
+eval resnet/29 bw/10/covariance/all AUROC=0.90602
+eval resnet/43 bw/10/covariance/all AUROC=0.90632
+eval tcn/17 bw/10/covariance/all AUROC=0.91424
+eval tcn/29 bw/10/covariance/all AUROC=0.91969
+eval tcn/43 bw/10/covariance/all AUROC=0.91513
+eval resnet/17 bw/0/independent/all AUROC=0.88112
+eval resnet/29 bw/0/independent/all AUROC=0.88808
+eval resnet/43 bw/0/independent/all AUROC=0.88299
+eval tcn/17 bw/0/independent/all AUROC=0.88722
+eval tcn/29 bw/0/independent/all AUROC=0.89955
+eval tcn/43 bw/0/independent/all AUROC=0.89321
+eval resnet/17 bw/0/independent_rms/all AUROC=0.88156
+eval resnet/29 bw/0/independent_rms/all AUROC=0.88941
+eval resnet/43 bw/0/independent_rms/all AUROC=0.88292
+eval tcn/17 bw/0/independent_rms/all AUROC=0.88717
+eval tcn/29 bw/0/independent_rms/all AUROC=0.89822
+eval tcn/43 bw/0/independent_rms/all AUROC=0.89258
+eval resnet/17 bw/0/electrode/all AUROC=0.88208
+eval resnet/29 bw/0/electrode/all AUROC=0.88647
+eval resnet/43 bw/0/electrode/all AUROC=0.88278
+eval tcn/17 bw/0/electrode/all AUROC=0.89360
+eval tcn/29 bw/0/electrode/all AUROC=0.89985
+eval tcn/43 bw/0/electrode/all AUROC=0.89107
+eval resnet/17 bw/0/covariance/all AUROC=0.88176
+eval resnet/29 bw/0/covariance/all AUROC=0.88810
+eval resnet/43 bw/0/covariance/all AUROC=0.88282
+eval tcn/17 bw/0/covariance/all AUROC=0.89212
+eval tcn/29 bw/0/covariance/all AUROC=0.89960
+eval tcn/43 bw/0/covariance/all AUROC=0.89133
+noise ma/all 500/2158
+noise ma/all 1000/2158
+noise ma/all 1500/2158
+noise ma/all 2000/2158
+eval resnet/17 ma/20/independent/all AUROC=0.90671
+eval resnet/29 ma/20/independent/all AUROC=0.90731
+eval resnet/43 ma/20/independent/all AUROC=0.90856
+eval tcn/17 ma/20/independent/all AUROC=0.91709
+eval tcn/29 ma/20/independent/all AUROC=0.92189
+eval tcn/43 ma/20/independent/all AUROC=0.91767
+eval resnet/17 ma/20/independent_rms/all AUROC=0.90648
+eval resnet/29 ma/20/independent_rms/all AUROC=0.90738
+eval resnet/43 ma/20/independent_rms/all AUROC=0.90842
+eval tcn/17 ma/20/independent_rms/all AUROC=0.91700
+eval tcn/29 ma/20/independent_rms/all AUROC=0.92193
+eval tcn/43 ma/20/independent_rms/all AUROC=0.91778
+eval resnet/17 ma/20/electrode/all AUROC=0.90623
+eval resnet/29 ma/20/electrode/all AUROC=0.90688
+eval resnet/43 ma/20/electrode/all AUROC=0.90874
+eval tcn/17 ma/20/electrode/all AUROC=0.91688
+eval tcn/29 ma/20/electrode/all AUROC=0.92175
+eval tcn/43 ma/20/electrode/all AUROC=0.91724
+eval resnet/17 ma/20/covariance/all AUROC=0.90633
+eval resnet/29 ma/20/covariance/all AUROC=0.90750
+eval resnet/43 ma/20/covariance/all AUROC=0.90774
+eval tcn/17 ma/20/covariance/all AUROC=0.91656
+eval tcn/29 ma/20/covariance/all AUROC=0.92180
+eval tcn/43 ma/20/covariance/all AUROC=0.91749
+eval resnet/17 ma/10/independent/all AUROC=0.90233
+eval resnet/29 ma/10/independent/all AUROC=0.90435
+eval resnet/43 ma/10/independent/all AUROC=0.90517
+eval tcn/17 ma/10/independent/all AUROC=0.91468
+eval tcn/29 ma/10/independent/all AUROC=0.92000
+eval tcn/43 ma/10/independent/all AUROC=0.91592
+eval resnet/17 ma/10/independent_rms/all AUROC=0.90157
+eval resnet/29 ma/10/independent_rms/all AUROC=0.90451
+eval resnet/43 ma/10/independent_rms/all AUROC=0.90492
+eval tcn/17 ma/10/independent_rms/all AUROC=0.91499
+eval tcn/29 ma/10/independent_rms/all AUROC=0.92014
+eval tcn/43 ma/10/independent_rms/all AUROC=0.91630
+eval resnet/17 ma/10/electrode/all AUROC=0.90226
+eval resnet/29 ma/10/electrode/all AUROC=0.90319
+eval resnet/43 ma/10/electrode/all AUROC=0.90542
+eval tcn/17 ma/10/electrode/all AUROC=0.91474
+eval tcn/29 ma/10/electrode/all AUROC=0.91910
+eval tcn/43 ma/10/electrode/all AUROC=0.91444
+eval resnet/17 ma/10/covariance/all AUROC=0.90246
+eval resnet/29 ma/10/covariance/all AUROC=0.90507
+eval resnet/43 ma/10/covariance/all AUROC=0.90383
+eval tcn/17 ma/10/covariance/all AUROC=0.91447
+eval tcn/29 ma/10/covariance/all AUROC=0.91994
+eval tcn/43 ma/10/covariance/all AUROC=0.91594
+eval resnet/17 ma/0/independent/all AUROC=0.87057
+eval resnet/29 ma/0/independent/all AUROC=0.88299
+eval resnet/43 ma/0/independent/all AUROC=0.88061
+eval tcn/17 ma/0/independent/all AUROC=0.88952
+eval tcn/29 ma/0/independent/all AUROC=0.90036
+eval tcn/43 ma/0/independent/all AUROC=0.89893
+eval resnet/17 ma/0/independent_rms/all AUROC=0.86689
+eval resnet/29 ma/0/independent_rms/all AUROC=0.87678
+eval resnet/43 ma/0/independent_rms/all AUROC=0.87651
+eval tcn/17 ma/0/independent_rms/all AUROC=0.89173
+eval tcn/29 ma/0/independent_rms/all AUROC=0.89854
+eval tcn/43 ma/0/independent_rms/all AUROC=0.89815
+eval resnet/17 ma/0/electrode/all AUROC=0.87075
+eval resnet/29 ma/0/electrode/all AUROC=0.87621
+eval resnet/43 ma/0/electrode/all AUROC=0.87652
+eval tcn/17 ma/0/electrode/all AUROC=0.89574
+eval tcn/29 ma/0/electrode/all AUROC=0.89790
+eval tcn/43 ma/0/electrode/all AUROC=0.89080
+eval resnet/17 ma/0/covariance/all AUROC=0.87038
+eval resnet/29 ma/0/covariance/all AUROC=0.88298
+eval resnet/43 ma/0/covariance/all AUROC=0.87772
+eval tcn/17 ma/0/covariance/all AUROC=0.89571
+eval tcn/29 ma/0/covariance/all AUROC=0.90133
+eval tcn/43 ma/0/covariance/all AUROC=0.89362
+noise em/all 500/2158
+noise em/all 1000/2158
+noise em/all 1500/2158
+noise em/all 2000/2158
+eval resnet/17 em/20/independent/all AUROC=0.90667
+eval resnet/29 em/20/independent/all AUROC=0.90708
+eval resnet/43 em/20/independent/all AUROC=0.90870
+eval tcn/17 em/20/independent/all AUROC=0.91701
+eval tcn/29 em/20/independent/all AUROC=0.92148
+eval tcn/43 em/20/independent/all AUROC=0.91765
+eval resnet/17 em/20/independent_rms/all AUROC=0.90682
+eval resnet/29 em/20/independent_rms/all AUROC=0.90702
+eval resnet/43 em/20/independent_rms/all AUROC=0.90896
+eval tcn/17 em/20/independent_rms/all AUROC=0.91695
+eval tcn/29 em/20/independent_rms/all AUROC=0.92147
+eval tcn/43 em/20/independent_rms/all AUROC=0.91763
+eval resnet/17 em/20/electrode/all AUROC=0.90594
+eval resnet/29 em/20/electrode/all AUROC=0.90698
+eval resnet/43 em/20/electrode/all AUROC=0.90800
+eval tcn/17 em/20/electrode/all AUROC=0.91688
+eval tcn/29 em/20/electrode/all AUROC=0.92170
+eval tcn/43 em/20/electrode/all AUROC=0.91745
+eval resnet/17 em/20/covariance/all AUROC=0.90561
+eval resnet/29 em/20/covariance/all AUROC=0.90641
+eval resnet/43 em/20/covariance/all AUROC=0.90792
+eval tcn/17 em/20/covariance/all AUROC=0.91685
+eval tcn/29 em/20/covariance/all AUROC=0.92180
+eval tcn/43 em/20/covariance/all AUROC=0.91737
+eval resnet/17 em/10/independent/all AUROC=0.90093
+eval resnet/29 em/10/independent/all AUROC=0.90223
+eval resnet/43 em/10/independent/all AUROC=0.90449
+eval tcn/17 em/10/independent/all AUROC=0.91463
+eval tcn/29 em/10/independent/all AUROC=0.91850
+eval tcn/43 em/10/independent/all AUROC=0.91603
+eval resnet/17 em/10/independent_rms/all AUROC=0.90110
+eval resnet/29 em/10/independent_rms/all AUROC=0.90273
+eval resnet/43 em/10/independent_rms/all AUROC=0.90473
+eval tcn/17 em/10/independent_rms/all AUROC=0.91436
+eval tcn/29 em/10/independent_rms/all AUROC=0.91858
+eval tcn/43 em/10/independent_rms/all AUROC=0.91572
+eval resnet/17 em/10/electrode/all AUROC=0.89707
+eval resnet/29 em/10/electrode/all AUROC=0.89993
+eval resnet/43 em/10/electrode/all AUROC=0.90084
+eval tcn/17 em/10/electrode/all AUROC=0.91353
+eval tcn/29 em/10/electrode/all AUROC=0.91752
+eval tcn/43 em/10/electrode/all AUROC=0.91291
+eval resnet/17 em/10/covariance/all AUROC=0.89672
+eval resnet/29 em/10/covariance/all AUROC=0.90013
+eval resnet/43 em/10/covariance/all AUROC=0.90246
+eval tcn/17 em/10/covariance/all AUROC=0.91371
+eval tcn/29 em/10/covariance/all AUROC=0.91834
+eval tcn/43 em/10/covariance/all AUROC=0.91369
+eval resnet/17 em/0/independent/all AUROC=0.85520
+eval resnet/29 em/0/independent/all AUROC=0.86400
+eval resnet/43 em/0/independent/all AUROC=0.86817
+eval tcn/17 em/0/independent/all AUROC=0.88166
+eval tcn/29 em/0/independent/all AUROC=0.88889
+eval tcn/43 em/0/independent/all AUROC=0.89338
+eval resnet/17 em/0/independent_rms/all AUROC=0.85940
+eval resnet/29 em/0/independent_rms/all AUROC=0.86966
+eval resnet/43 em/0/independent_rms/all AUROC=0.87194
+eval tcn/17 em/0/independent_rms/all AUROC=0.88337
+eval tcn/29 em/0/independent_rms/all AUROC=0.88966
+eval tcn/43 em/0/independent_rms/all AUROC=0.89316
+eval resnet/17 em/0/electrode/all AUROC=0.83293
+eval resnet/29 em/0/electrode/all AUROC=0.84673
+eval resnet/43 em/0/electrode/all AUROC=0.85365
+eval tcn/17 em/0/electrode/all AUROC=0.86911
+eval tcn/29 em/0/electrode/all AUROC=0.86896
+eval tcn/43 em/0/electrode/all AUROC=0.86343
+eval resnet/17 em/0/covariance/all AUROC=0.83294
+eval resnet/29 em/0/covariance/all AUROC=0.85122
+eval resnet/43 em/0/covariance/all AUROC=0.85286
+eval tcn/17 em/0/covariance/all AUROC=0.87367
+eval tcn/29 em/0/covariance/all AUROC=0.87689
+eval tcn/43 em/0/covariance/all AUROC=0.87055
+noise bandpass/RA 500/2158
+noise bandpass/RA 1000/2158
+noise bandpass/RA 1500/2158
+noise bandpass/RA 2000/2158
+eval resnet/17 bandpass/10/independent_rms/RA AUROC=0.89439
+eval resnet/29 bandpass/10/independent_rms/RA AUROC=0.89854
+eval resnet/43 bandpass/10/independent_rms/RA AUROC=0.90323
+eval tcn/17 bandpass/10/independent_rms/RA AUROC=0.91419
+eval tcn/29 bandpass/10/independent_rms/RA AUROC=0.91950
+eval tcn/43 bandpass/10/independent_rms/RA AUROC=0.91586
+eval resnet/17 bandpass/10/electrode/RA AUROC=0.89185
+eval resnet/29 bandpass/10/electrode/RA AUROC=0.89562
+eval resnet/43 bandpass/10/electrode/RA AUROC=0.89921
+eval tcn/17 bandpass/10/electrode/RA AUROC=0.91327
+eval tcn/29 bandpass/10/electrode/RA AUROC=0.91749
+eval tcn/43 bandpass/10/electrode/RA AUROC=0.91426
+eval resnet/17 bandpass/10/covariance/RA AUROC=0.89145
+eval resnet/29 bandpass/10/covariance/RA AUROC=0.89608
+eval resnet/43 bandpass/10/covariance/RA AUROC=0.90040
+eval tcn/17 bandpass/10/covariance/RA AUROC=0.91305
+eval tcn/29 bandpass/10/covariance/RA AUROC=0.91748
+eval tcn/43 bandpass/10/covariance/RA AUROC=0.91496
+noise bandpass/LA 500/2158
+noise bandpass/LA 1000/2158
+noise bandpass/LA 1500/2158
+noise bandpass/LA 2000/2158
+eval resnet/17 bandpass/10/independent_rms/LA AUROC=0.89464
+eval resnet/29 bandpass/10/independent_rms/LA AUROC=0.89910
+eval resnet/43 bandpass/10/independent_rms/LA AUROC=0.90259
+eval tcn/17 bandpass/10/independent_rms/LA AUROC=0.91438
+eval tcn/29 bandpass/10/independent_rms/LA AUROC=0.91883
+eval tcn/43 bandpass/10/independent_rms/LA AUROC=0.91531
+eval resnet/17 bandpass/10/electrode/LA AUROC=0.89194
+eval resnet/29 bandpass/10/electrode/LA AUROC=0.89840
+eval resnet/43 bandpass/10/electrode/LA AUROC=0.89880
+eval tcn/17 bandpass/10/electrode/LA AUROC=0.91261
+eval tcn/29 bandpass/10/electrode/LA AUROC=0.91745
+eval tcn/43 bandpass/10/electrode/LA AUROC=0.91266
+eval resnet/17 bandpass/10/covariance/LA AUROC=0.89130
+eval resnet/29 bandpass/10/covariance/LA AUROC=0.89654
+eval resnet/43 bandpass/10/covariance/LA AUROC=0.89942
+eval tcn/17 bandpass/10/covariance/LA AUROC=0.91248
+eval tcn/29 bandpass/10/covariance/LA AUROC=0.91687
+eval tcn/43 bandpass/10/covariance/LA AUROC=0.91259
+noise bandpass/LL 500/2158
+noise bandpass/LL 1000/2158
+noise bandpass/LL 1500/2158
+noise bandpass/LL 2000/2158
+eval resnet/17 bandpass/10/independent_rms/LL AUROC=0.89291
+eval resnet/29 bandpass/10/independent_rms/LL AUROC=0.89942
+eval resnet/43 bandpass/10/independent_rms/LL AUROC=0.90154
+eval tcn/17 bandpass/10/independent_rms/LL AUROC=0.91417
+eval tcn/29 bandpass/10/independent_rms/LL AUROC=0.91822
+eval tcn/43 bandpass/10/independent_rms/LL AUROC=0.91545
+eval resnet/17 bandpass/10/electrode/LL AUROC=0.88162
+eval resnet/29 bandpass/10/electrode/LL AUROC=0.89495
+eval resnet/43 bandpass/10/electrode/LL AUROC=0.89505
+eval tcn/17 bandpass/10/electrode/LL AUROC=0.91280
+eval tcn/29 bandpass/10/electrode/LL AUROC=0.91532
+eval tcn/43 bandpass/10/electrode/LL AUROC=0.91491
+eval resnet/17 bandpass/10/covariance/LL AUROC=0.88399
+eval resnet/29 bandpass/10/covariance/LL AUROC=0.89586
+eval resnet/43 bandpass/10/covariance/LL AUROC=0.89715
+eval tcn/17 bandpass/10/covariance/LL AUROC=0.91262
+eval tcn/29 bandpass/10/covariance/LL AUROC=0.91538
+eval tcn/43 bandpass/10/covariance/LL AUROC=0.91489
+noise bandpass/V1 500/2158
+noise bandpass/V1 1000/2158
+noise bandpass/V1 1500/2158
+noise bandpass/V1 2000/2158
+eval resnet/17 bandpass/10/independent_rms/V1 AUROC=0.89625
+eval resnet/29 bandpass/10/independent_rms/V1 AUROC=0.89886
+eval resnet/43 bandpass/10/independent_rms/V1 AUROC=0.89833
+eval tcn/17 bandpass/10/independent_rms/V1 AUROC=0.91543
+eval tcn/29 bandpass/10/independent_rms/V1 AUROC=0.91829
+eval tcn/43 bandpass/10/independent_rms/V1 AUROC=0.91657
+eval resnet/17 bandpass/10/electrode/V1 AUROC=0.89472
+eval resnet/29 bandpass/10/electrode/V1 AUROC=0.89814
+eval resnet/43 bandpass/10/electrode/V1 AUROC=0.89830
+eval tcn/17 bandpass/10/electrode/V1 AUROC=0.91546
+eval tcn/29 bandpass/10/electrode/V1 AUROC=0.91899
+eval tcn/43 bandpass/10/electrode/V1 AUROC=0.91617
+eval resnet/17 bandpass/10/covariance/V1 AUROC=0.89638
+eval resnet/29 bandpass/10/covariance/V1 AUROC=0.89864
+eval resnet/43 bandpass/10/covariance/V1 AUROC=0.90021
+eval tcn/17 bandpass/10/covariance/V1 AUROC=0.91611
+eval tcn/29 bandpass/10/covariance/V1 AUROC=0.91961
+eval tcn/43 bandpass/10/covariance/V1 AUROC=0.91624
+noise bandpass/V2 500/2158
+noise bandpass/V2 1000/2158
+noise bandpass/V2 1500/2158
+noise bandpass/V2 2000/2158
+eval resnet/17 bandpass/10/independent_rms/V2 AUROC=0.89629
+eval resnet/29 bandpass/10/independent_rms/V2 AUROC=0.89988
+eval resnet/43 bandpass/10/independent_rms/V2 AUROC=0.90152
+eval tcn/17 bandpass/10/independent_rms/V2 AUROC=0.91463
+eval tcn/29 bandpass/10/independent_rms/V2 AUROC=0.91932
+eval tcn/43 bandpass/10/independent_rms/V2 AUROC=0.91593
+eval resnet/17 bandpass/10/electrode/V2 AUROC=0.89724
+eval resnet/29 bandpass/10/electrode/V2 AUROC=0.89935
+eval resnet/43 bandpass/10/electrode/V2 AUROC=0.90053
+eval tcn/17 bandpass/10/electrode/V2 AUROC=0.91443
+eval tcn/29 bandpass/10/electrode/V2 AUROC=0.91918
+eval tcn/43 bandpass/10/electrode/V2 AUROC=0.91581
+eval resnet/17 bandpass/10/covariance/V2 AUROC=0.89780
+eval resnet/29 bandpass/10/covariance/V2 AUROC=0.90054
+eval resnet/43 bandpass/10/covariance/V2 AUROC=0.90282
+eval tcn/17 bandpass/10/covariance/V2 AUROC=0.91567
+eval tcn/29 bandpass/10/covariance/V2 AUROC=0.92008
+eval tcn/43 bandpass/10/covariance/V2 AUROC=0.91674
+noise bandpass/V3 500/2158
+noise bandpass/V3 1000/2158
+noise bandpass/V3 1500/2158
+noise bandpass/V3 2000/2158
+eval resnet/17 bandpass/10/independent_rms/V3 AUROC=0.89815
+eval resnet/29 bandpass/10/independent_rms/V3 AUROC=0.90203
+eval resnet/43 bandpass/10/independent_rms/V3 AUROC=0.90244
+eval tcn/17 bandpass/10/independent_rms/V3 AUROC=0.91371
+eval tcn/29 bandpass/10/independent_rms/V3 AUROC=0.92140
+eval tcn/43 bandpass/10/independent_rms/V3 AUROC=0.91656
+eval resnet/17 bandpass/10/electrode/V3 AUROC=0.89538
+eval resnet/29 bandpass/10/electrode/V3 AUROC=0.90228
+eval resnet/43 bandpass/10/electrode/V3 AUROC=0.90099
+eval tcn/17 bandpass/10/electrode/V3 AUROC=0.91373
+eval tcn/29 bandpass/10/electrode/V3 AUROC=0.92131
+eval tcn/43 bandpass/10/electrode/V3 AUROC=0.91622
+eval resnet/17 bandpass/10/covariance/V3 AUROC=0.89779
+eval resnet/29 bandpass/10/covariance/V3 AUROC=0.90205
+eval resnet/43 bandpass/10/covariance/V3 AUROC=0.90348
+eval tcn/17 bandpass/10/covariance/V3 AUROC=0.91467
+eval tcn/29 bandpass/10/covariance/V3 AUROC=0.92088
+eval tcn/43 bandpass/10/covariance/V3 AUROC=0.91709
+noise bandpass/V4 500/2158
+noise bandpass/V4 1000/2158
+noise bandpass/V4 1500/2158
+noise bandpass/V4 2000/2158
+eval resnet/17 bandpass/10/independent_rms/V4 AUROC=0.89883
+eval resnet/29 bandpass/10/independent_rms/V4 AUROC=0.90115
+eval resnet/43 bandpass/10/independent_rms/V4 AUROC=0.90367
+eval tcn/17 bandpass/10/independent_rms/V4 AUROC=0.91577
+eval tcn/29 bandpass/10/independent_rms/V4 AUROC=0.91973
+eval tcn/43 bandpass/10/independent_rms/V4 AUROC=0.91698
+eval resnet/17 bandpass/10/electrode/V4 AUROC=0.89918
+eval resnet/29 bandpass/10/electrode/V4 AUROC=0.90145
+eval resnet/43 bandpass/10/electrode/V4 AUROC=0.90252
+eval tcn/17 bandpass/10/electrode/V4 AUROC=0.91555
+eval tcn/29 bandpass/10/electrode/V4 AUROC=0.91999
+eval tcn/43 bandpass/10/electrode/V4 AUROC=0.91719
+eval resnet/17 bandpass/10/covariance/V4 AUROC=0.89985
+eval resnet/29 bandpass/10/covariance/V4 AUROC=0.90203
+eval resnet/43 bandpass/10/covariance/V4 AUROC=0.90367
+eval tcn/17 bandpass/10/covariance/V4 AUROC=0.91574
+eval tcn/29 bandpass/10/covariance/V4 AUROC=0.92003
+eval tcn/43 bandpass/10/covariance/V4 AUROC=0.91683
+noise bandpass/V5 500/2158
+noise bandpass/V5 1000/2158
+noise bandpass/V5 1500/2158
+noise bandpass/V5 2000/2158
+eval resnet/17 bandpass/10/independent_rms/V5 AUROC=0.89641
+eval resnet/29 bandpass/10/independent_rms/V5 AUROC=0.90032
+eval resnet/43 bandpass/10/independent_rms/V5 AUROC=0.90135
+eval tcn/17 bandpass/10/independent_rms/V5 AUROC=0.91480
+eval tcn/29 bandpass/10/independent_rms/V5 AUROC=0.91973
+eval tcn/43 bandpass/10/independent_rms/V5 AUROC=0.91635
+eval resnet/17 bandpass/10/electrode/V5 AUROC=0.89702
+eval resnet/29 bandpass/10/electrode/V5 AUROC=0.90111
+eval resnet/43 bandpass/10/electrode/V5 AUROC=0.90043
+eval tcn/17 bandpass/10/electrode/V5 AUROC=0.91574
+eval tcn/29 bandpass/10/electrode/V5 AUROC=0.92016
+eval tcn/43 bandpass/10/electrode/V5 AUROC=0.91690
+eval resnet/17 bandpass/10/covariance/V5 AUROC=0.89746
+eval resnet/29 bandpass/10/covariance/V5 AUROC=0.90035
+eval resnet/43 bandpass/10/covariance/V5 AUROC=0.90053
+eval tcn/17 bandpass/10/covariance/V5 AUROC=0.91567
+eval tcn/29 bandpass/10/covariance/V5 AUROC=0.91979
+eval tcn/43 bandpass/10/covariance/V5 AUROC=0.91668
+noise bandpass/V6 500/2158
+noise bandpass/V6 1000/2158
+noise bandpass/V6 1500/2158
+noise bandpass/V6 2000/2158
+eval resnet/17 bandpass/10/independent_rms/V6 AUROC=0.89434
+eval resnet/29 bandpass/10/independent_rms/V6 AUROC=0.90111
+eval resnet/43 bandpass/10/independent_rms/V6 AUROC=0.90275
+eval tcn/17 bandpass/10/independent_rms/V6 AUROC=0.91452
+eval tcn/29 bandpass/10/independent_rms/V6 AUROC=0.92048
+eval tcn/43 bandpass/10/independent_rms/V6 AUROC=0.91653
+eval resnet/17 bandpass/10/electrode/V6 AUROC=0.89379
+eval resnet/29 bandpass/10/electrode/V6 AUROC=0.90152
+eval resnet/43 bandpass/10/electrode/V6 AUROC=0.90304
+eval tcn/17 bandpass/10/electrode/V6 AUROC=0.91435
+eval tcn/29 bandpass/10/electrode/V6 AUROC=0.91970
+eval tcn/43 bandpass/10/electrode/V6 AUROC=0.91605
+eval resnet/17 bandpass/10/covariance/V6 AUROC=0.89488
+eval resnet/29 bandpass/10/covariance/V6 AUROC=0.90083
+eval resnet/43 bandpass/10/covariance/V6 AUROC=0.90299
+eval tcn/17 bandpass/10/covariance/V6 AUROC=0.91490
+eval tcn/29 bandpass/10/covariance/V6 AUROC=0.91981
+eval tcn/43 bandpass/10/covariance/V6 AUROC=0.91622
+Evaluation complete: 456 conditions/models, 348.6s

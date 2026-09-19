@@ -1,0 +1,834 @@
+{
+  "status": "completed",
+  "stage": "full",
+  "partial": false,
+  "config_sha256": "f3f190e9a26bc96544f393a62673ff518c543018da23acdb50aed9409c224469",
+  "phase2_config_sha256": "980993c490b41e9793164c1d9bbfa54f728606fff281e07486e7af2fc41ddda7",
+  "started_at": "2026-09-19T08:13:10.297237+00:00",
+  "finished_at": "2026-09-19T08:14:47.356712+00:00",
+  "counts": {
+    "phase2_snr_summary": 120,
+    "phase2_snr_seed_effects": 600,
+    "effect_plane": 684,
+    "effect_plane_seed_values": 3420,
+    "pareto": 8,
+    "pareto_seed_values": 40
+  },
+  "sources": [
+    {
+      "path": "phase2/src/common.py",
+      "bytes": 17164,
+      "sha256": "f91839c42214f4ee95edde6a2805b80e8a4068aec4366a24d87dab50802fcbfb"
+    },
+    {
+      "path": "phase2/src/generate_phase2_noise.py",
+      "bytes": 27598,
+      "sha256": "66f84da60a3889960ae0c0ba5884388f5c462ec4c75f6a9337431b12dcf0c9b2"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/evaluate.py",
+      "bytes": 12337,
+      "sha256": "5271e3803393188f9c6c643e3d24ce6aeacdf08ead5cad98eec3e840d7b142d9"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/models.py",
+      "bytes": 5863,
+      "sha256": "53f5858562f4535cebca888776885846af9c442cf3e709a47eecd91407f40ed7"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/train.py",
+      "bytes": 23184,
+      "sha256": "b082292d91776c5b4fb6e19db922d7ef6c73f8cde64317a8b43dbfcd256272ca"
+    },
+    {
+      "path": "phase2/src/evaluate_phase2.py",
+      "bytes": 32230,
+      "sha256": "0651b99af1991424b074f3af12681f72a2679b81796cd022a738fb614ce504db"
+    },
+    {
+      "path": "phase2/src/statistics_phase2.py",
+      "bytes": 42925,
+      "sha256": "eee7257c4198fc210a3f4822d1cca2719b54316c907808453c68a032475f8063"
+    },
+    {
+      "path": "phase2/configs/phase2_main.yaml",
+      "bytes": 4620,
+      "sha256": "ed83bbebf04fa0fc5cfdd6a1cb0ed5546140747a45b929f99e51f0627a5ca3be"
+    },
+    {
+      "path": "phase2/results/logs/full/evaluation_protocol.json",
+      "bytes": 38065,
+      "sha256": "155e1ba462a68da590fcce0e2631bf2501fd2557f453949bd3b7730442546cc9"
+    },
+    {
+      "path": "phase2/results/test_inputs/full/manifest.json",
+      "bytes": 2502662,
+      "sha256": "e15c6d71d55444149d916fcf724a062bfdc2f2be118569255aef9abeff2384df"
+    },
+    {
+      "path": "phase2/results/tables/full/metrics.csv",
+      "bytes": 107370552,
+      "sha256": "f0256226bbce1b3d928e0fe27aade251882bb7938121639df0a345a70e4c7d88"
+    },
+    {
+      "path": "phase2/results/tables/full/metrics_columns.json",
+      "bytes": 1984,
+      "sha256": "186f14c4036ca7b596da2fbe672a6590626d6913c6fe943559dbd3a874f6994e"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/supplemental_statistics.py",
+      "bytes": 36942,
+      "sha256": "c89248306ed90355c69c5dd986e2e28159fab4c58f3bfede5f0494eea0ce1f98"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/statistics.py",
+      "bytes": 35165,
+      "sha256": "38468d59c7dc383935890e830e9fe6659daefc8a14efb1b7cf76a018e6a2466a"
+    },
+    {
+      "path": "phase2/results/tables/full/calibration_bins.csv",
+      "bytes": 394620,
+      "sha256": "f35307bb830759af86df7c29f35befd4a27c6c50968f1f8737a1220bd48d37e0"
+    },
+    {
+      "path": "phase2/results/logs/full/prediction_manifest.json",
+      "bytes": 25590659,
+      "sha256": "3b2623b5dcc68c16c44b1dbea27eec5b530972a856a5768b157cc628a2ceec2e"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/cohort.npz",
+      "bytes": 128750,
+      "sha256": "d9f751f0aad846f0f18a8a93b4e0699fed797b39da9b499f9c690a8606d1b618"
+    },
+    {
+      "path": "phase2/results/test_inputs/full/cohort.npz",
+      "bytes": 15526,
+      "sha256": "f26ad9056ba3c23e9a6a81ed21c0c4545320cb1f0a92912f56c6b8413e45e8fa"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/patient_draws.npy",
+      "bytes": 15016128,
+      "sha256": "295179b3aa31dc71a97781fff3eaa11aa947b3d671ae80eb9194fa65098a9a2f"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/clean_only/resnet/seed_17/best.pt",
+      "bytes": 6754240,
+      "sha256": "5783e91dd4180ecae404f3de919b18999739969c06ca0f8bb9268cf788fc0462"
+    },
+    {
+      "path": "phase2/results/logs/full/clean_only/resnet/seed_17/best_checkpoint_clean_validation.npz",
+      "bytes": 57195,
+      "sha256": "9c96d633b9fd6f82c57bf9ef3d7b0a020ae1685c02b37e24dc4409957073d5da"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/independent_rms/resnet/seed_17/best.pt",
+      "bytes": 6754368,
+      "sha256": "9c707adf985191b3df6856aeba1f8726c4653b5882cf3054963b75a72033bd95"
+    },
+    {
+      "path": "phase2/results/logs/full/independent_rms/resnet/seed_17/best_checkpoint_clean_validation.npz",
+      "bytes": 57284,
+      "sha256": "b96fe93e1458f015c38a567c2be81a819dce92d3a267c1663d6418b3c24a310d"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/electrode/resnet/seed_17/best.pt",
+      "bytes": 6754304,
+      "sha256": "378032a6627c7bd70fc8bddcd8e5c8f47c1c897410ba9ea567349bdbbd6f2da8"
+    },
+    {
+      "path": "phase2/results/logs/full/electrode/resnet/seed_17/best_checkpoint_clean_validation.npz",
+      "bytes": 57296,
+      "sha256": "e5ebe0f979c94bc238963650e6debb088c112e6a18bd0de3fbb2e456c99d9f72"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/mixed/resnet/seed_17/best.pt",
+      "bytes": 6754368,
+      "sha256": "bcb351491df1dc59448da5f8e448fe488edbdbd74e3c3703849070132d0a2260"
+    },
+    {
+      "path": "phase2/results/logs/full/mixed/resnet/seed_17/best_checkpoint_clean_validation.npz",
+      "bytes": 57330,
+      "sha256": "412e3cfe178a6ce7dd17cbca56a2128208ec8cff7a61dcab2b309a8fd09a89fe"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/clean_only/resnet/seed_29/best.pt",
+      "bytes": 6754176,
+      "sha256": "a840ec85324434e11a5881c2241f81471acfc2a9e778f38e4104de0e7fe1016f"
+    },
+    {
+      "path": "phase2/results/logs/full/clean_only/resnet/seed_29/best_checkpoint_clean_validation.npz",
+      "bytes": 57120,
+      "sha256": "c9fa9e4386769abc4233b03c0ff872c5197c426faeab69c36b40c7f1784aecbf"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/independent_rms/resnet/seed_29/best.pt",
+      "bytes": 6754304,
+      "sha256": "9e2eef70f4836e315dcd12b275e633ad6748cd12dcd55343f05546140189e73e"
+    },
+    {
+      "path": "phase2/results/logs/full/independent_rms/resnet/seed_29/best_checkpoint_clean_validation.npz",
+      "bytes": 57101,
+      "sha256": "d4d1c0cddaea14452b5af4c4e60247fc898eb33affc2e8d07672dfa873ef3b26"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/electrode/resnet/seed_29/best.pt",
+      "bytes": 6754240,
+      "sha256": "cfd9a2c6daf96b8840f920ca380b44d4be9cb8fd547c945271b263100a6e976a"
+    },
+    {
+      "path": "phase2/results/logs/full/electrode/resnet/seed_29/best_checkpoint_clean_validation.npz",
+      "bytes": 57041,
+      "sha256": "a6c0394d9023101f5019030b7beb1d2f6099d553270f31cec43b071f4cd08369"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/mixed/resnet/seed_29/best.pt",
+      "bytes": 6754240,
+      "sha256": "ea56edadd62ff1041771df288f77a55993bd461ab5d57dc6e879ca4eba470878"
+    },
+    {
+      "path": "phase2/results/logs/full/mixed/resnet/seed_29/best_checkpoint_clean_validation.npz",
+      "bytes": 57075,
+      "sha256": "6d33ec28f16c474fde7cbd87dcc2290bbbbb824fbe103c714b675077b2ba1b20"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/clean_only/resnet/seed_43/best.pt",
+      "bytes": 6754112,
+      "sha256": "560dcaca563e1c2018efb67a9b30f5db68e5d6f774c1c6d6c2219d3043d47831"
+    },
+    {
+      "path": "phase2/results/logs/full/clean_only/resnet/seed_43/best_checkpoint_clean_validation.npz",
+      "bytes": 57175,
+      "sha256": "de3b813657923ab82eface1fadb4a58654f907daceca3c5b57df893991c59d07"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/independent_rms/resnet/seed_43/best.pt",
+      "bytes": 6754240,
+      "sha256": "0cf115678a1fac707103392196d248586b539a89566a069be8420fda63cb1f2c"
+    },
+    {
+      "path": "phase2/results/logs/full/independent_rms/resnet/seed_43/best_checkpoint_clean_validation.npz",
+      "bytes": 57150,
+      "sha256": "e61e4d47d7eb0a58b516b6fae01ab25d3f9445f75cb225e0fe9ec15e7169d6b8"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/electrode/resnet/seed_43/best.pt",
+      "bytes": 6754240,
+      "sha256": "8c89dc06276083e83fb07896d8b8c7138203990bfbcf1666369f38d01631b75d"
+    },
+    {
+      "path": "phase2/results/logs/full/electrode/resnet/seed_43/best_checkpoint_clean_validation.npz",
+      "bytes": 57074,
+      "sha256": "5c9797552dbe5eb860161e02117e80599e8d773357d8fbee0e79dfd5aa6884a9"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/mixed/resnet/seed_43/best.pt",
+      "bytes": 6754240,
+      "sha256": "a4e1f9c77114a0cb5d6122e380ffd65af03802316409ab31e7818a2d52d114b8"
+    },
+    {
+      "path": "phase2/results/logs/full/mixed/resnet/seed_43/best_checkpoint_clean_validation.npz",
+      "bytes": 57261,
+      "sha256": "0a52a2584a436afded3e424856ee7588043584713cde387e238104eb29135d9d"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/clean_only/resnet/seed_101/best.pt",
+      "bytes": 6754176,
+      "sha256": "c28b82435c69c8009bc8de13310a238d3d4de82fc753b5700790a1cf31bf15b2"
+    },
+    {
+      "path": "phase2/results/logs/full/clean_only/resnet/seed_101/best_checkpoint_clean_validation.npz",
+      "bytes": 57143,
+      "sha256": "2dcf313c37b3f131a86caf3f6a83d075361691a2ca3cc63dad76cee3224a9a4e"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/independent_rms/resnet/seed_101/best.pt",
+      "bytes": 6754304,
+      "sha256": "0f5c1302086cee088de465e158fb27a6f9754df1df8c33ef9150e20228a15a50"
+    },
+    {
+      "path": "phase2/results/logs/full/independent_rms/resnet/seed_101/best_checkpoint_clean_validation.npz",
+      "bytes": 57170,
+      "sha256": "23ffecf1b7a5224881242cd2407833189ea669440166e4dd14de48f2e9a8a5b1"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/electrode/resnet/seed_101/best.pt",
+      "bytes": 6754240,
+      "sha256": "c9831962be1d4c755fc68d1572c5d490defc157c40879aa6d0ff0df350594386"
+    },
+    {
+      "path": "phase2/results/logs/full/electrode/resnet/seed_101/best_checkpoint_clean_validation.npz",
+      "bytes": 57168,
+      "sha256": "f5747a56870ab89a5a8f02ae666b10322ac9e87f7d5e484a473295cd8e20ae84"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/mixed/resnet/seed_101/best.pt",
+      "bytes": 6754304,
+      "sha256": "957af81beb4db225e6cfff5e86d4e3c5743baa2e5975d7a9e8f94b83a96c865c"
+    },
+    {
+      "path": "phase2/results/logs/full/mixed/resnet/seed_101/best_checkpoint_clean_validation.npz",
+      "bytes": 57455,
+      "sha256": "b3251e56b289131839151f8002755385a039fbc31bdac0d7dbe383aaa569f7d5"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/clean_only/resnet/seed_202/best.pt",
+      "bytes": 6754176,
+      "sha256": "bb2478ab0d0a1958e5b3be8c23877c3d61eeb64498721e0a868376c091750a31"
+    },
+    {
+      "path": "phase2/results/logs/full/clean_only/resnet/seed_202/best_checkpoint_clean_validation.npz",
+      "bytes": 57233,
+      "sha256": "708b28350b98629560d6eaa79937b7cbe46501fecd82319b4b04d1338562d9a1"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/independent_rms/resnet/seed_202/best.pt",
+      "bytes": 6754304,
+      "sha256": "204d4ee7ea1061a38c0b9e9f7b0239bec72e88f585d761e79be6de3a7b8c8114"
+    },
+    {
+      "path": "phase2/results/logs/full/independent_rms/resnet/seed_202/best_checkpoint_clean_validation.npz",
+      "bytes": 57166,
+      "sha256": "d4ffaa8d703bfb1b9fd876e67d8a8870fae089cd5cd01421e8ad18317f371a81"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/electrode/resnet/seed_202/best.pt",
+      "bytes": 6754240,
+      "sha256": "bc319e72e16c9af61d668a088e8b4fd1fea8977cefaae8c8997e24ce4ee48380"
+    },
+    {
+      "path": "phase2/results/logs/full/electrode/resnet/seed_202/best_checkpoint_clean_validation.npz",
+      "bytes": 57261,
+      "sha256": "1e625cb91a65df8ec3edc6cdbc178de3fd04f0fbf0f836afcd6f5b5f706b70d0"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/mixed/resnet/seed_202/best.pt",
+      "bytes": 6754240,
+      "sha256": "0bc15f7734f0ee38d7787e482c703f26fd222dba7d249dc3f965fbfdfc7cb950"
+    },
+    {
+      "path": "phase2/results/logs/full/mixed/resnet/seed_202/best_checkpoint_clean_validation.npz",
+      "bytes": 57127,
+      "sha256": "deef6043d6d1fe589fa17edad76f8edb960c168f43f21a96c7928f13c24dc5dc"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/clean_only/tcn/seed_17/best.pt",
+      "bytes": 1770848,
+      "sha256": "d443e4260543a68f295ed878d05688b43cf5c2fbce28032fa639e1c3a128db58"
+    },
+    {
+      "path": "phase2/results/logs/full/clean_only/tcn/seed_17/best_checkpoint_clean_validation.npz",
+      "bytes": 57177,
+      "sha256": "88fefffaf367bd8d58b1dbbbd0b2e973f24fc743892f57ec6219464af3a16337"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/independent_rms/tcn/seed_17/best.pt",
+      "bytes": 1770976,
+      "sha256": "44ddd93dde65388772a7e07f848bf20f939bee3a5cf7e6fe3017efe39c165caa"
+    },
+    {
+      "path": "phase2/results/logs/full/independent_rms/tcn/seed_17/best_checkpoint_clean_validation.npz",
+      "bytes": 57142,
+      "sha256": "65496a072bdc3cbabd9ecd1e22e18db16339f3a1078f066b00993f29275d2ebd"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/electrode/tcn/seed_17/best.pt",
+      "bytes": 1770976,
+      "sha256": "280f2a3a2c737b634b2b8bef68f606bed3863bcb01cc57df9df72abcd57b4889"
+    },
+    {
+      "path": "phase2/results/logs/full/electrode/tcn/seed_17/best_checkpoint_clean_validation.npz",
+      "bytes": 57162,
+      "sha256": "dc1911a13a0be9f72118db373bc522ee52dcb4ff6cc23c86de5a9a75782a83db"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/mixed/tcn/seed_17/best.pt",
+      "bytes": 1770976,
+      "sha256": "426e680571d78a287b2e05ef463a00e3ad4e4399e32b01870a53fbe57dfe434e"
+    },
+    {
+      "path": "phase2/results/logs/full/mixed/tcn/seed_17/best_checkpoint_clean_validation.npz",
+      "bytes": 57177,
+      "sha256": "9d1261919e4bc2ce12f3d587b124d4717cc7cb70b1dbed074f937a2446be7ca4"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/clean_only/tcn/seed_29/best.pt",
+      "bytes": 1770784,
+      "sha256": "75f5615f1e64a6fd18e19d073e1f3d07de63de834317168aeae570eac1d35084"
+    },
+    {
+      "path": "phase2/results/logs/full/clean_only/tcn/seed_29/best_checkpoint_clean_validation.npz",
+      "bytes": 57101,
+      "sha256": "ca620c2f1bb465d47a0114948518d4bcffbe2c4f8059b3fb4e5c8fa9fcc5710d"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/independent_rms/tcn/seed_29/best.pt",
+      "bytes": 1770912,
+      "sha256": "406f36d911f337074d9c32c81750ac4fde923e90d8c090002ce72b385f10c27a"
+    },
+    {
+      "path": "phase2/results/logs/full/independent_rms/tcn/seed_29/best_checkpoint_clean_validation.npz",
+      "bytes": 57114,
+      "sha256": "738f492e3cee9c056d1fdc62b3ba96be806d84773ecb1c830d1b81cb1b96479e"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/electrode/tcn/seed_29/best.pt",
+      "bytes": 1770848,
+      "sha256": "af96c85faf54a8b94ffa90c6d7a639ce7cf3da3a7055aa1a2c57262326957995"
+    },
+    {
+      "path": "phase2/results/logs/full/electrode/tcn/seed_29/best_checkpoint_clean_validation.npz",
+      "bytes": 57068,
+      "sha256": "49206757a7390db67eb1fd991ddb0a978c25dd8e225f99f31ecb4235579fc249"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/mixed/tcn/seed_29/best.pt",
+      "bytes": 1770912,
+      "sha256": "f617ab5bd965b78e59e1ce474417b415ec55b2b616f04d27c3780a120d66851f"
+    },
+    {
+      "path": "phase2/results/logs/full/mixed/tcn/seed_29/best_checkpoint_clean_validation.npz",
+      "bytes": 57111,
+      "sha256": "88aeff9f7e636cbd1f2e22958fb388ec97b0ce143d11beccb13f156e04a2612f"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/clean_only/tcn/seed_43/best.pt",
+      "bytes": 1770784,
+      "sha256": "65726250ab0aec693451d33cb35b33a279945986f715bde755bab95806a43fbd"
+    },
+    {
+      "path": "phase2/results/logs/full/clean_only/tcn/seed_43/best_checkpoint_clean_validation.npz",
+      "bytes": 57115,
+      "sha256": "55b42a5b17816966d06e399a43b3d72b89ebcfc5638edb34c07672ab8f681428"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/independent_rms/tcn/seed_43/best.pt",
+      "bytes": 1770912,
+      "sha256": "b4e96072ca08c0aa773bb32e8d236967a92ccaf3fadab25ba51456b191fa9696"
+    },
+    {
+      "path": "phase2/results/logs/full/independent_rms/tcn/seed_43/best_checkpoint_clean_validation.npz",
+      "bytes": 57087,
+      "sha256": "438f77983b7f6feaa8c52a0b18aee1f9faaab93e7201cef40ce61135548681b7"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/electrode/tcn/seed_43/best.pt",
+      "bytes": 1770848,
+      "sha256": "aac7a3f3daef2a038c38c282adc6d534c80449fd1780f883ace2f61a3446039b"
+    },
+    {
+      "path": "phase2/results/logs/full/electrode/tcn/seed_43/best_checkpoint_clean_validation.npz",
+      "bytes": 57096,
+      "sha256": "690143197a061ab6704e363faf453d13e3c9b46409bf5e8530b6d07111fbaaf6"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/mixed/tcn/seed_43/best.pt",
+      "bytes": 1770848,
+      "sha256": "f8c0783e43efddaa856a6f7512e87fe44b01161e7e69dbd9b1eec95f4a5d9b55"
+    },
+    {
+      "path": "phase2/results/logs/full/mixed/tcn/seed_43/best_checkpoint_clean_validation.npz",
+      "bytes": 57092,
+      "sha256": "871495394cab48f5cba2022f038eb05b2b10e0639b5844d11964c82e9b87c45a"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/clean_only/tcn/seed_101/best.pt",
+      "bytes": 1770848,
+      "sha256": "48b9f35a392079a5ffd68fb425acb0e183b8b2bd4cab12863767c5c3effec002"
+    },
+    {
+      "path": "phase2/results/logs/full/clean_only/tcn/seed_101/best_checkpoint_clean_validation.npz",
+      "bytes": 57108,
+      "sha256": "b6ca914c7dfa9c1c3355b291fc60703465827f1c61f10b8420fd05b8b001546d"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/independent_rms/tcn/seed_101/best.pt",
+      "bytes": 1770976,
+      "sha256": "0888dd31726fc5eea46cb692f1979b84af98b7444199909f09c8b7b2d27a976e"
+    },
+    {
+      "path": "phase2/results/logs/full/independent_rms/tcn/seed_101/best_checkpoint_clean_validation.npz",
+      "bytes": 57103,
+      "sha256": "82f39f883b16ea3d1f28100e93872cb5b4fb43f6a7842265055816ece1612da1"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/electrode/tcn/seed_101/best.pt",
+      "bytes": 1770912,
+      "sha256": "dc4a7a53cbb5db05d4580adf5371887acbf4534b4a0fad39432f1db40b6dcaf4"
+    },
+    {
+      "path": "phase2/results/logs/full/electrode/tcn/seed_101/best_checkpoint_clean_validation.npz",
+      "bytes": 57083,
+      "sha256": "6320204a1689fa470ea0ea025c4119251910cc5017e715bf6b2036d621732509"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/mixed/tcn/seed_101/best.pt",
+      "bytes": 1770912,
+      "sha256": "bd46a5b02cabb7f92d991500b061f92eace20b20f17b0a0672e8b7fa3094cbc6"
+    },
+    {
+      "path": "phase2/results/logs/full/mixed/tcn/seed_101/best_checkpoint_clean_validation.npz",
+      "bytes": 57062,
+      "sha256": "2b28be79845bedb01f87d0ad2c3a1273fdcb4f5be344b69102218230f19360ca"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/clean_only/tcn/seed_202/best.pt",
+      "bytes": 1770784,
+      "sha256": "5413311215904bf7635cd05f61a0f19f992ec107ecf978edbfc322c09ffdd607"
+    },
+    {
+      "path": "phase2/results/logs/full/clean_only/tcn/seed_202/best_checkpoint_clean_validation.npz",
+      "bytes": 57108,
+      "sha256": "afbfbead06e46f8e946ca76faca716282d3874f94c1045879098df4795940ed3"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/independent_rms/tcn/seed_202/best.pt",
+      "bytes": 1770912,
+      "sha256": "d1f73aaf47a9f36842c1d2eb675228a96413ea460a65579d2c43d57c1859848d"
+    },
+    {
+      "path": "phase2/results/logs/full/independent_rms/tcn/seed_202/best_checkpoint_clean_validation.npz",
+      "bytes": 57160,
+      "sha256": "a731e885f69bc4d8934b7ee2d743103a79aee515d10380494c31c0455ee45823"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/electrode/tcn/seed_202/best.pt",
+      "bytes": 1770848,
+      "sha256": "a002b4693a1ee471050c99cf137688bef6418dd4cc75c1fc871934a08a948bdb"
+    },
+    {
+      "path": "phase2/results/logs/full/electrode/tcn/seed_202/best_checkpoint_clean_validation.npz",
+      "bytes": 57187,
+      "sha256": "bc5803ddf7a29ae31ec1927264a3bf949acf1ce3c493bf56d08ccc2a69478a66"
+    },
+    {
+      "path": "phase2/results/checkpoints/full/mixed/tcn/seed_202/best.pt",
+      "bytes": 1770848,
+      "sha256": "868618501a0333fa0ad27f0087a7facdeee268d00780515793e27817d8913295"
+    },
+    {
+      "path": "phase2/results/logs/full/mixed/tcn/seed_202/best_checkpoint_clean_validation.npz",
+      "bytes": 57215,
+      "sha256": "eb226e589ee20d4245097bb6fcabd1961b3b2887d58259be7ab2071a1ceb369c"
+    },
+    {
+      "path": "phase2/results/tables/full/prediction_provenance.csv",
+      "bytes": 15598339,
+      "sha256": "f15c2c7ba5c1c52afb0a7ab1c8a2e7d1152fc3992776e159e2e703dfe4e82559"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/clean_only__resnet__seed_17.npy",
+      "bytes": 35922080,
+      "sha256": "fe22438a3e6140dcc7b7747eb943a6fb87bd6610a7b965ab798ada09bbd65d0b"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/independent_rms__resnet__seed_17.npy",
+      "bytes": 35922080,
+      "sha256": "e5b6149448547a5b2255e6fa90e172a2568b403ead0891ebf65549664331871a"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/electrode__resnet__seed_17.npy",
+      "bytes": 35922080,
+      "sha256": "98932f22c4a31fd4a2c8a424728a342cc15df371e7e75d3e87bb662983cc49f3"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/mixed__resnet__seed_17.npy",
+      "bytes": 35922080,
+      "sha256": "7d937c75b744098ca5e1db8a55288eefafc46bcd15ce39822bbbbf2f95f2f3ba"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/clean_only__resnet__seed_29.npy",
+      "bytes": 35922080,
+      "sha256": "76519e06a4c186e7f566a63c5e14e8ead6b8a6cb05eaf05264dd68c728fa567b"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/independent_rms__resnet__seed_29.npy",
+      "bytes": 35922080,
+      "sha256": "ef12c817df9d19bdcca15d1b0e2041b021064920e439be55b075663304fcd10c"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/electrode__resnet__seed_29.npy",
+      "bytes": 35922080,
+      "sha256": "4605132a2c6065bed6662929d5fa08217de64a627c1e005e30db8fe55712a656"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/mixed__resnet__seed_29.npy",
+      "bytes": 35922080,
+      "sha256": "af51768d47ccc9007aed42aad9905b4b4bffe94cc8c44bbf6addafbd07912c64"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/clean_only__resnet__seed_43.npy",
+      "bytes": 35922080,
+      "sha256": "ffefb839d54af819e917c081401c704d19a2b5011d0950272433be5023cb9e7a"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/independent_rms__resnet__seed_43.npy",
+      "bytes": 35922080,
+      "sha256": "0d4f47cf974c9ddb2c9074aa3c251c502a492fe3492a239527a9afe7420e76b7"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/electrode__resnet__seed_43.npy",
+      "bytes": 35922080,
+      "sha256": "f216ac0f90385727ee072e1a51755ad87395255165a90765d07b68a2b168f832"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/mixed__resnet__seed_43.npy",
+      "bytes": 35922080,
+      "sha256": "f018fabb105349a050693904117d1a7e850d9c24ff15c72de2e93c94848703a8"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/clean_only__resnet__seed_101.npy",
+      "bytes": 35922080,
+      "sha256": "e95a1b2a8e80fddc43d6540a97c8f231fba670ffa8b7101434b1d971b39328d8"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/independent_rms__resnet__seed_101.npy",
+      "bytes": 35922080,
+      "sha256": "9ed2fc5c107a19fec82d29800f042b6df3090e0469f9214c2f4a5280ab6f07c2"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/electrode__resnet__seed_101.npy",
+      "bytes": 35922080,
+      "sha256": "4b30e2115cddcae044eaa52e605328d705950c1d55a54ea138330a219f990a0c"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/mixed__resnet__seed_101.npy",
+      "bytes": 35922080,
+      "sha256": "f202baccd0ecd89c73b31b67db3e322ca1c17ef54e14695376f804653b3edb2b"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/clean_only__resnet__seed_202.npy",
+      "bytes": 35922080,
+      "sha256": "749328a5ec0d2d3e69d5ac1f8bd8cf291812187a76192870f37189a6cc021cfa"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/independent_rms__resnet__seed_202.npy",
+      "bytes": 35922080,
+      "sha256": "aae1862a4e7c50140a7f9afb0bafe2b529816c5aa6f0cc38fdd129ec9d385242"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/electrode__resnet__seed_202.npy",
+      "bytes": 35922080,
+      "sha256": "8c8e1f38c27fae9afb22c7217cd94a2d4a01686e4658bd1507533d0362dfdf64"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/mixed__resnet__seed_202.npy",
+      "bytes": 35922080,
+      "sha256": "1416efec9b2ba215122bf2d6f654025570221a9c3fa08838ec0d3e41b3e15675"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/clean_only__tcn__seed_17.npy",
+      "bytes": 35922080,
+      "sha256": "8767489664c5743c258efc5e3ec06bac5e1765644d4d3ed10f4d28a548029d84"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/independent_rms__tcn__seed_17.npy",
+      "bytes": 35922080,
+      "sha256": "9ae5491099580c325e493da5c6f60c5e7be3c370735fb7002a49abe8551273a4"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/electrode__tcn__seed_17.npy",
+      "bytes": 35922080,
+      "sha256": "69eb91291ac212be17dd95fdb19c8df043c44298a08e412d45f98452f0ff574f"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/mixed__tcn__seed_17.npy",
+      "bytes": 35922080,
+      "sha256": "f130a2ab632b082e8f735c25b693b922ea83575954e7dd7f659da0c2614dd457"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/clean_only__tcn__seed_29.npy",
+      "bytes": 35922080,
+      "sha256": "597841337b45a68c71d169554f9a91c443112e7ded91c17d88c70643abdbadfc"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/independent_rms__tcn__seed_29.npy",
+      "bytes": 35922080,
+      "sha256": "691768e53513371712555bc62f99b2c8c7ce1f870eb45e1b52cc6beb92fe52f3"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/electrode__tcn__seed_29.npy",
+      "bytes": 35922080,
+      "sha256": "cd95eec40affdac7af0a9c3f35096d4918f61f51dde3c3f89deed6e51d1c7f4e"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/mixed__tcn__seed_29.npy",
+      "bytes": 35922080,
+      "sha256": "bf52eb8d142157254f3a33ab73ae96b27a3cdf243a8e0ea546bf1c7e37021e5d"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/clean_only__tcn__seed_43.npy",
+      "bytes": 35922080,
+      "sha256": "53e00e33941ae1aa170af8afa74c797ee675942f74010d6006864576f4b8b8ea"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/independent_rms__tcn__seed_43.npy",
+      "bytes": 35922080,
+      "sha256": "731fda26cbb025d89e88b788a21064d5a691d061f74c5338b946b675324b9cc5"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/electrode__tcn__seed_43.npy",
+      "bytes": 35922080,
+      "sha256": "38f7fc9711b1de9654fa191354c470bc5d10c1e83fee753a08c815accd674c37"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/mixed__tcn__seed_43.npy",
+      "bytes": 35922080,
+      "sha256": "98c3077f0f786b41847428c20e5a2b395d8d8cae05b9d1bc82602fa0af3a4920"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/clean_only__tcn__seed_101.npy",
+      "bytes": 35922080,
+      "sha256": "240f307cee225d3b02501d840c4e69af917cad9cbfb3752c8e50efc6e98e859f"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/independent_rms__tcn__seed_101.npy",
+      "bytes": 35922080,
+      "sha256": "6b4d401a04515e99066d62f2272e820c2cbe2ea73e24dbcc197ea5312225e0c6"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/electrode__tcn__seed_101.npy",
+      "bytes": 35922080,
+      "sha256": "268522579e0b60adad26c189d7dac5532e0bd1ded650cad544fbc164ff7e7b0f"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/mixed__tcn__seed_101.npy",
+      "bytes": 35922080,
+      "sha256": "f512789795175af74c21bc7487975cbd9bb0f9fb3d7f382e0dfd4fabef49e881"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/clean_only__tcn__seed_202.npy",
+      "bytes": 35922080,
+      "sha256": "b4893a362d845d1110ce520e87c3f7a7ee25d71e824968426538bfe6ef724dda"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/independent_rms__tcn__seed_202.npy",
+      "bytes": 35922080,
+      "sha256": "95662219391b2c808319221e5c260cd94b45bf6dff5f9e516403c848ae6c9075"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/electrode__tcn__seed_202.npy",
+      "bytes": 35922080,
+      "sha256": "3e8a5e7cd617b83d2aab1e151829ea5f1c9b50d7c0296bc156a20d72653887f2"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/mixed__tcn__seed_202.npy",
+      "bytes": 35922080,
+      "sha256": "3e3090b76ab75256ef3515bd32f6b4187e4c9ed34a4a6136da72ce1d83afb068"
+    },
+    {
+      "path": "phase2/results/logs/full/statistics_protocol.json",
+      "bytes": 40005,
+      "sha256": "1f0a583696a895b818c1ec7e28b777f79ab00a5f8c8f10eadce73081c4c471ec"
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/manifest.json",
+      "bytes": 31273,
+      "sha256": "e25f35c7d8027409dc90c9c41bd36c86cf695e9cadd8edaccb617a5e10903c37"
+    },
+    {
+      "path": "phase2/results/logs/preregistration.json",
+      "bytes": 19424,
+      "sha256": "e02955442bbb9c5692f85500809969a5d84d98f85f1a169959890c86b4b29d8c"
+    }
+  ],
+  "implementation": [
+    {
+      "path": "methodology_supplement/analyse_existing.py",
+      "bytes": 32472,
+      "sha256": "dacc414d435b09f6c4fdb72d7b58a7e2f62567cb77f3301b986df14397784994"
+    },
+    {
+      "path": "methodology_supplement/bootstrap.py",
+      "bytes": 3595,
+      "sha256": "7114edceb10dd0dd2abfbaaff7cd17cccfe5cd9fd7e48c446cd779196bfbe444"
+    },
+    {
+      "path": "methodology_supplement/common.py",
+      "bytes": 5032,
+      "sha256": "daa3f53259c8c231e26cf36de4963f4d7f77a34c30d517309aeea9fca57f9c26"
+    }
+  ],
+  "freeze_config_sha256": "f3f190e9a26bc96544f393a62673ff518c543018da23acdb50aed9409c224469",
+  "outputs": [
+    {
+      "path": "methodology_supplement/results/tables/full/phase2_snr_summary.csv",
+      "bytes": 25247,
+      "sha256": "77331705360affb027ef8d454f5280cdb5ee9a173d8bb5b83776cd429fc0dafa"
+    },
+    {
+      "path": "methodology_supplement/results/tables/full/phase2_snr_seed_effects.csv",
+      "bytes": 69603,
+      "sha256": "6166076ba8c92f6624b79df5b0db23ee4addca30909c50569d5d5e58ef68bc21"
+    },
+    {
+      "path": "methodology_supplement/results/tables/full/effect_plane.csv",
+      "bytes": 163683,
+      "sha256": "d531a8465d18a2e4de244576b26dfbe3c5eda1d81cabc42365f4b2c0940786d5"
+    },
+    {
+      "path": "methodology_supplement/results/tables/full/effect_plane_seed_values.csv",
+      "bytes": 535382,
+      "sha256": "4de9eb8d9a6010b2605e54594c56d1c886fe121170662a2d787e41fd9ed8d678"
+    },
+    {
+      "path": "methodology_supplement/results/tables/full/pareto.csv",
+      "bytes": 1863,
+      "sha256": "873419fceaba9fd90ee490cf77594f0a92474297b4d9e405ddd96441e97af8aa"
+    },
+    {
+      "path": "methodology_supplement/results/tables/full/pareto_seed_values.csv",
+      "bytes": 6884,
+      "sha256": "a6c785882e8d4cc48acef61d77b66c2e0a5451e3c180542b7aba8ff80422c158"
+    }
+  ],
+  "cache": {
+    "computed": 2000,
+    "reused": 0
+  },
+  "coverage": {
+    "training_seeds": [
+      17,
+      29,
+      43,
+      101,
+      202
+    ],
+    "fixed_noise_seeds": [
+      20001,
+      20002,
+      20003,
+      20004,
+      20005
+    ],
+    "gaussian_combinations": 21,
+    "gaussian_plane_rows": 630,
+    "nstdb_sensitivity_rows": 54,
+    "archived_checkpoints": 40,
+    "extra_prediction_distributions": 2000,
+    "bootstrap_replicates": 2000
+  },
+  "estimands": {
+    "snr": "Within-checkpoint electrode minus independent_rms; metrics then fixed-noise mean",
+    "plane_x": "Within phase two, clean_only checkpoint performance under electrode minus independent_rms, at identical kind/combo/SNR, averaging fixed noise realizations within each training seed.",
+    "plane_y": "Same-seed augmented-strategy minus clean_only performance, both under electrode tests at the identical kind/combo/SNR.",
+    "pareto_x": "clean_only clean AUROC minus strategy clean AUROC; positive is worse",
+    "pareto_y": "strategy minus clean_only joint-unseen retention, each ratio formed within checkpoint/patient draw before averaging",
+    "pareto_better_direction": "upper_left",
+    "ece_positive": "worse calibration"
+  },
+  "uncertainty": {
+    "training": "Sample SD, ddof=1, of paired within-training-seed effects after equal averaging of fixed noises and, for the randomized family, fixed matrices. Phase one has 3 training seeds; phase two has 5; never pool the phases.",
+    "patient": "Shared 2000 patient-cluster draws, retaining every record of selected patients. Fixed-checkpoint/fixed-noise/fixed-matrix conditional 95% percentile CIs, not joint uncertainty. Full-cohort draws are reused byte-for-byte from phase two after exact cohort identity checks.",
+    "noise": "Separate descriptive SD over noise realizations after averaging training seeds; not extra independent training runs.",
+    "invalid": "Missing-class AUROC draws remain NaN and are counted, never redrawn; macro AUROC requires all five classes. F1 uses the frozen thresholds and zero_division=0. ECE is the existing macro classwise positive-probability equal-width 15-bin ECE.",
+    "joint": false
+  },
+  "limitations": [
+    "Descriptive/exploratory only; no new p-values or change to the original six-comparison Holm family.",
+    "Patient intervals condition on fixed checkpoints and five fixed noise realizations; not joint uncertainty.",
+    "A4 Gaussian rows (kind=bandpass) and confounded NSTDB sensitivity rows (kind=bw/ma/em) must be displayed separately.",
+    "A4 axes share a clean_only baseline; no regression or causal interpretation is warranted.",
+    "Pareto dominance uses point estimates within architecture only, not statistically significant dominance or a clinical acceptability margin.",
+    "No new inference or training; macro-AUROC tensors are reused and only per-case F1/ECE patient distributions are newly calculated."
+  ]
+}

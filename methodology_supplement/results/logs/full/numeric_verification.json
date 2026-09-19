@@ -1,0 +1,73 @@
+{
+  "status": "passed",
+  "stage": "full",
+  "config_sha256": "f3f190e9a26bc96544f393a62673ff518c543018da23acdb50aed9409c224469",
+  "noise": {
+    "diagnostic_rows": 310752,
+    "max_final_residual_snr_error_db": 2.3123837067373645e-07,
+    "max_final_residual_lead_rms_relative_error": 1.4745453047228284e-07,
+    "matrices": 8,
+    "original_generator_records_checked": [
+      0,
+      1,
+      2,
+      1079,
+      2156,
+      2157
+    ],
+    "original_generator_noise_seeds": [
+      8128,
+      101,
+      202,
+      303,
+      404,
+      505
+    ],
+    "original_generator_arrays_exact": 72,
+    "source_fft_df_hz": 0.01,
+    "lower_band_source_frequency_hz": 0.05,
+    "ten_second_observed_fft_df_hz": 0.1
+  },
+  "bridge": {
+    "cells": 222,
+    "records_per_cell": 2158,
+    "all_passed": true,
+    "maximum_probability_difference": 3.8743019104003906e-07,
+    "minimum_label_agreement": 1.0,
+    "table": {
+      "path": "methodology_supplement/results/tables/full/legacy_bridge.csv",
+      "bytes": 54505,
+      "sha256": "65b2989efa38c738f791c5d2c3d4e72cf93e1b3b030b342c500a485a112927ed"
+    }
+  },
+  "new_summary": {
+    "rows_checked": 930,
+    "maximum_point_or_sd_error": 7.626603265586951e-09,
+    "exact_prespecified_grid": true,
+    "detailed_variability_rows": {
+      "new_seed_effects": 2790,
+      "new_noise_effects": 16740,
+      "random_matrix_effects": 900
+    }
+  },
+  "reused_summary": {
+    "counts": {
+      "phase2_snr_summary": 120,
+      "phase2_snr_seed_effects": 600,
+      "effect_plane": 684,
+      "effect_plane_seed_values": 3420,
+      "pareto": 8,
+      "pareto_seed_values": 40
+    },
+    "plane_paired_axes_independently_checked": 1368,
+    "pareto_paired_axes_independently_checked": 16,
+    "better_direction": "upper_left",
+    "curve_rows_independently_checked": 120,
+    "curve_maximum_point_or_sd_error": 2.1553760602482583e-09,
+    "curve_auc_intervals_independently_checked": 40
+  },
+  "checked_at": "2026-09-19T08:59:50.944834+00:00",
+  "protected_files_unchanged": 41,
+  "dgx_overlap_seconds": 76.330887,
+  "technical_only": false
+}

@@ -1,0 +1,40 @@
+{
+  "status": "completed",
+  "stage": "smoke",
+  "config_sha256": "f3f190e9a26bc96544f393a62673ff518c543018da23acdb50aed9409c224469",
+  "n_cases": 325,
+  "n_checkpoints": 6,
+  "n_predictions": 1950,
+  "expected_predictions": 1950,
+  "dgx_concurrent_processes": 2,
+  "dgx_worker_pids": [
+    680451,
+    680452
+  ],
+  "dgx_overlap_seconds": 7.668131,
+  "spark_clean_predictions_identical": true,
+  "input_hashes_shared": true,
+  "ledger": {
+    "path": "methodology_supplement/results/tables/smoke/evaluation_index.csv",
+    "bytes": 1654168,
+    "sha256": "a715b8f070be5a6dea4aa37940c0339ba56e10cc6c4b52bdbdfdb8feb96c8106"
+  },
+  "worker_reports": [
+    {
+      "path": "methodology_supplement/results/logs/smoke/inference_resnet_0.json",
+      "bytes": 15194,
+      "sha256": "fb7bf9aac089c7504a88a4d4833a64d745b4f6bf96f010d19abd077ff1ec1e53"
+    },
+    {
+      "path": "methodology_supplement/results/logs/smoke/inference_resnet_1.json",
+      "bytes": 15013,
+      "sha256": "78955a75e9f39edda0153bebf13a41bef09ef510960990eb71e403d058741711"
+    },
+    {
+      "path": "methodology_supplement/results/logs/smoke/inference_tcn_0.json",
+      "bytes": 22922,
+      "sha256": "e22832f6c53ced845b9b28a343ede6e76da4a9e371d849e04348baca5d5ac204"
+    }
+  ],
+  "freeze_sha256": "77ea3ab681ffca456dc674118f32439a80799e423bb9bd9d6f137e14098e203e"
+}

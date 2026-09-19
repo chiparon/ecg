@@ -1,0 +1,9 @@
+
+COMMAND: E:\Eproject\ECG\phase1_ecg_robustness\.venv\Scripts\python.exe -u -m src.plotting --config configs/phase1_smoke.yaml
+Saved 11 scientific figures; manifest: E:\Eproject\ECG\phase1_ecg_robustness\results\figures\smoke\figure_manifest.json
+
+COMMAND: E:\Eproject\ECG\phase1_ecg_robustness\.venv\Scripts\python.exe -u -m src.plotting --config configs/phase1_smoke.yaml
+Saved 11 scientific figures; manifest: E:\Eproject\ECG\phase1_ecg_robustness\results\figures\smoke\figure_manifest.json
+
+COMMAND: E:\Eproject\ECG\phase1_ecg_robustness\.venv\Scripts\python.exe -u -m src.plotting --config configs/phase1_smoke.yaml
+Saved 11 scientific figures; manifest: E:\Eproject\ECG\phase1_ecg_robustness\results\figures\smoke\figure_manifest.json

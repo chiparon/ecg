@@ -1,0 +1,288 @@
+{
+  "status": "passed",
+  "sealed_at": "2026-09-19T09:28:18.761630+00:00",
+  "stage": "full",
+  "config_sha256": "f3f190e9a26bc96544f393a62673ff518c543018da23acdb50aed9409c224469",
+  "completed_deliverables": [
+    "A-matrix ablation and structure diagnostics",
+    "Phase-one and phase-two SNR-by-structure curves",
+    "Four-band sensitivity",
+    "Evaluation-effect versus training-effect plane",
+    "Clean-cost versus joint-unseen-retention-gain Pareto"
+  ],
+  "cohort": {
+    "ecg_records": 2158,
+    "patients": 1877,
+    "common_patient_bootstrap_draws": 2000
+  },
+  "execution": {
+    "new_training": false,
+    "conditions": 325,
+    "existing_checkpoints": 6,
+    "prediction_units": 1950,
+    "resnet_location": "DGX Spark (spark-3082; SSH alias dgx6)",
+    "resnet_workers": 2,
+    "resnet_process_overlap_seconds": 76.330887,
+    "overlap_definition": "Recorded process wall-clock overlap, not a measurement of CUDA-kernel overlap",
+    "tcn_location": "local RTX 4070 Laptop GPU",
+    "tcn_workers": 1,
+    "worker_reports": [
+      {
+        "path": "methodology_supplement/results/logs/full/inference_resnet_0.json",
+        "bytes": 15187,
+        "sha256": "839484d98431faca9680d5f68bbe7b99ef61132b0bfb30a4b0d00409dd7c1242"
+      },
+      {
+        "path": "methodology_supplement/results/logs/full/inference_resnet_1.json",
+        "bytes": 15006,
+        "sha256": "cf526c45600ce4880f37290a14c6f2eca3881ed8a2d261e403f52636d8b4a5be"
+      },
+      {
+        "path": "methodology_supplement/results/logs/full/inference_tcn_0.json",
+        "bytes": 22918,
+        "sha256": "6706dcc86dd262c5729edc75bedcfef9c88d63838eb970d3f9af8616275b0255"
+      }
+    ]
+  },
+  "publication": {
+    "figures": 15,
+    "figure_files": 45,
+    "formats": [
+      "PNG",
+      "PDF",
+      "SVG"
+    ],
+    "traceable_report_numeric_cells": 600,
+    "report": {
+      "path": "methodology_supplement/results/reports/full/minimal_five_report.html",
+      "bytes": 113871,
+      "sha256": "4db06e2635cf5d38ce95caecf088f6ce70f6da5c5e09aa11ac688010a466efaa"
+    },
+    "report_manifest": {
+      "path": "methodology_supplement/results/reports/full/manifest.json",
+      "bytes": 130637,
+      "sha256": "ea020fc8fc3274916b768d5792a3e3ce85f6cea2e11f941740b50462e85b186b"
+    },
+    "figure_manifest": {
+      "path": "methodology_supplement/results/figures/full/manifest.json",
+      "bytes": 19628,
+      "sha256": "f96887de83924f43dfcd55fc8261de0624569d7f083fdcef947dbad345d36f15"
+    },
+    "standalone_html_verified": true
+  },
+  "verification": {
+    "legacy_bridge_cells": 222,
+    "maximum_bridge_probability_difference": 3.8743019104003906e-07,
+    "minimum_bridge_label_agreement": 1.0,
+    "new_summary_rows": 930,
+    "reused_summary_counts": {
+      "phase2_snr_summary": 120,
+      "phase2_snr_seed_effects": 600,
+      "effect_plane": 684,
+      "effect_plane_seed_values": 3420,
+      "pareto": 8,
+      "pareto_seed_values": 40
+    },
+    "noise_diagnostic_rows": 310752,
+    "noise_error_scope": "Maxima across every configured SNR for each base file; correlation and spectral diagnostics use actual 0-dB residuals",
+    "max_actual_residual_snr_error_db": 2.3123837067373645e-07,
+    "max_actual_residual_lead_rms_relative_error": 1.4745453047228284e-07,
+    "original_generator_arrays_exact": 72,
+    "original_generator_comparison_scope": "Six documented records x six fixed noise seeds x two structures, not an all-array elementwise baseline comparison",
+    "protected_files_verified_unchanged": 41
+  },
+  "regression_checks": {
+    "command": "phase1_ecg_robustness/.venv/Scripts/python.exe -m unittest discover -s methodology_supplement/tests -v",
+    "passed": 2,
+    "failed": 0,
+    "test_names": [
+      "test_missing_class_draw_is_retained_without_losing_f1_or_ece",
+      "test_patient_draw_matches_repeating_every_selected_record"
+    ],
+    "test_source": {
+      "path": "methodology_supplement/tests/test_bootstrap.py",
+      "bytes": 2556,
+      "sha256": "cd10df29a0ac66a2804991569a9b4dab01e6deb74e3649784ffe34e4e2d40678"
+    }
+  },
+  "evidence": [
+    {
+      "path": "methodology_supplement/results/logs/full/numeric_verification.json",
+      "bytes": 2161,
+      "sha256": "b02bf87fa490b8c8fe478c219411acb3e67acef2fafa1c91a37b27d80779dd39"
+    },
+    {
+      "path": "methodology_supplement/results/logs/full/publication_verification.json",
+      "bytes": 861,
+      "sha256": "c98311bbaf80825a32e5b7753adf643458535d489f2312452c29322219962116"
+    },
+    {
+      "path": "methodology_supplement/results/logs/full/visual_verification.json",
+      "bytes": 2827,
+      "sha256": "de1aaff0499369b5297374d8ff7b9aa303f17ca737a8ace8839b14613eb10f75"
+    },
+    {
+      "path": "methodology_supplement/results/logs/full/evaluation_merge.json",
+      "bytes": 1378,
+      "sha256": "c0af83b5b500b5eb819ef347f57017d4824532260a920d7a328780e94d1a895c"
+    },
+    {
+      "path": "methodology_supplement/results/logs/full/new_statistics.json",
+      "bytes": 811017,
+      "sha256": "98127abfd98e7b94b49cf1321ebb7e608b77414477d94a4eae9f8fe33e01ab52"
+    },
+    {
+      "path": "methodology_supplement/results/logs/full/reused_statistics.json",
+      "bytes": 35784,
+      "sha256": "2fff49d5f880065c437a5538911c2808df30581316a84a2c993a8e0967f491b8"
+    },
+    {
+      "path": "methodology_supplement/results/logs/full/freeze.json",
+      "bytes": 14117,
+      "sha256": "2ddfa520317435ba6fb0e54342ca61c83629e89dc3b0926e018eaba9b14b97aa"
+    },
+    {
+      "path": "methodology_supplement/results/logs/smoke/smoke_verification.json",
+      "bytes": 1407,
+      "sha256": "ebce52d42740416affdfd081e743ba18fe8399cc09aaa7c2d63b78399442de36"
+    }
+  ],
+  "visual_artifacts": [
+    {
+      "path": "methodology_supplement/results/reports/full/report_desktop.png",
+      "bytes": 204009,
+      "sha256": "1eb6260b87199a17b10cd7f367d95ba09a2ea81c85a370eb3ca0987420fa283b"
+    },
+    {
+      "path": "methodology_supplement/results/reports/full/report_pareto.png",
+      "bytes": 112523,
+      "sha256": "0fc4a9c3f7796e3a3f85b9ac0a6202d3ed0ddc013c32a0e99b4a7af02c574b95"
+    },
+    {
+      "path": "methodology_supplement/results/reports/full/report_narrow.png",
+      "bytes": 83439,
+      "sha256": "7a26532d6704f8bd37f25727e90a3bc06f0b96f3c311d65df76f2cd43666d5b5"
+    },
+    {
+      "path": "methodology_supplement/results/reports/full/report_responsive.png",
+      "bytes": 84257,
+      "sha256": "47f0eed05292a53423963fe59ed231c2e9d42d72400e9cbb8bb0727d8a5c6270"
+    },
+    {
+      "path": "methodology_supplement/results/reports/full/figure_contact_sheet.png",
+      "bytes": 929981,
+      "sha256": "efdc211f0684032708cd81314df8d2b858535a72dfeaab15a68761492d3dbd1c"
+    },
+    {
+      "path": "methodology_supplement/results/reports/full/report_offline.png",
+      "bytes": 204009,
+      "sha256": "1eb6260b87199a17b10cd7f367d95ba09a2ea81c85a370eb3ca0987420fa283b"
+    }
+  ],
+  "source_inventory": [
+    {
+      "path": "methodology_supplement/__init__.py",
+      "bytes": 88,
+      "sha256": "72bf2727c512361d0763427ae9bb1d3ad46bb086e4965542eaec4fd35e349f38"
+    },
+    {
+      "path": "methodology_supplement/common.py",
+      "bytes": 5032,
+      "sha256": "daa3f53259c8c231e26cf36de4963f4d7f77a34c30d517309aeea9fca57f9c26"
+    },
+    {
+      "path": "methodology_supplement/prepare.py",
+      "bytes": 10253,
+      "sha256": "4b32addd1408b9278ff9b43261d76baccc2413b067f486436b247d597104e355"
+    },
+    {
+      "path": "methodology_supplement/bootstrap.py",
+      "bytes": 3595,
+      "sha256": "7114edceb10dd0dd2abfbaaff7cd17cccfe5cd9fd7e48c446cd779196bfbe444"
+    },
+    {
+      "path": "methodology_supplement/noise.py",
+      "bytes": 33322,
+      "sha256": "c5cb68ea5da8f74bba53fd8f19fc0769da3525a766a64772bb5c2f1f4e07b3c8"
+    },
+    {
+      "path": "methodology_supplement/infer.py",
+      "bytes": 23766,
+      "sha256": "39523c88ae6d7d3e7d2d30e08a2d8a562bf99b5979118d62f8e868543b925272"
+    },
+    {
+      "path": "methodology_supplement/analyse_new.py",
+      "bytes": 27227,
+      "sha256": "78c3ad1aebce0ba481eee41fc0e65a4740d96f5ad60fd6cccacb5a4aebaf6016"
+    },
+    {
+      "path": "methodology_supplement/analyse_existing.py",
+      "bytes": 32472,
+      "sha256": "dacc414d435b09f6c4fdb72d7b58a7e2f62567cb77f3301b986df14397784994"
+    },
+    {
+      "path": "methodology_supplement/merge.py",
+      "bytes": 7122,
+      "sha256": "011010f4900e6f18e2656db2d6f12bb723a075a0c6e78476615d83756f02cc87"
+    },
+    {
+      "path": "methodology_supplement/deploy.py",
+      "bytes": 6477,
+      "sha256": "362efefd24a5276e4d32849b9e20dfd643c2b58f34145d474ebb36d0e2ede041"
+    },
+    {
+      "path": "methodology_supplement/plot.py",
+      "bytes": 26635,
+      "sha256": "b1dc863538a7428226d34214c49ec2e296d2bc45b8ace92ccda26fcf4bd7c008"
+    },
+    {
+      "path": "methodology_supplement/report.py",
+      "bytes": 29200,
+      "sha256": "bf56bdc960ecb3ddeea6cb8c81c42299f2c1186eb233152a66f8c0cf62987432"
+    },
+    {
+      "path": "methodology_supplement/verify.py",
+      "bytes": 24462,
+      "sha256": "f6a3b77c634df5dc05e7e9799e683183f1cc8a1f73a2dfbbb8d36d2cbd3a7455"
+    },
+    {
+      "path": "methodology_supplement/tests/test_bootstrap.py",
+      "bytes": 2556,
+      "sha256": "cd10df29a0ac66a2804991569a9b4dab01e6deb74e3649784ffe34e4e2d40678"
+    },
+    {
+      "path": "methodology_supplement/configs/minimal_five.json",
+      "bytes": 7692,
+      "sha256": "f5b8afaebab6f14ca2878c278ddf4f52801f68f1f2c921c2cfb144c7353e3ca1"
+    },
+    {
+      "path": "methodology_supplement/implementation_contract.json",
+      "bytes": 10514,
+      "sha256": "ad65ec9893c06dcc0016a7190f937857e2e3606ccfeafc72731bbb1cc4ddf8b3"
+    }
+  ],
+  "cleanup": {
+    "removed_owned_previews": [
+      "methodology_supplement/results/figures/smoke",
+      "methodology_supplement/results/figures/full/reused_preview.json"
+    ],
+    "preview_service": "methods-report-view intentionally stopped after browser verification",
+    "managed_report_tabs": "released",
+    "scientific_smoke_and_full_inputs_predictions_statistics": "retained",
+    "original_phase1_phase2_and_sparktest": "not modified"
+  },
+  "interpretation_boundaries": [
+    "Patient intervals are conditional on fixed trained models, noise realizations and matrices; training-seed SD is separate",
+    "Descriptive exploratory comparisons only; no added p-values or changes to the original six Holm tests",
+    "Five random matrices are fixed restricted signed-wiring controls, not an arbitrary random-matrix population",
+    "NSTDB is a separate confounded sensitivity analysis",
+    "Pareto is upper-left-better point-estimate dominance, not statistical or clinical dominance"
+  ],
+  "excluded_scope": [
+    "B4",
+    "frequency-dependent covariance matching",
+    "500-Hz experiments",
+    "external datasets",
+    "new augmentation training"
+  ]
+}

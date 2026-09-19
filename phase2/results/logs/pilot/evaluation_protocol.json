@@ -1,0 +1,422 @@
+{
+  "status": "completed",
+  "stage": "pilot",
+  "config_sha256": "980993c490b41e9793164c1d9bbfa54f728606fff281e07486e7af2fc41ddda7",
+  "matrix_sha256": "4f852acd9c5a4f7b35a207f5078d70f842de3077d648716950a66502951bfe9d",
+  "evaluation_fingerprint": "a11bb5e00039d24f0f13600bae1b2044ad11f55fed022136705b31ebcfaaa0db",
+  "manifest": {
+    "path": "phase2/results/test_inputs/pilot/manifest.json",
+    "bytes": 207150,
+    "sha256": "fe4ebcfa647bc278d713522b3143b73791dea0eb8aaf9a1584edd80d4c26f9f3"
+  },
+  "sources": [
+    {
+      "path": "phase2/src/common.py",
+      "bytes": 17164,
+      "sha256": "f91839c42214f4ee95edde6a2805b80e8a4068aec4366a24d87dab50802fcbfb"
+    },
+    {
+      "path": "phase2/src/generate_phase2_noise.py",
+      "bytes": 27598,
+      "sha256": "66f84da60a3889960ae0c0ba5884388f5c462ec4c75f6a9337431b12dcf0c9b2"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/evaluate.py",
+      "bytes": 12337,
+      "sha256": "5271e3803393188f9c6c643e3d24ce6aeacdf08ead5cad98eec3e840d7b142d9"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/models.py",
+      "bytes": 5863,
+      "sha256": "53f5858562f4535cebca888776885846af9c442cf3e709a47eecd91407f40ed7"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/train.py",
+      "bytes": 23184,
+      "sha256": "b082292d91776c5b4fb6e19db922d7ef6c73f8cde64317a8b43dbfcd256272ca"
+    },
+    {
+      "path": "phase2/src/evaluate_phase2.py",
+      "bytes": 32230,
+      "sha256": "0651b99af1991424b074f3af12681f72a2679b81796cd022a738fb614ce504db"
+    }
+  ],
+  "execution": {
+    "python": "3.10.19",
+    "numpy": "2.2.6",
+    "sklearn": "1.7.2",
+    "torch": "2.5.1+cu121",
+    "cuda": "12.1",
+    "device": "cuda",
+    "device_name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "batch_size": 128,
+    "threads": 4,
+    "deterministic_algorithms": true,
+    "cudnn_deterministic": true,
+    "cudnn_allow_tf32": false,
+    "matmul_allow_tf32": false
+  },
+  "data_identity": {
+    "phase1_cache": {
+      "metadata_labels_provenance_sha256": "c38bba16c1091288e4187f4e9cbb34adc9419ca081620755df3730a136ba8e12",
+      "signals_bytes": 473520128,
+      "signals_mtime_ns": 1789574836305406100,
+      "data_dir": "E:\\Eproject\\ECG\\phase1_ecg_robustness\\data\\processed_pilot"
+    },
+    "split_sha256": {
+      "train": "6aa5f8f339dccd212dd738f1488c65730ee525ad9d6c8d3b5e2b08ff8e88011b",
+      "val": "e8f51153f7ea3d51997841eabea842db098af504332ab81bbf111eb5f77b8e36",
+      "test": "8e3d16410f155316c4d1f51607e76f2b43ac82a7e2884f17cacd3f172aa59dee"
+    },
+    "scale_mv": 0.2254905871835822,
+    "scale_source_sha256": "ae1af3b6f26199f28384c78976613cac3bbf3b73d74995a9807710c0bc2f274f",
+    "class_order": [
+      "NORM",
+      "MI",
+      "STTC",
+      "CD",
+      "HYP"
+    ],
+    "lead_order": [
+      "I",
+      "II",
+      "III",
+      "aVR",
+      "aVL",
+      "aVF",
+      "V1",
+      "V2",
+      "V3",
+      "V4",
+      "V5",
+      "V6"
+    ]
+  },
+  "scale_mv": 0.2254905871835822,
+  "cohort_sha256": {
+    "indices": "8e3d16410f155316c4d1f51607e76f2b43ac82a7e2884f17cacd3f172aa59dee",
+    "y": "8a2972d21cb361deea9a73cab62cd202ce6b2c8e796484bb998995068848fc72",
+    "ids": "ae7a9bffbe06981df3c7012914ce03ac50c15960b1d1446dbb6f950f70b7ec0d",
+    "patient_ids": "6b54ae32a6efac16164f1ca5cbfe0fe191270b578d8fe9baf55bb6776906c530"
+  },
+  "n_records": 1000,
+  "n_patients": 896,
+  "n_cases": 118,
+  "n_checkpoints": 8,
+  "expected_evaluations": 944,
+  "case_major": true,
+  "same_normalized_float32_tensor_all_checkpoints": true,
+  "thresholds_source": "best_checkpoint_clean_validation_once",
+  "threshold_comparison": ">=",
+  "undefined_denominators": "NaN; strict five-class macro; per-class denominator and undefined class counts saved",
+  "calibration_pooling": "Descriptive repeated-condition bins, not independent patients or an ensemble",
+  "checkpoints": [
+    {
+      "strategy": "clean_only",
+      "model": "resnet",
+      "seed": 17,
+      "checkpoint": {
+        "path": "phase2/results/checkpoints/pilot/clean_only/resnet/seed_17/best.pt",
+        "bytes": 6707008,
+        "sha256": "40436b0f8bb760abf62d61c6ec845f8d82186e589259f323ee8d42b0fa2e673c"
+      },
+      "validation_predictions": {
+        "path": "phase2/results/logs/pilot/clean_only/resnet/seed_17/best_checkpoint_clean_validation.npz",
+        "bytes": 28060,
+        "sha256": "64e580fa269a269503b99188d4beb3e4b20e37ae19c07e715c8d5cdad29ad339"
+      },
+      "thresholds": [
+        0.5785814523696899,
+        0.09797659516334534,
+        0.2717679440975189,
+        0.6302394270896912,
+        0.2429163157939911
+      ]
+    },
+    {
+      "strategy": "independent_rms",
+      "model": "resnet",
+      "seed": 17,
+      "checkpoint": {
+        "path": "phase2/results/checkpoints/pilot/independent_rms/resnet/seed_17/best.pt",
+        "bytes": 6707136,
+        "sha256": "fe842b18df15ec7075f8d413d922ac364c4be7594e7cd1538371183f03f4545a"
+      },
+      "validation_predictions": {
+        "path": "phase2/results/logs/pilot/independent_rms/resnet/seed_17/best_checkpoint_clean_validation.npz",
+        "bytes": 28021,
+        "sha256": "ca1bee34745d14a4f972681fb000bf751370665e5ad13f7f6e0f0ecf77fb7aa3"
+      },
+      "thresholds": [
+        0.40996214747428894,
+        0.18886053562164307,
+        0.26981446146965027,
+        0.655295193195343,
+        0.3000583350658417
+      ]
+    },
+    {
+      "strategy": "electrode",
+      "model": "resnet",
+      "seed": 17,
+      "checkpoint": {
+        "path": "phase2/results/checkpoints/pilot/electrode/resnet/seed_17/best.pt",
+        "bytes": 6707136,
+        "sha256": "4d6d9da7119c3a3d499d9aebca5e706cb0a7253625210609e326fd6f0aaccaf7"
+      },
+      "validation_predictions": {
+        "path": "phase2/results/logs/pilot/electrode/resnet/seed_17/best_checkpoint_clean_validation.npz",
+        "bytes": 28214,
+        "sha256": "613c2667a1109d674fbcdd896979cba8befb00f02b69468ccf4328b2b97fe8df"
+      },
+      "thresholds": [
+        0.8207894563674927,
+        0.2712329924106598,
+        0.13545288145542145,
+        0.11255067586898804,
+        0.14035022258758545
+      ]
+    },
+    {
+      "strategy": "mixed",
+      "model": "resnet",
+      "seed": 17,
+      "checkpoint": {
+        "path": "phase2/results/checkpoints/pilot/mixed/resnet/seed_17/best.pt",
+        "bytes": 6707136,
+        "sha256": "3d0671513ed1769d05d533eb437ae53bcbd6b563712ca2871b2e9a84db175c4e"
+      },
+      "validation_predictions": {
+        "path": "phase2/results/logs/pilot/mixed/resnet/seed_17/best_checkpoint_clean_validation.npz",
+        "bytes": 28170,
+        "sha256": "cba33a44b195c8ded044dcca72e214efeb508959f5159ab53e9cd6171bbe1644"
+      },
+      "thresholds": [
+        0.8172151446342468,
+        0.06227445229887962,
+        0.35509347915649414,
+        0.26664838194847107,
+        0.3826168179512024
+      ]
+    },
+    {
+      "strategy": "clean_only",
+      "model": "tcn",
+      "seed": 17,
+      "checkpoint": {
+        "path": "phase2/results/checkpoints/pilot/clean_only/tcn/seed_17/best.pt",
+        "bytes": 1723680,
+        "sha256": "7177f54d25e650e0763a94d1f2862da58793b24ecbbaeb6a181f60210ec39435"
+      },
+      "validation_predictions": {
+        "path": "phase2/results/logs/pilot/clean_only/tcn/seed_17/best_checkpoint_clean_validation.npz",
+        "bytes": 27897,
+        "sha256": "c181409130056e0019db26706fc96a9094f468803e14bbb79a1e5e8cd75dfdda"
+      },
+      "thresholds": [
+        0.3721347451210022,
+        0.2628905475139618,
+        0.4946695864200592,
+        0.38819584250450134,
+        0.2232603132724762
+      ]
+    },
+    {
+      "strategy": "independent_rms",
+      "model": "tcn",
+      "seed": 17,
+      "checkpoint": {
+        "path": "phase2/results/checkpoints/pilot/independent_rms/tcn/seed_17/best.pt",
+        "bytes": 1723808,
+        "sha256": "fdaf179fc1cebac76edf0d8908e01d6ad6137bafd85ae3642c5948d3a81fb529"
+      },
+      "validation_predictions": {
+        "path": "phase2/results/logs/pilot/independent_rms/tcn/seed_17/best_checkpoint_clean_validation.npz",
+        "bytes": 27877,
+        "sha256": "4ca12be8b0ee1940dc5edd01c92a83a195bd24f43bbccae8ed6f9e72a262ca89"
+      },
+      "thresholds": [
+        0.47991663217544556,
+        0.24668997526168823,
+        0.538497805595398,
+        0.2755782902240753,
+        0.2388647198677063
+      ]
+    },
+    {
+      "strategy": "electrode",
+      "model": "tcn",
+      "seed": 17,
+      "checkpoint": {
+        "path": "phase2/results/checkpoints/pilot/electrode/tcn/seed_17/best.pt",
+        "bytes": 1723744,
+        "sha256": "3d60d1a1027fcec3538c6f638e1fecfb40e984db5cf846fbd9b493c3cedda5f3"
+      },
+      "validation_predictions": {
+        "path": "phase2/results/logs/pilot/electrode/tcn/seed_17/best_checkpoint_clean_validation.npz",
+        "bytes": 27896,
+        "sha256": "657f10539462c300e71ab447ce08450f2f96b1ec8007610972da2a5303d50838"
+      },
+      "thresholds": [
+        0.35351184010505676,
+        0.31756889820098877,
+        0.4708561897277832,
+        0.32440850138664246,
+        0.22954705357551575
+      ]
+    },
+    {
+      "strategy": "mixed",
+      "model": "tcn",
+      "seed": 17,
+      "checkpoint": {
+        "path": "phase2/results/checkpoints/pilot/mixed/tcn/seed_17/best.pt",
+        "bytes": 1723744,
+        "sha256": "1fd670e7cbaed941b10d1e3208c394602848c770a65f75ba6c709251e3edf625"
+      },
+      "validation_predictions": {
+        "path": "phase2/results/logs/pilot/mixed/tcn/seed_17/best_checkpoint_clean_validation.npz",
+        "bytes": 27878,
+        "sha256": "7f8b4c94c5b10f5f388e95a821ea5322f9ff33232fd463eb55355c6172720298"
+      },
+      "thresholds": [
+        0.3130784034729004,
+        0.2603265643119812,
+        0.5079578757286072,
+        0.3327764570713043,
+        0.21759559214115143
+      ]
+    }
+  ],
+  "elapsed_seconds": 246.75085149996448,
+  "n_evaluations": 944,
+  "reused_predictions": 0,
+  "n_undefined_metrics": {
+    "macro_auroc": 0,
+    "macro_ap": 0,
+    "macro_f1": 0,
+    "micro_auroc": 0,
+    "micro_ap": 0,
+    "micro_f1": 0,
+    "brier": 0,
+    "ece": 0,
+    "mean_loss": 0,
+    "mean_confidence": 0,
+    "mean_entropy": 0,
+    "clean_agreement": 0,
+    "probability_shift": 0,
+    "auroc_NORM": 0,
+    "ap_NORM": 0,
+    "f1_NORM": 0,
+    "auroc_MI": 0,
+    "ap_MI": 0,
+    "f1_MI": 0,
+    "auroc_STTC": 0,
+    "ap_STTC": 0,
+    "f1_STTC": 0,
+    "auroc_CD": 0,
+    "ap_CD": 0,
+    "f1_CD": 0,
+    "auroc_HYP": 0,
+    "ap_HYP": 0,
+    "f1_HYP": 0,
+    "tp_NORM": 0,
+    "tp_MI": 0,
+    "tp_STTC": 0,
+    "tp_CD": 0,
+    "tp_HYP": 0,
+    "tn_NORM": 0,
+    "tn_MI": 0,
+    "tn_STTC": 0,
+    "tn_CD": 0,
+    "tn_HYP": 0,
+    "fp_NORM": 0,
+    "fp_MI": 0,
+    "fp_STTC": 0,
+    "fp_CD": 0,
+    "fp_HYP": 0,
+    "fn_NORM": 0,
+    "fn_MI": 0,
+    "fn_STTC": 0,
+    "fn_CD": 0,
+    "fn_HYP": 0,
+    "sensitivity_NORM": 0,
+    "sensitivity_denominator_NORM": 0,
+    "sensitivity_MI": 0,
+    "sensitivity_denominator_MI": 0,
+    "sensitivity_STTC": 0,
+    "sensitivity_denominator_STTC": 0,
+    "sensitivity_CD": 0,
+    "sensitivity_denominator_CD": 0,
+    "sensitivity_HYP": 0,
+    "sensitivity_denominator_HYP": 0,
+    "macro_sensitivity": 0,
+    "macro_sensitivity_n_defined": 0,
+    "macro_sensitivity_n_undefined": 0,
+    "specificity_NORM": 0,
+    "specificity_denominator_NORM": 0,
+    "specificity_MI": 0,
+    "specificity_denominator_MI": 0,
+    "specificity_STTC": 0,
+    "specificity_denominator_STTC": 0,
+    "specificity_CD": 0,
+    "specificity_denominator_CD": 0,
+    "specificity_HYP": 0,
+    "specificity_denominator_HYP": 0,
+    "macro_specificity": 0,
+    "macro_specificity_n_defined": 0,
+    "macro_specificity_n_undefined": 0,
+    "ppv_NORM": 0,
+    "ppv_denominator_NORM": 0,
+    "ppv_MI": 0,
+    "ppv_denominator_MI": 0,
+    "ppv_STTC": 0,
+    "ppv_denominator_STTC": 0,
+    "ppv_CD": 0,
+    "ppv_denominator_CD": 0,
+    "ppv_HYP": 0,
+    "ppv_denominator_HYP": 0,
+    "macro_ppv": 0,
+    "macro_ppv_n_defined": 0,
+    "macro_ppv_n_undefined": 0,
+    "npv_NORM": 0,
+    "npv_denominator_NORM": 0,
+    "npv_MI": 0,
+    "npv_denominator_MI": 0,
+    "npv_STTC": 0,
+    "npv_denominator_STTC": 0,
+    "npv_CD": 0,
+    "npv_denominator_CD": 0,
+    "npv_HYP": 0,
+    "npv_denominator_HYP": 0,
+    "macro_npv": 0,
+    "macro_npv_n_defined": 0,
+    "macro_npv_n_undefined": 0
+  },
+  "outputs": {
+    "metrics": {
+      "path": "phase2/results/tables/pilot/metrics.csv",
+      "bytes": 1449424,
+      "sha256": "01f0ef9e31cda25db3e0ed94a3c97028082249efa16fd19908c9194d24020cb8"
+    },
+    "metric_columns": {
+      "path": "phase2/results/tables/pilot/metrics_columns.json",
+      "bytes": 1984,
+      "sha256": "186f14c4036ca7b596da2fbe672a6590626d6913c6fe943559dbd3a874f6994e"
+    },
+    "calibration_bins": {
+      "path": "phase2/results/tables/pilot/calibration_bins.csv",
+      "bytes": 75244,
+      "sha256": "78b9aae9fece675f4dd0bfee9b5ac557e01feeb3f603da68a1c7ce272d8e1518"
+    },
+    "predictions": {
+      "path": "phase2/results/logs/pilot/prediction_manifest.json",
+      "bytes": 352807,
+      "sha256": "99f2db8da7977f5f1bb69846b0a709a62f71dba4ef9fd02d487ac6d24ff24623"
+    }
+  },
+  "full_cartesian_coverage": true,
+  "input_hash_invariance": true,
+  "cohort_label_invariance": true,
+  "threshold_invariance": true
+}

@@ -1,0 +1,14 @@
+noise-cache: pilot bandpass base=20001 combo=RA_LA_LL cases=10 elapsed=5.2s
+noise-cache: pilot bandpass base=20001 combo=V1 cases=19 elapsed=7.6s
+noise-cache: pilot bandpass base=20001 combo=V2 cases=28 elapsed=9.9s
+noise-cache: pilot bandpass base=20001 combo=V3 cases=37 elapsed=12.2s
+noise-cache: pilot bandpass base=20001 combo=V4 cases=46 elapsed=15.1s
+noise-cache: pilot bandpass base=20001 combo=V5 cases=55 elapsed=17.7s
+noise-cache: pilot bandpass base=20001 combo=V6 cases=64 elapsed=20.3s
+noise-cache: pilot bandpass base=20001 combo=RA_LA cases=73 elapsed=22.9s
+noise-cache: pilot bandpass base=20001 combo=LA_LL cases=82 elapsed=25.4s
+noise-cache: pilot bandpass base=20001 combo=RA_LL cases=91 elapsed=28.0s
+noise-cache: pilot bandpass base=20001 combo=RA_V1 cases=100 elapsed=30.8s
+noise-cache: pilot bandpass base=20001 combo=RA_LA_V1_V6 cases=109 elapsed=33.5s
+noise-cache: pilot bandpass base=20001 combo=all cases=118 elapsed=36.1s
+noise-cache: completed pilot: 118 cases, 137 groups

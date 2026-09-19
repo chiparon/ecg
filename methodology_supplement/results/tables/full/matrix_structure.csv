@@ -1,0 +1,9 @@
+matrix_id,family,rank,right_nullity,left_nullity,mean_abs_offdiagonal_covariance,total_squared_gain
+standard,standard,8,1,4,0.2916666666666667,18.5
+limb_only,limb_only,3,6,9,0.2916666666666667,12.499999999999998
+precordial_only,precordial_only,6,3,6,0.0,6.0
+random_00,randomized,9,0,3,0.38762626262626254,18.5
+random_01,randomized,9,0,3,0.41119528619528617,18.5
+random_02,randomized,9,0,3,0.46506734006734,18.5
+random_03,randomized,9,0,3,0.45917508417508407,18.5
+random_04,randomized,9,0,3,0.40193602693602687,18.5

@@ -1,0 +1,434 @@
+{
+  "status": "completed",
+  "config": {
+    "run_name": "review_supplement",
+    "base_config": "configs/phase1_full.yaml",
+    "results_dir": "results",
+    "bootstrap": {
+      "repetitions": 2000,
+      "seed": 20260917,
+      "batch_size": 128
+    },
+    "strict_control": {
+      "condition": "marginal_shift",
+      "noise_seeds": [
+        8128,
+        101,
+        202,
+        303,
+        404,
+        505
+      ],
+      "shift_seed": 20260918,
+      "kind": "bandpass",
+      "snrs": [
+        20,
+        10,
+        0
+      ]
+    },
+    "audit": {
+      "legacy_runs": [
+        "smoke",
+        "pilot",
+        "full",
+        "pilot_noise_repeats",
+        "full_noise_repeats"
+      ],
+      "probability_tolerance": 5e-06
+    },
+    "matrix_sha256": "4f852acd9c5a4f7b35a207f5078d70f842de3077d648716950a66502951bfe9d"
+  },
+  "source_config": {
+    "run_name": "full",
+    "data_dir": "data/processed",
+    "results_dir": "results",
+    "sampling_rate": 100,
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "models": [
+      "resnet",
+      "tcn"
+    ],
+    "train": {
+      "epochs": 25,
+      "batch_size": 128,
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "train_limit": null,
+      "val_limit": null,
+      "test_limit": null,
+      "subset_seed": 2026,
+      "num_workers": 0,
+      "base_channels": 24
+    },
+    "noise": {
+      "snrs": [
+        20,
+        10,
+        0
+      ],
+      "kinds": [
+        "bandpass",
+        "bw",
+        "ma",
+        "em"
+      ],
+      "band": [
+        0.5,
+        40
+      ],
+      "seed": 8128,
+      "nstdb_dir": "data/raw/nstdb",
+      "electrodes": [
+        "RA",
+        "LA",
+        "LL",
+        "V1",
+        "V2",
+        "V3",
+        "V4",
+        "V5",
+        "V6"
+      ],
+      "electrode_snr": 10,
+      "audit_records": 128
+    },
+    "statistics": {
+      "bootstrap": 2000,
+      "permutations": 10000
+    }
+  },
+  "matrix": {
+    "schema": "ideal_wct_12x9_v1",
+    "lead_order": [
+      "I",
+      "II",
+      "III",
+      "aVR",
+      "aVL",
+      "aVF",
+      "V1",
+      "V2",
+      "V3",
+      "V4",
+      "V5",
+      "V6"
+    ],
+    "electrode_order": [
+      "RA",
+      "LA",
+      "LL",
+      "V1",
+      "V2",
+      "V3",
+      "V4",
+      "V5",
+      "V6"
+    ],
+    "values": [
+      [
+        -1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        -0.5,
+        -0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.5,
+        1.0,
+        -0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.5,
+        -0.5,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.3333333333333333,
+        -0.3333333333333333,
+        -0.3333333333333333,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.3333333333333333,
+        -0.3333333333333333,
+        -0.3333333333333333,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.3333333333333333,
+        -0.3333333333333333,
+        -0.3333333333333333,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.3333333333333333,
+        -0.3333333333333333,
+        -0.3333333333333333,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.3333333333333333,
+        -0.3333333333333333,
+        -0.3333333333333333,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        -0.3333333333333333,
+        -0.3333333333333333,
+        -0.3333333333333333,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "sha256": "4f852acd9c5a4f7b35a207f5078d70f842de3077d648716950a66502951bfe9d",
+    "hash_encoding": "UTF-8 JSON of schema/orders/values; sorted keys; compact separators"
+  },
+  "matrix_provenance_scope": "Strict artifacts store their generation hash; legacy sources are identified by checksums, not backdated matrix hashes.",
+  "inputs": {
+    "base_config": {
+      "path": "E:\\Eproject\\ECG\\phase1_ecg_robustness\\configs\\phase1_full.yaml",
+      "sha256": "7c0d4c0e322b0a762d64c10c255cbb33a192c813e02f57f4f78d3d588e7dea23"
+    },
+    "primary_metrics": {
+      "path": "E:\\Eproject\\ECG\\phase1_ecg_robustness\\results\\metrics\\full\\metrics.csv",
+      "sha256": "f382aa7dedfa7f18f619c0bd281e304590b0f1356bde1b49ce2dd8ada133150c"
+    },
+    "primary_protocol": {
+      "path": "E:\\Eproject\\ECG\\phase1_ecg_robustness\\results\\metrics\\full\\evaluation_protocol.json",
+      "sha256": "007c1770d5c05d7b7a5d21fd5f25481a67413d43c9330064903130192ef640e5"
+    },
+    "replay_metrics": {
+      "path": "E:\\Eproject\\ECG\\phase1_ecg_robustness\\results\\metrics\\full_noise_repeats\\metrics.csv",
+      "sha256": "8ef8778ade861fe5aee90e42611d7b16a474a8deaf9f279fc91b3c09c39bc8bb"
+    },
+    "replay_protocol": {
+      "path": "E:\\Eproject\\ECG\\phase1_ecg_robustness\\results\\metrics\\full_noise_repeats\\protocol.json",
+      "sha256": "75c6038b079a05756b6b3df59d5bb6139c54285bea44b7a08290d178493176d0"
+    },
+    "strict_metrics": {
+      "path": "E:\\Eproject\\ECG\\phase1_ecg_robustness\\results\\metrics\\review_supplement\\strict_metrics.csv",
+      "sha256": "a389b328e463e2373ac2317b3617551ad9801dcbadf6b3ea0dd3c4bd195d257b"
+    },
+    "strict_protocol": {
+      "path": "E:\\Eproject\\ECG\\phase1_ecg_robustness\\results\\metrics\\review_supplement\\strict_protocol.json",
+      "sha256": "cfeb25071048896f7f489617425c7d9799538445a30958d14940f1708b403d66"
+    },
+    "supplement_config": {
+      "path": "E:\\Eproject\\ECG\\phase1_ecg_robustness\\configs\\phase1_supplement.yaml",
+      "sha256": "65747244b3b5cb06299cd7fefae289b01933d4ed370312139a55635d61962c7b"
+    }
+  },
+  "checkpoint_sha256": {
+    "results\\checkpoints\\full\\resnet\\seed_17.pt": "ae1af3b6f26199f28384c78976613cac3bbf3b73d74995a9807710c0bc2f274f",
+    "results\\checkpoints\\full\\resnet\\seed_29.pt": "d88f9588b099e1dd5dddb32a3258f043ae873f62694eb9af5bcc9755ac8d2f5a",
+    "results\\checkpoints\\full\\resnet\\seed_43.pt": "d2486cf1fdf7bdb8e580e1e920522c530883a8da5246b52e2bdfa2a2d90b6cbd",
+    "results\\checkpoints\\full\\tcn\\seed_17.pt": "6ab54c8261689377c6c10f99db394501b9049ed832793c6ff2ebd827b5d95eec",
+    "results\\checkpoints\\full\\tcn\\seed_29.pt": "e95999147596689babf082839394d52f32c1e6b8b8204a588e76311861f895f9",
+    "results\\checkpoints\\full\\tcn\\seed_43.pt": "c7477dff0207ea4b9f85d3d8896a531d71c253bc3616e0bc8daa8bd7370add0b"
+  },
+  "prediction_checksums": "prediction_source_checksums.csv",
+  "n_prediction_files_checked": 924,
+  "n_records": 2158,
+  "n_patients": 1877,
+  "models": [
+    "resnet",
+    "tcn"
+  ],
+  "training_seeds": [
+    17,
+    29,
+    43
+  ],
+  "noise_seed": 8128,
+  "noise_replay_seeds": [
+    101,
+    202,
+    303,
+    404,
+    505
+  ],
+  "class_order": [
+    "NORM",
+    "MI",
+    "STTC",
+    "CD",
+    "HYP"
+  ],
+  "bootstrap": {
+    "repetitions": 2000,
+    "seed": 20260917,
+    "batch_size": 128
+  },
+  "draw_method": "NumPy default_rng PCG64 multinomial(n_patients, uniform patient probabilities); shared patient multiplicities for every model/seed/class/condition/SNR",
+  "numpy_version": "2.2.6",
+  "conditioning": "95% percentile patient-cluster CI; fixed trained models, fixed test-noise realization (base 8128); not joint patient/training/noise uncertainty",
+  "estimands": {
+    "individual_seed": "Record-level AUROC after retaining all records of sampled patients with cluster multiplicity",
+    "mean_fixed_seeds": "Arithmetic mean of three seed-specific AUROCs or paired differences inside each draw; never probability ensembling",
+    "macro": "Arithmetic mean of all five class AUROCs; undefined if any class is undefined",
+    "clean_drop": "Matched seed clean AUROC minus noisy AUROC using the same patient draw",
+    "normalized_robustness": "Noisy metric / (matched clean metric + 1e-12), following src.statistics; descriptive only",
+    "training_seed_interval": "Student-t 95% CI over the three original training seeds; SD uses ddof=1",
+    "noise_replay": "Average three fixed training-seed metrics (or paired clean drops/ratios) first, then descriptive mean and sample SD across five noise bases; no CI and no claim of 15 trainings"
+  },
+  "degeneracy": "A missing positive or negative class has NaN AUROC; no redraw and no class deletion. Percentile endpoints use finite draws; n_valid/n_invalid explicitly accompany every interval. Macro/fixed-seed means propagate invalid components.",
+  "undefined_counts": {
+    "point_estimates": 0,
+    "intervals": 0,
+    "rows_with_invalid_draws": 0
+  },
+  "intentional_scope": [
+    "Patient bootstrap uses only primary noise base8128.",
+    "Strict marginal_shift and five-noise replays exist only for bandpass/all; primary original conditions include every configured kind and SNR.",
+    "Single-electrode legacy rows are alignment/checksum validated but excluded from these all-active supplement estimands.",
+    "Clean is a reused reference, not five new clean-noise observations.",
+    "No p-values, equivalence decisions, probability ensemble, or joint uncertainty interval."
+  ],
+  "distribution_schema": {
+    "shape": [
+      2000,
+      6240
+    ],
+    "rows": "zero-based replicate_index shared with patient_bootstrap_draws.npz",
+    "columns": "distribution_index in patient_bootstrap_auroc_ci.csv",
+    "values": "AUROC or AUROC difference, including explicit NaN invalid draws",
+    "clean_thresholds_order": "model-major, then configured training_seeds; five class columns"
+  },
+  "outputs": {
+    "all_snr_seed_metric_detail.csv": {
+      "path": "E:\\Eproject\\ECG\\phase1_ecg_robustness\\results\\tables\\review_supplement\\all_snr_seed_metric_detail.csv",
+      "sha256": "036a466c61090bbc033ecf398b74b2069f805f3b223cb89abcafc58a3c133a57"
+    },
+    "primary_three_seed_mean_sd_tci.csv": {
+      "path": "E:\\Eproject\\ECG\\phase1_ecg_robustness\\results\\tables\\review_supplement\\primary_three_seed_mean_sd_tci.csv",
+      "sha256": "c79a999d3f3bdb1e7697c694d488d3379ee122608b6e0c2e52fd1da257234e93"
+    },
+    "five_noise_replay_seed_averaged_detail.csv": {
+      "path": "E:\\Eproject\\ECG\\phase1_ecg_robustness\\results\\tables\\review_supplement\\five_noise_replay_seed_averaged_detail.csv",
+      "sha256": "d53d41f9e062c14b814d9d3607e3f3e8f0764270c5e0fced4130a20026c5abb8"
+    },
+    "five_noise_replay_mean_sd.csv": {
+      "path": "E:\\Eproject\\ECG\\phase1_ecg_robustness\\results\\tables\\review_supplement\\five_noise_replay_mean_sd.csv",
+      "sha256": "c45e2d3543e1b1929a74d2055c22f6053890eb17c4d806390e2fee26a641a2ef"
+    },
+    "patient_bootstrap_auroc_ci.csv": {
+      "path": "E:\\Eproject\\ECG\\phase1_ecg_robustness\\results\\tables\\review_supplement\\patient_bootstrap_auroc_ci.csv",
+      "sha256": "bf85d245251628a858769d59930193f7c18d4ca0cc1b1beb2ddcc7bd6de18090"
+    },
+    "prediction_source_checksums.csv": {
+      "path": "E:\\Eproject\\ECG\\phase1_ecg_robustness\\results\\tables\\review_supplement\\prediction_source_checksums.csv",
+      "sha256": "2994581da10ded22c2b535bbedcf0345924acddcaf50e2cc40427228f06acb31"
+    },
+    "patient_bootstrap_draws.npz": {
+      "path": "E:\\Eproject\\ECG\\phase1_ecg_robustness\\results\\tables\\review_supplement\\patient_bootstrap_draws.npz",
+      "sha256": "b74a8e4de9aa7c80e952a54a0cd454782e6fa261b70ab4dafaea6e81122a97b7"
+    },
+    "patient_bootstrap_distributions.npz": {
+      "path": "E:\\Eproject\\ECG\\phase1_ecg_robustness\\results\\tables\\review_supplement\\patient_bootstrap_distributions.npz",
+      "sha256": "79ff10ce669fffca1c89ba1895678f6d77216994e6d3e5679586993a173159b8"
+    }
+  },
+  "figures": {
+    "path": "results/figures/review_supplement/figure_manifest.json",
+    "sha256": "9dcc5380b6e22a72d0fee5c82bd2876cc7e6a5059fa55d8aef471ee35b812ef0"
+  },
+  "figure_render_provenance": {
+    "status": "completed",
+    "time_utc": "2026-09-17T01:41:19.476358+00:00",
+    "source": {
+      "path": "E:/Eproject/ECG/phase1_ecg_robustness/src/supplemental_statistics.py",
+      "bytes": 36942,
+      "sha256": "c89248306ed90355c69c5dd986e2e28159fab4c58f3bfede5f0494eea0ce1f98"
+    },
+    "reason": "Repair visually observed overlapping tick/axis labels and legends covering class intervals; add explicit NSTDB confounding warning",
+    "bootstrap_recomputed": false,
+    "numeric_output_checksums_unchanged": true,
+    "figures": {
+      "path": "results/figures/review_supplement/figure_manifest.json",
+      "sha256": "9dcc5380b6e22a72d0fee5c82bd2876cc7e6a5059fa55d8aef471ee35b812ef0"
+    }
+  }
+}

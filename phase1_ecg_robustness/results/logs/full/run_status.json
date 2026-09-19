@@ -1,0 +1,68 @@
+[
+  {
+    "module": "audit_noise",
+    "command": [
+      "E:\\Eproject\\ECG\\phase1_ecg_robustness\\.venv\\Scripts\\python.exe",
+      "-u",
+      "-m",
+      "src.audit_noise",
+      "--config",
+      "configs/phase1_full.yaml"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 4.491562843322754
+  },
+  {
+    "module": "train",
+    "command": [
+      "E:\\Eproject\\ECG\\phase1_ecg_robustness\\.venv\\Scripts\\python.exe",
+      "-u",
+      "-m",
+      "src.train",
+      "--config",
+      "configs/phase1_full.yaml",
+      "--resume-completed"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 6031.348925590515
+  },
+  {
+    "module": "evaluate",
+    "command": [
+      "E:\\Eproject\\ECG\\phase1_ecg_robustness\\.venv\\Scripts\\python.exe",
+      "-u",
+      "-m",
+      "src.evaluate",
+      "--config",
+      "configs/phase1_full.yaml"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 353.8715329170227
+  },
+  {
+    "module": "statistics",
+    "command": [
+      "E:\\Eproject\\ECG\\phase1_ecg_robustness\\.venv\\Scripts\\python.exe",
+      "-u",
+      "-m",
+      "src.statistics",
+      "--config",
+      "configs/phase1_full.yaml"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 71.19754695892334
+  },
+  {
+    "module": "plotting",
+    "command": [
+      "E:\\Eproject\\ECG\\phase1_ecg_robustness\\.venv\\Scripts\\python.exe",
+      "-u",
+      "-m",
+      "src.plotting",
+      "--config",
+      "configs/phase1_full.yaml"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 8.130103826522827
+  }
+]

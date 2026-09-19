@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "time_utc": "2026-09-18T19:43:20Z",
+  "command": [
+    "E:\\Eproject\\ECG\\phase1_ecg_robustness\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "phase1_ecg_robustness/tests",
+    "phase2/tests",
+    "-q"
+  ],
+  "cwd": "E:\\Eproject\\ECG",
+  "returncode": 0,
+  "elapsed_seconds": 5.916161400033161,
+  "stdout": "..........................................                [100%]\n42 passed, 15 subtests passed in 4.87s\n",
+  "stderr": "",
+  "scope": "Existing phase1 and phase2 behavioral regression tests; not a substitute for actual training, inference, patient-draw reconstruction or image review."
+}

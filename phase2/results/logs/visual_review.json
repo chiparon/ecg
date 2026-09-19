@@ -1,0 +1,237 @@
+{
+  "status": "passed",
+  "config_sha256": "980993c490b41e9793164c1d9bbfa54f728606fff281e07486e7af2fc41ddda7",
+  "stages": {
+    "pilot": {
+      "status": "passed",
+      "reviewer": "Main; actual rendered PNG inspection via image-reading tools",
+      "time_utc": "2026-09-18T19:46:34Z",
+      "figure_manifest": {
+        "path": "phase2/results/figures/pilot/figure_manifest.json",
+        "bytes": 48140,
+        "sha256": "9b19b229f6f511d615200be73187ed854f3cb2846aff210163c05452682a7cd9"
+      },
+      "files": [
+        {
+          "path": "phase2/results/figures/pilot/clean_absolute.png",
+          "bytes": 212067,
+          "sha256": "afa8460c882497ed5696cf6b88d70927d1b6a947fcec6b49423105bc98040547"
+        },
+        {
+          "path": "phase2/results/figures/pilot/clean_clean_cost.png",
+          "bytes": 170222,
+          "sha256": "043d99c6f5cbc1b122a3d9108eae60877018b2eb497d7c9461a11a1bf4ca6bfb"
+        },
+        {
+          "path": "phase2/results/figures/pilot/gaussian_macro_auroc_absolute.png",
+          "bytes": 796933,
+          "sha256": "90666d6186c6e2a5a419c825caa9b5271497fd5e8d25af75b281fb66625a48a8"
+        },
+        {
+          "path": "phase2/results/figures/pilot/gaussian_macro_auroc_retention.png",
+          "bytes": 789462,
+          "sha256": "39496f225fd15fc5cad8b6f38b065029e31fbe4573924aa8c21fd6f12c0a4ce0"
+        },
+        {
+          "path": "phase2/results/figures/pilot/supplement_gaussian_heldout_ap_f1.png",
+          "bytes": 514789,
+          "sha256": "64d5f00b392e4c48712df981b1cf58f2918b4fc697655439cc67815b058c70a9"
+        },
+        {
+          "path": "phase2/results/figures/pilot/supplement_gaussian_heldout_brier_ece.png",
+          "bytes": 507697,
+          "sha256": "86f11c68c59501db0b175e38488ddb2156b7bfe3916db8e71ae4148f4cb5951c"
+        },
+        {
+          "path": "phase2/results/figures/pilot/heldout_heatmap_absolute.png",
+          "bytes": 192472,
+          "sha256": "28d4b76b275e4f251e3d3baa6a13d8de68ea622e888e653b7c20e875f8193680"
+        },
+        {
+          "path": "phase2/results/figures/pilot/heldout_heatmap_retention.png",
+          "bytes": 191238,
+          "sha256": "806fe9065124d6a2d48e212da3c1a4305f1c2c501b0e76ea0f9992f945508608"
+        },
+        {
+          "path": "phase2/results/figures/pilot/primary_contrast_intervals.png",
+          "bytes": 147052,
+          "sha256": "47ad9cf9a50d9f1923495478e2fa23c2ff563f0455e7f2f94e6f64c9f089e529"
+        },
+        {
+          "path": "phase2/results/figures/pilot/ranks_individual_seeds_clean.png",
+          "bytes": 148137,
+          "sha256": "d325cc1b776c53340602291e0f8f2f39997a55b5faa840e6c7925c410398714c"
+        },
+        {
+          "path": "phase2/results/figures/pilot/ranks_individual_seeds_primary_joint.png",
+          "bytes": 157624,
+          "sha256": "3a3bb7562003c786fa30d5c7c9c138a13d53e76b38eb83fff29a29eed085d13b"
+        },
+        {
+          "path": "phase2/results/figures/pilot/rank_snr_heldout.png",
+          "bytes": 187384,
+          "sha256": "9391c58ef2ea8085a83288b4d0d7a2a32c1fe47b04ad95526fd0aecd658226ab"
+        },
+        {
+          "path": "phase2/results/figures/pilot/rank_correlations_clean_noisy.png",
+          "bytes": 241139,
+          "sha256": "3804a4e20a972b1e9d8910c992ba47b3e729e5668ba206a94bee74b31d0bd8b1"
+        },
+        {
+          "path": "phase2/results/figures/pilot/calibration_resnet.png",
+          "bytes": 487869,
+          "sha256": "8afd0259da1531b8a802f757ec69d63c226572b4c3d9a987b5b30858ce4acaae"
+        },
+        {
+          "path": "phase2/results/figures/pilot/calibration_tcn.png",
+          "bytes": 421309,
+          "sha256": "36a59eb80b9691f2885402ea2cc48cff900273d282dc37c68729532ffe49ac7e"
+        },
+        {
+          "path": "phase2/results/figures/pilot/noise_realization_stability.png",
+          "bytes": 184486,
+          "sha256": "11b72a07cc845207370d343b257da7df5786b7006544fad44817f8e6d6089414"
+        },
+        {
+          "path": "phase2/results/figures/pilot/noise_primary_contrast_stability.png",
+          "bytes": 115798,
+          "sha256": "35db7369dd8749a418f9f32df3aa6558c9267aca17eea8bc8d82dd9256c96836"
+        },
+        {
+          "path": "phase2/results/figures/pilot/training_clean_validation_trajectories.png",
+          "bytes": 313348,
+          "sha256": "eb0c1178985b3df2c60f95e9e6193b83f1f0c0cdf80daf1e7b30f4721470c8b4"
+        }
+      ],
+      "findings": [
+        "All rendered PNGs were individually inspected; titles, legends, axis labels, markers, uncertainty definitions and pressure/exploratory labels are readable.",
+        "Two revised heatmaps were re-opened after shortening their SNR-status labels; formerly overlapping words now have visible separation.",
+        "All other PNGs are byte-identical to the individually inspected pre-revision images. No training, metric, hypothesis, plotted value or axis-scale change was made.",
+        "Numerical/source verification and PDF-header checks are recorded separately; image inspection does not claim independent recomputation of every plotted cell."
+      ],
+      "reinspected_after_latest_revision": [
+        "phase2/results/figures/pilot/heldout_heatmap_absolute.png",
+        "phase2/results/figures/pilot/heldout_heatmap_retention.png"
+      ],
+      "previously_inspected_byte_identical_pngs": 16
+    },
+    "full": {
+      "status": "passed",
+      "reviewer": "Main; actual rendered PNG inspection via image-reading tools",
+      "time_utc": "2026-09-18T19:46:34Z",
+      "figure_manifest": {
+        "path": "phase2/results/figures/full/figure_manifest.json",
+        "bytes": 58974,
+        "sha256": "3ff3c57cba3f9db5ab5fa7a6c682eb0d95a0c2dbab80b937a03f77ebdb84df39"
+      },
+      "files": [
+        {
+          "path": "phase2/results/figures/full/clean_absolute.png",
+          "bytes": 282685,
+          "sha256": "514d557553aa84f439684747bba26bbd3b1d51a2c6518e9dcd5bf31145926a3e"
+        },
+        {
+          "path": "phase2/results/figures/full/clean_clean_cost.png",
+          "bytes": 206605,
+          "sha256": "70cbf13253ea9aed4dc064f130519b2e8902d0c2076fce5c5d8ff8ec16b558ee"
+        },
+        {
+          "path": "phase2/results/figures/full/gaussian_macro_auroc_absolute.png",
+          "bytes": 698736,
+          "sha256": "7d39efaa7304f54b6ce6ec994bafa30d9e0e4459c1e39bb28e3c6beb9714d398"
+        },
+        {
+          "path": "phase2/results/figures/full/gaussian_macro_auroc_retention.png",
+          "bytes": 693752,
+          "sha256": "c64f9f480f7c83abd03949cc08f3d87a9caba5a3c4945ddd5a0df2426d182a49"
+        },
+        {
+          "path": "phase2/results/figures/full/supplement_gaussian_heldout_ap_f1.png",
+          "bytes": 449397,
+          "sha256": "ea3eddd2eaf52ca061d254d540835039dddf7a31d5cd3d122d6557a78a850e7d"
+        },
+        {
+          "path": "phase2/results/figures/full/supplement_gaussian_heldout_brier_ece.png",
+          "bytes": 456969,
+          "sha256": "527b6f1ddac8bb225b0acf81b22a2751fb165b1efbe9a7c12da6cf81542b4bc5"
+        },
+        {
+          "path": "phase2/results/figures/full/heldout_heatmap_absolute.png",
+          "bytes": 410117,
+          "sha256": "1982a12dff970c971d148b9d5b7cac747046bdbd8d169b62a0723ec3f677a6eb"
+        },
+        {
+          "path": "phase2/results/figures/full/heldout_heatmap_retention.png",
+          "bytes": 420989,
+          "sha256": "f056296df456f439a09d892d5185f30582068200af96cbefe53d32676f30fc44"
+        },
+        {
+          "path": "phase2/results/figures/full/primary_contrast_intervals.png",
+          "bytes": 183256,
+          "sha256": "a15d6987a0b435206e6f252b96a61ee6c533a3148489e737a06d9696c4db2146"
+        },
+        {
+          "path": "phase2/results/figures/full/ranks_individual_seeds_clean.png",
+          "bytes": 204074,
+          "sha256": "511e54c1862d461059f1c8c3cd4fcab641a65dc7c359917862735a5a81d6da3f"
+        },
+        {
+          "path": "phase2/results/figures/full/ranks_individual_seeds_primary_joint.png",
+          "bytes": 185279,
+          "sha256": "95f8e6cffd75000ffee5d4344693c44eb9442391b81b39f42822fc0ed7f67e93"
+        },
+        {
+          "path": "phase2/results/figures/full/rank_snr_heldout.png",
+          "bytes": 226895,
+          "sha256": "ec12160f7e077d21df6e079c65e41fff20a7ab2fe9484db2c1caf950ec0f4719"
+        },
+        {
+          "path": "phase2/results/figures/full/rank_correlations_clean_noisy.png",
+          "bytes": 361456,
+          "sha256": "61d8c139e03b5dda0be0b98d6c97455810576e115be969c561966f9cf6f73f80"
+        },
+        {
+          "path": "phase2/results/figures/full/calibration_resnet.png",
+          "bytes": 376269,
+          "sha256": "17269551ca56632fe2b67946749328e398efeefdbca5b72f06a557bbbdb10d50"
+        },
+        {
+          "path": "phase2/results/figures/full/calibration_tcn.png",
+          "bytes": 360583,
+          "sha256": "26cfa1d3369eda9620853ae794c77fb3f1725c876ae25fe9d9e613970324a9d3"
+        },
+        {
+          "path": "phase2/results/figures/full/noise_realization_stability.png",
+          "bytes": 200178,
+          "sha256": "39fec3310b2761833d97c8ed66bb64c90a7d94677c83fb7598ce8f0b5e6f07da"
+        },
+        {
+          "path": "phase2/results/figures/full/noise_primary_contrast_stability.png",
+          "bytes": 125888,
+          "sha256": "949ca234bf2c2fd957f81e3778fc7894b3165a809acd1272b043438a3c70ee2f"
+        },
+        {
+          "path": "phase2/results/figures/full/exploratory_nstdb_sensitivity.png",
+          "bytes": 680203,
+          "sha256": "f091346cdfd12e1f21cef47a0861991a80bebefc6b2356657b7153c1ada3ee7d"
+        },
+        {
+          "path": "phase2/results/figures/full/training_clean_validation_trajectories.png",
+          "bytes": 538359,
+          "sha256": "a6a559d2882ca3bef956e2f04f7b21f85072ab7ee3e7524412aef3773de79605"
+        }
+      ],
+      "findings": [
+        "All rendered PNGs were individually inspected; titles, legends, axis labels, markers, uncertainty definitions and pressure/exploratory labels are readable.",
+        "Two revised heatmaps were re-opened after shortening their SNR-status labels; formerly overlapping words now have visible separation.",
+        "All other PNGs are byte-identical to the individually inspected pre-revision images. No training, metric, hypothesis, plotted value or axis-scale change was made.",
+        "Numerical/source verification and PDF-header checks are recorded separately; image inspection does not claim independent recomputation of every plotted cell."
+      ],
+      "reinspected_after_latest_revision": [
+        "phase2/results/figures/full/heldout_heatmap_absolute.png",
+        "phase2/results/figures/full/heldout_heatmap_retention.png"
+      ],
+      "previously_inspected_byte_identical_pngs": 17
+    }
+  }
+}

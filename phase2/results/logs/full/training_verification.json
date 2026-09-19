@@ -1,0 +1,376 @@
+{
+  "status": "passed",
+  "stage": "full",
+  "time_utc": "2026-09-18T05:43:28.495580+00:00",
+  "config_sha256": "980993c490b41e9793164c1d9bbfa54f728606fff281e07486e7af2fc41ddda7",
+  "verifier": {
+    "path": "phase2/src/verify_phase2.py",
+    "bytes": 24179,
+    "sha256": "47deaee23ee60907f6babf0630fee10d7d6945602b0ffa3a0f6ff51156bd3f45"
+  },
+  "runs": 40,
+  "completed_epochs": 1000,
+  "training": [
+    {
+      "strategy": "clean_only",
+      "model": "resnet",
+      "seed": 17,
+      "epochs": 25,
+      "best_epoch": 4,
+      "parameter_count": 545717,
+      "checkpoint_sha256": "5783e91dd4180ecae404f3de919b18999739969c06ca0f8bb9268cf788fc0462"
+    },
+    {
+      "strategy": "independent_rms",
+      "model": "resnet",
+      "seed": 17,
+      "epochs": 25,
+      "best_epoch": 5,
+      "parameter_count": 545717,
+      "checkpoint_sha256": "9c707adf985191b3df6856aeba1f8726c4653b5882cf3054963b75a72033bd95"
+    },
+    {
+      "strategy": "electrode",
+      "model": "resnet",
+      "seed": 17,
+      "epochs": 25,
+      "best_epoch": 6,
+      "parameter_count": 545717,
+      "checkpoint_sha256": "378032a6627c7bd70fc8bddcd8e5c8f47c1c897410ba9ea567349bdbbd6f2da8"
+    },
+    {
+      "strategy": "mixed",
+      "model": "resnet",
+      "seed": 17,
+      "epochs": 25,
+      "best_epoch": 5,
+      "parameter_count": 545717,
+      "checkpoint_sha256": "bcb351491df1dc59448da5f8e448fe488edbdbd74e3c3703849070132d0a2260"
+    },
+    {
+      "strategy": "clean_only",
+      "model": "resnet",
+      "seed": 29,
+      "epochs": 25,
+      "best_epoch": 4,
+      "parameter_count": 545717,
+      "checkpoint_sha256": "a840ec85324434e11a5881c2241f81471acfc2a9e778f38e4104de0e7fe1016f"
+    },
+    {
+      "strategy": "independent_rms",
+      "model": "resnet",
+      "seed": 29,
+      "epochs": 25,
+      "best_epoch": 4,
+      "parameter_count": 545717,
+      "checkpoint_sha256": "9e2eef70f4836e315dcd12b275e633ad6748cd12dcd55343f05546140189e73e"
+    },
+    {
+      "strategy": "electrode",
+      "model": "resnet",
+      "seed": 29,
+      "epochs": 25,
+      "best_epoch": 4,
+      "parameter_count": 545717,
+      "checkpoint_sha256": "cfd9a2c6daf96b8840f920ca380b44d4be9cb8fd547c945271b263100a6e976a"
+    },
+    {
+      "strategy": "mixed",
+      "model": "resnet",
+      "seed": 29,
+      "epochs": 25,
+      "best_epoch": 4,
+      "parameter_count": 545717,
+      "checkpoint_sha256": "ea56edadd62ff1041771df288f77a55993bd461ab5d57dc6e879ca4eba470878"
+    },
+    {
+      "strategy": "clean_only",
+      "model": "resnet",
+      "seed": 43,
+      "epochs": 25,
+      "best_epoch": 5,
+      "parameter_count": 545717,
+      "checkpoint_sha256": "560dcaca563e1c2018efb67a9b30f5db68e5d6f774c1c6d6c2219d3043d47831"
+    },
+    {
+      "strategy": "independent_rms",
+      "model": "resnet",
+      "seed": 43,
+      "epochs": 25,
+      "best_epoch": 5,
+      "parameter_count": 545717,
+      "checkpoint_sha256": "0cf115678a1fac707103392196d248586b539a89566a069be8420fda63cb1f2c"
+    },
+    {
+      "strategy": "electrode",
+      "model": "resnet",
+      "seed": 43,
+      "epochs": 25,
+      "best_epoch": 5,
+      "parameter_count": 545717,
+      "checkpoint_sha256": "8c89dc06276083e83fb07896d8b8c7138203990bfbcf1666369f38d01631b75d"
+    },
+    {
+      "strategy": "mixed",
+      "model": "resnet",
+      "seed": 43,
+      "epochs": 25,
+      "best_epoch": 5,
+      "parameter_count": 545717,
+      "checkpoint_sha256": "a4e1f9c77114a0cb5d6122e380ffd65af03802316409ab31e7818a2d52d114b8"
+    },
+    {
+      "strategy": "clean_only",
+      "model": "resnet",
+      "seed": 101,
+      "epochs": 25,
+      "best_epoch": 5,
+      "parameter_count": 545717,
+      "checkpoint_sha256": "c28b82435c69c8009bc8de13310a238d3d4de82fc753b5700790a1cf31bf15b2"
+    },
+    {
+      "strategy": "independent_rms",
+      "model": "resnet",
+      "seed": 101,
+      "epochs": 25,
+      "best_epoch": 5,
+      "parameter_count": 545717,
+      "checkpoint_sha256": "0f5c1302086cee088de465e158fb27a6f9754df1df8c33ef9150e20228a15a50"
+    },
+    {
+      "strategy": "electrode",
+      "model": "resnet",
+      "seed": 101,
+      "epochs": 25,
+      "best_epoch": 5,
+      "parameter_count": 545717,
+      "checkpoint_sha256": "c9831962be1d4c755fc68d1572c5d490defc157c40879aa6d0ff0df350594386"
+    },
+    {
+      "strategy": "mixed",
+      "model": "resnet",
+      "seed": 101,
+      "epochs": 25,
+      "best_epoch": 11,
+      "parameter_count": 545717,
+      "checkpoint_sha256": "957af81beb4db225e6cfff5e86d4e3c5743baa2e5975d7a9e8f94b83a96c865c"
+    },
+    {
+      "strategy": "clean_only",
+      "model": "resnet",
+      "seed": 202,
+      "epochs": 25,
+      "best_epoch": 4,
+      "parameter_count": 545717,
+      "checkpoint_sha256": "bb2478ab0d0a1958e5b3be8c23877c3d61eeb64498721e0a868376c091750a31"
+    },
+    {
+      "strategy": "independent_rms",
+      "model": "resnet",
+      "seed": 202,
+      "epochs": 25,
+      "best_epoch": 4,
+      "parameter_count": 545717,
+      "checkpoint_sha256": "204d4ee7ea1061a38c0b9e9f7b0239bec72e88f585d761e79be6de3a7b8c8114"
+    },
+    {
+      "strategy": "electrode",
+      "model": "resnet",
+      "seed": 202,
+      "epochs": 25,
+      "best_epoch": 8,
+      "parameter_count": 545717,
+      "checkpoint_sha256": "bc319e72e16c9af61d668a088e8b4fd1fea8977cefaae8c8997e24ce4ee48380"
+    },
+    {
+      "strategy": "mixed",
+      "model": "resnet",
+      "seed": 202,
+      "epochs": 25,
+      "best_epoch": 6,
+      "parameter_count": 545717,
+      "checkpoint_sha256": "0bc15f7734f0ee38d7787e482c703f26fd222dba7d249dc3f965fbfdfc7cb950"
+    },
+    {
+      "strategy": "clean_only",
+      "model": "tcn",
+      "seed": 17,
+      "epochs": 25,
+      "best_epoch": 23,
+      "parameter_count": 134885,
+      "checkpoint_sha256": "d443e4260543a68f295ed878d05688b43cf5c2fbce28032fa639e1c3a128db58"
+    },
+    {
+      "strategy": "independent_rms",
+      "model": "tcn",
+      "seed": 17,
+      "epochs": 25,
+      "best_epoch": 23,
+      "parameter_count": 134885,
+      "checkpoint_sha256": "44ddd93dde65388772a7e07f848bf20f939bee3a5cf7e6fe3017efe39c165caa"
+    },
+    {
+      "strategy": "electrode",
+      "model": "tcn",
+      "seed": 17,
+      "epochs": 25,
+      "best_epoch": 23,
+      "parameter_count": 134885,
+      "checkpoint_sha256": "280f2a3a2c737b634b2b8bef68f606bed3863bcb01cc57df9df72abcd57b4889"
+    },
+    {
+      "strategy": "mixed",
+      "model": "tcn",
+      "seed": 17,
+      "epochs": 25,
+      "best_epoch": 23,
+      "parameter_count": 134885,
+      "checkpoint_sha256": "426e680571d78a287b2e05ef463a00e3ad4e4399e32b01870a53fbe57dfe434e"
+    },
+    {
+      "strategy": "clean_only",
+      "model": "tcn",
+      "seed": 29,
+      "epochs": 25,
+      "best_epoch": 25,
+      "parameter_count": 134885,
+      "checkpoint_sha256": "75f5615f1e64a6fd18e19d073e1f3d07de63de834317168aeae570eac1d35084"
+    },
+    {
+      "strategy": "independent_rms",
+      "model": "tcn",
+      "seed": 29,
+      "epochs": 25,
+      "best_epoch": 25,
+      "parameter_count": 134885,
+      "checkpoint_sha256": "406f36d911f337074d9c32c81750ac4fde923e90d8c090002ce72b385f10c27a"
+    },
+    {
+      "strategy": "electrode",
+      "model": "tcn",
+      "seed": 29,
+      "epochs": 25,
+      "best_epoch": 25,
+      "parameter_count": 134885,
+      "checkpoint_sha256": "af96c85faf54a8b94ffa90c6d7a639ce7cf3da3a7055aa1a2c57262326957995"
+    },
+    {
+      "strategy": "mixed",
+      "model": "tcn",
+      "seed": 29,
+      "epochs": 25,
+      "best_epoch": 25,
+      "parameter_count": 134885,
+      "checkpoint_sha256": "f617ab5bd965b78e59e1ce474417b415ec55b2b616f04d27c3780a120d66851f"
+    },
+    {
+      "strategy": "clean_only",
+      "model": "tcn",
+      "seed": 43,
+      "epochs": 25,
+      "best_epoch": 20,
+      "parameter_count": 134885,
+      "checkpoint_sha256": "65726250ab0aec693451d33cb35b33a279945986f715bde755bab95806a43fbd"
+    },
+    {
+      "strategy": "independent_rms",
+      "model": "tcn",
+      "seed": 43,
+      "epochs": 25,
+      "best_epoch": 18,
+      "parameter_count": 134885,
+      "checkpoint_sha256": "b4e96072ca08c0aa773bb32e8d236967a92ccaf3fadab25ba51456b191fa9696"
+    },
+    {
+      "strategy": "electrode",
+      "model": "tcn",
+      "seed": 43,
+      "epochs": 25,
+      "best_epoch": 18,
+      "parameter_count": 134885,
+      "checkpoint_sha256": "aac7a3f3daef2a038c38c282adc6d534c80449fd1780f883ace2f61a3446039b"
+    },
+    {
+      "strategy": "mixed",
+      "model": "tcn",
+      "seed": 43,
+      "epochs": 25,
+      "best_epoch": 20,
+      "parameter_count": 134885,
+      "checkpoint_sha256": "f8c0783e43efddaa856a6f7512e87fe44b01161e7e69dbd9b1eec95f4a5d9b55"
+    },
+    {
+      "strategy": "clean_only",
+      "model": "tcn",
+      "seed": 101,
+      "epochs": 25,
+      "best_epoch": 22,
+      "parameter_count": 134885,
+      "checkpoint_sha256": "48b9f35a392079a5ffd68fb425acb0e183b8b2bd4cab12863767c5c3effec002"
+    },
+    {
+      "strategy": "independent_rms",
+      "model": "tcn",
+      "seed": 101,
+      "epochs": 25,
+      "best_epoch": 22,
+      "parameter_count": 134885,
+      "checkpoint_sha256": "0888dd31726fc5eea46cb692f1979b84af98b7444199909f09c8b7b2d27a976e"
+    },
+    {
+      "strategy": "electrode",
+      "model": "tcn",
+      "seed": 101,
+      "epochs": 25,
+      "best_epoch": 22,
+      "parameter_count": 134885,
+      "checkpoint_sha256": "dc4a7a53cbb5db05d4580adf5371887acbf4534b4a0fad39432f1db40b6dcaf4"
+    },
+    {
+      "strategy": "mixed",
+      "model": "tcn",
+      "seed": 101,
+      "epochs": 25,
+      "best_epoch": 22,
+      "parameter_count": 134885,
+      "checkpoint_sha256": "bd46a5b02cabb7f92d991500b061f92eace20b20f17b0a0672e8b7fa3094cbc6"
+    },
+    {
+      "strategy": "clean_only",
+      "model": "tcn",
+      "seed": 202,
+      "epochs": 25,
+      "best_epoch": 20,
+      "parameter_count": 134885,
+      "checkpoint_sha256": "5413311215904bf7635cd05f61a0f19f992ec107ecf978edbfc322c09ffdd607"
+    },
+    {
+      "strategy": "independent_rms",
+      "model": "tcn",
+      "seed": 202,
+      "epochs": 25,
+      "best_epoch": 25,
+      "parameter_count": 134885,
+      "checkpoint_sha256": "d1f73aaf47a9f36842c1d2eb675228a96413ea460a65579d2c43d57c1859848d"
+    },
+    {
+      "strategy": "electrode",
+      "model": "tcn",
+      "seed": 202,
+      "epochs": 25,
+      "best_epoch": 25,
+      "parameter_count": 134885,
+      "checkpoint_sha256": "a002b4693a1ee471050c99cf137688bef6418dd4cc75c1fc871934a08a948bdb"
+    },
+    {
+      "strategy": "mixed",
+      "model": "tcn",
+      "seed": 202,
+      "epochs": 25,
+      "best_epoch": 25,
+      "parameter_count": 134885,
+      "checkpoint_sha256": "868618501a0333fa0ad27f0087a7facdeee268d00780515793e27817d8913295"
+    }
+  ],
+  "scope": "All 40 complete training runs; all 1000 epoch artifacts and augmentation audits; earliest clean-validation AUROC maximum; checkpoint threshold source and independently recomputed thresholds; architecture-paired augmentation decisions."
+}

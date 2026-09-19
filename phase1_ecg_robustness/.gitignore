@@ -6,5 +6,4 @@ data/raw/
 data/processed*/*.npy
 results/checkpoints/
 results/metrics/**/*.npz
-results/logs/*.zip
 *.part

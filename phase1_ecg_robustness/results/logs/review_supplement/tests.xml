@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="42" time="7.869" timestamp="2026-09-17T09:08:14.255123+08:00" hostname="chiparon"><testcase classname="tests.test_data.DataContracts" name="test_fixed_subsets_preserve_official_partitions" time="0.004" /><testcase classname="tests.test_data.DataContracts" name="test_lead_alignment_preserves_mv_and_removes_only_dc" time="0.001" /><testcase classname="tests.test_data.DataContracts" name="test_mmap_loader_rejects_metadata_reordering" time="0.040" /><testcase classname="tests.test_data.DataContracts" name="test_rejects_patient_cross_fold_even_before_subsampling" time="0.003" /><testcase classname="tests.test_data.DataContracts" name="test_unknown_likelihood_is_included_but_sensitivity_excludes_it" time="0.001" /><testcase classname="tests.test_noise.LeadFormationTests" name="test_standard_identities_and_common_mode" time="0.002" /><testcase classname="tests.test_noise.LeadFormationTests" name="test_unit_ra_and_chest_propagation" time="0.001" /><testcase classname="tests.test_noise.NoiseControlTests" name="test_rms_control_preserves_physical_reference" time="0.006" /><testcase classname="tests.test_noise.NoiseControlTests" name="test_seeds_and_snr_pairing" time="0.017" /><testcase classname="tests.test_noise.NoiseControlTests" name="test_single_and_multi_electrode_untouched_leads" time="0.027" /><testcase classname="tests.test_noise.NoiseControlTests" name="test_snr_zero_dc_and_measured_band_power" time="0.005" /><testcase classname="tests.test_noise.NoiseControlTests" name="test_structures_and_exact_empirical_covariance" time="0.004" /><testcase classname="tests.test_noise.NoiseControlTests" name="test_zero_covariance_and_inactive_diagnostics" time="0.002" /><testcase classname="tests.test_noise.NoiseControlTests" name="test_zero_power_and_invalid_inputs_are_explicit" time="0.002" /><testcase classname="tests.test_noise.CovarianceBoundaryTests" name="test_fresh_realizations_match_rank_deficient_target" time="0.002" /><testcase classname="tests.test_noise.CovarianceBoundaryTests" name="test_insufficient_temporal_rank_cannot_fake_a_match" time="0.001" /><testcase classname="tests.test_noise.CovarianceBoundaryTests" name="test_roundoff_clipping_versus_genuinely_indefinite_target" time="0.001" /><testcase classname="tests.test_noise.NSTDBReplayTests" name="test_polyphase_replay_keeps_physical_frequency_and_explicit_provenance" time="0.010" /><testcase classname="tests.test_patient_bootstrap" name="test_weighted_auc_ties_and_zero_weights_match_explicit_record_replication" time="0.003" /><testcase classname="tests.test_patient_bootstrap" name="test_cluster_draw_retains_every_record_in_unequal_sized_patients" time="0.004" /><testcase classname="tests.test_patient_bootstrap" name="test_fixed_seed_mean_averages_auroc_not_probabilities" time="0.004" /><testcase classname="tests.test_patient_bootstrap" name="test_undefined_class_invalidates_macro_without_discarding_other_class" time="0.001" /><testcase classname="tests.test_statistics" name="test_missing_whole_snr_group_is_rejected_even_when_seeds_are_complete" time="0.005" /><testcase classname="tests.test_strict_control" name="test_shift_preserves_marginals_and_periodic_spectrum_with_wraparound" time="0.002"><failure message="AssertionError: &#10;Not equal to tolerance rtol=1e-12, atol=1e-12&#10;&#10;Mismatched elements: 3 / 12 (25%)&#10;Max absolute difference among violations: 2.2888184e-05&#10;Max relative difference among violations: 2.2376133e-07&#10; ACTUAL: array([[144.      ,  56.588223,  85.33618 , 129.07559 ],&#10;       [ 25.      ,  55.93112 , 122.97448 , 127.09437 ],&#10;       [144.      ,  25.572088,  17.683868, 143.74402 ]], dtype=float32)&#10; DESIRED: array([[144.      ,  56.588223,  85.33618 , 129.07559 ],&#10;       [ 25.      ,  55.93112 , 122.9745  , 127.09437 ],&#10;       [144.      ,  25.572094,  17.683868, 143.74403 ]], dtype=float32)">def test_shift_preserves_marginals_and_periodic_spectrum_with_wraparound():
+        original = np.array(
+            [[0, 2, -3, 2, 8, -1, 4], [5, -2, 4, 0, 1, -6, 3], [2, 0, 0, 4, -2, 7, 1]],
+            dtype=np.float32,
+        )
+        offsets = np.array([0, 1, 6])
+        shifted = apply_circular_shifts(original, offsets)
+        assert shifted.dtype == original.dtype
+        np.testing.assert_array_equal(shifted[0], original[0])
+        np.testing.assert_array_equal(shifted[1], [3, 5, -2, 4, 0, 1, -6])
+        np.testing.assert_array_equal(shifted[2], [0, 0, 4, -2, 7, 1, 2])
+        np.testing.assert_array_equal(np.sort(shifted, axis=1), np.sort(original, axis=1))
+&gt;       np.testing.assert_allclose(
+            abs(np.fft.rfft(shifted)) ** 2,
+            abs(np.fft.rfft(original)) ** 2,
+            rtol=1e-12,
+            atol=1e-12,
+        )
+E       AssertionError: 
+E       Not equal to tolerance rtol=1e-12, atol=1e-12
+E       
+E       Mismatched elements: 3 / 12 (25%)
+E       Max absolute difference among violations: 2.2888184e-05
+E       Max relative difference among violations: 2.2376133e-07
+E        ACTUAL: array([[144.      ,  56.588223,  85.33618 , 129.07559 ],
+E              [ 25.      ,  55.93112 , 122.97448 , 127.09437 ],
+E              [144.      ,  25.572088,  17.683868, 143.74402 ]], dtype=float32)
+E        DESIRED: array([[144.      ,  56.588223,  85.33618 , 129.07559 ],
+E              [ 25.      ,  55.93112 , 122.9745  , 127.09437 ],
+E              [144.      ,  25.572094,  17.683868, 143.74403 ]], dtype=float32)
+
+tests\test_strict_control.py:23: AssertionError</failure></testcase><testcase classname="tests.test_strict_control" name="test_distinct_shifts_change_cross_lead_alignment_without_changing_variances" time="0.002" /><testcase classname="tests.test_strict_control" name="test_periodic_matching_does_not_claim_welch_matching" time="0.005" /><testcase classname="tests.test_strict_control" name="test_saved_offsets_reconstruct_deterministic_control_and_invalid_offsets_fail" time="0.001" /></testsuite></testsuites>

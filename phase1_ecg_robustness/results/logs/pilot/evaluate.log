@@ -1,0 +1,88 @@
+
+COMMAND: E:\Eproject\ECG\phase1_ecg_robustness\.venv\Scripts\python.exe -u -m src.evaluate --config configs/phase1_pilot.yaml
+eval resnet/17 clean/100/clean/all AUROC=0.86729
+eval resnet/29 clean/100/clean/all AUROC=0.87710
+eval resnet/43 clean/100/clean/all AUROC=0.87345
+noise bandpass/all 500/1000
+noise bandpass/all 1000/1000
+eval resnet/17 bandpass/20/independent/all AUROC=0.86900
+eval resnet/29 bandpass/20/independent/all AUROC=0.87727
+eval resnet/43 bandpass/20/independent/all AUROC=0.87305
+eval resnet/17 bandpass/20/independent_rms/all AUROC=0.86928
+eval resnet/29 bandpass/20/independent_rms/all AUROC=0.87733
+eval resnet/43 bandpass/20/independent_rms/all AUROC=0.87321
+eval resnet/17 bandpass/20/electrode/all AUROC=0.86647
+eval resnet/29 bandpass/20/electrode/all AUROC=0.87751
+eval resnet/43 bandpass/20/electrode/all AUROC=0.87315
+eval resnet/17 bandpass/20/covariance/all AUROC=0.86754
+eval resnet/29 bandpass/20/covariance/all AUROC=0.87785
+eval resnet/43 bandpass/20/covariance/all AUROC=0.87426
+eval resnet/17 bandpass/10/independent/all AUROC=0.86422
+eval resnet/29 bandpass/10/independent/all AUROC=0.87209
+eval resnet/43 bandpass/10/independent/all AUROC=0.86476
+eval resnet/17 bandpass/10/independent_rms/all AUROC=0.86476
+eval resnet/29 bandpass/10/independent_rms/all AUROC=0.87229
+eval resnet/43 bandpass/10/independent_rms/all AUROC=0.86479
+eval resnet/17 bandpass/10/electrode/all AUROC=0.85812
+eval resnet/29 bandpass/10/electrode/all AUROC=0.87344
+eval resnet/43 bandpass/10/electrode/all AUROC=0.86008
+eval resnet/17 bandpass/10/covariance/all AUROC=0.85552
+eval resnet/29 bandpass/10/covariance/all AUROC=0.87450
+eval resnet/43 bandpass/10/covariance/all AUROC=0.86427
+eval resnet/17 bandpass/0/independent/all AUROC=0.75200
+eval resnet/29 bandpass/0/independent/all AUROC=0.79968
+eval resnet/43 bandpass/0/independent/all AUROC=0.76753
+eval resnet/17 bandpass/0/independent_rms/all AUROC=0.75153
+eval resnet/29 bandpass/0/independent_rms/all AUROC=0.79931
+eval resnet/43 bandpass/0/independent_rms/all AUROC=0.76796
+eval resnet/17 bandpass/0/electrode/all AUROC=0.73642
+eval resnet/29 bandpass/0/electrode/all AUROC=0.79644
+eval resnet/43 bandpass/0/electrode/all AUROC=0.76206
+eval resnet/17 bandpass/0/covariance/all AUROC=0.74104
+eval resnet/29 bandpass/0/covariance/all AUROC=0.79595
+eval resnet/43 bandpass/0/covariance/all AUROC=0.76186
+Evaluation complete: 39 conditions/models, 7.4s
+
+COMMAND: E:\Eproject\ECG\phase1_ecg_robustness\.venv\Scripts\python.exe -u -m src.evaluate --config configs/phase1_pilot.yaml
+eval resnet/17 clean/100/clean/all AUROC=0.86729
+eval resnet/29 clean/100/clean/all AUROC=0.87712
+eval resnet/43 clean/100/clean/all AUROC=0.87346
+noise bandpass/all 500/1000
+noise bandpass/all 1000/1000
+eval resnet/17 bandpass/20/independent/all AUROC=0.86901
+eval resnet/29 bandpass/20/independent/all AUROC=0.87727
+eval resnet/43 bandpass/20/independent/all AUROC=0.87307
+eval resnet/17 bandpass/20/independent_rms/all AUROC=0.86930
+eval resnet/29 bandpass/20/independent_rms/all AUROC=0.87733
+eval resnet/43 bandpass/20/independent_rms/all AUROC=0.87323
+eval resnet/17 bandpass/20/electrode/all AUROC=0.86647
+eval resnet/29 bandpass/20/electrode/all AUROC=0.87750
+eval resnet/43 bandpass/20/electrode/all AUROC=0.87316
+eval resnet/17 bandpass/20/covariance/all AUROC=0.86754
+eval resnet/29 bandpass/20/covariance/all AUROC=0.87786
+eval resnet/43 bandpass/20/covariance/all AUROC=0.87424
+eval resnet/17 bandpass/10/independent/all AUROC=0.86424
+eval resnet/29 bandpass/10/independent/all AUROC=0.87208
+eval resnet/43 bandpass/10/independent/all AUROC=0.86477
+eval resnet/17 bandpass/10/independent_rms/all AUROC=0.86479
+eval resnet/29 bandpass/10/independent_rms/all AUROC=0.87228
+eval resnet/43 bandpass/10/independent_rms/all AUROC=0.86480
+eval resnet/17 bandpass/10/electrode/all AUROC=0.85810
+eval resnet/29 bandpass/10/electrode/all AUROC=0.87344
+eval resnet/43 bandpass/10/electrode/all AUROC=0.86009
+eval resnet/17 bandpass/10/covariance/all AUROC=0.85551
+eval resnet/29 bandpass/10/covariance/all AUROC=0.87450
+eval resnet/43 bandpass/10/covariance/all AUROC=0.86429
+eval resnet/17 bandpass/0/independent/all AUROC=0.75199
+eval resnet/29 bandpass/0/independent/all AUROC=0.79969
+eval resnet/43 bandpass/0/independent/all AUROC=0.76759
+eval resnet/17 bandpass/0/independent_rms/all AUROC=0.75153
+eval resnet/29 bandpass/0/independent_rms/all AUROC=0.79932
+eval resnet/43 bandpass/0/independent_rms/all AUROC=0.76802
+eval resnet/17 bandpass/0/electrode/all AUROC=0.73645
+eval resnet/29 bandpass/0/electrode/all AUROC=0.79644
+eval resnet/43 bandpass/0/electrode/all AUROC=0.76209
+eval resnet/17 bandpass/0/covariance/all AUROC=0.74103
+eval resnet/29 bandpass/0/covariance/all AUROC=0.79596
+eval resnet/43 bandpass/0/covariance/all AUROC=0.76191
+Evaluation complete: 39 conditions/models, 5.6s

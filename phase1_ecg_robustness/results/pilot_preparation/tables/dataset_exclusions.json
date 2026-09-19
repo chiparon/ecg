@@ -1,0 +1,545 @@
+{
+  "empty_labels": [
+    {
+      "ecg_id": 17,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 18,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 20,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 23,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 34,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 144,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 190,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 382,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 385,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 449,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 498,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 858,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 1173,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 1299,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 1399,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 1461,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 1596,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 1641,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 1674,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 1717,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 1773,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 1908,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 2051,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 2090,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 2205,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 2218,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 2430,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 2486,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 2587,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 2592,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 2664,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 2739,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 2828,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 2885,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 3134,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 3319,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 3672,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 3723,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 3793,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 3796,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 3797,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 3893,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 3990,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 4054,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 4117,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 4181,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 4401,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 4408,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 4423,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 4463,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 4492,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 4531,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 4532,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 4637,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 4688,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 4846,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 4874,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 4922,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 4975,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 5068,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 5121,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 5135,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 5136,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 5252,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 5390,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 5445,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 5533,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 5540,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 5544,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 5547,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 5601,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 5634,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 5658,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 5719,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 5756,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 5776,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 5786,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 5787,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 6033,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 6179,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 6205,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 6386,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 6491,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 6561,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 6596,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 6829,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 7120,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 7159,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 7204,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 7215,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 7221,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 7412,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 7445,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 7462,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 7505,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 7510,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 7512,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 7517,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 7567,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 7630,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 7778,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 7783,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 7796,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 7828,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 7866,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 7889,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 8060,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 8215,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 8263,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 8265,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 8319,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 8367,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 8461,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 8479,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 8530,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 8543,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 8634,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 8748,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 8752,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 8872,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 8964,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 8967,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 8970,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 8989,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 9032,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 9046,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 9129,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 9158,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 9182,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 9328,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 9551,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 9557,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 9592,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 9682,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    },
+    {
+      "ecg_id": 9824,
+      "reason": "empty diagnostic superclass labels under selected policy"
+    }
+  ],
+  "unavailable": []
+}

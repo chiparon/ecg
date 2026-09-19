@@ -1,0 +1,54 @@
+
+COMMAND: E:\Eproject\ECG\phase1_ecg_robustness\.venv\Scripts\python.exe -u -m src.train --config configs/phase1_pilot.yaml --resume-completed
+Device=cuda; train=4000, val=1000, test=1000; training-only scale_mv=0.22615753
+pilot/resnet/seed_17 epoch=1/15 train_loss=0.44142 val_loss=0.39998 macro_auroc=0.85061 elapsed=14.8s
+pilot/resnet/seed_17 epoch=2/15 train_loss=0.32385 val_loss=0.34578 macro_auroc=0.88388 elapsed=27.1s
+pilot/resnet/seed_17 epoch=3/15 train_loss=0.29144 val_loss=0.34065 macro_auroc=0.88267 elapsed=39.5s
+pilot/resnet/seed_17 epoch=4/15 train_loss=0.26940 val_loss=0.36124 macro_auroc=0.88442 elapsed=51.9s
+pilot/resnet/seed_17 epoch=5/15 train_loss=0.23687 val_loss=0.44199 macro_auroc=0.88300 elapsed=64.3s
+pilot/resnet/seed_17 epoch=6/15 train_loss=0.20409 val_loss=0.38922 macro_auroc=0.88200 elapsed=76.7s
+pilot/resnet/seed_17 epoch=7/15 train_loss=0.17804 val_loss=0.42489 macro_auroc=0.87789 elapsed=89.2s
+pilot/resnet/seed_17 epoch=8/15 train_loss=0.14396 val_loss=0.38710 macro_auroc=0.88565 elapsed=101.6s
+pilot/resnet/seed_17 epoch=9/15 train_loss=0.11144 val_loss=0.50265 macro_auroc=0.88059 elapsed=114.1s
+pilot/resnet/seed_17 epoch=10/15 train_loss=0.09740 val_loss=0.56513 macro_auroc=0.87048 elapsed=126.6s
+pilot/resnet/seed_17 epoch=11/15 train_loss=0.07239 val_loss=0.45434 macro_auroc=0.87551 elapsed=139.0s
+pilot/resnet/seed_17 epoch=12/15 train_loss=0.05503 val_loss=0.50294 macro_auroc=0.87374 elapsed=151.4s
+pilot/resnet/seed_17 epoch=13/15 train_loss=0.05692 val_loss=0.54292 macro_auroc=0.88193 elapsed=163.8s
+pilot/resnet/seed_17 epoch=14/15 train_loss=0.04393 val_loss=0.59891 macro_auroc=0.87889 elapsed=176.2s
+pilot/resnet/seed_17 epoch=15/15 train_loss=0.03983 val_loss=0.72482 macro_auroc=0.87222 elapsed=188.6s
+pilot/resnet/seed_29 epoch=1/15 train_loss=0.42773 val_loss=0.40342 macro_auroc=0.86226 elapsed=12.4s
+pilot/resnet/seed_29 epoch=2/15 train_loss=0.32960 val_loss=0.37081 macro_auroc=0.87559 elapsed=24.8s
+pilot/resnet/seed_29 epoch=3/15 train_loss=0.30078 val_loss=0.34431 macro_auroc=0.88868 elapsed=37.3s
+pilot/resnet/seed_29 epoch=4/15 train_loss=0.27111 val_loss=0.35614 macro_auroc=0.88864 elapsed=49.7s
+pilot/resnet/seed_29 epoch=5/15 train_loss=0.23814 val_loss=0.39822 macro_auroc=0.87819 elapsed=62.2s
+pilot/resnet/seed_29 epoch=6/15 train_loss=0.21998 val_loss=0.40437 macro_auroc=0.87257 elapsed=74.7s
+pilot/resnet/seed_29 epoch=7/15 train_loss=0.19247 val_loss=0.40475 macro_auroc=0.87670 elapsed=87.1s
+pilot/resnet/seed_29 epoch=8/15 train_loss=0.15745 val_loss=0.51784 macro_auroc=0.87459 elapsed=99.6s
+pilot/resnet/seed_29 epoch=9/15 train_loss=0.12898 val_loss=0.57309 macro_auroc=0.85351 elapsed=112.1s
+pilot/resnet/seed_29 epoch=10/15 train_loss=0.10972 val_loss=0.53262 macro_auroc=0.87352 elapsed=124.7s
+pilot/resnet/seed_29 epoch=11/15 train_loss=0.08741 val_loss=0.49282 macro_auroc=0.86749 elapsed=137.1s
+pilot/resnet/seed_29 epoch=12/15 train_loss=0.06643 val_loss=0.50501 macro_auroc=0.86808 elapsed=149.5s
+pilot/resnet/seed_29 epoch=13/15 train_loss=0.04733 val_loss=0.47215 macro_auroc=0.86940 elapsed=161.8s
+pilot/resnet/seed_29 epoch=14/15 train_loss=0.04624 val_loss=0.55597 macro_auroc=0.87111 elapsed=174.2s
+pilot/resnet/seed_29 epoch=15/15 train_loss=0.03692 val_loss=0.52544 macro_auroc=0.86909 elapsed=186.6s
+pilot/resnet/seed_43 epoch=1/15 train_loss=0.45091 val_loss=0.37809 macro_auroc=0.85775 elapsed=12.4s
+pilot/resnet/seed_43 epoch=2/15 train_loss=0.34087 val_loss=0.34596 macro_auroc=0.88048 elapsed=24.8s
+pilot/resnet/seed_43 epoch=3/15 train_loss=0.30001 val_loss=0.33714 macro_auroc=0.88409 elapsed=37.2s
+pilot/resnet/seed_43 epoch=4/15 train_loss=0.26736 val_loss=0.35499 macro_auroc=0.88537 elapsed=49.7s
+pilot/resnet/seed_43 epoch=5/15 train_loss=0.23343 val_loss=0.37156 macro_auroc=0.88172 elapsed=62.1s
+pilot/resnet/seed_43 epoch=6/15 train_loss=0.20207 val_loss=0.59874 macro_auroc=0.87719 elapsed=74.6s
+pilot/resnet/seed_43 epoch=7/15 train_loss=0.17324 val_loss=0.43176 macro_auroc=0.86718 elapsed=87.1s
+pilot/resnet/seed_43 epoch=8/15 train_loss=0.13327 val_loss=0.44744 macro_auroc=0.86912 elapsed=99.5s
+pilot/resnet/seed_43 epoch=9/15 train_loss=0.09861 val_loss=0.48255 macro_auroc=0.85583 elapsed=112.0s
+pilot/resnet/seed_43 epoch=10/15 train_loss=0.08035 val_loss=0.48484 macro_auroc=0.86880 elapsed=124.4s
+pilot/resnet/seed_43 epoch=11/15 train_loss=0.05846 val_loss=0.52900 macro_auroc=0.86385 elapsed=136.8s
+pilot/resnet/seed_43 epoch=12/15 train_loss=0.04630 val_loss=0.56289 macro_auroc=0.84952 elapsed=149.2s
+pilot/resnet/seed_43 epoch=13/15 train_loss=0.04469 val_loss=0.55871 macro_auroc=0.85102 elapsed=161.6s
+pilot/resnet/seed_43 epoch=14/15 train_loss=0.04021 val_loss=0.58984 macro_auroc=0.86083 elapsed=174.1s
+pilot/resnet/seed_43 epoch=15/15 train_loss=0.03105 val_loss=0.63186 macro_auroc=0.86728 elapsed=186.5s
+
+COMMAND: E:\Eproject\ECG\phase1_ecg_robustness\.venv\Scripts\python.exe -u -m src.train --config configs/phase1_pilot.yaml --resume-completed
+Device=cuda; train=4000, val=1000, test=1000; training-only scale_mv=0.22615753
+Skipping verified completed run: resnet seed=17
+Skipping verified completed run: resnet seed=29
+Skipping verified completed run: resnet seed=43

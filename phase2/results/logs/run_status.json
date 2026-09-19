@@ -1,0 +1,272 @@
+[
+  {
+    "stage": "pilot",
+    "module": "train_phase2",
+    "attempt": 1,
+    "command": [
+      "E:\\Eproject\\ECG\\phase1_ecg_robustness\\.venv\\Scripts\\python.exe",
+      "-u",
+      "-m",
+      "phase2.src.train_phase2",
+      "--config",
+      "E:\\Eproject\\ECG\\phase2\\configs\\phase2_main.yaml",
+      "--stage",
+      "pilot"
+    ],
+    "started_at_utc": "2026-09-17T13:04:52.215310+00:00",
+    "status": "completed",
+    "exit_code": 0,
+    "elapsed_seconds": 1026.0416315000039,
+    "log": {
+      "path": "phase2/results/logs/pilot/train_phase2_attempt_01.log",
+      "bytes": 9324,
+      "sha256": "64031300396b6d5eab827e2c4200af02ef962d3d4aff0ade818c9766575e357b"
+    },
+    "finished_at_utc": "2026-09-17T13:21:58.265099+00:00"
+  },
+  {
+    "stage": "pilot",
+    "module": "generate_phase2_noise",
+    "attempt": 1,
+    "command": [
+      "E:\\Eproject\\ECG\\phase1_ecg_robustness\\.venv\\Scripts\\python.exe",
+      "-u",
+      "-m",
+      "phase2.src.generate_phase2_noise",
+      "--config",
+      "E:\\Eproject\\ECG\\phase2\\configs\\phase2_main.yaml",
+      "--stage",
+      "pilot"
+    ],
+    "started_at_utc": "2026-09-17T13:21:58.267105+00:00",
+    "status": "completed",
+    "exit_code": 0,
+    "elapsed_seconds": 40.77846689999569,
+    "log": {
+      "path": "phase2/results/logs/pilot/generate_phase2_noise_attempt_01.log",
+      "bytes": 1017,
+      "sha256": "8612b61ac0ab235e730a37e59ed29c4cfb9487164a35ca6aafd88ba767c84fa7"
+    },
+    "finished_at_utc": "2026-09-17T13:22:39.051919+00:00"
+  },
+  {
+    "stage": "pilot",
+    "module": "evaluate_phase2",
+    "attempt": 1,
+    "command": [
+      "E:\\Eproject\\ECG\\phase1_ecg_robustness\\.venv\\Scripts\\python.exe",
+      "-u",
+      "-m",
+      "phase2.src.evaluate_phase2",
+      "--config",
+      "E:\\Eproject\\ECG\\phase2\\configs\\phase2_main.yaml",
+      "--stage",
+      "pilot"
+    ],
+    "started_at_utc": "2026-09-17T13:22:39.053669+00:00",
+    "status": "completed",
+    "exit_code": 0,
+    "elapsed_seconds": 251.61757840006612,
+    "log": {
+      "path": "phase2/results/logs/pilot/evaluate_phase2_attempt_01.log",
+      "bytes": 7604,
+      "sha256": "9165dfcff951ad932ae1672a46e9e1012036fc5bb5b73d0a0686348a34218fc3"
+    },
+    "finished_at_utc": "2026-09-17T13:26:50.678713+00:00"
+  },
+  {
+    "stage": "pilot",
+    "module": "statistics_phase2",
+    "attempt": 1,
+    "command": [
+      "E:\\Eproject\\ECG\\phase1_ecg_robustness\\.venv\\Scripts\\python.exe",
+      "-u",
+      "-m",
+      "phase2.src.statistics_phase2",
+      "--config",
+      "E:\\Eproject\\ECG\\phase2\\configs\\phase2_main.yaml",
+      "--stage",
+      "pilot"
+    ],
+    "started_at_utc": "2026-09-17T13:26:50.680356+00:00",
+    "status": "completed",
+    "exit_code": 0,
+    "elapsed_seconds": 109.63346739998087,
+    "log": {
+      "path": "phase2/results/logs/pilot/statistics_phase2_attempt_01.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "finished_at_utc": "2026-09-17T13:28:40.315572+00:00"
+  },
+  {
+    "stage": "pilot",
+    "module": "plot_phase2",
+    "attempt": 1,
+    "command": [
+      "E:\\Eproject\\ECG\\phase1_ecg_robustness\\.venv\\Scripts\\python.exe",
+      "-u",
+      "-m",
+      "phase2.src.plot_phase2",
+      "--config",
+      "E:\\Eproject\\ECG\\phase2\\configs\\phase2_main.yaml",
+      "--stage",
+      "pilot"
+    ],
+    "started_at_utc": "2026-09-17T13:28:40.316577+00:00",
+    "status": "completed",
+    "exit_code": 0,
+    "elapsed_seconds": 42.62837439996656,
+    "log": {
+      "path": "phase2/results/logs/pilot/plot_phase2_attempt_01.log",
+      "bytes": 103,
+      "sha256": "a53152e9277ed28d058ed5f62042efffcc93800b4419310288187cb8bb6e2be0"
+    },
+    "finished_at_utc": "2026-09-17T13:29:22.951623+00:00"
+  },
+  {
+    "stage": "full",
+    "module": "train_phase2",
+    "attempt": 1,
+    "command": [
+      "E:\\Eproject\\ECG\\phase1_ecg_robustness\\.venv\\Scripts\\python.exe",
+      "-u",
+      "-m",
+      "phase2.src.train_phase2",
+      "--config",
+      "E:\\Eproject\\ECG\\phase2\\configs\\phase2_main.yaml",
+      "--stage",
+      "full"
+    ],
+    "started_at_utc": "2026-09-17T13:29:23.036876+00:00",
+    "status": "interrupted",
+    "supervisor_exit_code": 58,
+    "interruption_note": "Supervisor reported exit 58 without a Python traceback; no phase2 child remains. Only epochs 1-17 were logged for the first full run. Restart from the same registered initialization; retain this attempt log.",
+    "recovery": "Rerun full stage with unchanged scientific settings; completed pilot is retained."
+  },
+  {
+    "stage": "full",
+    "module": "train_phase2",
+    "attempt": 2,
+    "command": [
+      "E:\\Eproject\\ECG\\phase1_ecg_robustness\\.venv\\Scripts\\python.exe",
+      "-u",
+      "-m",
+      "phase2.src.train_phase2",
+      "--config",
+      "E:\\Eproject\\ECG\\phase2\\configs\\phase2_main.yaml",
+      "--stage",
+      "full"
+    ],
+    "started_at_utc": "2026-09-17T14:33:14.832731+00:00",
+    "status": "completed",
+    "exit_code": 0,
+    "elapsed_seconds": 54498.092308199964,
+    "log": {
+      "path": "phase2/results/logs/full/train_phase2_attempt_02.log",
+      "bytes": 117484,
+      "sha256": "d28b9e6cf4f7bc510d9eac9da0ae047b610b0e4c6ffec5003eea698bfd9fc88a"
+    },
+    "finished_at_utc": "2026-09-18T05:41:32.942707+00:00"
+  },
+  {
+    "stage": "full",
+    "module": "generate_phase2_noise",
+    "attempt": 1,
+    "command": [
+      "E:\\Eproject\\ECG\\phase1_ecg_robustness\\.venv\\Scripts\\python.exe",
+      "-u",
+      "-m",
+      "phase2.src.generate_phase2_noise",
+      "--config",
+      "E:\\Eproject\\ECG\\phase2\\configs\\phase2_main.yaml",
+      "--stage",
+      "full"
+    ],
+    "started_at_utc": "2026-09-18T05:41:32.949145+00:00",
+    "status": "completed",
+    "exit_code": 0,
+    "elapsed_seconds": 983.5607632000465,
+    "log": {
+      "path": "phase2/results/logs/full/generate_phase2_noise_attempt_01.log",
+      "bytes": 9034,
+      "sha256": "32e8fdaa376b199fdcb567c407547d230c4679c66ff68de04ecb0e39c1a703b7"
+    },
+    "finished_at_utc": "2026-09-18T05:57:56.517370+00:00"
+  },
+  {
+    "stage": "full",
+    "module": "evaluate_phase2",
+    "attempt": 1,
+    "command": [
+      "E:\\Eproject\\ECG\\phase1_ecg_robustness\\.venv\\Scripts\\python.exe",
+      "-u",
+      "-m",
+      "phase2.src.evaluate_phase2",
+      "--config",
+      "E:\\Eproject\\ECG\\phase2\\configs\\phase2_main.yaml",
+      "--stage",
+      "full"
+    ],
+    "started_at_utc": "2026-09-18T05:57:56.519369+00:00",
+    "status": "completed",
+    "exit_code": 0,
+    "elapsed_seconds": 38220.11927100015,
+    "log": {
+      "path": "phase2/results/logs/full/evaluate_phase2_attempt_01.log",
+      "bytes": 115741,
+      "sha256": "82271b9ef67058155afa78d059b2f28e47bb40e194102200080ab0a4768a94a7"
+    },
+    "finished_at_utc": "2026-09-18T16:34:56.651138+00:00"
+  },
+  {
+    "stage": "full",
+    "module": "statistics_phase2",
+    "attempt": 1,
+    "command": [
+      "E:\\Eproject\\ECG\\phase1_ecg_robustness\\.venv\\Scripts\\python.exe",
+      "-u",
+      "-m",
+      "phase2.src.statistics_phase2",
+      "--config",
+      "E:\\Eproject\\ECG\\phase2\\configs\\phase2_main.yaml",
+      "--stage",
+      "full"
+    ],
+    "started_at_utc": "2026-09-18T16:34:56.657092+00:00",
+    "status": "completed",
+    "exit_code": 0,
+    "elapsed_seconds": 10222.240375000052,
+    "log": {
+      "path": "phase2/results/logs/full/statistics_phase2_attempt_01.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "finished_at_utc": "2026-09-18T19:25:18.902928+00:00"
+  },
+  {
+    "stage": "full",
+    "module": "plot_phase2",
+    "attempt": 1,
+    "command": [
+      "E:\\Eproject\\ECG\\phase1_ecg_robustness\\.venv\\Scripts\\python.exe",
+      "-u",
+      "-m",
+      "phase2.src.plot_phase2",
+      "--config",
+      "E:\\Eproject\\ECG\\phase2\\configs\\phase2_main.yaml",
+      "--stage",
+      "full"
+    ],
+    "started_at_utc": "2026-09-18T19:25:18.906493+00:00",
+    "status": "completed",
+    "exit_code": 0,
+    "elapsed_seconds": 149.370541599812,
+    "log": {
+      "path": "phase2/results/logs/full/plot_phase2_attempt_01.log",
+      "bytes": 102,
+      "sha256": "0349425dbd00c2fe095c1d027ef6d5158e49b54c20a0fa31a74f2082f3e014f3"
+    },
+    "finished_at_utc": "2026-09-18T19:27:48.284194+00:00"
+  }
+]

@@ -1,0 +1,165 @@
+{
+  "passed": true,
+  "failures": [],
+  "gates": {
+    "bandpass": {
+      "max_snr_error_below_1e4": true,
+      "rms_control_below_1e6": true,
+      "covariance_match_below_1e5": true,
+      "independent_corr_mean": 0.028173473642943814,
+      "electrode_corr_mean": 0.19747206950876808,
+      "psd_relative_l1": {
+        "independent": 0.03167429981795142,
+        "independent_rms": 0.031416930204655184,
+        "electrode": 0.0,
+        "covariance": 0.03760133083715131
+      },
+      "strict_structure_control": true,
+      "independent_corr_below_008": true,
+      "mapped_corr_increase_above_005": true,
+      "aggregate_psd_error_below_015": true
+    },
+    "bw": {
+      "max_snr_error_below_1e4": true,
+      "rms_control_below_1e6": true,
+      "covariance_match_below_1e5": true,
+      "independent_corr_mean": 0.40498350831012736,
+      "electrode_corr_mean": 0.5108831136876297,
+      "psd_relative_l1": {
+        "independent": 0.04202637468711614,
+        "independent_rms": 0.23766829984007015,
+        "electrode": 0.0,
+        "covariance": 0.11371906503524767
+      },
+      "strict_structure_control": false
+    },
+    "ma": {
+      "max_snr_error_below_1e4": true,
+      "rms_control_below_1e6": true,
+      "covariance_match_below_1e5": true,
+      "independent_corr_mean": 0.236677293794474,
+      "electrode_corr_mean": 0.3889129074450059,
+      "psd_relative_l1": {
+        "independent": 0.10394010123479765,
+        "independent_rms": 0.19775906946024863,
+        "electrode": 0.0,
+        "covariance": 0.267263813776577
+      },
+      "strict_structure_control": false
+    },
+    "em": {
+      "max_snr_error_below_1e4": true,
+      "rms_control_below_1e6": true,
+      "covariance_match_below_1e5": true,
+      "independent_corr_mean": 0.24465208915356024,
+      "electrode_corr_mean": 0.4458069702775929,
+      "psd_relative_l1": {
+        "independent": 0.07086071294409668,
+        "independent_rms": 0.22013895222880545,
+        "electrode": 0.0,
+        "covariance": 0.07742216604482356
+      },
+      "strict_structure_control": false
+    }
+  },
+  "audit_split": "validation",
+  "ecg_ids": [
+    10,
+    26,
+    30,
+    39,
+    41,
+    48,
+    49,
+    51,
+    62,
+    72,
+    91,
+    94,
+    127,
+    134,
+    151,
+    152,
+    153,
+    155,
+    165,
+    170,
+    178,
+    184,
+    189,
+    193,
+    195,
+    198,
+    204,
+    205,
+    216,
+    219,
+    228,
+    233,
+    234,
+    238,
+    262,
+    266,
+    293,
+    303,
+    326,
+    343,
+    352,
+    354,
+    360,
+    365,
+    368,
+    383,
+    386,
+    387,
+    398,
+    406,
+    414,
+    437,
+    441,
+    445,
+    491,
+    515,
+    520,
+    524,
+    529,
+    544,
+    545,
+    553,
+    563,
+    574
+  ],
+  "config": {
+    "run_name": "noise_diagnostic",
+    "data_dir": "data/processed_smoke",
+    "results_dir": "results",
+    "sampling_rate": 100,
+    "train": {
+      "train_limit": 256,
+      "val_limit": 100,
+      "test_limit": 100,
+      "subset_seed": 2026
+    },
+    "noise": {
+      "snrs": [
+        20,
+        10,
+        0
+      ],
+      "kinds": [
+        "bandpass",
+        "bw",
+        "ma",
+        "em"
+      ],
+      "band": [
+        0.5,
+        40
+      ],
+      "seed": 8128,
+      "nstdb_dir": "data/raw/nstdb",
+      "audit_records": 64
+    }
+  },
+  "notes": "NSTDB PSD/correlation recorded, not assumed matched. Covariance is empirical, sample-conditioned; no claim of identical higher-order law."
+}

@@ -1,0 +1,883 @@
+{
+  "axis_order": [
+    "registered_group",
+    "point_then_common_patient_draw",
+    "auc_metric"
+  ],
+  "group_ids": [
+    "clean",
+    "bandpass__train__independent_rms__s20",
+    "bandpass__combo_RA_LA_LL__independent_rms__s20",
+    "bandpass__train__independent_rms__s15",
+    "bandpass__combo_RA_LA_LL__independent_rms__s15",
+    "bandpass__train__independent_rms__s10",
+    "bandpass__combo_RA_LA_LL__independent_rms__s10",
+    "bandpass__train__independent_rms__s5",
+    "bandpass__combo_RA_LA_LL__independent_rms__s5",
+    "bandpass__train__independent_rms__s0",
+    "bandpass__combo_RA_LA_LL__independent_rms__s0",
+    "bandpass__train__electrode__s20",
+    "bandpass__combo_RA_LA_LL__electrode__s20",
+    "bandpass__train__electrode__s15",
+    "bandpass__combo_RA_LA_LL__electrode__s15",
+    "bandpass__train__electrode__s10",
+    "bandpass__combo_RA_LA_LL__electrode__s10",
+    "bandpass__train__electrode__s5",
+    "bandpass__combo_RA_LA_LL__electrode__s5",
+    "bandpass__train__electrode__s0",
+    "bandpass__combo_RA_LA_LL__electrode__s0",
+    "bandpass__train__covariance__s20",
+    "bandpass__combo_RA_LA_LL__covariance__s20",
+    "bandpass__train__covariance__s15",
+    "bandpass__combo_RA_LA_LL__covariance__s15",
+    "bandpass__train__covariance__s10",
+    "bandpass__combo_RA_LA_LL__covariance__s10",
+    "bandpass__train__covariance__s5",
+    "bandpass__combo_RA_LA_LL__covariance__s5",
+    "bandpass__train__covariance__s0",
+    "bandpass__combo_RA_LA_LL__covariance__s0",
+    "bandpass__combo_V1__independent_rms__s20",
+    "bandpass__combo_V1__independent_rms__s15",
+    "bandpass__combo_V1__independent_rms__s10",
+    "bandpass__combo_V1__independent_rms__s5",
+    "bandpass__combo_V1__independent_rms__s0",
+    "bandpass__combo_V1__electrode__s20",
+    "bandpass__combo_V1__electrode__s15",
+    "bandpass__combo_V1__electrode__s10",
+    "bandpass__combo_V1__electrode__s5",
+    "bandpass__combo_V1__electrode__s0",
+    "bandpass__combo_V1__covariance__s20",
+    "bandpass__combo_V1__covariance__s15",
+    "bandpass__combo_V1__covariance__s10",
+    "bandpass__combo_V1__covariance__s5",
+    "bandpass__combo_V1__covariance__s0",
+    "bandpass__combo_V2__independent_rms__s20",
+    "bandpass__combo_V2__independent_rms__s15",
+    "bandpass__combo_V2__independent_rms__s10",
+    "bandpass__combo_V2__independent_rms__s5",
+    "bandpass__combo_V2__independent_rms__s0",
+    "bandpass__combo_V2__electrode__s20",
+    "bandpass__combo_V2__electrode__s15",
+    "bandpass__combo_V2__electrode__s10",
+    "bandpass__combo_V2__electrode__s5",
+    "bandpass__combo_V2__electrode__s0",
+    "bandpass__combo_V2__covariance__s20",
+    "bandpass__combo_V2__covariance__s15",
+    "bandpass__combo_V2__covariance__s10",
+    "bandpass__combo_V2__covariance__s5",
+    "bandpass__combo_V2__covariance__s0",
+    "bandpass__combo_V3__independent_rms__s20",
+    "bandpass__combo_V3__independent_rms__s15",
+    "bandpass__combo_V3__independent_rms__s10",
+    "bandpass__combo_V3__independent_rms__s5",
+    "bandpass__combo_V3__independent_rms__s0",
+    "bandpass__combo_V3__electrode__s20",
+    "bandpass__combo_V3__electrode__s15",
+    "bandpass__combo_V3__electrode__s10",
+    "bandpass__combo_V3__electrode__s5",
+    "bandpass__combo_V3__electrode__s0",
+    "bandpass__combo_V3__covariance__s20",
+    "bandpass__combo_V3__covariance__s15",
+    "bandpass__combo_V3__covariance__s10",
+    "bandpass__combo_V3__covariance__s5",
+    "bandpass__combo_V3__covariance__s0",
+    "bandpass__combo_V4__independent_rms__s20",
+    "bandpass__combo_V4__independent_rms__s15",
+    "bandpass__combo_V4__independent_rms__s10",
+    "bandpass__combo_V4__independent_rms__s5",
+    "bandpass__combo_V4__independent_rms__s0",
+    "bandpass__combo_V4__electrode__s20",
+    "bandpass__combo_V4__electrode__s15",
+    "bandpass__combo_V4__electrode__s10",
+    "bandpass__combo_V4__electrode__s5",
+    "bandpass__combo_V4__electrode__s0",
+    "bandpass__combo_V4__covariance__s20",
+    "bandpass__combo_V4__covariance__s15",
+    "bandpass__combo_V4__covariance__s10",
+    "bandpass__combo_V4__covariance__s5",
+    "bandpass__combo_V4__covariance__s0",
+    "bandpass__combo_V5__independent_rms__s20",
+    "bandpass__combo_V5__independent_rms__s15",
+    "bandpass__combo_V5__independent_rms__s10",
+    "bandpass__combo_V5__independent_rms__s5",
+    "bandpass__combo_V5__independent_rms__s0",
+    "bandpass__combo_V5__electrode__s20",
+    "bandpass__combo_V5__electrode__s15",
+    "bandpass__combo_V5__electrode__s10",
+    "bandpass__combo_V5__electrode__s5",
+    "bandpass__combo_V5__electrode__s0",
+    "bandpass__combo_V5__covariance__s20",
+    "bandpass__combo_V5__covariance__s15",
+    "bandpass__combo_V5__covariance__s10",
+    "bandpass__combo_V5__covariance__s5",
+    "bandpass__combo_V5__covariance__s0",
+    "bandpass__combo_V6__independent_rms__s20",
+    "bandpass__combo_V6__independent_rms__s15",
+    "bandpass__combo_V6__independent_rms__s10",
+    "bandpass__combo_V6__independent_rms__s5",
+    "bandpass__combo_V6__independent_rms__s0",
+    "bandpass__combo_V6__electrode__s20",
+    "bandpass__combo_V6__electrode__s15",
+    "bandpass__combo_V6__electrode__s10",
+    "bandpass__combo_V6__electrode__s5",
+    "bandpass__combo_V6__electrode__s0",
+    "bandpass__combo_V6__covariance__s20",
+    "bandpass__combo_V6__covariance__s15",
+    "bandpass__combo_V6__covariance__s10",
+    "bandpass__combo_V6__covariance__s5",
+    "bandpass__combo_V6__covariance__s0",
+    "bandpass__combo_RA_LA__independent_rms__s20",
+    "bandpass__combo_RA_LA__independent_rms__s15",
+    "bandpass__combo_RA_LA__independent_rms__s10",
+    "bandpass__combo_RA_LA__independent_rms__s5",
+    "bandpass__combo_RA_LA__independent_rms__s0",
+    "bandpass__combo_RA_LA__electrode__s20",
+    "bandpass__combo_RA_LA__electrode__s15",
+    "bandpass__combo_RA_LA__electrode__s10",
+    "bandpass__combo_RA_LA__electrode__s5",
+    "bandpass__combo_RA_LA__electrode__s0",
+    "bandpass__combo_RA_LA__covariance__s20",
+    "bandpass__combo_RA_LA__covariance__s15",
+    "bandpass__combo_RA_LA__covariance__s10",
+    "bandpass__combo_RA_LA__covariance__s5",
+    "bandpass__combo_RA_LA__covariance__s0",
+    "bandpass__combo_LA_LL__independent_rms__s20",
+    "bandpass__combo_LA_LL__independent_rms__s15",
+    "bandpass__combo_LA_LL__independent_rms__s10",
+    "bandpass__combo_LA_LL__independent_rms__s5",
+    "bandpass__combo_LA_LL__independent_rms__s0",
+    "bandpass__combo_LA_LL__electrode__s20",
+    "bandpass__combo_LA_LL__electrode__s15",
+    "bandpass__combo_LA_LL__electrode__s10",
+    "bandpass__combo_LA_LL__electrode__s5",
+    "bandpass__combo_LA_LL__electrode__s0",
+    "bandpass__combo_LA_LL__covariance__s20",
+    "bandpass__combo_LA_LL__covariance__s15",
+    "bandpass__combo_LA_LL__covariance__s10",
+    "bandpass__combo_LA_LL__covariance__s5",
+    "bandpass__combo_LA_LL__covariance__s0",
+    "bandpass__combo_RA_LL__independent_rms__s20",
+    "bandpass__combo_RA_LL__independent_rms__s15",
+    "bandpass__combo_RA_LL__independent_rms__s10",
+    "bandpass__combo_RA_LL__independent_rms__s5",
+    "bandpass__combo_RA_LL__independent_rms__s0",
+    "bandpass__combo_RA_LL__electrode__s20",
+    "bandpass__combo_RA_LL__electrode__s15",
+    "bandpass__combo_RA_LL__electrode__s10",
+    "bandpass__combo_RA_LL__electrode__s5",
+    "bandpass__combo_RA_LL__electrode__s0",
+    "bandpass__combo_RA_LL__covariance__s20",
+    "bandpass__combo_RA_LL__covariance__s15",
+    "bandpass__combo_RA_LL__covariance__s10",
+    "bandpass__combo_RA_LL__covariance__s5",
+    "bandpass__combo_RA_LL__covariance__s0",
+    "bandpass__heldout__independent_rms__s20",
+    "bandpass__combo_RA__independent_rms__s20",
+    "bandpass__heldout__independent_rms__s15",
+    "bandpass__combo_RA__independent_rms__s15",
+    "bandpass__heldout__independent_rms__s10",
+    "bandpass__combo_RA__independent_rms__s10",
+    "bandpass__heldout__independent_rms__s5",
+    "bandpass__combo_RA__independent_rms__s5",
+    "bandpass__heldout__independent_rms__s0",
+    "bandpass__combo_RA__independent_rms__s0",
+    "bandpass__heldout__electrode__s20",
+    "bandpass__combo_RA__electrode__s20",
+    "bandpass__heldout__electrode__s15",
+    "bandpass__combo_RA__electrode__s15",
+    "primary_joint",
+    "bandpass__heldout__electrode__s10",
+    "bandpass__combo_RA__electrode__s10",
+    "bandpass__heldout__electrode__s5",
+    "bandpass__combo_RA__electrode__s5",
+    "bandpass__heldout__electrode__s0",
+    "bandpass__combo_RA__electrode__s0",
+    "bandpass__heldout__covariance__s20",
+    "bandpass__combo_RA__covariance__s20",
+    "bandpass__heldout__covariance__s15",
+    "bandpass__combo_RA__covariance__s15",
+    "bandpass__heldout__covariance__s10",
+    "bandpass__combo_RA__covariance__s10",
+    "bandpass__heldout__covariance__s5",
+    "bandpass__combo_RA__covariance__s5",
+    "bandpass__heldout__covariance__s0",
+    "bandpass__combo_RA__covariance__s0",
+    "bandpass__combo_LA__independent_rms__s20",
+    "bandpass__combo_LA__independent_rms__s15",
+    "bandpass__combo_LA__independent_rms__s10",
+    "bandpass__combo_LA__independent_rms__s5",
+    "bandpass__combo_LA__independent_rms__s0",
+    "bandpass__combo_LA__electrode__s20",
+    "bandpass__combo_LA__electrode__s15",
+    "bandpass__combo_LA__electrode__s10",
+    "bandpass__combo_LA__electrode__s5",
+    "bandpass__combo_LA__electrode__s0",
+    "bandpass__combo_LA__covariance__s20",
+    "bandpass__combo_LA__covariance__s15",
+    "bandpass__combo_LA__covariance__s10",
+    "bandpass__combo_LA__covariance__s5",
+    "bandpass__combo_LA__covariance__s0",
+    "bandpass__combo_LL__independent_rms__s20",
+    "bandpass__combo_LL__independent_rms__s15",
+    "bandpass__combo_LL__independent_rms__s10",
+    "bandpass__combo_LL__independent_rms__s5",
+    "bandpass__combo_LL__independent_rms__s0",
+    "bandpass__combo_LL__electrode__s20",
+    "bandpass__combo_LL__electrode__s15",
+    "bandpass__combo_LL__electrode__s10",
+    "bandpass__combo_LL__electrode__s5",
+    "bandpass__combo_LL__electrode__s0",
+    "bandpass__combo_LL__covariance__s20",
+    "bandpass__combo_LL__covariance__s15",
+    "bandpass__combo_LL__covariance__s10",
+    "bandpass__combo_LL__covariance__s5",
+    "bandpass__combo_LL__covariance__s0",
+    "bandpass__combo_RA_V1__independent_rms__s20",
+    "bandpass__combo_RA_V1__independent_rms__s15",
+    "bandpass__combo_RA_V1__independent_rms__s10",
+    "bandpass__combo_RA_V1__independent_rms__s5",
+    "bandpass__combo_RA_V1__independent_rms__s0",
+    "bandpass__combo_RA_V1__electrode__s20",
+    "bandpass__combo_RA_V1__electrode__s15",
+    "bandpass__combo_RA_V1__electrode__s10",
+    "bandpass__combo_RA_V1__electrode__s5",
+    "bandpass__combo_RA_V1__electrode__s0",
+    "bandpass__combo_RA_V1__covariance__s20",
+    "bandpass__combo_RA_V1__covariance__s15",
+    "bandpass__combo_RA_V1__covariance__s10",
+    "bandpass__combo_RA_V1__covariance__s5",
+    "bandpass__combo_RA_V1__covariance__s0",
+    "bandpass__combo_LA_V6__independent_rms__s20",
+    "bandpass__combo_LA_V6__independent_rms__s15",
+    "bandpass__combo_LA_V6__independent_rms__s10",
+    "bandpass__combo_LA_V6__independent_rms__s5",
+    "bandpass__combo_LA_V6__independent_rms__s0",
+    "bandpass__combo_LA_V6__electrode__s20",
+    "bandpass__combo_LA_V6__electrode__s15",
+    "bandpass__combo_LA_V6__electrode__s10",
+    "bandpass__combo_LA_V6__electrode__s5",
+    "bandpass__combo_LA_V6__electrode__s0",
+    "bandpass__combo_LA_V6__covariance__s20",
+    "bandpass__combo_LA_V6__covariance__s15",
+    "bandpass__combo_LA_V6__covariance__s10",
+    "bandpass__combo_LA_V6__covariance__s5",
+    "bandpass__combo_LA_V6__covariance__s0",
+    "bandpass__combo_LL_V4__independent_rms__s20",
+    "bandpass__combo_LL_V4__independent_rms__s15",
+    "bandpass__combo_LL_V4__independent_rms__s10",
+    "bandpass__combo_LL_V4__independent_rms__s5",
+    "bandpass__combo_LL_V4__independent_rms__s0",
+    "bandpass__combo_LL_V4__electrode__s20",
+    "bandpass__combo_LL_V4__electrode__s15",
+    "bandpass__combo_LL_V4__electrode__s10",
+    "bandpass__combo_LL_V4__electrode__s5",
+    "bandpass__combo_LL_V4__electrode__s0",
+    "bandpass__combo_LL_V4__covariance__s20",
+    "bandpass__combo_LL_V4__covariance__s15",
+    "bandpass__combo_LL_V4__covariance__s10",
+    "bandpass__combo_LL_V4__covariance__s5",
+    "bandpass__combo_LL_V4__covariance__s0",
+    "bandpass__combo_RA_LA_V1_V6__independent_rms__s20",
+    "bandpass__combo_RA_LA_V1_V6__independent_rms__s15",
+    "bandpass__combo_RA_LA_V1_V6__independent_rms__s10",
+    "bandpass__combo_RA_LA_V1_V6__independent_rms__s5",
+    "bandpass__combo_RA_LA_V1_V6__independent_rms__s0",
+    "bandpass__combo_RA_LA_V1_V6__electrode__s20",
+    "bandpass__combo_RA_LA_V1_V6__electrode__s15",
+    "bandpass__combo_RA_LA_V1_V6__electrode__s10",
+    "bandpass__combo_RA_LA_V1_V6__electrode__s5",
+    "bandpass__combo_RA_LA_V1_V6__electrode__s0",
+    "bandpass__combo_RA_LA_V1_V6__covariance__s20",
+    "bandpass__combo_RA_LA_V1_V6__covariance__s15",
+    "bandpass__combo_RA_LA_V1_V6__covariance__s10",
+    "bandpass__combo_RA_LA_V1_V6__covariance__s5",
+    "bandpass__combo_RA_LA_V1_V6__covariance__s0",
+    "bandpass__combo_RA_V2_V5__independent_rms__s20",
+    "bandpass__combo_RA_V2_V5__independent_rms__s15",
+    "bandpass__combo_RA_V2_V5__independent_rms__s10",
+    "bandpass__combo_RA_V2_V5__independent_rms__s5",
+    "bandpass__combo_RA_V2_V5__independent_rms__s0",
+    "bandpass__combo_RA_V2_V5__electrode__s20",
+    "bandpass__combo_RA_V2_V5__electrode__s15",
+    "bandpass__combo_RA_V2_V5__electrode__s10",
+    "bandpass__combo_RA_V2_V5__electrode__s5",
+    "bandpass__combo_RA_V2_V5__electrode__s0",
+    "bandpass__combo_RA_V2_V5__covariance__s20",
+    "bandpass__combo_RA_V2_V5__covariance__s15",
+    "bandpass__combo_RA_V2_V5__covariance__s10",
+    "bandpass__combo_RA_V2_V5__covariance__s5",
+    "bandpass__combo_RA_V2_V5__covariance__s0",
+    "bandpass__combo_LA_V3_V6__independent_rms__s20",
+    "bandpass__combo_LA_V3_V6__independent_rms__s15",
+    "bandpass__combo_LA_V3_V6__independent_rms__s10",
+    "bandpass__combo_LA_V3_V6__independent_rms__s5",
+    "bandpass__combo_LA_V3_V6__independent_rms__s0",
+    "bandpass__combo_LA_V3_V6__electrode__s20",
+    "bandpass__combo_LA_V3_V6__electrode__s15",
+    "bandpass__combo_LA_V3_V6__electrode__s10",
+    "bandpass__combo_LA_V3_V6__electrode__s5",
+    "bandpass__combo_LA_V3_V6__electrode__s0",
+    "bandpass__combo_LA_V3_V6__covariance__s20",
+    "bandpass__combo_LA_V3_V6__covariance__s15",
+    "bandpass__combo_LA_V3_V6__covariance__s10",
+    "bandpass__combo_LA_V3_V6__covariance__s5",
+    "bandpass__combo_LA_V3_V6__covariance__s0",
+    "bandpass__combo_LL_V1_V4__independent_rms__s20",
+    "bandpass__combo_LL_V1_V4__independent_rms__s15",
+    "bandpass__combo_LL_V1_V4__independent_rms__s10",
+    "bandpass__combo_LL_V1_V4__independent_rms__s5",
+    "bandpass__combo_LL_V1_V4__independent_rms__s0",
+    "bandpass__combo_LL_V1_V4__electrode__s20",
+    "bandpass__combo_LL_V1_V4__electrode__s15",
+    "bandpass__combo_LL_V1_V4__electrode__s10",
+    "bandpass__combo_LL_V1_V4__electrode__s5",
+    "bandpass__combo_LL_V1_V4__electrode__s0",
+    "bandpass__combo_LL_V1_V4__covariance__s20",
+    "bandpass__combo_LL_V1_V4__covariance__s15",
+    "bandpass__combo_LL_V1_V4__covariance__s10",
+    "bandpass__combo_LL_V1_V4__covariance__s5",
+    "bandpass__combo_LL_V1_V4__covariance__s0",
+    "bandpass__all__independent_rms__s20",
+    "bandpass__all__independent_rms__s15",
+    "bandpass__all__independent_rms__s10",
+    "bandpass__all__independent_rms__s5",
+    "bandpass__all__independent_rms__s0",
+    "bandpass__all__electrode__s20",
+    "bandpass__all__electrode__s15",
+    "bandpass__all__electrode__s10",
+    "bandpass__all__electrode__s5",
+    "bandpass__all__electrode__s0",
+    "bandpass__all__covariance__s20",
+    "bandpass__all__covariance__s15",
+    "bandpass__all__covariance__s10",
+    "bandpass__all__covariance__s5",
+    "bandpass__all__covariance__s0",
+    "bw__all__independent_rms__s20",
+    "bw__all__independent_rms__s10",
+    "bw__all__independent_rms__s0",
+    "bw__all__electrode__s20",
+    "bw__all__electrode__s10",
+    "bw__all__electrode__s0",
+    "bw__all__covariance__s20",
+    "bw__all__covariance__s10",
+    "bw__all__covariance__s0",
+    "ma__all__independent_rms__s20",
+    "ma__all__independent_rms__s10",
+    "ma__all__independent_rms__s0",
+    "ma__all__electrode__s20",
+    "ma__all__electrode__s10",
+    "ma__all__electrode__s0",
+    "ma__all__covariance__s20",
+    "ma__all__covariance__s10",
+    "ma__all__covariance__s0",
+    "em__all__independent_rms__s20",
+    "em__all__independent_rms__s10",
+    "em__all__independent_rms__s0",
+    "em__all__electrode__s20",
+    "em__all__electrode__s10",
+    "em__all__electrode__s0",
+    "em__all__covariance__s20",
+    "em__all__covariance__s10",
+    "em__all__covariance__s0"
+  ],
+  "metrics": [
+    "macro_auroc",
+    "auroc_NORM",
+    "auroc_MI",
+    "auroc_STTC",
+    "auroc_CD",
+    "auroc_HYP"
+  ],
+  "draws": {
+    "path": "phase2/results/tables/full/patient_bootstrap/patient_draws.npy",
+    "bytes": 15016128,
+    "sha256": "295179b3aa31dc71a97781fff3eaa11aa947b3d671ae80eb9194fa65098a9a2f"
+  },
+  "cohort": {
+    "path": "phase2/results/tables/full/patient_bootstrap/cohort.npz",
+    "bytes": 128750,
+    "sha256": "d9f751f0aad846f0f18a8a93b4e0699fed797b39da9b499f9c690a8606d1b618"
+  },
+  "distributions": [
+    {
+      "run": [
+        "clean_only",
+        "resnet",
+        17
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/clean_only__resnet__seed_17.npy",
+        "bytes": 35922080,
+        "sha256": "fe22438a3e6140dcc7b7747eb943a6fb87bd6610a7b965ab798ada09bbd65d0b"
+      }
+    },
+    {
+      "run": [
+        "independent_rms",
+        "resnet",
+        17
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/independent_rms__resnet__seed_17.npy",
+        "bytes": 35922080,
+        "sha256": "e5b6149448547a5b2255e6fa90e172a2568b403ead0891ebf65549664331871a"
+      }
+    },
+    {
+      "run": [
+        "electrode",
+        "resnet",
+        17
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/electrode__resnet__seed_17.npy",
+        "bytes": 35922080,
+        "sha256": "98932f22c4a31fd4a2c8a424728a342cc15df371e7e75d3e87bb662983cc49f3"
+      }
+    },
+    {
+      "run": [
+        "mixed",
+        "resnet",
+        17
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/mixed__resnet__seed_17.npy",
+        "bytes": 35922080,
+        "sha256": "7d937c75b744098ca5e1db8a55288eefafc46bcd15ce39822bbbbf2f95f2f3ba"
+      }
+    },
+    {
+      "run": [
+        "clean_only",
+        "resnet",
+        29
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/clean_only__resnet__seed_29.npy",
+        "bytes": 35922080,
+        "sha256": "76519e06a4c186e7f566a63c5e14e8ead6b8a6cb05eaf05264dd68c728fa567b"
+      }
+    },
+    {
+      "run": [
+        "independent_rms",
+        "resnet",
+        29
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/independent_rms__resnet__seed_29.npy",
+        "bytes": 35922080,
+        "sha256": "ef12c817df9d19bdcca15d1b0e2041b021064920e439be55b075663304fcd10c"
+      }
+    },
+    {
+      "run": [
+        "electrode",
+        "resnet",
+        29
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/electrode__resnet__seed_29.npy",
+        "bytes": 35922080,
+        "sha256": "4605132a2c6065bed6662929d5fa08217de64a627c1e005e30db8fe55712a656"
+      }
+    },
+    {
+      "run": [
+        "mixed",
+        "resnet",
+        29
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/mixed__resnet__seed_29.npy",
+        "bytes": 35922080,
+        "sha256": "af51768d47ccc9007aed42aad9905b4b4bffe94cc8c44bbf6addafbd07912c64"
+      }
+    },
+    {
+      "run": [
+        "clean_only",
+        "resnet",
+        43
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/clean_only__resnet__seed_43.npy",
+        "bytes": 35922080,
+        "sha256": "ffefb839d54af819e917c081401c704d19a2b5011d0950272433be5023cb9e7a"
+      }
+    },
+    {
+      "run": [
+        "independent_rms",
+        "resnet",
+        43
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/independent_rms__resnet__seed_43.npy",
+        "bytes": 35922080,
+        "sha256": "0d4f47cf974c9ddb2c9074aa3c251c502a492fe3492a239527a9afe7420e76b7"
+      }
+    },
+    {
+      "run": [
+        "electrode",
+        "resnet",
+        43
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/electrode__resnet__seed_43.npy",
+        "bytes": 35922080,
+        "sha256": "f216ac0f90385727ee072e1a51755ad87395255165a90765d07b68a2b168f832"
+      }
+    },
+    {
+      "run": [
+        "mixed",
+        "resnet",
+        43
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/mixed__resnet__seed_43.npy",
+        "bytes": 35922080,
+        "sha256": "f018fabb105349a050693904117d1a7e850d9c24ff15c72de2e93c94848703a8"
+      }
+    },
+    {
+      "run": [
+        "clean_only",
+        "resnet",
+        101
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/clean_only__resnet__seed_101.npy",
+        "bytes": 35922080,
+        "sha256": "e95a1b2a8e80fddc43d6540a97c8f231fba670ffa8b7101434b1d971b39328d8"
+      }
+    },
+    {
+      "run": [
+        "independent_rms",
+        "resnet",
+        101
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/independent_rms__resnet__seed_101.npy",
+        "bytes": 35922080,
+        "sha256": "9ed2fc5c107a19fec82d29800f042b6df3090e0469f9214c2f4a5280ab6f07c2"
+      }
+    },
+    {
+      "run": [
+        "electrode",
+        "resnet",
+        101
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/electrode__resnet__seed_101.npy",
+        "bytes": 35922080,
+        "sha256": "4b30e2115cddcae044eaa52e605328d705950c1d55a54ea138330a219f990a0c"
+      }
+    },
+    {
+      "run": [
+        "mixed",
+        "resnet",
+        101
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/mixed__resnet__seed_101.npy",
+        "bytes": 35922080,
+        "sha256": "f202baccd0ecd89c73b31b67db3e322ca1c17ef54e14695376f804653b3edb2b"
+      }
+    },
+    {
+      "run": [
+        "clean_only",
+        "resnet",
+        202
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/clean_only__resnet__seed_202.npy",
+        "bytes": 35922080,
+        "sha256": "749328a5ec0d2d3e69d5ac1f8bd8cf291812187a76192870f37189a6cc021cfa"
+      }
+    },
+    {
+      "run": [
+        "independent_rms",
+        "resnet",
+        202
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/independent_rms__resnet__seed_202.npy",
+        "bytes": 35922080,
+        "sha256": "aae1862a4e7c50140a7f9afb0bafe2b529816c5aa6f0cc38fdd129ec9d385242"
+      }
+    },
+    {
+      "run": [
+        "electrode",
+        "resnet",
+        202
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/electrode__resnet__seed_202.npy",
+        "bytes": 35922080,
+        "sha256": "8c8e1f38c27fae9afb22c7217cd94a2d4a01686e4658bd1507533d0362dfdf64"
+      }
+    },
+    {
+      "run": [
+        "mixed",
+        "resnet",
+        202
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/mixed__resnet__seed_202.npy",
+        "bytes": 35922080,
+        "sha256": "1416efec9b2ba215122bf2d6f654025570221a9c3fa08838ec0d3e41b3e15675"
+      }
+    },
+    {
+      "run": [
+        "clean_only",
+        "tcn",
+        17
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/clean_only__tcn__seed_17.npy",
+        "bytes": 35922080,
+        "sha256": "8767489664c5743c258efc5e3ec06bac5e1765644d4d3ed10f4d28a548029d84"
+      }
+    },
+    {
+      "run": [
+        "independent_rms",
+        "tcn",
+        17
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/independent_rms__tcn__seed_17.npy",
+        "bytes": 35922080,
+        "sha256": "9ae5491099580c325e493da5c6f60c5e7be3c370735fb7002a49abe8551273a4"
+      }
+    },
+    {
+      "run": [
+        "electrode",
+        "tcn",
+        17
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/electrode__tcn__seed_17.npy",
+        "bytes": 35922080,
+        "sha256": "69eb91291ac212be17dd95fdb19c8df043c44298a08e412d45f98452f0ff574f"
+      }
+    },
+    {
+      "run": [
+        "mixed",
+        "tcn",
+        17
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/mixed__tcn__seed_17.npy",
+        "bytes": 35922080,
+        "sha256": "f130a2ab632b082e8f735c25b693b922ea83575954e7dd7f659da0c2614dd457"
+      }
+    },
+    {
+      "run": [
+        "clean_only",
+        "tcn",
+        29
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/clean_only__tcn__seed_29.npy",
+        "bytes": 35922080,
+        "sha256": "597841337b45a68c71d169554f9a91c443112e7ded91c17d88c70643abdbadfc"
+      }
+    },
+    {
+      "run": [
+        "independent_rms",
+        "tcn",
+        29
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/independent_rms__tcn__seed_29.npy",
+        "bytes": 35922080,
+        "sha256": "691768e53513371712555bc62f99b2c8c7ce1f870eb45e1b52cc6beb92fe52f3"
+      }
+    },
+    {
+      "run": [
+        "electrode",
+        "tcn",
+        29
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/electrode__tcn__seed_29.npy",
+        "bytes": 35922080,
+        "sha256": "cd95eec40affdac7af0a9c3f35096d4918f61f51dde3c3f89deed6e51d1c7f4e"
+      }
+    },
+    {
+      "run": [
+        "mixed",
+        "tcn",
+        29
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/mixed__tcn__seed_29.npy",
+        "bytes": 35922080,
+        "sha256": "bf52eb8d142157254f3a33ab73ae96b27a3cdf243a8e0ea546bf1c7e37021e5d"
+      }
+    },
+    {
+      "run": [
+        "clean_only",
+        "tcn",
+        43
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/clean_only__tcn__seed_43.npy",
+        "bytes": 35922080,
+        "sha256": "53e00e33941ae1aa170af8afa74c797ee675942f74010d6006864576f4b8b8ea"
+      }
+    },
+    {
+      "run": [
+        "independent_rms",
+        "tcn",
+        43
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/independent_rms__tcn__seed_43.npy",
+        "bytes": 35922080,
+        "sha256": "731fda26cbb025d89e88b788a21064d5a691d061f74c5338b946b675324b9cc5"
+      }
+    },
+    {
+      "run": [
+        "electrode",
+        "tcn",
+        43
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/electrode__tcn__seed_43.npy",
+        "bytes": 35922080,
+        "sha256": "38f7fc9711b1de9654fa191354c470bc5d10c1e83fee753a08c815accd674c37"
+      }
+    },
+    {
+      "run": [
+        "mixed",
+        "tcn",
+        43
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/mixed__tcn__seed_43.npy",
+        "bytes": 35922080,
+        "sha256": "98c3077f0f786b41847428c20e5a2b395d8d8cae05b9d1bc82602fa0af3a4920"
+      }
+    },
+    {
+      "run": [
+        "clean_only",
+        "tcn",
+        101
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/clean_only__tcn__seed_101.npy",
+        "bytes": 35922080,
+        "sha256": "240f307cee225d3b02501d840c4e69af917cad9cbfb3752c8e50efc6e98e859f"
+      }
+    },
+    {
+      "run": [
+        "independent_rms",
+        "tcn",
+        101
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/independent_rms__tcn__seed_101.npy",
+        "bytes": 35922080,
+        "sha256": "6b4d401a04515e99066d62f2272e820c2cbe2ea73e24dbcc197ea5312225e0c6"
+      }
+    },
+    {
+      "run": [
+        "electrode",
+        "tcn",
+        101
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/electrode__tcn__seed_101.npy",
+        "bytes": 35922080,
+        "sha256": "268522579e0b60adad26c189d7dac5532e0bd1ded650cad544fbc164ff7e7b0f"
+      }
+    },
+    {
+      "run": [
+        "mixed",
+        "tcn",
+        101
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/mixed__tcn__seed_101.npy",
+        "bytes": 35922080,
+        "sha256": "f512789795175af74c21bc7487975cbd9bb0f9fb3d7f382e0dfd4fabef49e881"
+      }
+    },
+    {
+      "run": [
+        "clean_only",
+        "tcn",
+        202
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/clean_only__tcn__seed_202.npy",
+        "bytes": 35922080,
+        "sha256": "b4893a362d845d1110ce520e87c3f7a7ee25d71e824968426538bfe6ef724dda"
+      }
+    },
+    {
+      "run": [
+        "independent_rms",
+        "tcn",
+        202
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/independent_rms__tcn__seed_202.npy",
+        "bytes": 35922080,
+        "sha256": "95662219391b2c808319221e5c260cd94b45bf6dff5f9e516403c848ae6c9075"
+      }
+    },
+    {
+      "run": [
+        "electrode",
+        "tcn",
+        202
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/electrode__tcn__seed_202.npy",
+        "bytes": 35922080,
+        "sha256": "3e8a5e7cd617b83d2aab1e151829ea5f1c9b50d7c0296bc156a20d72653887f2"
+      }
+    },
+    {
+      "run": [
+        "mixed",
+        "tcn",
+        202
+      ],
+      "distribution": {
+        "path": "phase2/results/tables/full/patient_bootstrap/mixed__tcn__seed_202.npy",
+        "bytes": 35922080,
+        "sha256": "3e3090b76ab75256ef3515bd32f6b4187e4c9ed34a4a6136da72ce1d83afb068"
+      }
+    }
+  ]
+}

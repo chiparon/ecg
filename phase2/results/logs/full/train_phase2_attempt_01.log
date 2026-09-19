@@ -1,0 +1,17 @@
+full/clean_only/resnet/seed_17 epoch=1/25 train_loss=0.35369 val_loss=0.32523 clean_val_auroc=0.89949 elapsed=55.8s
+full/clean_only/resnet/seed_17 epoch=2/25 train_loss=0.28973 val_loss=0.30407 clean_val_auroc=0.91091 elapsed=109.4s
+full/clean_only/resnet/seed_17 epoch=3/25 train_loss=0.26964 val_loss=0.30127 clean_val_auroc=0.91299 elapsed=162.8s
+full/clean_only/resnet/seed_17 epoch=4/25 train_loss=0.25426 val_loss=0.31367 clean_val_auroc=0.91400 elapsed=216.4s
+full/clean_only/resnet/seed_17 epoch=5/25 train_loss=0.24174 val_loss=0.32355 clean_val_auroc=0.91303 elapsed=269.9s
+full/clean_only/resnet/seed_17 epoch=6/25 train_loss=0.22942 val_loss=0.30412 clean_val_auroc=0.91286 elapsed=323.3s
+full/clean_only/resnet/seed_17 epoch=7/25 train_loss=0.21709 val_loss=0.34090 clean_val_auroc=0.90660 elapsed=377.0s
+full/clean_only/resnet/seed_17 epoch=8/25 train_loss=0.20724 val_loss=0.40731 clean_val_auroc=0.89821 elapsed=430.5s
+full/clean_only/resnet/seed_17 epoch=9/25 train_loss=0.18950 val_loss=0.36158 clean_val_auroc=0.90817 elapsed=484.2s
+full/clean_only/resnet/seed_17 epoch=10/25 train_loss=0.17053 val_loss=0.41999 clean_val_auroc=0.89708 elapsed=537.8s
+full/clean_only/resnet/seed_17 epoch=11/25 train_loss=0.15552 val_loss=0.43302 clean_val_auroc=0.89924 elapsed=590.1s
+full/clean_only/resnet/seed_17 epoch=12/25 train_loss=0.13867 val_loss=0.43126 clean_val_auroc=0.89785 elapsed=642.0s
+full/clean_only/resnet/seed_17 epoch=13/25 train_loss=0.12654 val_loss=0.44945 clean_val_auroc=0.89521 elapsed=693.9s
+full/clean_only/resnet/seed_17 epoch=14/25 train_loss=0.10788 val_loss=0.43366 clean_val_auroc=0.89520 elapsed=745.8s
+full/clean_only/resnet/seed_17 epoch=15/25 train_loss=0.09484 val_loss=0.49148 clean_val_auroc=0.89377 elapsed=797.6s
+full/clean_only/resnet/seed_17 epoch=16/25 train_loss=0.08726 val_loss=0.52837 clean_val_auroc=0.89498 elapsed=849.7s
+full/clean_only/resnet/seed_17 epoch=17/25 train_loss=0.06920 val_loss=0.60802 clean_val_auroc=0.89078 elapsed=901.6s

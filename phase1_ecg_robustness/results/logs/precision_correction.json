@@ -1,0 +1,63 @@
+{
+  "before": {
+    "cudnn_allow_tf32": true,
+    "cudnn_deterministic": false,
+    "deterministic_algorithms": false
+  },
+  "after": {
+    "cudnn_allow_tf32": false,
+    "cudnn_deterministic": true,
+    "deterministic_algorithms": true
+  },
+  "records": 256,
+  "max_probability_error": 0.0014041662216186523,
+  "mean_probability_error": 0.00011944755533477291,
+  "legacy_macro_auroc": 0.8568795277792521,
+  "consistent_macro_auroc": 0.8568504318521505,
+  "threshold_decisions_changed": 1,
+  "archive": "E:\\Eproject\\ECG\\phase1_ecg_robustness\\results\\logs\\precision_before_fix.zip",
+  "archive_files": 255,
+  "archive_bytes": 49420476,
+  "archive_sha256": "6fe6959e2f3c0ca9b817f30731fce11bddc9c019e2f8b3910757fc25bc68bea5",
+  "reproduction_scope": "Pilot ResNet seed17, first256 official test-subset ECGs, same checkpoint and inputs, changing only PyTorch execution policy",
+  "corrected_smoke": {
+    "clean_records": 100,
+    "clean_max_abs_error": 0.0,
+    "replayed_noise_records": 1,
+    "noisy_max_abs_error": 4.470348358154297e-08,
+    "torch_execution": {
+      "deterministic_algorithms": true,
+      "cudnn_deterministic": true,
+      "cudnn_allow_tf32": false,
+      "matmul_allow_tf32": false
+    },
+    "status": "passed"
+  },
+  "corrected_archive_comparison": {
+    "smoke": {
+      "prediction_files": 16,
+      "unchanged_labels_ids_thresholds_indices_noise_intensities_and_seeds": true,
+      "max_probability_change": 0.0007818639278411865,
+      "mean_probability_change": 2.6557257551650315e-05,
+      "changed_binary_decisions": 1,
+      "probability_cells": 8000
+    },
+    "pilot": {
+      "prediction_files": 39,
+      "unchanged_labels_ids_thresholds_indices_noise_intensities_and_seeds": true,
+      "max_probability_change": 0.002426624298095703,
+      "mean_probability_change": 0.00012078278388548179,
+      "changed_binary_decisions": 38,
+      "probability_cells": 195000
+    },
+    "pilot_noise_repeats": {
+      "prediction_files": 180,
+      "unchanged_labels_ids_thresholds_indices_noise_intensities_and_seeds": true,
+      "max_probability_change": 0.0028958022594451904,
+      "mean_probability_change": 0.00012348544861796426,
+      "changed_binary_decisions": 156,
+      "probability_cells": 900000
+    }
+  },
+  "status": "corrected_smoke_pilot_and_replays_completed; full_used_corrected_policy_from_first_evaluation"
+}

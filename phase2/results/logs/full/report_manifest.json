@@ -1,0 +1,78 @@
+{
+  "status": "completed",
+  "config_sha256": "980993c490b41e9793164c1d9bbfa54f728606fff281e07486e7af2fc41ddda7",
+  "report": {
+    "path": "phase2/reports/phase2_final_report.md",
+    "bytes": 39940,
+    "sha256": "19e8660c30fcbb03f1b9655f4a2ac0d2ebf04d65d97c8014c1dd52d3eab1bcfa"
+  },
+  "exports": [
+    {
+      "path": "phase2/results/tables/full/report_summary.csv",
+      "bytes": 249541,
+      "sha256": "133f661477612d2b3bd745ab6288a7f41a841e8427f5cc5cc889c074f5d25a0b"
+    },
+    {
+      "path": "phase2/results/tables/full/report_secondary.csv",
+      "bytes": 6369,
+      "sha256": "1d405224ec45b5473fbbbac42851de92efe134083764e0c8167e8a4d72311960"
+    },
+    {
+      "path": "phase2/results/tables/full/report_nstdb.csv",
+      "bytes": 13456,
+      "sha256": "862d4e8187b6b16bafd1db17d744d9eb4238b83bcc07b35247810291d8b012a1"
+    },
+    {
+      "path": "phase2/results/tables/full/report_mechanism.csv",
+      "bytes": 4864,
+      "sha256": "9a0ce46d042966110eb173d72775d17f710ce9401009b241f95cd41e122d07c2"
+    }
+  ],
+  "sources": [
+    {
+      "path": "phase2/results/tables/full/seed_summary.csv",
+      "bytes": 133436490,
+      "sha256": "6f5bb7745f8aa5d8a134c21efdb61eb660cd37e89abc34baa8ed3eca43dcbdf6"
+    },
+    {
+      "path": "phase2/results/tables/full/group_seed_metrics.csv",
+      "bytes": 478518476,
+      "sha256": "d38dde89a9e8fe2aafcc7c97f775e5bdf2d503fd3d15166e61723adb7b562287"
+    },
+    {
+      "path": "phase2/results/tables/full/paired_effects.csv",
+      "bytes": 16261533,
+      "sha256": "0448de8734ca7b99a31c97cb928b2a4f33cc13a6d9f60ad7c85f4100744e9d7d"
+    },
+    {
+      "path": "phase2/results/tables/full/primary_comparisons.csv",
+      "bytes": 2078,
+      "sha256": "92fdab34e658e7e260fb91f2718d623d7d57850d3f433c210d802b59d462f9ad"
+    },
+    {
+      "path": "phase2/results/tables/full/noise_contrasts.csv",
+      "bytes": 22847,
+      "sha256": "a8043670358b902d11699ff18c7946df09dc0659f4731fc10a69d1d5bf7244cf"
+    },
+    {
+      "path": "phase2/results/tables/full/rank_summary.csv",
+      "bytes": 1245395,
+      "sha256": "a731acf361c43c7bd0f039a8ebd07742e6fdebdceb98046540284be17fd396c1"
+    },
+    {
+      "path": "phase2/results/tables/full/rank_correlations.csv",
+      "bytes": 5132239,
+      "sha256": "ec807a42deeb3f3c5e2ac8ce85fcacdffde595dae61c47205ffe715c62ec7df6"
+    }
+  ],
+  "generator": {
+    "path": "phase2/src/report_phase2.py",
+    "bytes": 37665,
+    "sha256": "460397f4a36fedb84e6680a21c80b4dab33d1ef15c4abd43ea3ed430e4ae7b9e"
+  },
+  "verification": {
+    "path": "phase2/results/logs/full/independent_verification.json",
+    "bytes": 21962,
+    "sha256": "3dab518f51b5b4c67f4d887896e1e138b01950486d14dce6c6ed00edfde06c85"
+  }
+}

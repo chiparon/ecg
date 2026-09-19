@@ -1,0 +1,14 @@
+{
+  "official_metadata": {
+    "passed": true,
+    "patients": 18869,
+    "cross_fold_patients": 0,
+    "rule": "each patient occupies exactly one official fold"
+  },
+  "retained": {
+    "passed": true,
+    "patients": 8817,
+    "cross_fold_patients": 0,
+    "rule": "each patient occupies exactly one official fold"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-09-17T03:03:44+0800",
+  "python": "3.10.19 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 16:41:31) [MSC v.1929 64 bit (AMD64)]",
+  "executable": "E:\\Eproject\\ECG\\phase1_ecg_robustness\\.venv\\Scripts\\python.exe",
+  "platform": "Windows-10-10.0.22621-SP0",
+  "cpu_count": 32,
+  "memory": {
+    "total": 33517637632,
+    "available": 13249994752,
+    "percent": 60.5,
+    "used": 20267642880,
+    "free": 13249994752
+  },
+  "disk": {
+    "total": 2000381014016,
+    "used": 1474288205824,
+    "free": 526092808192
+  },
+  "torch": "2.5.1+cu121",
+  "cuda": "12.1",
+  "cuda_available": true,
+  "packages": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.7.2",
+    "matplotlib": "3.10.9",
+    "seaborn": "0.13.2",
+    "torch": "2.5.1+cu121",
+    "wfdb": "4.3.1",
+    "PyYAML": "6.0.3",
+    "pytest": "9.1.1",
+    "psutil": "7.2.2",
+    "requests": "2.34.2"
+  },
+  "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "cuda_backward_probe": "passed"
+}

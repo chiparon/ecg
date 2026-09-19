@@ -1,0 +1,15 @@
+{
+  "status": "superseded_by_current_full_audit",
+  "current_evidence": "results/logs/final_verification.json",
+  "note": "Historical pre-precision-correction diagnostic retained below; all 1051 current predictions, including both replay runs, have been independently checked by the referenced audit.",
+  "historical_result": {
+    "status": "passed",
+    "prediction_files": 180,
+    "records_per_file": 1000,
+    "labels_aligned": true,
+    "macro_auroc_recomputed": true,
+    "max_snr_error_db": 1.6810699321467837e-07,
+    "max_matched_rms_relative_error": 1.2623600848705901e-08,
+    "max_auroc_error": 0.0
+  }
+}

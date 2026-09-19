@@ -1,0 +1,352 @@
+{
+  "status": "passed",
+  "stage": "pilot",
+  "time_utc": "2026-09-18T19:44:06.430509+00:00",
+  "config_sha256": "980993c490b41e9793164c1d9bbfa54f728606fff281e07486e7af2fc41ddda7",
+  "verifier": {
+    "path": "phase2/src/verify_phase2.py",
+    "bytes": 24179,
+    "sha256": "47deaee23ee60907f6babf0630fee10d7d6945602b0ffa3a0f6ff51156bd3f45"
+  },
+  "training": [
+    {
+      "strategy": "clean_only",
+      "model": "resnet",
+      "seed": 17,
+      "epochs": 10,
+      "best_epoch": 4,
+      "parameter_count": 545717,
+      "checkpoint_sha256": "40436b0f8bb760abf62d61c6ec845f8d82186e589259f323ee8d42b0fa2e673c"
+    },
+    {
+      "strategy": "independent_rms",
+      "model": "resnet",
+      "seed": 17,
+      "epochs": 10,
+      "best_epoch": 4,
+      "parameter_count": 545717,
+      "checkpoint_sha256": "fe842b18df15ec7075f8d413d922ac364c4be7594e7cd1538371183f03f4545a"
+    },
+    {
+      "strategy": "electrode",
+      "model": "resnet",
+      "seed": 17,
+      "epochs": 10,
+      "best_epoch": 6,
+      "parameter_count": 545717,
+      "checkpoint_sha256": "4d6d9da7119c3a3d499d9aebca5e706cb0a7253625210609e326fd6f0aaccaf7"
+    },
+    {
+      "strategy": "mixed",
+      "model": "resnet",
+      "seed": 17,
+      "epochs": 10,
+      "best_epoch": 5,
+      "parameter_count": 545717,
+      "checkpoint_sha256": "3d0671513ed1769d05d533eb437ae53bcbd6b563712ca2871b2e9a84db175c4e"
+    },
+    {
+      "strategy": "clean_only",
+      "model": "tcn",
+      "seed": 17,
+      "epochs": 10,
+      "best_epoch": 10,
+      "parameter_count": 134885,
+      "checkpoint_sha256": "7177f54d25e650e0763a94d1f2862da58793b24ecbbaeb6a181f60210ec39435"
+    },
+    {
+      "strategy": "independent_rms",
+      "model": "tcn",
+      "seed": 17,
+      "epochs": 10,
+      "best_epoch": 10,
+      "parameter_count": 134885,
+      "checkpoint_sha256": "fdaf179fc1cebac76edf0d8908e01d6ad6137bafd85ae3642c5948d3a81fb529"
+    },
+    {
+      "strategy": "electrode",
+      "model": "tcn",
+      "seed": 17,
+      "epochs": 10,
+      "best_epoch": 10,
+      "parameter_count": 134885,
+      "checkpoint_sha256": "3d60d1a1027fcec3538c6f638e1fecfb40e984db5cf846fbd9b493c3cedda5f3"
+    },
+    {
+      "strategy": "mixed",
+      "model": "tcn",
+      "seed": 17,
+      "epochs": 10,
+      "best_epoch": 10,
+      "parameter_count": 134885,
+      "checkpoint_sha256": "1fd670e7cbaed941b10d1e3208c394602848c770a65f75ba6c709251e3edf625"
+    }
+  ],
+  "predictions": {
+    "prediction_hashes_checked": 944,
+    "independent_auc_ap_f1_cases": 24,
+    "max_macro_auroc_error": 0.0,
+    "max_macro_ap_error": 0.0,
+    "max_macro_f1_error": 0.0,
+    "explicit_patient_repeat_cases": 72,
+    "explicit_draw_indices": [
+      0,
+      1000,
+      1999
+    ],
+    "bootstrap_replicates": 2000,
+    "patients": 896,
+    "records": 1000,
+    "inference_replay_device": "cpu",
+    "inference_replay_checkpoints": 8,
+    "inference_replay_cases_per_checkpoint": 2,
+    "inference_replay_records_per_case": 128,
+    "inference_replay_max_probability_error": 7.450580596923828e-07
+  },
+  "contrasts": [
+    {
+      "model": "resnet",
+      "lhs": "electrode",
+      "rhs": "clean_only",
+      "independently_recomputed_retention_difference": 0.008445933734910316,
+      "patient_valid_draws": 2000
+    },
+    {
+      "model": "resnet",
+      "lhs": "electrode",
+      "rhs": "independent_rms",
+      "independently_recomputed_retention_difference": 0.001524024387378975,
+      "patient_valid_draws": 2000
+    },
+    {
+      "model": "resnet",
+      "lhs": "mixed",
+      "rhs": "electrode",
+      "independently_recomputed_retention_difference": -0.003534168420496253,
+      "patient_valid_draws": 2000
+    },
+    {
+      "model": "tcn",
+      "lhs": "electrode",
+      "rhs": "clean_only",
+      "independently_recomputed_retention_difference": 0.0019403244804123698,
+      "patient_valid_draws": 2000
+    },
+    {
+      "model": "tcn",
+      "lhs": "electrode",
+      "rhs": "independent_rms",
+      "independently_recomputed_retention_difference": 0.0024324249743693516,
+      "patient_valid_draws": 2000
+    },
+    {
+      "model": "tcn",
+      "lhs": "mixed",
+      "rhs": "electrode",
+      "independently_recomputed_retention_difference": -0.0001930909422455107,
+      "patient_valid_draws": 2000
+    }
+  ],
+  "figures": {
+    "manifest": {
+      "path": "phase2/results/figures/pilot/figure_manifest.json",
+      "bytes": 48140,
+      "sha256": "9b19b229f6f511d615200be73187ed854f3cb2846aff210163c05452682a7cd9"
+    },
+    "figure_pairs": 18,
+    "source_files_checked": 25,
+    "outputs": [
+      {
+        "path": "phase2/results/figures/pilot/clean_absolute.png",
+        "bytes": 212067,
+        "sha256": "afa8460c882497ed5696cf6b88d70927d1b6a947fcec6b49423105bc98040547"
+      },
+      {
+        "path": "phase2/results/figures/pilot/clean_absolute.pdf",
+        "bytes": 34061,
+        "sha256": "c593e78c67eb3feda9cc007cec1c8158a88ea9ff16175c62b89edf6634207576"
+      },
+      {
+        "path": "phase2/results/figures/pilot/clean_clean_cost.png",
+        "bytes": 170222,
+        "sha256": "043d99c6f5cbc1b122a3d9108eae60877018b2eb497d7c9461a11a1bf4ca6bfb"
+      },
+      {
+        "path": "phase2/results/figures/pilot/clean_clean_cost.pdf",
+        "bytes": 26702,
+        "sha256": "a459791264119af52c5ed1b77fac2c59aeb066bd20855cd0700748665c57a183"
+      },
+      {
+        "path": "phase2/results/figures/pilot/gaussian_macro_auroc_absolute.png",
+        "bytes": 796933,
+        "sha256": "90666d6186c6e2a5a419c825caa9b5271497fd5e8d25af75b281fb66625a48a8"
+      },
+      {
+        "path": "phase2/results/figures/pilot/gaussian_macro_auroc_absolute.pdf",
+        "bytes": 46787,
+        "sha256": "ac77d622701835e5afdee4d5d7f2fea7cb2e659485b8965e3a07c5dd2cddbd46"
+      },
+      {
+        "path": "phase2/results/figures/pilot/gaussian_macro_auroc_retention.png",
+        "bytes": 789462,
+        "sha256": "39496f225fd15fc5cad8b6f38b065029e31fbe4573924aa8c21fd6f12c0a4ce0"
+      },
+      {
+        "path": "phase2/results/figures/pilot/gaussian_macro_auroc_retention.pdf",
+        "bytes": 46727,
+        "sha256": "d7373dc3d202f9aec22ea84ad68df9303db135849004393ed78fba0b6d45493d"
+      },
+      {
+        "path": "phase2/results/figures/pilot/supplement_gaussian_heldout_ap_f1.png",
+        "bytes": 514789,
+        "sha256": "64d5f00b392e4c48712df981b1cf58f2918b4fc697655439cc67815b058c70a9"
+      },
+      {
+        "path": "phase2/results/figures/pilot/supplement_gaussian_heldout_ap_f1.pdf",
+        "bytes": 36226,
+        "sha256": "20852d3ec2fd4840acabab785f49a1c61e7d5a4135fe53e5ea51d934a4ef70af"
+      },
+      {
+        "path": "phase2/results/figures/pilot/supplement_gaussian_heldout_brier_ece.png",
+        "bytes": 507697,
+        "sha256": "86f11c68c59501db0b175e38488ddb2156b7bfe3916db8e71ae4148f4cb5951c"
+      },
+      {
+        "path": "phase2/results/figures/pilot/supplement_gaussian_heldout_brier_ece.pdf",
+        "bytes": 37020,
+        "sha256": "3aa5f7510c5a036d84c1f8b58611a380722d5d8f2650551f232fc5f4668b6dd1"
+      },
+      {
+        "path": "phase2/results/figures/pilot/heldout_heatmap_absolute.png",
+        "bytes": 192472,
+        "sha256": "28d4b76b275e4f251e3d3baa6a13d8de68ea622e888e653b7c20e875f8193680"
+      },
+      {
+        "path": "phase2/results/figures/pilot/heldout_heatmap_absolute.pdf",
+        "bytes": 24893,
+        "sha256": "b619b1395d0255b5c7c4f08e06bfbee8ac389819ee33f1f421c795a36967cfdd"
+      },
+      {
+        "path": "phase2/results/figures/pilot/heldout_heatmap_retention.png",
+        "bytes": 191238,
+        "sha256": "806fe9065124d6a2d48e212da3c1a4305f1c2c501b0e76ea0f9992f945508608"
+      },
+      {
+        "path": "phase2/results/figures/pilot/heldout_heatmap_retention.pdf",
+        "bytes": 24869,
+        "sha256": "17f1aa42754205cf9bd189fe35773abbfacf2166837fccfe55c0c38e44a100ec"
+      },
+      {
+        "path": "phase2/results/figures/pilot/primary_contrast_intervals.png",
+        "bytes": 147052,
+        "sha256": "47ad9cf9a50d9f1923495478e2fa23c2ff563f0455e7f2f94e6f64c9f089e529"
+      },
+      {
+        "path": "phase2/results/figures/pilot/primary_contrast_intervals.pdf",
+        "bytes": 18598,
+        "sha256": "de334d034c3fa8ad588e37b817dc1e65321aaaeee60062b60ae3f52d2e39d203"
+      },
+      {
+        "path": "phase2/results/figures/pilot/ranks_individual_seeds_clean.png",
+        "bytes": 148137,
+        "sha256": "d325cc1b776c53340602291e0f8f2f39997a55b5faa840e6c7925c410398714c"
+      },
+      {
+        "path": "phase2/results/figures/pilot/ranks_individual_seeds_clean.pdf",
+        "bytes": 21136,
+        "sha256": "e9fff5383532389bf138299a676f0dcd490065e60580018506c32e364ac358e4"
+      },
+      {
+        "path": "phase2/results/figures/pilot/ranks_individual_seeds_primary_joint.png",
+        "bytes": 157624,
+        "sha256": "3a3bb7562003c786fa30d5c7c9c138a13d53e76b38eb83fff29a29eed085d13b"
+      },
+      {
+        "path": "phase2/results/figures/pilot/ranks_individual_seeds_primary_joint.pdf",
+        "bytes": 21607,
+        "sha256": "979b5068bbfb6d38b88538bcc1f0f47efc8ad922bce5727fc6699d9b0b910ccb"
+      },
+      {
+        "path": "phase2/results/figures/pilot/rank_snr_heldout.png",
+        "bytes": 187384,
+        "sha256": "9391c58ef2ea8085a83288b4d0d7a2a32c1fe47b04ad95526fd0aecd658226ab"
+      },
+      {
+        "path": "phase2/results/figures/pilot/rank_snr_heldout.pdf",
+        "bytes": 25063,
+        "sha256": "7a113673070f48657a46a8d8d2711bdb5c3fcf84d637e575d905a113c7fb1d4c"
+      },
+      {
+        "path": "phase2/results/figures/pilot/rank_correlations_clean_noisy.png",
+        "bytes": 241139,
+        "sha256": "3804a4e20a972b1e9d8910c992ba47b3e729e5668ba206a94bee74b31d0bd8b1"
+      },
+      {
+        "path": "phase2/results/figures/pilot/rank_correlations_clean_noisy.pdf",
+        "bytes": 18867,
+        "sha256": "a84726efce5332a2d57abd8a55b15f3c481b1ec629e736ae6086f498b285091e"
+      },
+      {
+        "path": "phase2/results/figures/pilot/calibration_resnet.png",
+        "bytes": 487869,
+        "sha256": "8afd0259da1531b8a802f757ec69d63c226572b4c3d9a987b5b30858ce4acaae"
+      },
+      {
+        "path": "phase2/results/figures/pilot/calibration_resnet.pdf",
+        "bytes": 47789,
+        "sha256": "db59f08c62b0167acc99fc0e34ce6fc9ad5b237e9ad9eef6980533ed90bbbf2a"
+      },
+      {
+        "path": "phase2/results/figures/pilot/calibration_tcn.png",
+        "bytes": 421309,
+        "sha256": "36a59eb80b9691f2885402ea2cc48cff900273d282dc37c68729532ffe49ac7e"
+      },
+      {
+        "path": "phase2/results/figures/pilot/calibration_tcn.pdf",
+        "bytes": 47847,
+        "sha256": "371c50d3de2a47770f6d290defbdc9f21c93219c7ce8c1ba7b77968173038b4f"
+      },
+      {
+        "path": "phase2/results/figures/pilot/noise_realization_stability.png",
+        "bytes": 184486,
+        "sha256": "11b72a07cc845207370d343b257da7df5786b7006544fad44817f8e6d6089414"
+      },
+      {
+        "path": "phase2/results/figures/pilot/noise_realization_stability.pdf",
+        "bytes": 21604,
+        "sha256": "1d2d5ccbc7d2986dc5bb7b488442ee532a53ac829966387b7b85264c2d5636e1"
+      },
+      {
+        "path": "phase2/results/figures/pilot/noise_primary_contrast_stability.png",
+        "bytes": 115798,
+        "sha256": "35db7369dd8749a418f9f32df3aa6558c9267aca17eea8bc8d82dd9256c96836"
+      },
+      {
+        "path": "phase2/results/figures/pilot/noise_primary_contrast_stability.pdf",
+        "bytes": 15794,
+        "sha256": "39d2c991d6448fe9e53f3f39c88153e9ae251d2a550587c5a386aa11a7a586ec"
+      },
+      {
+        "path": "phase2/results/figures/pilot/training_clean_validation_trajectories.png",
+        "bytes": 313348,
+        "sha256": "eb0c1178985b3df2c60f95e9e6193b83f1f0c0cdf80daf1e7b30f4721470c8b4"
+      },
+      {
+        "path": "phase2/results/figures/pilot/training_clean_validation_trajectories.pdf",
+        "bytes": 19842,
+        "sha256": "524b62f2e1f88a69e484a807f1357c658554c71ec63f27bbf7a6b6a16294ec68"
+      }
+    ],
+    "visual_review": "Separate human/model image inspection required; file decoding is not visual approval"
+  },
+  "first_stage_preservation": {
+    "status": "passed",
+    "unchanged_files": 1489,
+    "baseline_manifest": {
+      "path": "phase2/results/logs/phase1_preservation.json",
+      "bytes": 338430,
+      "sha256": "ae4f2f9c9fdabf2dfbc5cbcb26c4a7b6e3d1542b6c4066bf86570b6bb16db1f7"
+    }
+  },
+  "scope": "All checkpoint/epoch/input/prediction/output hashes; independent sklearn primary+clean metrics; explicit expanded patient draws for first training seed of every model/strategy; all primary contrast intervals and Holm; checkpoint inference replay; all figure source hashes, PNG decoding and PDF headers"
+}

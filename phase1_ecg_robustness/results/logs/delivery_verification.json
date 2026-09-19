@@ -1,0 +1,69 @@
+{
+  "status": "passed",
+  "required_nonempty_artifacts": 39,
+  "unit_tests_passed": 19,
+  "subtests_passed": 15,
+  "junit_total_cases_including_subtests": 34,
+  "main_pipeline_exit_codes": {
+    "smoke": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "pilot": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "full": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "shell_smoke_command": [
+    "C:/Program Files/Git/bin/bash.exe",
+    "scripts/run_smoke_test.sh"
+  ],
+  "shell_smoke_exit_code": 0,
+  "current_smoke_reaudit": {
+    "status": "passed",
+    "prediction_groups": 16,
+    "max_primary_metric_error": 5.551115123125783e-17,
+    "max_snr_error_db": 1.6381012457600264e-07,
+    "max_snr_reconstruction_error_db": 7.105427357601002e-15,
+    "max_matched_rms_relative_error": 1.1783431460660007e-08,
+    "alignment": "passed"
+  },
+  "full_completed_training_reuse": {
+    "status": "passed",
+    "models": [
+      "resnet",
+      "tcn"
+    ],
+    "seeds": [
+      17,
+      29,
+      43
+    ]
+  },
+  "full_png_files": 11,
+  "full_pdf_files": 11,
+  "report_image_links": 11,
+  "report_numeric_tables_checked_against_current_csv": 16,
+  "full_prediction_audit": "results/logs/final_verification.json",
+  "patient_influence_audit": "results/logs/influence_verification.json",
+  "notes": [
+    "All current report tables checked against source CSV values.",
+    "JUnit aggregates the 19 tests and 15 subtests into 34 cases; no errors, failures or skips.",
+    "Historical pre-precision diagnostics are explicitly nested/marked superseded.",
+    "No temporary probe scripts were created; diagnostics ran from in-memory code.",
+    "Formatter completed; current environment/lock refreshed."
+  ]
+}

@@ -1,0 +1,7 @@
+
+COMMAND: E:\Eproject\ECG\phase1_ecg_robustness\.venv\Scripts\python.exe -u -m src.supplemental_audit --config configs/phase1_supplement.yaml
+Matrix replay smoke: 12 complete
+Matrix replay pilot: 27 complete
+Matrix replay full: 378 complete
+Matrix replay pilot_noise_repeats: 135 complete
+Matrix replay full_noise_repeats: 270 complete

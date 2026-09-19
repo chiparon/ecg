@@ -1,0 +1,233 @@
+{
+  "run_name": "full",
+  "source_metrics": "E:\\Eproject\\ECG\\phase1_ecg_robustness\\results\\metrics\\full\\metrics.csv",
+  "metrics_sha256": "f382aa7dedfa7f18f619c0bd281e304590b0f1356bde1b49ce2dd8ada133150c",
+  "config": {
+    "run_name": "full",
+    "data_dir": "data/processed",
+    "results_dir": "results",
+    "sampling_rate": 100,
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "models": [
+      "resnet",
+      "tcn"
+    ],
+    "train": {
+      "epochs": 25,
+      "batch_size": 128,
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "train_limit": null,
+      "val_limit": null,
+      "test_limit": null,
+      "subset_seed": 2026,
+      "num_workers": 0,
+      "base_channels": 24
+    },
+    "noise": {
+      "snrs": [
+        20,
+        10,
+        0
+      ],
+      "kinds": [
+        "bandpass",
+        "bw",
+        "ma",
+        "em"
+      ],
+      "band": [
+        0.5,
+        40
+      ],
+      "seed": 8128,
+      "nstdb_dir": "data/raw/nstdb",
+      "electrodes": [
+        "RA",
+        "LA",
+        "LL",
+        "V1",
+        "V2",
+        "V3",
+        "V4",
+        "V5",
+        "V6"
+      ],
+      "electrode_snr": 10,
+      "audit_records": 128
+    },
+    "statistics": {
+      "bootstrap": 2000,
+      "permutations": 10000
+    }
+  },
+  "statistics_seed": 20260916,
+  "bootstrap_requested": 2000,
+  "permutations_requested": 10000,
+  "random_streams": "SHA256 of base seed, method, model, noise kind, SNR, active, comparison, condition, outcome; first 8 bytes little-endian",
+  "seed_summary": "Arithmetic mean, sample SD (ddof=1), Student-t 95% CI over finite training-seed metric values. n_seeds counts finite values; n=1 SD/CI undefined; no clipping to [0,1].",
+  "undefined_metric_rows": {},
+  "seed_contrast_ci": "Paired within-model training-seed metric differences, then Student-t CI; not patient bootstrap and not ensemble AUROC. No p-values claimed from few seeds.",
+  "patient_estimand": "Average record-level left-minus-right contrasts over training seeds first; average records within each patient next; average patient means with equal patient weight. This differs from record-weighted metrics.csv losses.",
+  "outcomes": {
+    "loss": "Saved per-record multilabel loss, left minus right; positive means left is worse.",
+    "mean_probability": "Mean over five classes of p_left - p_right; signed shift, not accuracy or magnitude.",
+    "probability_shift": "Mean over five classes of abs(p_left-p_clean) - abs(p_right-p_clean); positive means left deviates more from the same-seed clean prediction."
+  },
+  "bootstrap": "Percentile 95% CI from independently resampled patient means with replacement, preserving all records and seed-averaged contrasts within each patient. Conditional on trained seeds, not combined patient/training uncertainty.",
+  "permutation": "Two-sided absolute equal-patient mean statistic. Independently flip whole patient contrasts; assumes independent patients and symmetric patient difference null. Exact enumeration when 2**n_patients <= requested permutations and n_patients<=20; otherwise Monte Carlo with (extreme+1)/(B+1).",
+  "effect_size": "Paired patient Cohen dz = mean(patient differences) / sample SD(patient differences); null if fewer than 2 patients or zero SD; never infinite.",
+  "influence_diagnostics": "Patient median and strict-positive fraction; descriptive mean after removing the largest absolute ceil(1%*n) or ceil(5%*n) patient contrasts (at least one, n>=2; stable input-order ties). These are sensitivity estimands, not alternative significance tests or changes to primary bootstrap/permutation results.",
+  "holm_family": {
+    "name": "all_active_primary_loss_noise_contrasts_all_models_kinds_snrs",
+    "definition": "Every available primary patient-loss test for electrode-minus-independent_rms, electrode-minus-independent, covariance-minus-electrode, active=all, across all models, noise kinds and SNRs in this run, pooled as one family.",
+    "n_tested": 72,
+    "other_outcomes": "Probability outcomes and noisy-minus-clean losses are exploratory, raw p only; p_holm blank. Seed metrics not hypothesis-tested."
+  },
+  "comparison_labels": "Noise contrasts encode both conditions in comparison; noisy_minus_clean uses condition to identify the noisy condition; condition=all for the three noise-vs-noise contrasts.",
+  "robustness": "clean_drop=clean-noisy; normalized_robustness=noisy/(clean+1e-12), paired model and training seed, for macro and per-class AUROC/AP/F1. Values at zero clean metric can be large; no clipping or removal.",
+  "alignment": "Every NPZ verified for exact ordered IDs, labels, patient mappings and indices across models/seeds/conditions; within model/seed noisy thresholds must equal saved clean thresholds. No fitting or modification of thresholds.",
+  "prediction_files_checked": 456,
+  "rankings": "Descending seed-mean primary metric; ties get average ranks. Spearman and Kendall tau-b against clean on common finite architectures. Correlations are descriptive; p-values omitted for fixed architecture panel, exactly two architectures explicitly unstable/no meaningful inference; constant ranks undefined.",
+  "null_encoding": "Undefined CSV cells are empty; JSON null, never NaN or Infinity.",
+  "limitations": [
+    "Few training seeds give fragile t intervals; one seed gives none.",
+    "Patient bootstrap does not quantify retraining or noise-replay uncertainty.",
+    "Noise-control audits must pass before interpreting causal structural contrasts.",
+    "Raw exploratory p-values do not control familywise error; failure to reject is not equivalence.",
+    "Synthetic/benchmark results do not support clinical deployment claims."
+  ],
+  "schemas": {
+    "metrics_summary.csv": [
+      "model",
+      "kind",
+      "snr",
+      "condition",
+      "active",
+      "metric",
+      "n_seeds",
+      "mean",
+      "std",
+      "ci95_low",
+      "ci95_high"
+    ],
+    "paired_effects.csv": [
+      "model",
+      "kind",
+      "snr",
+      "active",
+      "comparison",
+      "condition",
+      "outcome",
+      "mean_difference",
+      "ci95_low",
+      "ci95_high",
+      "p_value",
+      "p_holm",
+      "standardized_effect",
+      "n_patients",
+      "n_records",
+      "n_seeds",
+      "inference_unit",
+      "bootstrap_seed",
+      "bootstrap_count",
+      "permutation_seed",
+      "permutation_count",
+      "permutation_method",
+      "holm_family",
+      "status",
+      "patient_median",
+      "patient_fraction_positive",
+      "mean_without_largest_1pct_abs",
+      "mean_without_largest_5pct_abs"
+    ],
+    "seed_contrasts.csv": [
+      "model",
+      "kind",
+      "snr",
+      "active",
+      "comparison",
+      "condition",
+      "metric",
+      "seed",
+      "left_value",
+      "right_value",
+      "difference",
+      "n_seeds",
+      "mean_difference",
+      "std",
+      "ci95_low",
+      "ci95_high"
+    ],
+    "robustness.csv": [
+      "model",
+      "seed",
+      "kind",
+      "snr",
+      "condition",
+      "active",
+      "metric",
+      "clean",
+      "noisy",
+      "clean_drop",
+      "normalized_robustness"
+    ],
+    "robustness_summary.csv": [
+      "model",
+      "kind",
+      "snr",
+      "condition",
+      "active",
+      "metric",
+      "n_seeds",
+      "mean",
+      "std",
+      "ci95_low",
+      "ci95_high"
+    ],
+    "rankings.csv": [
+      "model",
+      "kind",
+      "snr",
+      "condition",
+      "active",
+      "metric",
+      "mean",
+      "n_seeds",
+      "rank",
+      "n_models",
+      "interpretation"
+    ],
+    "rank_correlations.csv": [
+      "kind",
+      "snr",
+      "condition",
+      "active",
+      "metric",
+      "n_models",
+      "spearman",
+      "kendall",
+      "spearman_p_value",
+      "kendall_p_value",
+      "interpretation"
+    ],
+    "per_record_contrasts.csv": [
+      "model",
+      "kind",
+      "snr",
+      "active",
+      "comparison",
+      "condition",
+      "ecg_id",
+      "patient_id",
+      "n_seeds",
+      "loss_difference",
+      "mean_probability_difference",
+      "probability_shift_difference"
+    ]
+  }
+}

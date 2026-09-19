@@ -1,0 +1,19 @@
+
+COMMAND: E:\Eproject\ECG\phase1_ecg_robustness\.venv\Scripts\python.exe -u -m src.audit_noise --config configs/phase1_full.yaml
+audit bandpass 1/128
+audit bandpass 33/128
+audit bandpass 65/128
+audit bandpass 97/128
+audit bw 1/128
+audit bw 33/128
+audit bw 65/128
+audit bw 97/128
+audit ma 1/128
+audit ma 33/128
+audit ma 65/128
+audit ma 97/128
+audit em 1/128
+audit em 33/128
+audit em 65/128
+audit em 97/128
+Noise gates PASS: results\tables\full\noise_gate.json

@@ -1,0 +1,694 @@
+{
+  "status": "passed",
+  "stage": "full",
+  "config_sha256": "980993c490b41e9793164c1d9bbfa54f728606fff281e07486e7af2fc41ddda7",
+  "expected_runs": 40,
+  "run_checks": [
+    {
+      "strategy": "clean_only",
+      "model": "resnet",
+      "seed": 17,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 427100,
+        "independent_rms": 0,
+        "electrode": 0
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/clean_only/resnet/seed_17/epochs.csv",
+        "bytes": 7859,
+        "sha256": "4222852f560457cc7a9de2e6e61bd780716286a7dfe727a1f94a3e6c48752445"
+      }
+    },
+    {
+      "strategy": "independent_rms",
+      "model": "resnet",
+      "seed": 17,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 213336,
+        "independent_rms": 213764,
+        "electrode": 0
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/independent_rms/resnet/seed_17/epochs.csv",
+        "bytes": 15642,
+        "sha256": "094e52907631f787efd0f1c65febbdbed799e7b1f489bcda5ca9c5037bb6ea5a"
+      }
+    },
+    {
+      "strategy": "electrode",
+      "model": "resnet",
+      "seed": 17,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 213295,
+        "independent_rms": 0,
+        "electrode": 213805
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/electrode/resnet/seed_17/epochs.csv",
+        "bytes": 13443,
+        "sha256": "25b2fa102e905db8333087be01844d6371308c2c55b208167d8f7b15fa89b873"
+      }
+    },
+    {
+      "strategy": "mixed",
+      "model": "resnet",
+      "seed": 17,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 213790,
+        "independent_rms": 106996,
+        "electrode": 106314
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/mixed/resnet/seed_17/epochs.csv",
+        "bytes": 16153,
+        "sha256": "9ffe52dea6cc9193b2f68810a90c9f8a5b759c95f4ac1cead6c1a413feab0269"
+      }
+    },
+    {
+      "strategy": "clean_only",
+      "model": "resnet",
+      "seed": 29,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 427100,
+        "independent_rms": 0,
+        "electrode": 0
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/clean_only/resnet/seed_29/epochs.csv",
+        "bytes": 7851,
+        "sha256": "8e73e6730df9dae5428c64400465f6bfd2e83beedcdf4835298eb37fbec4e228"
+      }
+    },
+    {
+      "strategy": "independent_rms",
+      "model": "resnet",
+      "seed": 29,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 213214,
+        "independent_rms": 213886,
+        "electrode": 0
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/independent_rms/resnet/seed_29/epochs.csv",
+        "bytes": 15658,
+        "sha256": "050edce1ef61202748d66f62528041374e3126fbb844ebea560d360b6f8852ae"
+      }
+    },
+    {
+      "strategy": "electrode",
+      "model": "resnet",
+      "seed": 29,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 213478,
+        "independent_rms": 0,
+        "electrode": 213622
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/electrode/resnet/seed_29/epochs.csv",
+        "bytes": 13448,
+        "sha256": "6f3156770ae4bffd551ca01024602a495fd2af3e404aabafbf7fa1e1e2baf628"
+      }
+    },
+    {
+      "strategy": "mixed",
+      "model": "resnet",
+      "seed": 29,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 213569,
+        "independent_rms": 106850,
+        "electrode": 106681
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/mixed/resnet/seed_29/epochs.csv",
+        "bytes": 16120,
+        "sha256": "31dfaab3a09cf0e80f117dc2fd1906bfa3c9f086b7382579e323d6ea95c73c7c"
+      }
+    },
+    {
+      "strategy": "clean_only",
+      "model": "resnet",
+      "seed": 43,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 427100,
+        "independent_rms": 0,
+        "electrode": 0
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/clean_only/resnet/seed_43/epochs.csv",
+        "bytes": 7851,
+        "sha256": "e642d42c5262ed535ae66ef0933bb2546b58139a92b189fbe2d87ffdb00806b7"
+      }
+    },
+    {
+      "strategy": "independent_rms",
+      "model": "resnet",
+      "seed": 43,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 213325,
+        "independent_rms": 213775,
+        "electrode": 0
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/independent_rms/resnet/seed_43/epochs.csv",
+        "bytes": 15650,
+        "sha256": "9fbc47c0c1a2a721bec012966f755c1fe47afef06badd6e4bd20a67ca6e95377"
+      }
+    },
+    {
+      "strategy": "electrode",
+      "model": "resnet",
+      "seed": 43,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 212980,
+        "independent_rms": 0,
+        "electrode": 214120
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/electrode/resnet/seed_43/epochs.csv",
+        "bytes": 13399,
+        "sha256": "64b2d57b706ded1e7c958d5ee8a6d64c474526dfaa80243f5f603ebf56c48fb6"
+      }
+    },
+    {
+      "strategy": "mixed",
+      "model": "resnet",
+      "seed": 43,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 213868,
+        "independent_rms": 106823,
+        "electrode": 106409
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/mixed/resnet/seed_43/epochs.csv",
+        "bytes": 16086,
+        "sha256": "2d5e3a863a9dbb4b741ac1f27f39fecbad3bc9e2c03f88e00d0014cb054848e0"
+      }
+    },
+    {
+      "strategy": "clean_only",
+      "model": "resnet",
+      "seed": 101,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 427100,
+        "independent_rms": 0,
+        "electrode": 0
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/clean_only/resnet/seed_101/epochs.csv",
+        "bytes": 7849,
+        "sha256": "eb25a1b72b754c112897f347a338a0cbec31a5b050d0a1fea42b3fc0a33fd8f1"
+      }
+    },
+    {
+      "strategy": "independent_rms",
+      "model": "resnet",
+      "seed": 101,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 213753,
+        "independent_rms": 213347,
+        "electrode": 0
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/independent_rms/resnet/seed_101/epochs.csv",
+        "bytes": 15658,
+        "sha256": "4f353c9d341e42c3f1fd48492b74f04937da47e8baae0b4b56e1942888de3213"
+      }
+    },
+    {
+      "strategy": "electrode",
+      "model": "resnet",
+      "seed": 101,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 213492,
+        "independent_rms": 0,
+        "electrode": 213608
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/electrode/resnet/seed_101/epochs.csv",
+        "bytes": 13427,
+        "sha256": "acda99294adf4d31d0f16e9529bee104dd5b2e1769355f9bcedf9cbb6b6185d7"
+      }
+    },
+    {
+      "strategy": "mixed",
+      "model": "resnet",
+      "seed": 101,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 213698,
+        "independent_rms": 106663,
+        "electrode": 106739
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/mixed/resnet/seed_101/epochs.csv",
+        "bytes": 16122,
+        "sha256": "662ca9230e1930c4618ce83883160175d78ba4a78a8744f5a6496ef6f67aa7eb"
+      }
+    },
+    {
+      "strategy": "clean_only",
+      "model": "resnet",
+      "seed": 202,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 427100,
+        "independent_rms": 0,
+        "electrode": 0
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/clean_only/resnet/seed_202/epochs.csv",
+        "bytes": 7841,
+        "sha256": "275b0636c96218cb21a30012538a50ac5df324964ac9f40b27e3cfde987e4c27"
+      }
+    },
+    {
+      "strategy": "independent_rms",
+      "model": "resnet",
+      "seed": 202,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 213501,
+        "independent_rms": 213599,
+        "electrode": 0
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/independent_rms/resnet/seed_202/epochs.csv",
+        "bytes": 15660,
+        "sha256": "dea8a1dceeb7065bed8d3d3cb8841dd3cb8fbfab54698a021d6ef052059c5837"
+      }
+    },
+    {
+      "strategy": "electrode",
+      "model": "resnet",
+      "seed": 202,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 213322,
+        "independent_rms": 0,
+        "electrode": 213778
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/electrode/resnet/seed_202/epochs.csv",
+        "bytes": 13456,
+        "sha256": "56d06b42295eab0659deb6c08c410a87a9d7be384404c49f8a6032d9fa160448"
+      }
+    },
+    {
+      "strategy": "mixed",
+      "model": "resnet",
+      "seed": 202,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 213266,
+        "independent_rms": 106758,
+        "electrode": 107076
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/mixed/resnet/seed_202/epochs.csv",
+        "bytes": 16139,
+        "sha256": "12d093e3bd50cb264727b8bd502e0735f30087e3ff99eeec23e60f6e17f5a640"
+      }
+    },
+    {
+      "strategy": "clean_only",
+      "model": "tcn",
+      "seed": 17,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 427100,
+        "independent_rms": 0,
+        "electrode": 0
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/clean_only/tcn/seed_17/epochs.csv",
+        "bytes": 7850,
+        "sha256": "52828193ec6f24841b198f1465ff4e9ac7fab821fd859400f55ad322aa61a8d9"
+      }
+    },
+    {
+      "strategy": "independent_rms",
+      "model": "tcn",
+      "seed": 17,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 213336,
+        "independent_rms": 213764,
+        "electrode": 0
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/independent_rms/tcn/seed_17/epochs.csv",
+        "bytes": 15637,
+        "sha256": "6ee6e52322c45ea47cf64102f3be7ac628eeb8dc02ca3625c541ae19ab5faafd"
+      }
+    },
+    {
+      "strategy": "electrode",
+      "model": "tcn",
+      "seed": 17,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 213295,
+        "independent_rms": 0,
+        "electrode": 213805
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/electrode/tcn/seed_17/epochs.csv",
+        "bytes": 13432,
+        "sha256": "5e6d4c4b45b272113b528ec8aa376557d7c6c1312c18e5bef421c5b81303a34a"
+      }
+    },
+    {
+      "strategy": "mixed",
+      "model": "tcn",
+      "seed": 17,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 213790,
+        "independent_rms": 106996,
+        "electrode": 106314
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/mixed/tcn/seed_17/epochs.csv",
+        "bytes": 16151,
+        "sha256": "9d0ed94bdcf36a8b3b2df24da1b630908e4dafa8265acd16a8cb31ca08fbaf66"
+      }
+    },
+    {
+      "strategy": "clean_only",
+      "model": "tcn",
+      "seed": 29,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 427100,
+        "independent_rms": 0,
+        "electrode": 0
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/clean_only/tcn/seed_29/epochs.csv",
+        "bytes": 7853,
+        "sha256": "1066091370663ba534ff6463b50af0219e8e7045efe45df53d3c477ba288fda7"
+      }
+    },
+    {
+      "strategy": "independent_rms",
+      "model": "tcn",
+      "seed": 29,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 213214,
+        "independent_rms": 213886,
+        "electrode": 0
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/independent_rms/tcn/seed_29/epochs.csv",
+        "bytes": 15672,
+        "sha256": "445243d5ecd2ae4976f86d83d3f8e78f59e49eb50ea706e28af068a03ecad8a5"
+      }
+    },
+    {
+      "strategy": "electrode",
+      "model": "tcn",
+      "seed": 29,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 213478,
+        "independent_rms": 0,
+        "electrode": 213622
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/electrode/tcn/seed_29/epochs.csv",
+        "bytes": 13442,
+        "sha256": "5f1db5ac1a0d6bcf47316e25385356b97ff849517435b38289af14f1eb3e0514"
+      }
+    },
+    {
+      "strategy": "mixed",
+      "model": "tcn",
+      "seed": 29,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 213569,
+        "independent_rms": 106850,
+        "electrode": 106681
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/mixed/tcn/seed_29/epochs.csv",
+        "bytes": 16132,
+        "sha256": "ca3c69048618f7093eecc1bab9d602f646ef3de5d1f18f3d046c878690726c2a"
+      }
+    },
+    {
+      "strategy": "clean_only",
+      "model": "tcn",
+      "seed": 43,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 427100,
+        "independent_rms": 0,
+        "electrode": 0
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/clean_only/tcn/seed_43/epochs.csv",
+        "bytes": 7856,
+        "sha256": "7ac888563aef93b2764528e4daea849e4ecca9bff2787372735e64b925ee28ad"
+      }
+    },
+    {
+      "strategy": "independent_rms",
+      "model": "tcn",
+      "seed": 43,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 213325,
+        "independent_rms": 213775,
+        "electrode": 0
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/independent_rms/tcn/seed_43/epochs.csv",
+        "bytes": 15644,
+        "sha256": "09244450f716d6d34cf8455452f8603762baabed2b2141adbbb6c9eff44b7bfd"
+      }
+    },
+    {
+      "strategy": "electrode",
+      "model": "tcn",
+      "seed": 43,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 212980,
+        "independent_rms": 0,
+        "electrode": 214120
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/electrode/tcn/seed_43/epochs.csv",
+        "bytes": 13401,
+        "sha256": "6b11c019a533328ac5f95482de3076f869223a31f75561609904b1dbd1ae8909"
+      }
+    },
+    {
+      "strategy": "mixed",
+      "model": "tcn",
+      "seed": 43,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 213868,
+        "independent_rms": 106823,
+        "electrode": 106409
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/mixed/tcn/seed_43/epochs.csv",
+        "bytes": 16093,
+        "sha256": "b3dab10546aadcf1738491a48cf2a3511d202f90061b02a5e2cb1bf8f6ce3c01"
+      }
+    },
+    {
+      "strategy": "clean_only",
+      "model": "tcn",
+      "seed": 101,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 427100,
+        "independent_rms": 0,
+        "electrode": 0
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/clean_only/tcn/seed_101/epochs.csv",
+        "bytes": 7836,
+        "sha256": "7b1f301ff728870b8ff19d59dabc902960517f51506bf213e17426706661ae8f"
+      }
+    },
+    {
+      "strategy": "independent_rms",
+      "model": "tcn",
+      "seed": 101,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 213753,
+        "independent_rms": 213347,
+        "electrode": 0
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/independent_rms/tcn/seed_101/epochs.csv",
+        "bytes": 15657,
+        "sha256": "73f431c4fba8fb4783a601e945be319dfbcbce42d42c63e9241b242b916b9025"
+      }
+    },
+    {
+      "strategy": "electrode",
+      "model": "tcn",
+      "seed": 101,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 213492,
+        "independent_rms": 0,
+        "electrode": 213608
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/electrode/tcn/seed_101/epochs.csv",
+        "bytes": 13441,
+        "sha256": "5c0fe65bda20451cd752be1d78035ce02a931228b011887caa4568a7e877bf67"
+      }
+    },
+    {
+      "strategy": "mixed",
+      "model": "tcn",
+      "seed": 101,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 213698,
+        "independent_rms": 106663,
+        "electrode": 106739
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/mixed/tcn/seed_101/epochs.csv",
+        "bytes": 16132,
+        "sha256": "e22188fc18ad68ad6f6d643f64ec147e7d8a5197b303b663fb364d759e426410"
+      }
+    },
+    {
+      "strategy": "clean_only",
+      "model": "tcn",
+      "seed": 202,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 427100,
+        "independent_rms": 0,
+        "electrode": 0
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/clean_only/tcn/seed_202/epochs.csv",
+        "bytes": 7841,
+        "sha256": "3439a91a9c62f5bc06c3e5e50a69b7fc65728d95bf74b1d0120d924381033b81"
+      }
+    },
+    {
+      "strategy": "independent_rms",
+      "model": "tcn",
+      "seed": 202,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 213501,
+        "independent_rms": 213599,
+        "electrode": 0
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/independent_rms/tcn/seed_202/epochs.csv",
+        "bytes": 15668,
+        "sha256": "292e882a895d1d0d173e5b08194830979904a11f43ed7b32d777001d72ce8e3a"
+      }
+    },
+    {
+      "strategy": "electrode",
+      "model": "tcn",
+      "seed": 202,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 213322,
+        "independent_rms": 0,
+        "electrode": 213778
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/electrode/tcn/seed_202/epochs.csv",
+        "bytes": 13441,
+        "sha256": "e732fe6df4d955d8063095b1cc676b7c2c18df77bda696ea1c14f8456b5d3de5"
+      }
+    },
+    {
+      "strategy": "mixed",
+      "model": "tcn",
+      "seed": 202,
+      "epochs": 25,
+      "exposures": 427100,
+      "augmentation_counts": {
+        "clean": 213266,
+        "independent_rms": 106758,
+        "electrode": 107076
+      },
+      "epoch_log": {
+        "path": "phase2/results/logs/full/mixed/tcn/seed_202/epochs.csv",
+        "bytes": 16136,
+        "sha256": "091de6c36a2947802eb10c7e587a1fbe1f70e8b784eca6e24a9d4228f9b180f8"
+      }
+    }
+  ],
+  "paired_initializations_identical": true,
+  "paired_epoch_orders_identical": true,
+  "combination_intersection": [],
+  "unseen_snr_intersection": [],
+  "noise_base_domains_disjoint": true,
+  "performance_selection": "none: this gate checks execution, exposure, strength and provenance, not which strategy wins"
+}

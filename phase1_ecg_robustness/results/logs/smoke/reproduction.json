@@ -1,0 +1,13 @@
+{
+  "clean_records": 100,
+  "clean_max_abs_error": 0.0,
+  "replayed_noise_records": 1,
+  "noisy_max_abs_error": 4.470348358154297e-08,
+  "torch_execution": {
+    "deterministic_algorithms": true,
+    "cudnn_deterministic": true,
+    "cudnn_allow_tf32": false,
+    "matmul_allow_tf32": false
+  },
+  "status": "passed"
+}

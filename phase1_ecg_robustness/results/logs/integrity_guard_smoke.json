@@ -1,0 +1,6 @@
+{
+  "unfinished": "Checkpoint training is unfinished",
+  "changed_data": "Checkpoint dataset identity mismatch",
+  "running_evaluation": "Statistics require a completed evaluation",
+  "changed_config": "Evaluation configuration does not match requested statistics"
+}

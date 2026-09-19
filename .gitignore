@@ -11,7 +11,18 @@ __pycache__/
 
 # Local datasets and generated experiment artifacts
 /phase1_ecg_robustness/data/
-/phase1_ecg_robustness/results/
-/phase2/results/
-/methodology_supplement/results/
-/sparktest/results/
+**/results/**
+!**/results/**/
+!**/results/**/tables/**
+!**/results/**/figures/**
+!**/results/**/reports/**
+!**/results/**/logs/**
+
+# Oversized artifacts: keep local, do not upload to GitHub
+/phase1_ecg_robustness/results/tables/review_supplement/covariance_matching_records.csv
+/phase2/results/tables/full/group_seed_metrics.csv
+/phase2/results/tables/full/metrics.csv
+/phase2/results/tables/full/noise_replay_summary.csv
+/phase2/results/tables/full/noise_seed_metrics.csv
+/phase2/results/tables/full/patient_ci.csv
+/phase2/results/tables/full/seed_summary.csv

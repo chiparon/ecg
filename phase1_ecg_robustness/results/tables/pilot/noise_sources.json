@@ -1,0 +1,12 @@
+{
+  "bandpass": {
+    "kind": "FFT-filtered Gaussian",
+    "band_hz": [
+      0.5,
+      40
+    ],
+    "fs": 100,
+    "boundary": "finite-record periodic FFT",
+    "normalization": "global SNR after mapping; extra independent RMS control"
+  }
+}

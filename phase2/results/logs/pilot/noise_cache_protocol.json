@@ -1,0 +1,14 @@
+{
+  "status": "completed",
+  "stage": "pilot",
+  "config_sha256": "980993c490b41e9793164c1d9bbfa54f728606fff281e07486e7af2fc41ddda7",
+  "matrix_sha256": "4f852acd9c5a4f7b35a207f5078d70f842de3077d648716950a66502951bfe9d",
+  "case_count": 118,
+  "group_count": 137,
+  "manifest": {
+    "path": "phase2/results/test_inputs/pilot/manifest.json",
+    "bytes": 207150,
+    "sha256": "fe4ebcfa647bc278d713522b3143b73791dea0eb8aaf9a1584edd80d4c26f9f3"
+  },
+  "elapsed_seconds": 36.06772639998235
+}

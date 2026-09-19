@@ -1,0 +1,52 @@
+{
+  "official_records": 21799,
+  "requested_records": 1000,
+  "missing_records": 0,
+  "empty_label_exclusions": 12,
+  "retained": {
+    "all": {
+      "records": 988,
+      "patients": 925,
+      "positive_counts": {
+        "NORM": 535,
+        "MI": 185,
+        "STTC": 233,
+        "CD": 195,
+        "HYP": 99
+      }
+    },
+    "train": {
+      "records": 731,
+      "patients": 688,
+      "positive_counts": {
+        "NORM": 402,
+        "MI": 130,
+        "STTC": 167,
+        "CD": 145,
+        "HYP": 72
+      }
+    },
+    "val": {
+      "records": 130,
+      "patients": 121,
+      "positive_counts": {
+        "NORM": 67,
+        "MI": 31,
+        "STTC": 35,
+        "CD": 23,
+        "HYP": 16
+      }
+    },
+    "test": {
+      "records": 127,
+      "patients": 116,
+      "positive_counts": {
+        "NORM": 66,
+        "MI": 24,
+        "STTC": 31,
+        "CD": 27,
+        "HYP": 11
+      }
+    }
+  }
+}

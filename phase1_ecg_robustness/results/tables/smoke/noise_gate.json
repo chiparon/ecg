@@ -1,0 +1,140 @@
+{
+  "passed": true,
+  "failures": [],
+  "gates": {
+    "bandpass": {
+      "max_snr_error_below_1e4": true,
+      "rms_control_below_1e6": true,
+      "covariance_match_below_1e5": true,
+      "independent_corr_mean": 0.028173473642943814,
+      "electrode_corr_mean": 0.19747206950876808,
+      "psd_relative_l1": {
+        "independent": 0.03167429981795142,
+        "independent_rms": 0.031416930204655184,
+        "electrode": 0.0,
+        "covariance": 0.03760133083715131
+      },
+      "strict_structure_control": true,
+      "independent_corr_below_008": true,
+      "mapped_corr_increase_above_005": true,
+      "aggregate_psd_error_below_015": true
+    }
+  },
+  "audit_split": "validation",
+  "ecg_ids": [
+    10,
+    26,
+    30,
+    39,
+    41,
+    48,
+    49,
+    51,
+    62,
+    72,
+    91,
+    94,
+    127,
+    134,
+    151,
+    152,
+    153,
+    155,
+    165,
+    170,
+    178,
+    184,
+    189,
+    193,
+    195,
+    198,
+    204,
+    205,
+    216,
+    219,
+    228,
+    233,
+    234,
+    238,
+    262,
+    266,
+    293,
+    303,
+    326,
+    343,
+    352,
+    354,
+    360,
+    365,
+    368,
+    383,
+    386,
+    387,
+    398,
+    406,
+    414,
+    437,
+    441,
+    445,
+    491,
+    515,
+    520,
+    524,
+    529,
+    544,
+    545,
+    553,
+    563,
+    574
+  ],
+  "config": {
+    "run_name": "smoke",
+    "data_dir": "data/processed_smoke",
+    "results_dir": "results",
+    "sampling_rate": 100,
+    "seeds": [
+      17
+    ],
+    "models": [
+      "resnet"
+    ],
+    "train": {
+      "epochs": 1,
+      "batch_size": 32,
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "train_limit": 256,
+      "val_limit": 100,
+      "test_limit": 100,
+      "subset_seed": 2026,
+      "num_workers": 0,
+      "base_channels": 16
+    },
+    "noise": {
+      "snrs": [
+        20,
+        10,
+        0
+      ],
+      "kinds": [
+        "bandpass"
+      ],
+      "band": [
+        0.5,
+        40
+      ],
+      "seed": 8128,
+      "nstdb_dir": "data/raw/nstdb",
+      "electrodes": [
+        "RA"
+      ],
+      "electrode_snr": 10,
+      "audit_records": 64
+    },
+    "statistics": {
+      "bootstrap": 500,
+      "permutations": 1000
+    }
+  },
+  "notes": "NSTDB PSD/correlation recorded, not assumed matched. Covariance is empirical, sample-conditioned; no claim of identical higher-order law."
+}

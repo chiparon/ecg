@@ -1,0 +1,783 @@
+{
+  "status": "frozen_before_pilot_and_full_training",
+  "created_at_utc": "2026-09-17T13:04:28.845369+00:00",
+  "config_sha256": "980993c490b41e9793164c1d9bbfa54f728606fff281e07486e7af2fc41ddda7",
+  "config": {
+    "schema": "phase2_generalization_v1",
+    "baseline_root": "../phase1_ecg_robustness",
+    "results_dir": "results",
+    "specification": "../\u7b2c\u4e8c\u9636\u6bb5\u5b9e\u9a8c\u65b9\u6848\uff1a\u56db\u79cd\u8bad\u7ec3\u7b56\u7565\u5bf9\u672a\u89c1\u91c7\u96c6\u6270\u52a8\u7684\u6cdb\u5316.md",
+    "matrix_sha256": "4f852acd9c5a4f7b35a207f5078d70f842de3077d648716950a66502951bfe9d",
+    "sampling_rate": 100,
+    "sequence_length": 1000,
+    "class_order": [
+      "NORM",
+      "MI",
+      "STTC",
+      "CD",
+      "HYP"
+    ],
+    "lead_order": [
+      "I",
+      "II",
+      "III",
+      "aVR",
+      "aVL",
+      "aVF",
+      "V1",
+      "V2",
+      "V3",
+      "V4",
+      "V5",
+      "V6"
+    ],
+    "scale_reference_checkpoint": "results/checkpoints/full/resnet/seed_17.pt",
+    "expected_scale_mv": 0.2254905872,
+    "models": [
+      "resnet",
+      "tcn"
+    ],
+    "strategies": {
+      "clean_only": {
+        "clean": 1.0,
+        "independent_rms": 0.0,
+        "electrode": 0.0
+      },
+      "independent_rms": {
+        "clean": 0.5,
+        "independent_rms": 0.5,
+        "electrode": 0.0
+      },
+      "electrode": {
+        "clean": 0.5,
+        "independent_rms": 0.0,
+        "electrode": 0.5
+      },
+      "mixed": {
+        "clean": 0.5,
+        "independent_rms": 0.25,
+        "electrode": 0.25
+      }
+    },
+    "train": {
+      "optimizer": "AdamW",
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "batch_size": 128,
+      "scheduler": "none",
+      "early_stopping": false,
+      "gradient_clip_norm": null,
+      "mixed_precision": false,
+      "allow_tf32": false,
+      "deterministic": true,
+      "num_workers": 0,
+      "torch_threads": 4,
+      "base_channels": 24,
+      "tcn_dropout": 0.1,
+      "selection_metric": "clean_validation_macro_auroc",
+      "threshold_source": "best_checkpoint_clean_validation_once",
+      "epoch_validation_f1_threshold": 0.5,
+      "subset_seed": 2026,
+      "snrs": [
+        20,
+        10
+      ],
+      "snr_probabilities": [
+        0.5,
+        0.5
+      ],
+      "augmentation_seed": 20260920,
+      "noise_base": 10001,
+      "noise_base_range": [
+        10000,
+        19999
+      ],
+      "combo_file": "configs/phase2_train_electrode_combos.json",
+      "combo_probabilities": [
+        0.25,
+        0.08333333333333333,
+        0.08333333333333333,
+        0.08333333333333333,
+        0.08333333333333333,
+        0.08333333333333333,
+        0.08333333333333333,
+        0.08333333333333333,
+        0.08333333333333333,
+        0.08333333333333333
+      ]
+    },
+    "noise": {
+      "kind": "bandpass",
+      "band": [
+        0.5,
+        40.0
+      ],
+      "node_channels": "independent_PCG64_streams",
+      "domain_codes": {
+        "train": 1,
+        "test": 2
+      },
+      "stage_codes": {
+        "pilot": 1,
+        "full": 2
+      },
+      "source_seed_words": 4,
+      "float_storage": "float32",
+      "realization_order": "float64_base_at_0dB_then_float32_buffer_then_float32_SNR_scale",
+      "nstdb_dir": "data/raw/nstdb"
+    },
+    "test": {
+      "conditions": [
+        "independent_rms",
+        "electrode",
+        "covariance"
+      ],
+      "noise_seed_range": [
+        20000,
+        29999
+      ],
+      "combo_file": "configs/phase2_test_electrode_combos.json",
+      "include_all_electrodes": true,
+      "cache_representation": "lossless_factorized_float32",
+      "input_hash_at_each_snr": true,
+      "same_inputs_all_strategies_models_seeds": true,
+      "nstdb_kinds": [
+        "bw",
+        "ma",
+        "em"
+      ],
+      "nstdb_snrs": [
+        20,
+        10,
+        0
+      ],
+      "nstdb_combo": "all"
+    },
+    "stages": {
+      "pilot": {
+        "data_dir": "data/processed_pilot",
+        "seeds": [
+          17
+        ],
+        "epochs": 10,
+        "train_limit": 4000,
+        "val_limit": 1000,
+        "test_limit": 1000,
+        "expected_records": {
+          "train": 4000,
+          "val": 1000,
+          "test": 1000
+        },
+        "test_snrs": [
+          10,
+          5,
+          0
+        ],
+        "test_noise_seeds": [
+          20001
+        ],
+        "heldout_combo_ids": [
+          "RA_V1",
+          "RA_LA_V1_V6"
+        ],
+        "nstdb": false
+      },
+      "full": {
+        "data_dir": "data/processed",
+        "seeds": [
+          17,
+          29,
+          43,
+          101,
+          202
+        ],
+        "epochs": 25,
+        "train_limit": null,
+        "val_limit": null,
+        "test_limit": null,
+        "expected_records": {
+          "train": 17084,
+          "val": 2146,
+          "test": 2158
+        },
+        "test_snrs": [
+          20,
+          15,
+          10,
+          5,
+          0
+        ],
+        "test_noise_seeds": [
+          20001,
+          20002,
+          20003,
+          20004,
+          20005
+        ],
+        "heldout_combo_ids": "all",
+        "nstdb": true
+      }
+    },
+    "statistics": {
+      "bootstrap_replicates": 2000,
+      "bootstrap_seed": 20260919,
+      "bootstrap_batch_size": 128,
+      "bootstrap_workers": 6,
+      "primary_group": "primary_joint",
+      "primary_kind": "bandpass",
+      "primary_condition": "electrode",
+      "primary_combo_set": "heldout",
+      "primary_snrs": [
+        15,
+        5
+      ],
+      "primary_metric": "macro_auroc",
+      "primary_outcome": "retention",
+      "primary_pairs": [
+        [
+          "electrode",
+          "clean_only"
+        ],
+        [
+          "electrode",
+          "independent_rms"
+        ],
+        [
+          "mixed",
+          "electrode"
+        ]
+      ],
+      "primary_test": "two_sided_paired_t_over_training_seeds",
+      "multiple_testing": "holm",
+      "primary_family": "six_model_by_strategy_retention_contrasts",
+      "alpha": 0.05,
+      "group_weighting": "equal_condition_AUROC_then_equal_fixed_training_seed_mean",
+      "patient_estimand": "record_AUROC_with_patient_cluster_multiplicities",
+      "bootstrap_scope": "every_registered_test_group_and_fixed_checkpoint",
+      "joint_uncertainty": false,
+      "clean_cost_acceptability": "descriptive_no_clinical_margin_prespecified"
+    },
+    "optional": {
+      "mixed_75_percent": "not_run_not_part_of_four_strategy_main_comparison",
+      "noisy_validation": "not_run",
+      "nstdb": "preregistered_exploratory_sensitivity"
+    },
+    "adjudications": {
+      "combo_conflict": "Section13_explicit_disjoint_lists_override_earlier_V1_V6_heldout_table",
+      "random_combo": "Only_enumerated_limb_pairs_replace_unrestricted_random_2_to_4",
+      "primary_endpoint": "Section15_joint_unseen_retention_is_confirmatory_drop_and_absolute_gain_are_key_secondary",
+      "clipping": "No_clipping_matching_phase1_not_the_conflicting_example_clip5",
+      "seen_label": "Seen_SNR_does_not_imply_heldout_or_all_target_combinations_were_seen",
+      "scope": "Five_training_seeds_full_and_eight_technical_pilot_runs_no_test_driven_selection"
+    }
+  },
+  "configuration_files": [
+    {
+      "path": "phase2/configs/phase2_main.yaml",
+      "bytes": 4620,
+      "sha256": "ed83bbebf04fa0fc5cfdd6a1cb0ed5546140747a45b929f99e51f0627a5ca3be"
+    },
+    {
+      "path": "phase2/configs/phase2_train_electrode_combos.json",
+      "bytes": 233,
+      "sha256": "8509dda17682bce5576570c0c37c504d96bdeef7f19875291ae4c80564dfbdda"
+    },
+    {
+      "path": "phase2/configs/phase2_test_electrode_combos.json",
+      "bytes": 303,
+      "sha256": "58e465c9dc9da673cfde80a8beaeac0e9d085b6404d377a5f93db60e8aa0dd04"
+    }
+  ],
+  "specification": {
+    "path": "\u7b2c\u4e8c\u9636\u6bb5\u5b9e\u9a8c\u65b9\u6848\uff1a\u56db\u79cd\u8bad\u7ec3\u7b56\u7565\u5bf9\u672a\u89c1\u91c7\u96c6\u6270\u52a8\u7684\u6cdb\u5316.md",
+    "bytes": 24226,
+    "sha256": "d339ff652cfb531687e945d4b87af4d8ec8f8d8053a4b992d0bab2f0bb3c3040"
+  },
+  "matrix": {
+    "schema": "ideal_wct_12x9_v1",
+    "lead_order": [
+      "I",
+      "II",
+      "III",
+      "aVR",
+      "aVL",
+      "aVF",
+      "V1",
+      "V2",
+      "V3",
+      "V4",
+      "V5",
+      "V6"
+    ],
+    "electrode_order": [
+      "RA",
+      "LA",
+      "LL",
+      "V1",
+      "V2",
+      "V3",
+      "V4",
+      "V5",
+      "V6"
+    ],
+    "values": [
+      [
+        -1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        -0.5,
+        -0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.5,
+        1.0,
+        -0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.5,
+        -0.5,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.3333333333333333,
+        -0.3333333333333333,
+        -0.3333333333333333,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.3333333333333333,
+        -0.3333333333333333,
+        -0.3333333333333333,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.3333333333333333,
+        -0.3333333333333333,
+        -0.3333333333333333,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.3333333333333333,
+        -0.3333333333333333,
+        -0.3333333333333333,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        -0.3333333333333333,
+        -0.3333333333333333,
+        -0.3333333333333333,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        -0.3333333333333333,
+        -0.3333333333333333,
+        -0.3333333333333333,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "sha256": "4f852acd9c5a4f7b35a207f5078d70f842de3077d648716950a66502951bfe9d",
+    "hash_encoding": "UTF-8 JSON of schema/orders/values; sorted keys; compact separators"
+  },
+  "critical_sources": [
+    {
+      "path": "phase2/src/common.py",
+      "bytes": 17164,
+      "sha256": "f91839c42214f4ee95edde6a2805b80e8a4068aec4366a24d87dab50802fcbfb"
+    },
+    {
+      "path": "phase2/src/generate_phase2_noise.py",
+      "bytes": 27598,
+      "sha256": "66f84da60a3889960ae0c0ba5884388f5c462ec4c75f6a9337431b12dcf0c9b2"
+    },
+    {
+      "path": "phase2/src/train_phase2.py",
+      "bytes": 27026,
+      "sha256": "cce2b56b772c795282bd2fb372cbb57210b427cef1c760cc8a9fcbb992ab17a1"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/datasets.py",
+      "bytes": 4684,
+      "sha256": "a3f085d44652da86c5c4dfbf088d14c901102d05e75a61b7920b7025786ae4f2"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/models.py",
+      "bytes": 5863,
+      "sha256": "53f5858562f4535cebca888776885846af9c442cf3e709a47eecd91407f40ed7"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/lead_matrix.py",
+      "bytes": 4192,
+      "sha256": "e7afb8bc617642180175b82f69ac797f74d259246ecac86e4f19eb5025b455b1"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/noise_generators.py",
+      "bytes": 16113,
+      "sha256": "6439e7eb220d9f1776e859b103570ea7407bec33c0da60aa3d70a95e9f7ef108"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/covariance_matching.py",
+      "bytes": 7725,
+      "sha256": "17e2cdcd976c53558937c784774a13dcd1a2f60924c4b03b4345859cfcba4a6b"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/train.py",
+      "bytes": 23184,
+      "sha256": "b082292d91776c5b4fb6e19db922d7ef6c73f8cde64317a8b43dbfcd256272ca"
+    }
+  ],
+  "initial_source_files": [
+    {
+      "path": "phase2/src/__init__.py",
+      "bytes": 73,
+      "sha256": "9810c6ab9e2c19a83cb79e5ccaf7341253a0923766b850ef5930c98eea696a56"
+    },
+    {
+      "path": "phase2/src/common.py",
+      "bytes": 17164,
+      "sha256": "f91839c42214f4ee95edde6a2805b80e8a4068aec4366a24d87dab50802fcbfb"
+    },
+    {
+      "path": "phase2/src/evaluate_phase2.py",
+      "bytes": 32230,
+      "sha256": "0651b99af1991424b074f3af12681f72a2679b81796cd022a738fb614ce504db"
+    },
+    {
+      "path": "phase2/src/generate_phase2_noise.py",
+      "bytes": 27598,
+      "sha256": "66f84da60a3889960ae0c0ba5884388f5c462ec4c75f6a9337431b12dcf0c9b2"
+    },
+    {
+      "path": "phase2/src/plot_phase2.py",
+      "bytes": 58015,
+      "sha256": "4ff816d62f1693e47b9799757ba0615c62cb45469ed199df089ba80a8c6810c7"
+    },
+    {
+      "path": "phase2/src/run_phase2.py",
+      "bytes": 10116,
+      "sha256": "e4339ee79d50b0f34501f4794bd9b29cbb81925ff820f1eed2f876acd444608c"
+    },
+    {
+      "path": "phase2/src/statistics_phase2.py",
+      "bytes": 42925,
+      "sha256": "eee7257c4198fc210a3f4822d1cca2719b54316c907808453c68a032475f8063"
+    },
+    {
+      "path": "phase2/src/train_phase2.py",
+      "bytes": 27026,
+      "sha256": "cce2b56b772c795282bd2fb372cbb57210b427cef1c760cc8a9fcbb992ab17a1"
+    }
+  ],
+  "train_combos": [
+    {
+      "combo_id": "RA_LA_LL",
+      "electrodes": [
+        "RA",
+        "LA",
+        "LL"
+      ]
+    },
+    {
+      "combo_id": "V1",
+      "electrodes": [
+        "V1"
+      ]
+    },
+    {
+      "combo_id": "V2",
+      "electrodes": [
+        "V2"
+      ]
+    },
+    {
+      "combo_id": "V3",
+      "electrodes": [
+        "V3"
+      ]
+    },
+    {
+      "combo_id": "V4",
+      "electrodes": [
+        "V4"
+      ]
+    },
+    {
+      "combo_id": "V5",
+      "electrodes": [
+        "V5"
+      ]
+    },
+    {
+      "combo_id": "V6",
+      "electrodes": [
+        "V6"
+      ]
+    },
+    {
+      "combo_id": "RA_LA",
+      "electrodes": [
+        "RA",
+        "LA"
+      ]
+    },
+    {
+      "combo_id": "LA_LL",
+      "electrodes": [
+        "LA",
+        "LL"
+      ]
+    },
+    {
+      "combo_id": "RA_LL",
+      "electrodes": [
+        "RA",
+        "LL"
+      ]
+    }
+  ],
+  "heldout_combos": [
+    {
+      "combo_id": "RA",
+      "electrodes": [
+        "RA"
+      ]
+    },
+    {
+      "combo_id": "LA",
+      "electrodes": [
+        "LA"
+      ]
+    },
+    {
+      "combo_id": "LL",
+      "electrodes": [
+        "LL"
+      ]
+    },
+    {
+      "combo_id": "RA_V1",
+      "electrodes": [
+        "RA",
+        "V1"
+      ]
+    },
+    {
+      "combo_id": "LA_V6",
+      "electrodes": [
+        "LA",
+        "V6"
+      ]
+    },
+    {
+      "combo_id": "LL_V4",
+      "electrodes": [
+        "LL",
+        "V4"
+      ]
+    },
+    {
+      "combo_id": "RA_LA_V1_V6",
+      "electrodes": [
+        "RA",
+        "LA",
+        "V1",
+        "V6"
+      ]
+    },
+    {
+      "combo_id": "RA_V2_V5",
+      "electrodes": [
+        "RA",
+        "V2",
+        "V5"
+      ]
+    },
+    {
+      "combo_id": "LA_V3_V6",
+      "electrodes": [
+        "LA",
+        "V3",
+        "V6"
+      ]
+    },
+    {
+      "combo_id": "LL_V1_V4",
+      "electrodes": [
+        "LL",
+        "V1",
+        "V4"
+      ]
+    }
+  ],
+  "combo_intersection": [],
+  "noise_base_ranges_disjoint": true,
+  "unseen_snr_intersection_with_training": [],
+  "datasets": {
+    "pilot": {
+      "phase1_cache": {
+        "metadata_labels_provenance_sha256": "c38bba16c1091288e4187f4e9cbb34adc9419ca081620755df3730a136ba8e12",
+        "signals_bytes": 473520128,
+        "signals_mtime_ns": 1789574836305406100,
+        "data_dir": "E:\\Eproject\\ECG\\phase1_ecg_robustness\\data\\processed_pilot"
+      },
+      "split_sha256": {
+        "train": "6aa5f8f339dccd212dd738f1488c65730ee525ad9d6c8d3b5e2b08ff8e88011b",
+        "val": "e8f51153f7ea3d51997841eabea842db098af504332ab81bbf111eb5f77b8e36",
+        "test": "8e3d16410f155316c4d1f51607e76f2b43ac82a7e2884f17cacd3f172aa59dee"
+      },
+      "scale_mv": 0.2254905871835822,
+      "scale_source_sha256": "ae1af3b6f26199f28384c78976613cac3bbf3b73d74995a9807710c0bc2f274f",
+      "class_order": [
+        "NORM",
+        "MI",
+        "STTC",
+        "CD",
+        "HYP"
+      ],
+      "lead_order": [
+        "I",
+        "II",
+        "III",
+        "aVR",
+        "aVL",
+        "aVF",
+        "V1",
+        "V2",
+        "V3",
+        "V4",
+        "V5",
+        "V6"
+      ]
+    },
+    "full": {
+      "phase1_cache": {
+        "metadata_labels_provenance_sha256": "185f56a9bfda267f135d16f6ca83337b64b63b16f9476225e7503d6886f63157",
+        "signals_bytes": 1026624128,
+        "signals_mtime_ns": 1789575477053666800,
+        "data_dir": "E:\\Eproject\\ECG\\phase1_ecg_robustness\\data\\processed"
+      },
+      "split_sha256": {
+        "train": "87b8da637caccb3715440ae642f0dbd992b09aba420734c33cdeea05287eeea1",
+        "val": "99627c9e1940defc9e734004925768aec337709520e2b9ca871b4b8f796d3507",
+        "test": "ed2c59bd45c8182eae90ee65187a79a96948ae2d422c59246e2623271d4c78aa"
+      },
+      "scale_mv": 0.2254905871835822,
+      "scale_source_sha256": "ae1af3b6f26199f28384c78976613cac3bbf3b73d74995a9807710c0bc2f274f",
+      "class_order": [
+        "NORM",
+        "MI",
+        "STTC",
+        "CD",
+        "HYP"
+      ],
+      "lead_order": [
+        "I",
+        "II",
+        "III",
+        "aVR",
+        "aVL",
+        "aVF",
+        "V1",
+        "V2",
+        "V3",
+        "V4",
+        "V5",
+        "V6"
+      ]
+    }
+  },
+  "stage_one_protected_files": 1489,
+  "counts": {
+    "pilot_training_runs": 8,
+    "full_training_runs": 40
+  },
+  "interpretation": {
+    "primary": "Equal-condition mean of per-checkpoint joint-unseen Macro-AUROC retention; six paired training-seed t tests with Holm. Patient intervals are separate fixed-model/fixed-noise conditional intervals.",
+    "clean_cost": "No clinical utility margin is invented. Report magnitude, direction, uncertainty and tradeoffs rather than automatically declaring acceptability.",
+    "cache": "Lossless factorized float32 representation; every SNR-specific normalized input is formed and hashed once during cache creation, then identically reconstructed and shared across all checkpoints.",
+    "pilot": "Technical gate only; full settings are frozen before pilot test access. Single-seed pilot cannot select the winning strategy.",
+    "optional": {
+      "mixed_75_percent": "not_run_not_part_of_four_strategy_main_comparison",
+      "noisy_validation": "not_run",
+      "nstdb": "preregistered_exploratory_sensitivity"
+    }
+  }
+}

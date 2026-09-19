@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "config_sha256": "f3f190e9a26bc96544f393a62673ff518c543018da23acdb50aed9409c224469",
+  "checked_at": "2026-09-19T09:08:15.897983+00:00",
+  "figures": 15,
+  "figure_files": 45,
+  "report_numeric_cells": 600,
+  "local_links_and_images_checked": 104,
+  "unique_hashes_checked": 58,
+  "report": {
+    "path": "methodology_supplement/results/reports/full/minimal_five_report.html",
+    "bytes": 113871,
+    "sha256": "4db06e2635cf5d38ce95caecf088f6ce70f6da5c5e09aa11ac688010a466efaa"
+  },
+  "figures_manifest": {
+    "path": "methodology_supplement/results/figures/full/manifest.json",
+    "bytes": 19628,
+    "sha256": "f96887de83924f43dfcd55fc8261de0624569d7f083fdcef947dbad345d36f15"
+  },
+  "visual_review": "Separate actual browser and figure inspection is required; this check does not claim visual acceptance."
+}

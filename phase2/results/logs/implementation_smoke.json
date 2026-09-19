@@ -1,0 +1,68 @@
+{
+  "status": "passed",
+  "scope": "real pilot training records: eight CUDA FP32 forward/backward/AdamW steps and clean inference; no test input creation, no persisted checkpoint",
+  "cuda": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "scale_mv": 0.2254905871835822,
+  "runs": [
+    {
+      "model": "resnet",
+      "strategy": "clean_only",
+      "parameters": 545717,
+      "bce": 0.7089961171150208,
+      "augmented_records": 0
+    },
+    {
+      "model": "resnet",
+      "strategy": "independent_rms",
+      "parameters": 545717,
+      "bce": 0.7097863554954529,
+      "augmented_records": 6
+    },
+    {
+      "model": "resnet",
+      "strategy": "electrode",
+      "parameters": 545717,
+      "bce": 0.7075762152671814,
+      "augmented_records": 11
+    },
+    {
+      "model": "resnet",
+      "strategy": "mixed",
+      "parameters": 545717,
+      "bce": 0.7123889923095703,
+      "augmented_records": 8
+    },
+    {
+      "model": "tcn",
+      "strategy": "clean_only",
+      "parameters": 134885,
+      "bce": 1.0393073558807373,
+      "augmented_records": 0
+    },
+    {
+      "model": "tcn",
+      "strategy": "independent_rms",
+      "parameters": 134885,
+      "bce": 1.0403428077697754,
+      "augmented_records": 6
+    },
+    {
+      "model": "tcn",
+      "strategy": "electrode",
+      "parameters": 134885,
+      "bce": 1.0415499210357666,
+      "augmented_records": 11
+    },
+    {
+      "model": "tcn",
+      "strategy": "mixed",
+      "parameters": 134885,
+      "bce": 1.0411510467529297,
+      "augmented_records": 8
+    }
+  ],
+  "regressions": {
+    "passed": 42,
+    "subtests_passed": 15
+  }
+}

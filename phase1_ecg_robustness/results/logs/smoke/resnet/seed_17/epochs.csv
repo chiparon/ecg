@@ -1,0 +1,2 @@
+epoch,train_loss,val_loss,val_macro_auroc,val_macro_ap,val_macro_auroc_defined_classes,val_macro_ap_defined_classes,auroc_class_count,selection_metric,selection_score,epoch_compute_seconds,elapsed_seconds
+1,0.578818503767252,0.7267372488975525,0.6897218222192897,0.46374790940785704,0.6897218222192897,0.46374790940785704,5,macro_auroc,0.6897218222192897,0.9098863999824971,3.2375202999683097

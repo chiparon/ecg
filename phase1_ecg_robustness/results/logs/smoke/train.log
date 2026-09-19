@@ -1,0 +1,12 @@
+
+COMMAND: E:\Eproject\ECG\phase1_ecg_robustness\.venv\Scripts\python.exe -u -m src.train --config configs/phase1_smoke.yaml --resume-completed
+Device=cuda; train=256, val=100, test=100; training-only scale_mv=0.23590789
+smoke/resnet/seed_17 epoch=1/1 train_loss=0.57882 val_loss=0.72674 macro_auroc=0.68972 elapsed=3.2s
+
+COMMAND: E:\Eproject\ECG\phase1_ecg_robustness\.venv\Scripts\python.exe -u -m src.train --config configs/phase1_smoke.yaml --resume-completed
+Device=cuda; train=256, val=100, test=100; training-only scale_mv=0.23590789
+Skipping verified completed run: resnet seed=17
+
+COMMAND: E:\Eproject\ECG\phase1_ecg_robustness\.venv\Scripts\python.exe -u -m src.train --config configs/phase1_smoke.yaml --resume-completed
+Device=cuda; train=256, val=100, test=100; training-only scale_mv=0.23590789
+Skipping verified completed run: resnet seed=17

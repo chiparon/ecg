@@ -1,0 +1,180 @@
+{
+  "runs": {
+    "smoke": {
+      "prediction_files": 16,
+      "records_per_file": 100,
+      "patients": 91,
+      "max_primary_metric_error": 2.220446049250313e-16,
+      "max_snr_error_db": 1.6381012457600264e-07,
+      "max_snr_from_saved_rms_error_db": 6.750155989720952e-14,
+      "max_matched_rms_relative_error": 1.1783431460660007e-08,
+      "max_inactive_rms_mv": 0.0,
+      "record_alignment_and_cross_model_noise_pairing": "passed"
+    },
+    "pilot": {
+      "prediction_files": 39,
+      "records_per_file": 1000,
+      "patients": 896,
+      "max_primary_metric_error": 9.71445146547012e-17,
+      "max_snr_error_db": 1.6683839731967964e-07,
+      "max_snr_from_saved_rms_error_db": 6.750155989720952e-14,
+      "max_matched_rms_relative_error": 1.1783431460660007e-08,
+      "max_inactive_rms_mv": 0.0,
+      "record_alignment_and_cross_model_noise_pairing": "passed"
+    },
+    "full": {
+      "prediction_files": 456,
+      "records_per_file": 2158,
+      "patients": 1877,
+      "max_primary_metric_error": 1.1102230246251565e-16,
+      "max_snr_error_db": 2.008470758596559e-07,
+      "max_snr_from_saved_rms_error_db": 7.638334409421077e-14,
+      "max_matched_rms_relative_error": 1.934274005972898e-08,
+      "max_inactive_rms_mv": 0.0,
+      "record_alignment_and_cross_model_noise_pairing": "passed"
+    },
+    "pilot_noise_repeats": {
+      "prediction_files": 180,
+      "records_per_file": 1000,
+      "patients": 896,
+      "max_primary_metric_error": 9.71445146547012e-17,
+      "max_snr_error_db": 1.6810699321467837e-07,
+      "max_snr_from_saved_rms_error_db": 6.750155989720952e-14,
+      "max_matched_rms_relative_error": 1.2623600848705901e-08,
+      "max_inactive_rms_mv": 0.0,
+      "record_alignment_and_cross_model_noise_pairing": "passed"
+    },
+    "full_noise_repeats": {
+      "prediction_files": 360,
+      "records_per_file": 2158,
+      "patients": 1877,
+      "max_primary_metric_error": 1.1102230246251565e-16,
+      "max_snr_error_db": 1.7033242727393372e-07,
+      "max_snr_from_saved_rms_error_db": 7.815970093361102e-14,
+      "max_matched_rms_relative_error": 1.3491948684705437e-08,
+      "max_inactive_rms_mv": 0.0,
+      "record_alignment_and_cross_model_noise_pairing": "passed"
+    }
+  },
+  "checkpoints": [
+    {
+      "run": "smoke",
+      "model": "resnet",
+      "seed": 17,
+      "epochs": 1,
+      "sha256": "414e0d79b1bef556ba0ba8fd57b9f501c3b65606592fd0ef048e8e1083c640fa",
+      "patient_leakage": false
+    },
+    {
+      "run": "pilot",
+      "model": "resnet",
+      "seed": 17,
+      "epochs": 15,
+      "sha256": "0b64bbfe210f630a631a62572f3d4a9b970c364ed71a9484576e7bebaf2474f5",
+      "patient_leakage": false
+    },
+    {
+      "run": "pilot",
+      "model": "resnet",
+      "seed": 29,
+      "epochs": 15,
+      "sha256": "f32b53dda7791eb263da8eec124ac0c83e1ac2e47ac302e7f794d5f0b104c57e",
+      "patient_leakage": false
+    },
+    {
+      "run": "pilot",
+      "model": "resnet",
+      "seed": 43,
+      "epochs": 15,
+      "sha256": "7bf51727cb968ae385912f187e19e907d1671482350474dab6ebb266af56d137",
+      "patient_leakage": false
+    },
+    {
+      "run": "full",
+      "model": "resnet",
+      "seed": 17,
+      "epochs": 25,
+      "sha256": "ae1af3b6f26199f28384c78976613cac3bbf3b73d74995a9807710c0bc2f274f",
+      "patient_leakage": false
+    },
+    {
+      "run": "full",
+      "model": "resnet",
+      "seed": 29,
+      "epochs": 25,
+      "sha256": "d88f9588b099e1dd5dddb32a3258f043ae873f62694eb9af5bcc9755ac8d2f5a",
+      "patient_leakage": false
+    },
+    {
+      "run": "full",
+      "model": "resnet",
+      "seed": 43,
+      "epochs": 25,
+      "sha256": "d2486cf1fdf7bdb8e580e1e920522c530883a8da5246b52e2bdfa2a2d90b6cbd",
+      "patient_leakage": false
+    },
+    {
+      "run": "full",
+      "model": "tcn",
+      "seed": 17,
+      "epochs": 25,
+      "sha256": "6ab54c8261689377c6c10f99db394501b9049ed832793c6ff2ebd827b5d95eec",
+      "patient_leakage": false
+    },
+    {
+      "run": "full",
+      "model": "tcn",
+      "seed": 29,
+      "epochs": 25,
+      "sha256": "e95999147596689babf082839394d52f32c1e6b8b8204a588e76311861f895f9",
+      "patient_leakage": false
+    },
+    {
+      "run": "full",
+      "model": "tcn",
+      "seed": 43,
+      "epochs": 25,
+      "sha256": "c7477dff0207ea4b9f85d3d8896a531d71c253bc3616e0bc8daa8bd7370add0b",
+      "patient_leakage": false
+    }
+  ],
+  "checkpoint_replays": [
+    {
+      "model": "resnet",
+      "seed": 17,
+      "clean_records": 32,
+      "clean_max_probability_error": 1.043081283569336e-07,
+      "independent_noise_reconstruction_errors": {
+        "bandpass": 7.450580596923828e-09,
+        "bw": 1.4901161193847656e-08,
+        "ma": 2.9802322387695312e-08,
+        "em": 2.9802322387695312e-08
+      }
+    },
+    {
+      "model": "tcn",
+      "seed": 17,
+      "clean_records": 32,
+      "clean_max_probability_error": 1.1920928955078125e-07,
+      "independent_noise_reconstruction_errors": {
+        "bandpass": 5.587935447692871e-09,
+        "bw": 1.1175870895385742e-08,
+        "ma": 3.725290298461914e-09,
+        "em": 1.862645149230957e-09
+      }
+    }
+  ],
+  "status": "passed",
+  "total_prediction_files": 1051,
+  "total_record_model_condition_predictions": 1981528,
+  "post_format_smoke_reaudit": {
+    "status": "passed",
+    "prediction_groups": 16,
+    "max_primary_metric_error": 5.551115123125783e-17,
+    "max_snr_error_db": 1.6381012457600264e-07,
+    "max_snr_reconstruction_error_db": 7.105427357601002e-15,
+    "max_matched_rms_relative_error": 1.1783431460660007e-08,
+    "alignment": "passed"
+  },
+  "delivery_verification": "results/logs/delivery_verification.json"
+}

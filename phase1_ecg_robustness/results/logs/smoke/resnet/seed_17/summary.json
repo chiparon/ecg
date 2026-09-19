@@ -1,0 +1,163 @@
+{
+  "completed": true,
+  "model": "resnet",
+  "seed": 17,
+  "config_sha256": "5f135e709c69e8c82377afceb52531e1486ef8a88a3cb802b93a31c0ba2ba4ea",
+  "config": {
+    "run_name": "smoke",
+    "data_dir": "data/processed_smoke",
+    "results_dir": "results",
+    "sampling_rate": 100,
+    "seeds": [
+      17
+    ],
+    "models": [
+      "resnet"
+    ],
+    "train": {
+      "epochs": 1,
+      "batch_size": 32,
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "train_limit": 256,
+      "val_limit": 100,
+      "test_limit": 100,
+      "subset_seed": 2026,
+      "num_workers": 0,
+      "base_channels": 16
+    },
+    "noise": {
+      "snrs": [
+        20,
+        10,
+        0
+      ],
+      "kinds": [
+        "bandpass"
+      ],
+      "band": [
+        0.5,
+        40
+      ],
+      "seed": 8128,
+      "nstdb_dir": "data/raw/nstdb",
+      "electrodes": [
+        "RA"
+      ],
+      "electrode_snr": 10,
+      "audit_records": 64
+    },
+    "statistics": {
+      "bootstrap": 500,
+      "permutations": 1000
+    }
+  },
+  "train_config": {
+    "epochs": 1,
+    "batch_size": 32,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "train_limit": 256,
+    "val_limit": 100,
+    "test_limit": 100,
+    "subset_seed": 2026,
+    "num_workers": 0,
+    "base_channels": 16,
+    "torch_threads": 4
+  },
+  "data_identity": {
+    "metadata_labels_provenance_sha256": "040bcf39649343ce7fa0bf323ada7e37d4e45a8f9279ec1532987ac37722751c",
+    "signals_bytes": 47424128,
+    "signals_mtime_ns": 1789573985090313600,
+    "data_dir": "E:\\Eproject\\ECG\\phase1_ecg_robustness\\data\\processed_smoke"
+  },
+  "scale_mv": 0.23590788694808743,
+  "checkpoint": "results\\checkpoints\\smoke\\resnet\\seed_17.pt",
+  "environment": {
+    "python": "3.10.19 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 16:41:31) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.22631-SP0",
+    "packages": {
+      "numpy": "2.2.6",
+      "scipy": "1.15.3",
+      "pandas": "2.3.3",
+      "torch": "2.5.1+cu121",
+      "wfdb": "4.3.1",
+      "PyYAML": "6.0.3",
+      "scikit-learn": "1.7.2"
+    },
+    "device": "cuda",
+    "device_name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "cuda_runtime": "12.1",
+    "cudnn_version": 90100,
+    "deterministic_algorithms": true,
+    "cudnn_benchmark": false,
+    "tf32": false,
+    "cublas_workspace_config": ":4096:8",
+    "torch_threads": 4,
+    "num_workers": 0,
+    "augmentation": "none; clean-only BCEWithLogitsLoss"
+  },
+  "last_epoch": 1,
+  "best_epoch": 1,
+  "best_selection_score": 0.6897218222192897,
+  "selection_metric": "macro_auroc",
+  "best_validation_metrics": {
+    "macro_auroc": 0.6897218222192897,
+    "macro_ap": 0.46374790940785704,
+    "macro_auroc_defined_classes": 0.6897218222192897,
+    "macro_ap_defined_classes": 0.46374790940785704,
+    "auroc_class_count": 5,
+    "ap_class_count": 5,
+    "per_class_auroc": {
+      "NORM": 0.7099143206854345,
+      "MI": 0.5875,
+      "STTC": 0.5687645687645687,
+      "CD": 0.7601626016260162,
+      "HYP": 0.822267620020429
+    },
+    "per_class_ap": {
+      "NORM": 0.7111069926321976,
+      "MI": 0.3825186944406989,
+      "STTC": 0.29262415394273994,
+      "CD": 0.4864196976932185,
+      "HYP": 0.4460700083304304
+    },
+    "validation_positives": {
+      "NORM": 57,
+      "MI": 20,
+      "STTC": 22,
+      "CD": 18,
+      "HYP": 11
+    }
+  },
+  "last_epoch_metrics": {
+    "epoch": 1,
+    "train_loss": 0.578818503767252,
+    "val_loss": 0.7267372488975525,
+    "val_macro_auroc": 0.6897218222192897,
+    "val_macro_ap": 0.46374790940785704,
+    "val_macro_auroc_defined_classes": 0.6897218222192897,
+    "val_macro_ap_defined_classes": 0.46374790940785704,
+    "auroc_class_count": 5,
+    "selection_metric": "macro_auroc",
+    "selection_score": 0.6897218222192897,
+    "epoch_compute_seconds": 0.9098863999824971,
+    "elapsed_seconds": 3.2375202999683097
+  },
+  "elapsed_seconds": 3.3254857999272645,
+  "thresholds": [
+    0.09708032011985779,
+    0.4495666027069092,
+    0.3810746967792511,
+    0.8302224278450012,
+    0.6785529851913452
+  ],
+  "threshold_notes": {
+    "NORM": "Validation F1 maximum; ties closest to 0.5",
+    "MI": "Validation F1 maximum; ties closest to 0.5",
+    "STTC": "Validation F1 maximum; ties closest to 0.5",
+    "CD": "Validation F1 maximum; ties closest to 0.5",
+    "HYP": "Validation F1 maximum; ties closest to 0.5"
+  },
+  "parameter_count": 244005
+}

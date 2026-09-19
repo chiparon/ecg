@@ -1,0 +1,13 @@
+Initial environment: Windows 11; C:/Users/chiparon/miniconda3/python.exe 3.12.7 has none of required scientific packages.
+GPU: NVIDIA GeForce RTX 4070 Laptop GPU 8188 MiB, driver 581.08, CUDA driver13.0.
+Disk E: total2000381014016 free529321914368 bytes at initial inspection.
+NVIDIA Sync config: OpenSSH alias dgx, user chiparon, hostname spark-3082.local, existing Sync identity file. No credentials copied.
+Attempt: ssh -o BatchMode=yes -o ConnectTimeout=15 dgx nvidia-smi
+Result: hostname spark-3082.local could not resolve, exit255. Sync itself records same hostname resolution error; cached mdns endpoints empty.
+Attempt: ssh -o BatchMode=yes -o ConnectTimeout=12 -o Hostname=2408:820c:b636:21c0:4abd:a95d:bdc:e35e dgx nvidia-smi
+Result: known historical Sync IPv6 endpoint port22 timed out, exit255. No remote compute used.
+Decision: use local CUDA GPU; no changes to user's Sync or SSH config.
+Command: C:/Users/chiparon/miniconda3/envs/inpaint/python.exe -m venv --system-site-packages .venv
+Result: created project-local Python3.10 venv; reuses existing Torch2.5.1+cu121 and NumPy2.2.6 read-only, does not modify source environment.
+Command: .venv/Scripts/python.exe -m pip install -r requirements.txt
+Result: scientific dependencies installed in project venv; exact package freeze saved separately by environment probe.

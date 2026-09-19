@@ -1,0 +1,177 @@
+{
+  "completed": true,
+  "model": "tcn",
+  "seed": 29,
+  "config_sha256": "6c2a7b2d45741d551d3f15f9f9f0ba3f6103e194536ab01b99a45b9410494c84",
+  "config": {
+    "run_name": "full",
+    "data_dir": "data/processed",
+    "results_dir": "results",
+    "sampling_rate": 100,
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "models": [
+      "resnet",
+      "tcn"
+    ],
+    "train": {
+      "epochs": 25,
+      "batch_size": 128,
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "train_limit": null,
+      "val_limit": null,
+      "test_limit": null,
+      "subset_seed": 2026,
+      "num_workers": 0,
+      "base_channels": 24
+    },
+    "noise": {
+      "snrs": [
+        20,
+        10,
+        0
+      ],
+      "kinds": [
+        "bandpass",
+        "bw",
+        "ma",
+        "em"
+      ],
+      "band": [
+        0.5,
+        40
+      ],
+      "seed": 8128,
+      "nstdb_dir": "data/raw/nstdb",
+      "electrodes": [
+        "RA",
+        "LA",
+        "LL",
+        "V1",
+        "V2",
+        "V3",
+        "V4",
+        "V5",
+        "V6"
+      ],
+      "electrode_snr": 10,
+      "audit_records": 128
+    },
+    "statistics": {
+      "bootstrap": 2000,
+      "permutations": 10000
+    }
+  },
+  "train_config": {
+    "epochs": 25,
+    "batch_size": 128,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "train_limit": null,
+    "val_limit": null,
+    "test_limit": null,
+    "subset_seed": 2026,
+    "num_workers": 0,
+    "base_channels": 24,
+    "torch_threads": 4
+  },
+  "data_identity": {
+    "metadata_labels_provenance_sha256": "185f56a9bfda267f135d16f6ca83337b64b63b16f9476225e7503d6886f63157",
+    "signals_bytes": 1026624128,
+    "signals_mtime_ns": 1789575477053666800,
+    "data_dir": "E:\\Eproject\\ECG\\phase1_ecg_robustness\\data\\processed"
+  },
+  "scale_mv": 0.2254905871835822,
+  "checkpoint": "results\\checkpoints\\full\\tcn\\seed_29.pt",
+  "environment": {
+    "python": "3.10.19 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 16:41:31) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.22631-SP0",
+    "packages": {
+      "numpy": "2.2.6",
+      "scipy": "1.15.3",
+      "pandas": "2.3.3",
+      "torch": "2.5.1+cu121",
+      "wfdb": "4.3.1",
+      "PyYAML": "6.0.3",
+      "scikit-learn": "1.7.2"
+    },
+    "device": "cuda",
+    "device_name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "cuda_runtime": "12.1",
+    "cudnn_version": 90100,
+    "deterministic_algorithms": true,
+    "cudnn_benchmark": false,
+    "tf32": false,
+    "cublas_workspace_config": ":4096:8",
+    "torch_threads": 4,
+    "num_workers": 0,
+    "augmentation": "none; clean-only BCEWithLogitsLoss"
+  },
+  "last_epoch": 25,
+  "best_epoch": 25,
+  "best_selection_score": 0.9227586471464834,
+  "selection_metric": "macro_auroc",
+  "best_validation_metrics": {
+    "macro_auroc": 0.9227586471464834,
+    "macro_ap": 0.8052435931260762,
+    "macro_auroc_defined_classes": 0.9227586471464834,
+    "macro_ap_defined_classes": 0.8052435931260762,
+    "auroc_class_count": 5,
+    "ap_class_count": 5,
+    "per_class_auroc": {
+      "NORM": 0.9427116989990373,
+      "MI": 0.9227318850606523,
+      "STTC": 0.9314348288197175,
+      "CD": 0.9249747627700384,
+      "HYP": 0.8919400600829718
+    },
+    "per_class_ap": {
+      "NORM": 0.9207453369815602,
+      "MI": 0.8288365408520113,
+      "STTC": 0.7884705262772713,
+      "CD": 0.8437428400422449,
+      "HYP": 0.6444227214772927
+    },
+    "validation_positives": {
+      "NORM": 955,
+      "MI": 540,
+      "STTC": 528,
+      "CD": 495,
+      "HYP": 268
+    }
+  },
+  "last_epoch_metrics": {
+    "epoch": 25,
+    "train_loss": 0.24340774189376407,
+    "val_loss": 0.29510817234469483,
+    "val_macro_auroc": 0.9227586471464834,
+    "val_macro_ap": 0.8052435931260762,
+    "val_macro_auroc_defined_classes": 0.9227586471464834,
+    "val_macro_ap_defined_classes": 0.8052435931260762,
+    "auroc_class_count": 5,
+    "selection_metric": "macro_auroc",
+    "selection_score": 0.9227586471464834,
+    "epoch_compute_seconds": 27.289322800002992,
+    "elapsed_seconds": 680.7210302000167
+  },
+  "elapsed_seconds": 680.7891108000185,
+  "thresholds": [
+    0.4279913902282715,
+    0.17765212059020996,
+    0.3926781713962555,
+    0.3789098560810089,
+    0.4916239082813263
+  ],
+  "threshold_notes": {
+    "NORM": "Validation F1 maximum; ties closest to 0.5",
+    "MI": "Validation F1 maximum; ties closest to 0.5",
+    "STTC": "Validation F1 maximum; ties closest to 0.5",
+    "CD": "Validation F1 maximum; ties closest to 0.5",
+    "HYP": "Validation F1 maximum; ties closest to 0.5"
+  },
+  "parameter_count": 134885
+}

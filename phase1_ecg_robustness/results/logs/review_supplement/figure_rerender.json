@@ -1,0 +1,21 @@
+{
+  "status": "completed",
+  "time_utc": "2026-09-17T01:41:19.476358+00:00",
+  "source": {
+    "path": "E:/Eproject/ECG/phase1_ecg_robustness/src/supplemental_statistics.py",
+    "bytes": 36942,
+    "sha256": "c89248306ed90355c69c5dd986e2e28159fab4c58f3bfede5f0494eea0ce1f98"
+  },
+  "reason": "Repair visually observed overlapping tick/axis labels and legends covering class intervals; add explicit NSTDB confounding warning",
+  "bootstrap_recomputed": false,
+  "numeric_output_checksums_unchanged": true,
+  "figures": {
+    "path": "results/figures/review_supplement/figure_manifest.json",
+    "sha256": "9dcc5380b6e22a72d0fee5c82bd2876cc7e6a5059fa55d8aef471ee35b812ef0"
+  },
+  "retrospective_source_index_refreshed": {
+    "path": "E:/Eproject/ECG/phase1_ecg_robustness/results/tables/review_supplement/matrix_artifact_evidence.json",
+    "bytes": 92863,
+    "sha256": "5ccb1f3efd11200aefa0f390567bf3a597f1be2b6700c359c3093e07e753b559"
+  }
+}

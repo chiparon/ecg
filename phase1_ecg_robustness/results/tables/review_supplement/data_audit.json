@@ -1,0 +1,135 @@
+{
+  "status": "completed",
+  "official_records": 21799,
+  "retained_records": 21388,
+  "excluded_records": 411,
+  "reason_counts": {
+    "included": 21388,
+    "empty_diagnostic_labels": 411
+  },
+  "categories": {
+    "empty_labels": 411,
+    "unavailable": 0,
+    "preprocessing_failures": 0,
+    "duplicate_filtering": 0,
+    "quality_filtering": 0,
+    "additional_label_filters": 0
+  },
+  "category_evidence": "Current preparation source has only missing-pair and empty-label exclusions. Duplicate IDs and waveform QC failures raise (no silent dropping); complete/error-free preparation plus exhaustive ordered cache/label/ledger reconciliation supports zero additional exclusions. No source-quality annotation filter is present. This is retrospective evidence, not a generation-time code fingerprint.",
+  "label_policy": "Every diagnostic SCP code key including likelihood 0=unknown; no positive-likelihood threshold",
+  "sources": [
+    {
+      "path": "E:/Eproject/ECG/phase1_ecg_robustness/data/raw/ptb-xl-1.0.3/ptbxl_database.csv",
+      "bytes": 6594879,
+      "sha256": "7600de9c1b27d181d850b3c6038a35d7c3ddb6bb33b702e3a20252a6859d216b"
+    },
+    {
+      "path": "E:/Eproject/ECG/phase1_ecg_robustness/data/raw/ptb-xl-1.0.3/scp_statements.csv",
+      "bytes": 9720,
+      "sha256": "ad05b0b1fcae83bb1230755ad9cfc7c96f303feddc08a4a9ad5bdc9ca63bac8f"
+    },
+    {
+      "path": "data/processed/preparation.json",
+      "bytes": 303987,
+      "sha256": "a96788b42f1ce7b8238bcedfa5b65d943757c3583ede4f301896a8eef3a6d00c"
+    },
+    {
+      "path": "results/tables/dataset_exclusions.json",
+      "bytes": 47164,
+      "sha256": "6acd13fa281b7b282b5034bc3715a659f5c20b4f7b05aec15bdbbc922eaed84b"
+    },
+    {
+      "path": "results/tables/dataset_file_checks.json",
+      "bytes": 7785580,
+      "sha256": "082e0ee57fd130bcfee4f24772dc7505a823efc4790e0722841cbd59fac02427"
+    },
+    {
+      "path": "src/prepare_ptbxl.py",
+      "bytes": 14347,
+      "sha256": "a53971cfc2177151d81c6b41acf77ea2b11bec76aaa8eac827196430f2ad3f57"
+    },
+    {
+      "path": "src/datasets.py",
+      "bytes": 4684,
+      "sha256": "a3f085d44652da86c5c4dfbf088d14c901102d05e75a61b7920b7025786ae4f2"
+    }
+  ],
+  "raw_waveform_verification": "Existence checked now; historical verified SHA256 inventory reconciled, not all waveform bytes rehashed",
+  "caches": [
+    {
+      "path": "data\\processed",
+      "records": 21388,
+      "shape": [
+        21388,
+        12,
+        1000
+      ],
+      "metadata": {
+        "path": "data/processed/metadata.csv",
+        "bytes": 6503443,
+        "sha256": "01c5cb8c1fb0020c17931b4655b1b50fac2aba63eaf2f5453b7ba4d1acd06d42"
+      },
+      "labels": {
+        "path": "data/processed/labels.npy",
+        "bytes": 427888,
+        "sha256": "f538068dc6619f91375d46b9bb3ca0747ba22e5f3f7a5d234c3209108e4a3a29"
+      },
+      "preparation": {
+        "path": "data/processed/preparation.json",
+        "bytes": 303987,
+        "sha256": "a96788b42f1ce7b8238bcedfa5b65d943757c3583ede4f301896a8eef3a6d00c"
+      },
+      "aligned": true
+    },
+    {
+      "path": "data\\processed_pilot",
+      "records": 9865,
+      "shape": [
+        9865,
+        12,
+        1000
+      ],
+      "metadata": {
+        "path": "data/processed_pilot/metadata.csv",
+        "bytes": 2896342,
+        "sha256": "4db22e62d7b6bdfd87289eb554572d3babdd6fff1a53baf48dbed3ebd9180ee1"
+      },
+      "labels": {
+        "path": "data/processed_pilot/labels.npy",
+        "bytes": 197428,
+        "sha256": "18d528ab455e0c6d94e296374ba9b0932fa3603ab1a437b6f6236d8b3dd1564c"
+      },
+      "preparation": {
+        "path": "data/processed_pilot/preparation.json",
+        "bytes": 133971,
+        "sha256": "f92d5d21260d13f26d8ec78880e402b3aaa393ff7e48d836517c9bf6916d23dd"
+      },
+      "aligned": true
+    },
+    {
+      "path": "data\\processed_smoke",
+      "records": 988,
+      "shape": [
+        988,
+        12,
+        1000
+      ],
+      "metadata": {
+        "path": "data/processed_smoke/metadata.csv",
+        "bytes": 272112,
+        "sha256": "7a027ace0e1b1f67ab11f718325a657efd796cb34c48a4058a8885a0b6a91527"
+      },
+      "labels": {
+        "path": "data/processed_smoke/labels.npy",
+        "bytes": 19888,
+        "sha256": "0029f2a4979004dbb1b68369714ac29c86461c7cbd956c0e8829fd26b365a239"
+      },
+      "preparation": {
+        "path": "data/processed_smoke/preparation.json",
+        "bytes": 22218,
+        "sha256": "79146918b048e20610c8ec71d162362cef9427b920636a173b2b3a34c57d604f"
+      },
+      "aligned": true
+    }
+  ]
+}

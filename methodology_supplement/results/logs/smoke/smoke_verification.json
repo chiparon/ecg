@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "stage": "smoke",
+  "config_sha256": "f3f190e9a26bc96544f393a62673ff518c543018da23acdb50aed9409c224469",
+  "noise": {
+    "diagnostic_rows": 14400,
+    "max_final_residual_snr_error_db": 2.087432520170296e-07,
+    "max_final_residual_lead_rms_relative_error": 6.5470156984229e-08,
+    "matrices": 8,
+    "original_generator_records_checked": [
+      0,
+      1,
+      2,
+      50,
+      98,
+      99
+    ],
+    "original_generator_noise_seeds": [
+      8128,
+      101,
+      202,
+      303,
+      404,
+      505
+    ],
+    "original_generator_arrays_exact": 72,
+    "source_fft_df_hz": 0.01,
+    "lower_band_source_frequency_hz": 0.05,
+    "ten_second_observed_fft_df_hz": 0.1
+  },
+  "bridge": {
+    "cells": 222,
+    "records_per_cell": 100,
+    "all_passed": true,
+    "maximum_probability_difference": 3.5762786865234375e-07,
+    "minimum_label_agreement": 1.0,
+    "table": {
+      "path": "methodology_supplement/results/tables/smoke/legacy_bridge.csv",
+      "bytes": 53604,
+      "sha256": "6de8ab74fd696e960da4ce86989a82702dc2f58b3333671627206b1cf9773153"
+    }
+  },
+  "new_summary": {
+    "rows_checked": 930,
+    "maximum_point_or_sd_error": 4.9449672345162204e-09
+  },
+  "checked_at": "2026-09-19T08:11:33.687411+00:00",
+  "protected_files_unchanged": 41,
+  "dgx_overlap_seconds": 7.668131,
+  "technical_only": true
+}

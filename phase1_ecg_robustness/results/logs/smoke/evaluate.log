@@ -1,0 +1,57 @@
+
+COMMAND: E:\Eproject\ECG\phase1_ecg_robustness\.venv\Scripts\python.exe -u -m src.evaluate --config configs/phase1_smoke.yaml
+eval resnet/17 clean/100/clean/all AUROC=0.68135
+eval resnet/17 bandpass/20/independent/all AUROC=0.67992
+eval resnet/17 bandpass/20/independent_rms/all AUROC=0.67856
+eval resnet/17 bandpass/20/electrode/all AUROC=0.67645
+eval resnet/17 bandpass/20/covariance/all AUROC=0.66621
+eval resnet/17 bandpass/10/independent/all AUROC=0.65870
+eval resnet/17 bandpass/10/independent_rms/all AUROC=0.66258
+eval resnet/17 bandpass/10/electrode/all AUROC=0.66493
+eval resnet/17 bandpass/10/covariance/all AUROC=0.64416
+eval resnet/17 bandpass/0/independent/all AUROC=0.58120
+eval resnet/17 bandpass/0/independent_rms/all AUROC=0.57794
+eval resnet/17 bandpass/0/electrode/all AUROC=0.61576
+eval resnet/17 bandpass/0/covariance/all AUROC=0.60717
+eval resnet/17 bandpass/10/independent_rms/RA AUROC=0.65638
+eval resnet/17 bandpass/10/electrode/RA AUROC=0.63242
+eval resnet/17 bandpass/10/covariance/RA AUROC=0.63357
+Evaluation complete: 16 conditions/models, 1.3s
+
+COMMAND: E:\Eproject\ECG\phase1_ecg_robustness\.venv\Scripts\python.exe -u -m src.evaluate --config configs/phase1_smoke.yaml
+eval resnet/17 clean/100/clean/all AUROC=0.68145
+eval resnet/17 bandpass/20/independent/all AUROC=0.67982
+eval resnet/17 bandpass/20/independent_rms/all AUROC=0.67856
+eval resnet/17 bandpass/20/electrode/all AUROC=0.67645
+eval resnet/17 bandpass/20/covariance/all AUROC=0.66612
+eval resnet/17 bandpass/10/independent/all AUROC=0.65848
+eval resnet/17 bandpass/10/independent_rms/all AUROC=0.66225
+eval resnet/17 bandpass/10/electrode/all AUROC=0.66483
+eval resnet/17 bandpass/10/covariance/all AUROC=0.64406
+eval resnet/17 bandpass/0/independent/all AUROC=0.58100
+eval resnet/17 bandpass/0/independent_rms/all AUROC=0.57794
+eval resnet/17 bandpass/0/electrode/all AUROC=0.61576
+eval resnet/17 bandpass/0/covariance/all AUROC=0.60704
+eval resnet/17 bandpass/10/independent_rms/RA AUROC=0.65615
+eval resnet/17 bandpass/10/electrode/RA AUROC=0.63242
+eval resnet/17 bandpass/10/covariance/RA AUROC=0.63367
+Evaluation complete: 16 conditions/models, 2.4s
+
+COMMAND: E:\Eproject\ECG\phase1_ecg_robustness\.venv\Scripts\python.exe -u -m src.evaluate --config configs/phase1_smoke.yaml
+eval resnet/17 clean/100/clean/all AUROC=0.68145
+eval resnet/17 bandpass/20/independent/all AUROC=0.67982
+eval resnet/17 bandpass/20/independent_rms/all AUROC=0.67856
+eval resnet/17 bandpass/20/electrode/all AUROC=0.67645
+eval resnet/17 bandpass/20/covariance/all AUROC=0.66612
+eval resnet/17 bandpass/10/independent/all AUROC=0.65848
+eval resnet/17 bandpass/10/independent_rms/all AUROC=0.66225
+eval resnet/17 bandpass/10/electrode/all AUROC=0.66483
+eval resnet/17 bandpass/10/covariance/all AUROC=0.64406
+eval resnet/17 bandpass/0/independent/all AUROC=0.58100
+eval resnet/17 bandpass/0/independent_rms/all AUROC=0.57794
+eval resnet/17 bandpass/0/electrode/all AUROC=0.61576
+eval resnet/17 bandpass/0/covariance/all AUROC=0.60704
+eval resnet/17 bandpass/10/independent_rms/RA AUROC=0.65615
+eval resnet/17 bandpass/10/electrode/RA AUROC=0.63242
+eval resnet/17 bandpass/10/covariance/RA AUROC=0.63367
+Evaluation complete: 16 conditions/models, 1.1s

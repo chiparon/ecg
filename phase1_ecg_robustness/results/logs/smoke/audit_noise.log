@@ -1,0 +1,15 @@
+
+COMMAND: E:\Eproject\ECG\phase1_ecg_robustness\.venv\Scripts\python.exe -u -m src.audit_noise --config configs/phase1_smoke.yaml
+audit bandpass 1/64
+audit bandpass 33/64
+Noise gates PASS: results\tables\smoke\noise_gate.json
+
+COMMAND: E:\Eproject\ECG\phase1_ecg_robustness\.venv\Scripts\python.exe -u -m src.audit_noise --config configs/phase1_smoke.yaml
+audit bandpass 1/64
+audit bandpass 33/64
+Noise gates PASS: results\tables\smoke\noise_gate.json
+
+COMMAND: E:\Eproject\ECG\phase1_ecg_robustness\.venv\Scripts\python.exe -u -m src.audit_noise --config configs/phase1_smoke.yaml
+audit bandpass 1/64
+audit bandpass 33/64
+Noise gates PASS: results\tables\smoke\noise_gate.json

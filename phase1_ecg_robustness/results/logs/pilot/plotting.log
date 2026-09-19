@@ -1,0 +1,6 @@
+
+COMMAND: E:\Eproject\ECG\phase1_ecg_robustness\.venv\Scripts\python.exe -u -m src.plotting --config configs/phase1_pilot.yaml
+Saved 10 scientific figures; manifest: E:\Eproject\ECG\phase1_ecg_robustness\results\figures\pilot\figure_manifest.json
+
+COMMAND: E:\Eproject\ECG\phase1_ecg_robustness\.venv\Scripts\python.exe -u -m src.plotting --config configs/phase1_pilot.yaml
+Saved 10 scientific figures; manifest: E:\Eproject\ECG\phase1_ecg_robustness\results\figures\pilot\figure_manifest.json

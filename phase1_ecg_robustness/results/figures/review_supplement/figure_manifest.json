@@ -1,0 +1,106 @@
+{
+  "run_name": "review_supplement",
+  "sampling_rate_hz": 100,
+  "dpi": 180,
+  "config_path": "configs/phase1_supplement.yaml",
+  "figures": [
+    {
+      "family": "patient_bootstrap_distributions_bandpass",
+      "files": [
+        "results/figures/review_supplement/patient_bootstrap_distributions_bandpass.png",
+        "results/figures/review_supplement/patient_bootstrap_distributions_bandpass.pdf"
+      ],
+      "caption": "bandpass: Macro contrasts; lines=points, shaded bands=95% percentile CIs. 95% percentile patient-cluster CI; fixed trained models, fixed test-noise realization (base 8128); not joint patient/training/noise uncertainty Patient clusters resampled; all records retained. Fixed models and noise base 8128.\nNot an ensemble, training-seed CI, noise-replay CI, or joint CI.",
+      "source_paths": [
+        "results/tables/review_supplement/patient_bootstrap_auroc_ci.csv",
+        "results/tables/review_supplement/patient_bootstrap_distributions.npz"
+      ]
+    },
+    {
+      "family": "patient_bootstrap_classwise_paired_ci_bandpass",
+      "files": [
+        "results/figures/review_supplement/patient_bootstrap_classwise_paired_ci_bandpass.png",
+        "results/figures/review_supplement/patient_bootstrap_classwise_paired_ci_bandpass.pdf"
+      ],
+      "caption": "bandpass: All five class contrasts; points and 95% percentile CIs. 95% percentile patient-cluster CI; fixed trained models, fixed test-noise realization (base 8128); not joint patient/training/noise uncertainty Patient clusters resampled; all records retained. Fixed models and noise base 8128.\nNot an ensemble, training-seed CI, noise-replay CI, or joint CI.",
+      "source_paths": [
+        "results/tables/review_supplement/patient_bootstrap_auroc_ci.csv",
+        "results/tables/review_supplement/patient_bootstrap_distributions.npz"
+      ]
+    },
+    {
+      "family": "patient_bootstrap_distributions_bw",
+      "files": [
+        "results/figures/review_supplement/patient_bootstrap_distributions_bw.png",
+        "results/figures/review_supplement/patient_bootstrap_distributions_bw.pdf"
+      ],
+      "caption": "bw: Macro contrasts; lines=points, shaded bands=95% percentile CIs. 95% percentile patient-cluster CI; fixed trained models, fixed test-noise realization (base 8128); not joint patient/training/noise uncertainty Patient clusters resampled; all records retained. Fixed models and noise base 8128.\nNot an ensemble, training-seed CI, noise-replay CI, or joint CI.\nConfounded NSTDB sensitivity replay; not isolated structural evidence.",
+      "source_paths": [
+        "results/tables/review_supplement/patient_bootstrap_auroc_ci.csv",
+        "results/tables/review_supplement/patient_bootstrap_distributions.npz"
+      ]
+    },
+    {
+      "family": "patient_bootstrap_classwise_paired_ci_bw",
+      "files": [
+        "results/figures/review_supplement/patient_bootstrap_classwise_paired_ci_bw.png",
+        "results/figures/review_supplement/patient_bootstrap_classwise_paired_ci_bw.pdf"
+      ],
+      "caption": "bw: All five class contrasts; points and 95% percentile CIs. 95% percentile patient-cluster CI; fixed trained models, fixed test-noise realization (base 8128); not joint patient/training/noise uncertainty Patient clusters resampled; all records retained. Fixed models and noise base 8128.\nNot an ensemble, training-seed CI, noise-replay CI, or joint CI.\nConfounded NSTDB sensitivity replay; not isolated structural evidence.",
+      "source_paths": [
+        "results/tables/review_supplement/patient_bootstrap_auroc_ci.csv",
+        "results/tables/review_supplement/patient_bootstrap_distributions.npz"
+      ]
+    },
+    {
+      "family": "patient_bootstrap_distributions_ma",
+      "files": [
+        "results/figures/review_supplement/patient_bootstrap_distributions_ma.png",
+        "results/figures/review_supplement/patient_bootstrap_distributions_ma.pdf"
+      ],
+      "caption": "ma: Macro contrasts; lines=points, shaded bands=95% percentile CIs. 95% percentile patient-cluster CI; fixed trained models, fixed test-noise realization (base 8128); not joint patient/training/noise uncertainty Patient clusters resampled; all records retained. Fixed models and noise base 8128.\nNot an ensemble, training-seed CI, noise-replay CI, or joint CI.\nConfounded NSTDB sensitivity replay; not isolated structural evidence.",
+      "source_paths": [
+        "results/tables/review_supplement/patient_bootstrap_auroc_ci.csv",
+        "results/tables/review_supplement/patient_bootstrap_distributions.npz"
+      ]
+    },
+    {
+      "family": "patient_bootstrap_classwise_paired_ci_ma",
+      "files": [
+        "results/figures/review_supplement/patient_bootstrap_classwise_paired_ci_ma.png",
+        "results/figures/review_supplement/patient_bootstrap_classwise_paired_ci_ma.pdf"
+      ],
+      "caption": "ma: All five class contrasts; points and 95% percentile CIs. 95% percentile patient-cluster CI; fixed trained models, fixed test-noise realization (base 8128); not joint patient/training/noise uncertainty Patient clusters resampled; all records retained. Fixed models and noise base 8128.\nNot an ensemble, training-seed CI, noise-replay CI, or joint CI.\nConfounded NSTDB sensitivity replay; not isolated structural evidence.",
+      "source_paths": [
+        "results/tables/review_supplement/patient_bootstrap_auroc_ci.csv",
+        "results/tables/review_supplement/patient_bootstrap_distributions.npz"
+      ]
+    },
+    {
+      "family": "patient_bootstrap_distributions_em",
+      "files": [
+        "results/figures/review_supplement/patient_bootstrap_distributions_em.png",
+        "results/figures/review_supplement/patient_bootstrap_distributions_em.pdf"
+      ],
+      "caption": "em: Macro contrasts; lines=points, shaded bands=95% percentile CIs. 95% percentile patient-cluster CI; fixed trained models, fixed test-noise realization (base 8128); not joint patient/training/noise uncertainty Patient clusters resampled; all records retained. Fixed models and noise base 8128.\nNot an ensemble, training-seed CI, noise-replay CI, or joint CI.\nConfounded NSTDB sensitivity replay; not isolated structural evidence.",
+      "source_paths": [
+        "results/tables/review_supplement/patient_bootstrap_auroc_ci.csv",
+        "results/tables/review_supplement/patient_bootstrap_distributions.npz"
+      ]
+    },
+    {
+      "family": "patient_bootstrap_classwise_paired_ci_em",
+      "files": [
+        "results/figures/review_supplement/patient_bootstrap_classwise_paired_ci_em.png",
+        "results/figures/review_supplement/patient_bootstrap_classwise_paired_ci_em.pdf"
+      ],
+      "caption": "em: All five class contrasts; points and 95% percentile CIs. 95% percentile patient-cluster CI; fixed trained models, fixed test-noise realization (base 8128); not joint patient/training/noise uncertainty Patient clusters resampled; all records retained. Fixed models and noise base 8128.\nNot an ensemble, training-seed CI, noise-replay CI, or joint CI.\nConfounded NSTDB sensitivity replay; not isolated structural evidence.",
+      "source_paths": [
+        "results/tables/review_supplement/patient_bootstrap_auroc_ci.csv",
+        "results/tables/review_supplement/patient_bootstrap_distributions.npz"
+      ]
+    }
+  ],
+  "skipped": [],
+  "interpretation": "Experimental robustness results, not clinical deployment evidence. Seed SD is descriptive; the inference unit is stated for confidence intervals."
+}

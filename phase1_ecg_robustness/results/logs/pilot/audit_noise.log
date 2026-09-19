@@ -1,0 +1,14 @@
+
+COMMAND: E:\Eproject\ECG\phase1_ecg_robustness\.venv\Scripts\python.exe -u -m src.audit_noise --config configs/phase1_pilot.yaml
+audit bandpass 1/128
+audit bandpass 33/128
+audit bandpass 65/128
+audit bandpass 97/128
+Noise gates PASS: results\tables\pilot\noise_gate.json
+
+COMMAND: E:\Eproject\ECG\phase1_ecg_robustness\.venv\Scripts\python.exe -u -m src.audit_noise --config configs/phase1_pilot.yaml
+audit bandpass 1/128
+audit bandpass 33/128
+audit bandpass 65/128
+audit bandpass 97/128
+Noise gates PASS: results\tables\pilot\noise_gate.json
