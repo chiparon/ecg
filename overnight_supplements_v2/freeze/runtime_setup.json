@@ -1,0 +1,15 @@
+{
+  "training_invocations": 0,
+  "inference_invocations": 0,
+  "pyarrow": {
+    "version": "21.0.0",
+    "installation": "shared/vendor",
+    "installer_elapsed_seconds": 10.8,
+    "original_environment_modified": false
+  },
+  "benchmark_initial_failure": {
+    "error": "hashlib.file_digest unavailable in project Python 3.10",
+    "resolution": "Used streaming hashlib.sha256; first attempt stopped before selection/results were written."
+  },
+  "benchmark_completed_within_15_minutes_of_resource_clock": true
+}

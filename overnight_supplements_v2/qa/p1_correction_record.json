@@ -1,0 +1,47 @@
+{
+  "status": "resolved_and_independently_verified",
+  "training_invocations": 0,
+  "inference_invocations": 0,
+  "observed_failure": "Initial new overlay validation rejected54 otherwise-present original sources as Prediction has wrong worker owner",
+  "root_cause": "Legacy run_fingerprint intentionally identifies shared execution provenance, not unique shard ownership; a dict fp->single worker overwrote shard0 with shard1. This is a new reanalysis audit bug, not evidence of altered original probabilities.",
+  "evidence": {
+    "8c34291679df86ee9005f5ec8dae8741de853475e1f2870299ee2226b8bb3c51": [
+      {
+        "path": "methodology_supplement/results/logs/full/inference_resnet_0.json",
+        "model": "resnet",
+        "shard_index": 0,
+        "owned_cases": 163
+      },
+      {
+        "path": "methodology_supplement/results/logs/full/inference_resnet_1.json",
+        "model": "resnet",
+        "shard_index": 1,
+        "owned_cases": 162
+      }
+    ]
+  },
+  "planned_correction": "Join fingerprint to all valid workers, then resolve the matching model and owned_case_id; retain all existing byte, checkpoint, cohort and probability checks.",
+  "unrelated_parser_warning": "Clean rows have blank SNR/noise fields in historical q CSV; explicitly parse these metadata fields as strings instead of chunk-dependent mixed inference.",
+  "release_action": "Performance overlay withheld until corrected production and independent QA both pass. Valid direct geometry is separately retained.",
+  "archived_initial_attempt": "qa/attempts/p1_initial_*",
+  "resolved_at": "2026-09-19T20:55:18.290089+00:00",
+  "post_fix": {
+    "verified_sources": 762,
+    "verified_noisy_sources": 756,
+    "alignment_rows": 1631448,
+    "overlay_anomalies": 0,
+    "independent_qa": {
+      "path": "overnight_supplements_v2/qa/snrp_recompute.json",
+      "bytes": 519354,
+      "sha256": "26f5e783b77138e008a5d5fe1905b55f07021dab938761bb3b62127d3198e6bf"
+    },
+    "independent_checks": 133,
+    "independent_failures": 0,
+    "owner_resolution_counts": {
+      "one_unique_owner": 762
+    }
+  },
+  "historical_artifacts_modified": false,
+  "scientific_scope_changed": false,
+  "final_alignment_layout_verified_at": "2026-09-19T21:21:41.310071+00:00"
+}

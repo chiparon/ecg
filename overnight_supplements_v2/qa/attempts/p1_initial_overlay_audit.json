@@ -1,0 +1,12 @@
+{
+  "performance_overlay_status": "P1-OVERLAY-UNAVAILABLE",
+  "overlay_verified_sources": 708,
+  "overlay_verified_noisy_sources": 702,
+  "overlay_verified_clean_sources": 6,
+  "overlay_alignment_rows": 1514916,
+  "overlay_anomaly_count": 54,
+  "overlay_source_weight_policy": "Each immutable source exactly once; E/I never fivefold replicated; no probability averaging",
+  "performance_interpretation": "Nominal-SNR aligned parallel display only; no equal-exposure or causal claim; no new CI",
+  "training_invocations": 0,
+  "inference_invocations": 0
+}

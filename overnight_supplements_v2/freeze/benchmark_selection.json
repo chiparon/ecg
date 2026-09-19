@@ -1,0 +1,95 @@
+{
+  "frozen_at": "2026-09-19T20:19:23.188703+00:00",
+  "prediction": {
+    "path": "phase2/results/predictions/full/electrode/resnet/seed_17/bandpass_n20001_cLA_electrode_s5.npz",
+    "bytes": 76315,
+    "sha256": "ceb6e4d79112c5f7a2677be57624f554444f037719a17393f3ab54f5c4190c8d"
+  },
+  "cohort": {
+    "path": "phase2/results/tables/full/patient_bootstrap/cohort.npz",
+    "bytes": 128750,
+    "sha256": "d9f751f0aad846f0f18a8a93b4e0699fed797b39da9b499f9c690a8606d1b618"
+  },
+  "draws": {
+    "path": "phase2/results/tables/full/patient_bootstrap/patient_draws.npy",
+    "bytes": 15016128,
+    "sha256": "295179b3aa31dc71a97781fff3eaa11aa947b3d671ae80eb9194fa65098a9a2f"
+  },
+  "clean": {
+    "path": "methodology_supplement/results/test_inputs/full/clean.npy",
+    "bytes": 103584128,
+    "sha256": "aa6ac344b1a19e1e3f043afeb75b5f4abce2dcff61ff0c794fef0b61cc58a5a3"
+  },
+  "noise": {
+    "path": "methodology_supplement/results/test_inputs/full/noise/standard__n101__electrode__0db.npy",
+    "bytes": 103584128,
+    "sha256": "d7065fd6d9b574ff1fec470e4734308578ce987948669f991f871ee621951480"
+  },
+  "matrix": {
+    "path": "signed_control_mechanism/inputs/matrices.json",
+    "bytes": 75676,
+    "sha256": "87290011115bfbde18875cb4fcb0af5c48bc850d89287f107dbe8b9e4594e4e8"
+  },
+  "prediction_unit": {
+    "architecture": "resnet",
+    "snr_db": 5,
+    "train_seed": 17,
+    "test_structure": "electrode",
+    "combo_id": "LA",
+    "noise_seed": 20001
+  },
+  "draw_id": 0,
+  "geometry_case": {
+    "case_id": "E__snr_0__noise_101",
+    "condition": "E",
+    "snr": 0,
+    "noise_seed": 101,
+    "mode": "",
+    "sign_vector": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "noise_path": "methodology_supplement/results/test_inputs/full/noise/standard__n101__electrode__0db.npy",
+    "noise_sha256": "d7065fd6d9b574ff1fec470e4734308578ce987948669f991f871ee621951480",
+    "baseline_case_id": "standard__n101__electrode__snr0",
+    "baseline_input_sha256": "e372ac625f7d1fdca9a8dbef6073c43da2445cc0f77fffa03ae2ab075bb8f2b5",
+    "reuse_eligible": true,
+    "baseline_source": {
+      "case_id": "standard__n101__electrode__snr0",
+      "kind": "bandpass",
+      "condition": "electrode",
+      "source_id": "standard",
+      "matrix_id": "standard",
+      "matrix_family": "standard",
+      "band_id": "legacy_0p5_40",
+      "snr": 0,
+      "noise_seed": 101,
+      "analysis_tags": [
+        "snr",
+        "matrix"
+      ],
+      "matrix_sha256": "97cf4d3840ed7e74ecded131777452d4edf8ce42323a7efd50d32b40752b28ef",
+      "noise_path": "methodology_supplement/results/test_inputs/full/noise/standard__n101__electrode__0db.npy",
+      "noise_sha256": "d7065fd6d9b574ff1fec470e4734308578ce987948669f991f871ee621951480",
+      "input_sha256": "e372ac625f7d1fdca9a8dbef6073c43da2445cc0f77fffa03ae2ab075bb8f2b5"
+    },
+    "input_sha256": "e372ac625f7d1fdca9a8dbef6073c43da2445cc0f77fffa03ae2ab075bb8f2b5",
+    "legacy_input_hash_verified": true
+  },
+  "timing_repetitions": 1,
+  "cache_state": "OS cache uncontrolled; no cold-cache claim",
+  "blas_threads": 1,
+  "selection_rule": "First typed lexicographic P0 unit, electrode training; first signed-control case in condition/SNR/noise order; every record in that case",
+  "training_invocations": 0,
+  "inference_invocations": 0
+}

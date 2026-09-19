@@ -1,0 +1,159 @@
+{
+  "cases": [
+    {
+      "name": "regular",
+      "input": {
+        "record_id": 1,
+        "case_id": "synthetic",
+        "clean_total_energy": 4.0,
+        "noise_total_energy": 2.0,
+        "clean_projected_energy": 2.0,
+        "noise_projected_energy": 1.0,
+        "q_clean": 0.5,
+        "q_noise": 0.5
+      },
+      "output": {
+        "snr_p_db": 3.010299956639812,
+        "anomaly_code": ""
+      }
+    },
+    {
+      "name": "zero_numerator",
+      "input": {
+        "record_id": 1,
+        "case_id": "synthetic",
+        "clean_total_energy": 4.0,
+        "noise_total_energy": 2.0,
+        "clean_projected_energy": 0.0,
+        "noise_projected_energy": 1.0,
+        "q_clean": 1.0,
+        "q_noise": 0.5
+      },
+      "output": {
+        "snr_p_db": null,
+        "anomaly_code": "ZERO_PROJECTED_CLEAN"
+      }
+    },
+    {
+      "name": "zero_denominator",
+      "input": {
+        "record_id": 1,
+        "case_id": "synthetic",
+        "clean_total_energy": 4.0,
+        "noise_total_energy": 2.0,
+        "clean_projected_energy": 2.0,
+        "noise_projected_energy": 0.0,
+        "q_clean": 0.5,
+        "q_noise": 1.0
+      },
+      "output": {
+        "snr_p_db": "+inf",
+        "anomaly_code": "ZERO_PROJECTED_NOISE"
+      }
+    },
+    {
+      "name": "both_zero",
+      "input": {
+        "record_id": 1,
+        "case_id": "synthetic",
+        "clean_total_energy": 4.0,
+        "noise_total_energy": 2.0,
+        "clean_projected_energy": 0.0,
+        "noise_projected_energy": 0.0,
+        "q_clean": 1.0,
+        "q_noise": 1.0
+      },
+      "output": {
+        "snr_p_db": null,
+        "anomaly_code": "ZERO_PROJECTED_CLEAN"
+      }
+    },
+    {
+      "name": "tiny_positive_denominator",
+      "input": {
+        "record_id": 1,
+        "case_id": "synthetic",
+        "clean_total_energy": 4.0,
+        "noise_total_energy": 2.0,
+        "clean_projected_energy": 2.0,
+        "noise_projected_energy": 1e-30,
+        "q_clean": 0.5,
+        "q_noise": 1.0
+      },
+      "output": {
+        "snr_p_db": 303.0102999566398,
+        "anomaly_code": ""
+      }
+    },
+    {
+      "name": "tiny_positive_numerator",
+      "input": {
+        "record_id": 1,
+        "case_id": "synthetic",
+        "clean_total_energy": 4.0,
+        "noise_total_energy": 2.0,
+        "clean_projected_energy": 1e-30,
+        "noise_projected_energy": 1.0,
+        "q_clean": 1.0,
+        "q_noise": 0.5
+      },
+      "output": {
+        "snr_p_db": -300.0,
+        "anomaly_code": ""
+      }
+    },
+    {
+      "name": "negative_energy",
+      "input": {
+        "record_id": 1,
+        "case_id": "synthetic",
+        "clean_total_energy": 4.0,
+        "noise_total_energy": 2.0,
+        "clean_projected_energy": 2.0,
+        "noise_projected_energy": -1.0,
+        "q_clean": 0.5,
+        "q_noise": 0.5
+      },
+      "output": {
+        "snr_p_db": null,
+        "anomaly_code": "NEGATIVE_ENERGY"
+      }
+    },
+    {
+      "name": "q_out_of_bounds",
+      "input": {
+        "record_id": 1,
+        "case_id": "synthetic",
+        "clean_total_energy": 4.0,
+        "noise_total_energy": 2.0,
+        "clean_projected_energy": 2.0,
+        "noise_projected_energy": 1.0,
+        "q_clean": 0.5,
+        "q_noise": 1.1
+      },
+      "output": {
+        "snr_p_db": null,
+        "anomaly_code": "Q_OUT_OF_BOUNDS"
+      }
+    },
+    {
+      "name": "missing_key",
+      "input": {
+        "record_id": null,
+        "case_id": "synthetic",
+        "clean_total_energy": 4.0,
+        "noise_total_energy": 2.0,
+        "clean_projected_energy": 2.0,
+        "noise_projected_energy": 1.0,
+        "q_clean": 0.5,
+        "q_noise": 0.5
+      },
+      "output": {
+        "snr_p_db": null,
+        "anomaly_code": "MISSING_PRIMARY_KEY"
+      }
+    }
+  ],
+  "training_invocations": 0,
+  "inference_invocations": 0
+}

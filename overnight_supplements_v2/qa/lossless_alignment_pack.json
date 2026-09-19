@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "entrypoint": "overnight_supplements_v2.snrp.overlay.run_overlay",
+  "scope": "Actual production writer rerun on unchanged accepted geometry and original probability sources; only Parquet physical row-group/compression layout changed",
+  "before": {
+    "path": "overnight_supplements_v2/snrp/overlay_alignment.parquet",
+    "bytes": 143811089,
+    "sha256": "d7f150842e61ccb5650b570b072bb73074a69254a7c6d4922c5911f2d55a4bc5"
+  },
+  "after": {
+    "path": "overnight_supplements_v2/snrp/overlay_alignment.parquet",
+    "bytes": 64249453,
+    "sha256": "3ce1d5edd1206aaf596d5c1a402e6a38e860a0a0bbd29b0b52bf328625aaa986"
+  },
+  "old_row_groups": 756,
+  "new_row_groups": 12,
+  "rows": 1631448,
+  "columns": 22,
+  "arrow_table_equality_with_metadata": true,
+  "row_order_preserved": true,
+  "all_values_nulls_types_preserved": true,
+  "unchanged_outputs": [
+    {
+      "path": "overnight_supplements_v2/snrp/snr_p_per_record.parquet",
+      "bytes": 37879651,
+      "sha256": "47c7f9ecc04c748a8188bf5acc484d1dd7606ecd36eabf6cfce05adb6dc11166"
+    },
+    {
+      "path": "overnight_supplements_v2/snrp/geometry_summary.csv",
+      "bytes": 25535,
+      "sha256": "7cb23da7116a54dff7131f951d33ed908bca015e8d385fc3cae211b5bf2bf039"
+    },
+    {
+      "path": "overnight_supplements_v2/snrp/auroc_overlay.csv",
+      "bytes": 484245,
+      "sha256": "aea5d6088a952a3bc6f7eb78fe15082bede77ddd3294b808d1eaaa7bafbe0f58"
+    },
+    {
+      "path": "overnight_supplements_v2/snrp/auroc_curves.csv",
+      "bytes": 3105,
+      "sha256": "239e09120b8c7c654cd2e4ceeb5ed701505f90a45553d5ec0a081ee68b32828e"
+    },
+    {
+      "path": "overnight_supplements_v2/snrp/auroc_curves_by_seed.csv",
+      "bytes": 5451,
+      "sha256": "196282d84e7fa39becf6f72d83db4b15422ca4a512ca0dcca675e3aed8987f25"
+    },
+    {
+      "path": "overnight_supplements_v2/snrp/overlay_source_audit.csv",
+      "bytes": 330476,
+      "sha256": "4259879bd68e1fe71c6df67d2c8a6223d72b908050af9c84d24c637448d7c4d3"
+    },
+    {
+      "path": "overnight_supplements_v2/snrp/class_exposure_summary.csv",
+      "bytes": 934515,
+      "sha256": "db36c59768b9a858953c4d8b6a74ebe55c963d1eeb77a03bdf18d6334796eff4"
+    }
+  ],
+  "elapsed_seconds": 13.972882499918342,
+  "training_invocations": 0,
+  "inference_invocations": 0
+}

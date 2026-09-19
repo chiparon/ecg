@@ -1,0 +1,60 @@
+{
+  "status": "metadata_and_caption_corrections_only",
+  "training_invocations": 0,
+  "inference_invocations": 0,
+  "p0_status_note": "Removed a stale prepared-stage sentence from completed status; no numerical artifacts changed; producer completion metadata fixed for future runs.",
+  "figure_caption": "Ground-truth positive/negative replaces potentially ambiguous true positive/negative; partitions and curves unchanged.",
+  "numeric_artifact_identities_before": {
+    "did/did_long.csv": {
+      "path": "overnight_supplements_v2/did/did_long.csv",
+      "bytes": 205529,
+      "sha256": "4ad81c9fc67465da39b17b9d1406c79758d73987204324a7429ba66ba6ed3c2f"
+    },
+    "did/did_summary.csv": {
+      "path": "overnight_supplements_v2/did/did_summary.csv",
+      "bytes": 2056,
+      "sha256": "4ac00bdbeb8b4c157d6dc3a8a24c1befb45d05da7e8800f1a18bebbe2d42ecbc"
+    },
+    "did/did_seed_values.csv": {
+      "path": "overnight_supplements_v2/did/did_seed_values.csv",
+      "bytes": 3348,
+      "sha256": "b5f666f5e85c16b965a02fe4d0216ef2c41ca91fcf267175bbcf8108b5cb27c1"
+    },
+    "did/did_draw_audit.parquet": {
+      "path": "overnight_supplements_v2/did/did_draw_audit.parquet",
+      "bytes": 3385521,
+      "sha256": "07deaa00fc721c044c6d55ad1ae3605610f76b6c29a583676a6613b6b3f80855"
+    },
+    "did/four_arm_alignment.parquet": {
+      "path": "overnight_supplements_v2/did/four_arm_alignment.parquet",
+      "bytes": 354580,
+      "sha256": "a3046009c8131c44738e422255400d3589cc73cb96d1a44d31dd0cd41e7d39f5"
+    },
+    "did/record_input_identity.parquet": {
+      "path": "overnight_supplements_v2/did/record_input_identity.parquet",
+      "bytes": 34464566,
+      "sha256": "3c5dfc6d2218ca6817e264331bc34a7438ebb41fe2b6cca958bb915a7572070f"
+    },
+    "did/did_analysis.json": {
+      "path": "overnight_supplements_v2/did/did_analysis.json",
+      "bytes": 259409,
+      "sha256": "2fb1d7b55a1f3f047fa872ab2d282982285f1d38aa48038cc5df01a0edd18edc"
+    },
+    "snrp/snr_p_per_record.parquet": {
+      "path": "overnight_supplements_v2/snrp/snr_p_per_record.parquet",
+      "bytes": 37879651,
+      "sha256": "47c7f9ecc04c748a8188bf5acc484d1dd7606ecd36eabf6cfce05adb6dc11166"
+    },
+    "snrp/auroc_overlay.csv": {
+      "path": "overnight_supplements_v2/snrp/auroc_overlay.csv",
+      "bytes": 484245,
+      "sha256": "aea5d6088a952a3bc6f7eb78fe15082bede77ddd3294b808d1eaaa7bafbe0f58"
+    },
+    "snrp/geometry_summary.csv": {
+      "path": "overnight_supplements_v2/snrp/geometry_summary.csv",
+      "bytes": 25535,
+      "sha256": "7cb23da7116a54dff7131f951d33ed908bca015e8d385fc3cae211b5bf2bf039"
+    }
+  },
+  "qa_results": "Both independent numerical audits already passed; presentation-only refresh is checked by publication gate."
+}

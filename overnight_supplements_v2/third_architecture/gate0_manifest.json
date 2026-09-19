@@ -1,0 +1,153 @@
+{
+  "status": "DEFERRED",
+  "statement": "DEFERRED — inventory only; no model execution performed.",
+  "recorded_at": "2026-09-19T20:27:47.219571+00:00",
+  "architecture_candidate": "tsai InceptionTime (one 1-D network, not an ensemble)",
+  "public_repository": "https://github.com/timeseriesAI/tsai",
+  "public_commit": "bbb61982741d466bfa81669edc0e17f1971980af",
+  "implementation_attribution": "Unofficial PyTorch implementation by Ignacio Oguiza, based on Fawaz et al.; no code imported or vendored",
+  "license": "Apache-2.0",
+  "public_sources": [
+    {
+      "path": "https://raw.githubusercontent.com/timeseriesAI/tsai/bbb61982741d466bfa81669edc0e17f1971980af/tsai/models/InceptionTime.py",
+      "bytes": 3055,
+      "sha256": "eb822945b029d7d4491340fd8881597ab186a1d7cf33fa0f81d8684cfbefe21c",
+      "schema": "UTF-8 text; inspected only",
+      "source": "Public tsai repository at immutable commit bbb61982741d466bfa81669edc0e17f1971980af"
+    },
+    {
+      "path": "https://raw.githubusercontent.com/timeseriesAI/tsai/bbb61982741d466bfa81669edc0e17f1971980af/LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "schema": "UTF-8 text; inspected only",
+      "source": "Public tsai repository at immutable commit bbb61982741d466bfa81669edc0e17f1971980af"
+    }
+  ],
+  "planned_topology": {
+    "input_channels": 12,
+    "output_logits": 5,
+    "inception_depth": 6,
+    "filters_per_branch": 32,
+    "bottleneck_channels": 32,
+    "kernel_argument": 40,
+    "effective_odd_kernel_sizes": [
+      39,
+      19,
+      9
+    ],
+    "fourth_branch": "max-pool kernel3 stride1 padding1, then 1x1 convolution",
+    "concatenated_channels": 128,
+    "residual_every_modules": 3,
+    "head": "global average pooling then linear128-to-5; no softmax for multilabel task"
+  },
+  "planned_input": {
+    "shape": [
+      "batch",
+      12,
+      1000
+    ],
+    "dtype": "float32",
+    "sampling_rate_hz": 100,
+    "class_order": [
+      "NORM",
+      "MI",
+      "STTC",
+      "CD",
+      "HYP"
+    ],
+    "lead_order": [
+      "I",
+      "II",
+      "III",
+      "aVR",
+      "aVL",
+      "aVF",
+      "V1",
+      "V2",
+      "V3",
+      "V4",
+      "V5",
+      "V6"
+    ],
+    "preprocessing": "Would reuse immutable phase2 preprocessing/split; not executed"
+  },
+  "planned_patient_split": {
+    "source": "phase2/results/test_inputs/full/manifest.json",
+    "split_sha256": {
+      "train": "87b8da637caccb3715440ae642f0dbd992b09aba420734c33cdeea05287eeea1",
+      "val": "99627c9e1940defc9e734004925768aec337709520e2b9ca871b4b8f796d3507",
+      "test": "ed2c59bd45c8182eae90ee65187a79a96948ae2d422c59246e2623271d4c78aa"
+    },
+    "expected_records": {
+      "train": 17084,
+      "validation": 2146,
+      "test": 2158
+    },
+    "new_split_created": false,
+    "patient_disjointness_reexecuted": false
+  },
+  "gpu_inventory_command": "nvidia-smi --query-gpu=name,driver_version,memory.total --format=csv,noheader",
+  "gpu_inventory": "NVIDIA GeForce RTX 4070 Laptop GPU, 581.08, 8188 MiB",
+  "local_paths": [
+    {
+      "path": "phase1_ecg_robustness/data/processed/signals.npy",
+      "exists": true,
+      "bytes": 1026624128
+    },
+    {
+      "path": "phase1_ecg_robustness/data/processed/labels.npy",
+      "exists": true,
+      "bytes": 427888
+    },
+    {
+      "path": "phase1_ecg_robustness/data/processed/metadata.csv",
+      "exists": true,
+      "bytes": 6503443
+    },
+    {
+      "path": "phase2/results/test_inputs/full/cohort.npz",
+      "exists": true,
+      "bytes": 15526
+    },
+    {
+      "path": "phase2/results/tables/full/patient_bootstrap/patient_draws.npy",
+      "exists": true,
+      "bytes": 15016128
+    }
+  ],
+  "remote_gpu": {
+    "host": "dgx6",
+    "checked_this_task": false,
+    "execution": "not_requested_not_used"
+  },
+  "unverified": [
+    "dependency installation and model import",
+    "model instantiation",
+    "forward and backward correctness",
+    "GPU memory requirement",
+    "epoch duration",
+    "training or generalization performance"
+  ],
+  "forward_invocations": 0,
+  "backward_invocations": 0,
+  "model_imports": 0,
+  "gpu_smoke_invocations": 0,
+  "sources": [
+    {
+      "path": "phase2/results/test_inputs/full/manifest.json",
+      "bytes": 2502662,
+      "sha256": "e15c6d71d55444149d916fcf724a062bfdc2f2be118569255aef9abeff2384df",
+      "schema": "phase2 immutable input and split metadata",
+      "source": "Historical phase2 full run"
+    },
+    {
+      "path": "phase2/configs/phase2_main.yaml",
+      "bytes": 4620,
+      "sha256": "ed83bbebf04fa0fc5cfdd6a1cb0ed5546140747a45b929f99e51f0627a5ca3be",
+      "schema": "phase2_generalization_v1 YAML",
+      "source": "Historical planned record counts"
+    }
+  ],
+  "training_invocations": 0,
+  "inference_invocations": 0
+}

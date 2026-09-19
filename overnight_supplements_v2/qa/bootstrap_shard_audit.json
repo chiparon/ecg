@@ -1,0 +1,112 @@
+{
+  "status": "passed",
+  "scope": "All20retained derived bootstrap shards match canonical per-seed draw audit and full-cohort seed point tables; not a new raw-probability recomputation",
+  "shards": [
+    {
+      "path": "overnight_supplements_v2/did/shards/resnet_s15_seed17.parquet",
+      "bytes": 149281,
+      "sha256": "a47ee75e8240d8dc7731c4dd95fd360be35cc087b923881f4d30927fd8d800a6"
+    },
+    {
+      "path": "overnight_supplements_v2/did/shards/resnet_s15_seed29.parquet",
+      "bytes": 149281,
+      "sha256": "8e98440ecd3621615176dc2df8d202f89fb3581b4a9c42fbc2c43fe12b2f42fa"
+    },
+    {
+      "path": "overnight_supplements_v2/did/shards/resnet_s15_seed43.parquet",
+      "bytes": 149281,
+      "sha256": "9ceacdc7d5383a509b8804da16c213eca527d890a78e25a8eeaec9c2e82d3f77"
+    },
+    {
+      "path": "overnight_supplements_v2/did/shards/resnet_s15_seed101.parquet",
+      "bytes": 149281,
+      "sha256": "4c9ed041f81c4ccaffbd13a7d92d5e17887fbb9600593c36e2259967529b796e"
+    },
+    {
+      "path": "overnight_supplements_v2/did/shards/resnet_s15_seed202.parquet",
+      "bytes": 149281,
+      "sha256": "73629238e22f644a2edac84fec2ea97dc228363557f99cb6b1747c5e03f9ae17"
+    },
+    {
+      "path": "overnight_supplements_v2/did/shards/resnet_s5_seed17.parquet",
+      "bytes": 149281,
+      "sha256": "d6073cb31acdc4e9b818ce9571712caf75c8fda009771e6cdd24f976f0f11251"
+    },
+    {
+      "path": "overnight_supplements_v2/did/shards/resnet_s5_seed29.parquet",
+      "bytes": 149281,
+      "sha256": "6a8edbf13e007ae1e20ab688d7082968d42771fd287a5e6c38055cec96cc62f0"
+    },
+    {
+      "path": "overnight_supplements_v2/did/shards/resnet_s5_seed43.parquet",
+      "bytes": 149281,
+      "sha256": "4bf860e8189a9dd490339efb69d75803a29a0d409b8c783d8569a41ee473b2e3"
+    },
+    {
+      "path": "overnight_supplements_v2/did/shards/resnet_s5_seed101.parquet",
+      "bytes": 149281,
+      "sha256": "d2c9c3bea678dad515b9462770d0b28fac4787a639bcf98fba0de167fcba3a21"
+    },
+    {
+      "path": "overnight_supplements_v2/did/shards/resnet_s5_seed202.parquet",
+      "bytes": 149281,
+      "sha256": "019d6765b6f27fc286a1b636e0f8299ec9dedc97f1377591bdbca9adb9dee38a"
+    },
+    {
+      "path": "overnight_supplements_v2/did/shards/tcn_s15_seed17.parquet",
+      "bytes": 149267,
+      "sha256": "3fb1379b1c046542e49c0321e06e5f00205be46ca63f366385153b0b234b1f3e"
+    },
+    {
+      "path": "overnight_supplements_v2/did/shards/tcn_s15_seed29.parquet",
+      "bytes": 149265,
+      "sha256": "4b6f311120b5fc5cadda32bd2ff7159a6bea39faaa2599ec961a1a00d9199826"
+    },
+    {
+      "path": "overnight_supplements_v2/did/shards/tcn_s15_seed43.parquet",
+      "bytes": 149267,
+      "sha256": "8a0dd48d2d31440a44bd3a2891bf518a999fe849ef1049ebd7ebda88c0033db2"
+    },
+    {
+      "path": "overnight_supplements_v2/did/shards/tcn_s15_seed101.parquet",
+      "bytes": 149265,
+      "sha256": "f877cf414efca5b6514a37255e9c378e1291a8219805e7426540404e2728e46d"
+    },
+    {
+      "path": "overnight_supplements_v2/did/shards/tcn_s15_seed202.parquet",
+      "bytes": 149267,
+      "sha256": "aa604442f3a3ffba0b85d8b88d07eb524415be444035e286beb86649f88dea80"
+    },
+    {
+      "path": "overnight_supplements_v2/did/shards/tcn_s5_seed17.parquet",
+      "bytes": 149265,
+      "sha256": "199eb09a38b833cb8dd2bc6b4426b34813a915e47e6cec17c201a22d39e5eee5"
+    },
+    {
+      "path": "overnight_supplements_v2/did/shards/tcn_s5_seed29.parquet",
+      "bytes": 149265,
+      "sha256": "04d539a1563832444cbccf6e86f4955f342c1ef627c72d88c2b3d23786154713"
+    },
+    {
+      "path": "overnight_supplements_v2/did/shards/tcn_s5_seed43.parquet",
+      "bytes": 149266,
+      "sha256": "e699ba00f721c600f5dd3f0a89220ebd11f96d9035c5a2cc4deda79a7d51dd66"
+    },
+    {
+      "path": "overnight_supplements_v2/did/shards/tcn_s5_seed101.parquet",
+      "bytes": 149265,
+      "sha256": "0be0ae228a6f7560fdb63ec3a1074955c1d0a4dd48706a3a4980bcb895e096e1"
+    },
+    {
+      "path": "overnight_supplements_v2/did/shards/tcn_s5_seed202.parquet",
+      "bytes": 149265,
+      "sha256": "c7cf6447a711e3516b7366fd551c5ffadef68e2af4749efee85431f56308243a"
+    }
+  ],
+  "bootstrap_rows_checked": 40000,
+  "point_rows_checked": 20,
+  "metric_cells_checked": 280140,
+  "tolerance": 1e-12,
+  "training_invocations": 0,
+  "inference_invocations": 0
+}

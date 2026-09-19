@@ -1,0 +1,73 @@
+{
+  "status": "passed",
+  "verified_at": "2026-09-19T21:05:11.863059+00:00",
+  "training_invocations": 0,
+  "inference_invocations": 0,
+  "inspection": "Main visually inspected geometry_distribution.png, nominal_snr_overlay.png and class_exposure_distribution.png via decoded image reads; re-inspected the class figure after the ground-truth caption clarification. Axes, modes, units, legends, five-class panels, footnotes and layout are readable and unclipped. PDF/SVG share the corresponding Matplotlib figure render; not separately raster-inspected.",
+  "png_count": 3,
+  "files": [
+    {
+      "path": "overnight_supplements_v2/snrp/geometry_distribution.pdf",
+      "bytes": 75268,
+      "sha256": "f3bb514d7a027a034fe9ae6821850d8c3dda5593b1391b0a2045d8bf4fca3806",
+      "schema": "scientific figure",
+      "source": "audited geometry / original prediction overlay"
+    },
+    {
+      "path": "overnight_supplements_v2/snrp/geometry_distribution.png",
+      "bytes": 156867,
+      "sha256": "3dc74dd186cfa524e13e68e09b1a36ce28710ab5d8ac6e8220e025611c673cfd",
+      "schema": "scientific figure",
+      "source": "audited geometry / original prediction overlay"
+    },
+    {
+      "path": "overnight_supplements_v2/snrp/geometry_distribution.svg",
+      "bytes": 195675,
+      "sha256": "8e894c607f652e2ba38e5aa22e5e484546ad147a5ee679ad0d3ef807abd2aa46",
+      "schema": "scientific figure",
+      "source": "audited geometry / original prediction overlay"
+    },
+    {
+      "path": "overnight_supplements_v2/snrp/nominal_snr_overlay.pdf",
+      "bytes": 37221,
+      "sha256": "26aa7dd40e031caca78dc979062d433984bbb2eb878501d9a80d17a85be123de",
+      "schema": "scientific figure",
+      "source": "audited geometry / original prediction overlay"
+    },
+    {
+      "path": "overnight_supplements_v2/snrp/nominal_snr_overlay.png",
+      "bytes": 361495,
+      "sha256": "a6ca265c004b3434ca5822e6f51e905c06e0aa9a69e00a13a2aa02c8b3a6cb9d",
+      "schema": "scientific figure",
+      "source": "audited geometry / original prediction overlay"
+    },
+    {
+      "path": "overnight_supplements_v2/snrp/nominal_snr_overlay.svg",
+      "bytes": 86835,
+      "sha256": "c7038b253eb8a4095acd429d89327bb11106e32e3e87db72dd9e55363db6407d",
+      "schema": "scientific figure",
+      "source": "audited geometry / original prediction overlay"
+    },
+    {
+      "path": "overnight_supplements_v2/snrp/class_exposure_distribution.pdf",
+      "bytes": 215257,
+      "sha256": "c4c4b05281e703ad277b4347c04b93c9e6eef80290c6dd591ec2aea63c797925",
+      "schema": "scientific figure",
+      "source": "audited geometry / original prediction overlay"
+    },
+    {
+      "path": "overnight_supplements_v2/snrp/class_exposure_distribution.png",
+      "bytes": 868752,
+      "sha256": "61ce72922bc35826bea5356d07fb92fe3bf0d55d65f50220515a6490de5c755d",
+      "schema": "scientific figure",
+      "source": "audited geometry / original prediction overlay"
+    },
+    {
+      "path": "overnight_supplements_v2/snrp/class_exposure_distribution.svg",
+      "bytes": 642564,
+      "sha256": "77ea99d90c657b91cdef053196283a2efe5786c1211d3265a0a0f8a0d51ba692",
+      "schema": "scientific figure",
+      "source": "audited geometry / original prediction overlay"
+    }
+  ]
+}

@@ -1,0 +1,507 @@
+{
+  "status": "rendered_from_independently_accepted_outputs",
+  "rendered_at": "2026-09-19T21:31:16.214084+00:00",
+  "report": {
+    "path": "overnight_supplements_v2/reports/overnight_supplement_final_report.md",
+    "bytes": 16629,
+    "sha256": "a951dd10b5b991fa12ae9f7f200ebf554aa2fc5d350cfdc9143e3bb24476eebb"
+  },
+  "source_manifest": {
+    "path": "overnight_supplements_v2/freeze/source_manifest.json",
+    "bytes": 19107180,
+    "sha256": "24d674f895dfc8bf23e95dbc3c07427ae4e541862e612918afa13b9ae8dbb27d"
+  },
+  "code_manifest": {
+    "path": "overnight_supplements_v2/freeze/code_manifest.json",
+    "bytes": 2632,
+    "sha256": "8aaf2c1857b08ffab5a84bbe643d3ed2fdbf75a7877083160575fe150503621a"
+  },
+  "numeric_cells": [
+    {
+      "source": "did/did_summary.csv",
+      "key": {
+        "architecture": "resnet",
+        "snr_db": 15
+      },
+      "values": {
+        "M_EE": 0.9080303132339586,
+        "M_IE": 0.9069865422179632,
+        "M_EI": 0.9082452685239168,
+        "M_II": 0.9075462683714205,
+        "g_E": 0.001043771015995476,
+        "g_I": 0.000699000152496152,
+        "gamma": 0.0003447708634993241,
+        "seed_sd": 0.00031527996471572675,
+        "patient_ci_low": 0.000161212210573539,
+        "patient_ci_high": 0.0005511029658474931
+      },
+      "display_multiplier": 100
+    },
+    {
+      "source": "did/did_summary.csv",
+      "key": {
+        "architecture": "resnet",
+        "snr_db": 5
+      },
+      "values": {
+        "M_EE": 0.8940362048955487,
+        "M_IE": 0.8909931679488754,
+        "M_EI": 0.8983538446419143,
+        "M_II": 0.8974950668710848,
+        "g_E": 0.0030430369466736135,
+        "g_I": 0.0008587777708296392,
+        "gamma": 0.002184259175843975,
+        "seed_sd": 0.0016287545480129203,
+        "patient_ci_low": 0.0016373228961753883,
+        "patient_ci_high": 0.002730181130104318
+      },
+      "display_multiplier": 100
+    },
+    {
+      "source": "did/did_summary.csv",
+      "key": {
+        "architecture": "tcn",
+        "snr_db": 15
+      },
+      "values": {
+        "M_EE": 0.9164258385272849,
+        "M_IE": 0.9169408367150351,
+        "M_EI": 0.9166572943117636,
+        "M_II": 0.9172113444067318,
+        "g_E": -0.0005149981877504456,
+        "g_I": -0.0005540500949681459,
+        "gamma": 3.9051907217700245e-05,
+        "seed_sd": 7.99619276675466e-05,
+        "patient_ci_low": -4.7287617519060886e-05,
+        "patient_ci_high": 0.00012587447104437074
+      },
+      "display_multiplier": 100
+    },
+    {
+      "source": "did/did_summary.csv",
+      "key": {
+        "architecture": "tcn",
+        "snr_db": 5
+      },
+      "values": {
+        "M_EE": 0.908441598558724,
+        "M_IE": 0.9068486174118483,
+        "M_EI": 0.9115717494113055,
+        "M_II": 0.9123829867803976,
+        "g_E": 0.0015929811468755467,
+        "g_I": -0.0008112373690922143,
+        "gamma": 0.0024042185159677608,
+        "seed_sd": 0.0006088433313667282,
+        "patient_ci_low": 0.0019799043859699025,
+        "patient_ci_high": 0.0028665551942264112
+      },
+      "display_multiplier": 100
+    },
+    {
+      "source": "snrp/geometry_summary.csv",
+      "key": {
+        "snr_db": 0,
+        "condition": "E",
+        "metric": "snr_p_db"
+      },
+      "values": {
+        "mean": -5.933396494861024e-06,
+        "median": -5.20272835883502e-06,
+        "p05": -1.331019719186147e-05,
+        "p95": -1.3430488396318198e-06
+      },
+      "display_multiplier": 1
+    },
+    {
+      "source": "snrp/geometry_summary.csv",
+      "key": {
+        "snr_db": 0,
+        "condition": "I",
+        "metric": "snr_p_db"
+      },
+      "values": {
+        "mean": 2.037508439830863,
+        "median": 2.0370418098514067,
+        "p05": 1.9374370476247191,
+        "p95": 2.137810743617657
+      },
+      "display_multiplier": 1
+    },
+    {
+      "source": "snrp/geometry_summary.csv",
+      "key": {
+        "snr_db": 0,
+        "condition": "S_00",
+        "metric": "snr_p_db"
+      },
+      "values": {
+        "mean": 2.6200132988368146,
+        "median": 2.6195438622929563,
+        "p05": 2.5027003999722885,
+        "p95": 2.740448339918175
+      },
+      "display_multiplier": 1
+    },
+    {
+      "source": "snrp/geometry_summary.csv",
+      "key": {
+        "snr_db": 0,
+        "condition": "S_01",
+        "metric": "snr_p_db"
+      },
+      "values": {
+        "mean": 1.6368336950002869,
+        "median": 1.6356386504582672,
+        "p05": 1.53792662603871,
+        "p95": 1.739230276321062
+      },
+      "display_multiplier": 1
+    },
+    {
+      "source": "snrp/geometry_summary.csv",
+      "key": {
+        "snr_db": 0,
+        "condition": "S_02",
+        "metric": "snr_p_db"
+      },
+      "values": {
+        "mean": 1.1446046962263592,
+        "median": 1.1433278498404953,
+        "p05": 1.059752046965904,
+        "p95": 1.2313910622808062
+      },
+      "display_multiplier": 1
+    },
+    {
+      "source": "snrp/geometry_summary.csv",
+      "key": {
+        "snr_db": 0,
+        "condition": "S_03",
+        "metric": "snr_p_db"
+      },
+      "values": {
+        "mean": 3.5261257383326634,
+        "median": 3.5259411634587954,
+        "p05": 3.3626344606090384,
+        "p95": 3.691900318581187
+      },
+      "display_multiplier": 1
+    },
+    {
+      "source": "snrp/geometry_summary.csv",
+      "key": {
+        "snr_db": 0,
+        "condition": "S_04",
+        "metric": "snr_p_db"
+      },
+      "values": {
+        "mean": 3.004608186919504,
+        "median": 3.003727227473913,
+        "p05": 2.873185279008197,
+        "p95": 3.1377293026835407
+      },
+      "display_multiplier": 1
+    },
+    {
+      "source": "snrp/geometry_summary.csv",
+      "key": {
+        "snr_db": 5,
+        "condition": "E",
+        "metric": "snr_p_db"
+      },
+      "values": {
+        "mean": 4.999993954670837,
+        "median": 4.999994686991798,
+        "p05": 4.9999865809095985,
+        "p95": 4.999998542148581
+      },
+      "display_multiplier": 1
+    },
+    {
+      "source": "snrp/geometry_summary.csv",
+      "key": {
+        "snr_db": 5,
+        "condition": "I",
+        "metric": "snr_p_db"
+      },
+      "values": {
+        "mean": 7.037508327955802,
+        "median": 7.0370417017201135,
+        "p05": 6.937436943641947,
+        "p95": 7.137810635938071
+      },
+      "display_multiplier": 1
+    },
+    {
+      "source": "snrp/geometry_summary.csv",
+      "key": {
+        "snr_db": 5,
+        "condition": "S_00",
+        "metric": "snr_p_db"
+      },
+      "values": {
+        "mean": 7.620013186785112,
+        "median": 7.619543747340259,
+        "p05": 7.502700293087251,
+        "p95": 7.740448234027032
+      },
+      "display_multiplier": 1
+    },
+    {
+      "source": "snrp/geometry_summary.csv",
+      "key": {
+        "snr_db": 5,
+        "condition": "S_01",
+        "metric": "snr_p_db"
+      },
+      "values": {
+        "mean": 6.636833583048421,
+        "median": 6.635638538071683,
+        "p05": 6.537926518816308,
+        "p95": 6.739230163597311
+      },
+      "display_multiplier": 1
+    },
+    {
+      "source": "snrp/geometry_summary.csv",
+      "key": {
+        "snr_db": 5,
+        "condition": "S_02",
+        "metric": "snr_p_db"
+      },
+      "values": {
+        "mean": 6.144604584253814,
+        "median": 6.143327730138276,
+        "p05": 6.059751940427297,
+        "p95": 6.231390955446191
+      },
+      "display_multiplier": 1
+    },
+    {
+      "source": "snrp/geometry_summary.csv",
+      "key": {
+        "snr_db": 5,
+        "condition": "S_03",
+        "metric": "snr_p_db"
+      },
+      "values": {
+        "mean": 8.52612562652396,
+        "median": 8.52594104589696,
+        "p05": 8.362634351642816,
+        "p95": 8.691900205085833
+      },
+      "display_multiplier": 1
+    },
+    {
+      "source": "snrp/geometry_summary.csv",
+      "key": {
+        "snr_db": 5,
+        "condition": "S_04",
+        "metric": "snr_p_db"
+      },
+      "values": {
+        "mean": 8.004608075038503,
+        "median": 8.003727110563366,
+        "p05": 7.873185168279614,
+        "p95": 8.137729181417708
+      },
+      "display_multiplier": 1
+    },
+    {
+      "source": "snrp/geometry_summary.csv",
+      "key": {
+        "snr_db": 10,
+        "condition": "E",
+        "metric": "snr_p_db"
+      },
+      "values": {
+        "mean": 9.999994125071074,
+        "median": 9.999994856391853,
+        "p05": 9.999986749273594,
+        "p95": 9.99999871764976
+      },
+      "display_multiplier": 1
+    },
+    {
+      "source": "snrp/geometry_summary.csv",
+      "key": {
+        "snr_db": 10,
+        "condition": "I",
+        "metric": "snr_p_db"
+      },
+      "values": {
+        "mean": 12.03750849839816,
+        "median": 12.037041880732374,
+        "p05": 11.937437101273996,
+        "p95": 12.137810795707942
+      },
+      "display_multiplier": 1
+    },
+    {
+      "source": "snrp/geometry_summary.csv",
+      "key": {
+        "snr_db": 10,
+        "condition": "S_00",
+        "metric": "snr_p_db"
+      },
+      "values": {
+        "mean": 12.620013357143138,
+        "median": 12.619543923149756,
+        "p05": 12.502700456080932,
+        "p95": 12.740448390519676
+      },
+      "display_multiplier": 1
+    },
+    {
+      "source": "snrp/geometry_summary.csv",
+      "key": {
+        "snr_db": 10,
+        "condition": "S_01",
+        "metric": "snr_p_db"
+      },
+      "values": {
+        "mean": 11.63683375340988,
+        "median": 11.635638723857689,
+        "p05": 11.537926687575341,
+        "p95": 11.739230342066229
+      },
+      "display_multiplier": 1
+    },
+    {
+      "source": "snrp/geometry_summary.csv",
+      "key": {
+        "snr_db": 10,
+        "condition": "S_02",
+        "metric": "snr_p_db"
+      },
+      "values": {
+        "mean": 11.144604754578642,
+        "median": 11.14332790388779,
+        "p05": 11.059752117315082,
+        "p95": 11.231391123433196
+      },
+      "display_multiplier": 1
+    },
+    {
+      "source": "snrp/geometry_summary.csv",
+      "key": {
+        "snr_db": 10,
+        "condition": "S_03",
+        "metric": "snr_p_db"
+      },
+      "values": {
+        "mean": 13.526125796755819,
+        "median": 13.525941206243106,
+        "p05": 13.362634523285987,
+        "p95": 13.69190036588156
+      },
+      "display_multiplier": 1
+    },
+    {
+      "source": "snrp/geometry_summary.csv",
+      "key": {
+        "snr_db": 10,
+        "condition": "S_04",
+        "metric": "snr_p_db"
+      },
+      "values": {
+        "mean": 13.004608245356332,
+        "median": 13.003727285076808,
+        "p05": 12.873185317138473,
+        "p95": 13.137729342962329
+      },
+      "display_multiplier": 1
+    }
+  ],
+  "paper_insertion": "In an exploratory paired difference-in-differences analysis restricted to held-out electrode-support combinations and 15/5 dB Gaussian perturbations, we compared electrode versus independent-RMS augmentation under electrode and independent-RMS testing. RESNET at 15 dB: DiD 0.0345 pp, seed SD 0.0315 pp, conditional patient 95% interval [0.0161, 0.0551] pp; RESNET at 5 dB: DiD 0.2184 pp, seed SD 0.1629 pp, conditional patient 95% interval [0.1637, 0.2730] pp; TCN at 15 dB: DiD 0.0039 pp, seed SD 0.0080 pp, conditional patient 95% interval [-0.0047, 0.0126] pp; TCN at 5 dB: DiD 0.2404 pp, seed SD 0.0609 pp, conditional patient 95% interval [0.1980, 0.2867] pp. Each result averages five fixed training seeds, ten held-out combinations and five noise bases; the conditional intervals use 2,000 common patient-cluster multiplicity draws over 2,158 ECGs from 1,877 patients. For TCN at 5 dB, the mean training contrast reversed from 0.1593 pp under E testing to -0.0811 pp under I testing. Separately, direct float64 projection of the reconstructed, hash-verified signed-control inputs yielded the following mean absolute projected SNRs at nominal 0 dB: E: -0.000006 dB; I: 2.037508 dB; S_00: 2.620013 dB; S_01: 1.636834 dB; S_02: 1.144605 dB; S_03: 3.526126 dB; S_04: 3.004608 dB. The geometry and the unchanged prediction-derived AUROC curves are displayed side by side, without exposure adjustment, equivalence claims or causal mediation interpretation.",
+  "did_status": {
+    "status": "P0-COMPLETE",
+    "stage": "completed",
+    "availability_decided_at": "2026-09-19T20:37:19.035981+00:00",
+    "availability_elapsed_seconds": 126.22543690004386,
+    "identity_verified": true,
+    "probability_coverage": 1.0,
+    "patient_draws_available": 2000,
+    "analysis_complete": true,
+    "independent_qa": "pending",
+    "note": "Identity preparation and fresh case-level bootstrap production completed; independent acceptance is recorded separately in qa/did_recompute.json",
+    "training_invocations": 0,
+    "inference_invocations": 0,
+    "completed_at": "2026-09-19T20:48:27.170389+00:00",
+    "bootstrap_elapsed_seconds": 668.1021104999818
+  },
+  "snrp_status": {
+    "geometry_status": "P1-GEO-DIRECT",
+    "n_records": 2158,
+    "n_cases": 126,
+    "n_rows": 271908,
+    "n_patients": 1877,
+    "projector_symmetry_frobenius": 1.2393264097671234e-15,
+    "projector_idempotence_frobenius": 1.2434468376125226e-15,
+    "whole_case_hash_matches": 126,
+    "old_q_rows_crosschecked": 545974,
+    "old_input_rows_crosschecked": 271908,
+    "anomaly_count": 0,
+    "anomalous_geometry_rows": 0,
+    "anomaly_counts": {},
+    "fatal_anomaly_count": 0,
+    "independent_verification": "pending qa/snrp_recompute.py",
+    "finished_at": "2026-09-19T20:49:20.627099+00:00",
+    "performance_overlay_status": "P1-OVERLAY",
+    "overlay_verified_sources": 762,
+    "overlay_verified_noisy_sources": 756,
+    "overlay_verified_clean_sources": 6,
+    "overlay_alignment_rows": 1631448,
+    "overlay_anomaly_count": 0,
+    "overlay_source_weight_policy": "Each immutable source exactly once; E/I never fivefold replicated; no probability averaging",
+    "performance_interpretation": "Nominal-SNR aligned parallel display only; no equal-exposure or causal claim; no new CI",
+    "elapsed_seconds": 118.68673850013874,
+    "figure_files": [
+      "overnight_supplements_v2/snrp/geometry_distribution.pdf",
+      "overnight_supplements_v2/snrp/geometry_distribution.png",
+      "overnight_supplements_v2/snrp/geometry_distribution.svg",
+      "overnight_supplements_v2/snrp/nominal_snr_overlay.pdf",
+      "overnight_supplements_v2/snrp/nominal_snr_overlay.png",
+      "overnight_supplements_v2/snrp/nominal_snr_overlay.svg",
+      "overnight_supplements_v2/snrp/class_exposure_distribution.pdf",
+      "overnight_supplements_v2/snrp/class_exposure_distribution.png",
+      "overnight_supplements_v2/snrp/class_exposure_distribution.svg"
+    ],
+    "training_invocations": 0,
+    "inference_invocations": 0
+  },
+  "geometry_audit": {
+    "geometry_status": "P1-GEO-DIRECT",
+    "n_records": 2158,
+    "n_cases": 126,
+    "n_rows": 271908,
+    "n_patients": 1877,
+    "projector_symmetry_frobenius": 1.2393264097671234e-15,
+    "projector_idempotence_frobenius": 1.2434468376125226e-15,
+    "whole_case_hash_matches": 126,
+    "old_q_rows_crosschecked": 545974,
+    "old_input_rows_crosschecked": 271908,
+    "anomaly_count": 0,
+    "anomalous_geometry_rows": 0,
+    "anomaly_counts": {},
+    "fatal_anomaly_count": 0,
+    "independent_verification": "pending qa/snrp_recompute.py",
+    "finished_at": "2026-09-19T20:49:02.072725+00:00",
+    "training_invocations": 0,
+    "inference_invocations": 0
+  },
+  "overlay_audit": {
+    "performance_overlay_status": "P1-OVERLAY",
+    "overlay_verified_sources": 762,
+    "overlay_verified_noisy_sources": 756,
+    "overlay_verified_clean_sources": 6,
+    "overlay_alignment_rows": 1631448,
+    "overlay_anomaly_count": 0,
+    "overlay_source_weight_policy": "Each immutable source exactly once; E/I never fivefold replicated; no probability averaging",
+    "performance_interpretation": "Nominal-SNR aligned parallel display only; no equal-exposure or causal claim; no new CI",
+    "training_invocations": 0,
+    "inference_invocations": 0
+  },
+  "training_invocations": 0,
+  "inference_invocations": 0
+}

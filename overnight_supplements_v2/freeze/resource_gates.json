@@ -1,0 +1,31 @@
+{
+  "recorded_at": "2026-09-19T20:29:26.879826+00:00",
+  "elapsed_minutes": 13.191639784999037,
+  "training_invocations": 0,
+  "inference_invocations": 0,
+  "gate60": {
+    "status": "availability_resolved_early",
+    "p0": {
+      "selected_cases": 200,
+      "expected_probability_files": 4000,
+      "missing_probability_files": [],
+      "available_tier_candidate": "P0-COMPLETE",
+      "relationship_and_numeric_acceptance": "pending production plus independent QA; availability is not release acceptance"
+    },
+    "p1": {
+      "expected_index_rows": 762,
+      "missing_prediction_files": [],
+      "unique_noise_bases": 12,
+      "all_base_paths_exist": true,
+      "available_geometry_candidate": "P1-GEO-DIRECT",
+      "available_overlay_candidate": "P1-OVERLAY"
+    }
+  },
+  "gate90": {
+    "status": "resource_plan_resolved_early",
+    "decision": "Proceed with frozen bounded4+1 CPU quotas; GPU idle; full source/QA failures still stop affected release",
+    "based_on": "freeze/throughput_benchmark.json",
+    "scientific_values_not_used": true
+  },
+  "runtime_checks": "All producer and independent QA execution logs will retain zero invocation counters and exact resource timing."
+}

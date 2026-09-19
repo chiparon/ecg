@@ -1,0 +1,191 @@
+{
+  "status": "completed",
+  "frozen_selection": {
+    "path": "overnight_supplements_v2/freeze/benchmark_selection.json",
+    "bytes": 3447,
+    "sha256": "2aa9c5921a949238c33d929148b40cfa8b1e922cb87610e3577a2901f790c7f7"
+  },
+  "finished_at": "2026-09-19T20:19:23.881649+00:00",
+  "file_read_seconds": 0.003819399978965521,
+  "macro_auroc_seconds": 0.002901000203564763,
+  "one_patient_draw_seconds": 0.002851200057193637,
+  "projection_scan_seconds": 0.5029517998918891,
+  "projection_records": 2158,
+  "projection_records_per_second": 4290.669603854421,
+  "point_macro_auroc": 0.8914957894419338,
+  "draw_macro_auroc": 0.8919271197420985,
+  "verified_final_input_sha256": "e372ac625f7d1fdca9a8dbef6073c43da2445cc0f77fffa03ae2ab075bb8f2b5",
+  "projected_clean_energy_sum": 1379642.7138584903,
+  "projected_noise_energy_sum": 1379643.8467487406,
+  "prediction_schema": {
+    "indices": {
+      "shape": [
+        2158
+      ],
+      "dtype": "int64"
+    },
+    "y": {
+      "shape": [
+        2158,
+        5
+      ],
+      "dtype": "float32"
+    },
+    "ids": {
+      "shape": [
+        2158
+      ],
+      "dtype": "int64"
+    },
+    "patient_ids": {
+      "shape": [
+        2158
+      ],
+      "dtype": "int64"
+    },
+    "thresholds": {
+      "shape": [
+        5
+      ],
+      "dtype": "float64"
+    },
+    "stage": {
+      "shape": [],
+      "dtype": "<U4"
+    },
+    "strategy": {
+      "shape": [],
+      "dtype": "<U9"
+    },
+    "model": {
+      "shape": [],
+      "dtype": "<U6"
+    },
+    "seed": {
+      "shape": [],
+      "dtype": "int64"
+    },
+    "case_id": {
+      "shape": [],
+      "dtype": "<U32"
+    },
+    "config_sha256": {
+      "shape": [],
+      "dtype": "<U64"
+    },
+    "matrix_sha256": {
+      "shape": [],
+      "dtype": "<U64"
+    },
+    "input_sha256": {
+      "shape": [],
+      "dtype": "<U64"
+    },
+    "checkpoint_sha256": {
+      "shape": [],
+      "dtype": "<U64"
+    },
+    "evaluation_fingerprint": {
+      "shape": [],
+      "dtype": "<U64"
+    },
+    "kind": {
+      "shape": [],
+      "dtype": "<U8"
+    },
+    "condition": {
+      "shape": [],
+      "dtype": "<U9"
+    },
+    "combo_id": {
+      "shape": [],
+      "dtype": "<U2"
+    },
+    "combo_set": {
+      "shape": [],
+      "dtype": "<U7"
+    },
+    "snr": {
+      "shape": [],
+      "dtype": "int64"
+    },
+    "noise_seed": {
+      "shape": [],
+      "dtype": "int64"
+    },
+    "p": {
+      "shape": [
+        2158,
+        5
+      ],
+      "dtype": "float32"
+    },
+    "loss": {
+      "shape": [
+        2158
+      ],
+      "dtype": "float64"
+    },
+    "p_sha256": {
+      "shape": [],
+      "dtype": "<U64"
+    }
+  },
+  "cohort_schema": {
+    "y": {
+      "shape": [
+        2158,
+        5
+      ],
+      "dtype": "float32"
+    },
+    "ids": {
+      "shape": [
+        2158
+      ],
+      "dtype": "int64"
+    },
+    "patient_ids": {
+      "shape": [
+        2158
+      ],
+      "dtype": "float64"
+    },
+    "indices": {
+      "shape": [
+        2158
+      ],
+      "dtype": "int64"
+    },
+    "patient_inverse": {
+      "shape": [
+        2158
+      ],
+      "dtype": "int64"
+    },
+    "unique_patients": {
+      "shape": [
+        1877
+      ],
+      "dtype": "float64"
+    }
+  },
+  "draws_schema": {
+    "shape": [
+      2000,
+      1877
+    ],
+    "dtype": "int32",
+    "row_sum_min": 1877,
+    "row_sum_max": 1877
+  },
+  "pyarrow_available": false,
+  "elapsed_seconds": 0.7042302000336349,
+  "environment": {
+    "logical_cpus": 32,
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "training_invocations": 0,
+  "inference_invocations": 0
+}

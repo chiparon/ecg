@@ -1,0 +1,16 @@
+{
+  "status": "P0-COMPLETE",
+  "stage": "completed",
+  "availability_decided_at": "2026-09-19T20:37:19.035981+00:00",
+  "availability_elapsed_seconds": 126.22543690004386,
+  "identity_verified": true,
+  "probability_coverage": 1.0,
+  "patient_draws_available": 2000,
+  "analysis_complete": true,
+  "independent_qa": "pending",
+  "note": "All required original data verified; bootstrap production not yet executed",
+  "training_invocations": 0,
+  "inference_invocations": 0,
+  "completed_at": "2026-09-19T20:48:27.170389+00:00",
+  "bootstrap_elapsed_seconds": 668.1021104999818
+}

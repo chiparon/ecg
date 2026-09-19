@@ -1,0 +1,74 @@
+{
+  "status": "frozen",
+  "recorded_at": "2026-09-19T21:30:52.545275+00:00",
+  "baseline_commit": "79c9c3dc838ecaed7fe247f2f1f61c08cbab519c",
+  "scripts": [
+    {
+      "path": "overnight_supplements_v2/freeze/benchmark.py",
+      "bytes": 6053,
+      "sha256": "13dcbc22933907a48b68a60f47221549b84efe88b3b96f8bba45eff2500ff918"
+    },
+    {
+      "path": "overnight_supplements_v2/freeze/finalize_sources.py",
+      "bytes": 7574,
+      "sha256": "452048026772f02f4fd0e76b7a0d0a5d7c997f8eea9aa928aa95b3741215bd8e"
+    },
+    {
+      "path": "overnight_supplements_v2/shared/common.py",
+      "bytes": 1579,
+      "sha256": "1aa42092884fed72f7e9237ae963117cf6ae56011577c7db64435a7206840cbd"
+    },
+    {
+      "path": "overnight_supplements_v2/did/pipeline.py",
+      "bytes": 37749,
+      "sha256": "6975a16cf887702ea90ac17f000fea26a955c1c81fb264d9c129f349c26bfa24"
+    },
+    {
+      "path": "overnight_supplements_v2/snrp/figures.py",
+      "bytes": 8863,
+      "sha256": "b1f8a36dde34c05b24cfa86cd85a7df56c190eea8054c96e2d023fd5edf35ab0"
+    },
+    {
+      "path": "overnight_supplements_v2/snrp/overlay.py",
+      "bytes": 15734,
+      "sha256": "00ee6d83f153a29e89a45ccfec0ad1a162b5134c99824c6c2ffd77b2ecf819ef"
+    },
+    {
+      "path": "overnight_supplements_v2/snrp/run.py",
+      "bytes": 27304,
+      "sha256": "fa2b08df9582a29cddda910a3fe567c0f0aa20afb7a4e39b52d0a6f6fadbf75b"
+    },
+    {
+      "path": "overnight_supplements_v2/qa/did_recompute.py",
+      "bytes": 28765,
+      "sha256": "5e4ce9619a4b08560cea3f69416ee066f295f9280db83417579d163d173b8a3a"
+    },
+    {
+      "path": "overnight_supplements_v2/qa/release.py",
+      "bytes": 16880,
+      "sha256": "ac32dc381408534e2644ca8ad3b5a4eb24c8e97740cb10f67b56b9299e1c8a38"
+    },
+    {
+      "path": "overnight_supplements_v2/qa/snrp_recompute.py",
+      "bytes": 48350,
+      "sha256": "511076a1739434f9e87ffe9c11e18fe6c703d3f66c20cbb9e06ca53df07b4dda"
+    },
+    {
+      "path": "overnight_supplements_v2/reports/build_report.py",
+      "bytes": 21374,
+      "sha256": "906a4d3d550658ba4bdd81e378bc5bfcf93e89a138a783550527a75a563a1c16"
+    },
+    {
+      "path": "overnight_supplements_v2/third_architecture/inventory.py",
+      "bytes": 6182,
+      "sha256": "6c2e2a340ffef974f6e19c723f13bd443d87c5995c587f402a292614ed7ec882"
+    }
+  ],
+  "run_config": {
+    "path": "overnight_supplements_v2/freeze/run_config.json",
+    "bytes": 32770,
+    "sha256": "94ebd807109e16417e02999a01d9e1a4d62dfea8462d2cd64f20f3d824e3612d"
+  },
+  "training_invocations": 0,
+  "inference_invocations": 0
+}

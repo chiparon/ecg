@@ -1,0 +1,20 @@
+{
+  "geometry_status": "P1-GEO-DIRECT",
+  "n_records": 2158,
+  "n_cases": 126,
+  "n_rows": 271908,
+  "n_patients": 1877,
+  "projector_symmetry_frobenius": 1.2393264097671234e-15,
+  "projector_idempotence_frobenius": 1.2434468376125226e-15,
+  "whole_case_hash_matches": 126,
+  "old_q_rows_crosschecked": 545974,
+  "old_input_rows_crosschecked": 271908,
+  "anomaly_count": 0,
+  "anomalous_geometry_rows": 0,
+  "anomaly_counts": {},
+  "fatal_anomaly_count": 0,
+  "independent_verification": "pending qa/snrp_recompute.py",
+  "finished_at": "2026-09-19T20:41:14.420992+00:00",
+  "training_invocations": 0,
+  "inference_invocations": 0
+}

@@ -1,0 +1,17 @@
+{
+  "recorded_at": "2026-09-19T20:38:46.208794+00:00",
+  "python": "3.10.19 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 16:41:31) [MSC v.1929 64 bit (AMD64)]",
+  "executable": "E:\\Eproject\\ECG\\phase1_ecg_robustness\\.venv\\Scripts\\python.exe",
+  "package_versions": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.7.2",
+    "matplotlib": "3.10.9",
+    "pyarrow": "21.0.0"
+  },
+  "training_invocations": 0,
+  "inference_invocations": 0,
+  "torch_imported": false,
+  "note": "Distribution metadata inspected; no model import or execution"
+}

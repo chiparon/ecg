@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "verified_at": "2026-09-19T21:31:15.865862+00:00",
+  "source_manifest": {
+    "path": "overnight_supplements_v2/freeze/source_manifest.json",
+    "bytes": 19107180,
+    "sha256": "24d674f895dfc8bf23e95dbc3c07427ae4e541862e612918afa13b9ae8dbb27d"
+  },
+  "historical_local_sources_checked": 5179,
+  "frozen_code_and_config_checked": 13,
+  "failures": [],
+  "elapsed_seconds": 22.990760900080204,
+  "scope": "All consumed historical source bytes plus every frozen new script/config; not a claim of hashing every unconsumed file on disk",
+  "code_manifest": {
+    "path": "overnight_supplements_v2/freeze/code_manifest.json",
+    "bytes": 2632,
+    "sha256": "8aaf2c1857b08ffab5a84bbe643d3ed2fdbf75a7877083160575fe150503621a"
+  },
+  "training_invocations": 0,
+  "inference_invocations": 0
+}
