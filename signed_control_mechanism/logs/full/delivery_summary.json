@@ -1,0 +1,513 @@
+{
+  "status": "completed",
+  "base_commit": "c18e9555ce8d53771167af39c784d25e7cae3445",
+  "new_code_is_uncommitted": true,
+  "implementation_fingerprint_list_sha256": "bfede4014d1c77987355c542ae1aab70c2e0d9081d7aa3440e53c5e804a69a01",
+  "implementation_files": [
+    {
+      "path": "signed_control_mechanism/__init__.py",
+      "bytes": 63,
+      "sha256": "2384291ed7c2acaca64c0daf5e9c9322cdde860887b252dc0846a0f5457fb7cc"
+    },
+    {
+      "path": "signed_control_mechanism/analyse.py",
+      "bytes": 40575,
+      "sha256": "03fc6b78a7bc11ad4c3825653b6897b0bb455cc9394e262f37e711ab50dd4781"
+    },
+    {
+      "path": "signed_control_mechanism/common.py",
+      "bytes": 5592,
+      "sha256": "113a87daa9b44b95ac239eafcff15bfcd7efd67677b254b9454a5624766639cc"
+    },
+    {
+      "path": "signed_control_mechanism/deploy.py",
+      "bytes": 6969,
+      "sha256": "926fbd26ae47095105b18601e45305e674dfcbe05440ba133f45d970e5f122f9"
+    },
+    {
+      "path": "signed_control_mechanism/infer.py",
+      "bytes": 13981,
+      "sha256": "422d4120460375ccb08637bf453c2c18a1a90a8cfd4fa68f13031b99039c86f1"
+    },
+    {
+      "path": "signed_control_mechanism/inputs.py",
+      "bytes": 34619,
+      "sha256": "4431c9aedd92cfc8c792b39413551900fcaafbfc8e52c1cbebace6619452e8c7"
+    },
+    {
+      "path": "signed_control_mechanism/merge.py",
+      "bytes": 23497,
+      "sha256": "bfe320b23c153bc6b7684ac7818f2b16a2996689e3bc34b92a602cd5011e3e16"
+    },
+    {
+      "path": "signed_control_mechanism/plot.py",
+      "bytes": 32511,
+      "sha256": "75e898971992180d208ac8594f12709eb0d1a3b022be2be16a9576a5615090ff"
+    },
+    {
+      "path": "signed_control_mechanism/prepare.py",
+      "bytes": 17230,
+      "sha256": "7f32f3b6811187642a52053ec000383ba67ed92ffeca355a5fabedc1475c7644"
+    },
+    {
+      "path": "signed_control_mechanism/report.py",
+      "bytes": 45805,
+      "sha256": "7cc594927b815b0ef3d8337adf5f2b9f031792684f7b3690d831cfffecccce83"
+    },
+    {
+      "path": "signed_control_mechanism/verify.py",
+      "bytes": 25547,
+      "sha256": "077e739b70bbc8a896bd59a6fddd18d351fc5b8e3edc6dab2ac5669ff2ca5468"
+    }
+  ],
+  "config_sha256": "529cd33fdb0927fc88124e6993cac44ecd5a4b4a01a0b814e8602dfbd99d70cd",
+  "reports": {
+    "html": {
+      "path": "signed_control_mechanism/reports/signed_control_final_report.html",
+      "bytes": 628614,
+      "sha256": "f2d63ae338ae935e33a7a649d009f5f7bb269864a28fac8685a605abe7c8929c"
+    },
+    "markdown": {
+      "path": "signed_control_mechanism/reports/signed_control_final_report.md",
+      "bytes": 105152,
+      "sha256": "c9dccca0a2e1add58ce2a2cc378171d847d39d0c006b04141d71c8dbff94b0e5"
+    }
+  },
+  "key_tables": [
+    {
+      "path": "signed_control_mechanism/tables/full/signed_control_summary.csv",
+      "bytes": 8505,
+      "sha256": "7ed1a6060862e7fc3942fedb8f021e860e43932d966d5144f8fdfe395c364e6c"
+    },
+    {
+      "path": "signed_control_mechanism/tables/full/signed_control_seed_effects.csv",
+      "bytes": 7491,
+      "sha256": "523b7b6476f738be011d6e7fad0048b456c164c76788440ba68b3fd4ec29d5fc"
+    },
+    {
+      "path": "signed_control_mechanism/tables/full/signed_control_noise_effects.csv",
+      "bytes": 48726,
+      "sha256": "14d9fead1e196a55598f9f3e9b4ef5fb798aa51c09821277611c09352afe47b9"
+    },
+    {
+      "path": "signed_control_mechanism/tables/full/signed_mode_summary.csv",
+      "bytes": 40284,
+      "sha256": "6df1ed7edf92b0930c0bbb196de668084ffda6525598a1627ee277881a9db249"
+    },
+    {
+      "path": "signed_control_mechanism/tables/full/subspace_diagnostics_summary.csv",
+      "bytes": 47907,
+      "sha256": "b04b9ec72043a3f0a0300070e7d7ee61a4e988462a0e87810d980574f756e7cb"
+    },
+    {
+      "path": "signed_control_mechanism/tables/full/input_validation.csv",
+      "bytes": 190392063,
+      "sha256": "aa02f3775474d1ab5f885030b7b44114be5e3e153dbf893d7ab0e6624090491f"
+    },
+    {
+      "path": "signed_control_mechanism/tables/full/prediction_index.csv",
+      "bytes": 918776,
+      "sha256": "140182cf7d6ba405d2ce24aa50f5d743d750ad5e00d9549986ad69db51bf0b6a"
+    },
+    {
+      "path": "signed_control_mechanism/tables/full/reuse_bridge.csv",
+      "bytes": 212648,
+      "sha256": "1e97865e4d60ab20d406a722b48897c3dff8e7602bd8e434b43881bd386bb0d8"
+    }
+  ],
+  "main_figures": [
+    {
+      "path": "signed_control_mechanism/figures/full/signed_control_structure_effects.png",
+      "bytes": 168321,
+      "sha256": "f71137d7e5ae7d9170372f9dc1d8b46a615e17f07856bb80635d70b50e61a02b"
+    },
+    {
+      "path": "signed_control_mechanism/figures/full/signed_control_snr_curves.png",
+      "bytes": 315081,
+      "sha256": "a8c934f9434d6dbf32f6d33088acf368670e611c941fe261e554972d562d3a87"
+    },
+    {
+      "path": "signed_control_mechanism/figures/full/subspace_q_distributions.png",
+      "bytes": 171657,
+      "sha256": "5ea21f54f10b8221a9521b96d503f9eae87670ebfda1cd2319a97a1f4df09407"
+    }
+  ],
+  "verification": {
+    "smoke": "waived_by_user; remaining merge/bootstrap/verification explicitly skipped",
+    "full": "passed",
+    "publication": "passed",
+    "browser": "passed"
+  },
+  "auroc_contrasts_raw_0_to_1": [
+    {
+      "model": "resnet",
+      "snr": "0",
+      "metric": "macro_auroc",
+      "contrast": "E-I",
+      "estimate": "-0.01912996371539555",
+      "seed_sd": "0.0028436071395795456",
+      "seed_n": "3",
+      "patient_ci_low": "-0.021133051476837188",
+      "patient_ci_high": "-0.017016624338772993",
+      "n_bootstrap": "2000",
+      "n_invalid": "0",
+      "noise_sd": "0.0009537489019201791",
+      "signed_mode_sd": "0.0"
+    },
+    {
+      "model": "resnet",
+      "snr": "0",
+      "metric": "macro_auroc",
+      "contrast": "E-S",
+      "estimate": "-0.016128325275141197",
+      "seed_sd": "0.002819529353624796",
+      "seed_n": "3",
+      "patient_ci_low": "-0.01771190868113388",
+      "patient_ci_high": "-0.014460960798073111",
+      "n_bootstrap": "2000",
+      "n_invalid": "0",
+      "noise_sd": "0.0004832999385917371",
+      "signed_mode_sd": "0.01183063663293706"
+    },
+    {
+      "model": "resnet",
+      "snr": "0",
+      "metric": "macro_auroc",
+      "contrast": "S-I",
+      "estimate": "-0.003001638440254357",
+      "seed_sd": "0.0009689522192921543",
+      "seed_n": "3",
+      "patient_ci_low": "-0.004286560383746835",
+      "patient_ci_high": "-0.001678907609763035",
+      "n_bootstrap": "2000",
+      "n_invalid": "0",
+      "noise_sd": "0.0008675198598216685",
+      "signed_mode_sd": "0.011830636632937062"
+    },
+    {
+      "model": "resnet",
+      "snr": "5",
+      "metric": "macro_auroc",
+      "contrast": "E-I",
+      "estimate": "-0.007307653221017217",
+      "seed_sd": "0.002799829532356844",
+      "seed_n": "3",
+      "patient_ci_low": "-0.008493063309994577",
+      "patient_ci_high": "-0.006104533458376162",
+      "n_bootstrap": "2000",
+      "n_invalid": "0",
+      "noise_sd": "0.0013747110831875244",
+      "signed_mode_sd": "9.69739903612216e-19"
+    },
+    {
+      "model": "resnet",
+      "snr": "5",
+      "metric": "macro_auroc",
+      "contrast": "E-S",
+      "estimate": "-0.006059176376563354",
+      "seed_sd": "0.0028260079304617525",
+      "seed_n": "3",
+      "patient_ci_low": "-0.007046791895180259",
+      "patient_ci_high": "-0.005055649639753295",
+      "n_bootstrap": "2000",
+      "n_invalid": "0",
+      "noise_sd": "0.0009299588649003249",
+      "signed_mode_sd": "0.004658463483837757"
+    },
+    {
+      "model": "resnet",
+      "snr": "5",
+      "metric": "macro_auroc",
+      "contrast": "S-I",
+      "estimate": "-0.0012484768444538635",
+      "seed_sd": "5.6016736096905435e-05",
+      "seed_n": "3",
+      "patient_ci_low": "-0.0019501691445752306",
+      "patient_ci_high": "-0.0005004865842913346",
+      "n_bootstrap": "2000",
+      "n_invalid": "0",
+      "noise_sd": "0.0005567373190045844",
+      "signed_mode_sd": "0.004658463483837758"
+    },
+    {
+      "model": "resnet",
+      "snr": "10",
+      "metric": "macro_auroc",
+      "contrast": "E-I",
+      "estimate": "-0.002406374729177948",
+      "seed_sd": "0.001245870533634307",
+      "seed_n": "3",
+      "patient_ci_low": "-0.0030608120344059013",
+      "patient_ci_high": "-0.0017404223074512645",
+      "n_bootstrap": "2000",
+      "n_invalid": "0",
+      "noise_sd": "0.0010928011493934015",
+      "signed_mode_sd": "0.0"
+    },
+    {
+      "model": "resnet",
+      "snr": "10",
+      "metric": "macro_auroc",
+      "contrast": "E-S",
+      "estimate": "-0.0019616562507096583",
+      "seed_sd": "0.000991417520216104",
+      "seed_n": "3",
+      "patient_ci_low": "-0.0025680943777265284",
+      "patient_ci_high": "-0.0013983864820379134",
+      "n_bootstrap": "2000",
+      "n_invalid": "0",
+      "noise_sd": "0.0007809957395100602",
+      "signed_mode_sd": "0.0016319853197483585"
+    },
+    {
+      "model": "resnet",
+      "snr": "10",
+      "metric": "macro_auroc",
+      "contrast": "S-I",
+      "estimate": "-0.0004447184784682891",
+      "seed_sd": "0.00025967678849091847",
+      "seed_n": "3",
+      "patient_ci_low": "-0.0008692375050428181",
+      "patient_ci_high": "-2.2140819859281943e-05",
+      "n_bootstrap": "2000",
+      "n_invalid": "0",
+      "noise_sd": "0.00034663957589628084",
+      "signed_mode_sd": "0.0016319853197483587"
+    },
+    {
+      "model": "tcn",
+      "snr": "0",
+      "metric": "macro_auroc",
+      "contrast": "E-I",
+      "estimate": "-0.012484127993010229",
+      "seed_sd": "0.0041670171190309226",
+      "seed_n": "3",
+      "patient_ci_low": "-0.014189009098689255",
+      "patient_ci_high": "-0.01079793897958676",
+      "n_bootstrap": "2000",
+      "n_invalid": "0",
+      "noise_sd": "0.0011355460459958092",
+      "signed_mode_sd": "0.0"
+    },
+    {
+      "model": "tcn",
+      "snr": "0",
+      "metric": "macro_auroc",
+      "contrast": "E-S",
+      "estimate": "-0.013187285431555477",
+      "seed_sd": "0.005004185163505245",
+      "seed_n": "3",
+      "patient_ci_low": "-0.014947603904454881",
+      "patient_ci_high": "-0.011493847906756739",
+      "n_bootstrap": "2000",
+      "n_invalid": "0",
+      "noise_sd": "0.0009628788503159066",
+      "signed_mode_sd": "0.006035034492325407"
+    },
+    {
+      "model": "tcn",
+      "snr": "0",
+      "metric": "macro_auroc",
+      "contrast": "S-I",
+      "estimate": "0.0007031574385452469",
+      "seed_sd": "0.0009511131046268915",
+      "seed_n": "3",
+      "patient_ci_low": "-8.349960059641236e-05",
+      "patient_ci_high": "0.0014529889812050789",
+      "n_bootstrap": "2000",
+      "n_invalid": "0",
+      "noise_sd": "0.0007197512794345563",
+      "signed_mode_sd": "0.006035034492325408"
+    },
+    {
+      "model": "tcn",
+      "snr": "5",
+      "metric": "macro_auroc",
+      "contrast": "E-I",
+      "estimate": "-0.0032841611335119683",
+      "seed_sd": "0.001810066107823125",
+      "seed_n": "3",
+      "patient_ci_low": "-0.004195488812957201",
+      "patient_ci_high": "-0.002352907569355875",
+      "n_bootstrap": "2000",
+      "n_invalid": "0",
+      "noise_sd": "0.0007594023779596062",
+      "signed_mode_sd": "0.0"
+    },
+    {
+      "model": "tcn",
+      "snr": "5",
+      "metric": "macro_auroc",
+      "contrast": "E-S",
+      "estimate": "-0.00354578175217716",
+      "seed_sd": "0.0019901986115241615",
+      "seed_n": "3",
+      "patient_ci_low": "-0.004434850810663353",
+      "patient_ci_high": "-0.0026275971352811463",
+      "n_bootstrap": "2000",
+      "n_invalid": "0",
+      "noise_sd": "0.0005500549786670514",
+      "signed_mode_sd": "0.0019176094314832096"
+    },
+    {
+      "model": "tcn",
+      "snr": "5",
+      "metric": "macro_auroc",
+      "contrast": "S-I",
+      "estimate": "0.00026162061866519135",
+      "seed_sd": "0.0002829129911829101",
+      "seed_n": "3",
+      "patient_ci_low": "-0.0001835141595149171",
+      "patient_ci_high": "0.0006862183287942756",
+      "n_bootstrap": "2000",
+      "n_invalid": "0",
+      "noise_sd": "0.0003212064452023692",
+      "signed_mode_sd": "0.0019176094314832094"
+    },
+    {
+      "model": "tcn",
+      "snr": "10",
+      "metric": "macro_auroc",
+      "contrast": "E-I",
+      "estimate": "-0.0006138847825032256",
+      "seed_sd": "0.0004202517616080875",
+      "seed_n": "3",
+      "patient_ci_low": "-0.0011495957371298695",
+      "patient_ci_high": "-7.648589657034684e-05",
+      "n_bootstrap": "2000",
+      "n_invalid": "0",
+      "noise_sd": "0.0005234787065093473",
+      "signed_mode_sd": "0.0"
+    },
+    {
+      "model": "tcn",
+      "snr": "10",
+      "metric": "macro_auroc",
+      "contrast": "E-S",
+      "estimate": "-0.0008023329989899321",
+      "seed_sd": "0.0005216360454722894",
+      "seed_n": "3",
+      "patient_ci_low": "-0.0012895140259584006",
+      "patient_ci_high": "-0.0003061119451332004",
+      "n_bootstrap": "2000",
+      "n_invalid": "0",
+      "noise_sd": "0.00040849212000803887",
+      "signed_mode_sd": "0.0005342236749852539"
+    },
+    {
+      "model": "tcn",
+      "snr": "10",
+      "metric": "macro_auroc",
+      "contrast": "S-I",
+      "estimate": "0.00018844821648670665",
+      "seed_sd": "0.00011944393611031515",
+      "seed_n": "3",
+      "patient_ci_low": "-8.322811405884726e-05",
+      "patient_ci_high": "0.00045120763970520506",
+      "n_bootstrap": "2000",
+      "n_invalid": "0",
+      "noise_sd": "0.0001549806242397379",
+      "signed_mode_sd": "0.0005342236749852539"
+    }
+  ],
+  "primary_seed_estimates": [
+    {
+      "model": "resnet",
+      "snr": "0",
+      "metric": "macro_auroc",
+      "contrast": "E-S",
+      "seed": "17",
+      "estimate": "-0.019235293922221595"
+    },
+    {
+      "model": "resnet",
+      "snr": "0",
+      "metric": "macro_auroc",
+      "contrast": "E-S",
+      "seed": "29",
+      "estimate": "-0.015417340296109002"
+    },
+    {
+      "model": "resnet",
+      "snr": "0",
+      "metric": "macro_auroc",
+      "contrast": "E-S",
+      "seed": "43",
+      "estimate": "-0.013732341607092996"
+    },
+    {
+      "model": "tcn",
+      "snr": "0",
+      "metric": "macro_auroc",
+      "contrast": "E-S",
+      "seed": "17",
+      "estimate": "-0.007885844837768366"
+    },
+    {
+      "model": "tcn",
+      "snr": "0",
+      "metric": "macro_auroc",
+      "contrast": "E-S",
+      "seed": "29",
+      "estimate": "-0.01782871285747521"
+    },
+    {
+      "model": "tcn",
+      "snr": "0",
+      "metric": "macro_auroc",
+      "contrast": "E-S",
+      "seed": "43",
+      "estimate": "-0.013847298599422853"
+    }
+  ],
+  "q_0db_equal_weight_means": {
+    "clean": {
+      "equal_weight_mean": 1.3662119222710647e-06,
+      "groups": 1,
+      "records_per_group": 2158,
+      "nulls": 0
+    },
+    "E_noise": {
+      "equal_weight_mean": 6.188181742724522e-16,
+      "groups": 6,
+      "records_per_group": 2158,
+      "nulls": 0
+    },
+    "S_noise": {
+      "equal_weight_mean": 0.4107250754047592,
+      "groups": 30,
+      "records_per_group": 2158,
+      "nulls": 0
+    },
+    "I_noise": {
+      "equal_weight_mean": 0.37440828138417737,
+      "groups": 6,
+      "records_per_group": 2158,
+      "nulls": 0
+    }
+  },
+  "q_aggregation": "Mean of record q over2158 records, then equal6 fixed noise groups and5 signed modes; clean once. Not q of an averaged waveform; no patient inference.",
+  "actual_compute": {
+    "input_seconds": 56.75008450006135,
+    "parallel_gpu_critical_path_seconds": 258.90587959997356,
+    "merge_seconds": 23.659161,
+    "statistics_seconds": 151.5903281001374,
+    "independent_verification_seconds": 18.317317300010473,
+    "compute_critical_path_sum_seconds": 509.2227705001828,
+    "definition": "Sum of sequential numerical stages, counting concurrent GPU workers by maximum duration; excludes code/report writing, scheduling gaps and transfer time. Not end-to-end wall clock.",
+    "cache_counts": {
+      "reused_legacy": 222,
+      "resumed_new": 0,
+      "recomputed": 540
+    }
+  },
+  "conclusion": "两个共同主要模型均达到稳定负向规则。在本研究固定 A、100 Hz、合成噪声与两种网络条件下，结果与采集映射方向在一般低秩性质之外具有额外作用的解释一致；不能外推为真实设备验证或唯一因果机制。",
+  "deviations_and_limitations": [
+    "User explicitly waived remaining smoke after input/GPU smoke already completed; not reported as passed.",
+    "Circular-shift implementation and prediction/offset metadata exist, but directly reusable waveform arrays and final-input hashes do not; no new shift reconstruction and no shift q.",
+    "E/I reuse is immutable byte/hash-proven artifact reuse, not a fresh cross-device numerical bridge. Fresh clean comparisons are separate.",
+    "TCN S-I AUROC patient intervals include zero at0/5/10dB; no equivalence claim. Fixed signed modes show substantial descriptive variation.",
+    "No scientific gate failure. Report mobile hash wrapping was corrected and re-verified. A bookkeeping read required explicitUTF-8; browser-tool failures did not change scientific results.",
+    "No new training, threshold search, p-values or change to original Holm conclusions; ideal mapping/100Hz/two architectures only."
+  ]
+}

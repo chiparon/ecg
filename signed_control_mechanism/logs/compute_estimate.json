@@ -1,0 +1,72 @@
+{
+  "basis": "Previous full run, same cohort/checkpoints/FP32/batch128 and intended host assignments",
+  "resnet_975_previous_seconds": 76.3578440270212,
+  "tcn_975_previous_seconds": 962.9412514001597,
+  "bootstrap_1950_previous_seconds": 464.39561,
+  "new_resnet_units": 270,
+  "new_tcn_units": 270,
+  "resnet_linear_prediction_seconds": 21.145249115175105,
+  "tcn_linear_prediction_seconds": 266.6606542338904,
+  "new_540_bootstrap_linear_seconds": 128.60186123076923,
+  "pre_smoke_numeric_pipeline_range_minutes": [
+    10,
+    20
+  ],
+  "range_includes": "Input/subspace audits, inference, merge, bootstrap and numerical verification; pure compute estimate, not implementation/report preparation time",
+  "calibration": {
+    "recorded_at": "2026-09-19T18:15:25.520767+00:00",
+    "smoke_tcn_seconds": 19.445718500064686,
+    "full_input_audit_actual_seconds": 56.75008450006135,
+    "full_tcn_estimate_seconds": [
+      267,
+      331
+    ],
+    "basis": "Prior2158-record270-unit proportional estimate ~267s; current100-record270-unit smoke19.446s x17 full batches =330.577s before startup correction. No additional smoke run; remaining smoke statistics waived by user.",
+    "full_numeric_pipeline_estimate_minutes": [
+      10,
+      15
+    ],
+    "scientific_grid_unchanged": true
+  },
+  "local_free_GB": 403.422117888,
+  "observed_full_inference": [
+    {
+      "model": "resnet",
+      "shard_index": 0,
+      "elapsed_seconds": 15.734972727950662,
+      "observed_cells": 135,
+      "started_at": "2026-09-19T18:13:30.893493+00:00",
+      "finished_at": "2026-09-19T18:13:46.628464+00:00"
+    },
+    {
+      "model": "resnet",
+      "shard_index": 1,
+      "elapsed_seconds": 15.76518078200752,
+      "observed_cells": 135,
+      "started_at": "2026-09-19T18:13:30.965976+00:00",
+      "finished_at": "2026-09-19T18:13:46.731153+00:00"
+    },
+    {
+      "model": "tcn",
+      "shard_index": 0,
+      "elapsed_seconds": 258.90587959997356,
+      "observed_cells": 270,
+      "started_at": "2026-09-19T18:13:05.634799+00:00",
+      "finished_at": "2026-09-19T18:17:24.541007+00:00"
+    }
+  ],
+  "observed_full_numeric": {
+    "input_seconds": 56.75008450006135,
+    "parallel_gpu_critical_path_seconds": 258.90587959997356,
+    "merge_seconds": 23.659161,
+    "statistics_seconds": 151.5903281001374,
+    "independent_verification_seconds": 18.317317300010473,
+    "compute_critical_path_sum_seconds": 509.2227705001828,
+    "definition": "Sum of sequential numerical stages, counting concurrent GPU workers by maximum duration; excludes code/report writing, scheduling gaps and transfer time. Not end-to-end wall clock.",
+    "cache_counts": {
+      "reused_legacy": 222,
+      "resumed_new": 0,
+      "recomputed": 540
+    }
+  }
+}

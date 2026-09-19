@@ -26,3 +26,14 @@ __pycache__/
 /phase2/results/tables/full/noise_seed_metrics.csv
 /phase2/results/tables/full/patient_ci.csv
 /phase2/results/tables/full/seed_summary.csv
+
+# Signed-control reproducible caches and transfer archives stay local
+/signed_control_mechanism/predictions/
+/signed_control_mechanism/bootstrap/*/metrics/
+/signed_control_mechanism/bootstrap/*/paired/
+/signed_control_mechanism/logs/*/deployment_bundle.zip
+/signed_control_mechanism/logs/*/resnet_results.zip
+
+# Oversized per-record diagnostics; retain their hashes in experiment manifests
+/signed_control_mechanism/tables/full/input_validation.csv
+/signed_control_mechanism/tables/full/subspace_diagnostics_per_record.csv

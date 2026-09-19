@@ -1,0 +1,112 @@
+{
+  "status": "completed",
+  "config_sha256": "529cd33fdb0927fc88124e6993cac44ecd5a4b4a01a0b814e8602dfbd99d70cd",
+  "full_input_manifest": {
+    "path": "signed_control_mechanism/inputs/full/manifest.json",
+    "bytes": 224251,
+    "sha256": "35f6414a484e65227b04d3717f37e1f9b609e1020f1cf3513277e267c8f41d4a"
+  },
+  "full_verification": {
+    "path": "signed_control_mechanism/logs/full/full_verification.json",
+    "bytes": 5201,
+    "sha256": "44bf91f6d239e6851dd78124d63e78dd6c9f295999103c7632e77d6ab8ba2380"
+  },
+  "n_records": 2158,
+  "n_patients": 1877,
+  "n_conditions": 126,
+  "n_validation_rows": 271908,
+  "n_subspace_rows": 545974,
+  "sign_controls": {
+    "path": "signed_control_mechanism/inputs/sign_controls.json",
+    "bytes": 7604,
+    "sha256": "8fc1d3ed55b65c8f7d422967e601071eea2cd4cc044a0154665b2787fbc14e87"
+  },
+  "matrices": {
+    "path": "signed_control_mechanism/inputs/matrices.json",
+    "bytes": 75676,
+    "sha256": "87290011115bfbde18875cb4fcb0af5c48bc850d89287f107dbe8b9e4594e4e8"
+  },
+  "freeze": {
+    "path": "signed_control_mechanism/logs/full/freeze.json",
+    "bytes": 30906,
+    "sha256": "992359abafe74141bc0f65ba122c0f0d5efbc1ea0eaeafac16c28f89576ad2cb"
+  },
+  "clean": {
+    "path": "methodology_supplement/results/test_inputs/full/clean.npy",
+    "bytes": 103584128,
+    "sha256": "aa6ac344b1a19e1e3f043afeb75b5f4abce2dcff61ff0c794fef0b61cc58a5a3"
+  },
+  "cohort": {
+    "path": "methodology_supplement/results/test_inputs/full/cohort.npz",
+    "bytes": 128750,
+    "sha256": "bf8e9c8aae5066cf8e49d3f701dcc9b3236b12dfe38fe034c1194f261670e9e7"
+  },
+  "draws": {
+    "path": "methodology_supplement/results/test_inputs/full/patient_draws.npy",
+    "bytes": 15016128,
+    "sha256": "295179b3aa31dc71a97781fff3eaa11aa947b3d671ae80eb9194fa65098a9a2f"
+  },
+  "noise_bases": [
+    {
+      "path": "methodology_supplement/results/test_inputs/full/noise/standard__n101__electrode__0db.npy",
+      "bytes": 103584128,
+      "sha256": "d7065fd6d9b574ff1fec470e4734308578ce987948669f991f871ee621951480"
+    },
+    {
+      "path": "methodology_supplement/results/test_inputs/full/noise/standard__n101__independent_rms__0db.npy",
+      "bytes": 103584128,
+      "sha256": "eb3c3b3ee1ef1b035a150ab29ded1ec2521673be2722203613588abe6cd4787c"
+    },
+    {
+      "path": "methodology_supplement/results/test_inputs/full/noise/standard__n202__electrode__0db.npy",
+      "bytes": 103584128,
+      "sha256": "c0e0a644d5ed6e0ac3f36e139ed21dadf40ce52f326bf6cab35e525ebe8f405e"
+    },
+    {
+      "path": "methodology_supplement/results/test_inputs/full/noise/standard__n202__independent_rms__0db.npy",
+      "bytes": 103584128,
+      "sha256": "7189a8040f2fd3304c697405a4a4a92884c3f4242e1c818593ac2f2362847bd8"
+    },
+    {
+      "path": "methodology_supplement/results/test_inputs/full/noise/standard__n303__electrode__0db.npy",
+      "bytes": 103584128,
+      "sha256": "b9f652b0118957b55f6801102beef515f20bdd36044b5608f8353483a8858c02"
+    },
+    {
+      "path": "methodology_supplement/results/test_inputs/full/noise/standard__n303__independent_rms__0db.npy",
+      "bytes": 103584128,
+      "sha256": "e13c17f81e300bd44ea3c63a5dea9cc0f85a750d1d62f947459756db48ed5527"
+    },
+    {
+      "path": "methodology_supplement/results/test_inputs/full/noise/standard__n404__electrode__0db.npy",
+      "bytes": 103584128,
+      "sha256": "3ecb1fa9eec25d23e26ba589e96d8c7e17183719e988befdac59c63d8117066c"
+    },
+    {
+      "path": "methodology_supplement/results/test_inputs/full/noise/standard__n404__independent_rms__0db.npy",
+      "bytes": 103584128,
+      "sha256": "e82ba1f043d26993e5a48c31e1b3e22b191ea5c1b9a5a16adca120ac5c276797"
+    },
+    {
+      "path": "methodology_supplement/results/test_inputs/full/noise/standard__n505__electrode__0db.npy",
+      "bytes": 103584128,
+      "sha256": "9e79af8cba0049d73d4f0c1085a5bebc0bf7e147a2da8180a78db483305ff608"
+    },
+    {
+      "path": "methodology_supplement/results/test_inputs/full/noise/standard__n505__independent_rms__0db.npy",
+      "bytes": 103584128,
+      "sha256": "89dd82d390a27962d3a33da1395e0dd9f6a5907f854c71ebd0f40cfc375c9a99"
+    },
+    {
+      "path": "methodology_supplement/results/test_inputs/full/noise/standard__n8128__electrode__0db.npy",
+      "bytes": 103584128,
+      "sha256": "7512f1c76051bbc5596482db08c92d2369bef0e8bed037adbbcad96081dca963"
+    },
+    {
+      "path": "methodology_supplement/results/test_inputs/full/noise/standard__n8128__independent_rms__0db.npy",
+      "bytes": 103584128,
+      "sha256": "47d294bffcaf6d165841d52ee0d7de1a8f366d5dc3d5ac88dd9cce04bd065b46"
+    }
+  ],
+  "final_input_completion_marker": "signed_control_mechanism/inputs/full/manifest.json"
+}

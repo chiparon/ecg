@@ -1,0 +1,183 @@
+{
+  "status": "completed",
+  "stage": "full",
+  "config_sha256": "529cd33fdb0927fc88124e6993cac44ecd5a4b4a01a0b814e8602dfbd99d70cd",
+  "started_at": "2026-09-19T18:18:30.065991+00:00",
+  "smoke_verification": {
+    "path": "signed_control_mechanism/logs/smoke/smoke_verification.json",
+    "bytes": 1038,
+    "sha256": "4192b212b8f032f46fab968ec95e9290bb50908498ebb679197c80c1df9933d1"
+  },
+  "finished_at": "2026-09-19T18:18:53.725152+00:00",
+  "n_cases": 126,
+  "n_checkpoints": 6,
+  "n_predictions": 762,
+  "n_noisy_predictions": 756,
+  "n_new_signed_predictions": 540,
+  "n_reused_E_I_predictions": 216,
+  "n_reused_clean_predictions": 6,
+  "dgx_concurrent_processes": 2,
+  "dgx_overlap_seconds": 15.662488,
+  "dgx_worker_pids": [
+    687905,
+    687906
+  ],
+  "spark_clean_predictions_identical": true,
+  "input_hashes_shared": true,
+  "no_fresh_E_I_predictions_required": true,
+  "numerical_cross_device_bridge_performed": false,
+  "immutable_reuse_evidence": "Exact frozen NPZ, input, cohort, model dependencies, checkpoint, threshold and probability hashes; original metrics recomputed.",
+  "worker_reports": [
+    {
+      "path": "signed_control_mechanism/logs/full/inference_resnet_0.json",
+      "bytes": 10425,
+      "sha256": "f79b85c390832f05412ba4edc9c97a81bf09f8b7337521fda7c6c019ec848ce5"
+    },
+    {
+      "path": "signed_control_mechanism/logs/full/inference_resnet_1.json",
+      "bytes": 10421,
+      "sha256": "4e499bc68be231013906aa606f1b7b1d88648579ca4369989ee88edb4405a261"
+    },
+    {
+      "path": "signed_control_mechanism/logs/full/inference_tcn_0.json",
+      "bytes": 12218,
+      "sha256": "ac27501feeb51569288f6f9059660f17e57479f603b6cdfe6b5570101736b0fb"
+    }
+  ],
+  "legacy_worker_reports": [
+    {
+      "path": "methodology_supplement/results/logs/full/inference_resnet_0.json",
+      "bytes": 15187,
+      "sha256": "839484d98431faca9680d5f68bbe7b99ef61132b0bfb30a4b0d00409dd7c1242"
+    },
+    {
+      "path": "methodology_supplement/results/logs/full/inference_resnet_1.json",
+      "bytes": 15006,
+      "sha256": "cf526c45600ce4880f37290a14c6f2eca3881ed8a2d261e403f52636d8b4a5be"
+    },
+    {
+      "path": "methodology_supplement/results/logs/full/inference_tcn_0.json",
+      "bytes": 22918,
+      "sha256": "6706dcc86dd262c5729edc75bedcfef9c88d63838eb970d3f9af8616275b0255"
+    }
+  ],
+  "legacy_freeze": {
+    "path": "methodology_supplement/results/logs/full/freeze.json",
+    "bytes": 14117,
+    "sha256": "2ddfa520317435ba6fb0e54342ca61c83629e89dc3b0926e018eaba9b14b97aa"
+  },
+  "legacy_prediction_index": {
+    "path": "methodology_supplement/results/tables/full/evaluation_index.csv",
+    "bytes": 1699450,
+    "sha256": "09b8b69634f9c1bfbc472b28fcac68c26936b795d32b2e24f0b36b8b41fc211b"
+  },
+  "source_files": [
+    {
+      "path": "signed_control_mechanism/merge.py",
+      "bytes": 23497,
+      "sha256": "bfe320b23c153bc6b7684ac7818f2b16a2996689e3bc34b92a602cd5011e3e16"
+    },
+    {
+      "path": "methodology_supplement/__init__.py",
+      "bytes": 88,
+      "sha256": "72bf2727c512361d0763427ae9bb1d3ad46bb086e4965542eaec4fd35e349f38"
+    },
+    {
+      "path": "methodology_supplement/common.py",
+      "bytes": 5032,
+      "sha256": "daa3f53259c8c231e26cf36de4963f4d7f77a34c30d517309aeea9fca57f9c26"
+    },
+    {
+      "path": "methodology_supplement/implementation_contract.json",
+      "bytes": 10514,
+      "sha256": "ad65ec9893c06dcc0016a7190f937857e2e3606ccfeafc72731bbb1cc4ddf8b3"
+    },
+    {
+      "path": "methodology_supplement/infer.py",
+      "bytes": 23766,
+      "sha256": "39523c88ae6d7d3e7d2d30e08a2d8a562bf99b5979118d62f8e868543b925272"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/__init__.py",
+      "bytes": 74,
+      "sha256": "40fdfb6f5f22db08a89c41acb12b2a867cff3a5d471c9f951e49dd77c8f7eb5d"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/audit_noise.py",
+      "bytes": 12231,
+      "sha256": "2ad33e67a8c4ed4952eaba4318dea26b22405ecffcac6e6ba11bdd9816a270eb"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/covariance_matching.py",
+      "bytes": 7725,
+      "sha256": "17e2cdcd976c53558937c784774a13dcd1a2f60924c4b03b4345859cfcba4a6b"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/datasets.py",
+      "bytes": 4684,
+      "sha256": "a3f085d44652da86c5c4dfbf088d14c901102d05e75a61b7920b7025786ae4f2"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/evaluate.py",
+      "bytes": 12337,
+      "sha256": "5271e3803393188f9c6c643e3d24ce6aeacdf08ead5cad98eec3e840d7b142d9"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/lead_matrix.py",
+      "bytes": 4192,
+      "sha256": "e7afb8bc617642180175b82f69ac797f74d259246ecac86e4f19eb5025b455b1"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/models.py",
+      "bytes": 5863,
+      "sha256": "53f5858562f4535cebca888776885846af9c442cf3e709a47eecd91407f40ed7"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/noise_generators.py",
+      "bytes": 16113,
+      "sha256": "6439e7eb220d9f1776e859b103570ea7407bec33c0da60aa3d70a95e9f7ef108"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/train.py",
+      "bytes": 23184,
+      "sha256": "b082292d91776c5b4fb6e19db922d7ef6c73f8cde64317a8b43dbfcd256272ca"
+    },
+    {
+      "path": "signed_control_mechanism/__init__.py",
+      "bytes": 63,
+      "sha256": "2384291ed7c2acaca64c0daf5e9c9322cdde860887b252dc0846a0f5457fb7cc"
+    },
+    {
+      "path": "signed_control_mechanism/common.py",
+      "bytes": 5592,
+      "sha256": "113a87daa9b44b95ac239eafcff15bfcd7efd67677b254b9454a5624766639cc"
+    },
+    {
+      "path": "signed_control_mechanism/infer.py",
+      "bytes": 13981,
+      "sha256": "422d4120460375ccb08637bf453c2c18a1a90a8cfd4fa68f13031b99039c86f1"
+    }
+  ],
+  "freeze": {
+    "path": "signed_control_mechanism/logs/full/freeze.json",
+    "bytes": 30906,
+    "sha256": "992359abafe74141bc0f65ba122c0f0d5efbc1ea0eaeafac16c28f89576ad2cb"
+  },
+  "manifest": {
+    "path": "signed_control_mechanism/inputs/full/manifest.json",
+    "bytes": 224251,
+    "sha256": "35f6414a484e65227b04d3717f37e1f9b609e1020f1cf3513277e267c8f41d4a"
+  },
+  "outputs": {
+    "prediction_index": {
+      "path": "signed_control_mechanism/tables/full/prediction_index.csv",
+      "bytes": 918776,
+      "sha256": "140182cf7d6ba405d2ce24aa50f5d743d750ad5e00d9549986ad69db51bf0b6a"
+    },
+    "reuse_bridge": {
+      "path": "signed_control_mechanism/tables/full/reuse_bridge.csv",
+      "bytes": 212648,
+      "sha256": "1e97865e4d60ab20d406a722b48897c3dff8e7602bd8e434b43881bd386bb0d8"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "stage": "full",
+  "config_sha256": "529cd33fdb0927fc88124e6993cac44ecd5a4b4a01a0b814e8602dfbd99d70cd",
+  "started_at": "2026-09-19T18:29:50.777364+00:00",
+  "implementation": {
+    "path": "signed_control_mechanism/verify.py",
+    "bytes": 25547,
+    "sha256": "077e739b70bbc8a896bd59a6fddd18d351fc5b8e3edc6dab2ac5669ff2ca5468"
+  },
+  "publication": {
+    "numeric_cells": 3916,
+    "markdown_tables": 11,
+    "figures": 6,
+    "figure_files": 18,
+    "local_links_checked": 72,
+    "reports": {
+      "html": {
+        "path": "signed_control_mechanism/reports/signed_control_final_report.html",
+        "bytes": 628614,
+        "sha256": "f2d63ae338ae935e33a7a649d009f5f7bb269864a28fac8685a605abe7c8929c"
+      },
+      "markdown": {
+        "path": "signed_control_mechanism/reports/signed_control_final_report.md",
+        "bytes": 105152,
+        "sha256": "c9dccca0a2e1add58ce2a2cc378171d847d39d0c006b04141d71c8dbff94b0e5"
+      }
+    },
+    "browser_visual_acceptance": "Recorded separately in browser_verification.json; not inferred from file checks"
+  },
+  "elapsed_seconds": 3.084618000080809,
+  "finished_at": "2026-09-19T18:29:53.861415+00:00"
+}

@@ -1,0 +1,856 @@
+{
+  "status": "completed",
+  "stage": "full",
+  "config_sha256": "529cd33fdb0927fc88124e6993cac44ecd5a4b4a01a0b814e8602dfbd99d70cd",
+  "figure_count": 6,
+  "figures": [
+    {
+      "id": "signed_control_structure_effects",
+      "caption": "All three 0-dB contrasts and all three metrics for both co-primary architectures. Primary estimand: each architecture's 0-dB E-S macro AUROC. Points average paired metric differences, not probabilities. Thin: paired patient 95% CI, conditional on fixed checkpoints/noises/modes. Thick: +/-1 training-seed SD (3 seeds); these are separate, not combined. Positive AUROC/F1: first condition better; positive ECE: first condition worse. Five individual fixed-mode estimates and three training-seed estimates are distinguished; redundant mode copies of E-I are omitted.",
+      "files": {
+        "png": {
+          "path": "signed_control_mechanism/figures/full/signed_control_structure_effects.png",
+          "bytes": 168321,
+          "sha256": "f71137d7e5ae7d9170372f9dc1d8b46a615e17f07856bb80635d70b50e61a02b"
+        },
+        "pdf": {
+          "path": "signed_control_mechanism/figures/full/signed_control_structure_effects.pdf",
+          "bytes": 35065,
+          "sha256": "3ee841f41b90ab0e43927138553272b0a3f93cc28a03242108be35a24050c220"
+        },
+        "svg": {
+          "path": "signed_control_mechanism/figures/full/signed_control_structure_effects.svg",
+          "bytes": 86373,
+          "sha256": "26539deeefb9bb6001e54ec6c07b873ffa87927ce8e7afcdc50afd993ce38cc9"
+        }
+      },
+      "sources": [
+        {
+          "path": "signed_control_mechanism/tables/full/signed_control_summary.csv",
+          "bytes": 8505,
+          "sha256": "7ed1a6060862e7fc3942fedb8f021e860e43932d966d5144f8fdfe395c364e6c"
+        },
+        {
+          "path": "signed_control_mechanism/tables/full/signed_control_seed_effects.csv",
+          "bytes": 7491,
+          "sha256": "523b7b6476f738be011d6e7fad0048b456c164c76788440ba68b3fd4ec29d5fc"
+        },
+        {
+          "path": "signed_control_mechanism/tables/full/signed_mode_summary.csv",
+          "bytes": 40284,
+          "sha256": "6df1ed7edf92b0930c0bbb196de668084ffda6525598a1627ee277881a9db249"
+        }
+      ]
+    },
+    {
+      "id": "signed_control_snr_curves",
+      "caption": "Complete 54-cell summary: both architectures, three contrasts, three metrics and 10/5/0 dB. Increasing noise is rightward. Thin: paired patient 95% CI, conditional on fixed checkpoints/noises/modes. Thick: +/-1 training-seed SD (3 seeds); these are separate, not combined. Positive AUROC/F1: first condition better; positive ECE: first condition worse. Fixed horizontal offsets separate models and uncertainty types without changing the SNR values.",
+      "files": {
+        "png": {
+          "path": "signed_control_mechanism/figures/full/signed_control_snr_curves.png",
+          "bytes": 315081,
+          "sha256": "a8c934f9434d6dbf32f6d33088acf368670e611c941fe261e554972d562d3a87"
+        },
+        "pdf": {
+          "path": "signed_control_mechanism/figures/full/signed_control_snr_curves.pdf",
+          "bytes": 39455,
+          "sha256": "61b6715caf3857636a4b85474e41a8181a9c9ae936c8217588aa7e585f6528b0"
+        },
+        "svg": {
+          "path": "signed_control_mechanism/figures/full/signed_control_snr_curves.svg",
+          "bytes": 97620,
+          "sha256": "466eb830e1713622482bdf5e955b5b231468b8cc43b22fc57b926b96d02ab02a"
+        }
+      },
+      "sources": [
+        {
+          "path": "signed_control_mechanism/tables/full/signed_control_summary.csv",
+          "bytes": 8505,
+          "sha256": "7ed1a6060862e7fc3942fedb8f021e860e43932d966d5144f8fdfe395c364e6c"
+        }
+      ]
+    },
+    {
+      "id": "signed_control_matrices",
+      "caption": "Standard and all five actual signed mapping matrices with common colour scale, source/lead order and matrix rank. Candidate numbers are the pre-prediction accepted candidates, never performance-selected. Signs preserve rank and singular values; this is a mathematical mapping-direction intervention, not a physical acquisition-error simulator.",
+      "files": {
+        "png": {
+          "path": "signed_control_mechanism/figures/full/signed_control_matrices.png",
+          "bytes": 194184,
+          "sha256": "3e3b57d8c2b7d522dd1dab9ed093938355122524e0daa065436bbfec9985e6ad"
+        },
+        "pdf": {
+          "path": "signed_control_mechanism/figures/full/signed_control_matrices.pdf",
+          "bytes": 38532,
+          "sha256": "c41aeb2da450f0fe980dfa2990a6b2794aa5ab56553dbe50687c3bfa5ba695ff"
+        },
+        "svg": {
+          "path": "signed_control_mechanism/figures/full/signed_control_matrices.svg",
+          "bytes": 142296,
+          "sha256": "b2c69d5e5c271081d785a19ec7409611f0dff5ce51eefa36e298fd99e7b7f54c"
+        }
+      },
+      "sources": [
+        {
+          "path": "signed_control_mechanism/inputs/matrices.json",
+          "bytes": 75676,
+          "sha256": "87290011115bfbde18875cb4fcb0af5c48bc850d89287f107dbe8b9e4594e4e8"
+        },
+        {
+          "path": "signed_control_mechanism/inputs/sign_controls.json",
+          "bytes": 7604,
+          "sha256": "8fc1d3ed55b65c8f7d422967e601071eea2cd4cc044a0154665b2787fbc14e87"
+        }
+      ]
+    },
+    {
+      "id": "subspace_q_distributions",
+      "caption": "Descriptive q distributions for clean, actual E/S/I residual noise and full noisy E/S/I inputs at all three SNRs; all five signed modes are separately shown. Per-ECG means use all six frozen noise realizations; the additional S mean uses all 30 mode/noise combinations. Box quartiles and full-range whiskers are across ECGs, not patient CIs, and fixed repeats are not counted as independent patients. Missing-denominator values are explicitly counted and propagated; zero is not replaced by a positive floor. Standard rank eight includes six unconstrained precordial coordinates and ideal limb relationships, not all physiological constraints.",
+      "files": {
+        "png": {
+          "path": "signed_control_mechanism/figures/full/subspace_q_distributions.png",
+          "bytes": 171657,
+          "sha256": "5ea21f54f10b8221a9521b96d503f9eae87670ebfda1cd2319a97a1f4df09407"
+        },
+        "pdf": {
+          "path": "signed_control_mechanism/figures/full/subspace_q_distributions.pdf",
+          "bytes": 38123,
+          "sha256": "6a68224f1dd202c8c6948a98d07e63f52bf254effe4e92fe9e47a5a6df85b614"
+        },
+        "svg": {
+          "path": "signed_control_mechanism/figures/full/subspace_q_distributions.svg",
+          "bytes": 207700,
+          "sha256": "1e74c489a99e9a815ea9fa614e8f63a003974d0880f601a21397b94979702a01"
+        }
+      },
+      "sources": [
+        {
+          "path": "signed_control_mechanism/tables/full/subspace_diagnostics_per_record.csv",
+          "bytes": 167578375,
+          "sha256": "2ed4bac9612b5d57c4f1721132aae090faa7bd1f6705dee9c1f8177f1508d001"
+        }
+      ],
+      "aggregation_counts": [
+        {
+          "panel": "noise_10",
+          "condition": "clean",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 2158,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 1
+        },
+        {
+          "panel": "noise_10",
+          "condition": "E",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "noise_10",
+          "condition": "S",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 64740,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 30
+        },
+        {
+          "panel": "noise_10",
+          "condition": "I",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "noise_10",
+          "condition": "S_00",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "noise_10",
+          "condition": "S_01",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "noise_10",
+          "condition": "S_02",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "noise_10",
+          "condition": "S_03",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "noise_10",
+          "condition": "S_04",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "noise_5",
+          "condition": "clean",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 2158,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 1
+        },
+        {
+          "panel": "noise_5",
+          "condition": "E",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "noise_5",
+          "condition": "S",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 64740,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 30
+        },
+        {
+          "panel": "noise_5",
+          "condition": "I",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "noise_5",
+          "condition": "S_00",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "noise_5",
+          "condition": "S_01",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "noise_5",
+          "condition": "S_02",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "noise_5",
+          "condition": "S_03",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "noise_5",
+          "condition": "S_04",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "noise_0",
+          "condition": "clean",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 2158,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 1
+        },
+        {
+          "panel": "noise_0",
+          "condition": "E",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "noise_0",
+          "condition": "S",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 64740,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 30
+        },
+        {
+          "panel": "noise_0",
+          "condition": "I",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "noise_0",
+          "condition": "S_00",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "noise_0",
+          "condition": "S_01",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "noise_0",
+          "condition": "S_02",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "noise_0",
+          "condition": "S_03",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "noise_0",
+          "condition": "S_04",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "input_10",
+          "condition": "clean",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 2158,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 1
+        },
+        {
+          "panel": "input_10",
+          "condition": "E",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "input_10",
+          "condition": "S",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 64740,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 30
+        },
+        {
+          "panel": "input_10",
+          "condition": "I",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "input_10",
+          "condition": "S_00",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "input_10",
+          "condition": "S_01",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "input_10",
+          "condition": "S_02",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "input_10",
+          "condition": "S_03",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "input_10",
+          "condition": "S_04",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "input_5",
+          "condition": "clean",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 2158,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 1
+        },
+        {
+          "panel": "input_5",
+          "condition": "E",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "input_5",
+          "condition": "S",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 64740,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 30
+        },
+        {
+          "panel": "input_5",
+          "condition": "I",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "input_5",
+          "condition": "S_00",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "input_5",
+          "condition": "S_01",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "input_5",
+          "condition": "S_02",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "input_5",
+          "condition": "S_03",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "input_5",
+          "condition": "S_04",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "input_0",
+          "condition": "clean",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 2158,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 1
+        },
+        {
+          "panel": "input_0",
+          "condition": "E",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "input_0",
+          "condition": "S",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 64740,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 30
+        },
+        {
+          "panel": "input_0",
+          "condition": "I",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "input_0",
+          "condition": "S_00",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "input_0",
+          "condition": "S_01",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "input_0",
+          "condition": "S_02",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "input_0",
+          "condition": "S_03",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        },
+        {
+          "panel": "input_0",
+          "condition": "S_04",
+          "n_records": 2158,
+          "n_patients": 1877,
+          "n_source_rows": 12948,
+          "n_source_null": 0,
+          "n_null_record_means": 0,
+          "fixed_values_per_record": 6
+        }
+      ]
+    },
+    {
+      "id": "subspace_geometry",
+      "caption": "Exact projector matrices P and all five SPS matrices, principal angles between actual rank-eight column spaces, unit-source covariance eigenvalues and relative covariance changes. Matrix-coordinate heatmaps and principal angles describe actual high-dimensional geometry without depicting a literal 12-D plane. Preserved eigenvalues do not imply preserved directions. These ideal Standard subspace constraints do not establish physiological plausibility or unique causality.",
+      "files": {
+        "png": {
+          "path": "signed_control_mechanism/figures/full/subspace_geometry.png",
+          "bytes": 240358,
+          "sha256": "7c1eb8a5781db52c834ee569d1698016c09ab2b54651f41eab27b72dd331ac4a"
+        },
+        "pdf": {
+          "path": "signed_control_mechanism/figures/full/subspace_geometry.pdf",
+          "bytes": 46481,
+          "sha256": "226a3ae3f5aa2ba54e1b42dae3cd8e3e9168b70ba8e52c7dcf81e0b196beb800"
+        },
+        "svg": {
+          "path": "signed_control_mechanism/figures/full/subspace_geometry.svg",
+          "bytes": 139453,
+          "sha256": "76ebe83b99eadf87d378e5dcbdf495c4ad771db5a450b5aa2029de3f58305ffc"
+        }
+      },
+      "sources": [
+        {
+          "path": "signed_control_mechanism/inputs/matrices.json",
+          "bytes": 75676,
+          "sha256": "87290011115bfbde18875cb4fcb0af5c48bc850d89287f107dbe8b9e4594e4e8"
+        }
+      ]
+    },
+    {
+      "id": "input_validation",
+      "caption": "Actual post-addition residual SNR, per-lead RMS and per-lead frequency-bin PSD errors are plotted against their frozen gates. Each point is the worst observed record/noise error within a condition and SNR, not a patient estimate or CI. Designed base/scaled sign identities and PSD invariance are separately displayed as exact-zero requirements. Nonapplicable independent-noise PSD and sign comparisons are explicitly labelled rather than filled with fake zeros.",
+      "files": {
+        "png": {
+          "path": "signed_control_mechanism/figures/full/input_validation.png",
+          "bytes": 174950,
+          "sha256": "9d495786ab382ac4a7e13a5d011d83955a2e302e0bf81a0ff318eb04c6d8645a"
+        },
+        "pdf": {
+          "path": "signed_control_mechanism/figures/full/input_validation.pdf",
+          "bytes": 32664,
+          "sha256": "45834c09c32af6664e91ea19c0d76ff2d979a184b79ac08c9c0f7e92030167d5"
+        },
+        "svg": {
+          "path": "signed_control_mechanism/figures/full/input_validation.svg",
+          "bytes": 78263,
+          "sha256": "bab9e278d041281d447033419f12e0df9f5174388c89806c5531445cd492d213"
+        }
+      },
+      "sources": [
+        {
+          "path": "signed_control_mechanism/tables/full/input_validation.csv",
+          "bytes": 190392063,
+          "sha256": "aa02f3775474d1ab5f885030b7b44114be5e3e153dbf893d7ab0e6624090491f"
+        },
+        {
+          "path": "signed_control_mechanism/configs/signed_control_full.json",
+          "bytes": 5904,
+          "sha256": "38821d30b452ed3c6aadc2cf0c1bcf2050de7fb43708e54a58c50f5fb454aa9c"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "path": "signed_control_mechanism/logs/full/full_verification.json",
+      "bytes": 5201,
+      "sha256": "44bf91f6d239e6851dd78124d63e78dd6c9f295999103c7632e77d6ab8ba2380"
+    },
+    {
+      "path": "signed_control_mechanism/logs/full/statistics.json",
+      "bytes": 213679,
+      "sha256": "714f13fc81c827e2027b71213b5844f84608b70896d480f2b5ed5fe7c5688bf1"
+    },
+    {
+      "path": "signed_control_mechanism/inputs/full/manifest.json",
+      "bytes": 224251,
+      "sha256": "35f6414a484e65227b04d3717f37e1f9b609e1020f1cf3513277e267c8f41d4a"
+    },
+    {
+      "path": "signed_control_mechanism/logs/full/freeze.json",
+      "bytes": 30906,
+      "sha256": "992359abafe74141bc0f65ba122c0f0d5efbc1ea0eaeafac16c28f89576ad2cb"
+    },
+    {
+      "path": "signed_control_mechanism/configs/signed_control_full.json",
+      "bytes": 5904,
+      "sha256": "38821d30b452ed3c6aadc2cf0c1bcf2050de7fb43708e54a58c50f5fb454aa9c"
+    },
+    {
+      "path": "signed_control_mechanism/tables/full/input_validation.csv",
+      "bytes": 190392063,
+      "sha256": "aa02f3775474d1ab5f885030b7b44114be5e3e153dbf893d7ab0e6624090491f"
+    },
+    {
+      "path": "signed_control_mechanism/tables/full/subspace_diagnostics_per_record.csv",
+      "bytes": 167578375,
+      "sha256": "2ed4bac9612b5d57c4f1721132aae090faa7bd1f6705dee9c1f8177f1508d001"
+    },
+    {
+      "path": "signed_control_mechanism/tables/full/subspace_diagnostics_summary.csv",
+      "bytes": 47907,
+      "sha256": "b04b9ec72043a3f0a0300070e7d7ee61a4e988462a0e87810d980574f756e7cb"
+    },
+    {
+      "path": "signed_control_mechanism/tables/full/signed_control_summary.csv",
+      "bytes": 8505,
+      "sha256": "7ed1a6060862e7fc3942fedb8f021e860e43932d966d5144f8fdfe395c364e6c"
+    },
+    {
+      "path": "signed_control_mechanism/tables/full/signed_control_seed_effects.csv",
+      "bytes": 7491,
+      "sha256": "523b7b6476f738be011d6e7fad0048b456c164c76788440ba68b3fd4ec29d5fc"
+    },
+    {
+      "path": "signed_control_mechanism/tables/full/signed_control_noise_effects.csv",
+      "bytes": 48726,
+      "sha256": "14d9fead1e196a55598f9f3e9b4ef5fb798aa51c09821277611c09352afe47b9"
+    },
+    {
+      "path": "signed_control_mechanism/tables/full/signed_mode_effects.csv",
+      "bytes": 45831,
+      "sha256": "01e7a9d8549aaca4812202fb0c82e95b02e1c3a98cc49955d4baf5539c1fe575"
+    },
+    {
+      "path": "signed_control_mechanism/tables/full/signed_mode_summary.csv",
+      "bytes": 40284,
+      "sha256": "6df1ed7edf92b0930c0bbb196de668084ffda6525598a1627ee277881a9db249"
+    },
+    {
+      "path": "signed_control_mechanism/tables/full/absolute_metrics.csv",
+      "bytes": 21031,
+      "sha256": "77fee1cd1aa80cbc977c0a115a403c41e065c2a6f69dd0b2af8083071ccff81e"
+    },
+    {
+      "path": "signed_control_mechanism/bootstrap/full/distribution_manifest.json",
+      "bytes": 3157972,
+      "sha256": "f3bcc697558858869ff1a33117dd4fd3f905205a1f3378b3a6c6643fa0a26731"
+    },
+    {
+      "path": "signed_control_mechanism/inputs/matrices.json",
+      "bytes": 75676,
+      "sha256": "87290011115bfbde18875cb4fcb0af5c48bc850d89287f107dbe8b9e4594e4e8"
+    },
+    {
+      "path": "signed_control_mechanism/inputs/sign_controls.json",
+      "bytes": 7604,
+      "sha256": "8fc1d3ed55b65c8f7d422967e601071eea2cd4cc044a0154665b2787fbc14e87"
+    }
+  ],
+  "implementation": {
+    "path": "signed_control_mechanism/plot.py",
+    "bytes": 32511,
+    "sha256": "75e898971992180d208ac8594f12709eb0d1a3b022be2be16a9576a5615090ff"
+  },
+  "implementation_dependencies": [
+    {
+      "path": "signed_control_mechanism/common.py",
+      "bytes": 5592,
+      "sha256": "113a87daa9b44b95ac239eafcff15bfcd7efd67677b254b9454a5624766639cc"
+    },
+    {
+      "path": "methodology_supplement/plot.py",
+      "bytes": 26635,
+      "sha256": "b1dc863538a7428226d34214c49ec2e296d2bc45b8ace92ccda26fcf4bd7c008"
+    },
+    {
+      "path": "methodology_supplement/common.py",
+      "bytes": 5032,
+      "sha256": "daa3f53259c8c231e26cf36de4963f4d7f77a34c30d517309aeea9fca57f9c26"
+    },
+    {
+      "path": "phase2/src/plot_phase2.py",
+      "bytes": 58365,
+      "sha256": "8d9ffef6bfa7fc829313ea2c22ae901e151e4d6c8ff2e7682b0b318b0225a62a"
+    }
+  ],
+  "display_scale": 100,
+  "metric_units": "percentage points",
+  "uncertainty": "Thin: paired patient 95% CI, conditional on fixed checkpoints/noises/modes. Thick: +/-1 training-seed SD (3 seeds); these are separate, not combined.",
+  "q_aggregation": "Complete per-ECG fixed-factor averages, then descriptive across-ECG distributions; nulls propagate; no derived CSV."
+}

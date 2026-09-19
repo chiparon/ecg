@@ -1,0 +1,364 @@
+{
+  "status": "frozen_before_predictions",
+  "frozen_at": "2026-09-19T17:46:09.043817+00:00",
+  "base_commit": "c18e9555ce8d53771167af39c784d25e7cae3445",
+  "config_sha256": "529cd33fdb0927fc88124e6993cac44ecd5a4b4a01a0b814e8602dfbd99d70cd",
+  "config_file": {
+    "path": "signed_control_mechanism/configs/signed_control_full.json",
+    "bytes": 5904,
+    "sha256": "38821d30b452ed3c6aadc2cf0c1bcf2050de7fb43708e54a58c50f5fb454aa9c"
+  },
+  "task_specification": {
+    "path": "Agent Task：保秩保谱 Signed-Control 机制实验.md",
+    "bytes": 19666,
+    "sha256": "32d336209ad6418966047764a76f34588db7a8415312484c04b449d656265a10"
+  },
+  "selection_seed": 2026092001,
+  "generator": "numpy.random.Generator(numpy.random.PCG64(seed))",
+  "numpy_version": "2.2.6",
+  "lead_order": [
+    "I",
+    "II",
+    "III",
+    "aVR",
+    "aVL",
+    "aVF",
+    "V1",
+    "V2",
+    "V3",
+    "V4",
+    "V5",
+    "V6"
+  ],
+  "controls": [
+    {
+      "mode": "S_00",
+      "candidate_index": 1,
+      "sign_vector": [
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1
+      ],
+      "negative_count": 7,
+      "covariance_relative_change": 1.178468678736567,
+      "accepted": true,
+      "reason": "accepted_first_eligible_in_rng_order",
+      "matrix_array_sha256": "015ddad910dfb816144a0ae4232d1ffb34a2dbb4f0b14d2ae332b9eadf6d407c"
+    },
+    {
+      "mode": "S_01",
+      "candidate_index": 2,
+      "sign_vector": [
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        1
+      ],
+      "negative_count": 6,
+      "covariance_relative_change": 0.9926391739380062,
+      "accepted": true,
+      "reason": "accepted_first_eligible_in_rng_order",
+      "matrix_array_sha256": "c5d9275c34020c854a6ddca9c74c9ec173988be6cae714606f487108c8b96da8"
+    },
+    {
+      "mode": "S_02",
+      "candidate_index": 5,
+      "sign_vector": [
+        1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        -1
+      ],
+      "negative_count": 6,
+      "covariance_relative_change": 0.8457483878456405,
+      "accepted": true,
+      "reason": "accepted_first_eligible_in_rng_order",
+      "matrix_array_sha256": "47673554920ee57ed15059d69fe86dd3b876d27bc5ee2a86529eef6a71f3f768"
+    },
+    {
+      "mode": "S_03",
+      "candidate_index": 8,
+      "sign_vector": [
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        1
+      ],
+      "negative_count": 6,
+      "covariance_relative_change": 1.2954224596653499,
+      "accepted": true,
+      "reason": "accepted_first_eligible_in_rng_order",
+      "matrix_array_sha256": "2f60322d761afb7413fcb22bfe0e96477724f1bd4caed439dfa815091b2461a2"
+    },
+    {
+      "mode": "S_04",
+      "candidate_index": 10,
+      "sign_vector": [
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        -1
+      ],
+      "negative_count": 6,
+      "covariance_relative_change": 1.2272441442811994,
+      "accepted": true,
+      "reason": "accepted_first_eligible_in_rng_order",
+      "matrix_array_sha256": "762c9b236a133e229f711332b7aa1addae5fba9cec11eec95e902cbe3f816c66"
+    }
+  ],
+  "candidate_history": [
+    {
+      "candidate_index": 1,
+      "sign_vector": [
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1
+      ],
+      "negative_count": 7,
+      "covariance_relative_change": 1.178468678736567,
+      "accepted": true,
+      "reason": "accepted_first_eligible_in_rng_order"
+    },
+    {
+      "candidate_index": 2,
+      "sign_vector": [
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        1
+      ],
+      "negative_count": 6,
+      "covariance_relative_change": 0.9926391739380062,
+      "accepted": true,
+      "reason": "accepted_first_eligible_in_rng_order"
+    },
+    {
+      "candidate_index": 3,
+      "sign_vector": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        1
+      ],
+      "negative_count": 1,
+      "covariance_relative_change": 0.253566087042988,
+      "accepted": false,
+      "reason": "negative_count_outside_4_to_7"
+    },
+    {
+      "candidate_index": 4,
+      "sign_vector": [
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "negative_count": 8,
+      "covariance_relative_change": 1.1730001170773394,
+      "accepted": false,
+      "reason": "negative_count_outside_4_to_7"
+    },
+    {
+      "candidate_index": 5,
+      "sign_vector": [
+        1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        -1
+      ],
+      "negative_count": 6,
+      "covariance_relative_change": 0.8457483878456405,
+      "accepted": true,
+      "reason": "accepted_first_eligible_in_rng_order"
+    },
+    {
+      "candidate_index": 6,
+      "sign_vector": [
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1
+      ],
+      "negative_count": 2,
+      "covariance_relative_change": 0.8457483878456407,
+      "accepted": false,
+      "reason": "negative_count_outside_4_to_7"
+    },
+    {
+      "candidate_index": 7,
+      "sign_vector": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        1
+      ],
+      "negative_count": 1,
+      "covariance_relative_change": 0.253566087042988,
+      "accepted": false,
+      "reason": "negative_count_outside_4_to_7"
+    },
+    {
+      "candidate_index": 8,
+      "sign_vector": [
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        1
+      ],
+      "negative_count": 6,
+      "covariance_relative_change": 1.2954224596653499,
+      "accepted": true,
+      "reason": "accepted_first_eligible_in_rng_order"
+    },
+    {
+      "candidate_index": 9,
+      "sign_vector": [
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        -1
+      ],
+      "negative_count": 9,
+      "covariance_relative_change": 0.9730133983339345,
+      "accepted": false,
+      "reason": "negative_count_outside_4_to_7"
+    },
+    {
+      "candidate_index": 10,
+      "sign_vector": [
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        -1
+      ],
+      "negative_count": 6,
+      "covariance_relative_change": 1.2272441442811994,
+      "accepted": true,
+      "reason": "accepted_first_eligible_in_rng_order"
+    }
+  ],
+  "matrices_sha256": "87290011115bfbde18875cb4fcb0af5c48bc850d89287f107dbe8b9e4594e4e8",
+  "selection_used_classification_results": false
+}

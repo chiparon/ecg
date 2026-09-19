@@ -1,0 +1,28 @@
+{
+  "stage": "full",
+  "config_sha256": "529cd33fdb0927fc88124e6993cac44ecd5a4b4a01a0b814e8602dfbd99d70cd",
+  "draws": {
+    "path": "methodology_supplement/results/test_inputs/full/patient_draws.npy",
+    "bytes": 15016128,
+    "sha256": "295179b3aa31dc71a97781fff3eaa11aa947b3d671ae80eb9194fa65098a9a2f"
+  },
+  "cohort": {
+    "path": "methodology_supplement/results/test_inputs/full/cohort.npz",
+    "bytes": 128750,
+    "sha256": "bf8e9c8aae5066cf8e49d3f701dcc9b3236b12dfe38fe034c1194f261670e9e7"
+  },
+  "array_hashes": {
+    "y": "b0545de7eab0013e91ce0e020fa47f653ed7e5485a73285ff464236de495755d",
+    "ids": "6d301c8a20ab02ba26f46bc23b36845c9fddb0bdd36eeffac2682590af3d0ccb",
+    "patient_ids": "468803c21ba5d6b253ab96b82ce6d70f7e2579b3925ff5d086c357b4dc50a4be",
+    "indices": "ed2c59bd45c8182eae90ee65187a79a96948ae2d422c59246e2623271d4c78aa",
+    "unique_patients": "925bd3cf5f374e3b7903c7af40692b5d4f4f004676a7b0ecaabbf30b3e982f24",
+    "patient_inverse": "7879f5cbe91e1d14579e9e8c423f91b8a1dfa73a0bc0ab8b7d3c5dd28634c108"
+  },
+  "source_freeze": {
+    "path": "methodology_supplement/results/logs/full/freeze.json",
+    "bytes": 14117,
+    "sha256": "2ddfa520317435ba6fb0e54342ca61c83629e89dc3b0926e018eaba9b14b97aa"
+  },
+  "byte_identical": true
+}

@@ -1,0 +1,18 @@
+{
+  "bundle": {
+    "path": "signed_control_mechanism/logs/smoke/deployment_bundle.zip",
+    "bytes": 1503996,
+    "sha256": "b2a282d3aea0233db76d15e8be3c6faee58ab3dee7a7055b729d15436f272fb2"
+  },
+  "new_raw_or_clean_waveform_files_transferred": 0,
+  "reused_existing_dgx_files": 22,
+  "status": "completed",
+  "stage": "smoke",
+  "direction": "push",
+  "config_sha256": "529cd33fdb0927fc88124e6993cac44ecd5a4b4a01a0b814e8602dfbd99d70cd",
+  "host": "dgx6",
+  "remote_root": "/home/chiparon/ecg_methodology_minimal_five",
+  "remote_python": "/home/chiparon/ecg_benchmark/20260919_134009/venv/bin/python",
+  "completed_at": "2026-09-19T18:00:34.337844+00:00",
+  "elapsed_seconds": 3.1344719000626355
+}

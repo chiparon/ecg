@@ -1,0 +1,24 @@
+{
+  "status": "waived_by_user",
+  "stage": "smoke",
+  "config_sha256": "529cd33fdb0927fc88124e6993cac44ecd5a4b4a01a0b814e8602dfbd99d70cd",
+  "authorized_at": "2026-09-19T18:07:56.301417+00:00",
+  "user_instruction": "直接开干吧，别烟测浪费时间了",
+  "scope": "Skip remaining smoke merge/bootstrap/statistical verification; proceed directly to full execution. Full input, inference, statistics and publication verification remain required.",
+  "completed_before_instruction": [
+    "100-record input and q audit",
+    "local TCN signed predictions",
+    "two DGX ResNet signed prediction shards"
+  ],
+  "not_executed": [
+    "smoke prediction merge",
+    "smoke patient-bootstrap statistics",
+    "complete smoke verification"
+  ],
+  "scientific_configuration_changed": false,
+  "controls_resampled": false,
+  "pre_amendment_sources": {
+    "path": "signed_control_mechanism/logs/smoke/pre_amendment_sources.zip",
+    "sha256": "d05160d823b0bb65966f07a53482c99f8756e2da538ff199266a8522f172bb6c"
+  }
+}

@@ -1,0 +1,6 @@
+mode,candidate_index,sign_vector,negative_count,rank_standard,rank_signed,singular_max_abs_error,eigenvalues_max_abs_error,covariance_diagonal_max_abs_error,unit_source_rms_max_abs_error,covariance_relative_change,offdiagonal_sign_differences,different_from_standard,matrix_array_sha256,passed
+S_00,1,"[1,-1,1,-1,-1,-1,-1,1,-1,1,1,-1]",7,8,8,0.0,0.0,0.0,0.0,1.178468678736567,30,True,015ddad910dfb816144a0ae4232d1ffb34a2dbb4f0b14d2ae332b9eadf6d407c,True
+S_01,2,"[1,-1,-1,1,-1,-1,-1,1,1,-1,1,1]",6,8,8,0.0,0.0,0.0,0.0,0.9926391739380062,28,True,c5d9275c34020c854a6ddca9c74c9ec173988be6cae714606f487108c8b96da8,True
+S_02,5,"[1,1,1,-1,1,1,-1,-1,-1,-1,1,-1]",6,8,8,0.0,0.0,0.0,0.0,0.8457483878456405,18,True,47673554920ee57ed15059d69fe86dd3b876d27bc5ee2a86529eef6a71f3f768,True
+S_03,8,"[1,1,1,-1,-1,-1,-1,-1,1,1,-1,1]",6,8,8,0.0,0.0,0.0,0.0,1.2954224596653499,30,True,2f60322d761afb7413fcb22bfe0e96477724f1bd4caed439dfa815091b2461a2,True
+S_04,10,"[1,1,-1,-1,1,1,1,-1,-1,1,-1,-1]",6,8,8,0.0,0.0,0.0,0.0,1.2272441442811994,32,True,762c9b236a133e229f711332b7aa1addae5fba9cec11eec95e902cbe3f816c66,True

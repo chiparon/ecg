@@ -1,0 +1,142 @@
+{
+  "status": "passed",
+  "stage": "full",
+  "config_sha256": "529cd33fdb0927fc88124e6993cac44ecd5a4b4a01a0b814e8602dfbd99d70cd",
+  "started_at": "2026-09-19T18:21:30.531974+00:00",
+  "implementation": {
+    "path": "signed_control_mechanism/verify.py",
+    "bytes": 25547,
+    "sha256": "077e739b70bbc8a896bd59a6fddd18d351fc5b8e3edc6dab2ac5669ff2ca5468"
+  },
+  "matrices": {
+    "rank": 8,
+    "controls": 5,
+    "candidate_indices": [
+      1,
+      2,
+      5,
+      8,
+      10
+    ],
+    "independent_method": "Full SVD left-null basis; direct PCG64 candidate replay"
+  },
+  "inputs": {
+    "n_validation_rows": 271908,
+    "n_subspace_rows": 545974,
+    "q_summary_groups": 253,
+    "all_record_producer_gates": {
+      "status": "passed",
+      "snr_abs_error_db": 1.4362392075639718e-07,
+      "designed_snr_abs_error_db": 1.3082873628889047e-07,
+      "max_lead_rms_relative_error": 4.2432047708104414e-08,
+      "max_designed_lead_rms_relative_error": 1.3777855832420796e-08,
+      "max_periodogram_peak_relative_error": 3.6719272195277846e-07,
+      "max_designed_periodogram_peak_relative_error": 0.0,
+      "max_base_sign_absolute_error": 0.0,
+      "max_scaled_sign_absolute_error": 0.0,
+      "limits": {
+        "matrix_absolute_tolerance": 1e-12,
+        "snr_abs_error_db": 0.0001,
+        "lead_rms_relative_error": 1e-06,
+        "periodogram_tolerance": 1e-06,
+        "periodogram_error_definition": "Check every frequency bin separately for every lead. Designed signed-noise PSDs must be exactly equal. Post-addition residual PSD error is the maximum absolute bin difference divided by the reference peak for that lead, not a pooled lead spectrum. Zero reference spectra require exact zero.",
+        "legacy_metric_abs_error": 0.0001,
+        "legacy_f1_abs_error": 0.001,
+        "legacy_label_agreement_min": 0.999,
+        "statistic_point_tolerance": 2e-07
+      },
+      "legacy_input_hashes_verified": 36,
+      "projection_errors": {
+        "symmetry_frobenius": 1.2393264097671234e-15,
+        "idempotence_frobenius": 1.2434468376125226e-15,
+        "complement_frobenius": 0.0
+      }
+    },
+    "independent_replay_records": [
+      0,
+      1,
+      1079,
+      2156,
+      2157
+    ],
+    "independent_replayed_conditions": 126,
+    "independent_replay_input_count": 630,
+    "q_null_rows": 0,
+    "scope": "All-record producer audits and all q summaries checked; waveform/SVD/FFT independent replay is a deterministic five-record sample in every condition."
+  },
+  "statistics": {
+    "predictions": 762,
+    "new_signed": 540,
+    "reused_E_I": 216,
+    "reused_clean": 6,
+    "all_paired_arrays_verified": 474,
+    "all_detail_rows_verified": 1944,
+    "original_E_I_endpoints_verified": 18,
+    "explicit_patient_draw_consumer_checks": 18,
+    "n_invalid": {
+      "macro_auroc": [
+        0
+      ],
+      "macro_f1": [
+        0
+      ],
+      "ece": [
+        0
+      ]
+    },
+    "cache_counts": {
+      "reused_legacy": 222,
+      "resumed_new": 0,
+      "recomputed": 540
+    },
+    "dgx_overlap_seconds": 15.662488
+  },
+  "smoke_authorization": {
+    "status": "waived_by_user",
+    "stage": "smoke",
+    "config_sha256": "529cd33fdb0927fc88124e6993cac44ecd5a4b4a01a0b814e8602dfbd99d70cd",
+    "authorized_at": "2026-09-19T18:07:56.301417+00:00",
+    "user_instruction": "直接开干吧，别烟测浪费时间了",
+    "scope": "Skip remaining smoke merge/bootstrap/statistical verification; proceed directly to full execution. Full input, inference, statistics and publication verification remain required.",
+    "completed_before_instruction": [
+      "100-record input and q audit",
+      "local TCN signed predictions",
+      "two DGX ResNet signed prediction shards"
+    ],
+    "not_executed": [
+      "smoke prediction merge",
+      "smoke patient-bootstrap statistics",
+      "complete smoke verification"
+    ],
+    "scientific_configuration_changed": false,
+    "controls_resampled": false,
+    "pre_amendment_sources": {
+      "path": "signed_control_mechanism/logs/smoke/pre_amendment_sources.zip",
+      "sha256": "d05160d823b0bb65966f07a53482c99f8756e2da538ff199266a8522f172bb6c"
+    }
+  },
+  "sources": {
+    "freeze": {
+      "path": "signed_control_mechanism/logs/full/freeze.json",
+      "bytes": 30906,
+      "sha256": "992359abafe74141bc0f65ba122c0f0d5efbc1ea0eaeafac16c28f89576ad2cb"
+    },
+    "inputs": {
+      "path": "signed_control_mechanism/inputs/full/manifest.json",
+      "bytes": 224251,
+      "sha256": "35f6414a484e65227b04d3717f37e1f9b609e1020f1cf3513277e267c8f41d4a"
+    },
+    "merge": {
+      "path": "signed_control_mechanism/logs/full/evaluation_merge.json",
+      "bytes": 6697,
+      "sha256": "84115959a92fa46ee7e9b21e1adf556b09d1282c3c6f9d93c313b36ca106b2c4"
+    },
+    "statistics": {
+      "path": "signed_control_mechanism/logs/full/statistics.json",
+      "bytes": 213679,
+      "sha256": "714f13fc81c827e2027b71213b5844f84608b70896d480f2b5ed5fe7c5688bf1"
+    }
+  },
+  "elapsed_seconds": 18.317317300010473,
+  "finished_at": "2026-09-19T18:21:48.848452+00:00"
+}

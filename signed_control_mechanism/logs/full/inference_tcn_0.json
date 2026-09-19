@@ -1,0 +1,359 @@
+{
+  "status": "completed",
+  "stage": "full",
+  "model": "tcn",
+  "config_sha256": "529cd33fdb0927fc88124e6993cac44ecd5a4b4a01a0b814e8602dfbd99d70cd",
+  "shard_index": 0,
+  "shard_count": 1,
+  "pid": 96976,
+  "started_at": "2026-09-19T18:13:05.634799+00:00",
+  "finished_at": "2026-09-19T18:17:24.541007+00:00",
+  "observed_cells": 270,
+  "resumed_cells": 0,
+  "internal_clean_prediction_hashes": {
+    "17": "74ae5b74ff028b0bed2b0a4ba06509adf4ca67290876e4838b50f57e65364e0d",
+    "29": "005a9db65d08ed967d4c07e1df87b85112df5e246024aec3962db5b880de1284",
+    "43": "2abe86537c5cea6178592ac3ffefeb72b40e40f25f343e0614f4fde77f1b5ebd"
+  },
+  "internal_clean_predictions": {
+    "17": {
+      "path": "signed_control_mechanism/predictions/full/worker_tcn_0/internal_clean/seed_17.npz",
+      "bytes": 61704,
+      "sha256": "8f873531d8af80f5ebe0b0e312f3f22145f5a409d42aa188aaaf29023f7121c2"
+    },
+    "29": {
+      "path": "signed_control_mechanism/predictions/full/worker_tcn_0/internal_clean/seed_29.npz",
+      "bytes": 61652,
+      "sha256": "9066d7eea06cd167bdc4d46ad7fe4612c6e91faf01a56826e5866497b0471666"
+    },
+    "43": {
+      "path": "signed_control_mechanism/predictions/full/worker_tcn_0/internal_clean/seed_43.npz",
+      "bytes": 61640,
+      "sha256": "a9dafa15e6c2f9afabb28a25a3ccbcb0b72d7ec6dc9e864fc0c3ff2aea4e26fa"
+    }
+  },
+  "smoke_verification": {
+    "path": "signed_control_mechanism/logs/smoke/smoke_verification.json",
+    "bytes": 1038,
+    "sha256": "4192b212b8f032f46fab968ec95e9290bb50908498ebb679197c80c1df9933d1"
+  },
+  "verification_only": false,
+  "case_filter": null,
+  "host": "chiparon",
+  "fqdn": "chiparon",
+  "assigned_host": "chiparon",
+  "host_assignment_verified": true,
+  "device": "cuda:0",
+  "device_name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "device_capability": [
+    8,
+    9
+  ],
+  "device_total_memory": 8585216000,
+  "software": {
+    "python": "3.10.19 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 16:41:31) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.22631-SP0",
+    "packages": {
+      "numpy": "2.2.6",
+      "scipy": "1.15.3",
+      "pandas": "2.3.3",
+      "torch": "2.5.1+cu121",
+      "scikit-learn": "1.7.2",
+      "PyYAML": "6.0.3"
+    },
+    "cuda_runtime": "12.1",
+    "cudnn_version": 90100
+  },
+  "fp32_settings": {
+    "default_dtype": "torch.float32",
+    "amp": false,
+    "deterministic_algorithms": true,
+    "cudnn_deterministic": true,
+    "cudnn_benchmark": false,
+    "cudnn_allow_tf32": false,
+    "matmul_allow_tf32": false,
+    "cublas_workspace_config": ":4096:8",
+    "torch_threads": 4,
+    "batch_size": 128,
+    "cuda_visible_devices": null
+  },
+  "expected_cells": 270,
+  "owned_case_ids": [
+    "S_00__snr_0__noise_8128",
+    "S_01__snr_0__noise_8128",
+    "S_02__snr_0__noise_8128",
+    "S_03__snr_0__noise_8128",
+    "S_04__snr_0__noise_8128",
+    "S_00__snr_0__noise_101",
+    "S_01__snr_0__noise_101",
+    "S_02__snr_0__noise_101",
+    "S_03__snr_0__noise_101",
+    "S_04__snr_0__noise_101",
+    "S_00__snr_0__noise_202",
+    "S_01__snr_0__noise_202",
+    "S_02__snr_0__noise_202",
+    "S_03__snr_0__noise_202",
+    "S_04__snr_0__noise_202",
+    "S_00__snr_0__noise_303",
+    "S_01__snr_0__noise_303",
+    "S_02__snr_0__noise_303",
+    "S_03__snr_0__noise_303",
+    "S_04__snr_0__noise_303",
+    "S_00__snr_0__noise_404",
+    "S_01__snr_0__noise_404",
+    "S_02__snr_0__noise_404",
+    "S_03__snr_0__noise_404",
+    "S_04__snr_0__noise_404",
+    "S_00__snr_0__noise_505",
+    "S_01__snr_0__noise_505",
+    "S_02__snr_0__noise_505",
+    "S_03__snr_0__noise_505",
+    "S_04__snr_0__noise_505",
+    "S_00__snr_5__noise_8128",
+    "S_01__snr_5__noise_8128",
+    "S_02__snr_5__noise_8128",
+    "S_03__snr_5__noise_8128",
+    "S_04__snr_5__noise_8128",
+    "S_00__snr_5__noise_101",
+    "S_01__snr_5__noise_101",
+    "S_02__snr_5__noise_101",
+    "S_03__snr_5__noise_101",
+    "S_04__snr_5__noise_101",
+    "S_00__snr_5__noise_202",
+    "S_01__snr_5__noise_202",
+    "S_02__snr_5__noise_202",
+    "S_03__snr_5__noise_202",
+    "S_04__snr_5__noise_202",
+    "S_00__snr_5__noise_303",
+    "S_01__snr_5__noise_303",
+    "S_02__snr_5__noise_303",
+    "S_03__snr_5__noise_303",
+    "S_04__snr_5__noise_303",
+    "S_00__snr_5__noise_404",
+    "S_01__snr_5__noise_404",
+    "S_02__snr_5__noise_404",
+    "S_03__snr_5__noise_404",
+    "S_04__snr_5__noise_404",
+    "S_00__snr_5__noise_505",
+    "S_01__snr_5__noise_505",
+    "S_02__snr_5__noise_505",
+    "S_03__snr_5__noise_505",
+    "S_04__snr_5__noise_505",
+    "S_00__snr_10__noise_8128",
+    "S_01__snr_10__noise_8128",
+    "S_02__snr_10__noise_8128",
+    "S_03__snr_10__noise_8128",
+    "S_04__snr_10__noise_8128",
+    "S_00__snr_10__noise_101",
+    "S_01__snr_10__noise_101",
+    "S_02__snr_10__noise_101",
+    "S_03__snr_10__noise_101",
+    "S_04__snr_10__noise_101",
+    "S_00__snr_10__noise_202",
+    "S_01__snr_10__noise_202",
+    "S_02__snr_10__noise_202",
+    "S_03__snr_10__noise_202",
+    "S_04__snr_10__noise_202",
+    "S_00__snr_10__noise_303",
+    "S_01__snr_10__noise_303",
+    "S_02__snr_10__noise_303",
+    "S_03__snr_10__noise_303",
+    "S_04__snr_10__noise_303",
+    "S_00__snr_10__noise_404",
+    "S_01__snr_10__noise_404",
+    "S_02__snr_10__noise_404",
+    "S_03__snr_10__noise_404",
+    "S_04__snr_10__noise_404",
+    "S_00__snr_10__noise_505",
+    "S_01__snr_10__noise_505",
+    "S_02__snr_10__noise_505",
+    "S_03__snr_10__noise_505",
+    "S_04__snr_10__noise_505"
+  ],
+  "source_fingerprints": [
+    {
+      "path": "methodology_supplement/__init__.py",
+      "bytes": 88,
+      "sha256": "72bf2727c512361d0763427ae9bb1d3ad46bb086e4965542eaec4fd35e349f38"
+    },
+    {
+      "path": "methodology_supplement/common.py",
+      "bytes": 5032,
+      "sha256": "daa3f53259c8c231e26cf36de4963f4d7f77a34c30d517309aeea9fca57f9c26"
+    },
+    {
+      "path": "methodology_supplement/implementation_contract.json",
+      "bytes": 10514,
+      "sha256": "ad65ec9893c06dcc0016a7190f937857e2e3606ccfeafc72731bbb1cc4ddf8b3"
+    },
+    {
+      "path": "methodology_supplement/infer.py",
+      "bytes": 23766,
+      "sha256": "39523c88ae6d7d3e7d2d30e08a2d8a562bf99b5979118d62f8e868543b925272"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/__init__.py",
+      "bytes": 74,
+      "sha256": "40fdfb6f5f22db08a89c41acb12b2a867cff3a5d471c9f951e49dd77c8f7eb5d"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/audit_noise.py",
+      "bytes": 12231,
+      "sha256": "2ad33e67a8c4ed4952eaba4318dea26b22405ecffcac6e6ba11bdd9816a270eb"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/covariance_matching.py",
+      "bytes": 7725,
+      "sha256": "17e2cdcd976c53558937c784774a13dcd1a2f60924c4b03b4345859cfcba4a6b"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/datasets.py",
+      "bytes": 4684,
+      "sha256": "a3f085d44652da86c5c4dfbf088d14c901102d05e75a61b7920b7025786ae4f2"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/evaluate.py",
+      "bytes": 12337,
+      "sha256": "5271e3803393188f9c6c643e3d24ce6aeacdf08ead5cad98eec3e840d7b142d9"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/lead_matrix.py",
+      "bytes": 4192,
+      "sha256": "e7afb8bc617642180175b82f69ac797f74d259246ecac86e4f19eb5025b455b1"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/models.py",
+      "bytes": 5863,
+      "sha256": "53f5858562f4535cebca888776885846af9c442cf3e709a47eecd91407f40ed7"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/noise_generators.py",
+      "bytes": 16113,
+      "sha256": "6439e7eb220d9f1776e859b103570ea7407bec33c0da60aa3d70a95e9f7ef108"
+    },
+    {
+      "path": "phase1_ecg_robustness/src/train.py",
+      "bytes": 23184,
+      "sha256": "b082292d91776c5b4fb6e19db922d7ef6c73f8cde64317a8b43dbfcd256272ca"
+    },
+    {
+      "path": "signed_control_mechanism/__init__.py",
+      "bytes": 63,
+      "sha256": "2384291ed7c2acaca64c0daf5e9c9322cdde860887b252dc0846a0f5457fb7cc"
+    },
+    {
+      "path": "signed_control_mechanism/common.py",
+      "bytes": 5592,
+      "sha256": "113a87daa9b44b95ac239eafcff15bfcd7efd67677b254b9454a5624766639cc"
+    },
+    {
+      "path": "signed_control_mechanism/infer.py",
+      "bytes": 13981,
+      "sha256": "422d4120460375ccb08637bf453c2c18a1a90a8cfd4fa68f13031b99039c86f1"
+    }
+  ],
+  "checkpoint_fingerprints": [
+    {
+      "model": "tcn",
+      "seed": 17,
+      "path": "methodology_supplement/results/test_inputs/full/checkpoints/tcn__seed_17.pt",
+      "bytes": 1759334,
+      "sha256": "6ab54c8261689377c6c10f99db394501b9049ed832793c6ff2ebd827b5d95eec",
+      "scale_mv": 0.2254905871835822,
+      "thresholds": [
+        0.5427896976470947,
+        0.2726720869541168,
+        0.4566221833229065,
+        0.3717820644378662,
+        0.22390954196453094
+      ],
+      "thresholds_dtype": "float64",
+      "model_kwargs": {
+        "base_channels": 24,
+        "dropout": 0.1
+      },
+      "original_source": {
+        "path": "phase1_ecg_robustness/results/checkpoints/full/tcn/seed_17.pt",
+        "bytes": 1759334,
+        "sha256": "6ab54c8261689377c6c10f99db394501b9049ed832793c6ff2ebd827b5d95eec"
+      }
+    },
+    {
+      "model": "tcn",
+      "seed": 29,
+      "path": "methodology_supplement/results/test_inputs/full/checkpoints/tcn__seed_29.pt",
+      "bytes": 1759206,
+      "sha256": "e95999147596689babf082839394d52f32c1e6b8b8204a588e76311861f895f9",
+      "scale_mv": 0.2254905871835822,
+      "thresholds": [
+        0.4279913902282715,
+        0.17765212059020996,
+        0.3926781713962555,
+        0.3789098560810089,
+        0.4916239082813263
+      ],
+      "thresholds_dtype": "float64",
+      "model_kwargs": {
+        "base_channels": 24,
+        "dropout": 0.1
+      },
+      "original_source": {
+        "path": "phase1_ecg_robustness/results/checkpoints/full/tcn/seed_29.pt",
+        "bytes": 1759206,
+        "sha256": "e95999147596689babf082839394d52f32c1e6b8b8204a588e76311861f895f9"
+      }
+    },
+    {
+      "model": "tcn",
+      "seed": 43,
+      "path": "methodology_supplement/results/test_inputs/full/checkpoints/tcn__seed_43.pt",
+      "bytes": 1759206,
+      "sha256": "c7477dff0207ea4b9f85d3d8896a531d71c253bc3616e0bc8daa8bd7370add0b",
+      "scale_mv": 0.2254905871835822,
+      "thresholds": [
+        0.6730353236198425,
+        0.24621285498142242,
+        0.19796960055828094,
+        0.34067991375923157,
+        0.19433487951755524
+      ],
+      "thresholds_dtype": "float64",
+      "model_kwargs": {
+        "base_channels": 24,
+        "dropout": 0.1
+      },
+      "original_source": {
+        "path": "phase1_ecg_robustness/results/checkpoints/full/tcn/seed_43.pt",
+        "bytes": 1759206,
+        "sha256": "c7477dff0207ea4b9f85d3d8896a531d71c253bc3616e0bc8daa8bd7370add0b"
+      }
+    }
+  ],
+  "manifest_fingerprint": {
+    "path": "signed_control_mechanism/inputs/full/manifest.json",
+    "bytes": 224251,
+    "sha256": "35f6414a484e65227b04d3717f37e1f9b609e1020f1cf3513277e267c8f41d4a"
+  },
+  "freeze_fingerprint": {
+    "path": "signed_control_mechanism/logs/full/freeze.json",
+    "bytes": 30906,
+    "sha256": "992359abafe74141bc0f65ba122c0f0d5efbc1ea0eaeafac16c28f89576ad2cb"
+  },
+  "cohort_fingerprint": {
+    "path": "methodology_supplement/results/test_inputs/full/cohort.npz",
+    "bytes": 128750,
+    "sha256": "bf8e9c8aae5066cf8e49d3f701dcc9b3236b12dfe38fe034c1194f261670e9e7"
+  },
+  "clean_fingerprint": {
+    "path": "methodology_supplement/results/test_inputs/full/clean.npy",
+    "bytes": 103584128,
+    "sha256": "aa6ac344b1a19e1e3f043afeb75b5f4abce2dcff61ff0c794fef0b61cc58a5a3"
+  },
+  "run_fingerprint": "061dd5402805603bbfb9354eba460b06605d72c060b8cb073d01a8185d2da105",
+  "elapsed_seconds": 258.90587959997356,
+  "ledger": {
+    "path": "signed_control_mechanism/tables/full/evaluation_tcn_0.csv",
+    "bytes": 324032,
+    "sha256": "b48c1b907e04bba2b2c10a3bf4e7299f73ed06aa4ecc6ca2ea30cafe3d45f995"
+  }
+}

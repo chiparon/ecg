@@ -1,0 +1,85 @@
+{
+  "status": "passed",
+  "stage": "full",
+  "verified_at": "2026-09-19T18:40:24.579380+00:00",
+  "config_sha256": "529cd33fdb0927fc88124e6993cac44ecd5a4b4a01a0b814e8602dfbd99d70cd",
+  "html": {
+    "path": "signed_control_mechanism/reports/signed_control_final_report.html",
+    "bytes": 628614,
+    "sha256": "f2d63ae338ae935e33a7a649d009f5f7bb269864a28fac8685a605abe7c8929c"
+  },
+  "desktop": {
+    "desktop": {
+      "width": 1440,
+      "height": 1000,
+      "horizontalOverflow": 0,
+      "headings": 11,
+      "trackedNumbers": 3916,
+      "loadedFigures": 6,
+      "aurocRows": 18
+    },
+    "toggles": [
+      {
+        "text": "macro-F1：完整 18 行",
+        "open": true,
+        "rows": 18
+      },
+      {
+        "text": "全部对象、SNR、noise 与 mode 的分组 q 摘要",
+        "open": true,
+        "rows": 253
+      }
+    ]
+  },
+  "mobile": {
+    "width": 390,
+    "height": 844,
+    "overflow": 0,
+    "hash": "#reproduce",
+    "hashParagraph": {
+      "width": 354,
+      "scrollWidth": 354
+    }
+  },
+  "native_navigation": {
+    "hash": "#reproduce",
+    "scrollY": 13583,
+    "overflow": 0
+  },
+  "screenshots": [
+    {
+      "path": "signed_control_mechanism/logs/full/browser_desktop.png",
+      "bytes": 128227,
+      "sha256": "44b159dbd89fc78735bfda15df42a16ea70dd274fd3193b89c41ba1d03902659"
+    },
+    {
+      "path": "signed_control_mechanism/logs/full/browser_q_expanded.png",
+      "bytes": 254436,
+      "sha256": "e2f24795d2f42917881c0bb32c65d998d306322b035fa1616162fae65bdf8edc"
+    },
+    {
+      "path": "signed_control_mechanism/logs/full/browser_mobile_final.webp",
+      "bytes": 63482,
+      "sha256": "e0079fee534c0f1bfe05b97375a2522b62c4f66c0f578ca1b0f91c61731c67a9"
+    }
+  ],
+  "figures_visually_reviewed": [
+    "signed_control_structure_effects",
+    "signed_control_snr_curves",
+    "signed_control_matrices",
+    "subspace_q_distributions",
+    "subspace_geometry",
+    "input_validation"
+  ],
+  "resolved_layout_issue": {
+    "before_mobile_document_overflow_px": 154,
+    "after_mobile_document_overflow_px": 0,
+    "cause": "Unbroken configuration SHA-256 in ordinary report paragraphs",
+    "fix": "overflow-wrap:anywhere on paragraphs/list items; numeric data unchanged"
+  },
+  "automation_notes": [
+    "Raw Puppeteer handle traversal failed once; plain DOM geometry/native mouse clicks worked.",
+    "Raw post-reload/resize navigation and animation-frame waits timed out; final narrow-screen evidence uses a fresh managed tab and the native screenshot helper. Tool anomalies were reported."
+  ],
+  "scope": "Actual static offline report; native AUROC/reproduction navigation, native F1 and253-rowq disclosure toggles, six decoded figures, desktop1440x1000 and narrow390x844. File-level verification checks all local links separately."
+}

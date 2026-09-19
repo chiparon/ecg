@@ -1,0 +1,28 @@
+{
+  "stage": "smoke",
+  "config_sha256": "529cd33fdb0927fc88124e6993cac44ecd5a4b4a01a0b814e8602dfbd99d70cd",
+  "draws": {
+    "path": "methodology_supplement/results/test_inputs/smoke/patient_draws.npy",
+    "bytes": 22912,
+    "sha256": "e6d913881e7acf50943ee1f20decaa82da88d64003bda864ed8b32daf838f01b"
+  },
+  "cohort": {
+    "path": "methodology_supplement/results/test_inputs/smoke/cohort.npz",
+    "bytes": 7430,
+    "sha256": "9bd0540133d6fb65ab677f36eaec2dff8f0b6ff9a0de6b7e2dbbc30586b9b2a4"
+  },
+  "array_hashes": {
+    "y": "e483faf3bfe164979b9ec07a62333a3ff2e327f1d73cc5ce931d425deeb90de7",
+    "ids": "d982c17eef71728a0ec7ace66f66c459093faa60dea2213ef298c87eb473631a",
+    "patient_ids": "89cb4ad26f237314d06a10a0b2263c1664dbf6d6ff6b4cf769926c35d82c1f09",
+    "indices": "79c497c403be63f17f085ca97eb931c814d5eb5110a1524e62f299f437b1ae68",
+    "unique_patients": "9e08393faf0d5263c7d66b6f323aecec2dbabe19c1eacb8fd707f831d90a76be",
+    "patient_inverse": "2b444a45ff469cddc69a28d9a2cbe7c7a75d230774596ae2c21b2fdd8de0fc58"
+  },
+  "source_freeze": {
+    "path": "methodology_supplement/results/logs/smoke/freeze.json",
+    "bytes": 14113,
+    "sha256": "77ea3ab681ffca456dc674118f32439a80799e423bb9bd9d6f137e14098e203e"
+  },
+  "byte_identical": true
+}

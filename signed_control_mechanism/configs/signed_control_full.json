@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "experiment": "signed_control_mechanism",
+  "base_commit": "c18e9555ce8d53771167af39c784d25e7cae3445",
+  "repository": "https://github.com/chiparon/ecg",
+  "results_dir": "signed_control_mechanism",
+  "baseline_results_dir": "methodology_supplement/results",
+  "class_order": ["NORM", "MI", "STTC", "CD", "HYP"],
+  "lead_order": ["I", "II", "III", "aVR", "aVL", "aVF", "V1", "V2", "V3", "V4", "V5", "V6"],
+  "models": ["resnet", "tcn"],
+  "phase1_training_seeds": [17, 29, 43],
+  "phase1_noise_seeds": [8128, 101, 202, 303, 404, 505],
+  "snrs": [0, 5, 10],
+  "conditions": ["E", "I", "S_00", "S_01", "S_02", "S_03", "S_04"],
+  "primary": {"metric": "macro_auroc", "contrast": "E-S", "snr": 0, "models": ["resnet", "tcn"]},
+  "contrasts": ["E-S", "S-I", "E-I"],
+  "sampling_rate": 100,
+  "sequence_length": 1000,
+  "selection": {
+    "seed": 2026092001,
+    "generator": "numpy.random.Generator(numpy.random.PCG64(seed))",
+    "count": 5,
+    "first_sign": 1,
+    "draw_rule": "Draw the remaining 11 signs with rng.choice([-1,1], size=11), independently and uniformly; candidate indices are one-based.",
+    "negative_count_inclusive": [4, 7],
+    "covariance_change_min": 1e-10,
+    "acceptance": "Accept first five distinct candidates satisfying only sign-count and covariance-change constraints; no prediction or metric selection. Global sign equivalence fixed by s[0]=+1."
+  },
+  "noise": {
+    "source": "Existing byte-verified Standard 0-dB float32 base arrays; never generate new electrode sources.",
+    "signed_operation": "Multiply Standard base noise by the frozen lead signs, then apply the same float32 10**(-snr/20) factor used by E and add the unchanged clean float32 input.",
+    "independent": "Existing same-record same-seed Standard independent_rms base; no replacement comparator.",
+    "persistence": "Reference existing base files; stream and hash every final input and record. Do not duplicate raw waveforms or materialize redundant signed bases/noisy datasets."
+  },
+  "statistics": {
+    "metrics": ["macro_auroc", "macro_f1", "ece"],
+    "bootstrap_replicates": 2000,
+    "bootstrap_seed": 20260919,
+    "bootstrap_batch_size": 64,
+    "workers": 4,
+    "aggregation": "Paired metric differences within each common patient draw, checkpoint, noise seed and signed mode; equal mean across five modes and six noises within checkpoint, then across three training seeds. Never average probabilities.",
+    "seed_sd": "Sample SD, ddof=1, of the three within-training-seed mean effects.",
+    "noise_sd": "Sample SD across six fixed noise effects after averaging training seeds and signed modes; descriptive only.",
+    "signed_mode_sd": "Sample SD across five fixed mode effects after averaging noises and training seeds; descriptive only, not additional training repetitions.",
+    "patient_ci": "Shared frozen patient-cluster draws, all ECGs of each sampled patient; 2.5/97.5 percentiles conditional on these checkpoints, noises and controls, not joint uncertainty.",
+    "invalid_draws": "Preserve NaN AUROC draws missing a class, never redraw; ordinary means propagate invalidity; report invalid counts.",
+    "f1": "Original frozen clean-validation thresholds; comparison >=; zero_division=0.",
+    "ece": "Original macro classwise positive-probability ECE with 15 equal-width bins; positive ECE contrast is worse, positive AUROC/F1 contrast is better.",
+    "inference": "Exploratory descriptive mechanism analysis; no new p-values, Holm families, equivalence claims, clinical dominance or unique-cause claims."
+  },
+  "subspace": {
+    "pseudoinverse_rcond": 1e-12,
+    "projection_tolerance": 1e-10,
+    "q": "||Q v||_F^2 / ||v||_F^2 in float64; null and explicitly counted if denominator is zero.",
+    "noise_definition": "Audit both designed scaled float32 noise and actual float64(noisy_float32)-float64(clean_float32); primary q_noise uses actual injected residual.",
+    "include_noisy_inputs": true,
+    "shift_policy": "Reuse only existing directly verifiable circular-shift input arrays if present; otherwise report not newly generated, without inventing an equivalent branch."
+  },
+  "execution": {
+    "resnet_host": "dgx6",
+    "resnet_hostname": "spark-3082",
+    "resnet_workers": 2,
+    "tcn_host": "local",
+    "tcn_hostname": "chiparon",
+    "tcn_workers": 1,
+    "batch_size": 128,
+    "torch_threads": 4,
+    "input_workers": 4,
+    "input_batch_size": 64,
+    "precision": "deterministic_fp32",
+    "amp": false,
+    "tf32": false,
+    "remote_root": "/home/chiparon/ecg_methodology_minimal_five",
+    "remote_python": "/home/chiparon/ecg_benchmark/20260919_134009/venv/bin/python",
+    "reuse_policy": "Reuse E/I and clean only after exact cohort, input, checkpoint, thresholds, model-source, probability-hash and frozen-metric checks. Workers own separate predictions, ledgers and reports."
+  },
+  "stages": {
+    "smoke": {"test_limit": 100, "bootstrap_replicates": 64},
+    "full": {"test_limit": null, "bootstrap_replicates": 2000}
+  },
+  "gates": {
+    "matrix_absolute_tolerance": 1e-12,
+    "snr_abs_error_db": 1e-4,
+    "lead_rms_relative_error": 1e-6,
+    "periodogram_tolerance": 1e-6,
+    "periodogram_error_definition": "Check every frequency bin separately for every lead. Designed signed-noise PSDs must be exactly equal. Post-addition residual PSD error is the maximum absolute bin difference divided by the reference peak for that lead, not a pooled lead spectrum. Zero reference spectra require exact zero.",
+    "legacy_metric_abs_error": 1e-4,
+    "legacy_f1_abs_error": 1e-3,
+    "legacy_label_agreement_min": 0.999,
+    "statistic_point_tolerance": 2e-7
+  },
+  "prohibitions": ["new training or fine-tuning", "threshold reselection", "model selection", "performance-based sign selection", "raw PTB-XL waveform upload or copying", "mutation of phase1, phase2, or methodology_supplement scientific results"]
+}

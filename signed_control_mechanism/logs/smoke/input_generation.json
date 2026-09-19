@@ -1,0 +1,321 @@
+{
+  "status": "completed",
+  "stage": "smoke",
+  "config_sha256": "529cd33fdb0927fc88124e6993cac44ecd5a4b4a01a0b814e8602dfbd99d70cd",
+  "completed_at": "2026-09-19T17:56:46.485697+00:00",
+  "provenance": {
+    "freeze": {
+      "path": "signed_control_mechanism/logs/smoke/freeze.json",
+      "bytes": 30892,
+      "sha256": "cec58257294ec1907e3a3f2d6379a53dba205308fb08dd36321ab08f9b56edd8"
+    },
+    "source_files": [
+      {
+        "path": "signed_control_mechanism/inputs.py",
+        "bytes": 34540,
+        "sha256": "54ba9d818cacc37a029d741b4453ef81f7064407f7f9763bdced49a5e4ede83e"
+      },
+      {
+        "path": "signed_control_mechanism/common.py",
+        "bytes": 5592,
+        "sha256": "113a87daa9b44b95ac239eafcff15bfcd7efd67677b254b9454a5624766639cc"
+      },
+      {
+        "path": "methodology_supplement/common.py",
+        "bytes": 5032,
+        "sha256": "daa3f53259c8c231e26cf36de4963f4d7f77a34c30d517309aeea9fca57f9c26"
+      },
+      {
+        "path": "methodology_supplement/noise.py",
+        "bytes": 33322,
+        "sha256": "c5cb68ea5da8f74bba53fd8f19fc0769da3525a766a64772bb5c2f1f4e07b3c8"
+      }
+    ],
+    "config_file": {
+      "path": "signed_control_mechanism/configs/signed_control_full.json",
+      "bytes": 5904,
+      "sha256": "38821d30b452ed3c6aadc2cf0c1bcf2050de7fb43708e54a58c50f5fb454aa9c"
+    },
+    "clean": {
+      "path": "methodology_supplement/results/test_inputs/smoke/clean.npy",
+      "bytes": 4800128,
+      "sha256": "d6311276e2f2be5dcbcfb70cd30ca0c9d6d51682625ce81fc2c206c834e8f4c7"
+    },
+    "cohort": {
+      "path": "methodology_supplement/results/test_inputs/smoke/cohort.npz",
+      "bytes": 7430,
+      "sha256": "9bd0540133d6fb65ab677f36eaec2dff8f0b6ff9a0de6b7e2dbbc30586b9b2a4"
+    },
+    "draws": {
+      "path": "methodology_supplement/results/test_inputs/smoke/patient_draws.npy",
+      "bytes": 22912,
+      "sha256": "e6d913881e7acf50943ee1f20decaa82da88d64003bda864ed8b32daf838f01b"
+    },
+    "sign_controls": {
+      "path": "signed_control_mechanism/inputs/sign_controls.json",
+      "bytes": 7604,
+      "sha256": "8fc1d3ed55b65c8f7d422967e601071eea2cd4cc044a0154665b2787fbc14e87"
+    },
+    "matrices": {
+      "path": "signed_control_mechanism/inputs/matrices.json",
+      "bytes": 75676,
+      "sha256": "87290011115bfbde18875cb4fcb0af5c48bc850d89287f107dbe8b9e4594e4e8"
+    },
+    "legacy_input_manifest": {
+      "path": "methodology_supplement/results/test_inputs/smoke/manifest.json",
+      "bytes": 288646,
+      "sha256": "e2772816e8026fc18c1f3cdf986cbb3461873968119c4ae684733626d5df5cb7"
+    },
+    "smoke_verification": null,
+    "base_files": [
+      {
+        "path": "methodology_supplement/results/test_inputs/smoke/noise/standard__n8128__electrode__0db.npy",
+        "bytes": 4800128,
+        "sha256": "9f5b19756ab7688fc0fed9996c6560e48418dd88da63e62ce8288dc54da3724a"
+      },
+      {
+        "path": "methodology_supplement/results/test_inputs/smoke/noise/standard__n8128__independent_rms__0db.npy",
+        "bytes": 4800128,
+        "sha256": "1919c0164fed2cc7f6b1a72703efac8c684e4592ee884f06a42321fc944b97ae"
+      },
+      {
+        "path": "methodology_supplement/results/test_inputs/smoke/noise/standard__n101__electrode__0db.npy",
+        "bytes": 4800128,
+        "sha256": "1252b056ff24d4c271524773c215cebb872d8366fda5c9e4f03d47c0f9a5e7e9"
+      },
+      {
+        "path": "methodology_supplement/results/test_inputs/smoke/noise/standard__n101__independent_rms__0db.npy",
+        "bytes": 4800128,
+        "sha256": "6d960469ce2c658e6e41a66ccca17f2a760fcf2b2e5ee17d93b015fa4112a405"
+      },
+      {
+        "path": "methodology_supplement/results/test_inputs/smoke/noise/standard__n202__electrode__0db.npy",
+        "bytes": 4800128,
+        "sha256": "63e45c6851a76c900661b3af7236959688af47dd5e958f735bfe0e344d396a0b"
+      },
+      {
+        "path": "methodology_supplement/results/test_inputs/smoke/noise/standard__n202__independent_rms__0db.npy",
+        "bytes": 4800128,
+        "sha256": "4d60317b88f4db86525c84143e1af43138c1bcfd5f306fd02f5b54138be1411c"
+      },
+      {
+        "path": "methodology_supplement/results/test_inputs/smoke/noise/standard__n303__electrode__0db.npy",
+        "bytes": 4800128,
+        "sha256": "f590c6aea55ea370439db5dc0667aaad23fc3dcf8d6daf6e5bbcdae84097710c"
+      },
+      {
+        "path": "methodology_supplement/results/test_inputs/smoke/noise/standard__n303__independent_rms__0db.npy",
+        "bytes": 4800128,
+        "sha256": "56a4e54a4a0f50cb24579fc87304262e11c0270a279245f6c651f34b22df3a20"
+      },
+      {
+        "path": "methodology_supplement/results/test_inputs/smoke/noise/standard__n404__electrode__0db.npy",
+        "bytes": 4800128,
+        "sha256": "4bd40993e095630b306a7a86d0dc43b1ea51942aabe41e80ee26b2459e5eac2a"
+      },
+      {
+        "path": "methodology_supplement/results/test_inputs/smoke/noise/standard__n404__independent_rms__0db.npy",
+        "bytes": 4800128,
+        "sha256": "336ca8b671055612e646d70dc6be569fec8d4fa7d2152653d2826182fd1a0440"
+      },
+      {
+        "path": "methodology_supplement/results/test_inputs/smoke/noise/standard__n505__electrode__0db.npy",
+        "bytes": 4800128,
+        "sha256": "34cefbb30244ec2d013afc9210923681988e33ddd39024d56e461d2f477074c7"
+      },
+      {
+        "path": "methodology_supplement/results/test_inputs/smoke/noise/standard__n505__independent_rms__0db.npy",
+        "bytes": 4800128,
+        "sha256": "b8b6efdd9b7090f37c71163adcb1701a274531fb49efbab67e733650b76435b2"
+      }
+    ],
+    "shift_sources": []
+  },
+  "source_files": [
+    {
+      "path": "signed_control_mechanism/inputs.py",
+      "bytes": 34540,
+      "sha256": "54ba9d818cacc37a029d741b4453ef81f7064407f7f9763bdced49a5e4ede83e"
+    },
+    {
+      "path": "signed_control_mechanism/common.py",
+      "bytes": 5592,
+      "sha256": "113a87daa9b44b95ac239eafcff15bfcd7efd67677b254b9454a5624766639cc"
+    },
+    {
+      "path": "methodology_supplement/common.py",
+      "bytes": 5032,
+      "sha256": "daa3f53259c8c231e26cf36de4963f4d7f77a34c30d517309aeea9fca57f9c26"
+    },
+    {
+      "path": "methodology_supplement/noise.py",
+      "bytes": 33322,
+      "sha256": "c5cb68ea5da8f74bba53fd8f19fc0769da3525a766a64772bb5c2f1f4e07b3c8"
+    }
+  ],
+  "workers": 4,
+  "batch_size": 64,
+  "n_records": 100,
+  "n_cases": 126,
+  "n_validation_rows": 12600,
+  "gates": {
+    "status": "passed",
+    "snr_abs_error_db": 1.3476021809566419e-07,
+    "designed_snr_abs_error_db": 1.2720049102910025e-07,
+    "max_lead_rms_relative_error": 3.182115507955082e-08,
+    "max_designed_lead_rms_relative_error": 1.1342231650964198e-08,
+    "max_periodogram_peak_relative_error": 3.1797586844049804e-07,
+    "max_designed_periodogram_peak_relative_error": 0.0,
+    "max_base_sign_absolute_error": 0.0,
+    "max_scaled_sign_absolute_error": 0.0,
+    "limits": {
+      "matrix_absolute_tolerance": 1e-12,
+      "snr_abs_error_db": 0.0001,
+      "lead_rms_relative_error": 1e-06,
+      "periodogram_tolerance": 1e-06,
+      "periodogram_error_definition": "Check every frequency bin separately for every lead. Designed signed-noise PSDs must be exactly equal. Post-addition residual PSD error is the maximum absolute bin difference divided by the reference peak for that lead, not a pooled lead spectrum. Zero reference spectra require exact zero.",
+      "legacy_metric_abs_error": 0.0001,
+      "legacy_f1_abs_error": 0.001,
+      "legacy_label_agreement_min": 0.999,
+      "statistic_point_tolerance": 2e-07
+    },
+    "legacy_input_hashes_verified": 36,
+    "projection_errors": {
+      "symmetry_frobenius": 1.2393264097671234e-15,
+      "idempotence_frobenius": 1.2434468376125226e-15,
+      "complement_frobenius": 0.0
+    }
+  },
+  "tables": {
+    "input_validation": {
+      "path": "signed_control_mechanism/tables/smoke/input_validation.csv",
+      "bytes": 8795062,
+      "sha256": "f7a9245b68ff81e1b8c7b84415c7d45de9bb02d51639609de1068f6f17e7bd18"
+    },
+    "subspace_diagnostics_per_record": {
+      "path": "signed_control_mechanism/tables/smoke/subspace_diagnostics_per_record.csv",
+      "bytes": 7709762,
+      "sha256": "4a3f20a66476938f416d2c481b75cbc1bc651abe1244259172bc2f544b5599f6"
+    },
+    "subspace_diagnostics_summary": {
+      "path": "signed_control_mechanism/tables/smoke/subspace_diagnostics_summary.csv",
+      "bytes": 47643,
+      "sha256": "7e222ee83f9a4e29d818a5c5eb6b31c41ec55a01f511ae213e522d1fd43cad9d"
+    }
+  },
+  "shift_policy": {
+    "status": "not_newly_generated",
+    "reason": "The existing strict_control.py producer and marginal_shift predictions retain offsets, seeds and diagnostics, but not shifted/noisy waveform arrays or final-input SHA-256. No directly reusable shift input cache was found. This experiment does not reconstruct or generate an equivalent shift branch.",
+    "existing_implementation": {
+      "path": "phase1_ecg_robustness/src/strict_control.py",
+      "bytes": 28717,
+      "sha256": "191193239f70869f8c08be5b3a7e50c43b7f1bd2ae49d37767b6ad9eb8fbb789"
+    },
+    "existing_protocol": {
+      "path": "phase1_ecg_robustness/results/metrics/review_supplement/strict_protocol.json",
+      "bytes": 7869,
+      "sha256": "cfeb25071048896f7f489617425c7d9799538445a30958d14940f1708b403d66"
+    },
+    "prediction_example": {
+      "path": "phase1_ecg_robustness/results/metrics/review_supplement/strict/tcn/seed_17/noise_8128_snr_0_marginal_shift.npz",
+      "bytes": 540958,
+      "sha256": "5871b86e4bff3fc6b6dec33d0c25a8d092ee61c3bd056f57c3416d1b6a93d97c"
+    }
+  },
+  "timings": {
+    "preflight_seconds": 0.10765230003744364,
+    "shards": [
+      {
+        "snr": 0,
+        "noise_seed": 8128,
+        "seconds": 0.5224357000552118
+      },
+      {
+        "snr": 0,
+        "noise_seed": 101,
+        "seconds": 0.5053928999695927
+      },
+      {
+        "snr": 0,
+        "noise_seed": 202,
+        "seconds": 0.4997188001871109
+      },
+      {
+        "snr": 0,
+        "noise_seed": 303,
+        "seconds": 0.5143089999910444
+      },
+      {
+        "snr": 0,
+        "noise_seed": 404,
+        "seconds": 0.5180572001263499
+      },
+      {
+        "snr": 0,
+        "noise_seed": 505,
+        "seconds": 0.507960399845615
+      },
+      {
+        "snr": 5,
+        "noise_seed": 8128,
+        "seconds": 0.5045809000730515
+      },
+      {
+        "snr": 5,
+        "noise_seed": 101,
+        "seconds": 0.5471463999710977
+      },
+      {
+        "snr": 5,
+        "noise_seed": 202,
+        "seconds": 0.5301121000666171
+      },
+      {
+        "snr": 5,
+        "noise_seed": 303,
+        "seconds": 0.5203994000330567
+      },
+      {
+        "snr": 5,
+        "noise_seed": 404,
+        "seconds": 0.5183743999805301
+      },
+      {
+        "snr": 5,
+        "noise_seed": 505,
+        "seconds": 0.5358472000807524
+      },
+      {
+        "snr": 10,
+        "noise_seed": 8128,
+        "seconds": 0.5591716999188066
+      },
+      {
+        "snr": 10,
+        "noise_seed": 101,
+        "seconds": 0.5615719999186695
+      },
+      {
+        "snr": 10,
+        "noise_seed": 202,
+        "seconds": 0.5836549000814557
+      },
+      {
+        "snr": 10,
+        "noise_seed": 303,
+        "seconds": 0.5591655999887735
+      },
+      {
+        "snr": 10,
+        "noise_seed": 404,
+        "seconds": 0.4287050999701023
+      },
+      {
+        "snr": 10,
+        "noise_seed": 505,
+        "seconds": 0.4242840998340398
+      }
+    ],
+    "total_seconds": 3.3658770001493394
+  }
+}

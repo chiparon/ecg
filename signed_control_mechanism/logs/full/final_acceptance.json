@@ -1,0 +1,82 @@
+{
+  "status": "completed",
+  "completed_at": "2026-09-19T18:43:28.764292+00:00",
+  "base_commit": "c18e9555ce8d53771167af39c784d25e7cae3445",
+  "config_sha256": "529cd33fdb0927fc88124e6993cac44ecd5a4b4a01a0b814e8602dfbd99d70cd",
+  "implementation_fingerprint_list_sha256": "bfede4014d1c77987355c542ae1aab70c2e0d9081d7aa3440e53c5e804a69a01",
+  "stages": {
+    "smoke": "waived_by_user, not passed",
+    "full": "passed",
+    "publication": "passed",
+    "browser": "passed"
+  },
+  "counts": {
+    "records": 2158,
+    "patients": 1877,
+    "noisy_conditions": 126,
+    "new_signed_predictions": 540,
+    "reused_E_I": 216,
+    "reused_clean": 6,
+    "prediction_index_rows": 762,
+    "patient_bootstrap_draws": 2000,
+    "invalid_draws": 0,
+    "input_audit_rows": 271908,
+    "subspace_rows": 545974,
+    "figures": 6,
+    "figure_files": 18,
+    "reports": 2,
+    "numeric_report_cells": 3916
+  },
+  "evidence": {
+    "full_verification": {
+      "path": "signed_control_mechanism/logs/full/full_verification.json",
+      "bytes": 5201,
+      "sha256": "44bf91f6d239e6851dd78124d63e78dd6c9f295999103c7632e77d6ab8ba2380"
+    },
+    "publication_verification": {
+      "path": "signed_control_mechanism/logs/full/publication_verification.json",
+      "bytes": 1218,
+      "sha256": "761864107694b94cca2dbff6881067375c116dcea5a64164252cc5bb8d6e5700"
+    },
+    "browser_verification": {
+      "path": "signed_control_mechanism/logs/full/browser_verification.json",
+      "bytes": 2890,
+      "sha256": "b8483688ccc9441e12057e938e6ddffc3cf3d415d629c1060b716cba8c47daff"
+    },
+    "delivery_summary": {
+      "path": "signed_control_mechanism/logs/full/delivery_summary.json",
+      "bytes": 17576,
+      "sha256": "5e2e19e421a3a1f7471f2977a96261a5571e09c7ac62bc5eaa8d16f6d5cd45a9"
+    },
+    "input_manifest": {
+      "path": "signed_control_mechanism/inputs/manifest.json",
+      "bytes": 4793,
+      "sha256": "40ea2137ee361375956815a7964b7a7a8c1385b5f511fcbd0538f6fe8d64ac2e"
+    },
+    "report_manifest": {
+      "path": "signed_control_mechanism/reports/manifest.json",
+      "bytes": 1095117,
+      "sha256": "52bf38fb2afc076e331754aa4b52804aa7850cf678489393618b52a356b181b8"
+    },
+    "figure_manifest": {
+      "path": "signed_control_mechanism/figures/full/manifest.json",
+      "bytes": 30669,
+      "sha256": "ca48423a5a4d53f803b0cca22139edaeace2a0db63d1e03f9a9cee6cf320576a"
+    }
+  },
+  "cleanup": {
+    "superseded_browser_captures_removed": 2,
+    "no_temporary_partial_or_pycache_files_found": true,
+    "browser_tabs_released": true,
+    "deployment_archives_and_partial_smoke_retained_for_provenance": true
+  },
+  "scientific_gate_failures": 0,
+  "deviations": [
+    "User explicitly waived remaining smoke after input/GPU smoke already completed; not reported as passed.",
+    "Circular-shift implementation and prediction/offset metadata exist, but directly reusable waveform arrays and final-input hashes do not; no new shift reconstruction and no shift q.",
+    "E/I reuse is immutable byte/hash-proven artifact reuse, not a fresh cross-device numerical bridge. Fresh clean comparisons are separate.",
+    "TCN S-I AUROC patient intervals include zero at0/5/10dB; no equivalence claim. Fixed signed modes show substantial descriptive variation.",
+    "No scientific gate failure. Report mobile hash wrapping was corrected and re-verified. A bookkeeping read required explicitUTF-8; browser-tool failures did not change scientific results.",
+    "No new training, threshold search, p-values or change to original Holm conclusions; ideal mapping/100Hz/two architectures only."
+  ]
+}

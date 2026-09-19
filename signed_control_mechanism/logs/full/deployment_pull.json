@@ -1,0 +1,16 @@
+{
+  "archive": {
+    "path": "signed_control_mechanism/logs/full/resnet_results.zip",
+    "bytes": 17329779,
+    "sha256": "55f9072ffecd1a28131e77b5751c8c90919dc51d71e856960c3f4e46b4685e63"
+  },
+  "status": "completed",
+  "stage": "full",
+  "direction": "pull",
+  "config_sha256": "529cd33fdb0927fc88124e6993cac44ecd5a4b4a01a0b814e8602dfbd99d70cd",
+  "host": "dgx6",
+  "remote_root": "/home/chiparon/ecg_methodology_minimal_five",
+  "remote_python": "/home/chiparon/ecg_benchmark/20260919_134009/venv/bin/python",
+  "completed_at": "2026-09-19T18:14:20.282721+00:00",
+  "elapsed_seconds": 3.4444527002051473
+}

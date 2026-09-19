@@ -1,0 +1,325 @@
+{
+  "status": "completed",
+  "stage": "full",
+  "config_sha256": "529cd33fdb0927fc88124e6993cac44ecd5a4b4a01a0b814e8602dfbd99d70cd",
+  "completed_at": "2026-09-19T18:09:23.113775+00:00",
+  "provenance": {
+    "freeze": {
+      "path": "signed_control_mechanism/logs/full/freeze.json",
+      "bytes": 30906,
+      "sha256": "992359abafe74141bc0f65ba122c0f0d5efbc1ea0eaeafac16c28f89576ad2cb"
+    },
+    "source_files": [
+      {
+        "path": "signed_control_mechanism/inputs.py",
+        "bytes": 34619,
+        "sha256": "4431c9aedd92cfc8c792b39413551900fcaafbfc8e52c1cbebace6619452e8c7"
+      },
+      {
+        "path": "signed_control_mechanism/common.py",
+        "bytes": 5592,
+        "sha256": "113a87daa9b44b95ac239eafcff15bfcd7efd67677b254b9454a5624766639cc"
+      },
+      {
+        "path": "methodology_supplement/common.py",
+        "bytes": 5032,
+        "sha256": "daa3f53259c8c231e26cf36de4963f4d7f77a34c30d517309aeea9fca57f9c26"
+      },
+      {
+        "path": "methodology_supplement/noise.py",
+        "bytes": 33322,
+        "sha256": "c5cb68ea5da8f74bba53fd8f19fc0769da3525a766a64772bb5c2f1f4e07b3c8"
+      }
+    ],
+    "config_file": {
+      "path": "signed_control_mechanism/configs/signed_control_full.json",
+      "bytes": 5904,
+      "sha256": "38821d30b452ed3c6aadc2cf0c1bcf2050de7fb43708e54a58c50f5fb454aa9c"
+    },
+    "clean": {
+      "path": "methodology_supplement/results/test_inputs/full/clean.npy",
+      "bytes": 103584128,
+      "sha256": "aa6ac344b1a19e1e3f043afeb75b5f4abce2dcff61ff0c794fef0b61cc58a5a3"
+    },
+    "cohort": {
+      "path": "methodology_supplement/results/test_inputs/full/cohort.npz",
+      "bytes": 128750,
+      "sha256": "bf8e9c8aae5066cf8e49d3f701dcc9b3236b12dfe38fe034c1194f261670e9e7"
+    },
+    "draws": {
+      "path": "methodology_supplement/results/test_inputs/full/patient_draws.npy",
+      "bytes": 15016128,
+      "sha256": "295179b3aa31dc71a97781fff3eaa11aa947b3d671ae80eb9194fa65098a9a2f"
+    },
+    "sign_controls": {
+      "path": "signed_control_mechanism/inputs/sign_controls.json",
+      "bytes": 7604,
+      "sha256": "8fc1d3ed55b65c8f7d422967e601071eea2cd4cc044a0154665b2787fbc14e87"
+    },
+    "matrices": {
+      "path": "signed_control_mechanism/inputs/matrices.json",
+      "bytes": 75676,
+      "sha256": "87290011115bfbde18875cb4fcb0af5c48bc850d89287f107dbe8b9e4594e4e8"
+    },
+    "legacy_input_manifest": {
+      "path": "methodology_supplement/results/test_inputs/full/manifest.json",
+      "bytes": 288472,
+      "sha256": "88889176af2bfd853f3651bd709969fa4340904f46d6722acc5701e325303ac7"
+    },
+    "smoke_verification": {
+      "path": "signed_control_mechanism/logs/smoke/smoke_verification.json",
+      "bytes": 1038,
+      "sha256": "4192b212b8f032f46fab968ec95e9290bb50908498ebb679197c80c1df9933d1"
+    },
+    "base_files": [
+      {
+        "path": "methodology_supplement/results/test_inputs/full/noise/standard__n8128__electrode__0db.npy",
+        "bytes": 103584128,
+        "sha256": "7512f1c76051bbc5596482db08c92d2369bef0e8bed037adbbcad96081dca963"
+      },
+      {
+        "path": "methodology_supplement/results/test_inputs/full/noise/standard__n8128__independent_rms__0db.npy",
+        "bytes": 103584128,
+        "sha256": "47d294bffcaf6d165841d52ee0d7de1a8f366d5dc3d5ac88dd9cce04bd065b46"
+      },
+      {
+        "path": "methodology_supplement/results/test_inputs/full/noise/standard__n101__electrode__0db.npy",
+        "bytes": 103584128,
+        "sha256": "d7065fd6d9b574ff1fec470e4734308578ce987948669f991f871ee621951480"
+      },
+      {
+        "path": "methodology_supplement/results/test_inputs/full/noise/standard__n101__independent_rms__0db.npy",
+        "bytes": 103584128,
+        "sha256": "eb3c3b3ee1ef1b035a150ab29ded1ec2521673be2722203613588abe6cd4787c"
+      },
+      {
+        "path": "methodology_supplement/results/test_inputs/full/noise/standard__n202__electrode__0db.npy",
+        "bytes": 103584128,
+        "sha256": "c0e0a644d5ed6e0ac3f36e139ed21dadf40ce52f326bf6cab35e525ebe8f405e"
+      },
+      {
+        "path": "methodology_supplement/results/test_inputs/full/noise/standard__n202__independent_rms__0db.npy",
+        "bytes": 103584128,
+        "sha256": "7189a8040f2fd3304c697405a4a4a92884c3f4242e1c818593ac2f2362847bd8"
+      },
+      {
+        "path": "methodology_supplement/results/test_inputs/full/noise/standard__n303__electrode__0db.npy",
+        "bytes": 103584128,
+        "sha256": "b9f652b0118957b55f6801102beef515f20bdd36044b5608f8353483a8858c02"
+      },
+      {
+        "path": "methodology_supplement/results/test_inputs/full/noise/standard__n303__independent_rms__0db.npy",
+        "bytes": 103584128,
+        "sha256": "e13c17f81e300bd44ea3c63a5dea9cc0f85a750d1d62f947459756db48ed5527"
+      },
+      {
+        "path": "methodology_supplement/results/test_inputs/full/noise/standard__n404__electrode__0db.npy",
+        "bytes": 103584128,
+        "sha256": "3ecb1fa9eec25d23e26ba589e96d8c7e17183719e988befdac59c63d8117066c"
+      },
+      {
+        "path": "methodology_supplement/results/test_inputs/full/noise/standard__n404__independent_rms__0db.npy",
+        "bytes": 103584128,
+        "sha256": "e82ba1f043d26993e5a48c31e1b3e22b191ea5c1b9a5a16adca120ac5c276797"
+      },
+      {
+        "path": "methodology_supplement/results/test_inputs/full/noise/standard__n505__electrode__0db.npy",
+        "bytes": 103584128,
+        "sha256": "9e79af8cba0049d73d4f0c1085a5bebc0bf7e147a2da8180a78db483305ff608"
+      },
+      {
+        "path": "methodology_supplement/results/test_inputs/full/noise/standard__n505__independent_rms__0db.npy",
+        "bytes": 103584128,
+        "sha256": "89dd82d390a27962d3a33da1395e0dd9f6a5907f854c71ebd0f40cfc375c9a99"
+      }
+    ],
+    "shift_sources": []
+  },
+  "source_files": [
+    {
+      "path": "signed_control_mechanism/inputs.py",
+      "bytes": 34619,
+      "sha256": "4431c9aedd92cfc8c792b39413551900fcaafbfc8e52c1cbebace6619452e8c7"
+    },
+    {
+      "path": "signed_control_mechanism/common.py",
+      "bytes": 5592,
+      "sha256": "113a87daa9b44b95ac239eafcff15bfcd7efd67677b254b9454a5624766639cc"
+    },
+    {
+      "path": "methodology_supplement/common.py",
+      "bytes": 5032,
+      "sha256": "daa3f53259c8c231e26cf36de4963f4d7f77a34c30d517309aeea9fca57f9c26"
+    },
+    {
+      "path": "methodology_supplement/noise.py",
+      "bytes": 33322,
+      "sha256": "c5cb68ea5da8f74bba53fd8f19fc0769da3525a766a64772bb5c2f1f4e07b3c8"
+    }
+  ],
+  "workers": 4,
+  "batch_size": 64,
+  "n_records": 2158,
+  "n_cases": 126,
+  "n_validation_rows": 271908,
+  "gates": {
+    "status": "passed",
+    "snr_abs_error_db": 1.4362392075639718e-07,
+    "designed_snr_abs_error_db": 1.3082873628889047e-07,
+    "max_lead_rms_relative_error": 4.2432047708104414e-08,
+    "max_designed_lead_rms_relative_error": 1.3777855832420796e-08,
+    "max_periodogram_peak_relative_error": 3.6719272195277846e-07,
+    "max_designed_periodogram_peak_relative_error": 0.0,
+    "max_base_sign_absolute_error": 0.0,
+    "max_scaled_sign_absolute_error": 0.0,
+    "limits": {
+      "matrix_absolute_tolerance": 1e-12,
+      "snr_abs_error_db": 0.0001,
+      "lead_rms_relative_error": 1e-06,
+      "periodogram_tolerance": 1e-06,
+      "periodogram_error_definition": "Check every frequency bin separately for every lead. Designed signed-noise PSDs must be exactly equal. Post-addition residual PSD error is the maximum absolute bin difference divided by the reference peak for that lead, not a pooled lead spectrum. Zero reference spectra require exact zero.",
+      "legacy_metric_abs_error": 0.0001,
+      "legacy_f1_abs_error": 0.001,
+      "legacy_label_agreement_min": 0.999,
+      "statistic_point_tolerance": 2e-07
+    },
+    "legacy_input_hashes_verified": 36,
+    "projection_errors": {
+      "symmetry_frobenius": 1.2393264097671234e-15,
+      "idempotence_frobenius": 1.2434468376125226e-15,
+      "complement_frobenius": 0.0
+    }
+  },
+  "tables": {
+    "input_validation": {
+      "path": "signed_control_mechanism/tables/full/input_validation.csv",
+      "bytes": 190392063,
+      "sha256": "aa02f3775474d1ab5f885030b7b44114be5e3e153dbf893d7ab0e6624090491f"
+    },
+    "subspace_diagnostics_per_record": {
+      "path": "signed_control_mechanism/tables/full/subspace_diagnostics_per_record.csv",
+      "bytes": 167578375,
+      "sha256": "2ed4bac9612b5d57c4f1721132aae090faa7bd1f6705dee9c1f8177f1508d001"
+    },
+    "subspace_diagnostics_summary": {
+      "path": "signed_control_mechanism/tables/full/subspace_diagnostics_summary.csv",
+      "bytes": 47907,
+      "sha256": "b04b9ec72043a3f0a0300070e7d7ee61a4e988462a0e87810d980574f756e7cb"
+    }
+  },
+  "shift_policy": {
+    "status": "not_newly_generated",
+    "reason": "The existing strict_control.py producer and marginal_shift predictions retain offsets, seeds and diagnostics, but not shifted/noisy waveform arrays or final-input SHA-256. No directly reusable shift input cache was found. This experiment does not reconstruct or generate an equivalent shift branch.",
+    "existing_implementation": {
+      "path": "phase1_ecg_robustness/src/strict_control.py",
+      "bytes": 28717,
+      "sha256": "191193239f70869f8c08be5b3a7e50c43b7f1bd2ae49d37767b6ad9eb8fbb789"
+    },
+    "existing_protocol": {
+      "path": "phase1_ecg_robustness/results/metrics/review_supplement/strict_protocol.json",
+      "bytes": 7869,
+      "sha256": "cfeb25071048896f7f489617425c7d9799538445a30958d14940f1708b403d66"
+    },
+    "prediction_example": {
+      "path": "phase1_ecg_robustness/results/metrics/review_supplement/strict/tcn/seed_17/noise_8128_snr_0_marginal_shift.npz",
+      "bytes": 540958,
+      "sha256": "5871b86e4bff3fc6b6dec33d0c25a8d092ee61c3bd056f57c3416d1b6a93d97c"
+    }
+  },
+  "timings": {
+    "preflight_seconds": 0.9038297000806779,
+    "shards": [
+      {
+        "snr": 0,
+        "noise_seed": 8128,
+        "seconds": 11.165324300061911
+      },
+      {
+        "snr": 0,
+        "noise_seed": 101,
+        "seconds": 11.041449300013483
+      },
+      {
+        "snr": 0,
+        "noise_seed": 202,
+        "seconds": 11.180551500059664
+      },
+      {
+        "snr": 0,
+        "noise_seed": 303,
+        "seconds": 11.166209999937564
+      },
+      {
+        "snr": 0,
+        "noise_seed": 404,
+        "seconds": 11.146972799906507
+      },
+      {
+        "snr": 0,
+        "noise_seed": 505,
+        "seconds": 11.075357799883932
+      },
+      {
+        "snr": 5,
+        "noise_seed": 8128,
+        "seconds": 11.031618899898604
+      },
+      {
+        "snr": 5,
+        "noise_seed": 101,
+        "seconds": 11.01709570013918
+      },
+      {
+        "snr": 5,
+        "noise_seed": 202,
+        "seconds": 11.147767100017518
+      },
+      {
+        "snr": 5,
+        "noise_seed": 303,
+        "seconds": 11.100395900197327
+      },
+      {
+        "snr": 5,
+        "noise_seed": 404,
+        "seconds": 11.062514499993995
+      },
+      {
+        "snr": 5,
+        "noise_seed": 505,
+        "seconds": 10.936242000199854
+      },
+      {
+        "snr": 10,
+        "noise_seed": 8128,
+        "seconds": 11.152365299873054
+      },
+      {
+        "snr": 10,
+        "noise_seed": 101,
+        "seconds": 10.989937899867073
+      },
+      {
+        "snr": 10,
+        "noise_seed": 202,
+        "seconds": 11.093974000075832
+      },
+      {
+        "snr": 10,
+        "noise_seed": 303,
+        "seconds": 10.970902899978682
+      },
+      {
+        "snr": 10,
+        "noise_seed": 404,
+        "seconds": 8.881725300103426
+      },
+      {
+        "snr": 10,
+        "noise_seed": 505,
+        "seconds": 8.894355100113899
+      }
+    ],
+    "total_seconds": 56.75008450006135
+  }
+}
